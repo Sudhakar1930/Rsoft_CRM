@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"></listener>
+	</listeners>
+	  
+  <test thread-count="5" name="chromeTest">
+	  <parameter name="browser" value="chrome">
+    <classes>
+		<!--
+      <class name="testCases.TC_001_SFI_Message"/> 
+      <class name="testCases.TC_002_SFI_MultiChoice"/> 
+      <class name="testCases.TC_004_SF_ResponseValidation"/> -->
+      <class name="testCases.TC001_WF1_EveryTime_Rec_Save"/> 
+   
+    </classes>
+	  </parameter>
+	  </test>
+	
+	  <test thread-count="5" name="edgeTest">
+	 <parameter name="browser" value="edge">
+    <classes>
+      
+     </classes>
+	  </parameter>
+  </test> 
+</suite> <!-- Suite -->

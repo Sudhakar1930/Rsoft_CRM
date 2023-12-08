@@ -1,0 +1,992 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Exercise Functional Testing</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 8, 2023 05:14:04 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC001_WF1_EveryTime_Rec_Save</p>
+            <p class="text-sm">
+              <span>5:14:05 pm</span> / <span>00:04:41:405</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC001_WF1_EveryTime_Rec_Save</h5>
+<span class='badge badge-success'>12.08.2023 5:14:05 pm</span>
+<span class='badge badge-danger'>12.08.2023 5:18:46 pm</span>
+<span class='badge badge-default'>00:04:41:405</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>34:35:888</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>EveryRecordSaved</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:14:38 pm</td>
+        <td>
+          Home Page Displayed after Login
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.14_345540442.jpg' src="./../Screenshots/08-Dec-23/17.14_345540442.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:11 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_617861871.jpg' src="./../Screenshots/08-Dec-23/17.16_617861871.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:13 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_374987294.jpg' src="./../Screenshots/08-Dec-23/17.16_374987294.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:14 pm</td>
+        <td>
+          Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_409761547.jpg' src="./../Screenshots/08-Dec-23/17.16_409761547.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:16 pm</td>
+        <td>
+          Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_735713318.jpg' src="./../Screenshots/08-Dec-23/17.16_735713318.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:17 pm</td>
+        <td>
+          Piclist Value
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_548623734.jpg' src="./../Screenshots/08-Dec-23/17.16_548623734.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:24 pm</td>
+        <td>
+          Summary Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_372559348.jpg' src="./../Screenshots/08-Dec-23/17.16_372559348.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:25 pm</td>
+        <td>
+          Summary Number Field
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_312062605.jpg' src="./../Screenshots/08-Dec-23/17.16_312062605.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:27 pm</td>
+        <td>
+          Summary Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_106844485.jpg' src="./../Screenshots/08-Dec-23/17.16_106844485.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:28 pm</td>
+        <td>
+          Summary Picklist Item
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_65864665.jpg' src="./../Screenshots/08-Dec-23/17.16_65864665.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:29 pm</td>
+        <td>
+          Summary Enter Your Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_507914466.jpg' src="./../Screenshots/08-Dec-23/17.16_507914466.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:16:36 pm</td>
+        <td>
+          Detail View Assigned To
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_183121558.jpg' src="./../Screenshots/08-Dec-23/17.16_183121558.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:38 pm</td>
+        <td>
+          Detail View Phone Numer
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_473281788.jpg' src="./../Screenshots/08-Dec-23/17.16_473281788.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:39 pm</td>
+        <td>
+          Detail View Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_694843602.jpg' src="./../Screenshots/08-Dec-23/17.16_694843602.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:40 pm</td>
+        <td>
+          Detail View Menu Item
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_614447963.jpg' src="./../Screenshots/08-Dec-23/17.16_614447963.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:41 pm</td>
+        <td>
+          Detail View Enter Your Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_267873052.jpg' src="./../Screenshots/08-Dec-23/17.16_267873052.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:43 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_255334613.jpg' src="./../Screenshots/08-Dec-23/17.16_255334613.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:45 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_419380044.jpg' src="./../Screenshots/08-Dec-23/17.16_419380044.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:46 pm</td>
+        <td>
+          Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_233773533.jpg' src="./../Screenshots/08-Dec-23/17.16_233773533.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:47 pm</td>
+        <td>
+          Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_368528191.jpg' src="./../Screenshots/08-Dec-23/17.16_368528191.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:48 pm</td>
+        <td>
+          Piclist Value
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_718659853.jpg' src="./../Screenshots/08-Dec-23/17.16_718659853.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:56 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_363884313.jpg' src="./../Screenshots/08-Dec-23/17.16_363884313.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:58 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_795157425.jpg' src="./../Screenshots/08-Dec-23/17.16_795157425.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:16:59 pm</td>
+        <td>
+          Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_55232198.jpg' src="./../Screenshots/08-Dec-23/17.16_55232198.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:01 pm</td>
+        <td>
+          Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.16_545832379.jpg' src="./../Screenshots/08-Dec-23/17.16_545832379.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:02 pm</td>
+        <td>
+          Piclist Value
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_747603212.jpg' src="./../Screenshots/08-Dec-23/17.17_747603212.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:11 pm</td>
+        <td>
+          Summary Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_448903771.jpg' src="./../Screenshots/08-Dec-23/17.17_448903771.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:12 pm</td>
+        <td>
+          Summary Number Field
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_257093326.jpg' src="./../Screenshots/08-Dec-23/17.17_257093326.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:13 pm</td>
+        <td>
+          Summary Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_697134580.jpg' src="./../Screenshots/08-Dec-23/17.17_697134580.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:14 pm</td>
+        <td>
+          Summary Picklist Item
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_907495170.jpg' src="./../Screenshots/08-Dec-23/17.17_907495170.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:16 pm</td>
+        <td>
+          Summary Enter Your Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_297493449.jpg' src="./../Screenshots/08-Dec-23/17.17_297493449.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:17:23 pm</td>
+        <td>
+          Detail View Assigned To
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_365592834.jpg' src="./../Screenshots/08-Dec-23/17.17_365592834.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:24 pm</td>
+        <td>
+          Detail View Phone Numer
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_866915588.jpg' src="./../Screenshots/08-Dec-23/17.17_866915588.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:25 pm</td>
+        <td>
+          Detail View Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_714371952.jpg' src="./../Screenshots/08-Dec-23/17.17_714371952.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:26 pm</td>
+        <td>
+          Detail View Menu Item
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_381656730.jpg' src="./../Screenshots/08-Dec-23/17.17_381656730.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:28 pm</td>
+        <td>
+          Detail View Enter Your Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_37171141.jpg' src="./../Screenshots/08-Dec-23/17.17_37171141.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:29 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_244312441.jpg' src="./../Screenshots/08-Dec-23/17.17_244312441.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:31 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_813290970.jpg' src="./../Screenshots/08-Dec-23/17.17_813290970.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:32 pm</td>
+        <td>
+          Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_595064751.jpg' src="./../Screenshots/08-Dec-23/17.17_595064751.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:34 pm</td>
+        <td>
+          Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_264695192.jpg' src="./../Screenshots/08-Dec-23/17.17_264695192.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:17:35 pm</td>
+        <td>
+          Piclist Value
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.17_142691361.jpg' src="./../Screenshots/08-Dec-23/17.17_142691361.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:09 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_603655921.jpg' src="./../Screenshots/08-Dec-23/17.18_603655921.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:11 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_720953265.jpg' src="./../Screenshots/08-Dec-23/17.18_720953265.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:12 pm</td>
+        <td>
+          Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_798547636.jpg' src="./../Screenshots/08-Dec-23/17.18_798547636.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:14 pm</td>
+        <td>
+          Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_170859564.jpg' src="./../Screenshots/08-Dec-23/17.18_170859564.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:15 pm</td>
+        <td>
+          Piclist Value
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_237080074.jpg' src="./../Screenshots/08-Dec-23/17.18_237080074.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:22 pm</td>
+        <td>
+          Summary Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_506746240.jpg' src="./../Screenshots/08-Dec-23/17.18_506746240.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:23 pm</td>
+        <td>
+          Summary Number Field
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_737238009.jpg' src="./../Screenshots/08-Dec-23/17.18_737238009.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:25 pm</td>
+        <td>
+          Summary Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_80913398.jpg' src="./../Screenshots/08-Dec-23/17.18_80913398.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:26 pm</td>
+        <td>
+          Summary Picklist Item
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_51790013.jpg' src="./../Screenshots/08-Dec-23/17.18_51790013.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:27 pm</td>
+        <td>
+          Summary Enter Your Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_18625742.jpg' src="./../Screenshots/08-Dec-23/17.18_18625742.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:18:34 pm</td>
+        <td>
+          Detail View Assigned To
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_874722029.jpg' src="./../Screenshots/08-Dec-23/17.18_874722029.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:36 pm</td>
+        <td>
+          Detail View Phone Numer
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_542531069.jpg' src="./../Screenshots/08-Dec-23/17.18_542531069.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:37 pm</td>
+        <td>
+          Detail View Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_81194723.jpg' src="./../Screenshots/08-Dec-23/17.18_81194723.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:38 pm</td>
+        <td>
+          Detail View Menu Item
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_546998167.jpg' src="./../Screenshots/08-Dec-23/17.18_546998167.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:39 pm</td>
+        <td>
+          Detail View Enter Your Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_887024255.jpg' src="./../Screenshots/08-Dec-23/17.18_887024255.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:41 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_861583671.jpg' src="./../Screenshots/08-Dec-23/17.18_861583671.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:42 pm</td>
+        <td>
+          Module Name
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_271217978.jpg' src="./../Screenshots/08-Dec-23/17.18_271217978.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:44 pm</td>
+        <td>
+          Phone Number
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_765936505.jpg' src="./../Screenshots/08-Dec-23/17.18_765936505.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:45 pm</td>
+        <td>
+          Email
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_564295804.jpg' src="./../Screenshots/08-Dec-23/17.18_564295804.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:18:46 pm</td>
+        <td>
+          Piclist Value
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../Screenshots/08-Dec-23/17.18_282130342.jpg' src="./../Screenshots/08-Dec-23/17.18_282130342.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 8, 2023 05:14:04 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 8, 2023 05:19:49 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>58</b> events passed</small></div>
+<div>
+<small data-tooltip='4%'><b>3</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"TC001_WF1_EveryTime_Rec_Save":281.405
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>SF</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>Forms</td>
+</tr>
+<tr>
+<td>Sub Module</td>
+<td>Customers</td>
+</tr>
+<tr>
+<td>Browser Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>sudha</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Testing source</td>
+</tr>
+<tr>
+<td>2023.12.08.17.14.04</td>
+<td>2023.12.08.17.14.04</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 58,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
