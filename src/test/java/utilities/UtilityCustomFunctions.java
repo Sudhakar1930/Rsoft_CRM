@@ -426,8 +426,8 @@ public class UtilityCustomFunctions extends BaseClass{
 			throws IOException, InterruptedException {
 		
 		BaseClass a = new BaseClass();
-		System.out.println("Inside CustomAssert: Actual:  AssignedTo: " + sActValue.trim());
-		System.out.println("Inside CustomAssert: Expected AssignedTo:  " + sExpValue.trim());
+		System.out.println(sMessage + " Actual:   " + sActValue.trim());
+		System.out.println(sMessage + " Expected:   " +  sExpValue.trim());
 		
 		if (sActValue.trim().equalsIgnoreCase(sExpValue.trim())) {
 			BaseClass.logger

@@ -1,272 +1,265 @@
-17:28:18.213 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:28:19.507 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:28:19.507 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:28:20.767 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:28:31.529 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:28:32.809 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:28:33.295 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:28:34.538 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:28:34.538 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:28:35.820 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:28:35.820 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:28:37.048 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:28:37.048 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:28:38.282 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:28:44.802 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:28:46.056 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
-17:28:46.056 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 12431234234Expected Value is: 12431234234
-17:28:47.301 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
-17:28:47.302 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:28:48.563 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
-17:28:48.566 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:28:49.840 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
-17:28:49.840 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:28:51.112 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
-17:28:58.314 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Failed : Actual Value is: Rsoft ITExpected Value is: Sudhakar VE
-17:28:59.606 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To fail
-17:28:59.607 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:29:00.824 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
-17:29:00.824 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:29:02.099 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
-17:29:02.099 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:29:03.374 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
-17:29:03.375 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:29:04.642 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
-17:29:04.788 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:29:06.071 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:29:06.542 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:29:07.803 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:29:07.803 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:29:09.080 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:29:09.081 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:29:10.355 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:29:10.355 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:29:11.578 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:29:16.074 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
-17:29:16.449 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Madhan entered in  input
-17:29:16.892 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
-17:29:48.716 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:29:50.002 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:29:50.444 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:29:51.672 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:29:51.672 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:29:52.925 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:29:52.925 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:29:54.155 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:29:54.155 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:29:55.407 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:30:01.506 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:30:02.777 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
-17:30:02.777 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 12431234234Expected Value is: 12431234234
-17:30:03.986 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
-17:30:03.986 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:30:05.270 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
-17:30:05.270 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:30:06.504 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
-17:30:06.504 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:30:07.786 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
-17:30:13.432 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Failed : Actual Value is: Rsoft ITExpected Value is: Sudhakar VE
-17:30:14.710 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To fail
-17:30:14.711 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:30:15.939 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
-17:30:15.939 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:30:17.181 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
-17:30:17.181 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:30:18.422 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
-17:30:18.423 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:30:19.649 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
-17:30:19.814 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:30:21.083 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:30:21.527 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:30:22.820 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:30:22.820 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:30:24.067 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:30:24.067 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:30:25.317 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:30:25.317 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:30:26.548 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:30:29.063 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
-17:30:29.443 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Sudhakar entered in  input
-17:30:29.884 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
-17:36:44.798 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
-17:36:44.809 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
-17:36:44.812 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
-17:36:45.999 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
-17:36:46.072 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 8
-17:36:46.072 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
-17:36:50.313 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
-17:36:50.713 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Madhan entered in  input
-17:36:51.169 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
-17:37:07.739 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
-17:37:17.117 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule] is selected in List
-17:37:22.830 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 1234567890 entered in  input
-17:37:23.293 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 12431234234 entered in  input
-17:37:25.037 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - sudhakar@rsoft.in entered in  input
-17:37:26.546 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 4123412341 entered in  input
-17:37:34.297 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [Very good] is selected in List
-17:38:46.172 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:38:47.443 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:38:47.932 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:38:49.209 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:38:49.209 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:38:50.468 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:38:50.468 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:38:51.715 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:38:51.715 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:38:52.983 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:38:58.860 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:39:00.124 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
-17:39:00.124 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 12431234234Expected Value is: 12431234234
-17:39:01.339 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
-17:39:01.340 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:39:02.595 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
-17:39:02.595 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:39:03.826 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
-17:39:03.826 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:39:05.057 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
-17:39:10.642 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Failed : Actual Value is: Madhan MohanExpected Value is: Sudhakar VE
-17:39:11.886 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To fail
-17:39:11.901 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:39:13.177 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
-17:39:13.177 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:39:14.435 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
-17:39:14.435 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:39:15.744 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
-17:39:15.744 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:39:16.994 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
-17:39:17.161 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:39:18.454 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:39:18.917 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:39:20.189 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:39:20.189 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:39:21.455 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:39:21.455 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:39:22.712 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:39:22.712 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:39:23.973 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:39:34.757 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:39:36.042 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:39:36.534 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:39:37.830 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:39:37.831 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:39:39.094 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:39:39.095 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:39:40.375 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:39:40.376 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:39:41.635 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:39:47.682 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:39:49.028 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
-17:39:49.029 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 12431234234Expected Value is: 12431234234
-17:39:50.323 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
-17:39:50.324 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:39:51.637 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
-17:39:51.637 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:39:52.889 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
-17:39:52.889 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:39:54.122 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
-17:39:59.839 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Failed : Actual Value is: Madhan MohanExpected Value is: Sudhakar VE
-17:40:01.102 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To fail
-17:40:01.102 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:40:02.322 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
-17:40:02.322 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:40:03.562 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
-17:40:03.562 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:40:04.905 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
-17:40:04.907 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:40:06.155 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
-17:40:06.310 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:40:07.596 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:40:08.046 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:40:09.329 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:40:09.329 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:40:10.595 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:40:10.596 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:40:11.870 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:40:11.870 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:40:13.117 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:40:17.607 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
-17:40:17.993 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Sudhakar entered in  input
-17:40:18.484 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
-17:40:53.924 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:40:55.169 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:40:55.605 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:40:56.858 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:40:56.858 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:40:58.091 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:40:58.091 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:40:59.367 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:40:59.367 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:41:00.623 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:41:06.642 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:41:07.891 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
-17:41:07.891 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 12431234234Expected Value is: 12431234234
-17:41:09.170 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
-17:41:09.170 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:41:10.414 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
-17:41:10.415 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:41:11.666 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
-17:41:11.667 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:41:12.901 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
-17:41:18.501 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Failed : Actual Value is: Madhan MohanExpected Value is: Sudhakar VE
-17:41:19.758 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To fail
-17:41:19.758 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:41:20.993 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
-17:41:20.993 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:41:22.250 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
-17:41:22.250 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:41:23.478 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
-17:41:23.481 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:41:24.730 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
-17:41:24.887 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:41:26.141 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:41:26.585 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:41:27.846 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:41:27.846 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:41:29.124 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:41:29.124 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:41:30.365 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:41:30.365 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:41:31.619 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:41:34.089 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
-17:41:34.496 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
-17:41:34.892 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
-17:42:07.242 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:42:08.470 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:42:08.910 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:42:10.187 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:42:10.187 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:42:11.427 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:42:11.427 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:42:12.686 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:42:12.686 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:42:13.972 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
-17:42:19.965 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:42:21.216 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
-17:42:21.216 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 12431234234Expected Value is: 12431234234
-17:42:22.447 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
-17:42:22.447 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:42:23.693 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
-17:42:23.693 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:42:24.998 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
-17:42:24.998 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:42:26.292 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
-17:42:32.076 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Failed : Actual Value is: Rsoft ITExpected Value is: Sudhakar VE
-17:42:33.341 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To fail
-17:42:33.341 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:42:34.585 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
-17:42:34.585 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:42:35.871 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
-17:42:35.871 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: Very goodExpected Value is: Very good
-17:42:37.115 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
-17:42:37.116 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4123412341Expected Value is: 4123412341
-17:42:38.369 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
-17:42:38.523 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:42:39.798 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:42:40.238 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
-17:42:41.515 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
-17:42:41.516 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
-17:42:42.789 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
-17:42:42.789 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-17:42:44.007 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
-17:42:44.007 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: Very goodExpected Value is: Very good
-17:42:45.288 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
+17:02:31.106 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:02:31.111 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:02:31.114 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:02:32.309 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:02:32.390 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:02:32.393 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:02:36.158 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:02:36.554 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:02:36.982 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:03:10.052 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:03:24.702 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:08:14.634 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:08:14.641 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:08:14.648 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:08:15.865 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:08:15.935 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:08:15.935 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:08:20.045 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:08:20.438 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:08:20.871 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:08:47.441 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:09:03.889 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:15:41.548 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:15:41.556 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:15:41.561 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:15:42.823 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:15:42.940 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:15:42.940 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:15:50.277 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:15:50.664 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:15:51.099 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:16:27.945 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:16:28.962 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:16:31.205 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:16:31.441 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:16:35.813 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:16:45.587 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:16:46.604 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:22:51.300 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:22:51.305 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:22:51.308 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:22:52.468 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:22:52.544 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:22:52.544 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:22:56.464 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:22:56.869 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:22:57.307 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:23:25.951 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:23:26.963 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Check Whether the workflow status is enabled
+17:23:26.966 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:23:29.100 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:23:29.321 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:23:31.676 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:23:40.335 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:23:41.352 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:25:09.282 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:25:09.287 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:25:09.292 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:25:10.495 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:25:10.567 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:25:10.567 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:25:14.524 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:25:14.949 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:25:15.380 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:25:44.191 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:25:45.213 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Check Whether the workflow status is enabled
+17:25:45.214 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:25:47.185 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:25:47.525 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:25:50.291 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:25:59.979 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:26:00.996 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:27:45.219 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:27:45.224 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:27:45.229 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:27:46.374 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:27:46.449 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:27:46.449 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:27:50.267 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:27:50.660 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:27:51.092 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:28:21.293 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:28:22.295 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Check Whether the workflow status is enabled
+17:28:22.295 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:28:24.429 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:28:24.735 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:28:28.561 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:28:37.176 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:28:38.189 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:28:48.559 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Workflow Enabled in CRM ReUsables class
+17:28:48.559 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - WF1CRMEditFieldWorkflow Not Enabled
+17:29:40.118 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:29:40.123 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:29:40.127 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:29:41.470 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:29:41.579 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:29:41.579 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:29:45.402 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:29:45.778 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:29:46.182 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:30:26.473 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:30:27.491 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Check Whether the workflow status is enabled
+17:30:27.491 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:30:31.748 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:30:32.003 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:30:37.165 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:30:48.733 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:30:49.740 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:31:00.106 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Workflow Enabled in CRM ReUsables class
+17:31:12.359 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule] is selected in List
+17:31:19.414 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 9087654321 entered in  input
+17:31:19.840 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 44444444444 entered in  input
+17:31:21.458 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - checker@afasdf.com entered in  input
+17:31:22.934 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 4444444444 entered in  input
+17:31:30.730 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [Bad] is selected in List
+17:32:01.465 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+17:32:02.723 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
+17:32:03.204 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+17:32:04.521 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
+17:32:04.521 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+17:32:05.853 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
+17:32:05.853 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+17:32:07.091 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
+17:32:07.091 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: BadExpected Value is: Bad
+17:32:08.394 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
+17:32:15.072 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+17:32:16.301 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Pass
+17:32:16.305 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 44444444444Expected Value is: 44444444444
+17:32:17.522 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Pass
+17:32:17.522 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+17:32:18.753 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Pass
+17:32:18.753 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: BadExpected Value is: Bad
+17:32:20.073 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Pass
+17:32:20.073 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4444444444Expected Value is: 4444444444
+17:32:21.320 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Pass
+17:32:28.288 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:32:29.570 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Pass
+17:32:29.570 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+17:32:30.802 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Pass
+17:32:30.802 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+17:32:32.069 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Pass
+17:32:32.069 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: BadExpected Value is: Bad
+17:32:33.352 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Pass
+17:32:33.352 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4444444444Expected Value is: 4444444444
+17:32:34.604 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Pass
+17:32:34.779 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+17:32:36.020 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
+17:32:36.504 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+17:32:37.752 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Pass
+17:32:37.752 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+17:32:39.041 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Pass
+17:32:39.041 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+17:32:40.338 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Pass
+17:32:40.338 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: BadExpected Value is: Bad
+17:32:41.604 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Pass
+17:32:54.564 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:32:55.786 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Pass
+17:32:55.802 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:32:57.038 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Pass
+17:32:57.038 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Passed : Actual Value is:  Rsoft Expected Value is: rsoft
+17:32:58.288 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Pass
+17:32:58.288 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+17:32:59.555 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Pass
+17:33:06.202 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:33:07.438 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Pass
+17:33:07.438 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:33:08.734 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Pass
+17:33:08.734 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Passed : Actual Value is:  Rsoft Expected Value is: rsoft
+17:33:10.037 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Pass
+17:33:10.038 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+17:33:11.292 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Pass
+17:33:11.592 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Captured RecordId
+17:33:17.071 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:33:17.538 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Sudhakar entered in  input
+17:33:17.973 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
+17:34:00.744 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:34:02.068 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Pass
+17:34:02.068 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:34:03.345 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Pass
+17:34:03.345 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Passed : Actual Value is:  Sudhakar Expected Value is: Sudhakar
+17:34:04.616 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Pass
+17:34:04.616 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+17:34:05.919 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Pass
+17:34:12.244 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:34:13.504 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Pass
+17:34:13.504 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:34:14.755 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Pass
+17:34:14.755 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Passed : Actual Value is:  Sudhakar Expected Value is: Sudhakar
+17:34:16.033 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Pass
+17:34:16.033 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+17:34:17.304 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Pass
+17:34:20.233 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:34:20.749 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Madhan entered in  input
+17:34:21.290 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
+17:34:56.806 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Madhan MohanExpected Value is: Madhan Mohan
+17:34:58.087 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Pass
+17:34:58.103 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:34:59.422 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Pass
+17:34:59.422 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Passed : Actual Value is:  Madhan Expected Value is: Madhan
+17:35:00.675 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Pass
+17:35:00.675 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+17:35:01.971 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Pass
+17:35:08.855 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Passed : Actual Value is: Madhan MohanExpected Value is: Madhan Mohan
+17:35:10.089 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Pass
+17:35:10.089 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:35:11.355 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Pass
+17:35:11.355 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Passed : Actual Value is:  Madhan Expected Value is: Madhan
+17:35:12.622 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Pass
+17:35:12.622 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+17:35:13.905 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Pass
+17:35:22.743 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 90388 entered in  input
+17:35:25.968 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - AssignedTo Record Details Passed : Actual Value is: Madhan MohanExpected Value is: Madhan Mohan
+17:35:27.238 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - AssignedTo Record Details Pass
+17:35:27.238 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Status in Record Details Passed : Actual Value is: 0Expected Value is: 0
+17:35:28.541 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Status in Record Details Pass
+17:35:28.542 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Created By in Record Details Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:35:29.789 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Created By in Record Details Pass
+17:35:29.789 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - UserName in Record Details Passed : Actual Value is: MadhanExpected Value is: Madhan
+17:35:31.039 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - UserName in Record Details Pass
+17:35:31.039 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow Title in Record Details Passed : Actual Value is: NewTriggerNotificationExpected Value is: NewTriggerNotification
+17:35:32.340 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow Title in Record Details Pass
+17:35:32.340 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Record Id in Record Details Passed : Actual Value is: 90388Expected Value is: 90388
+17:35:33.606 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Record Id in Record Details Pass
+17:38:33.011 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:38:33.015 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:38:33.021 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:38:34.189 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:38:34.250 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:38:34.250 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:38:38.125 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:38:38.594 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:38:39.018 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:39:06.389 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:39:07.402 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Check Whether the workflow status is enabled
+17:39:07.404 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:39:10.098 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:39:10.427 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:39:13.211 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:39:21.810 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:39:22.824 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:39:33.355 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Workflow Enabled in CRM ReUsables class
+17:39:43.556 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule] is selected in List
+17:39:51.238 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 9087654321 entered in  input
+17:39:51.685 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 44444444444 entered in  input
+17:39:53.429 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - checker@afasdf.com entered in  input
+17:39:55.070 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 4444444444 entered in  input
+17:40:27.931 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+17:40:27.937 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+17:40:27.941 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+17:40:29.122 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+17:40:29.198 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 12
+17:40:29.198 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+17:40:33.419 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+17:40:33.882 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+17:40:34.342 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+17:41:01.638 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Home Page Displayed after Login Pass
+17:41:02.648 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Check Whether the workflow status is enabled
+17:41:02.652 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+17:41:05.018 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+17:41:05.244 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+17:41:08.309 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+17:41:17.172 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+17:41:18.188 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+17:41:28.687 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Workflow Enabled in CRM ReUsables class
+17:41:39.752 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule] is selected in List

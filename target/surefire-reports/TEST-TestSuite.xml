@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="378.796" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Automation\RS_CRM\target\test-classes;D:\Automation\RS_CRM\target\classes;C:\Users\sudha\.m2\repository\com\mysql\mysql-connector-j\8.2.0\mysql-connector-j-8.2.0.jar;C:\Users\sudha\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\sudha\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\sudha\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\sudha\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\sudha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\sudha\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\sudha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\sudha\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\sudha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\sudha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\sudha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\sudha\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\sudha\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\sudha\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\sudha\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\sudha\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\sudha\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\sudha\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\sudha\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sudha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sudha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sudha\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\sudha\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\sudha\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\sudha\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\sudha\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\sudha\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\sudha\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\sudha\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\sudha\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\sudha\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\sudha\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\sudha\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\sudha\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\sudha\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\sudha\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sudha\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\sudha\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="suiteXmlFile" value="testng.xml"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\sudha\AppData\Local\Temp\surefire590741510941103355\surefirebooter-20231209103818172_3.jar C:\Users\sudha\AppData\Local\Temp\surefire590741510941103355 2023-12-09T10-38-17_779-jvmRun1 surefire-20231209103818172_1tmp surefire_0-20231209103818172_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Automation\RS_CRM\target\test-classes;D:\Automation\RS_CRM\target\classes;C:\Users\sudha\.m2\repository\com\mysql\mysql-connector-j\8.2.0\mysql-connector-j-8.2.0.jar;C:\Users\sudha\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\sudha\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\sudha\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\sudha\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\sudha\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\sudha\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\sudha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\sudha\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\sudha\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\sudha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\sudha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\sudha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\sudha\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\sudha\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\sudha\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\sudha\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\sudha\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\sudha\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\sudha\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\sudha\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\sudha\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\sudha\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sudha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sudha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sudha\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\sudha\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\sudha\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\sudha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\sudha\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\sudha\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\sudha\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\sudha\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\sudha\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\sudha\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\sudha\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\sudha\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\sudha\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\sudha\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\sudha\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\sudha\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\sudha\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\sudha\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sudha\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\sudha\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sudha"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Automation\RS_CRM"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sudha\AppData\Local\Temp\surefire590741510941103355\surefirebooter-20231209103818172_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
+    <property name="user.name" value="sudha"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sudha\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sudha\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="D:\Automation\RS_CRM"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%MAVEN_HOME%\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-17\lib;D:\apache-maven-3.9.4\bin;%MAVEN_HOME%;C:\Program Files\Android\Android Studio\bin;C:\Users\sudha\AppData\Local\Android\Sdk\build-tools;C:\ProgramData\chocolatey\bin;C:\Users\sudha\AppData\Local\Android\Sdk\emulator;C:\Users\sudha\AppData\Local\Android\Sdk\tools\bin;C:\Users\sudha\AppData\Local\Android\Sdk\platform-tools;C:\Users\sudha\AppData\Roaming\nvm;%NVM_SYMLINK%;C:\Program Files\nodejs\;C:\Users\sudha\AppData\Local\Microsoft\WindowsApps;C:\Users\sudha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sudha\AppData\Local\Android\Sdk;C:\Users\sudha\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sudha\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.9+11-LTS-201"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testWFEveryTimeRecSave" classname="testCases.TC001_WF1_EveryTime_Rec_Save" time="370.925">
+    <failure message="The following asserts failed:&#10;	expected [Madhan Mohan] but found [Rsoft IT]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [Madhan Mohan] but found [Rsoft IT]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.TC001_WF1_EveryTime_Rec_Save.testWFEveryTimeRecSave(TC001_WF1_EveryTime_Rec_Save.java:220)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Before Test Method
+Before Class: 
+Test Execution on Browser: chrome
+Total rows: 1
+Cols: 8
+Module Name:  CRMEditFieldModule
+PRIYAN entered in  input
+Madhan entered in  input
+Automation@123 entered in  input
+img Exist True
+Home Page Displayed after Login Pass
+Element:ul
+List Item Size:12
+Expected item:CRMEditFieldModule1card_membership
+CRMModuleOnlyFirstSave
+1Contact_Mail
+New inventory
+1Whatshot
+CRMEditFieldModule
+[CRMEditFieldModule] is selected
+Phone Number:1234567890
+Phone number to be entered:1234567890
+1234567890 entered in  input
+Phone number entered:1234567890
+phone number entered
+Number field to be entered:12431234234
+12431234234 entered in  input
+Number field entered:12431234234
+number field entered
+input Exist True
+Email control present
+Email to be entered:sudhakar@rsoft.in
+sudhakar@rsoft.in entered in  input
+Email entered:sudhakar@rsoft.in
+Number to be entered:4123412341
+4123412341 entered in  input
+Number entered:4123412341
+Before clicking MenuItem
+span Exist True
+After clicking combobox
+Element:ul
+List Item Size:5
+Expected item:Very good1Select An Option
+1Good
+1Bad
+1Very good
+[Very good] is selected
+Expected: +91 1234567890
+Actual Module Name: CRMEditFieldModule
+Expected Module Name: CRMEditFieldModule
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+Actual raw: +91
+  1234567890
+Array size: 2
+Actual: Summary+91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Summary Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: 12431234234
+Inside CustomAssert: Expected AssignedTo:  12431234234
+Summary Number Field Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Summary Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Summary Picklist Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Summary Enter Your Number Pass
+Actual: DTView : +91 1234567890
+Actual Assigned To:Madhan Mohan
+Expected Assigned To:Madhan Mohan
+Inside CustomAssert: Actual:  AssignedTo: Madhan Mohan
+Inside CustomAssert: Expected AssignedTo:  Madhan Mohan
+Detail View Assigned To Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Detail View Phone Numer Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Detail View Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Detail View Menu Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Detail View Enter Your Number Pass
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+Current Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Current Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Window Handle: 2C8ECD66886451D111B6835C14584B1E
+Actual Module Name: CRMEditFieldModule
+Expected Module Name: CRMEditFieldModule
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+Actual raw: +91
+  1234567890
+Array size: 2
+Actual: Summary+91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Summary Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: 12431234234
+Inside CustomAssert: Expected AssignedTo:  12431234234
+Summary Number Field Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Summary Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Summary Picklist Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Summary Enter Your Number Pass
+Actual: DTView : +91 1234567890
+Actual Assigned To:Madhan Mohan
+Expected Assigned To:Madhan Mohan
+Inside CustomAssert: Actual:  AssignedTo: Madhan Mohan
+Inside CustomAssert: Expected AssignedTo:  Madhan Mohan
+Detail View Assigned To Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Detail View Phone Numer Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Detail View Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Detail View Menu Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Detail View Enter Your Number Pass
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+PRIYAN
+UserName1:SudhakarPassword1: Automation@123
+PRIYAN entered in  input
+Sudhakar entered in  input
+Automation@123 entered in  input
+Current Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Current Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Window Handle: 8E363AAF801C7277D73078A5124F987F
+Actual Module Name: CRMEditFieldModule
+Expected Module Name: CRMEditFieldModule
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+Actual raw: +91
+  1234567890
+Array size: 2
+Actual: Summary+91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Summary Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: 12431234234
+Inside CustomAssert: Expected AssignedTo:  12431234234
+Summary Number Field Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Summary Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Summary Picklist Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Summary Enter Your Number Pass
+Actual: DTView : +91 1234567890
+Actual Assigned To:Madhan Mohan
+Expected Assigned To:Madhan Mohan
+Inside CustomAssert: Actual:  AssignedTo: Madhan Mohan
+Inside CustomAssert: Expected AssignedTo:  Madhan Mohan
+Detail View Assigned To Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Detail View Phone Numer Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Detail View Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Detail View Menu Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Detail View Enter Your Number Pass
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+PRIYAN
+UserName2:rsoftPassword2: RSoft!@345
+PRIYAN entered in  input
+rsoft entered in  input
+RSoft!@345 entered in  input
+Current Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Current Window Handle: E5EA3B298B65108F97D0DFA5DCE1AA80
+Window Handle: 96EF0C9702B28816917B120812E04D43
+Actual Module Name: CRMEditFieldModule
+Expected Module Name: CRMEditFieldModule
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+Actual raw: +91
+  1234567890
+Array size: 2
+Actual: Summary+91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Summary Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: 12431234234
+Inside CustomAssert: Expected AssignedTo:  12431234234
+Summary Number Field Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Summary Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Summary Picklist Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Summary Enter Your Number Pass
+Actual: DTView : +91 1234567890
+Actual Assigned To:Rsoft IT
+Expected Assigned To:Madhan Mohan
+Inside CustomAssert: Actual:  AssignedTo: Rsoft IT
+Inside CustomAssert: Expected AssignedTo:  Madhan Mohan
+Detail View Assigned To fail
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Detail View Phone Numer Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Detail View Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Detail View Menu Item Pass
+Inside CustomAssert: Actual:  AssignedTo: 4123412341
+Inside CustomAssert: Expected AssignedTo:  4123412341
+Detail View Enter Your Number Pass
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Actual: +91 1234567890
+Inside CustomAssert: Actual:  AssignedTo: CRMEditFieldModule
+Inside CustomAssert: Expected AssignedTo:  CRMEditFieldModule
+Module Name Pass
+Inside CustomAssert: Actual:  AssignedTo: +91 1234567890
+Inside CustomAssert: Expected AssignedTo:  +91 1234567890
+Phone Number Pass
+Inside CustomAssert: Actual:  AssignedTo: sudhakar@rsoft.in
+Inside CustomAssert: Expected AssignedTo:  sudhakar@rsoft.in
+Email Pass
+Inside CustomAssert: Actual:  AssignedTo: Very good
+Inside CustomAssert: Expected AssignedTo:  Very good
+Piclist Value Pass
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 09, 2023 10:38:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+885021979
+Before node Pass
+733829033
+Before node Pass
+403900932
+Before node Pass
+743071272
+Before node Pass
+564615698
+Before node Pass
+800645291
+Before node Pass
+875100225
+Before node Pass
+303507222
+Before node Pass
+705839283
+Before node Pass
+856305956
+Before node Pass
+311679986
+Before node Pass
+323350591
+Before node Pass
+847808014
+Before node Pass
+563483670
+Before node Pass
+738342609
+Before node Pass
+578693467
+Before node Pass
+419735206
+Before node Pass
+748389028
+Before node Pass
+84003661
+Before node Pass
+610305144
+Before node Pass
+750616044
+Before node Pass
+326727737
+Before node Pass
+826432027
+Before node Pass
+108415458
+Before node Pass
+185458160
+Before node Pass
+177089869
+Before node Pass
+743279901
+Before node Pass
+226084001
+Before node Pass
+582964558
+Before node Pass
+484650135
+Before node Pass
+642112713
+Before node Pass
+128067402
+Before node Pass
+115765681
+Before node Pass
+178155922
+Before node Pass
+802303830
+Before node Pass
+358757263
+Before node Pass
+493613486
+Before node Pass
+861402490
+Before node Pass
+725037007
+Before node Pass
+517546121
+Before node Pass
+382392842
+Before node Pass
+196742118
+Before node Pass
+54163956
+Before node Pass
+562889102
+Before node Pass
+497370391
+Before node Pass
+332647165
+Before node Pass
+500292990
+Before node Pass
+27364375
+Before node Pass
+807794205
+Before node Pass
+879944058
+Before node Pass
+473238825
+Before node Pass
+515195046
+Before node Pass
+201772202
+Before node Pass
+132058340
+Before node Pass
+903842518
+Before node Pass
+70981052
+Before node Pass
+425300269
+Before node Pass
+93458417
+Before node Pass
+715174136
+Before node Pass
+753799068
+Before node Pass
+627376371
+Before node Pass
+327458116
+Before node Pass
+285260213
+Before node Pass
+724364113
+Before node Pass
+414328646
+Before node Pass
+559636191
+Before node Pass
+728731293
+Before node Pass
+154606332
+Before node Pass
+840802385
+Before node Pass
+776353259
+Before node Pass
+213164262
+Before node Pass
+298801869
+Before node Fail
+After node Fail
+542290982
+Before node Pass
+39194374
+Before node Pass
+817397976
+Before node Pass
+723306792
+Before node Pass
+344664114
+Before node Pass
+95638277
+Before node Pass
+233729308
+Before node Pass
+177978041
+Before node Pass
+169835897
+Before node Pass
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -18,10 +18,16 @@ public class AllListPage extends BasePage{
 	@FindBy(xpath="//*[@id='vertical_header_list']/li[6]/ul")
 	WebElement eleOthers;
 	
+	@FindBy(xpath="//div[text()='Notifications']")
+	WebElement eleNotifications;
+	
 	
 	//Click Methods
 	public void clickAllList() throws Exception {
 		UtilityCustomFunctions.doClick(driver,eleAllList);
+	}
+	public void clickAllNotifications() throws Exception {
+		UtilityCustomFunctions.doClick(driver,eleNotifications);
 	}
 	
 	public void clickModuleOnListAll(WebDriver driver, String sModuleName) throws Exception {

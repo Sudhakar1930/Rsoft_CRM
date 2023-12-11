@@ -1,12 +1,21 @@
 package utilities;
 
+import java.util.List;
 import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import com.aventstack.extentreports.ExtentTest;
 
+import jdk.internal.org.jline.utils.Log;
 import testBase.BaseClass;
+import pageObjects.AllListPage;
+import pageObjects.CRMSettingsPage;
 import pageObjects.DetailViewPage;
+import pageObjects.HomePage;
 import pageObjects.NotificationsPage;
+import pageObjects.WorkFlowPage;
 import utilities.UtilityCustomFunctions;
 
 public class CRMReUsables extends BaseClass {
@@ -19,13 +28,13 @@ public class CRMReUsables extends BaseClass {
 		NotificationsPage objNotfy = new NotificationsPage(driver);
 		objNotfy.clickNotificatons();
 		Thread.sleep(5000);
-		objNotfy.clickNotifyFirstMsg();
+		objNotfy.clickOpnNotifyPage();
+//		objNotfy.clickNotifyFirstMsg();
 		Thread.sleep(5000);
 		Set<String> Handles = driver.getWindowHandles();
 		for(String actual:Handles) {
 			System.out.println("Current Window Handle: " + sCurrWinHandle);
 			System.out.println("Window Handle: " + actual);
-			
 			if(!actual.equalsIgnoreCase(sCurrWinHandle)) {
 				driver.switchTo().window(actual);
 				sActualWindow = actual;
@@ -122,5 +131,120 @@ public class CRMReUsables extends BaseClass {
 		
 		
 	}
-
+	
+	public String fValNotifySummaryAndDetail(String sAssignedTo,String sUserName,String sActionTitle,ExtentTest node) throws Exception {
+		NotificationsPage objNFP = new NotificationsPage(driver);
+		
+		
+		String sStatus="0";
+		
+//		sActionTitle
+		//get Details
+		String sActDTAssignedTo = objNFP.getDTAssignedTo();
+		String sActDTStatus = objNFP.getDTStatus();
+		String sActDTSummary= objNFP.getDTSummary();
+		String sActDTTitle= objNFP.getDTTitle();
+		String sActDTModRecId= objNFP.getDTModRecId();
+		//Validations
+		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo,sAssignedTo ,"Detail View Assigned To" , node);
+		UtilityCustomFunctions.fSoftAssert(sActDTStatus,sStatus,"Detail View Status" , node);
+		UtilityCustomFunctions.fSoftAssert(sActDTSummary,sUserName,"Detail View Summary/UserName" , node);
+		UtilityCustomFunctions.fSoftAssert(sActDTTitle,sActionTitle,"Detail View Action Title" , node);
+		objNFP.clickSummaryTab();
+		//getActualSummaryDetails
+		Thread.sleep(1000);
+		String sActSMAssignedTo= objNFP.getSMAssignedTo();
+		String sActSMStatus= objNFP.getSMStatus();
+		String sActSMSummary= objNFP.getSMSummary();
+		String sActSMTitle= objNFP.getSMActionTitle();
+		//Validations
+		UtilityCustomFunctions.fSoftAssert(sAssignedTo,sActSMAssignedTo,"Summary View Assigned To" , node);
+		UtilityCustomFunctions.fSoftAssert(sStatus,sActSMStatus,"Summary View Status" , node);
+		UtilityCustomFunctions.fSoftAssert(sActSMSummary,sUserName,"Summary View User" , node);
+		UtilityCustomFunctions.fSoftAssert(sActSMTitle, sActionTitle,"Summary View Action Title" , node);
+		
+		return sActDTModRecId;
+		
+		
+		
+	}
+	
+	public void fClickSearch(String sRecordId) throws Exception {
+		AllListPage objALP = new AllListPage(driver);
+		NotificationsPage objNFP = new NotificationsPage(driver);
+		objALP.clickAllList();
+		objALP.clickAllNotifications();
+		Thread.sleep(3000);
+		objNFP.setRecordId(sRecordId);
+		objNFP.clickSearchButton();
+		
+	}
+	public void fgetTablevalues(String sAssignedTo,String sStatus,String sCreatedBy,String sUserName,String sExpTitle,String sRecordId,ExtentTest node) throws Exception {
+		NotificationsPage objNFP = new NotificationsPage(driver);
+		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
+		for(int i=2;i<=tRowCount.size();i++) {
+			System.out.println("Current Row Number: " + i);
+			List<WebElement> tColCount =tRowCount.get(i).findElements(By.tagName("td"));
+//			for(int j=0;j<=tColCount.size();j++) {
+//				System.out.println("Values Selected is:" + tColCount.get(j).getText());
+//			}
+			
+			
+			String sActAssignedTo = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+			String sActStatus = UtilityCustomFunctions.getText(driver, tColCount.get(3));
+			String sActCreatedBy = UtilityCustomFunctions.getText(driver, tColCount.get(6));
+			String sActSummary = UtilityCustomFunctions.getText(driver, tColCount.get(7));
+			String sActTitle = UtilityCustomFunctions.getText(driver, tColCount.get(8));
+			String sActModRecId = UtilityCustomFunctions.getText(driver, tColCount.get(9));
+			
+			System.out.println("Actual status: " + sActStatus);
+			System.out.println("Actual Created By: " + sActCreatedBy);
+			System.out.println("Actual Summary: " + sActSummary);
+			System.out.println("Actual Title: " + sActTitle);
+			System.out.println("Actual Record Id: " + sActModRecId);
+			
+			System.out.println("Expected status: " + sStatus);
+			System.out.println("Expected Created By: " + sCreatedBy);
+			System.out.println("Expected Summary: " + sUserName);
+			System.out.println("Expected Title: " + sExpTitle);
+			System.out.println("Expected Record Id: " + sRecordId);
+			
+			UtilityCustomFunctions.fSoftAssert(sAssignedTo,sAssignedTo,"AssignedTo Record Details" , node);
+			UtilityCustomFunctions.fSoftAssert(sActStatus,sStatus,"Status in Record Details" , node);
+			UtilityCustomFunctions.fSoftAssert(sActCreatedBy,sCreatedBy,"Created By in Record Details" , node);
+			UtilityCustomFunctions.fSoftAssert(sActSummary,sUserName,"UserName in Record Details" , node);
+			UtilityCustomFunctions.fSoftAssert(sActTitle,sExpTitle,"Workflow Title in Record Details" , node);
+			UtilityCustomFunctions.fSoftAssert(sActModRecId,sRecordId,"Record Id in Record Details" , node);
+			break;
+		}
+	}
+	
+	public boolean IsWorflowEnabled(String sModule,String sWorkflow, String sExecCondition) throws Exception {
+		
+		boolean bIsWorkflowEnabled=false;
+		HomePage objHP = new HomePage(driver);
+		CRMSettingsPage objCRMs = new CRMSettingsPage(driver);
+		WorkFlowPage objWFP = new WorkFlowPage(driver); 
+		//Click Avatar
+		BaseClass.logger.info("Clicked Avatar");
+		objHP.clickAvatar();
+		objCRMs.clickMnuCRMSetting();
+		BaseClass.logger.info("Clicked Menu CRM Setting");
+		objCRMs.clickMnuOtherSetting();
+		BaseClass.logger.info("Clicked Menu Other Setting");
+		objCRMs.clickMnuItemWorkflow();
+		BaseClass.logger.info("Clicked Menu Item Workflow");
+		
+		objWFP.clickWorkflowsList(sModule);
+		BaseClass.logger.info("Selected Module to View its Workflows");
+		Thread.sleep(10000);
+		bIsWorkflowEnabled = objWFP.checkWorkflowStatus(sModule, sWorkflow, sExecCondition);
+		BaseClass.logger.info("Is Workflow Enabled in CRM ReUsables class");
+		System.out.println("Is workflow enabled: " + bIsWorkflowEnabled);
+		return bIsWorkflowEnabled; 
+	}
+	
+	
+	
+	
 }

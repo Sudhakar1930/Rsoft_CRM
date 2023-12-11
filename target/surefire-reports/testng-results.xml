@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-09T10:38:20 IST" name="Suite" finished-at="2023-12-09T10:44:36 IST" duration-ms="376492">
+    <groups>
+    </groups>
+    <test started-at="2023-12-09T10:38:20 IST" name="chromeTest" finished-at="2023-12-09T10:44:36 IST" duration-ms="376433">
+      <class name="testCases.TC001_WF1_EveryTime_Rec_Save">
+        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC001_WF1_EveryTime_Rec_Save@7f0eb4b4]" started-at="2023-12-09T10:38:20 IST" name="testName" finished-at="2023-12-09T10:38:20 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testName -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_WF1_EveryTime_Rec_Save@7f0eb4b4]" started-at="2023-12-09T10:38:20 IST" name="setup" finished-at="2023-12-09T10:38:25 IST" duration-ms="5428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testWFEveryTimeRecSave()[pri:0, instance:testCases.TC001_WF1_EveryTime_Rec_Save@7f0eb4b4]" started-at="2023-12-09T10:38:25 IST" name="testWFEveryTimeRecSave" finished-at="2023-12-09T10:44:36 IST" duration-ms="370926" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Madhan Mohan] but found [Rsoft IT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Madhan Mohan] but found [Rsoft IT]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.TC001_WF1_EveryTime_Rec_Save.testWFEveryTimeRecSave(TC001_WF1_EveryTime_Rec_Save.java:220)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWFEveryTimeRecSave -->
+      </class> <!-- testCases.TC001_WF1_EveryTime_Rec_Save -->
+    </test> <!-- chromeTest -->
+    <test started-at="2023-12-09T10:44:36 IST" name="edgeTest" finished-at="2023-12-09T10:44:36 IST" duration-ms="0">
+      <class name="testCases.TC001_WF1_EveryTime_Rec_Save">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC001_WF1_EveryTime_Rec_Save@7f0eb4b4]" started-at="2023-12-09T10:38:19 IST" name="onStart" finished-at="2023-12-09T10:38:20 IST" duration-ms="533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@35ffe3ac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onStart -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC001_WF1_EveryTime_Rec_Save@7f0eb4b4]" started-at="2023-12-09T10:44:36 IST" name="flush" finished-at="2023-12-09T10:44:37 IST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- testCases.TC001_WF1_EveryTime_Rec_Save -->
+    </test> <!-- edgeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -52,17 +52,17 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		logger.info("Extracting DataSheet Values started...");
 		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
 		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
-		String sAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
+//		String sAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
 		String sPhoneNoumber=xlObj.getCellData("Sheet1", 1, 3);
 		String sNumberField=xlObj.getCellData("Sheet1", 1, 4);
 		String sEmail=xlObj.getCellData("Sheet1", 1, 5);
 		String sPickListItem=xlObj.getCellData("Sheet1", 1, 6);
 		String sEnterYourNumber=xlObj.getCellData("Sheet1", 1, 7);
-		String sBlock1=xlObj.getCellData("Sheet1", 1, 8);
-		String sBlock2=xlObj.getCellData("Sheet1", 1, 9);
+		String sExecutionCondition=xlObj.getCellData("Sheet1", 1, 8);
+		String sActionType=xlObj.getCellData("Sheet1", 1, 9);
+		String sActionTitle=xlObj.getCellData("Sheet1", 1, 10);
 		
-		
-		
+		String sRecordId="";
 		
 		System.out.println("Module Name:  " + sExpModuleName);
 		
@@ -78,6 +78,15 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		String sCompName =  rb.getString("companyName");
 		String sUserName =  rb.getString("userName");
 		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
+		String sUserName1 =  rb.getString("userName1");
+		String sPassword1 =  rb.getString("passWord1");
+		String sAssignedTo1 = rb.getString("AssignedTo1");
+		String sUserName2 =  rb.getString("userName2");
+		String sPassword2 =  rb.getString("passWord2");
+		String sAssignedTo2 = rb.getString("AssignedTo2");
+		
+		
 		
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
@@ -103,6 +112,17 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 			Assert.fail("Home Page Not Displayed");
 			System.out.println("Home Page Not Displayed");
 		}
+		Thread.sleep(1000);
+		boolean bIsWrkFlwStatus = false;
+		logger.info("Check Whether the workflow status is enabled");
+		bIsWrkFlwStatus =  objCRMRs.IsWorflowEnabled(sExpModuleName,sExpWorkFlowName,sExecutionCondition);
+		System.out.println("Main Workflow status: " + bIsWrkFlwStatus);
+		if(bIsWrkFlwStatus==false) {
+			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
+			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
+			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
+		}
+		
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -143,11 +163,17 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		System.out.println("Expected: "+sPhoneNoumber);
 		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
 		
-		//Notifications
+		//Notifications 1
 		String sCurrentWinHandle = driver.getWindowHandle();
 		String sNewWindowHanlde="";
 		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
+//		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
+		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo,sUserName,sActionTitle,node);
+		System.out.println("Captured Record Id:" + sRecordId);
+		xlObj.setCellData("Sheet1", 1, 11, sRecordId);
+		logger.info("Captured RecordId");
+		
+		
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
 		objHP.clickAvatar();
@@ -155,9 +181,7 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		Thread.sleep(2000);
 
 		
-//		String sCompName =  rb.getString("companyName");
-		String sUserName1 =  rb.getString("userName1");
-		String sPassword1 =  rb.getString("passWord1");
+		//Login Second User
 		System.out.println(sCompName);
 		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -180,15 +204,15 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		sCurrentWinHandle = driver.getWindowHandle();
 		sNewWindowHanlde="";
 		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
+		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo1,sUserName1,sActionTitle,node);
+//		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
 		
 		objHP.clickAvatar();
 		objHP.clickLogout();
 		//Third User
-		String sUserName2 =  rb.getString("userName2");
-		String sPassword2 =  rb.getString("passWord2");
+		
 		System.out.println(sCompName);
 		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -210,17 +234,19 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		sCurrentWinHandle = driver.getWindowHandle();
 		sNewWindowHanlde="";
 		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
+//		objCRMRs.fValModuleView(sExpModuleName,sAssignedTo,sPhoneNoumber,sNumberField,sEmail,sPickListItem,sEnterYourNumber,node);
+		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo2,sUserName2,sActionTitle,node);
+		
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
+		String sStatus = "0";
+		objCRMRs.fClickSearch(sRecordId);
+		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sUserName2,sActionTitle,sRecordId,node);
 		
 		objHP.clickAvatar();
 		objHP.clickLogout();		
 		
 		sAssertinFn.assertAll();
-		
-		
-		
 		
 	}//test
 }//class
