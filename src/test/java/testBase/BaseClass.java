@@ -53,11 +53,7 @@ public class BaseClass extends ExtentReportManager{
 	protected static File file;
 	
 	
-	public void testname(String testname, String name) {
-		test = extent.createTest(testname);
-		node = test.createNode(name);
-		extent.attachReporter(sparkReporter);
-	}
+
 	
 	//@BeforeClass(groups= {"Sanity","Regression","Master"})
 //	public void fRunBeforeTest() {
@@ -68,7 +64,7 @@ public class BaseClass extends ExtentReportManager{
 	@Parameters("browser")
 	public void setup(String br)
 	{
-		System.out.println("Before Class: " );
+		System.out.println("Before Class: ");
 		rb = ResourceBundle.getBundle("config");//Read config.properties.
 		sAssertinFn = new SoftAssert();
 		DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -280,14 +276,12 @@ public class BaseClass extends ExtentReportManager{
 			System.out.println(dec + " Pass");
 			
 			node.pass(dec, img);
-			logger.info(dec + " Pass");
 
 		}else if (status.equalsIgnoreCase("fail")) {
 			System.err.println("Before node Fail");
 			node.fail(dec, img);
 			System.err.println("After node Fail");
 			System.out.println(dec + " fail");
-			logger.info(dec + " fail");
 		}
 		}
 	

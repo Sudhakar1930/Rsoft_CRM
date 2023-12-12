@@ -219,30 +219,46 @@ public class CRMReUsables extends BaseClass {
 		}
 	}
 	
-	public boolean IsWorflowEnabled(String sModule,String sWorkflow, String sExecCondition) throws Exception {
-		
-		boolean bIsWorkflowEnabled=false;
+	public void fNavigatetoWorkflow(String sModule) throws Exception {
 		HomePage objHP = new HomePage(driver);
 		CRMSettingsPage objCRMs = new CRMSettingsPage(driver);
-		WorkFlowPage objWFP = new WorkFlowPage(driver); 
+		WorkFlowPage objWFP = new WorkFlowPage(driver);
 		//Click Avatar
 		BaseClass.logger.info("Clicked Avatar");
+		System.out.println("Clicked Avatar");
 		objHP.clickAvatar();
 		objCRMs.clickMnuCRMSetting();
 		BaseClass.logger.info("Clicked Menu CRM Setting");
+		System.out.println("Clicked Menu CRM Setting");
 		objCRMs.clickMnuOtherSetting();
 		BaseClass.logger.info("Clicked Menu Other Setting");
+		System.out.println("Clicked Menu Other Setting");
 		objCRMs.clickMnuItemWorkflow();
 		BaseClass.logger.info("Clicked Menu Item Workflow");
-		
-		objWFP.clickWorkflowsList(sModule);
+		System.out.println("Clicked Menu Item Workflow");
+		objWFP.fClickWorkflowsList(sModule);
 		BaseClass.logger.info("Selected Module to View its Workflows");
-		Thread.sleep(10000);
-		bIsWorkflowEnabled = objWFP.checkWorkflowStatus(sModule, sWorkflow, sExecCondition);
-		BaseClass.logger.info("Is Workflow Enabled in CRM ReUsables class");
-		System.out.println("Is workflow enabled: " + bIsWorkflowEnabled);
-		return bIsWorkflowEnabled; 
+		System.out.println("Selected Module to View its Workflows");
+				
 	}
+	public String IsCheckWorkflowStatus(String sModule,String sWorkflow, String sExecCondition) {
+		String sWFStatusReturn="";
+		WorkFlowPage objWFP = new WorkFlowPage(driver);
+		sWFStatusReturn = objWFP.fWorkFlowStatus(sModule, sWorkflow, sExecCondition);
+		BaseClass.logger.info(sWFStatusReturn);
+		return sWFStatusReturn;
+	}
+	public void fClickWorkFlowAndGotoTask(int iEditPos) throws Exception {
+		WorkFlowPage objWFP = new WorkFlowPage(driver);
+		objWFP.fNavigateToTask(iEditPos);
+		
+	}
+	public boolean fCheckTaskStatus(String sWorkflow,String sActionType,String sActionTitle) throws Exception {
+		boolean bTaskStatus = false;
+		WorkFlowPage objWFP = new WorkFlowPage(driver);
+		return bTaskStatus = objWFP.fValidateTaskStatus(sWorkflow, sActionType, sActionTitle);
+	}
+
 	
 	
 	

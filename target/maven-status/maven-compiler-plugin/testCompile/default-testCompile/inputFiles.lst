@@ -8,6 +8,7 @@ D:\Automation\RS_CRM\src\test\java\testCases\SimpleTest.java
 D:\Automation\RS_CRM\src\test\java\pageObjects\HomePage.java
 D:\Automation\RS_CRM\src\test\java\pageObjects\NotificationsPage.java
 D:\Automation\RS_CRM\src\test\java\pageObjects\CRMSettingsPage.java
+D:\Automation\RS_CRM\src\test\java\pageObjects\UserManagementPage.java
 D:\Automation\RS_CRM\src\test\java\pageObjects\MenuListPage.java
 D:\Automation\RS_CRM\src\test\java\pageObjects\LoginPage.java
 D:\Automation\RS_CRM\src\test\java\utilities\DB_Operations.java

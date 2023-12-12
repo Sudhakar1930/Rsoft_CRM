@@ -1,14 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 378.8 s <<< FAILURE! -- in TestSuite
-testCases.TC001_WF1_EveryTime_Rec_Save.testWFEveryTimeRecSave -- Time elapsed: 370.9 s <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 395.8 s <<< FAILURE! -- in TestSuite
+testCases.TC001_WF1_EveryTime_Rec_Save.testWFEveryTimeRecSave -- Time elapsed: 387.9 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	expected [Madhan Mohan] but found [Rsoft IT]
+	expected [rsoft] but found [Rsoft],
+	expected [rsoft] but found [Rsoft]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.TC001_WF1_EveryTime_Rec_Save.testWFEveryTimeRecSave(TC001_WF1_EveryTime_Rec_Save.java:220)
+	at testCases.TC001_WF1_EveryTime_Rec_Save.testWFEveryTimeRecSave(TC001_WF1_EveryTime_Rec_Save.java:249)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
