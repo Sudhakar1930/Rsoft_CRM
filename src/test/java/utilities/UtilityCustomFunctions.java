@@ -289,6 +289,31 @@ public class UtilityCustomFunctions extends BaseClass{
 		}
 		return isClicked;
 	}
+	public static boolean doActionClick(WebDriver webDriver, WebElement element) throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) webDriver;
+		boolean isClicked = false;
+		try {
+			js.executeScript("arguments[0].scrollIntoView(true);", element);
+			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
+			webWait.until(ExpectedConditions.elementToBeClickable(element));
+			webWait.until(ExpectedConditions.visibilityOf(element));
+//			js.executeScript("arguments[0].click();", element);
+			// BaseClass.logger.info("Clicked...." + element.getAttribute("value"));
+			// System.out.println("click element name : " +
+			// element.getAttribute("innerText"));
+
+			Actions action = new Actions(webDriver);
+			action.moveToElement(element).click().build().perform();
+
+			isClicked = true;
+		} catch (Exception ex) {
+			// Reporter.log("Exception occured while doClick event " + ex.getMessage());
+			System.out.println("Exception occured while doClick event " + ex.getMessage());
+			throw ex;
+		}
+		return isClicked;
+	}
+
 
 	/**
 	 * This method helps to get text from web element
@@ -315,6 +340,24 @@ public class UtilityCustomFunctions extends BaseClass{
 		}
 		return actualValue;
 	}
+	
+	public static String getValue(WebDriver webDriver, WebElement element) throws Exception {
+		String actualValue = null;
+		JavascriptExecutor js = (JavascriptExecutor) webDriver;
+		try {
+			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+			webWait.until(ExpectedConditions.elementToBeClickable(element));
+			webWait.until(ExpectedConditions.visibilityOf(element));
+			js.executeScript("arguments[0].scrollIntoView(true);", element);
+			actualValue = element.getAttribute("value");
+		} catch (Exception ex) {
+			// Reporter.log("Exception occured while getValue event " + ex.getMessage());
+			System.out.println("Exception occured while getValue event " + ex.getMessage());
+			// throw ex;
+		}
+		return actualValue;
+	}
+	
 
 	public static String selectFirstListItem(WebDriver driver, WebElement element) {
 		// waitForJQueryToLoad(webDriver);

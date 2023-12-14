@@ -99,6 +99,8 @@ public class WorkFlowPage extends BasePage {
 			System.out.println("Row Position: Outside If" + i);
 			if(sActModuleName.trim().equalsIgnoreCase(sModuleName) && sActWorkflowName.trim().equalsIgnoreCase(sWorkflowName) && sActExecCondition.equalsIgnoreCase(sExecCondition)){
 				System.out.println("bCurrentWFStatus:" + bCurrentWFStatus);
+				BaseClass.logger.info("Module,workflow,conditions matches");
+				BaseClass.logger.info("bCurrentWFStatus: " + bCurrentWFStatus);
 				if(bCurrentWFStatus==true) {
 					bWorkFlowEnabled = "true:"+i;
 					BaseClass.logger.info(sActWorkflowName + "Workflow enabled");
@@ -108,6 +110,9 @@ public class WorkFlowPage extends BasePage {
 			}
 			else {
 				System.out.println("bCurrentWFStatus: In else block" + bCurrentWFStatus);
+				BaseClass.logger.info("Module,workflow,conditions not matched ");
+				BaseClass.logger.info("bCurrentWFStatus: " + bCurrentWFStatus);
+				
 				if(bCurrentWFStatus==true) {
 					eleStatus.click();
 					BaseClass.logger.info(sActWorkflowName + "Workflow disabled manually");

@@ -12,11 +12,13 @@ import jdk.internal.org.jline.utils.Log;
 import testBase.BaseClass;
 import pageObjects.AllListPage;
 import pageObjects.CRMSettingsPage;
+import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
 import pageObjects.NotificationsPage;
 import pageObjects.WorkFlowPage;
 import utilities.UtilityCustomFunctions;
+import utilities.ExcelUtility;
 
 public class CRMReUsables extends BaseClass {
 
@@ -259,7 +261,179 @@ public class CRMReUsables extends BaseClass {
 		return bTaskStatus = objWFP.fValidateTaskStatus(sWorkflow, sActionType, sActionTitle);
 	}
 
+	public void fAddValuestoModulePage(String sEnv) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test" + ".xlsx" ;
+		}
+		else {
+			sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Live" + ".xlsx" ;
+		}
+		ExcelUtility xlObj = new ExcelUtility(sPath);
+		logger.info("Excel file Utility instance created");
 	
+		int iRowCount = xlObj.getRowCount("Sheet1");
+		System.out.println("Total rows: " + iRowCount);
+		logger.info("Row Count is: " + iRowCount);
+		
+	
+		int iColCount = xlObj.getCellCount("Sheet1", iRowCount);
+		System.out.println("Cols: " + iColCount);
+		logger.info("Col Count is: " + iColCount);
+					
+		logger.info("Extracting DataSheet Values started...");
+		
+		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
+		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
+		String sAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
+		String sText=xlObj.getCellData("Sheet1", 1, 3);
+		String sMobNumPrefix=xlObj.getCellData("Sheet1", 1, 4);
+		String sMobileNumber=xlObj.getCellData("Sheet1", 1, 5);
+		String sEmail=xlObj.getCellData("Sheet1", 1, 6);
+		String sPickListValue=xlObj.getCellData("Sheet1", 1, 7);
+		String sMultiComboValues=xlObj.getCellData("Sheet1", 1, 8);
+		String sCity=xlObj.getCellData("Sheet1", 1, 9);
+		String sState=xlObj.getCellData("Sheet1", 1, 10);
+		String sCountry=xlObj.getCellData("Sheet1", 1, 11);
+		String sCheckBox=xlObj.getCellData("Sheet1", 1, 12);
+		String sDate =xlObj.getCellData("Sheet1", 1, 13);
+		String sTime =xlObj.getCellData("Sheet1", 1, 14);
+		String sDateandTime =xlObj.getCellData("Sheet1", 1, 15);
+		String sRelatedModule =xlObj.getCellData("Sheet1", 1, 16);
+		String sFilePath =xlObj.getCellData("Sheet1", 1, 17);
+		String sNamePrefix =xlObj.getCellData("Sheet1", 1, 18);
+		String sName=xlObj.getCellData("Sheet1", 1, 19);
+		String sNumber=xlObj.getCellData("Sheet1", 1, 20);
+		String sCurrency=xlObj.getCellData("Sheet1", 1, 21);
+		String sUrl=xlObj.getCellData("Sheet1", 1, 22);
+		String sEnqNamePrefix = xlObj.getCellData("Sheet1", 1, 23);
+		String sEnquiry_Name=xlObj.getCellData("Sheet1", 1, 24);
+		String sEnquiry_Email=xlObj.getCellData("Sheet1", 1, 25);
+		String sEnquiry_Text=xlObj.getCellData("Sheet1", 1, 26);
+		String sEnquiry_TextArea=xlObj.getCellData("Sheet1", 1, 27);
+		String sEnquiry_Date=xlObj.getCellData("Sheet1", 1, 28);
+		String sEnquiry_PN_Prefix=xlObj.getCellData("Sheet1", 1, 29);
+		String sEnquiry_PhoneNumber=xlObj.getCellData("Sheet1", 1, 30);
+		String sEnquiry_category =xlObj.getCellData("Sheet1", 1, 31);
+		String sExecutionCondition=xlObj.getCellData("Sheet1", 1, 32);
+		String sActionType=xlObj.getCellData("Sheet1", 1, 33);
+		String sActionTitle=xlObj.getCellData("Sheet1", 1, 34);
+		String sRecordId=xlObj.getCellData("Sheet1", 1, 35);
+		String sWorkFlowPos=xlObj.getCellData("Sheet1", 1, 36);
+		
+		sRecordId="";
+		System.out.println("Module Name:  " + sExpModuleName);
+		
+		Thread.sleep(3000);
+		objCMD.clickArrayDropDown(1);
+		Thread.sleep(2000);
+		objCMD.selectListValue("Sudhakar VE");
+		objCMD.setInputValue(sExpModuleName, "text",sText);
+		Thread.sleep(1000);
+		
+		objCMD.ClickListPhonePrefix(sExpModuleName,"mobilenumber_prefix-container");
+		objCMD.selectListValue(sMobNumPrefix);
+		objCMD.setMobileNumber(sMobileNumber);
+		Thread.sleep(1000);
+		objCMD.clickArrayDropDown(3);
+		Thread.sleep(1000);
+		objCMD.setEmailValue(sExpModuleName, sEmail);
+		Thread.sleep(1000);
+		objCMD.selectListValue(sPickListValue);
+		Thread.sleep(1000);
+		objCMD.clickMultiComboBox(sMultiComboValues);
+		Thread.sleep(1000);
+		objCMD.clickArrayDropDown(4);
+		objCMD.selectListValue(sCity);
+		Thread.sleep(1000);
+		objCMD.clickArrayDropDown(5);
+		objCMD.selectListValue(sState);
+		Thread.sleep(1000);
+		objCMD.clickArrayDropDown(6);
+		objCMD.selectListValue(sCountry);
+		Thread.sleep(1000);
+		objCMD.clickArrayCheckBox(1, sCheckBox);
+		objCMD.clickDateBox(sExpModuleName, "date");
+		Thread.sleep(3000);
+		objCMD.clickTodayDate();
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "time");
+		objCMD.clickTime("2", "35");
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "datetime");
+		Thread.sleep(3000);
+		objCMD.clickTodayDate();
+		objCMD.clickDandTApply();
+		String sActDate = objCMD.fGetModuleValue(sExpModuleName, "date");
+		System.out.println("AcutalDate: " + sActDate);
+		xlObj.setCellData("Sheet1", 1, 13, sActDate);
+		
+		String sActTime= objCMD.fGetModuleValue(sExpModuleName, "time");
+		System.out.println("Time" + sActTime);
+		xlObj.setCellData("Sheet1", 1, 14, sActTime);
+		
+		String sActDateandTime= objCMD.fGetModuleValue(sExpModuleName, "datetime");
+		System.out.println("Date & Time" + sActDateandTime);
+		xlObj.setCellData("Sheet1", 1, 15, sActDateandTime);
+		
+		objCMD.setInputValue(sExpModuleName, "relatedmodule_name", sRelatedModule);
+		
+		objCMD.setUploadFile();
+//		sFileName
+//		xlObj.setCellData("Sheet1", 1, 17, sFileName);
+		
+		objCMD.clickArrayDropDown(7);
+		
+		objCMD.selectListValue(sNamePrefix);
+		
+		objCMD.setInputValue(sExpModuleName, "name", sName);
+		
+		objCMD.setInputNumber(sExpModuleName, "number", sNumber);
+		
+		objCMD.setInputValue(sExpModuleName, "currency", sCurrency);
+		
+		objCMD.setGenericInputValue("url", sExpModuleName, "url", sUrl);
+		
+		//Block B
+		
+		objCMD.clickArrayDropDown(8);
+		objCMD.selectListValue(sEnqNamePrefix);
+		
+		objCMD.setGenericInputValue("text", sExpModuleName, "enquiryname", sEnquiry_Name);
+		
+		objCMD.setGenericInputValue("email", sExpModuleName, "enquiryemail", sEnquiry_Email);
+		
+		objCMD.setGenericInputValue("text", sExpModuleName, "enquirytext", sEnquiry_Text);
+		
+		objCMD.setTextAreaValue(sExpModuleName, "enquirytextarea", sEnquiry_TextArea);
+		
+		objCMD.clickDateBox(sExpModuleName, "enquirydate");
+		
+		Thread.sleep(3000);
+		
+		objCMD.clickTodayDate();
+		
+		System.out.println("Enquiriy prefix: " + sEnquiry_PN_Prefix);
+		
+		objCMD.ClickListPhonePrefix(sExpModuleName,"enquiryphonenumber_prefix-container");
+		Thread.sleep(1000);
+		objCMD.selectListValue(sEnquiry_PN_Prefix);
+		
+		Thread.sleep(1000);
+		objCMD.setGenericInputValue("tel", sExpModuleName, "enquiryphonenumber", sEnquiry_PhoneNumber);
+		
+		objCMD.clickEnqCategory();
+		
+		objCMD.selectListValue(sEnquiry_category);
+		
+		Thread.sleep(1000);
+		
+//		objCMD.clickSave();
+		
+		
+		
+	}
 	
 	
 	
