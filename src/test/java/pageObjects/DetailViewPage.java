@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,9 @@ public class DetailViewPage extends BasePage{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	@FindBy(xpath="//div[@class='col-lg-9']/label")
+	WebElement lblSummaryAssignedTo;
+	
 	@FindBy(xpath="(//div[@class='col-md-12']//b)[1]")
 	WebElement lblPhoneNumberTitle;
 	
@@ -61,6 +65,9 @@ public class DetailViewPage extends BasePage{
 	@FindBy(xpath="(//div[@class='col-lg-10'])[6]")
 	WebElement lblEYPNDetailView;
 	
+	@FindBy(xpath="//span[contains(@class,'comment_text')]")
+	WebElement lblUploadFile;
+	
 	
 	//click Methods
 	public void clickDetailView() throws Exception {
@@ -71,6 +78,19 @@ public class DetailViewPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, tabSummary);
 	}
 	//Get Methods.
+	
+	public String getGenericTitle(int ititlePos) throws Exception {
+		String sXpath="(//div[@class='col-md-12']//b)[" + ititlePos + "]";
+		WebElement eleTitle = driver.findElement(By.xpath(sXpath));
+		return UtilityCustomFunctions.getText(driver, eleTitle);
+				
+	}
+	public String getUploadFileText() throws Exception
+	{
+		String sActValue="";
+		sActValue = UtilityCustomFunctions.getText(driver, lblUploadFile);
+		return sActValue;
+	}
 	public String getPhoneNMTitle() throws Exception {
 		String sActValue="";
 		sActValue = UtilityCustomFunctions.getText(driver, lblPhoneNumberTitle);
@@ -94,6 +114,35 @@ public class DetailViewPage extends BasePage{
 	}
 	
 	//Get Summary Details
+	public String getArraySummary(int ielePos) throws Exception {
+		String sXpath = "(//div[@class='col-lg-10'])["+ ielePos+ "]";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath));
+		return UtilityCustomFunctions.getText(driver, eleArrSummary); 
+	}
+	public String getSummaryUrl() throws Exception {
+//		String sXpath = "(//div[@class='col-lg-10'])[17]";
+		String sXpath = "//a[normalize-space()='Click Here']";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath));
+		return  eleArrSummary.getAttribute("href");
+	}
+	public String getDetailUrl() throws Exception {
+		String sXpath = "(//td[starts-with(@id, 'hide')])[19]";
+		WebElement eleArrDetail= driver.findElement(By.xpath(sXpath));
+		return  eleArrDetail.getAttribute("href");
+	}
+	
+	public String getAssignToAllSummary() throws Exception {
+		String sActValue="";
+		sActValue = UtilityCustomFunctions.getText(driver, lblSummaryAssignedTo);
+		return sActValue;
+	}
+	public String getArrayDetails(int ielePos) throws Exception {
+		String sXpath = "(//td[starts-with(@id, 'hide')])["+ ielePos+ "]";
+		WebElement eleArrDetais= driver.findElement(By.xpath(sXpath));
+		return UtilityCustomFunctions.getText(driver, eleArrDetais); 
+	}
+			
+	
 	public String getPhoneNMSummary() throws Exception{
 		String sActValue="";
 		sActValue = UtilityCustomFunctions.getText(driver, lblPhoneNumberSummary);

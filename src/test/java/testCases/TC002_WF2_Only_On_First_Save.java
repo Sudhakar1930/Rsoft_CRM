@@ -32,7 +32,7 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		
 //		String sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Live" + ".xlsx" ;
-		String sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test" + ".xlsx" ;
+		String sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test_Add" + ".xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sPath);
 		logger.info("Excel file Utility instance created");
@@ -177,6 +177,10 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		objEDT.clickModule(sExpModuleName);
 		Thread.sleep(1000);
 		objCRMRs.fAddValuestoModulePage("Test");
+		
+		objCRMRs.fValidateAllFields("Test", "Add","After New Record added",node);
+		
+		
 		
 		
 	}//@Test

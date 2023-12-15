@@ -335,7 +335,7 @@ public class UtilityCustomFunctions extends BaseClass{
 			actualValue = element.getText();
 		} catch (Exception ex) {
 			// Reporter.log("Exception occured while getValue event " + ex.getMessage());
-			System.out.println("Exception occured while getValue event " + ex.getMessage());
+			System.out.println("Exception occured while getText event " + ex.getMessage());
 			// throw ex;
 		}
 		return actualValue;
