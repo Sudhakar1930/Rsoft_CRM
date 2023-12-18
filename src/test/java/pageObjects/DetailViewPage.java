@@ -11,6 +11,16 @@ public class DetailViewPage extends BasePage{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	@FindBy(xpath="//button[normalize-space()='add']")
+	WebElement btnAddRecord;
+	
+	@FindBy(xpath="//button[text()='edit_square']")
+	WebElement btnEditRecord;
+	
+	@FindBy(xpath="//button[normalize-space()='content_copy']")
+	WebElement btnDuplicate;
+	
+	
 	@FindBy(xpath="//div[@class='col-lg-9']/label")
 	WebElement lblSummaryAssignedTo;
 	
@@ -77,6 +87,16 @@ public class DetailViewPage extends BasePage{
 	public void clickSummaryView() throws Exception {
 		UtilityCustomFunctions.doClick(driver, tabSummary);
 	}
+	public void clickAddRecord() throws Exception {
+		UtilityCustomFunctions.doActionClick(driver, btnAddRecord);
+	}
+	public void clickEditRecord() throws Exception {
+		UtilityCustomFunctions.doActionClick(driver, btnEditRecord);
+	}
+	public void clickDuplicateRecord() throws Exception {
+		UtilityCustomFunctions.doActionClick(driver, btnDuplicate);
+	}
+	
 	//Get Methods.
 	
 	public String getGenericTitle(int ititlePos) throws Exception {

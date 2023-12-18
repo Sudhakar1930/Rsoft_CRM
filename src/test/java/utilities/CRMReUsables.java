@@ -27,11 +27,15 @@ public class CRMReUsables extends BaseClass {
 	}
 
 	public String fOpenNotification(String sCurrWinHandle) throws Exception {
+		System.out.println("fOPenNotification function started in ..");
 		String sActualWindow = "";
 		NotificationsPage objNotfy = new NotificationsPage(driver);
 		objNotfy.clickNotificatons();
+		logger.info("Notification Link Clicked");
+		System.out.println("Notification link clicked");
 		Thread.sleep(5000);
 		objNotfy.clickOpnNotifyPage();
+		logger.info("Notification detail view opened");
 //		objNotfy.clickNotifyFirstMsg();
 		Thread.sleep(5000);
 		Set<String> Handles = driver.getWindowHandles();
@@ -40,6 +44,7 @@ public class CRMReUsables extends BaseClass {
 			System.out.println("Window Handle: " + actual);
 			if (!actual.equalsIgnoreCase(sCurrWinHandle)) {
 				driver.switchTo().window(actual);
+				logger.info("Switched to New Window");
 				sActualWindow = actual;
 				break;
 			}
@@ -47,7 +52,12 @@ public class CRMReUsables extends BaseClass {
 		return sActualWindow;
 
 	}
-
+	public String fgetNotificationCount() throws Exception {
+		NotificationsPage objNP = new NotificationsPage(driver);
+		String sCount = objNP.getNotificatonCount();
+		return sCount;
+				
+	}
 	public void fValModuleView(String sExpModuleName, String sAssignedTo, String sPhoneNoumber, String sNumberField,
 			String sEmail, String sPickListItem, String sEnterYourNumber, ExtentTest node) throws Exception {
 		DetailViewPage objDVP = new DetailViewPage(driver);
@@ -437,9 +447,11 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		
 		objCMD.clickSave();
+		
+		Thread.sleep(5000);
 	}
 
-	public void fValidateAllFields(String sEnv,String sType,String sMessage,ExtentTest node) throws Exception {
+	public void fValidateAllFields(String sEnv,String sType,String sMessage,String isNotify,ExtentTest node) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
@@ -468,7 +480,7 @@ public class CRMReUsables extends BaseClass {
 		logger.info("Col Count is: " + iColCount);
 					
 		logger.info("Extracting DataSheet Values started...");
-		
+		String sCurrentWinHandle = "";
 		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
 		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
 		String sAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
@@ -514,7 +526,24 @@ public class CRMReUsables extends BaseClass {
 		String sActionTitle=xlObj.getCellData("Sheet1", 1, 34);
 		String sRecordId=xlObj.getCellData("Sheet1", 1, 35);
 		String sWorkFlowPos=xlObj.getCellData("Sheet1", 1, 36);
-		
+		sCurrentWinHandle="";
+		String sNewWindowHanlde="";
+		if(isNotify.equalsIgnoreCase("Yes")){
+			sCurrentWinHandle = driver.getWindowHandle();
+			sNewWindowHanlde="";
+			NotificationsPage objNotfy = new NotificationsPage(driver);
+			objNotfy.clickNotificatons();
+			objNotfy.clickNotifyFirstMsg();
+			Thread.sleep(3000);
+			Set<String> Handles = driver.getWindowHandles();
+			for(String actual: Handles) {
+				if (!actual.equalsIgnoreCase(sCurrentWinHandle)) {
+					driver.switchTo().window(actual);
+					break;
+				}
+			}
+			
+		}//if
 		DetailViewPage objDVP = new DetailViewPage(driver);
 		String aActModuleName = objDVP.getNavBarModuleName();
 		System.out.println("Actual Module Name: " + aActModuleName);
@@ -531,7 +560,7 @@ public class CRMReUsables extends BaseClass {
 
 		//Title Validations
 		UtilityCustomFunctions.fSoftAssert(sActText, sText, "Summary Text:  " + sMessage, node);
-		UtilityCustomFunctions.fSoftAssert(sActPNTitle, sMobNumPrefix + " " + sMobileNumber, "Mobile Title: " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(sActPNTitle, sMobileNumber, "Mobile Title: " + sMessage, node);
 		UtilityCustomFunctions.fSoftAssert(sActEMTitle, sEmail, "Email: " + sMessage, node);
 		
 		objDVP.clickSummaryView();
@@ -752,7 +781,11 @@ public class CRMReUsables extends BaseClass {
 		String sActDTEnqCategory= objDVP.getArrayDetails(26).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqCategory, sEnquiry_category, "Detail View Enquiry Category:  " + sMessage, node);
 		
-			
+		if(isNotify.equalsIgnoreCase("Yes")){
+			driver.close();
+		}
+		
+		System.out.println("Inside Validate All fields: isNotify" + isNotify);
 	}
 	
 	

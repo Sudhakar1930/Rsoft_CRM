@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-15T18:35:23 IST" name="Suite" finished-at="2023-12-15T18:39:40 IST" duration-ms="257000">
+  <suite started-at="2023-12-18T17:52:10 IST" name="Suite" finished-at="2023-12-18T17:58:25 IST" duration-ms="374604">
     <groups>
     </groups>
-    <test started-at="2023-12-15T18:35:23 IST" name="chromeTest" finished-at="2023-12-15T18:39:40 IST" duration-ms="256950">
+    <test started-at="2023-12-18T17:52:10 IST" name="chromeTest" finished-at="2023-12-18T17:58:25 IST" duration-ms="374541">
       <class name="testCases.TC002_WF2_Only_On_First_Save">
-        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-15T18:35:23 IST" name="testName" finished-at="2023-12-15T18:35:23 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-18T17:52:10 IST" name="testName" finished-at="2023-12-18T17:52:10 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testName -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-15T18:35:23 IST" name="setup" finished-at="2023-12-15T18:35:29 IST" duration-ms="5578" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-18T17:52:10 IST" name="setup" finished-at="2023-12-18T17:52:16 IST" duration-ms="5510" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testWFEveryTimeRecSave()[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-15T18:35:29 IST" name="testWFEveryTimeRecSave" finished-at="2023-12-15T18:39:40 IST" duration-ms="251301" status="PASS">
+        <test-method signature="testWFEveryTimeRecSave()[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-18T17:52:16 IST" name="testWFEveryTimeRecSave" finished-at="2023-12-18T17:58:25 IST" duration-ms="368933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWFEveryTimeRecSave -->
       </class> <!-- testCases.TC002_WF2_Only_On_First_Save -->
     </test> <!-- chromeTest -->
-    <test started-at="2023-12-15T18:39:40 IST" name="edgeTest" finished-at="2023-12-15T18:39:40 IST" duration-ms="1">
+    <test started-at="2023-12-18T17:58:25 IST" name="edgeTest" finished-at="2023-12-18T17:58:25 IST" duration-ms="0">
       <class name="testCases.TC002_WF2_Only_On_First_Save">
-        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-15T18:35:22 IST" name="onStart" finished-at="2023-12-15T18:35:23 IST" duration-ms="782" status="PASS">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-18T17:52:10 IST" name="onStart" finished-at="2023-12-18T17:52:10 IST" duration-ms="666" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5bc40f5d]]>
+                <![CDATA[org.testng.TestRunner@14c7ab73]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onStart -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-15T18:39:40 IST" name="flush" finished-at="2023-12-15T18:39:41 IST" duration-ms="662" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC002_WF2_Only_On_First_Save@62ddbd7e]" started-at="2023-12-18T17:58:25 IST" name="flush" finished-at="2023-12-18T17:58:26 IST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->

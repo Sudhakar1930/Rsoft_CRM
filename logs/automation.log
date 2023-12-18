@@ -1,99 +1,296 @@
-18:35:29.163 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - ******starting WF2_Only_On_First_Save ****
-18:35:29.169 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Test Execution on Browser: chrome
-18:35:29.172 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
-18:35:30.323 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
-18:35:30.416 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 36
-18:35:30.416 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
-18:35:34.874 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
-18:35:35.309 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - rsoft entered in  input
-18:35:35.749 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - RSoft!@345 entered in  input
-18:35:59.913 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [CRMModOnlyonFirstSave] is selected in List
-18:36:07.072 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
-18:36:07.107 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
-18:36:07.154 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 36
-18:36:07.155 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
-18:36:26.440 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Sudhakar VE] is selected in List
-18:36:27.005 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Welcome to automation world entered in  input
-18:36:31.680 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+65] is selected in List
-18:36:32.106 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 3333333333 entered in  input
-18:36:34.794 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - sudhakar@rsoft.in entered in  input
-18:36:39.249 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [3] is selected in List
-18:36:49.087 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (12a19511782a3264075f45134e49eceb)] -> xpath: //li[@role='treeitem']]
-18:36:59.806 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (12a19511782a3264075f45134e49eceb)] -> xpath: //li[@role='treeitem']]
-18:37:07.692 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Kanchipuram] is selected in List
-18:37:13.045 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Tamilnadu] is selected in List
-18:37:17.575 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [India] is selected in List
-18:37:36.159 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 44444444444 entered in  input
-18:37:39.980 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Mrs.] is selected in List
-18:37:40.311 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
-18:37:40.725 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 11111111111 entered in  input
-18:37:41.024 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7,000 entered in  input
-18:37:41.486 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - http://www.google.com entered in  input
-18:37:45.088 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Prof.] is selected in List
-18:37:45.439 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - TestName1 entered in  input
-18:37:45.876 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - test@test.com entered in  input
-18:37:46.527 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Enquired about real estate entered in  input
-18:37:47.617 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Working on software and getting good salary. Looking for real estate. entered in  textarea
-18:37:56.116 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+60] is selected in List
-18:37:57.601 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7777777777 entered in  input
-18:38:01.351 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Urgent] is selected in List
-18:38:12.220 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
-18:38:12.289 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
-18:38:12.339 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 36
-18:38:12.340 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
-18:38:15.222 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Module Name : After New Record added Passed : Actual Value is: CRMModOnlyonFirstSaveExpected Value is: CRMModOnlyonFirstSave
-18:38:16.871 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Text:  After New Record added Failed : Actual Value is: Welcome to automation wor...Expected Value is: Welcome to automation world
-18:38:18.112 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Mobile Title: After New Record added Failed : Actual Value is: +65 3333333333Expected Value is: +65 +65 3333333333
-18:38:19.376 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Email: After New Record added Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-18:38:25.873 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary AssignedTo:  After New Record added Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-18:38:27.193 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Text:  After New Record added Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
-18:38:28.557 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Mobile Number:  After New Record added Passed : Actual Value is: +65 3333333333Expected Value is: +65 3333333333
-18:38:29.932 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Email :  After New Record added Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-18:38:31.302 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary PicListValue :  After New Record added Passed : Actual Value is: 3Expected Value is: 3
-18:38:32.640 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary MuultiCombo Values :  After New Record added Passed : Actual Value is: three,fourExpected Value is: three,four
-18:38:34.037 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary City:  After New Record added Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
-18:38:35.457 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary State:  After New Record added Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
-18:38:36.820 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Country:  After New Record added Passed : Actual Value is: IndiaExpected Value is: India
-18:38:38.159 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary CheckBox:  After New Record added Passed : Actual Value is: YesExpected Value is: Yes
-18:38:39.557 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Date:  After New Record added Passed : Actual Value is: 28-12-2023Expected Value is: 28-12-2023
-18:38:40.938 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Time:  After New Record added Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
-18:38:42.267 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Date & Time :  After New Record added Passed : Actual Value is: 28-12-2023 06:00 PMExpected Value is: 28-12-2023 06:00 PM
-18:38:43.650 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Related Module :  After New Record added Failed : Actual Value is: Expected Value is: 44444444444
-18:38:45.104 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary File Upload :  After New Record added Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-18:38:46.497 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Name:  After New Record added Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
-18:38:47.872 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Number:  After New Record added Passed : Actual Value is: 11111111111Expected Value is: 11111111111
-18:38:49.273 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Currency:  After New Record added Passed : Actual Value is: 7,000Expected Value is: 7,000
-18:38:50.571 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Url:  After New Record added Failed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com
-18:38:51.956 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Name:  After New Record added Failed : Actual Value is: Prof. TestNameExpected Value is: Prof. TestName1
-18:38:53.329 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Email:  After New Record added Passed : Actual Value is: test@test.comExpected Value is: test@test.com
-18:38:54.683 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Text:  After New Record added Passed : Actual Value is: Enquired about real estateExpected Value is: Enquired about real estate
-18:38:56.052 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Text Area:  After New Record added Passed : Actual Value is: Working on software and getting good salary. Looking for real estate.Expected Value is: Working on software and getting good salary. Looking for real estate.
-18:38:57.466 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Date:  After New Record added Passed : Actual Value is: 28-12-2023Expected Value is: 28-12-2023
-18:38:58.826 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Phone Number:  After New Record added Passed : Actual Value is: +60 7777777777Expected Value is: +60 7777777777
-18:39:00.159 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Category:  After New Record added Passed : Actual Value is: UrgentExpected Value is: Urgent
-18:39:04.512 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View AssignedTo:  After New Record added Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-18:39:05.860 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Text:  After New Record added Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
-18:39:07.202 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Mobile Number:  After New Record added Passed : Actual Value is: +65 3333333333Expected Value is: +65 3333333333
-18:39:08.564 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Email :  After New Record added Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-18:39:09.949 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View PicListValue :  After New Record added Passed : Actual Value is: 3Expected Value is: 3
-18:39:11.296 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View MuultiCombo Values :  After New Record added Passed : Actual Value is: three,fourExpected Value is: three,four
-18:39:12.661 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View City:  After New Record added Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
-18:39:14.074 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Stat:  After New Record added Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
-18:39:15.471 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Country:  After New Record added Passed : Actual Value is: IndiaExpected Value is: India
-18:39:16.838 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View CheckBox:  After New Record added Passed : Actual Value is: YesExpected Value is: Yes
-18:39:18.233 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Date:  After New Record added Passed : Actual Value is: 28-12-2023Expected Value is: 28-12-2023
-18:39:19.610 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Time:  After New Record added Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
-18:39:21.000 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Date & Time :  After New Record added Passed : Actual Value is: 28-12-2023 06:00 PMExpected Value is: 28-12-2023 06:00 PM
-18:39:22.331 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Related Module :  After New Record added Failed : Actual Value is: Expected Value is: 44444444444
-18:39:23.774 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View File Upload :  After New Record added Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-18:39:25.166 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Name:  After New Record added Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
-18:39:26.554 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Number:  After New Record added Passed : Actual Value is: 11111111111Expected Value is: 11111111111
-18:39:27.905 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Currency:  After New Record added Passed : Actual Value is: 7,000Expected Value is: 7,000
-18:39:29.261 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Url:  After New Record added Failed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com
-18:39:30.753 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Name:  After New Record added Failed : Actual Value is: Prof. TestNameExpected Value is: Prof. TestName1
-18:39:32.151 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Email:  After New Record added Passed : Actual Value is: test@test.comExpected Value is: test@test.com
-18:39:33.561 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Text:  After New Record added Passed : Actual Value is: Enquired about real estateExpected Value is: Enquired about real estate
-18:39:34.950 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Text Area:  After New Record added Passed : Actual Value is: Working on software and getting good salary. Looking for real estate.Expected Value is: Working on software and getting good salary. Looking for real estate.
-18:39:36.349 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Date:  After New Record added Passed : Actual Value is: 28-12-2023Expected Value is: 28-12-2023
-18:39:37.770 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Phone Number:  After New Record added Passed : Actual Value is: +60 7777777777Expected Value is: +60 7777777777
-18:39:39.173 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Category:  After New Record added Passed : Actual Value is: UrgentExpected Value is: Urgent
+17:35:11.116 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - ******starting WF2_Only_On_First_Save ****
+17:35:11.122 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Test Execution on Browser: chrome
+17:35:11.124 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:35:12.332 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:35:12.410 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 36
+17:35:12.413 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:35:17.215 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:35:17.620 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - rsoft entered in  input
+17:35:18.102 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - RSoft!@345 entered in  input
+17:35:49.967 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [CRMModOnlyonFirstSave] is selected in List
+17:35:54.997 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:35:55.039 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:35:55.089 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 36
+17:35:55.089 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:36:10.517 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Sudhakar VE] is selected in List
+17:36:11.137 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Welcome to automation world entered in  input
+17:36:15.803 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+65] is selected in List
+17:36:16.245 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 3333333333 entered in  input
+17:36:18.931 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - sudhakar@rsoft.in entered in  input
+17:36:23.442 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [3] is selected in List
+17:36:33.258 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (6823a690e7d16b74ec910ea45b474f3e)] -> xpath: //li[@role='treeitem']]
+17:36:44.041 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (6823a690e7d16b74ec910ea45b474f3e)] -> xpath: //li[@role='treeitem']]
+17:36:51.890 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Kanchipuram] is selected in List
+17:36:57.309 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Tamilnadu] is selected in List
+17:37:01.853 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [India] is selected in List
+17:37:20.623 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 44444444444 entered in  input
+17:37:24.370 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Mrs.] is selected in List
+17:37:24.727 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+17:37:25.105 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 11111111111 entered in  input
+17:37:25.450 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7,000 entered in  input
+17:37:25.942 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - http://www.google.com/ entered in  input
+17:37:29.578 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Prof.] is selected in List
+17:37:29.987 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - TestNames entered in  input
+17:37:30.423 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - test@test.com entered in  input
+17:37:31.005 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Enquired about real estate entered in  input
+17:37:32.116 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Working on software and getting good salary. Looking for real estate. entered in  textarea
+17:37:40.641 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+60] is selected in List
+17:37:42.156 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7777777777 entered in  input
+17:37:45.834 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Urgent] is selected in List
+17:38:11.204 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification Link Clicked
+17:38:16.500 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification detail view opened
+17:38:21.555 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Switched to New Window
+17:38:23.801 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:38:25.067 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:38:26.386 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Summary/UserName Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:38:27.660 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:38:35.531 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:38:36.793 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:38:38.055 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:38:39.312 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:38:40.611 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Captured RecordId for User 190990
+17:38:45.416 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:38:45.818 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+17:38:46.326 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Automation@123 entered in  input
+17:39:13.120 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Before 2nd User Validate all test
+17:39:13.125 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:39:13.160 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:39:13.205 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 39
+17:39:13.205 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:41:50.585 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - ******starting WF2_Only_On_First_Save ****
+17:41:50.591 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Test Execution on Browser: chrome
+17:41:50.593 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:41:51.833 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:41:51.932 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 39
+17:41:51.934 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:41:56.960 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:41:57.352 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - rsoft entered in  input
+17:41:57.790 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - RSoft!@345 entered in  input
+17:42:30.239 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [CRMModOnlyonFirstSave] is selected in List
+17:42:36.335 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:42:36.400 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:42:36.468 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 39
+17:42:36.468 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:42:52.712 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Sudhakar VE] is selected in List
+17:42:53.318 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Welcome to automation world entered in  input
+17:42:57.952 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+65] is selected in List
+17:42:58.394 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 3333333333 entered in  input
+17:43:01.041 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - sudhakar@rsoft.in entered in  input
+17:43:05.534 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [3] is selected in List
+17:43:15.309 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (c241dd3f8d2a8e91f955f6ae8b55cb01)] -> xpath: //li[@role='treeitem']]
+17:43:25.959 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (c241dd3f8d2a8e91f955f6ae8b55cb01)] -> xpath: //li[@role='treeitem']]
+17:43:33.800 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Kanchipuram] is selected in List
+17:43:39.351 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Tamilnadu] is selected in List
+17:43:43.836 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [India] is selected in List
+17:44:02.778 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 44444444444 entered in  input
+17:44:06.444 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Mrs.] is selected in List
+17:44:06.839 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+17:44:07.223 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 11111111111 entered in  input
+17:44:07.515 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7,000 entered in  input
+17:44:08.001 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - http://www.google.com/ entered in  input
+17:44:11.611 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Prof.] is selected in List
+17:44:12.071 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - TestNames entered in  input
+17:44:12.478 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - test@test.com entered in  input
+17:44:13.043 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Enquired about real estate entered in  input
+17:44:14.160 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Working on software and getting good salary. Looking for real estate. entered in  textarea
+17:44:22.648 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+60] is selected in List
+17:44:24.128 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7777777777 entered in  input
+17:44:27.878 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Urgent] is selected in List
+17:44:57.097 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification Link Clicked
+17:45:02.367 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification detail view opened
+17:45:07.804 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Switched to New Window
+17:45:13.860 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:45:15.108 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:45:16.391 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Summary/UserName Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:45:17.642 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:45:27.942 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:45:29.205 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:45:30.423 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:45:31.674 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:45:33.026 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Captured RecordId for User 191003
+17:45:40.806 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:45:41.221 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+17:45:41.671 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Automation@123 entered in  input
+17:46:11.337 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Before 2nd User Validate all test
+17:46:11.338 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:46:11.359 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:46:11.394 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 39
+17:46:11.394 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:46:19.113 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Module Name : Add-2nd User Passed : Actual Value is: CRMModOnlyonFirstSaveExpected Value is: CRMModOnlyonFirstSave
+17:46:20.794 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Text:  Add-2nd User Failed : Actual Value is: Welcome to automation wor...Expected Value is: Welcome to automation world
+17:46:22.245 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Mobile Title: Add-2nd User Passed : Actual Value is: +65 3333333333Expected Value is: +65 3333333333
+17:46:23.524 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Email: Add-2nd User Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
+17:46:31.478 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary AssignedTo:  Add-2nd User Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:46:32.794 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Text:  Add-2nd User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:46:34.155 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Mobile Number:  Add-2nd User Passed : Actual Value is: +65 3333333333Expected Value is: +65 3333333333
+17:46:35.517 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Email :  Add-2nd User Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
+17:46:36.883 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary PicListValue :  Add-2nd User Passed : Actual Value is: 3Expected Value is: 3
+17:46:38.234 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary MuultiCombo Values :  Add-2nd User Passed : Actual Value is: three,fourExpected Value is: three,four
+17:46:39.576 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary City:  Add-2nd User Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
+17:46:40.896 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary State:  Add-2nd User Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+17:46:42.268 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Country:  Add-2nd User Passed : Actual Value is: IndiaExpected Value is: India
+17:46:43.680 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary CheckBox:  Add-2nd User Passed : Actual Value is: YesExpected Value is: Yes
+17:46:45.043 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Date:  Add-2nd User Failed : Actual Value is: 2023-12-28Expected Value is: 28-12-2023
+17:46:46.392 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Time:  Add-2nd User Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
+17:46:47.726 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Date & Time :  Add-2nd User Failed : Actual Value is: 2023-12-28 05:00 PMExpected Value is: 28-12-2023 05:00 PM
+17:46:49.091 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Related Module :  Add-2nd User Failed : Actual Value is: Expected Value is: 44444444444
+17:46:50.517 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary File Upload :  Add-2nd User Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+17:46:51.944 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Name:  Add-2nd User Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
+17:46:53.333 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Number:  Add-2nd User Passed : Actual Value is: 11111111111Expected Value is: 11111111111
+17:46:54.697 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Currency:  Add-2nd User Failed : Actual Value is: 7000Expected Value is: 7,000
+17:46:56.005 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Url:  Add-2nd User Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+17:46:57.382 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Name:  Add-2nd User Passed : Actual Value is: Prof. TestNamesExpected Value is: Prof. TestNames
+17:46:58.708 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Email:  Add-2nd User Passed : Actual Value is: test@test.comExpected Value is: test@test.com
+17:47:00.074 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Text:  Add-2nd User Passed : Actual Value is: Enquired about real estateExpected Value is: Enquired about real estate
+17:47:01.408 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Text Area:  Add-2nd User Passed : Actual Value is: Working on software and getting good salary. Looking for real estate.Expected Value is: Working on software and getting good salary. Looking for real estate.
+17:47:02.757 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Date:  Add-2nd User Failed : Actual Value is: 2023-12-28Expected Value is: 28-12-2023
+17:47:04.091 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Phone Number:  Add-2nd User Passed : Actual Value is: +60 7777777777Expected Value is: +60 7777777777
+17:47:05.443 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary Enquiry Category:  Add-2nd User Passed : Actual Value is: UrgentExpected Value is: Urgent
+17:47:11.684 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View AssignedTo:  Add-2nd User Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:47:13.057 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Text:  Add-2nd User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:47:14.393 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Mobile Number:  Add-2nd User Passed : Actual Value is: +65 3333333333Expected Value is: +65 3333333333
+17:47:15.742 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Email :  Add-2nd User Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
+17:47:17.076 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View PicListValue :  Add-2nd User Passed : Actual Value is: 3Expected Value is: 3
+17:47:18.439 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View MuultiCombo Values :  Add-2nd User Passed : Actual Value is: three,fourExpected Value is: three,four
+17:47:19.793 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View City:  Add-2nd User Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
+17:47:21.175 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Stat:  Add-2nd User Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+17:47:22.532 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Country:  Add-2nd User Passed : Actual Value is: IndiaExpected Value is: India
+17:47:23.857 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View CheckBox:  Add-2nd User Passed : Actual Value is: YesExpected Value is: Yes
+17:47:25.257 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Date:  Add-2nd User Failed : Actual Value is: 2023-12-28Expected Value is: 28-12-2023
+17:47:26.623 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Time:  Add-2nd User Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
+17:47:27.993 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Date & Time :  Add-2nd User Failed : Actual Value is: 2023-12-28 05:00 PMExpected Value is: 28-12-2023 05:00 PM
+17:47:29.373 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Related Module :  Add-2nd User Failed : Actual Value is: Expected Value is: 44444444444
+17:47:30.801 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View File Upload :  Add-2nd User Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+17:47:32.133 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Name:  Add-2nd User Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
+17:47:33.465 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Number:  Add-2nd User Passed : Actual Value is: 11111111111Expected Value is: 11111111111
+17:47:34.808 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Currency:  Add-2nd User Failed : Actual Value is: 7000Expected Value is: 7,000
+17:47:36.078 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Url:  Add-2nd User Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+17:47:37.398 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Name:  Add-2nd User Passed : Actual Value is: Prof. TestNamesExpected Value is: Prof. TestNames
+17:47:38.856 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Email:  Add-2nd User Passed : Actual Value is: test@test.comExpected Value is: test@test.com
+17:47:40.379 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Text:  Add-2nd User Passed : Actual Value is: Enquired about real estateExpected Value is: Enquired about real estate
+17:47:41.758 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Text Area:  Add-2nd User Passed : Actual Value is: Working on software and getting good salary. Looking for real estate.Expected Value is: Working on software and getting good salary. Looking for real estate.
+17:47:43.107 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Date:  Add-2nd User Failed : Actual Value is: 2023-12-28Expected Value is: 28-12-2023
+17:47:44.507 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Phone Number:  Add-2nd User Passed : Actual Value is: +60 7777777777Expected Value is: +60 7777777777
+17:47:45.839 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Enquiry Category:  Add-2nd User Passed : Actual Value is: UrgentExpected Value is: Urgent
+17:47:47.176 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Second User:SudhakarModule data  validation done
+17:52:16.463 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - ******starting WF2_Only_On_First_Save ****
+17:52:16.472 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Test Execution on Browser: chrome
+17:52:16.475 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:52:17.759 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:52:17.859 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 39
+17:52:17.860 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:52:24.652 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:52:25.064 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - rsoft entered in  input
+17:52:25.532 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - RSoft!@345 entered in  input
+17:53:01.789 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [CRMModOnlyonFirstSave] is selected in List
+17:53:06.369 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+17:53:06.427 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+17:53:06.472 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 39
+17:53:06.472 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+17:53:24.023 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Sudhakar VE] is selected in List
+17:53:24.627 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Welcome to automation world entered in  input
+17:53:29.236 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+65] is selected in List
+17:53:29.682 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 3333333333 entered in  input
+17:53:32.424 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - sudhakar@rsoft.in entered in  input
+17:53:36.893 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [3] is selected in List
+17:53:46.684 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (1de8fc71176abb13180c40079800270e)] -> xpath: //li[@role='treeitem']]
+17:53:57.435 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (1de8fc71176abb13180c40079800270e)] -> xpath: //li[@role='treeitem']]
+17:54:05.337 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Kanchipuram] is selected in List
+17:54:10.823 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Tamilnadu] is selected in List
+17:54:15.356 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [India] is selected in List
+17:54:34.032 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 44444444444 entered in  input
+17:54:37.954 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Mrs.] is selected in List
+17:54:38.288 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+17:54:38.672 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 11111111111 entered in  input
+17:54:38.953 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7,000 entered in  input
+17:54:39.466 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - http://www.google.com/ entered in  input
+17:54:43.089 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Prof.] is selected in List
+17:54:43.503 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - TestNames entered in  input
+17:54:43.936 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - test@test.com entered in  input
+17:54:44.565 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Enquired about real estate entered in  input
+17:54:45.684 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Working on software and getting good salary. Looking for real estate. entered in  textarea
+17:54:54.288 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+60] is selected in List
+17:54:55.785 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7777777777 entered in  input
+17:54:59.516 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Urgent] is selected in List
+17:55:24.719 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification Link Clicked
+17:55:30.063 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification detail view opened
+17:55:35.162 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Switched to New Window
+17:55:41.531 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:55:42.813 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:55:44.131 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Summary/UserName Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:55:45.400 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:55:53.430 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+17:55:54.681 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:55:55.963 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:55:57.217 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:55:58.521 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Captured RecordId for User 191020
+17:56:06.863 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:56:07.244 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+17:56:07.729 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Automation@123 entered in  input
+17:56:40.764 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Before 2nd User Validate all test
+17:56:40.964 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification Link Clicked
+17:56:46.290 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification detail view opened
+17:56:52.002 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Switched to New Window
+17:56:55.713 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Assigned To Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:56:56.964 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:56:58.248 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Summary/UserName Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:56:59.502 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:57:08.926 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Assigned To Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:57:10.144 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:57:11.385 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:57:12.836 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:57:14.171 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Captured RecordId for User 291020
+17:57:21.382 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+17:57:21.746 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Madhan entered in  input
+17:57:22.195 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Automation@123 entered in  input
+17:57:45.675 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification Link Clicked
+17:57:51.027 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Notification detail view opened
+17:57:56.410 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Switched to New Window
+17:58:00.189 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Assigned To Failed : Actual Value is: Madhan MohanExpected Value is: Sudhakar VE
+17:58:01.471 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+17:58:02.707 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Summary/UserName Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:58:03.989 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Detail View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:58:15.309 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Assigned To Failed : Actual Value is: Sudhakar VEExpected Value is: Madhan Mohan
+17:58:16.539 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+17:58:17.814 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View User Passed : Actual Value is: Welcome to automation worldExpected Value is: Welcome to automation world
+17:58:19.057 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Summary View Action Title Passed : Actual Value is: TriggerFirstSaveExpected Value is: TriggerFirstSave
+17:58:20.357 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Captured RecordId for User 391020
+18:45:16.562 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - ******starting WF2_Only_On_First_Save ****
+18:45:16.567 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Test Execution on Browser: chrome
+18:45:16.570 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+18:45:17.796 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+18:45:17.899 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 40
+18:45:17.899 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+18:45:23.303 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - PRIYAN entered in  input
+18:45:23.820 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - rsoft entered in  input
+18:45:24.319 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - RSoft!@345 entered in  input
+18:45:55.811 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [CRMModOnlyonFirstSave] is selected in List
+18:45:59.689 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Excel file Utility instance created
+18:45:59.745 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Row Count is: 1
+18:45:59.777 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Col Count is: 40
+18:45:59.777 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Extracting DataSheet Values started...
+18:46:15.007 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Sudhakar VE] is selected in List
+18:46:15.621 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Welcome to automation world entered in  input
+18:46:20.256 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+65] is selected in List
+18:46:20.719 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 3333333333 entered in  input
+18:46:23.378 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - sudhakar@rsoft.in entered in  input
+18:46:27.857 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [3] is selected in List
+18:46:37.687 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (6f8c0e25ec807f58e86c55491f1e1682)] -> xpath: //li[@role='treeitem']]
+18:46:48.415 [main] INFO  testCases.TC002_WF2_Only_On_First_Save -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (6f8c0e25ec807f58e86c55491f1e1682)] -> xpath: //li[@role='treeitem']]
+18:46:56.196 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Kanchipuram] is selected in List
+18:47:01.614 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Tamilnadu] is selected in List
+18:47:06.114 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [India] is selected in List
+18:47:24.755 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 44444444444 entered in  input
+18:47:28.565 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Mrs.] is selected in List
+18:47:28.913 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Sudhakar entered in  input
+18:47:29.289 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 11111111111 entered in  input
+18:47:29.576 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7,000 entered in  input
+18:47:30.072 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - http://www.google.com/ entered in  input
+18:47:33.687 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Prof.] is selected in List
+18:47:34.091 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - TestNames entered in  input
+18:47:34.536 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - test@test.com entered in  input
+18:47:35.142 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Enquired about real estate entered in  input
+18:47:36.242 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - Working on software and getting good salary. Looking for real estate. entered in  textarea
+18:47:45.415 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [+60] is selected in List
+18:47:46.927 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - 7777777777 entered in  input
+18:47:50.713 [main] INFO  testCases.TC002_WF2_Only_On_First_Save - [Urgent] is selected in List
