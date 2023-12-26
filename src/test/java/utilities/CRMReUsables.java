@@ -3,6 +3,7 @@ package utilities;
 import java.util.List;
 import java.util.Set;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -27,8 +28,10 @@ public class CRMReUsables extends BaseClass {
 	}
 
 	public String fOpenNotification(String sCurrWinHandle) throws Exception {
-		System.out.println("fOPenNotification function started in ..");
 		String sActualWindow = "";
+		try {
+		System.out.println("fOPenNotification function started in ..");
+		
 		NotificationsPage objNotfy = new NotificationsPage(driver);
 		objNotfy.clickNotificatons();
 		logger.info("Notification Link Clicked");
@@ -48,6 +51,9 @@ public class CRMReUsables extends BaseClass {
 				sActualWindow = actual;
 				break;
 			}
+		}
+		}catch(Exception e) {
+			Assert.fail("Notification Failed opening");
 		}
 		return sActualWindow;
 
@@ -257,6 +263,7 @@ public class CRMReUsables extends BaseClass {
 	public String IsCheckWorkflowStatus(String sModule, String sWorkflow, String sExecCondition) {
 		String sWFStatusReturn = "";
 		WorkFlowPage objWFP = new WorkFlowPage(driver);
+	
 		sWFStatusReturn = objWFP.fWorkFlowStatus(sModule, sWorkflow, sExecCondition);
 		BaseClass.logger.info(sWFStatusReturn);
 		return sWFStatusReturn;
@@ -274,66 +281,80 @@ public class CRMReUsables extends BaseClass {
 		return bTaskStatus = objWFP.fValidateTaskStatus(sWorkflow, sActionType, sActionTitle);
 	}
 
-	public void fAddValuestoModulePage(String sEnv) throws Exception {
+	public void fAddValuestoModulePage(String sEnv,String sExcelName) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
-			sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test_Add" + ".xlsx" ;
+			sPath=".\\testData\\"+ sExcelName +"Test.xlsx";
 		}
 		else {
-			sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Live" + ".xlsx" ;
+			sPath=".\\testData\\" + sExcelName +"Live.xlsx";
 		}
-		ExcelUtility xlObj = new ExcelUtility(sPath);
+		ExcelUtility xlAddObj = new ExcelUtility(sPath);
 		logger.info("Excel file Utility instance created");
 	
-		int iRowCount = xlObj.getRowCount("Sheet1");
+		int iRowCount = xlAddObj.getRowCount("Sheet1");
 		System.out.println("Total rows: " + iRowCount);
 		logger.info("Row Count is: " + iRowCount);
 		
 	
-		int iColCount = xlObj.getCellCount("Sheet1", iRowCount);
+		int iColCount = xlAddObj.getCellCount("Sheet1", iRowCount);
 		System.out.println("Cols: " + iColCount);
 		logger.info("Col Count is: " + iColCount);
 					
 		logger.info("Extracting DataSheet Values started...");
 		
-		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
-		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
-		String sAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
-		String sText=xlObj.getCellData("Sheet1", 1, 3);
-		String sMobNumPrefix=xlObj.getCellData("Sheet1", 1, 4);
-		String sMobileNumber=xlObj.getCellData("Sheet1", 1, 5);
-		String sEmail=xlObj.getCellData("Sheet1", 1, 6);
-		String sPickListValue=xlObj.getCellData("Sheet1", 1, 7);
-		String sMultiComboValues=xlObj.getCellData("Sheet1", 1, 8);
-		String sCity=xlObj.getCellData("Sheet1", 1, 9);
-		String sState=xlObj.getCellData("Sheet1", 1, 10);
-		String sCountry=xlObj.getCellData("Sheet1", 1, 11);
-		String sCheckBox=xlObj.getCellData("Sheet1", 1, 12);
-		String sDate =xlObj.getCellData("Sheet1", 1, 13);
-		String sTime =xlObj.getCellData("Sheet1", 1, 14);
-		String sDateandTime =xlObj.getCellData("Sheet1", 1, 15);
-		String sRelatedModule =xlObj.getCellData("Sheet1", 1, 16);
-		String sFilePath =xlObj.getCellData("Sheet1", 1, 17);
-		String sNamePrefix =xlObj.getCellData("Sheet1", 1, 18);
-		String sName=xlObj.getCellData("Sheet1", 1, 19);
-		String sNumber=xlObj.getCellData("Sheet1", 1, 20);
-		String sCurrency=xlObj.getCellData("Sheet1", 1, 21);
-		String sUrl=xlObj.getCellData("Sheet1", 1, 22);
-		String sEnqNamePrefix = xlObj.getCellData("Sheet1", 1, 23);
-		String sEnquiry_Name=xlObj.getCellData("Sheet1", 1, 24);
-		String sEnquiry_Email=xlObj.getCellData("Sheet1", 1, 25);
-		String sEnquiry_Text=xlObj.getCellData("Sheet1", 1, 26);
-		String sEnquiry_TextArea=xlObj.getCellData("Sheet1", 1, 27);
-		String sEnquiry_Date=xlObj.getCellData("Sheet1", 1, 28);
-		String sEnquiry_PN_Prefix=xlObj.getCellData("Sheet1", 1, 29);
-		String sEnquiry_PhoneNumber=xlObj.getCellData("Sheet1", 1, 30);
-		String sEnquiry_category =xlObj.getCellData("Sheet1", 1, 31);
-		String sExecutionCondition=xlObj.getCellData("Sheet1", 1, 32);
-		String sActionType=xlObj.getCellData("Sheet1", 1, 33);
-		String sActionTitle=xlObj.getCellData("Sheet1", 1, 34);
-		String sRecordId=xlObj.getCellData("Sheet1", 1, 35);
-		String sWorkFlowPos=xlObj.getCellData("Sheet1", 1, 36);
+		String sExpModuleName = xlAddObj.getCellData("Sheet1", 1, 0);
+		String sExpWorkFlowName = xlAddObj.getCellData("Sheet1", 1, 1);
+		String sAssignedTo = xlAddObj.getCellData("Sheet1", 1, 2);
+		String sText=xlAddObj.getCellData("Sheet1", 1, 3);
+		String sMobNumPrefix=xlAddObj.getCellData("Sheet1", 1, 4);
+		String sMobileNumber=xlAddObj.getCellData("Sheet1", 1, 5);
+		String sEmail=xlAddObj.getCellData("Sheet1", 1, 6);
+		String sPickListValue=xlAddObj.getCellData("Sheet1", 1, 7);
+		String sMultiComboValues=xlAddObj.getCellData("Sheet1", 1, 8);
+		String sCity=xlAddObj.getCellData("Sheet1", 1, 9);
+		String sState=xlAddObj.getCellData("Sheet1", 1, 10);
+		String sCountry=xlAddObj.getCellData("Sheet1", 1, 11);
+		String sCheckBox=xlAddObj.getCellData("Sheet1", 1, 12);
+		String sDate =xlAddObj.getCellData("Sheet1", 1, 13);
+		String sTime =xlAddObj.getCellData("Sheet1", 1, 14);
+		String sDateandTime =xlAddObj.getCellData("Sheet1", 1, 15);
+		String sRelatedModule =xlAddObj.getCellData("Sheet1", 1, 16);
+		String sFilePath =xlAddObj.getCellData("Sheet1", 1, 17);
+		String sNamePrefix =xlAddObj.getCellData("Sheet1", 1, 18);
+		String sName=xlAddObj.getCellData("Sheet1", 1, 19);
+		String sNumber=xlAddObj.getCellData("Sheet1", 1, 20);
+		String sCurrency=xlAddObj.getCellData("Sheet1", 1, 21);
+		String sUrl=xlAddObj.getCellData("Sheet1", 1, 22);
+		String sEnqNamePrefix = xlAddObj.getCellData("Sheet1", 1, 23);
+		String sEnquiry_Name=xlAddObj.getCellData("Sheet1", 1, 24);
+		String sEnquiry_Email=xlAddObj.getCellData("Sheet1", 1, 25);
+		String sEnquiry_Text=xlAddObj.getCellData("Sheet1", 1, 26);
+		String sEnquiry_TextArea=xlAddObj.getCellData("Sheet1", 1, 27);
+		String sEnquiry_Date=xlAddObj.getCellData("Sheet1", 1, 28);
+		String sEnquiry_PN_Prefix=xlAddObj.getCellData("Sheet1", 1, 29);
+		String sEnquiry_PhoneNumber=xlAddObj.getCellData("Sheet1", 1, 30);
+		String sEnquiry_category =xlAddObj.getCellData("Sheet1", 1, 31);
+		String sExecutionCondition=xlAddObj.getCellData("Sheet1", 1, 32);
+		String sActionType=xlAddObj.getCellData("Sheet1", 1, 33);
+		String sActionTitle=xlAddObj.getCellData("Sheet1", 1, 34);
+		String sRecordId=xlAddObj.getCellData("Sheet1", 1, 35);
+		String sWorkFlowPos=xlAddObj.getCellData("Sheet1", 1, 36);
+		String sUser1NotifyCount=xlAddObj.getCellData("Sheet1", 1, 37); 
+		String sUser2NotifyCount=xlAddObj.getCellData("Sheet1", 1, 38);
+		String sUser3NotifyCount=xlAddObj.getCellData("Sheet1", 1, 39);
+		String sUser2RecordId=xlAddObj.getCellData("Sheet1", 1, 40);
+		String sUser3RecordId=xlAddObj.getCellData("Sheet1", 1, 41);
+		String sDisplayModuleName=xlAddObj.getCellData("Sheet1", 1, 42);
+		String sEditIndText=xlAddObj.getCellData("Sheet1", 1, 43);
+		String sLead_PN_Prefix=xlAddObj.getCellData("Sheet1", 1, 44);
+		String sLead_PN=xlAddObj.getCellData("Sheet1", 1, 45);
+		String sLead_Email=xlAddObj.getCellData("Sheet1", 1, 46);
+		String sLead_Text=xlAddObj.getCellData("Sheet1", 1, 47);
+		String sSales_PN_Prefix=xlAddObj.getCellData("Sheet1", 1, 48);
+		String sSales_PN=xlAddObj.getCellData("Sheet1", 1, 49);
+		String sSales_Email=xlAddObj.getCellData("Sheet1", 1, 50);
 		
 		sRecordId="";
 		System.out.println("Module Name:  " + sExpModuleName);
@@ -341,7 +362,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(3000);
 		objCMD.clickArrayDropDown(1);
 		Thread.sleep(2000);
-		objCMD.selectListValue("Sudhakar VE");
+		objCMD.selectListValue(sAssignedTo);
 		objCMD.setInputValue(sExpModuleName, "text",sText);
 		Thread.sleep(1000);
 		
@@ -380,21 +401,21 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDandTApply();
 		String sActDate = objCMD.fGetModuleValue(sExpModuleName, "date");
 		System.out.println("AcutalDate: " + sActDate);
-		xlObj.setCellData("Sheet1", 1, 13, sActDate);
+		xlAddObj.setCellData("Sheet1", 1, 13, sActDate);
 		
 		String sActTime= objCMD.fGetModuleValue(sExpModuleName, "time");
 		System.out.println("Time" + sActTime);
-		xlObj.setCellData("Sheet1", 1, 14, sActTime);
+		xlAddObj.setCellData("Sheet1", 1, 14, sActTime);
 		
 		String sActDateandTime= objCMD.fGetModuleValue(sExpModuleName, "datetime");
 		System.out.println("Date & Time" + sActDateandTime);
-		xlObj.setCellData("Sheet1", 1, 15, sActDateandTime);
+		xlAddObj.setCellData("Sheet1", 1, 15, sActDateandTime);
 		
 		objCMD.setInputValue(sExpModuleName, "relatedmodule_name", sRelatedModule);
 		
 		objCMD.setUploadFile();
 //		sFileName
-//		xlObj.setCellData("Sheet1", 1, 17, sFileName);
+//		xlAddObj.setCellData("Sheet1", 1, 17, sFileName);
 		
 		objCMD.clickArrayDropDown(7);
 		
@@ -428,7 +449,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickTodayDate();
 		String sActEnquiryDate = objCMD.fGetModuleValue(sExpModuleName, "enquirydate");
 		System.out.println("AcutalDate: " + sActEnquiryDate);
-		xlObj.setCellData("Sheet1", 1, 28, sActEnquiryDate);
+		xlAddObj.setCellData("Sheet1", 1, 28, sActEnquiryDate);
 		
 		
 		System.out.println("Enquiriy prefix: " + sEnquiry_PN_Prefix);
@@ -446,86 +467,119 @@ public class CRMReUsables extends BaseClass {
 		
 		Thread.sleep(1000);
 		
+		//Lead PhoneNumber prefix
+		objCMD.ClickListPhonePrefix(sExpModuleName,"leadphonenumber_prefix-container");
+		Thread.sleep(1000);
+		objCMD.selectListValue(sLead_PN_Prefix);
+		Thread.sleep(1000);
+		objCMD.setGenericInputValue("tel", sExpModuleName, "leadphonenumber", sLead_PN);
+		
+		//Lead Email
+		objCMD.setGenericInputValue("email", sExpModuleName, "leademail", sLead_Email);
+		
+		//Lead Text
+		objCMD.setGenericInputValue("text", sExpModuleName, "leadtext", sLead_Text);
+		
+		//Sales PN Prefix
+		objCMD.ClickListPhonePrefix(sExpModuleName,"salesphonenumber_prefix-container");
+		Thread.sleep(1000);
+		objCMD.selectListValue(sSales_PN_Prefix);
+		Thread.sleep(1000);
+		objCMD.setGenericInputValue("tel", sExpModuleName, "salesphonenumber", sSales_PN);
+		
+		//Sales Email
+		objCMD.setGenericInputValue("email", sExpModuleName, "salesemail", sSales_Email);
+		Thread.sleep(1000);		
+		
 		objCMD.clickSave();
 		
 		Thread.sleep(5000);
 	}
 
-	public void fValidateAllFields(String sEnv,String sType,String sMessage,String isNotify,ExtentTest node) throws Exception {
+	public void fValidateAllFields(String sEnv,String sExcelName,String sMessage,String isNotify,ExtentTest node) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
-			if(sType.equalsIgnoreCase("Add")) {
-				sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test_Add" + ".xlsx" ;	
-			}
-			else {
-				sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test_Edit" + ".xlsx" ;
-			}
-			
+			sPath=".\\testData\\" + sExcelName + "Test.xlsx" ;	
 		}
 		else {
-			sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Live" + ".xlsx" ;
+			sPath=".\\testData\\" + sExcelName + "Live.xlsx" ;
 		}//get the test data sheet
 		
-		ExcelUtility xlObj = new ExcelUtility(sPath);
+		ExcelUtility xlValObj = new ExcelUtility(sPath);
 		logger.info("Excel file Utility instance created");
 	
-		int iRowCount = xlObj.getRowCount("Sheet1");
+		int iRowCount = xlValObj.getRowCount("Sheet1");
 		System.out.println("Total rows: " + iRowCount);
 		logger.info("Row Count is: " + iRowCount);
 		
 	
-		int iColCount = xlObj.getCellCount("Sheet1", iRowCount);
+		int iColCount = xlValObj.getCellCount("Sheet1", iRowCount);
 		System.out.println("Cols: " + iColCount);
 		logger.info("Col Count is: " + iColCount);
 					
 		logger.info("Extracting DataSheet Values started...");
 		String sCurrentWinHandle = "";
-		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
-		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
-		String sAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
-		String sText=xlObj.getCellData("Sheet1", 1, 3);
-		String sMobNumPrefix=xlObj.getCellData("Sheet1", 1, 4);
-		String sMobileNumber=xlObj.getCellData("Sheet1", 1, 5);
+		String sExpModuleName = xlValObj.getCellData("Sheet1", 1, 0);
+		String sExpWorkFlowName = xlValObj.getCellData("Sheet1", 1, 1);
+		String sAssignedTo = xlValObj.getCellData("Sheet1", 1, 2);
+		String sText=xlValObj.getCellData("Sheet1", 1, 3);
+		String sMobNumPrefix=xlValObj.getCellData("Sheet1", 1, 4);
+		String sMobileNumber=xlValObj.getCellData("Sheet1", 1, 5);
 		sMobileNumber = sMobNumPrefix + " " + sMobileNumber;  	
-		String sEmail=xlObj.getCellData("Sheet1", 1, 6);
-		String sPickListValue=xlObj.getCellData("Sheet1", 1, 7);
-		String sMultiComboValues=xlObj.getCellData("Sheet1", 1, 8);
-		String sCity=xlObj.getCellData("Sheet1", 1, 9);
-		String sState=xlObj.getCellData("Sheet1", 1, 10);
-		String sCountry=xlObj.getCellData("Sheet1", 1, 11);
-		String sCheckBox=xlObj.getCellData("Sheet1", 1, 12);
+		String sEmail=xlValObj.getCellData("Sheet1", 1, 6);
+		String sPickListValue=xlValObj.getCellData("Sheet1", 1, 7);
+		String sMultiComboValues=xlValObj.getCellData("Sheet1", 1, 8);
+		String sCity=xlValObj.getCellData("Sheet1", 1, 9);
+		String sState=xlValObj.getCellData("Sheet1", 1, 10);
+		String sCountry=xlValObj.getCellData("Sheet1", 1, 11);
+		String sCheckBox=xlValObj.getCellData("Sheet1", 1, 12);
 		if(sCheckBox.equalsIgnoreCase("ON")) {
 			sCheckBox = "Yes";
 		}
 		else {
 			sCheckBox = "No";
 		}
-		String sDate =xlObj.getCellData("Sheet1", 1, 13);
-		String sTime =xlObj.getCellData("Sheet1", 1, 14);
-		String sDateandTime =xlObj.getCellData("Sheet1", 1, 15);
-		String sRelatedModule =xlObj.getCellData("Sheet1", 1, 16);
-		String sFileName =xlObj.getCellData("Sheet1", 1, 17);
-		String sNamePrefix =xlObj.getCellData("Sheet1", 1, 18);
-		String sName=xlObj.getCellData("Sheet1", 1, 19);
+		String sDate =xlValObj.getCellData("Sheet1", 1, 13);
+		String sTime =xlValObj.getCellData("Sheet1", 1, 14);
+		String sDateandTime =xlValObj.getCellData("Sheet1", 1, 15);
+		String sRelatedModule =xlValObj.getCellData("Sheet1", 1, 16);
+		String sFileName =xlValObj.getCellData("Sheet1", 1, 17);
+		String sNamePrefix =xlValObj.getCellData("Sheet1", 1, 18);
+		String sName=xlValObj.getCellData("Sheet1", 1, 19);
 		sName = sNamePrefix + " " + sName;
-		String sNumber=xlObj.getCellData("Sheet1", 1, 20);
-		String sCurrency=xlObj.getCellData("Sheet1", 1, 21);
-		String sUrl=xlObj.getCellData("Sheet1", 1, 22);
-		String sEnqNamePrefix = xlObj.getCellData("Sheet1", 1, 23);
-		String sEnquiry_Name=xlObj.getCellData("Sheet1", 1, 24);
-		String sEnquiry_Email=xlObj.getCellData("Sheet1", 1, 25);
-		String sEnquiry_Text=xlObj.getCellData("Sheet1", 1, 26);
-		String sEnquiry_TextArea=xlObj.getCellData("Sheet1", 1, 27);
-		String sEnquiry_Date=xlObj.getCellData("Sheet1", 1, 28);
-		String sEnquiry_PN_Prefix=xlObj.getCellData("Sheet1", 1, 29);
-		String sEnquiry_PhoneNumber=xlObj.getCellData("Sheet1", 1, 30);
-		String sEnquiry_category =xlObj.getCellData("Sheet1", 1, 31);
-		String sExecutionCondition=xlObj.getCellData("Sheet1", 1, 32);
-		String sActionType=xlObj.getCellData("Sheet1", 1, 33);
-		String sActionTitle=xlObj.getCellData("Sheet1", 1, 34);
-		String sRecordId=xlObj.getCellData("Sheet1", 1, 35);
-		String sWorkFlowPos=xlObj.getCellData("Sheet1", 1, 36);
+		String sNumber=xlValObj.getCellData("Sheet1", 1, 20);
+		String sCurrency=xlValObj.getCellData("Sheet1", 1, 21);
+		String sUrl=xlValObj.getCellData("Sheet1", 1, 22);
+		String sEnqNamePrefix = xlValObj.getCellData("Sheet1", 1, 23);
+		String sEnquiry_Name=xlValObj.getCellData("Sheet1", 1, 24);
+		String sEnquiry_Email=xlValObj.getCellData("Sheet1", 1, 25);
+		String sEnquiry_Text=xlValObj.getCellData("Sheet1", 1, 26);
+		String sEnquiry_TextArea=xlValObj.getCellData("Sheet1", 1, 27);
+		String sEnquiry_Date=xlValObj.getCellData("Sheet1", 1, 28);
+		String sEnquiry_PN_Prefix=xlValObj.getCellData("Sheet1", 1, 29);
+		String sEnquiry_PhoneNumber=xlValObj.getCellData("Sheet1", 1, 30);
+		String sEnquiry_category =xlValObj.getCellData("Sheet1", 1, 31);
+		String sExecutionCondition=xlValObj.getCellData("Sheet1", 1, 32);
+		String sActionType=xlValObj.getCellData("Sheet1", 1, 33);
+		String sActionTitle=xlValObj.getCellData("Sheet1", 1, 34);
+		String sRecordId=xlValObj.getCellData("Sheet1", 1, 35);
+		String sWorkFlowPos=xlValObj.getCellData("Sheet1", 1, 36);
+		String sUser1NotifyCount=xlValObj.getCellData("Sheet1", 1, 37); 
+		String sUser2NotifyCount=xlValObj.getCellData("Sheet1", 1, 38);
+		String sUser3NotifyCount=xlValObj.getCellData("Sheet1", 1, 39);
+		String sUser2RecordId=xlValObj.getCellData("Sheet1", 1, 40);
+		String sUser3RecordId=xlValObj.getCellData("Sheet1", 1, 41);
+		String sDisplayModuleName=xlValObj.getCellData("Sheet1", 1, 42);
+		String sEditIndText=xlValObj.getCellData("Sheet1", 1, 43);
+		String sLead_PN_Prefix=xlValObj.getCellData("Sheet1", 1, 44);
+		String sLead_PN=xlValObj.getCellData("Sheet1", 1, 45);
+		String sLead_Email=xlValObj.getCellData("Sheet1", 1, 46);
+		String sLead_Text=xlValObj.getCellData("Sheet1", 1, 47);
+		String sSales_PN_Prefix=xlValObj.getCellData("Sheet1", 1, 48);
+		String sSales_PN=xlValObj.getCellData("Sheet1", 1, 49);
+		String sSales_Email=xlValObj.getCellData("Sheet1", 1, 50);
+		
 		sCurrentWinHandle="";
 		String sNewWindowHanlde="";
 		if(isNotify.equalsIgnoreCase("Yes")){
@@ -548,7 +602,7 @@ public class CRMReUsables extends BaseClass {
 		String aActModuleName = objDVP.getNavBarModuleName();
 		System.out.println("Actual Module Name: " + aActModuleName);
 		System.out.println("Expected Module Name: " + sExpModuleName);
-		UtilityCustomFunctions.fSoftAssert(aActModuleName, sExpModuleName, "Module Name : " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(aActModuleName, sDisplayModuleName, "Module Name : " + sMessage, node);
 		// Title Actual Values
 		String sActText = objDVP.getGenericTitle(1);
 		String sActPNTitle = objDVP.getGenericTitle(2);
@@ -677,11 +731,43 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.fSoftAssert(sActEnq_Category, sEnquiry_category, "Summary Enquiry Category:  " + sMessage, node);
 		
 
+		//Leads Validation.
+		
+		String sLead_PhoneNumber = sLead_PN_Prefix + " " + sLead_PN ;
+		
+		String sActLead_PhoneNumber=objDVP.getArraySummary(25).trim();
+		System.out.println("Actual Lead Summary Phone Number: " + sActLead_PhoneNumber);
 		
 		
+		String sActLeadPNArray[] = sActLead_PhoneNumber.split("\\s+");
+		sActLead_PhoneNumber = sActLeadPNArray[0].trim() + " " + sActLeadPNArray[1].trim();
+		System.out.println("Actual: " + sActLead_PhoneNumber);
+		
+		UtilityCustomFunctions.fSoftAssert(sActLead_PhoneNumber, sLead_PhoneNumber, "Summary Lead PhoneNumber:  " + sMessage, node);
+		//Lead Email
+		String sActLead_Email=objDVP.getArraySummary(26).trim();
+		UtilityCustomFunctions.fSoftAssert(sActLead_Email, sLead_Email, "Summary Lead Email:  " + sMessage, node);
+		
+		//Lead Text
+		String sActLead_Text=objDVP.getArraySummary(27).trim();
+		UtilityCustomFunctions.fSoftAssert(sActLead_Text, sLead_Text, "Summary Lead Text:  " + sMessage, node);
+		//Sales Validation
+		String sSales_PhoneNumber = sSales_PN_Prefix + " " + sSales_PN ;
+		
+		String sActSales_PhoneNumber=objDVP.getArraySummary(28).trim();
+		System.out.println("Actual Sales Summary Phone Number: " + sActSales_PhoneNumber);
 		
 		
+		String sActSalesPNArray[] = sActSales_PhoneNumber.split("\\s+");
+		sActSales_PhoneNumber = sActSalesPNArray[0].trim() + " " + sActSalesPNArray[1].trim();
+		System.out.println("Actual: " + sActSales_PhoneNumber);
 		
+		UtilityCustomFunctions.fSoftAssert(sActSales_PhoneNumber, sSales_PhoneNumber, "Summary Sales PhoneNumber:  " + sMessage, node);
+		
+		
+		String sActSales_Email=objDVP.getArraySummary(29).trim();
+		UtilityCustomFunctions.fSoftAssert(sActSales_Email, sSales_Email, "Summary Sales Email:  " + sMessage, node);
+	
 		//Details View
 		objDVP.clickDetailView();
 		Thread.sleep(300);
@@ -780,6 +866,34 @@ public class CRMReUsables extends BaseClass {
 		
 		String sActDTEnqCategory= objDVP.getArrayDetails(26).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqCategory, sEnquiry_category, "Detail View Enquiry Category:  " + sMessage, node);
+		
+		String sActLeadDTMobileNumber= objDVP.getArrayDetails(27).trim();
+		String sActLeadDTMobileNMArray[] = sActLeadDTMobileNumber.split("\\s+");
+		sActLeadDTMobileNumber = sActLeadDTMobileNMArray[0].trim() + " " + sActLeadDTMobileNMArray[1].trim();
+		
+		System.out.println("actual mobile number: " + sActLeadDTMobileNumber);
+		
+		String sDTLead_PN = sLead_PN_Prefix + " " + sLead_PN;
+		UtilityCustomFunctions.fSoftAssert(sActLeadDTMobileNumber, sDTLead_PN, "DT Lead Mobile Number:  " + sMessage, node);
+		
+		String sActDTLeadEmail= objDVP.getArrayDetails(28).trim();
+		UtilityCustomFunctions.fSoftAssert(sActDTLeadEmail, sLead_Email, "DT View Lead Email  " + sMessage, node);
+		
+		String sActDTLeadText= objDVP.getArrayDetails(29).trim();
+		UtilityCustomFunctions.fSoftAssert(sActDTLeadText, sLead_Text, "DT View Lead Text " + sMessage, node);
+		
+		//Sales
+		String sActSalesDTMobileNumber= objDVP.getArrayDetails(30).trim();
+		String sActSalesDTMobileNMArray[] = sActSalesDTMobileNumber.split("\\s+");
+		sActSalesDTMobileNumber = sActSalesDTMobileNMArray[0].trim() + " " + sActSalesDTMobileNMArray[1].trim();
+		
+		System.out.println("actual mobile number: " + sActSalesDTMobileNumber );
+		
+		String sDTSales_PN = sSales_PN_Prefix + " " + sSales_PN;
+		UtilityCustomFunctions.fSoftAssert(sActSalesDTMobileNumber, sDTSales_PN, "DT Sales Mobile Number:  " + sMessage, node);
+		
+		String sActDTSalesEmail= objDVP.getArrayDetails(31).trim();
+		UtilityCustomFunctions.fSoftAssert(sActDTSalesEmail, sSales_Email, "DT View Sales Email" + sMessage, node);
 		
 		if(isNotify.equalsIgnoreCase("Yes")){
 			driver.close();

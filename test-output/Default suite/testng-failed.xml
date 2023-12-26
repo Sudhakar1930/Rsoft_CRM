@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TestDBConnection">
+      <class name="testCases.TestHiddenControl">
         <methods>
-          <include name="executeQuery"/>
+          <include name="onStart"/>
+          <include name="testedit"/>
+          <include name="setup"/>
+          <include name="flush"/>
         </methods>
-      </class> <!-- testCases.TestDBConnection -->
+      </class> <!-- testCases.TestHiddenControl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

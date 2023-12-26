@@ -99,7 +99,7 @@ public class WorkFlowPage extends BasePage {
 			System.out.println("Row Position: Outside If" + i);
 			if(sActModuleName.trim().equalsIgnoreCase(sModuleName) && sActWorkflowName.trim().equalsIgnoreCase(sWorkflowName) && sActExecCondition.equalsIgnoreCase(sExecCondition)){
 				System.out.println("bCurrentWFStatus:" + bCurrentWFStatus);
-				BaseClass.logger.info("Module,workflow,conditions matches");
+				BaseClass.logger.info("Module,workflow,condition matches");
 				BaseClass.logger.info("bCurrentWFStatus: " + bCurrentWFStatus);
 				if(bCurrentWFStatus==true) {
 					bWorkFlowEnabled = "true:"+i;
@@ -200,7 +200,9 @@ public class WorkFlowPage extends BasePage {
 				}
 			}
 			else {
+				System.out.println(" when task not matches:"+ isCheckBoxSelected +"  actual action type:" + sActActionType + "action title:" + sActActionTitle);
 				if(isCheckBoxSelected==true) {
+					System.out.println("checkbox sttus" + isCheckBoxSelected +"actual action type:" + sActActionType + "action title:" + sActActionTitle);
 					eleTaskCheckBox.click();
 					BaseClass.logger.info("Task Deactivated for Action Type:" + sActActionType + "and Action Title:" + sActActionTitle);
 					System.out.println("Task Deactivated for Action Type:" + sActActionType + "and Action Title:" + sActActionTitle);

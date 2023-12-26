@@ -16,6 +16,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -77,6 +78,7 @@ public class BaseClass extends ExtentReportManager{
 			options.addArguments("--disable-infobars");
 			options.addArguments("--disable-extensions");
 			options.addArguments("-–disable-notifications");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			//options.addArguments("--headless");     
 	        //options.addArguments("--disable-gpu");
 	        //options.addArguments("--window-size=1400,800");

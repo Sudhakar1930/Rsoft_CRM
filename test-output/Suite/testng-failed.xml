@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC002_WF2_Only_On_First_Save">
+      <class name="testCases.TC003_WF3_Every_time_record_modifies">
         <methods>
-          <include name="testWFEveryTimeRecSave"/>
           <include name="onStart"/>
+          <include name="testWFOnlyOnFirstSave"/>
           <include name="setup"/>
           <include name="flush"/>
           <include name="testName"/>
         </methods>
-      </class> <!-- testCases.TC002_WF2_Only_On_First_Save -->
+      </class> <!-- testCases.TC003_WF3_Every_time_record_modifies -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

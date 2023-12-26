@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import utilities.UtilityCustomFunctions;
 public class DetailViewPage extends BasePage{
@@ -78,8 +79,26 @@ public class DetailViewPage extends BasePage{
 	@FindBy(xpath="//span[contains(@class,'comment_text')]")
 	WebElement lblUploadFile;
 	
+	@FindBy(xpath="//span[@data-label='Text']//i[contains(@class,'fa fa-check')]")
+	WebElement btnTickSave;
+	
+	
+	 
 	
 	//click Methods
+	public void clickEditRecordItem() throws InterruptedException {
+		Actions action = new Actions(driver);
+		String sXpath1 = "(//div[@class='col-lg-10'])[1]";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
+		Thread.sleep(2000);
+		action.moveToElement(eleArrSummary).perform();
+		String sXpath="//table[contains(@class,'table table-bordered')]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/i[1]";
+		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
+		eleRecEdit.click();
+	}
+	public void clickRecItemSave() throws Exception {
+		UtilityCustomFunctions.doClick(driver, btnTickSave);
+	}
 	public void clickDetailView() throws Exception {
 		UtilityCustomFunctions.doClick(driver, lnkDetailView);
 	}

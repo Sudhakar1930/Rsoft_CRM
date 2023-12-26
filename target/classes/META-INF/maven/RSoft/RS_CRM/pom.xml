@@ -145,6 +145,11 @@
 		    <version>5.1.1</version>
 		</dependency>
 
-	
-	</dependencies>
+
+		<dependency>
+			<groupId>eCommWebHybridFramework</groupId>
+			<artifactId>eCommWebHybridFramework</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  </dependencies>
 </project>

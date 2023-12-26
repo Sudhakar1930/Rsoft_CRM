@@ -29,7 +29,7 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		test = extent.createTest("TC002_WF2_Only_On_First_Save");
 	}
 	@Test
-	public void testWFEveryTimeRecSave () throws Exception {
+	public void testWFOnlyOnFirstSave () throws Exception {
 		node = test.createNode("WF2_Only_On_First_Save");
 		
 		logger.info("******starting WF2_Only_On_First_Save ****");
@@ -37,7 +37,7 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		
 //		String sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Live" + ".xlsx" ;
-		String sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test_Add" + ".xlsx" ;
+		String sPath=".\\testData\\Notification\\" + "WF2_Only_On_the_first_Save_Test" + ".xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sPath);
 		logger.info("Excel file Utility instance created");
@@ -90,9 +90,12 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		String sActionTitle=xlObj.getCellData("Sheet1", 1, 34);
 		String sRecordId=xlObj.getCellData("Sheet1", 1, 35);
 		String sWorkFlowPos=xlObj.getCellData("Sheet1", 1, 36);
-		String sUser1NotifyCount=xlObj.getCellData("Sheet1", 1, 37);
+		String sUser1NotifyCount=xlObj.getCellData("Sheet1", 1, 37); 
 		String sUser2NotifyCount=xlObj.getCellData("Sheet1", 1, 38);
 		String sUser3NotifyCount=xlObj.getCellData("Sheet1", 1, 39);
+		String sUser2RecordId=xlObj.getCellData("Sheet1", 1, 40);
+		String sUser3RecordId=xlObj.getCellData("Sheet1", 1, 41);
+		String sDisplayModuleName=xlObj.getCellData("Sheet1", 1, 42);
 		
 		sRecordId="";
 		
@@ -128,11 +131,14 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 			objLP.setUserName(sUserName);
 			objLP.setPassword(sPassword);
 			objLP.clickLoginSubmit();
-			
+			logger.info("CRM Login Success with:" + sUserName);
+			System.out.println("CRM Login Success with:" + sUserName);
+			UtilityCustomFunctions.fSoftAssert("Login Success", "Login Success","User: " + sUserName , node);
 		}
 		else {
 			logger.info("CRM Login failed");
 			System.out.println("Login Page Not Displayed");
+			UtilityCustomFunctions.fSoftAssert("Login Fail", "Login Success","User: " + sUserName , node);
 			Assert.fail("Login Page not displayed");
 			
 		}
@@ -149,57 +155,70 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 			Assert.fail("Home Page Not Displayed");
 		}
 		
-//		Thread.sleep(1000);
-//		objCRMRs.fNavigatetoWorkflow(sExpModuleName);
-//		String sWorkFlowStatus="";
-//		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sExpModuleName, sExpWorkFlowName, sExecutionCondition);
-//		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
-//		xlObj.setCellData("Sheet1", 1, 33, sWFStatusRetArr[1]);
-//		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
-//		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
-//			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
-//			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
-//			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
-//			
-//		}
-//		else {
-//			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
-//			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			
-//			
-//			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			if(bTaskStatus==false) {
-//				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
-//				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
-//				
-//			}
-//			
-//		}//If workflow Enabled but Task not set
+		Thread.sleep(1000);
+		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
+		String sWorkFlowStatus="";
+		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
+		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
+		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
+		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
+		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
+			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
+			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
+			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
+			
+		}
+		else {
+			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
+			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			
+			
+			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			if(bTaskStatus==false) {
+				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
+				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
+				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
+				
+			}
+			
+		}//If workflow Enabled but Task not set
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sExpModuleName);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		Thread.sleep(1000);
-		objEDT.clickModule(sExpModuleName);
-		Thread.sleep(1000);
-		objCRMRs.fAddValuestoModulePage("Test");
+		objEDT.clickModule(sDisplayModuleName);
+		Thread.sleep(2000);
+		String sPrevCount = objCRMRs.fgetNotificationCount();
+		System.out.println("Notifications BEFORE add:" + sPrevCount);
+		logger.info("Notifications BEFORE add:" + sPrevCount);
+		//Add new Values to the Module
+		objCRMRs.fAddValuestoModulePage("Test","//Notification//WF2_Only_On_the_first_Save_");
+		
 		String sNotCount=""; 
 		//Validate Notification for Current User.
+		if(sPrevCount==null) {
+			sPrevCount = "0";
+		}
+		
 		sNotCount = objCRMRs.fgetNotificationCount();
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
 		xlObj.setCellData("Sheet1", 1, 37, sNotCount);
-//		
+		System.out.println("Notifications after add:" + sNotCount);
+		logger.info("Notifications After add:" + sNotCount);
 		if(sNotCount==null) {
 			logger.info("Notification Not Received for user: "+ sUserName);
 			freport("Notification Not Received for user: "+ sUserName, "fail",node);
 			Assert.fail("Notification Not Received for user: "+ sUserName);
-		}else if(sNotCount.equalsIgnoreCase("1")) {
+		}else if(Integer.parseInt(sPrevCount)+1== Integer.parseInt(sNotCount)){
 			logger.info("Notification Received on first save "+ sUserName);
 			freport("Notification Received on first save "+ sUserName, "pass",node);
 			sAssertinFn.assertEquals("Add Notification received", "Add Notification received");
@@ -208,9 +227,13 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		int iOldCount = Integer.parseInt(sNotCount);
 		//Click Edit
 		objDVP.clickEditRecord();
+		Thread.sleep(5000);
 		objCMD.clickSave();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		sNotCount = objCRMRs.fgetNotificationCount();
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
 		if(iOldCount==Integer.parseInt(sNotCount)) {
 			logger.info("Notification Not Received on Edit "+ sUserName);
 			freport("Notification Not Received on Edit "+ sUserName, "pass",node);
@@ -221,12 +244,17 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 			sAssertinFn.assertEquals("Edit Notification not received", "Edit Notification received");
 			Assert.fail("Failed: Notification Received on Edit "+ sUserName);
 		}
+		iOldCount = Integer.parseInt(sNotCount);
 		//Duplicate Record Validation
 		objDVP.clickDuplicateRecord();
+		Thread.sleep(5000);
 		objCMD.clickSave();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		sNotCount = objCRMRs.fgetNotificationCount();
-		if(iOldCount==Integer.parseInt(sNotCount)+1) {
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		if(Integer.parseInt(sNotCount)==iOldCount+1) {
 			logger.info("Passed: Notification Received on Duplicate"+ sUserName);
 			freport("Passed: Notification Received on Duplicate"+ sUserName, "pass",node);
 			sAssertinFn.assertEquals("Duplicate - Notification received", "Duplicate - Notification received");
@@ -236,11 +264,16 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 			sAssertinFn.assertEquals("Duplicate - Notification not received", "Duplicate - Notification not received");
 			Assert.fail("Failed: Notification not Received when Duplicate");
 		}
+		iOldCount = Integer.parseInt(sNotCount);
 		objDVP.clickAddRecord();
-		objCRMRs.fAddValuestoModulePage("Test");
+		Thread.sleep(3000);
+		objCRMRs.fAddValuestoModulePage("Test","WF2_Only_On_the_first_Save_");
 		Thread.sleep(3000);
 		sNotCount = objCRMRs.fgetNotificationCount();
-		if(iOldCount==Integer.parseInt(sNotCount)+2) {
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		if(Integer.parseInt(sNotCount)==iOldCount+1) {
 			logger.info("Passed: Notification Received on Add New Record"+ sUserName);
 			freport("Passed: Notification Received on Add New Record"+ sUserName, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - Notification received", "Add New Record - Notification received");
@@ -252,7 +285,7 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		}
 		
 		
-//		objCRMRs.fValidateAllFields("Test", "Add","After New Record added","No",node);
+		objCRMRs.fValidateAllFields("Test", "WF2_Only_On_the_first_Save_","After New Record added","No",node);
 //		//Validate Notification in New Login
 		String sCurrentWinHandle="";
 		String sNewWindowHanlde="";
@@ -281,11 +314,17 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 			Thread.sleep(3000);
 			objLP.clickLoginSubmit();
 			Thread.sleep(3000);
+			logger.info("CRM Login Success with:" + sUserName1);
+			System.out.println("CRM Login Success with:" + sUserName1);
+			UtilityCustomFunctions.fSoftAssert("Login Success", "Login Success","User: " + sUserName1 , node);
+			
 		}
 		else {
 			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
 			System.out.println("Login Page Not Displayed");
+			UtilityCustomFunctions.fSoftAssert("Login Fail", "Login Success","User: " + sUserName1 , node);
+			Assert.fail("Login Page not displayed");
+			
 		}
 			Thread.sleep(3000);
 		
@@ -300,21 +339,16 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		}
 		logger.info("Before 2nd User Validate all test");
 		System.out.println("Before 2nd User Validate all test");
-//		objCRMRs.fValidateAllFields("Test", "Add","Add-2nd User","Yes",node);
-
-		
-//		logger.info("Second User:" + sUserName1 + "Module data  validation done");
-//		System.out.println("Second User:" + sUserName1 + "Module data  validation done");
 
 		sCurrentWinHandle = driver.getWindowHandle();
 		System.out.println(sCurrentWinHandle);
-
 		sNewWindowHanlde="";
 		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo1,sText,sActionTitle,node);
-		System.out.println("Captured Record Id:" + sRecordId);
-		xlObj.setCellData("Sheet1", 1, 35, sRecordId);
-		logger.info("Captured RecordId for User 2" + sRecordId);
+		sUser2RecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo1,sText,sActionTitle,node);
+		UtilityCustomFunctions.fSoftAssert(sUser2RecordId, sRecordId,"Second User Notification Received" , node);
+		System.out.println("Captured Record Id:" + sUser2RecordId);
+		xlObj.setCellData("Sheet1", 1, 40, sUser2RecordId);
+		logger.info("Captured RecordId for User 2" + sUser2RecordId);
 		
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
@@ -333,11 +367,14 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 			Thread.sleep(3000);
 			objLP.clickLoginSubmit();
 			Thread.sleep(3000);
+			UtilityCustomFunctions.fSoftAssert("Login Success", "Login Success","User: " + sUserName2 , node);
 		}
 		else {
 			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
+			UtilityCustomFunctions.fSoftAssert("Login Fail", "Login Success","User: " + sUserName2 , node);
 			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
 		}
 			Thread.sleep(3000);
 		
@@ -355,13 +392,15 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		//Validate Notification in New Login
 		sNewWindowHanlde="";
 		sCurrentWinHandle = driver.getWindowHandle();
-		System.out.println("Second User Current Window: " + sCurrentWinHandle);
+		sUser3RecordId="";
+		System.out.println("Third User Current Window: " + sCurrentWinHandle);
 		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		System.out.println("Second User New Window : " + sNewWindowHanlde );
-		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo1,sText,sActionTitle,node);
-		System.out.println("Captured Record Id:" + sRecordId);
-		xlObj.setCellData("Sheet1", 1, 35, sRecordId);
-		logger.info("Captured RecordId for User 3" + sRecordId);
+		System.out.println("Third User New Window : " + sNewWindowHanlde );
+		sUser3RecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo2,sText,sActionTitle,node);
+		UtilityCustomFunctions.fSoftAssert(sUser3RecordId, sRecordId,"Third User Notification Received" , node);
+		System.out.println("Captured Record Id:" + sUser3RecordId);
+		xlObj.setCellData("Sheet1", 1, 41, sUser3RecordId);
+		logger.info("Captured RecordId for User 3" + sUser3RecordId);
 		
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);

@@ -242,6 +242,7 @@ public class CreateModuleDataPage extends BasePage{
 	public void setGenericInputValue(String sType,String sModuleName,String sText,String sValue) throws Exception {
 		String sXpath = "//input[@type ='"+ sType + "' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
+		eleTextBox.clear();
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
 	}
 	public void setTextAreaValue(String sModuleName,String sText,String sValue) {

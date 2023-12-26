@@ -12,7 +12,7 @@
       <class name="testCases.TC_001_SFI_Message"/> 
       <class name="testCases.TC_002_SFI_MultiChoice"/> 
       <class name="testCases.TC_004_SF_ResponseValidation"/> -->
-      <class name="testCases.TC002_WF2_Only_On_First_Save"/> 
+      <class name="testCases.TC005_WF5_Send_SMS_OOF_S"/> 
    
     </classes>
 	  </parameter>

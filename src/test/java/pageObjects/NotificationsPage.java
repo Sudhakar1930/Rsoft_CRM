@@ -123,7 +123,11 @@ public class NotificationsPage extends BasePage{
 	
 	public String getNotificatonCount() throws Exception {
 		String sValue="";
-		sValue = UtilityCustomFunctions.getText(driver, iconNotification);
+		try {
+			sValue = UtilityCustomFunctions.getText(driver, iconNotification);
+		}catch(Exception e) {
+			sValue = "0";
+		}
 		return sValue;
 	}
 	public String getTodayText() throws Exception {

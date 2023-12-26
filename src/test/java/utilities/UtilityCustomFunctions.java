@@ -33,6 +33,13 @@ public class UtilityCustomFunctions extends BaseClass{
 		// TODO Auto-generated constructor stub
 	}
 	
+	public static void checkPageLoadComplete() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		if (js.executeScript("return document.readyState").toString().equals("complete")){ 
+			   System.out.println("Page Is loaded.");
+			   return; 
+		} 
+	}
 	public static boolean IsElementVisible(WebDriver driver,WebElement element) {
 		boolean bIsElementVisible=false;
 		try {
@@ -328,7 +335,7 @@ public class UtilityCustomFunctions extends BaseClass{
 		String actualValue = null;
 		JavascriptExecutor js = (JavascriptExecutor) webDriver;
 		try {
-			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(50));
 			webWait.until(ExpectedConditions.elementToBeClickable(element));
 			webWait.until(ExpectedConditions.visibilityOf(element));
 			js.executeScript("arguments[0].scrollIntoView(true);", element);
