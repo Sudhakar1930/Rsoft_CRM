@@ -151,7 +151,7 @@ public class TC001_WF1_EveryTime_Rec_Save extends BaseClass {
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sExpModuleName);
+		objALP.clickModuleOnListAll(driver, sExpModuleName,6);
 		Thread.sleep(1000);
 		objEDT.clickModule(sExpModuleName);
 		Thread.sleep(1000);

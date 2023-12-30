@@ -66,10 +66,6 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//a[normalize-space()='Close']")
 	WebElement btnClose;
 	
-//	@FindBy(xpath="(//div[@class='calendar-table']//table[@class='table-condensed'])[1]//tr//td[@class='today available']")
-	@FindBy(xpath="//td[@class='available'][normalize-space()='28']")
-	WebElement DtToday;
-	
 	@FindBy(xpath="//div[@class='daterangepicker ltr single opensright show-calendar']//button[@type='button'][normalize-space()='Apply']")
 	WebElement DandTApply;
 	
@@ -78,8 +74,36 @@ public class CreateModuleDataPage extends BasePage{
 	
 	@FindBy(xpath="//span[@id='select2-selfield_5893-container']")
 	WebElement eleEnqCatText;
-
 	
+	@FindBy(xpath="(//i[contains(@class,'fa fa-edit')])[1]")
+	WebElement eleEllipsisEdit;
+	
+	
+	public void clickEditRecord() throws Exception {
+		UtilityCustomFunctions.doClick(driver, eleEllipsisEdit);
+	}
+			
+	public void clickEllipsis(int iEllipsisPos) throws InterruptedException {
+		String sXpath = "(//i[@class='fa fa-ellipsis-v'])["+iEllipsisPos+"]";
+		WebElement eEllipsis = driver.findElement(By.xpath(sXpath));
+		Thread.sleep(1000);
+		eEllipsis.click();
+	}
+	
+	public void clickExistingModData(int iRowPos) throws InterruptedException {
+		String sXpath = "(//td[@scope='row']/following-sibling::td)["+iRowPos+"]";
+		WebElement eleModData = driver.findElement(By.xpath(sXpath));
+		Thread.sleep(1000);
+		eleModData.click();
+	}
+	public void clickDay(int iDateIndex) throws Exception {
+		String sXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
+		UtilityCustomFunctions.logWriteConsole(sXpath);
+		WebElement eleDate = driver.findElement(By.xpath(sXpath));
+		Thread.sleep(1000);
+		eleDate.click();
+//		UtilityCustomFunctions.doClick(driver, eleDate);
+	}
 	public void clickEnqCategory() throws Exception {
 //		UtilityCustomFunctions.doClick(driver, eleEnqCatText);
 		UtilityCustomFunctions.doActionClick(driver, eleEnqCatText);
@@ -103,7 +127,8 @@ public class CreateModuleDataPage extends BasePage{
 		 return fileName.getText();
 	}
 	
-	
+	//click methods
+
 	public void clickDandTApply() throws Exception {
 		UtilityCustomFunctions.doClick(driver, DandTApply);
 	}
@@ -154,10 +179,6 @@ public class CreateModuleDataPage extends BasePage{
 	
 	
 	//click Methods
-	public void clickTodayDate() throws Exception {
-//		UtilityCustomFunctions.doClick(driver, DtToday);
-		UtilityCustomFunctions.doActionClick(driver, DtToday);
-	}
 	public void selectMenuValue(String sValue) {
 		UtilityCustomFunctions.selectOneItemfromListBox(driver, eleMnuUl, sValue);
 	}

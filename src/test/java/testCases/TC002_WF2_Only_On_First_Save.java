@@ -191,7 +191,7 @@ public class TC002_WF2_Only_On_First_Save extends BaseClass{
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
 		Thread.sleep(2000);

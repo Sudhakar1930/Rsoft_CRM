@@ -69,6 +69,7 @@ public class UtilityCustomFunctions extends BaseClass{
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			wait.until(ExpectedConditions.visibilityOf(element));
 			js.executeScript("arguments[0].scrollIntoView();", element);
+			element.clear();
 			element.sendKeys(keyValue);
 			logger.info(keyValue + " entered in  " + element.getTagName());
 			System.out.println(keyValue + " entered in  " + element.getTagName());
@@ -263,15 +264,10 @@ public class UtilityCustomFunctions extends BaseClass{
 		return flag;
 	}// function end
 	
-	
-	
-	/**
-	 * This method is will performs click action on the element
-	 * 
-	 * @param element Holds the Web element
-	 * @return return the boolean value
-	 * @throws Exception
-	 */
+	public static void logWriteConsole(String sText) {
+		BaseClass.logger.info(sText);
+		System.out.println(sText);
+	}
 	public static boolean doClick(WebDriver webDriver, WebElement element) throws Exception {
 		JavascriptExecutor js = (JavascriptExecutor) webDriver;
 		boolean isClicked = false;
@@ -483,12 +479,13 @@ public class UtilityCustomFunctions extends BaseClass{
 			BaseClass.logger
 					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport(sMessage, "Pass", Node);
+			System.out.println(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			
 		} else {
 			BaseClass.logger
 					.info(sMessage + " Failed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport(sMessage, "fail", Node);
-
+			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
 		}
 		sAssertinFn.assertEquals(sActValue.trim(), sExpValue.trim());
 		

@@ -100,7 +100,7 @@ public class ExcelUtility {
 		cell=row.createCell(colnum);
 		cell.setCellValue(data);
 		fo=new FileOutputStream(path);
-		workbook.write(fo);		
+		workbook.write(fo);
 		workbook.close();
 		fi.close();
 		fo.close();

@@ -57,7 +57,7 @@ public class WorkFlowPage extends BasePage {
 		int iEditPos=0;
 		String sActWorkflowName="";
 		String sActExecCondition="";
-		
+		int j=0;
 		int tRowCount = WbTblWorkflows.size();
 		System.out.println("Workflows count:" + tRowCount);
 		for(int i=1;i<tRowCount;i++) {
@@ -107,6 +107,10 @@ public class WorkFlowPage extends BasePage {
 					System.out.println(sActWorkflowName + "Workflow enabled");
 					iEditPos = i;
 				}
+				else {
+					j = i;
+					bWorkFlowEnabled = "true:"+j;
+				}
 			}
 			else {
 				System.out.println("bCurrentWFStatus: In else block" + bCurrentWFStatus);
@@ -120,6 +124,11 @@ public class WorkFlowPage extends BasePage {
 				}
 			}//conditon checking
 		}//for loop
+		String sXpath="(//span[@class='switchery switchery-default'])["+j+"]/small";
+		WebElement eleCurrentWFStatus = driver.findElement(By.xpath(sXpath));
+		eleCurrentWFStatus.click();
+	
+		UtilityCustomFunctions.logWriteConsole(sActWorkflowName + "Disabled Workflow Manually Enabled");
 		return bWorkFlowEnabled;
 		
 	}
@@ -168,11 +177,12 @@ public class WorkFlowPage extends BasePage {
 	
 	public boolean fValidateTaskStatus(String sWorkFlow,String sActionType,String sActionTitle) throws Exception {
 		boolean bWorkflowTaskEnabled = false;
+		boolean bIsCurrentTaskDisabled = false;
 		int tTaskRowCount = WbTblTasks.size()-1; 
 		System.out.println("Rowcount:" + tTaskRowCount);
 		BaseClass.logger.info("Number of Tasks Listed for this Workflow: " + sWorkFlow + " : " + tTaskRowCount);
 		System.out.println("Number of Tasks Listed for this Workflow: " + sWorkFlow + " : " + tTaskRowCount);
-		
+		int j = 0;
 		for(int i=1;i<=tTaskRowCount;i++) {
 			System.out.println("Current Row Number: " + i);
 		
@@ -187,16 +197,17 @@ public class WorkFlowPage extends BasePage {
 			String sActActionTitle = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(2));
 			sActActionType = sActActionType.trim();
 			sActActionTitle = sActActionTitle.trim();
-			BaseClass.logger.info("Retrieved Action Type:" + sActActionType);
-			System.out.println("Retrieved Action Type:" + sActActionType);
-			BaseClass.logger.info("Retrieved Action Title:" + sActActionTitle);
-			System.out.println("Retrieved Action Title:" + sActActionTitle);
-			
+			UtilityCustomFunctions.logWriteConsole("Retrieved Action Type:" + sActActionType);
+			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
 			if(sActActionType.equalsIgnoreCase(sActionType) && sActActionTitle.equalsIgnoreCase(sActionTitle)) {
 				if(isCheckBoxSelected==true) {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");
 					System.out.println("Action Type and Action Tile matches and also Task Button Enabled");
+				}
+				else {
+					j = i;
+					bIsCurrentTaskDisabled = true;
 				}
 			}
 			else {
@@ -209,6 +220,12 @@ public class WorkFlowPage extends BasePage {
 				}
 			}
 		}//for loop
+		if(bIsCurrentTaskDisabled==true) {
+		String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+j+"]";
+		WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
+		eleTaskCheckBox.click();
+		bWorkflowTaskEnabled = true;
+		}
 		return bWorkflowTaskEnabled;
 	}//function
 	

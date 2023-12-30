@@ -30,12 +30,13 @@ public class AllListPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver,eleNotifications);
 	}
 	
-	public void clickModuleOnListAll(WebDriver driver, String sModuleName) throws Exception {
+	public void clickModuleOnListAll(WebDriver driver, String sModuleName,int iColNumber) throws Exception {
 //		String sXpath="//div[text()=" + sModuleName + "]";
 //		WebElement lstModuleName = driver.findElement(By.xpath(sXpath));
 //		UtilityCustomFunctions.doClick(driver, lstModuleName);
-		
-		UtilityCustomFunctions.SelectItemifContains(driver, eleOthers, sModuleName);
+		String sXpath="//*[@id='vertical_header_list']/li[" +iColNumber + "]/ul";
+		WebElement MnuItemInAll = driver.findElement(By.xpath(sXpath));
+		UtilityCustomFunctions.SelectItemifContains(driver, MnuItemInAll, sModuleName);
 	}
 	
 	

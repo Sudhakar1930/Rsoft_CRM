@@ -203,7 +203,7 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
 		Thread.sleep(2000);
@@ -330,7 +330,7 @@ import utilities.UtilityCustomFunctions;
 		
 		//Validate All Fields
 		
-//		objCRMRs.fValidateAllFields("Test", "WF3_Every_time_record_modifies_","After New Record added","No",node);
+		objCRMRs.fValidateAllFields("Test", "WF3_Every_time_record_modifies_","After New Record added","No",node);
 		
 		String sCurrentWinHandle="";
 		String sNewWindowHanlde="";
