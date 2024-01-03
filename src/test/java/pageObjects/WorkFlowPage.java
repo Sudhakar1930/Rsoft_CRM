@@ -53,6 +53,7 @@ public class WorkFlowPage extends BasePage {
 	public String fWorkFlowStatus(String sModuleName,String sWorkflowName,String sExecCondition) {
 		BaseClass bObj = new BaseClass();
 		boolean bCurrentWFStatus=false;
+		boolean bIfCurWrkFlwNotEnabled = false;
 		String bWorkFlowEnabled ="false:0";
 		int iEditPos=0;
 		String sActWorkflowName="";
@@ -109,7 +110,8 @@ public class WorkFlowPage extends BasePage {
 				}
 				else {
 					j = i;
-					bWorkFlowEnabled = "true:"+j;
+//					bWorkFlowEnabled = "true:"+j;
+					bIfCurWrkFlwNotEnabled = true;
 				}
 			}
 			else {
@@ -124,10 +126,12 @@ public class WorkFlowPage extends BasePage {
 				}
 			}//conditon checking
 		}//for loop
+		if(bIfCurWrkFlwNotEnabled==true) {
 		String sXpath="(//span[@class='switchery switchery-default'])["+j+"]/small";
 		WebElement eleCurrentWFStatus = driver.findElement(By.xpath(sXpath));
+		bWorkFlowEnabled = "true:"+j;
 		eleCurrentWFStatus.click();
-	
+		}
 		UtilityCustomFunctions.logWriteConsole(sActWorkflowName + "Disabled Workflow Manually Enabled");
 		return bWorkFlowEnabled;
 		

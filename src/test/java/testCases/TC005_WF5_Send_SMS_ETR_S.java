@@ -56,7 +56,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		 xlObj.setCellData("Sheet1", 1, 45, randomeNumber());
 		 xlObj.setCellData("Sheet1", 1, 49, randomeNumber());
 		 
-		 Thread.sleep(1000);
+		Thread.sleep(1000);
 		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
 		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
 //		String sExpAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
@@ -109,8 +109,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		String sSales_PN=xlObj.getCellData("Sheet1", 1, 49);
 		String sSales_Email=xlObj.getCellData("Sheet1", 1, 50);
 		String sSMSTemplateMsg = xlObj.getCellData("Sheet1", 1, 51);
-		
-		 logger.info("Extracting DataSheet Values started...");
+
 		 
 		 
 		 sMobileNumber=xlObj.getCellData("Sheet1", 1, 5);
@@ -236,9 +235,9 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(2000);
 		
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_");
+		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_","Sheet1");
 
-		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Direct Entry Module Data","No",node);
+		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet1","Direct Entry Module Data","No",node);
 		
 		Thread.sleep(2000);
 		objALP.clickAllList();
@@ -568,9 +567,9 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 						objDVP.clickAddRecord();
 						Thread.sleep(3000);
 						//Add New Record and Check
-						objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_");
+						objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_","Sheet1");
 						Thread.sleep(3000);
-						objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Summary Add Data Validation","No",node);
+						objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet1","Summary Add Data Validation","No",node);
 						//SMS Validation after Summary Add New
 						objALP.clickAllList();
 						Thread.sleep(1000);

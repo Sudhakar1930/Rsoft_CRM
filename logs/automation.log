@@ -1,75 +1,331 @@
-15:56:36.831 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Time:  Summary Add Data Validation Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
-15:56:38.220 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Date & Time :  Summary Add Data Validation Passed : Actual Value is: 2023-12-30 03:00 PMExpected Value is: 2023-12-30 03:00 PM
-15:56:39.656 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary File Upload :  Summary Add Data Validation Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-15:56:41.029 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Name:  Summary Add Data Validation Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
-15:56:42.381 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Number:  Summary Add Data Validation Passed : Actual Value is: 33333333333Expected Value is: 33333333333
-15:56:43.764 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Currency:  Summary Add Data Validation Failed : Actual Value is: 8000Expected Value is: 8,000
-15:56:45.080 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Url:  Summary Add Data Validation Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
-15:56:46.472 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Name:  Summary Add Data Validation Passed : Actual Value is: Dr. TestNamesExpected Value is: Dr. TestNames
-15:56:47.851 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Email:  Summary Add Data Validation Passed : Actual Value is: testEnquiry@test.comExpected Value is: testEnquiry@test.com
-15:56:49.264 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Text:  Summary Add Data Validation Passed : Actual Value is: Enquired about real estateExpected Value is: Enquired about real estate
-15:56:50.601 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Text Area:  Summary Add Data Validation Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
-15:56:51.979 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Date:  Summary Add Data Validation Passed : Actual Value is: 2023-12-30Expected Value is: 2023-12-30
-15:56:53.393 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Phone Number:  Summary Add Data Validation Passed : Actual Value is: +60 3900686622Expected Value is: +60 3900686622
-15:56:54.750 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Category:  Summary Add Data Validation Passed : Actual Value is: OrdinaryExpected Value is: Ordinary
-15:56:56.137 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead PhoneNumber:  Summary Add Data Validation Passed : Actual Value is: +91 4399936194Expected Value is: +91 4399936194
-15:56:57.479 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead Email:  Summary Add Data Validation Passed : Actual Value is: Lead@rsoft.inExpected Value is: Lead@rsoft.in
-15:56:58.829 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead Text:  Summary Add Data Validation Passed : Actual Value is: Sample TextExpected Value is: Sample Text
-15:57:00.251 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Sales PhoneNumber:  Summary Add Data Validation Passed : Actual Value is: +60 3830231843Expected Value is: +60 3830231843
-15:57:01.617 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Sales Email:  Summary Add Data Validation Passed : Actual Value is: Sales@rsoft.inExpected Value is: Sales@rsoft.in
-15:57:09.434 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View AssignedTo:  Summary Add Data Validation Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-15:57:10.795 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Text:  Summary Add Data Validation Passed : Actual Value is: Testing ETRSExpected Value is: Testing ETRS
-15:57:12.184 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +65 7134669578Expected Value is: +65 7134669578
-15:57:13.548 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Email :  Summary Add Data Validation Passed : Actual Value is: sudhakar@rsoft.inExpected Value is: sudhakar@rsoft.in
-15:57:14.925 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View PicListValue :  Summary Add Data Validation Passed : Actual Value is: 3Expected Value is: 3
-15:57:16.295 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View MuultiCombo Values :  Summary Add Data Validation Passed : Actual Value is: oneExpected Value is: one
-15:57:17.689 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View City:  Summary Add Data Validation Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
-15:57:19.067 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Stat:  Summary Add Data Validation Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
-15:57:20.438 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Country:  Summary Add Data Validation Passed : Actual Value is: IndiaExpected Value is: India
-15:57:21.829 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View CheckBox:  Summary Add Data Validation Passed : Actual Value is: YesExpected Value is: Yes
-15:57:23.286 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Date:  Summary Add Data Validation Passed : Actual Value is: 2023-12-30Expected Value is: 2023-12-30
-15:57:24.649 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Time:  Summary Add Data Validation Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
-15:57:26.025 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Date & Time :  Summary Add Data Validation Passed : Actual Value is: 2023-12-30 03:00 PMExpected Value is: 2023-12-30 03:00 PM
-15:57:27.362 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Related Module :  Summary Add Data Validation Passed : Actual Value is: Expected Value is: 
-15:57:28.777 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View File Upload :  Summary Add Data Validation Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-15:57:30.140 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Name:  Summary Add Data Validation Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
-15:57:31.503 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Number:  Summary Add Data Validation Passed : Actual Value is: 33333333333Expected Value is: 33333333333
-15:57:32.830 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Currency:  Summary Add Data Validation Failed : Actual Value is: 8000Expected Value is: 8,000
-15:57:34.113 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Url:  Summary Add Data Validation Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
-15:57:35.482 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Name:  Summary Add Data Validation Passed : Actual Value is: Dr. TestNamesExpected Value is: Dr. TestNames
-15:57:36.845 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Email:  Summary Add Data Validation Passed : Actual Value is: testEnquiry@test.comExpected Value is: testEnquiry@test.com
-15:57:38.197 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Text:  Summary Add Data Validation Passed : Actual Value is: Enquired about real estateExpected Value is: Enquired about real estate
-15:57:39.578 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Text Area:  Summary Add Data Validation Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
-15:57:40.984 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Date:  Summary Add Data Validation Passed : Actual Value is: 2023-12-30Expected Value is: 2023-12-30
-15:57:42.345 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Phone Number:  Summary Add Data Validation Passed : Actual Value is: +60 3900686622Expected Value is: +60 3900686622
-15:57:43.730 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Category:  Summary Add Data Validation Passed : Actual Value is: OrdinaryExpected Value is: Ordinary
-15:57:45.095 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT Lead Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +91 4399936194Expected Value is: +91 4399936194
-15:57:46.412 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Lead Email  Summary Add Data Validation Passed : Actual Value is: Lead@rsoft.inExpected Value is: Lead@rsoft.in
-15:57:47.761 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Lead Text Summary Add Data Validation Passed : Actual Value is: Sample TextExpected Value is: Sample Text
-15:57:49.111 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT Sales Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +60 3830231843Expected Value is: +60 3830231843
-15:57:50.446 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Sales EmailSummary Add Data Validation Passed : Actual Value is: Sales@rsoft.inExpected Value is: Sales@rsoft.in
-15:57:59.485 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [SMS Notifiers] is selected in List
-15:58:02.995 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 7134669578 entered in  input
-15:58:09.758 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-15:58:09.758 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Pass: SMS Received after summary ADD for the Mobile : 7134669578
-15:58:15.163 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-15:58:15.282 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Receipient Number Passed : Actual Value is: 7134669578Expected Value is: 7134669578
-15:58:16.575 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Type Passed : Actual Value is: SMSExpected Value is: SMS
-15:58:17.859 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Status Passed : Actual Value is: SentExpected Value is: Sent
-15:58:19.159 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Add New Record:7134669578RecordId: 448983736
-15:58:20.656 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 3900686622 entered in  input
-15:58:27.379 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-15:58:27.379 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Pass: SMS Received after Summary Add New for the Enquiry Number 3900686622
-15:58:32.761 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-15:58:32.860 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Receipient Number Passed : Actual Value is: 3900686622Expected Value is: 3900686622
-15:58:34.124 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Type Passed : Actual Value is: SMSExpected Value is: SMS
-15:58:35.462 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Status Passed : Actual Value is: SentExpected Value is: Sent
-15:58:36.728 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - RecorId after Add New Summary Details:3900686622RecordId: 448983737
-15:58:38.217 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4399936194 entered in  input
-15:58:44.842 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-15:58:44.842 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Pass: SMS Received after Summary Add New for the Lead Number4399936194
-15:58:50.190 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-15:58:50.310 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Receipient Number Passed : Actual Value is: 4399936194Expected Value is: 4399936194
-15:58:51.607 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Type Passed : Actual Value is: SMSExpected Value is: SMS
-15:58:52.877 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Status Passed : Actual Value is: SentExpected Value is: Sent
-15:58:54.175 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Add New Record4399936194RecordId: 448983738
+17:23:22.325 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT Lead Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +91 2430732637Expected Value is: +91 2430732637
+17:23:23.676 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Lead Email  Summary Add Data Validation Passed : Actual Value is: CRM_Lead@text.comExpected Value is: CRM_Lead@text.com
+17:23:25.043 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Lead Text Summary Add Data Validation Passed : Actual Value is: Lead TextExpected Value is: Lead Text
+17:23:26.408 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT Sales Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +60 2774830371Expected Value is: +60 2774830371
+17:23:27.775 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Sales EmailSummary Add Data Validation Passed : Actual Value is: Sales@rsoft.inExpected Value is: Sales@rsoft.in
+17:23:42.105 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [SMS Notifiers] is selected in List
+17:23:44.659 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:23:57.709 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:23:57.709 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after New Record Add in Summary View -2503380077
+17:24:02.611 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:24:09.911 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:24:09.911 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after New Record Add in Summary View-2562299660
+17:24:14.659 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:24:23.474 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:24:23.474 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after New Record Add - in Summary View2430732637
+17:24:42.933 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [CRMNotification] is selected in List
+17:25:36.973 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [SMS Notifiers] is selected in List
+17:25:40.521 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:25:49.846 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:25:49.846 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with No Modify -2503380077
+17:25:54.617 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:26:03.879 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:26:03.879 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with No Modify -2562299660
+17:26:08.647 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:26:16.964 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:26:16.964 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with No Modify -2430732637
+17:26:31.468 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [CRMNotification] is selected in List
+17:26:48.368 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Excel file Utility instance created
+17:26:48.396 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Row Count is: 1
+17:26:48.417 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Col Count is: 52
+17:26:48.417 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Extracting DataSheet Values started...
+17:26:49.393 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Before Adding Module data
+17:26:52.583 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Assinged To Drop Down clicked
+17:26:57.914 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Sudhakar VE] is selected in List
+17:26:57.914 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Assinged To Value Seleted is::  Sudhakar VE
+17:26:58.518 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Testing ETR_M entered in  input
+17:26:58.525 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Text Value added is::  Testing ETR_M
+17:26:59.716 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Phone NUmber prefix clicked :  
+17:27:03.093 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+65] is selected in List
+17:27:03.093 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Phone NUmber selected is :  2503380077
+17:27:03.732 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:27:05.425 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - sv@bluecrimson.in entered in  input
+17:27:06.445 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Email Added is: sv@bluecrimson.in
+17:27:06.603 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Picklist clicked
+17:27:11.102 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [4] is selected in List
+17:27:11.102 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Picklist selected: 4
+17:28:09.414 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - MultiCombo box values: three
+17:28:10.611 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - City Drop Down clicked
+17:28:14.071 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Ozar] is selected in List
+17:28:14.072 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - City Selected: Ozar
+17:28:15.267 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - State Drop Down clicked
+17:28:19.627 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - State Selected: Telengana
+17:28:20.862 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Country List clicked
+17:28:24.213 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [India] is selected in List
+17:28:24.213 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Country Selected: India
+17:28:25.295 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Checkbox clicked
+17:28:25.437 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DateBox clicked
+17:28:28.446 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - (//td[contains(@class,'today')])[1]
+17:28:29.645 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Today Date Selected
+17:28:30.795 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Time Clicked
+17:28:37.496 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Time Selected is: 02:36 PM
+17:28:38.710 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Date & Time Clicked
+17:28:43.728 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - (//td[contains(@class,'today')])[2]
+17:28:46.927 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Clicked Current Date in Date&Time
+17:28:47.157 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Date & Time Selected
+17:28:47.814 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M -  entered in  input
+17:28:51.523 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Mrs.] is selected in List
+17:28:51.983 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Steven entered in  input
+17:28:52.495 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 33333333333 entered in  input
+17:28:52.915 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 8,000 entered in  input
+17:28:53.660 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - http://www.rsoft.com entered in  input
+17:28:57.238 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Dr.] is selected in List
+17:28:57.697 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Vijay entered in  input
+17:28:58.463 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DuplcateEqnury@gmail.com entered in  input
+17:28:59.259 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Enquired about project entered in  input
+17:29:06.444 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+17:29:09.597 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - (//td[contains(@class,'today')])[2]
+17:29:15.617 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+60] is selected in List
+17:29:17.225 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:29:20.970 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Moderate] is selected in List
+17:29:26.542 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+91] is selected in List
+17:29:28.175 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:29:29.040 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - CRMDuplicateLead@rsoft.in entered in  input
+17:29:29.966 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Sample duplicate lead Text entered in  input
+17:29:34.569 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+60] is selected in List
+17:29:36.185 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2774830371 entered in  input
+17:29:36.780 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Sales@rsoft.in entered in  input
+17:30:12.962 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Excel file Utility instance created
+17:30:13.010 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Row Count is: 1
+17:30:13.025 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Col Count is: 52
+17:30:13.025 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Extracting DataSheet Values started...
+17:30:13.979 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Module Name : Duplicate with New Data Passed : Actual Value is: CRMNotificationExpected Value is: CRMNotification
+17:30:15.526 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Text:  Duplicate with New Data Passed : Actual Value is: Testing ETR_MExpected Value is: Testing ETR_M
+17:30:16.806 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Mobile Title: Duplicate with New Data Passed : Actual Value is: +65 2503380077Expected Value is: +65 2503380077
+17:30:18.073 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Email: Duplicate with New Data Passed : Actual Value is: sv@bluecrimson.inExpected Value is: sv@bluecrimson.in
+17:30:27.602 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary AssignedTo:  Duplicate with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:30:28.960 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Text:  Duplicate with New Data Passed : Actual Value is: Testing ETR_MExpected Value is: Testing ETR_M
+17:30:30.326 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Mobile Number:  Duplicate with New Data Passed : Actual Value is: +65 2503380077Expected Value is: +65 2503380077
+17:30:31.665 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Email :  Duplicate with New Data Passed : Actual Value is: sv@bluecrimson.inExpected Value is: sv@bluecrimson.in
+17:30:33.012 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary PicListValue :  Duplicate with New Data Passed : Actual Value is: 4Expected Value is: 4
+17:30:34.378 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary MuultiCombo Values :  Duplicate with New Data Failed : Actual Value is: twoExpected Value is: three
+17:30:35.726 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary City:  Duplicate with New Data Passed : Actual Value is: OzarExpected Value is: Ozar
+17:30:37.080 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary State:  Duplicate with New Data Failed : Actual Value is: TamilnaduExpected Value is: Telengana
+17:30:38.444 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Country:  Duplicate with New Data Passed : Actual Value is: IndiaExpected Value is: India
+17:30:39.780 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary CheckBox:  Duplicate with New Data Passed : Actual Value is: YesExpected Value is: Yes
+17:30:41.219 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:30:42.618 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Time:  Duplicate with New Data Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
+17:30:43.979 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Date & Time :  Duplicate with New Data Passed : Actual Value is: 2024-01-03 05:00 PMExpected Value is: 2024-01-03 05:00 PM
+17:30:45.388 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary File Upload :  Duplicate with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+17:30:46.768 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Name:  Duplicate with New Data Passed : Actual Value is: Mrs. StevenExpected Value is: Mrs. Steven
+17:30:48.167 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Number:  Duplicate with New Data Passed : Actual Value is: 33333333333Expected Value is: 33333333333
+17:30:49.531 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Currency:  Duplicate with New Data Failed : Actual Value is: 8000Expected Value is: 8,000
+17:30:50.824 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Url:  Duplicate with New Data Failed : Actual Value is: http://www.rsoft.com/Expected Value is: http://www.rsoft.com
+17:30:52.235 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Name:  Duplicate with New Data Passed : Actual Value is: Dr. VijayExpected Value is: Dr. Vijay
+17:30:53.597 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Email:  Duplicate with New Data Passed : Actual Value is: DuplcateEqnury@gmail.comExpected Value is: DuplcateEqnury@gmail.com
+17:30:54.981 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Text:  Duplicate with New Data Passed : Actual Value is: Enquired about projectExpected Value is: Enquired about project
+17:30:56.377 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Text Area:  Duplicate with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:30:57.745 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:30:59.146 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Phone Number:  Duplicate with New Data Passed : Actual Value is: +60 2562299660Expected Value is: +60 2562299660
+17:31:00.478 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Category:  Duplicate with New Data Passed : Actual Value is: ModerateExpected Value is: Moderate
+17:31:01.889 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Lead PhoneNumber:  Duplicate with New Data Passed : Actual Value is: +91 2430732637Expected Value is: +91 2430732637
+17:31:03.258 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Lead Email:  Duplicate with New Data Passed : Actual Value is: CRMDuplicateLead@rsoft.inExpected Value is: CRMDuplicateLead@rsoft.in
+17:31:04.624 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Lead Text:  Duplicate with New Data Passed : Actual Value is: Sample duplicate lead TextExpected Value is: Sample duplicate lead Text
+17:31:06.006 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Sales PhoneNumber:  Duplicate with New Data Passed : Actual Value is: +60 2774830371Expected Value is: +60 2774830371
+17:31:07.365 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Sales Email:  Duplicate with New Data Passed : Actual Value is: Sales@rsoft.inExpected Value is: Sales@rsoft.in
+17:31:16.662 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View AssignedTo:  Duplicate with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:31:18.025 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Text:  Duplicate with New Data Passed : Actual Value is: Testing ETR_MExpected Value is: Testing ETR_M
+17:31:19.436 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Mobile Number:  Duplicate with New Data Passed : Actual Value is: +65 2503380077Expected Value is: +65 2503380077
+17:31:20.792 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Email :  Duplicate with New Data Passed : Actual Value is: sv@bluecrimson.inExpected Value is: sv@bluecrimson.in
+17:31:22.213 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View PicListValue :  Duplicate with New Data Passed : Actual Value is: 4Expected Value is: 4
+17:31:23.527 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View MuultiCombo Values :  Duplicate with New Data Failed : Actual Value is: twoExpected Value is: three
+17:31:24.883 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View City:  Duplicate with New Data Passed : Actual Value is: OzarExpected Value is: Ozar
+17:31:26.241 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Stat:  Duplicate with New Data Failed : Actual Value is: TamilnaduExpected Value is: Telengana
+17:31:27.617 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Country:  Duplicate with New Data Passed : Actual Value is: IndiaExpected Value is: India
+17:31:28.926 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View CheckBox:  Duplicate with New Data Passed : Actual Value is: YesExpected Value is: Yes
+17:31:30.312 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:31:31.692 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Time:  Duplicate with New Data Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
+17:31:33.096 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Date & Time :  Duplicate with New Data Passed : Actual Value is: 2024-01-03 05:00 PMExpected Value is: 2024-01-03 05:00 PM
+17:31:34.442 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Related Module :  Duplicate with New Data Passed : Actual Value is: Expected Value is: 
+17:31:35.886 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View File Upload :  Duplicate with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+17:31:37.269 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Name:  Duplicate with New Data Passed : Actual Value is: Mrs. StevenExpected Value is: Mrs. Steven
+17:31:38.650 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Number:  Duplicate with New Data Passed : Actual Value is: 33333333333Expected Value is: 33333333333
+17:31:40.058 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Currency:  Duplicate with New Data Failed : Actual Value is: 8000Expected Value is: 8,000
+17:31:41.356 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Url:  Duplicate with New Data Failed : Actual Value is: http://www.rsoft.com/Expected Value is: http://www.rsoft.com
+17:31:42.803 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Name:  Duplicate with New Data Passed : Actual Value is: Dr. VijayExpected Value is: Dr. Vijay
+17:31:44.211 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Email:  Duplicate with New Data Passed : Actual Value is: DuplcateEqnury@gmail.comExpected Value is: DuplcateEqnury@gmail.com
+17:31:45.562 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Text:  Duplicate with New Data Passed : Actual Value is: Enquired about projectExpected Value is: Enquired about project
+17:31:46.941 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Text Area:  Duplicate with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:31:48.332 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:31:49.641 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Phone Number:  Duplicate with New Data Passed : Actual Value is: +60 2562299660Expected Value is: +60 2562299660
+17:31:51.006 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Category:  Duplicate with New Data Passed : Actual Value is: ModerateExpected Value is: Moderate
+17:31:52.361 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT Lead Mobile Number:  Duplicate with New Data Passed : Actual Value is: +91 2430732637Expected Value is: +91 2430732637
+17:31:53.676 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Lead Email  Duplicate with New Data Passed : Actual Value is: CRMDuplicateLead@rsoft.inExpected Value is: CRMDuplicateLead@rsoft.in
+17:31:55.050 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Lead Text Duplicate with New Data Passed : Actual Value is: Sample duplicate lead TextExpected Value is: Sample duplicate lead Text
+17:31:56.406 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT Sales Mobile Number:  Duplicate with New Data Passed : Actual Value is: +60 2774830371Expected Value is: +60 2774830371
+17:31:57.756 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Sales EmailDuplicate with New Data Passed : Actual Value is: Sales@rsoft.inExpected Value is: Sales@rsoft.in
+17:32:09.786 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [SMS Notifiers] is selected in List
+17:32:13.373 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:32:25.590 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:32:25.590 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with Modification data -2503380077
+17:32:30.440 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:32:37.673 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:32:37.673 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with Modification data -2562299660
+17:32:42.460 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:32:50.640 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:1
+17:32:50.640 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with Modification data -2430732637
+17:33:10.196 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [CRMNotification] is selected in List
+17:33:59.077 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [SMS Notifiers] is selected in List
+17:34:02.613 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:34:09.872 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:2
+17:34:09.887 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with No Modify -2503380077
+17:34:14.657 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:34:24.222 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:2
+17:34:24.222 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with No Modify -2562299660
+17:34:27.075 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:34:36.111 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:2
+17:34:36.111 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with No Modify -2430732637
+17:34:48.366 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [CRMNotification] is selected in List
+17:35:07.372 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Excel file Utility instance created
+17:35:07.406 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Row Count is: 1
+17:35:07.422 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Col Count is: 52
+17:35:07.422 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Extracting DataSheet Values started...
+17:35:08.404 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Before Adding Module data
+17:35:11.610 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Assinged To Drop Down clicked
+17:35:16.949 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Sudhakar VE] is selected in List
+17:35:16.949 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Assinged To Value Seleted is::  Sudhakar VE
+17:35:17.517 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Testing ETR_M entered in  input
+17:35:17.526 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Text Value added is::  Testing ETR_M
+17:35:18.755 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Phone NUmber prefix clicked :  
+17:35:22.149 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+65] is selected in List
+17:35:22.149 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Phone NUmber selected is :  2503380077
+17:35:22.744 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:35:24.470 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - EditSudhakar@rsoft.in entered in  input
+17:35:25.488 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Email Added is: EditSudhakar@rsoft.in
+17:35:25.659 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Picklist clicked
+17:35:30.180 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [5] is selected in List
+17:35:30.180 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Picklist selected: 5
+17:35:40.006 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M -  Item selected in Multi combox Box: [[ChromeDriver: chrome on windows (7f2aaa2b31d05cb8d20a5245c6bc75c7)] -> xpath: //li[@role='treeitem']]
+17:35:43.021 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - MultiCombo box values: four
+17:35:44.181 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - City Drop Down clicked
+17:35:47.679 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Madurai] is selected in List
+17:35:47.679 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - City Selected: Madurai
+17:35:48.909 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - State Drop Down clicked
+17:35:53.040 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Tamilnadu] is selected in List
+17:35:53.040 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - State Selected: Tamilnadu
+17:35:54.227 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Country List clicked
+17:35:57.559 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [India] is selected in List
+17:35:57.559 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Country Selected: India
+17:35:58.662 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Checkbox clicked
+17:35:58.816 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DateBox clicked
+17:36:01.822 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - (//td[contains(@class,'today')])[1]
+17:36:03.009 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Today Date Selected
+17:36:04.176 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Time Clicked
+17:36:10.786 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Time Selected is: 02:36 PM
+17:36:11.977 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Date & Time Clicked
+17:36:16.987 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - (//td[contains(@class,'today')])[2]
+17:36:20.211 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Clicked Current Date in Date&Time
+17:36:20.419 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Date & Time Selected
+17:36:21.159 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M -  entered in  input
+17:36:24.826 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Mrs.] is selected in List
+17:36:25.287 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Sudhakar entered in  input
+17:36:25.777 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 6666666666 entered in  input
+17:36:26.315 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 77,777,777 entered in  input
+17:36:27.063 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - http://www.google.com/ entered in  input
+17:36:30.706 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Dr.] is selected in List
+17:36:31.340 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Edit Test Names entered in  input
+17:36:32.026 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - EditEnquiry@test.com entered in  input
+17:36:32.769 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Enquired about income entered in  input
+17:36:39.935 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+17:36:43.119 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - (//td[contains(@class,'today')])[2]
+17:36:49.080 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+60] is selected in List
+17:36:50.804 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:36:54.612 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Urgent] is selected in List
+17:37:00.249 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+91] is selected in List
+17:37:01.949 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:37:02.601 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - EditLead@rsoft.in entered in  input
+17:37:03.372 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Edit Lead Sample Text entered in  input
+17:37:07.949 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+60] is selected in List
+17:37:09.609 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2774830371 entered in  input
+17:37:10.296 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - EditSales@rsoft.in entered in  input
+17:37:41.136 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Excel file Utility instance created
+17:37:41.185 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Row Count is: 1
+17:37:41.201 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Col Count is: 52
+17:37:41.201 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Extracting DataSheet Values started...
+17:37:42.159 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Module Name : Edit with New Data Passed : Actual Value is: CRMNotificationExpected Value is: CRMNotification
+17:37:43.719 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Text:  Edit with New Data Passed : Actual Value is: Testing ETR_MExpected Value is: Testing ETR_M
+17:37:44.998 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Mobile Title: Edit with New Data Passed : Actual Value is: +65 2503380077Expected Value is: +65 2503380077
+17:37:46.584 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Email: Edit with New Data Passed : Actual Value is: EditSudhakar@rsoft.inExpected Value is: EditSudhakar@rsoft.in
+17:37:56.360 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary AssignedTo:  Edit with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:37:57.697 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Text:  Edit with New Data Passed : Actual Value is: Testing ETR_MExpected Value is: Testing ETR_M
+17:37:59.104 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Mobile Number:  Edit with New Data Passed : Actual Value is: +65 2503380077Expected Value is: +65 2503380077
+17:38:00.440 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Email :  Edit with New Data Passed : Actual Value is: EditSudhakar@rsoft.inExpected Value is: EditSudhakar@rsoft.in
+17:38:01.811 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary PicListValue :  Edit with New Data Passed : Actual Value is: 5Expected Value is: 5
+17:38:03.142 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary MuultiCombo Values :  Edit with New Data Failed : Actual Value is: two,fourExpected Value is: four
+17:38:04.474 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary City:  Edit with New Data Passed : Actual Value is: MaduraiExpected Value is: Madurai
+17:38:05.824 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary State:  Edit with New Data Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+17:38:07.180 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Country:  Edit with New Data Passed : Actual Value is: IndiaExpected Value is: India
+17:38:08.492 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary CheckBox:  Edit with New Data Passed : Actual Value is: YesExpected Value is: Yes
+17:38:09.844 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Date:  Edit with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:38:11.230 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Time:  Edit with New Data Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
+17:38:12.658 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Date & Time :  Edit with New Data Passed : Actual Value is: 2024-01-03 05:00 PMExpected Value is: 2024-01-03 05:00 PM
+17:38:14.134 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary File Upload :  Edit with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+17:38:15.541 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Name:  Edit with New Data Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
+17:38:16.924 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Number:  Edit with New Data Passed : Actual Value is: 6666666666Expected Value is: 6666666666
+17:38:18.311 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Currency:  Edit with New Data Failed : Actual Value is: 77777777Expected Value is: 77,777,777
+17:38:19.606 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Url:  Edit with New Data Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+17:38:20.985 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Name:  Edit with New Data Failed : Actual Value is: Dr. EditExpected Value is: Dr. Edit Test Names
+17:38:22.315 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Email:  Edit with New Data Passed : Actual Value is: EditEnquiry@test.comExpected Value is: EditEnquiry@test.com
+17:38:23.641 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Text:  Edit with New Data Passed : Actual Value is: Enquired about incomeExpected Value is: Enquired about income
+17:38:25.025 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Text Area:  Edit with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:38:26.428 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Date:  Edit with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:38:27.871 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Phone Number:  Edit with New Data Passed : Actual Value is: +60 2562299660Expected Value is: +60 2562299660
+17:38:29.239 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Enquiry Category:  Edit with New Data Passed : Actual Value is: UrgentExpected Value is: Urgent
+17:38:30.604 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Lead PhoneNumber:  Edit with New Data Passed : Actual Value is: +91 2430732637Expected Value is: +91 2430732637
+17:38:31.956 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Lead Email:  Edit with New Data Passed : Actual Value is: EditLead@rsoft.inExpected Value is: EditLead@rsoft.in
+17:38:33.288 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Lead Text:  Edit with New Data Passed : Actual Value is: Edit Lead Sample TextExpected Value is: Edit Lead Sample Text
+17:38:34.670 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Sales PhoneNumber:  Edit with New Data Passed : Actual Value is: +60 2774830371Expected Value is: +60 2774830371
+17:38:36.007 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Summary Sales Email:  Edit with New Data Passed : Actual Value is: EditSales@rsoft.inExpected Value is: EditSales@rsoft.in
+17:38:44.444 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View AssignedTo:  Edit with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+17:38:45.774 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Text:  Edit with New Data Passed : Actual Value is: Testing ETR_MExpected Value is: Testing ETR_M
+17:38:47.145 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Mobile Number:  Edit with New Data Passed : Actual Value is: +65 2503380077Expected Value is: +65 2503380077
+17:38:48.524 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Email :  Edit with New Data Passed : Actual Value is: EditSudhakar@rsoft.inExpected Value is: EditSudhakar@rsoft.in
+17:38:49.906 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View PicListValue :  Edit with New Data Passed : Actual Value is: 5Expected Value is: 5
+17:38:51.243 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View MuultiCombo Values :  Edit with New Data Failed : Actual Value is: two,fourExpected Value is: four
+17:38:52.611 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View City:  Edit with New Data Passed : Actual Value is: MaduraiExpected Value is: Madurai
+17:38:53.940 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Stat:  Edit with New Data Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+17:38:55.345 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Country:  Edit with New Data Passed : Actual Value is: IndiaExpected Value is: India
+17:38:56.708 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View CheckBox:  Edit with New Data Passed : Actual Value is: YesExpected Value is: Yes
+17:38:58.092 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Date:  Edit with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:38:59.473 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Time:  Edit with New Data Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
+17:39:00.856 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Date & Time :  Edit with New Data Passed : Actual Value is: 2024-01-03 05:00 PMExpected Value is: 2024-01-03 05:00 PM
+17:39:02.240 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Related Module :  Edit with New Data Passed : Actual Value is: Expected Value is: 
+17:39:03.713 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View File Upload :  Edit with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+17:39:05.045 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Name:  Edit with New Data Passed : Actual Value is: Mrs. SudhakarExpected Value is: Mrs. Sudhakar
+17:39:06.427 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Number:  Edit with New Data Passed : Actual Value is: 6666666666Expected Value is: 6666666666
+17:39:07.806 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Currency:  Edit with New Data Failed : Actual Value is: 77777777Expected Value is: 77,777,777
+17:39:09.121 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Url:  Edit with New Data Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+17:39:10.499 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Name:  Edit with New Data Failed : Actual Value is: Dr. EditExpected Value is: Dr. Edit Test Names
+17:39:11.906 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Email:  Edit with New Data Passed : Actual Value is: EditEnquiry@test.comExpected Value is: EditEnquiry@test.com
+17:39:13.280 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Text:  Edit with New Data Passed : Actual Value is: Enquired about incomeExpected Value is: Enquired about income
+17:39:14.689 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Text Area:  Edit with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:39:16.064 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Date:  Edit with New Data Passed : Actual Value is: 2024-01-03Expected Value is: 2024-01-03
+17:39:17.421 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Phone Number:  Edit with New Data Passed : Actual Value is: +60 2562299660Expected Value is: +60 2562299660
+17:39:18.739 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Detail View Enquiry Category:  Edit with New Data Passed : Actual Value is: UrgentExpected Value is: Urgent
+17:39:20.141 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT Lead Mobile Number:  Edit with New Data Passed : Actual Value is: +91 2430732637Expected Value is: +91 2430732637
+17:39:21.554 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Lead Email  Edit with New Data Passed : Actual Value is: EditLead@rsoft.inExpected Value is: EditLead@rsoft.in
+17:39:22.922 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Lead Text Edit with New Data Passed : Actual Value is: Edit Lead Sample TextExpected Value is: Edit Lead Sample Text
+17:39:24.337 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT Sales Mobile Number:  Edit with New Data Passed : Actual Value is: +60 2774830371Expected Value is: +60 2774830371
+17:39:25.688 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - DT View Sales EmailEdit with New Data Passed : Actual Value is: EditSales@rsoft.inExpected Value is: EditSales@rsoft.in
+17:39:46.558 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [SMS Notifiers] is selected in List
+17:39:50.085 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:39:58.635 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:3
+17:39:58.635 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with updated Record -2503380077
+17:40:01.438 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:40:11.305 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:3
+17:40:11.305 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with updated Record -2562299660
+17:40:14.121 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:40:23.221 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:3
+17:40:23.221 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with updated Record -2430732637
+17:40:36.779 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [CRMNotification] is selected in List
+17:40:53.038 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - IndividualTextEdited entered in  input
+17:41:14.411 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [SMS Notifiers] is selected in List
+17:41:17.947 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2503380077 entered in  input
+17:41:27.653 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:4
+17:41:27.653 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Single Value Edit -2503380077
+17:41:30.441 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2562299660 entered in  input
+17:41:40.553 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:4
+17:41:40.553 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Single Value Edit -2562299660
+17:41:43.386 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - 2430732637 entered in  input
+17:41:52.236 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - SMS Count:4
+17:41:52.236 [main] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Single Value Edit -2430732637

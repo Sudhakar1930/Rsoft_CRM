@@ -78,11 +78,19 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="(//i[contains(@class,'fa fa-edit')])[1]")
 	WebElement eleEllipsisEdit;
 	
+	@FindBy(xpath="//button[normalize-space()='edit_square']")
+	WebElement eleEditButton;
+	
+	
 	
 	public void clickEditRecord() throws Exception {
 		UtilityCustomFunctions.doClick(driver, eleEllipsisEdit);
 	}
-			
+	
+	public void clickEdit() throws Exception {
+		UtilityCustomFunctions.doClick(driver, eleEditButton);
+	}
+	
 	public void clickEllipsis(int iEllipsisPos) throws InterruptedException {
 		String sXpath = "(//i[@class='fa fa-ellipsis-v'])["+iEllipsisPos+"]";
 		WebElement eEllipsis = driver.findElement(By.xpath(sXpath));

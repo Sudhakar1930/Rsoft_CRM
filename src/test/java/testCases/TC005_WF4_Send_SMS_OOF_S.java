@@ -202,9 +202,9 @@ public class TC005_WF4_Send_SMS_OOF_S extends BaseClass{
 		Thread.sleep(2000);
 		
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_");
+		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1");
 
-		objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Module Data Validation","No",node);
+		objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet1","Module Data Validation","No",node);
 		
 		Thread.sleep(2000);
 		objALP.clickAllList();
