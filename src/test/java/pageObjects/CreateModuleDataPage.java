@@ -81,6 +81,21 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//button[normalize-space()='edit_square']")
 	WebElement eleEditButton;
 	
+	@FindBy(className = "select2-selection__choice__remove")
+	List<WebElement> lstMultiCombo;
+	
+	
+	
+	public void fRemMultiComboValues() throws InterruptedException {
+		int iCount = lstMultiCombo.size();
+		if(iCount>0) {
+			for(int i = 0;i<iCount;i++) {
+				lstMultiCombo.get(i).click();
+				Thread.sleep(1000);
+			}
+				
+		}
+	}
 	
 	
 	public void clickEditRecord() throws Exception {
@@ -153,6 +168,8 @@ public class CreateModuleDataPage extends BasePage{
 	
 	}
 	public void clickMultiComboBox(String sMS_Value) throws Exception {
+		fRemMultiComboValues();
+		Thread.sleep(3000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", txtMultiComboBox);
 		System.out.println("Expected values:" + sMS_Value);
 		String arrValues[]=sMS_Value.split(",");
@@ -322,6 +339,13 @@ public class CreateModuleDataPage extends BasePage{
 	
 	public void setUploadFile() throws Exception {
 //		UtilityCustomFunctions.doClick(driver, eleUploadFile);
+		List<WebElement> lstOldfiles = driver.findElements(By.xpath("//i[@class='fa fa-remove']"));
+		int iCount = lstOldfiles.size();
+		for(int i=1;i<=iCount;i++) {
+			lstOldfiles.get(i).click();
+			Thread.sleep(1000);
+		}
+		Thread.sleep(1000);
 		File uploadfile = new File("./src/test/resources/annie-spratt.jpg");
 		WebElement fileInput = driver.findElement(By.cssSelector("input[type=file]"));
 		fileInput.sendKeys(uploadfile.getAbsolutePath());

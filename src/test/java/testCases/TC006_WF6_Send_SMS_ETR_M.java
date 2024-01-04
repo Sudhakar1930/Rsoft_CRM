@@ -357,8 +357,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 				sAssertinFn.assertEquals("Add New Record - SMS received", "Add New Record - SMS Not received");
 			}
 			
-			Thread.sleep(2000);
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
@@ -432,9 +431,8 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			}
 			
 			Thread.sleep(2000);
-			Thread.sleep(1000);
 			objSMS.setRecipient(sLead_PN);
-			
+			Thread.sleep(1000);
 			objSMS.clickSearch();
 			iSMSCount = objSMS.getSMSRowcount();
 			
@@ -650,7 +648,6 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			}
 			Thread.sleep(1000);
 			objSMS.setRecipient(sLead_PN);
-			
 			objSMS.clickSearch();
 			iSMSCount = objSMS.getSMSRowcount();
 			
