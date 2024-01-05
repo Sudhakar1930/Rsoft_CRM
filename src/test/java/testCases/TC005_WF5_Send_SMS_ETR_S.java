@@ -162,6 +162,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		String sPassword =  rb.getString("passWord1");
 		String sAssignedTo = rb.getString("AssignedTo1");
 		
+		int iSMSCount=0;
 		
 		String sFullMobileNumber = sMobNumPrefix + " " + sMobileNumber;  
 		String sFullEnquiry_PhoneNumber = sEnquiry_PN_Prefix + sEnquiry_PhoneNumber; 
@@ -245,12 +246,13 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objEDT.clickModule(sDisplayModuleName);
 		System.out.println("Add New Module data clicked");
 		Thread.sleep(2000);
-//		
-////		//**************Add New Record
+		
+		
+////////		//**************Add New Record
 		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_","Sheet1");
-//
-//		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet1","Add Direct Entry Module Data","No",node);
-//		
+
+		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet1","Add Direct Entry Module Data","No",node);
+		
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -260,7 +262,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sMobileNumber);
 		
 		objSMS.clickSearch();
-		int iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getSMSRowcount();
 		if(iSMSCount<=1) {
 			logger.info("Failed: SMS Not Received after New Record Add -"+ sMobileNumber);
 			freport("Failed: SMS Not Received after New Record Add -"+ sMobileNumber, "fail",node);
@@ -290,9 +292,9 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after New Record Add -"+ sEnquiry_PhoneNumber);
 			sAssertinFn.assertEquals("Add New Record - SMS received", "Add New Record - SMS received");
 		}
-//		objSMS.clickFirstSMS();
-//		sUser2MessageId = objSMS.fValidateSMSNotification(sAssignedTo, sFullEnquiry_PhoneNumber, sSMSTemplateMsg,"SMS Validation for " + sEnquiry_PhoneNumber , node);
-//		UtilityCustomFunctions.logWriteConsole("RecorId after add new record :" + sMobileNumber + "RecordId: "+ sUser2MessageId);
+////		objSMS.clickFirstSMS();
+////		sUser2MessageId = objSMS.fValidateSMSNotification(sAssignedTo, sFullEnquiry_PhoneNumber, sSMSTemplateMsg,"SMS Validation for " + sEnquiry_PhoneNumber , node);
+////		UtilityCustomFunctions.logWriteConsole("RecorId after add new record :" + sMobileNumber + "RecordId: "+ sUser2MessageId);
 		Thread.sleep(3000);
 		objSMS.setRecipient(sLead_PN);
 		objSMS.clickSearch();
@@ -309,151 +311,151 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after New Record Add -"+ sLead_PN);
 			sAssertinFn.assertEquals("Add New Record - SMS received", "Add New Record - SMS received");
 		}
-//		
-//		//Summary Add New Record
-//		Thread.sleep(3000);
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
-//		System.out.println("Module clicked");
-//		Thread.sleep(3000);
-//		objCMD.clickExistingModData(1);
-//		
-//		objDVP.clickAddRecord();
-//		Thread.sleep(3000);
-//		//Add New Record and Check
-//		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_","Sheet2");
-//		Thread.sleep(3000);
-//		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet2","Summary Add Data Validation","No",node);
-//		//SMS Validation after Summary Add New
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
-//		Thread.sleep(2000);
-//		objSMS.setRecipient(sMobileNumber);
-//		Thread.sleep(1000);
-//		objSMS.clickSearch();
-//		Thread.sleep(1000);
-//		iSMSCount = objSMS.getSMSRowcount();
-//		if(iSMSCount==3) {
-//			logger.info("Passed: SMS Received after Summary New Record Add -"+ sMobileNumber);
-//			freport("Passed: SMS Received after  Summary New Record Add -"+ sMobileNumber, "pass",node);
-//			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after  Summary New Record Add -"+ sMobileNumber);
-//			sAssertinFn.assertEquals("Summary New Record - SMS received", "Summary New Record - SMS received");
-//		}
-//		else {
-//			logger.info("Failed: SMS Not Received after Summary New Record Add -"+ sMobileNumber);
-//			freport("Failed: SMS Not Received after Summary New Record Add  -"+ sMobileNumber, "fail",node);
-//			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary New Record Add -"+ sMobileNumber);
-//			sAssertinFn.assertEquals("Summary New Record - SMS Not received", "Summary New Record - SMS Not received");
-//		}
-//		Thread.sleep(3000);
-//		objSMS.setRecipient(sEnquiry_PhoneNumber);
-//		
-//		objSMS.clickSearch();
-//		iSMSCount = objSMS.getSMSRowcount();
-//		if(iSMSCount==3) {
-//			logger.info("Passed: SMS Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
-//			freport("Passed: SMS Received after  Summary New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
-//			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after  Summary New Record Add -"+ sEnquiry_PhoneNumber);
-//			sAssertinFn.assertEquals("Summary New Record - SMS received", "Summary New Record - SMS received");
-//		}
-//		else {
-//			logger.info("Failed: SMS Not Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
-//			freport("Failed: SMS Not Received after Summary New Record Add  -"+ sEnquiry_PhoneNumber, "fail",node);
-//			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
-//			sAssertinFn.assertEquals("Summary New Record - SMS Not received", "Summary New Record - SMS Not received");
-//		}
-//		
-//		Thread.sleep(3000);
-//		objSMS.setRecipient(sLead_PN);
-//		
-//		objSMS.clickSearch();
-//		iSMSCount = objSMS.getSMSRowcount();
-//		if(iSMSCount==3) {
-//			logger.info("Passed: SMS Received after Summary New Record Add -"+ sLead_PN);
-//			freport("Passed: SMS Received after  Summary New Record Add -"+ sLead_PN, "pass",node);
-//			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after  Summary New Record Add -"+ sLead_PN);
-//			sAssertinFn.assertEquals("Summary New Record - SMS received", "Summary New Record - SMS received");
-//		}
-//		else {
-//			logger.info("Failed: SMS Not Received after Summary New Record Add -"+ sLead_PN);
-//			freport("Failed: SMS Not Received after Summary New Record Add  -"+ sLead_PN, "fail",node);
-//			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary New Record Add -"+ sLead_PN);
-//			sAssertinFn.assertEquals("Summary New Record - SMS Not received", "Summary New Record - SMS Not received");
-//		}
-//		
-//		//Duplicate No Modify
-//		Thread.sleep(3000);
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
-//		System.out.println("Module clicked");
-//		Thread.sleep(3000);
-//		objCMD.clickExistingModData(1);
-//		Thread.sleep(1000);
-//		objDVP.clickDuplicateRecord();
-//		Thread.sleep(5000);
-//		objCMD.clickSave();
-//		UtilityCustomFunctions.checkPageLoadComplete();
-//		Thread.sleep(10000);
-//		//SMS Validation after Duplicate
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
-//		Thread.sleep(2000);
-//		Thread.sleep(1000);
-//		objSMS.setRecipient(sMobileNumber);
-//		
-//		objSMS.clickSearch();
-//		Thread.sleep(1000);
-//		iSMSCount = objSMS.getSMSRowcount();
-//		if(iSMSCount==4) {
-//			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber);
-//			freport("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber, "pass",node);
-//			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber);
-//			sAssertinFn.assertEquals("after Duplicate No Modify - SMS received", "after Duplicate No Modify - SMS received");
-//		}
-//		else {
-//			logger.info("Failed: SMS Not Received after Duplicate No Modify -"+ sMobileNumber);
-//			freport("Failed: SMS Not Received after Duplicate No Modify  -"+ sMobileNumber, "fail",node);
-//			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Duplicate No Modify -"+ sMobileNumber);
-//			sAssertinFn.assertEquals("Duplicate No Modify - SMS Not received", "Duplicate No Modify - SMS  received");
-//		}
-//		Thread.sleep(3000);
-//		objSMS.setRecipient(sEnquiry_PhoneNumber);
-//		Thread.sleep(1000);
-//		objSMS.clickSearch();
-//		iSMSCount = objSMS.getSMSRowcount();
-//		if(iSMSCount==4) {
-//			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
-//			freport("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber, "pass",node);
-//			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
-//			sAssertinFn.assertEquals("after Duplicate No Modify - SMS received", "after Duplicate No Modify - SMS received");
-//		}
-//		else {
-//			logger.info("Failed: SMS Not Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
-//			freport("Failed: SMS Not Received after Duplicate No Modify  -"+ sEnquiry_PhoneNumber, "fail",node);
-//			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
-//			sAssertinFn.assertEquals("Duplicate No Modify - SMS Not received", "Duplicate No Modify - SMS  received");
-//		}
-//		Thread.sleep(2000);
-//		objSMS.setRecipient(sLead_PN);
-//		Thread.sleep(1000);
-//		objSMS.clickSearch();
-//		iSMSCount = objSMS.getSMSRowcount();
-//		if(iSMSCount==4) {
-//			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN);
-//			freport("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN, "pass",node);
-//			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN);
-//			sAssertinFn.assertEquals("after Duplicate No Modify - SMS received", "after Duplicate No Modify - SMS received");
-//		}
-//		else {
-//			logger.info("Failed: SMS Not Received after Duplicate No Modify -"+ sLead_PN);
-//			freport("Failed: SMS Not Received after Duplicate No Modify  -"+ sLead_PN, "fail",node);
-//			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Duplicate No Modify -"+ sLead_PN);
-//			sAssertinFn.assertEquals("Duplicate No Modify - SMS Not received", "Duplicate No Modify - SMS  received");
-//		}
+		
+		//Summary Add New Record
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		
+		objDVP.clickAddRecord();
+		Thread.sleep(3000);
+		//Add New Record and Check
+		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_","Sheet2");
+		Thread.sleep(3000);
+		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet2","Summary Add Data Validation","No",node);
+		//SMS Validation after Summary Add New
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+		Thread.sleep(2000);
+		objSMS.setRecipient(sMobileNumber);
+		Thread.sleep(1000);
+		objSMS.clickSearch();
+		Thread.sleep(1000);
+		iSMSCount = objSMS.getSMSRowcount();
+		if(iSMSCount==3) {
+			logger.info("Passed: SMS Received after Summary New Record Add -"+ sMobileNumber);
+			freport("Passed: SMS Received after  Summary New Record Add -"+ sMobileNumber, "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after  Summary New Record Add -"+ sMobileNumber);
+			sAssertinFn.assertEquals("Summary New Record - SMS received", "Summary New Record - SMS received");
+		}
+		else {
+			logger.info("Failed: SMS Not Received after Summary New Record Add -"+ sMobileNumber);
+			freport("Failed: SMS Not Received after Summary New Record Add  -"+ sMobileNumber, "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary New Record Add -"+ sMobileNumber);
+			sAssertinFn.assertEquals("Summary New Record - SMS Not received", "Summary New Record - SMS Not received");
+		}
+		Thread.sleep(3000);
+		objSMS.setRecipient(sEnquiry_PhoneNumber);
+		
+		objSMS.clickSearch();
+		iSMSCount = objSMS.getSMSRowcount();
+		if(iSMSCount==3) {
+			logger.info("Passed: SMS Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
+			freport("Passed: SMS Received after  Summary New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after  Summary New Record Add -"+ sEnquiry_PhoneNumber);
+			sAssertinFn.assertEquals("Summary New Record - SMS received", "Summary New Record - SMS received");
+		}
+		else {
+			logger.info("Failed: SMS Not Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
+			freport("Failed: SMS Not Received after Summary New Record Add  -"+ sEnquiry_PhoneNumber, "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
+			sAssertinFn.assertEquals("Summary New Record - SMS Not received", "Summary New Record - SMS Not received");
+		}
+		
+		Thread.sleep(3000);
+		objSMS.setRecipient(sLead_PN);
+		
+		objSMS.clickSearch();
+		iSMSCount = objSMS.getSMSRowcount();
+		if(iSMSCount==3) {
+			logger.info("Passed: SMS Received after Summary New Record Add -"+ sLead_PN);
+			freport("Passed: SMS Received after  Summary New Record Add -"+ sLead_PN, "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after  Summary New Record Add -"+ sLead_PN);
+			sAssertinFn.assertEquals("Summary New Record - SMS received", "Summary New Record - SMS received");
+		}
+		else {
+			logger.info("Failed: SMS Not Received after Summary New Record Add -"+ sLead_PN);
+			freport("Failed: SMS Not Received after Summary New Record Add  -"+ sLead_PN, "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary New Record Add -"+ sLead_PN);
+			sAssertinFn.assertEquals("Summary New Record - SMS Not received", "Summary New Record - SMS Not received");
+		}
+		
+		//Duplicate No Modify
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(1000);
+		objDVP.clickDuplicateRecord();
+		Thread.sleep(5000);
+		objCMD.clickSave();
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+		//SMS Validation after Duplicate
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+		Thread.sleep(2000);
+		Thread.sleep(1000);
+		objSMS.setRecipient(sMobileNumber);
+		
+		objSMS.clickSearch();
+		Thread.sleep(1000);
+		iSMSCount = objSMS.getSMSRowcount();
+		if(iSMSCount==4) {
+			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber);
+			freport("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber, "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber);
+			sAssertinFn.assertEquals("after Duplicate No Modify - SMS received", "after Duplicate No Modify - SMS received");
+		}
+		else {
+			logger.info("Failed: SMS Not Received after Duplicate No Modify -"+ sMobileNumber);
+			freport("Failed: SMS Not Received after Duplicate No Modify  -"+ sMobileNumber, "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Duplicate No Modify -"+ sMobileNumber);
+			sAssertinFn.assertEquals("Duplicate No Modify - SMS Not received", "Duplicate No Modify - SMS  received");
+		}
+		Thread.sleep(3000);
+		objSMS.setRecipient(sEnquiry_PhoneNumber);
+		Thread.sleep(1000);
+		objSMS.clickSearch();
+		iSMSCount = objSMS.getSMSRowcount();
+		if(iSMSCount==4) {
+			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
+			freport("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber, "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
+			sAssertinFn.assertEquals("after Duplicate No Modify - SMS received", "after Duplicate No Modify - SMS received");
+		}
+		else {
+			logger.info("Failed: SMS Not Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
+			freport("Failed: SMS Not Received after Duplicate No Modify  -"+ sEnquiry_PhoneNumber, "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
+			sAssertinFn.assertEquals("Duplicate No Modify - SMS Not received", "Duplicate No Modify - SMS  received");
+		}
+		Thread.sleep(2000);
+		objSMS.setRecipient(sLead_PN);
+		Thread.sleep(1000);
+		objSMS.clickSearch();
+		iSMSCount = objSMS.getSMSRowcount();
+		if(iSMSCount==4) {
+			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN);
+			freport("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN, "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN);
+			sAssertinFn.assertEquals("after Duplicate No Modify - SMS received", "after Duplicate No Modify - SMS received");
+		}
+		else {
+			logger.info("Failed: SMS Not Received after Duplicate No Modify -"+ sLead_PN);
+			freport("Failed: SMS Not Received after Duplicate No Modify  -"+ sLead_PN, "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Duplicate No Modify -"+ sLead_PN);
+			sAssertinFn.assertEquals("Duplicate No Modify - SMS Not received", "Duplicate No Modify - SMS  received");
+		}
 		//Duplicate with Modification
 		Thread.sleep(3000);
 		objALP.clickAllList();

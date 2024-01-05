@@ -358,6 +358,7 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("Before Adding Module data");
 		Thread.sleep(3000);
 		objCMD.clickArrayDropDown(1);
+//		objCMD.clickAssignedTo();
 		UtilityCustomFunctions.logWriteConsole("Assinged To Drop Down clicked");
 		Thread.sleep(2000);
 		objCMD.selectListValue(sAssignedTo);
@@ -376,9 +377,11 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Email Added is: "+sEmail);
 		objCMD.clickArrayDropDown(3);
+		
+		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Picklist clicked");
 		Thread.sleep(1000);
-		objCMD.selectListValue(sPickListValue);
+		objCMD.selectListValue2(sPickListValue);
 		UtilityCustomFunctions.logWriteConsole("Picklist selected: "+sPickListValue);
 		Thread.sleep(1000);
 		objCMD.clickMultiComboBox(sMultiComboValues);
@@ -699,20 +702,20 @@ public class CRMReUsables extends BaseClass {
 		}
 		System.out.println("Actual Summary sActUploadFile: " + sActUploadFile);
 		
-		String sActName = objDVP.getArraySummary(13).trim();
+		String sActName = objDVP.getArraySummary(14).trim();
 		String sNameArray[] = sActName.split("\\s+");
 		sActName = sNameArray[0].trim() + " " + sNameArray[1].trim();
 		UtilityCustomFunctions.fSoftAssert(sActName, sName, "Summary Name:  " + sMessage, node);
-		String sActNumber = objDVP.getArraySummary(14).trim();
+		String sActNumber = objDVP.getArraySummary(15).trim();
 		UtilityCustomFunctions.fSoftAssert(sActNumber, sNumber, "Summary Number:  " + sMessage, node);
 		
-		String sActCurrency = objDVP.getArraySummary(15).trim();
+		String sActCurrency = objDVP.getArraySummary(16).trim();
 		UtilityCustomFunctions.fSoftAssert(sActCurrency, sCurrency, "Summary Currency:  " + sMessage, node);
 		
 		String sActUrl = objDVP.getSummaryUrl().trim();
 		UtilityCustomFunctions.fSoftAssert(sActUrl, sUrl, "Summary Url:  " + sMessage, node);
 		
-		String sActEnq_Name=objDVP.getArraySummary(17).trim();
+		String sActEnq_Name=objDVP.getArraySummary(18).trim();
 		String sEnqNameArray[] = sActEnq_Name.split("\\s+");
 		sActEnq_Name = sEnqNameArray[0].trim() + " " + sEnqNameArray[1].trim();
 		System.out.println("Actual: " + sActEnq_Name);
@@ -723,22 +726,22 @@ public class CRMReUsables extends BaseClass {
 		
 		UtilityCustomFunctions.fSoftAssert(sActEnq_Name, sEnquiry_Name, "Summary Enquiry Name:  " + sMessage, node);
 		
-		String sActEnq_Email=objDVP.getArraySummary(18).trim();
+		String sActEnq_Email=objDVP.getArraySummary(19).trim();
 		UtilityCustomFunctions.fSoftAssert(sActEnq_Email, sEnquiry_Email, "Summary Enquiry Email:  " + sMessage, node);
 		
-		String sActEnq_Text=objDVP.getArraySummary(19).trim();
+		String sActEnq_Text=objDVP.getArraySummary(20).trim();
 		UtilityCustomFunctions.fSoftAssert(sActEnq_Text, sEnquiry_Text, "Summary Enquiry Text:  " + sMessage, node);
 		
-		String sActEnq_TextArea=objDVP.getArraySummary(20).trim();
+		String sActEnq_TextArea=objDVP.getArraySummary(21).trim();
 		UtilityCustomFunctions.fSoftAssert(sActEnq_TextArea, sEnquiry_TextArea, "Summary Enquiry Text Area:  " + sMessage, node);
 		
-		String sActEnq_Date=objDVP.getArraySummary(21).trim();
+		String sActEnq_Date=objDVP.getArraySummary(22).trim();
 		UtilityCustomFunctions.fSoftAssert(sActEnq_Date, sEnquiry_Date, "Summary Enquiry Date:  " + sMessage, node);
 		
 		
 		sEnquiry_PhoneNumber = sEnquiry_PN_Prefix + " " + sEnquiry_PhoneNumber ; 
 		
-		String sActEnq_PhoneNumber=objDVP.getArraySummary(22).trim();
+		String sActEnq_PhoneNumber=objDVP.getArraySummary(23).trim();
 		System.out.println("Actual Enquiry Phone Number: " + sActEnq_PhoneNumber);
 		
 		
@@ -749,7 +752,7 @@ public class CRMReUsables extends BaseClass {
 		
 		UtilityCustomFunctions.fSoftAssert(sActEnq_PhoneNumber, sEnquiry_PhoneNumber, "Summary Enquiry Phone Number:  " + sMessage, node);
 		
-		String sActEnq_Category=objDVP.getArraySummary(23).trim();
+		String sActEnq_Category=objDVP.getArraySummary(24).trim();
 		UtilityCustomFunctions.fSoftAssert(sActEnq_Category, sEnquiry_category, "Summary Enquiry Category:  " + sMessage, node);
 		
 
@@ -757,7 +760,7 @@ public class CRMReUsables extends BaseClass {
 		
 		String sLead_PhoneNumber = sLead_PN_Prefix + " " + sLead_PN ;
 		
-		String sActLead_PhoneNumber=objDVP.getArraySummary(24).trim();
+		String sActLead_PhoneNumber=objDVP.getArraySummary(25).trim();
 		System.out.println("Actual Lead Summary Phone Number: " + sActLead_PhoneNumber);
 		
 		
@@ -767,16 +770,16 @@ public class CRMReUsables extends BaseClass {
 		
 		UtilityCustomFunctions.fSoftAssert(sActLead_PhoneNumber, sLead_PhoneNumber, "Summary Lead PhoneNumber:  " + sMessage, node);
 		//Lead Email
-		String sActLead_Email=objDVP.getArraySummary(25	).trim();
+		String sActLead_Email=objDVP.getArraySummary(26).trim();
 		UtilityCustomFunctions.fSoftAssert(sActLead_Email, sLead_Email, "Summary Lead Email:  " + sMessage, node);
 		
 		//Lead Text
-		String sActLead_Text=objDVP.getArraySummary(26).trim();
+		String sActLead_Text=objDVP.getArraySummary(27).trim();
 		UtilityCustomFunctions.fSoftAssert(sActLead_Text, sLead_Text, "Summary Lead Text:  " + sMessage, node);
 		//Sales Validation
 		String sSales_PhoneNumber = sSales_PN_Prefix + " " + sSales_PN ;
 		
-		String sActSales_PhoneNumber=objDVP.getArraySummary(27).trim();
+		String sActSales_PhoneNumber=objDVP.getArraySummary(28).trim();
 		System.out.println("Actual Sales Summary Phone Number: " + sActSales_PhoneNumber);
 		
 		
@@ -787,7 +790,7 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.fSoftAssert(sActSales_PhoneNumber, sSales_PhoneNumber, "Summary Sales PhoneNumber:  " + sMessage, node);
 		
 		
-		String sActSales_Email=objDVP.getArraySummary(28).trim();
+		String sActSales_Email=objDVP.getArraySummary(29).trim();
 		UtilityCustomFunctions.fSoftAssert(sActSales_Email, sSales_Email, "Summary Sales Email:  " + sMessage, node);
 	
 		//Details View
@@ -860,7 +863,7 @@ public class CRMReUsables extends BaseClass {
 		String sActDTCurrency= objDVP.getArrayDetails(18).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTCurrency, sCurrency, "Detail View Currency:  " + sMessage, node);
 		
-		String sActDTUrl= objDVP.getSummaryUrl().trim();
+		String sActDTUrl= objDVP.getDTSummaryUrl().trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTUrl, sUrl, "Detail View Url:  " + sMessage, node);
 		
 		String sActDTEnqName = objDVP.getArrayDetails(20).trim();

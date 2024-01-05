@@ -71,6 +71,8 @@ public class UtilityCustomFunctions extends BaseClass{
 			js.executeScript("arguments[0].scrollIntoView();", element);
 			element.clear();
 			element.sendKeys(keyValue);
+			Thread.sleep(1000);
+			element.sendKeys(Keys.TAB);
 			logger.info(keyValue + " entered in  " + element.getTagName());
 			System.out.println(keyValue + " entered in  " + element.getTagName());
 		}catch(Exception e) {

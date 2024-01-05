@@ -159,11 +159,18 @@ public class DetailViewPage extends BasePage{
 		return UtilityCustomFunctions.getText(driver, eleArrSummary); 
 	}
 	public String getSummaryUrl() throws Exception {
-//		String sXpath = "(//div[@class='col-lg-10'])[17]";
-		String sXpath = "//a[normalize-space()='Click Here']";
+		String sXpath = "(//div[@class='col-lg-10'])[17]//a";
+//		String sXpath = "//a[normalize-space()='Click Here']";
 		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath));
 		return  eleArrSummary.getAttribute("href");
 	}
+	public String getDTSummaryUrl() throws Exception {
+		String sXpath = "(//div[@class='col-lg-10'])[19]//a";
+//		String sXpath = "//a[normalize-space()='Click Here']";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath));
+		return  eleArrSummary.getAttribute("href");
+	}
+	
 	public String getDetailUrl() throws Exception {
 		String sXpath = "(//td[starts-with(@id, 'hide')])[19]";
 		WebElement eleArrDetail= driver.findElement(By.xpath(sXpath));
