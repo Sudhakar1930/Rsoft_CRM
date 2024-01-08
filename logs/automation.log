@@ -1,315 +1,320 @@
-18:29:13.726 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [CRMNotification] is selected in List
-18:29:22.688 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Excel file Utility instance created
-18:29:22.743 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Row Count is: 1
-18:29:22.798 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Col Count is: 52
-18:29:22.798 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Extracting DataSheet Values started...
-18:29:24.305 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Before Adding Module data
-18:29:27.489 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Assinged To Drop Down clicked
-18:29:32.852 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Sudhakar VE] is selected in List
-18:29:32.852 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Assinged To Value Seleted is::  Sudhakar VE
-18:29:34.539 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Duplicate Text entered in  input
-18:29:34.553 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Text Value added is::  Duplicate Text
-18:29:35.760 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Phone NUmber prefix clicked :  
-18:29:39.108 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+65] is selected in List
-18:29:39.108 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Phone NUmber selected is :  9646671460
-18:29:41.150 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 9646671460 entered in  input
-18:29:43.857 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Duplicate@rsoft.in entered in  input
-18:29:44.884 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Email Added is: Duplicate@rsoft.in
-18:29:46.065 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Picklist clicked
-18:29:47.224 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Picklist selected: 3
-18:30:21.393 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - MultiCombo box values: one,two,three,four,five
-18:30:22.667 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - City Drop Down clicked
-18:30:26.694 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [New Value1] is selected in List
-18:30:26.694 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - City Selected: New Value1
-18:30:27.892 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - State Drop Down clicked
-18:30:32.009 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Sikkim] is selected in List
-18:30:32.009 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - State Selected: Sikkim
-18:30:33.221 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Country List clicked
-18:30:36.651 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [AA] is selected in List
-18:30:36.651 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Country Selected: AA
-18:30:37.855 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Checkbox clicked
-18:30:37.993 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DateBox clicked
-18:30:41.000 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - (//td[contains(@class,'today')])[1]
-18:30:42.256 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Today Date Selected
-18:30:43.406 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Time Clicked
-18:30:50.084 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Time Selected is: 02:36 PM
-18:30:51.274 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Date & Time Clicked
-18:30:56.286 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - (//td[contains(@class,'today')])[2]
-18:30:59.516 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Clicked Current Date in Date&Time
-18:30:59.720 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Date & Time Selected
-18:31:01.616 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 666666666 entered in  input
-18:31:07.483 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Prof.] is selected in List
-18:31:09.019 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Vijay entered in  input
-18:31:10.683 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 33333333333 entered in  input
-18:31:12.270 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 30,000 entered in  input
-18:31:14.137 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - https://mvnrepository.com/ entered in  input
-18:31:17.801 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Prof.] is selected in List
-18:31:19.417 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Mohammed entered in  input
-18:31:21.387 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DuplicateEnquiry@crm.in entered in  input
-18:31:23.171 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Enquiry about CRM entered in  input
-18:31:31.298 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
-18:31:34.484 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - (//td[contains(@class,'today')])[2]
-18:31:40.454 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+60] is selected in List
-18:31:43.236 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4845866929 entered in  input
-18:31:47.032 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Moderate] is selected in List
-18:31:52.656 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+91] is selected in List
-18:31:55.450 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 1499177741 entered in  input
-18:31:57.299 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DuplicateLead@gmail.com entered in  input
-18:31:59.017 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Lead about CRM entered in  input
-18:32:03.691 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+60] is selected in List
-18:32:06.418 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 6863444754 entered in  input
-18:32:08.303 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DuplicateSales@gmail.com entered in  input
-18:32:38.734 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Excel file Utility instance created
-18:32:38.768 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Row Count is: 1
-18:32:38.784 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Col Count is: 52
-18:32:38.784 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Extracting DataSheet Values started...
-18:32:39.719 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Module Name : Duplicate with New Data Passed : Actual Value is: CRMNotificationExpected Value is: CRMNotification
-18:32:41.315 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Text:  Duplicate with New Data Passed : Actual Value is: Duplicate TextExpected Value is: Duplicate Text
-18:32:42.564 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Mobile Title: Duplicate with New Data Passed : Actual Value is: +65 9646671460Expected Value is: +65 9646671460
-18:32:43.811 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Email: Duplicate with New Data Passed : Actual Value is: Duplicate@rsoft.inExpected Value is: Duplicate@rsoft.in
-18:32:50.448 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary AssignedTo:  Duplicate with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-18:32:51.787 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Text:  Duplicate with New Data Passed : Actual Value is: Duplicate TextExpected Value is: Duplicate Text
-18:32:53.146 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Mobile Number:  Duplicate with New Data Passed : Actual Value is: +65 9646671460Expected Value is: +65 9646671460
-18:32:54.500 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Email :  Duplicate with New Data Passed : Actual Value is: Duplicate@rsoft.inExpected Value is: Duplicate@rsoft.in
-18:32:55.883 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary PicListValue :  Duplicate with New Data Passed : Actual Value is: 3Expected Value is: 3
-18:32:57.259 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary MuultiCombo Values :  Duplicate with New Data Failed : Actual Value is: one,three,four,fiveExpected Value is: one,two,three,four,five
-18:32:58.631 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary City:  Duplicate with New Data Passed : Actual Value is: New Value1Expected Value is: New Value1
-18:32:59.981 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary State:  Duplicate with New Data Passed : Actual Value is: SikkimExpected Value is: Sikkim
-18:33:01.333 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Country:  Duplicate with New Data Passed : Actual Value is: AAExpected Value is: AA
-18:33:02.698 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary CheckBox:  Duplicate with New Data Passed : Actual Value is: YesExpected Value is: Yes
-18:33:04.070 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:33:05.447 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Time:  Duplicate with New Data Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
-18:33:06.805 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Date & Time :  Duplicate with New Data Passed : Actual Value is: 2024-01-05 06:00 PMExpected Value is: 2024-01-05 06:00 PM
-18:33:08.215 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary File Upload :  Duplicate with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-18:33:09.565 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Name:  Duplicate with New Data Passed : Actual Value is: Prof. VijayExpected Value is: Prof. Vijay
-18:33:10.936 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Number:  Duplicate with New Data Passed : Actual Value is: 33333333333Expected Value is: 33333333333
-18:33:12.305 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Currency:  Duplicate with New Data Failed : Actual Value is: 30000Expected Value is: 30,000
-18:33:13.646 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Url:  Duplicate with New Data Passed : Actual Value is: https://mvnrepository.com/Expected Value is: https://mvnrepository.com/
-18:33:15.015 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Name:  Duplicate with New Data Passed : Actual Value is: Prof. MohammedExpected Value is: Prof. Mohammed
-18:33:16.365 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Email:  Duplicate with New Data Passed : Actual Value is: DuplicateEnquiry@crm.inExpected Value is: DuplicateEnquiry@crm.in
-18:33:17.715 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Text:  Duplicate with New Data Passed : Actual Value is: Enquiry about CRMExpected Value is: Enquiry about CRM
-18:33:19.120 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Text Area:  Duplicate with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
-18:33:20.467 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:33:21.868 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Phone Number:  Duplicate with New Data Passed : Actual Value is: +60 4845866929Expected Value is: +60 4845866929
-18:33:23.230 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Category:  Duplicate with New Data Passed : Actual Value is: ModerateExpected Value is: Moderate
-18:33:24.636 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead PhoneNumber:  Duplicate with New Data Passed : Actual Value is: +91 1499177741Expected Value is: +91 1499177741
-18:33:26.019 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead Email:  Duplicate with New Data Passed : Actual Value is: DuplicateLead@gmail.comExpected Value is: DuplicateLead@gmail.com
-18:33:27.396 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead Text:  Duplicate with New Data Passed : Actual Value is: Lead about CRMExpected Value is: Lead about CRM
-18:33:28.802 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Sales PhoneNumber:  Duplicate with New Data Passed : Actual Value is: +60 6863444754Expected Value is: +60 6863444754
-18:33:30.163 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Sales Email:  Duplicate with New Data Passed : Actual Value is: DuplicateSales@gmail.comExpected Value is: DuplicateSales@gmail.com
-18:33:34.780 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View AssignedTo:  Duplicate with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-18:33:36.145 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Text:  Duplicate with New Data Passed : Actual Value is: Duplicate TextExpected Value is: Duplicate Text
-18:33:37.540 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Mobile Number:  Duplicate with New Data Passed : Actual Value is: +65 9646671460Expected Value is: +65 9646671460
-18:33:38.882 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Email :  Duplicate with New Data Passed : Actual Value is: Duplicate@rsoft.inExpected Value is: Duplicate@rsoft.in
-18:33:40.255 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View PicListValue :  Duplicate with New Data Passed : Actual Value is: 3Expected Value is: 3
-18:33:41.581 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View MuultiCombo Values :  Duplicate with New Data Failed : Actual Value is: one,three,four,fiveExpected Value is: one,two,three,four,five
-18:33:42.969 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View City:  Duplicate with New Data Passed : Actual Value is: New Value1Expected Value is: New Value1
-18:33:44.349 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Stat:  Duplicate with New Data Passed : Actual Value is: SikkimExpected Value is: Sikkim
-18:33:45.733 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Country:  Duplicate with New Data Passed : Actual Value is: AAExpected Value is: AA
-18:33:47.130 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View CheckBox:  Duplicate with New Data Passed : Actual Value is: YesExpected Value is: Yes
-18:33:48.469 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:33:49.801 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Time:  Duplicate with New Data Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
-18:33:51.133 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Date & Time :  Duplicate with New Data Passed : Actual Value is: 2024-01-05 06:00 PMExpected Value is: 2024-01-05 06:00 PM
-18:33:52.482 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Related Module :  Duplicate with New Data Failed : Actual Value is: Expected Value is: 666666666
-18:33:53.935 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View File Upload :  Duplicate with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-18:33:55.306 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Name:  Duplicate with New Data Passed : Actual Value is: Prof. VijayExpected Value is: Prof. Vijay
-18:33:56.699 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Number:  Duplicate with New Data Passed : Actual Value is: 33333333333Expected Value is: 33333333333
-18:33:58.079 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Currency:  Duplicate with New Data Failed : Actual Value is: 30000Expected Value is: 30,000
-18:33:59.394 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Url:  Duplicate with New Data Passed : Actual Value is: https://mvnrepository.com/Expected Value is: https://mvnrepository.com/
-18:34:00.778 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Name:  Duplicate with New Data Passed : Actual Value is: Prof. MohammedExpected Value is: Prof. Mohammed
-18:34:02.164 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Email:  Duplicate with New Data Passed : Actual Value is: DuplicateEnquiry@crm.inExpected Value is: DuplicateEnquiry@crm.in
-18:34:03.586 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Text:  Duplicate with New Data Passed : Actual Value is: Enquiry about CRMExpected Value is: Enquiry about CRM
-18:34:04.931 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Text Area:  Duplicate with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
-18:34:06.318 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Date:  Duplicate with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:34:07.692 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Phone Number:  Duplicate with New Data Passed : Actual Value is: +60 4845866929Expected Value is: +60 4845866929
-18:34:09.045 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Category:  Duplicate with New Data Passed : Actual Value is: ModerateExpected Value is: Moderate
-18:34:10.378 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT Lead Mobile Number:  Duplicate with New Data Passed : Actual Value is: +91 1499177741Expected Value is: +91 1499177741
-18:34:11.729 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Lead Email  Duplicate with New Data Passed : Actual Value is: DuplicateLead@gmail.comExpected Value is: DuplicateLead@gmail.com
-18:34:13.062 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Lead Text Duplicate with New Data Passed : Actual Value is: Lead about CRMExpected Value is: Lead about CRM
-18:34:14.429 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT Sales Mobile Number:  Duplicate with New Data Passed : Actual Value is: +60 6863444754Expected Value is: +60 6863444754
-18:34:15.812 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Sales EmailDuplicate with New Data Passed : Actual Value is: DuplicateSales@gmail.comExpected Value is: DuplicateSales@gmail.com
-18:34:24.285 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [SMS Notifiers] is selected in List
-18:34:28.947 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 9646671460 entered in  input
-18:34:36.249 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:5
-18:34:36.249 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Duplicate with New Data-9646671460
-18:34:37.832 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Duplicate with New Data -9646671460
-18:34:41.551 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4845866929 entered in  input
-18:34:47.856 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:5
-18:34:47.856 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Duplicate with New Data-4845866929
-18:34:49.164 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Duplicate with New Data -4845866929
-18:34:52.752 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 1499177741 entered in  input
-18:34:59.034 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:5
-18:34:59.034 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Duplicate with New Data-1499177741
-18:35:00.295 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Duplicate with New Data -1499177741
-18:35:14.101 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [CRMNotification] is selected in List
-18:35:50.154 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [SMS Notifiers] is selected in List
-18:35:54.986 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 9646671460 entered in  input
-18:36:01.464 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-18:36:01.464 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save No Modify - 9646671460
-18:36:02.780 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save No Modify -9646671460
-18:36:06.480 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4845866929 entered in  input
-18:36:12.880 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-18:36:12.880 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save No Modify - 4845866929
-18:36:14.176 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save No Modify -4845866929
-18:36:16.734 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 1499177741 entered in  input
-18:36:22.230 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:6
-18:36:22.230 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save No Modify - 1499177741
-18:36:23.494 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save No Modify -1499177741
-18:36:33.414 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [CRMNotification] is selected in List
-18:36:47.230 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Excel file Utility instance created
-18:36:47.272 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Row Count is: 1
-18:36:47.295 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Col Count is: 52
-18:36:47.295 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Extracting DataSheet Values started...
-18:36:48.144 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Before Adding Module data
-18:36:51.293 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Assinged To Drop Down clicked
-18:36:56.645 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Sudhakar VE] is selected in List
-18:36:56.645 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Assinged To Value Seleted is::  Sudhakar VE
-18:36:58.363 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Edit Text entered in  input
-18:36:58.380 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Text Value added is::  Edit Text
-18:36:59.566 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Phone NUmber prefix clicked :  
-18:37:02.935 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+65] is selected in List
-18:37:02.935 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Phone NUmber selected is :  9646671460
-18:37:04.649 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 9646671460 entered in  input
-18:37:07.518 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Duplicatechange@rsoft.in entered in  input
-18:37:08.547 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Email Added is: Duplicatechange@rsoft.in
-18:37:09.729 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Picklist clicked
-18:37:10.931 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Picklist selected: 4
-18:37:22.833 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - MultiCombo box values: four
-18:37:24.113 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - City Drop Down clicked
-18:37:27.653 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Chennai] is selected in List
-18:37:27.654 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - City Selected: Chennai
-18:37:28.865 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - State Drop Down clicked
-18:37:33.052 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Tripura] is selected in List
-18:37:33.052 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - State Selected: Tripura
-18:37:34.247 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Country List clicked
-18:37:37.829 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [CAT] is selected in List
-18:37:37.829 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Country Selected: CAT
-18:37:39.065 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Checkbox clicked
-18:37:39.218 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DateBox clicked
-18:37:42.228 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - (//td[contains(@class,'today')])[1]
-18:37:43.479 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Today Date Selected
-18:37:44.594 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Time Clicked
-18:37:51.293 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Time Selected is: 02:36 PM
-18:37:52.468 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Date & Time Clicked
-18:37:57.475 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - (//td[contains(@class,'today')])[2]
-18:38:00.695 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Clicked Current Date in Date&Time
-18:38:00.922 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Date & Time Selected
-18:38:02.804 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 7777777777 entered in  input
-18:38:08.634 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Ms.] is selected in List
-18:38:10.164 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Selvi entered in  input
-18:38:11.881 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 44444444444 entered in  input
-18:38:13.397 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 40,000 entered in  input
-18:38:15.180 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - https://www.selenium.dev/ entered in  input
-18:38:18.770 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Mrs.] is selected in List
-18:38:20.414 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Sujay entered in  input
-18:38:22.361 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - EditChangeEnquiry@rsoft.in entered in  input
-18:38:24.232 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Enquiry about MobileApp entered in  input
-18:38:32.251 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
-18:38:35.409 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - (//td[contains(@class,'today')])[2]
-18:38:41.353 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+60] is selected in List
-18:38:44.199 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4845866929 entered in  input
-18:38:48.014 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [Ordinary] is selected in List
-18:38:53.631 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+91] is selected in List
-18:38:56.347 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 1499177741 entered in  input
-18:38:58.192 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - EditChangeLead@gmail.com entered in  input
-18:38:59.946 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Lead about MobileApp entered in  input
-18:39:04.516 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [+60] is selected in List
-18:39:07.313 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 6863444754 entered in  input
-18:39:09.198 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - EditChangeSales@gmail.com entered in  input
-18:39:39.835 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Excel file Utility instance created
-18:39:39.905 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Row Count is: 1
-18:39:39.937 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Col Count is: 52
-18:39:39.937 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Extracting DataSheet Values started...
-18:39:40.814 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Module Name : Edit with New Data Passed : Actual Value is: CRMNotificationExpected Value is: CRMNotification
-18:39:42.406 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Text:  Edit with New Data Passed : Actual Value is: Edit TextExpected Value is: Edit Text
-18:39:43.620 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Mobile Title: Edit with New Data Passed : Actual Value is: +65 9646671460Expected Value is: +65 9646671460
-18:39:44.910 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Email: Edit with New Data Passed : Actual Value is: Duplicatechange@rsoft.inExpected Value is: Duplicatechange@rsoft.in
-18:39:51.572 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary AssignedTo:  Edit with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-18:39:52.923 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Text:  Edit with New Data Passed : Actual Value is: Edit TextExpected Value is: Edit Text
-18:39:54.269 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Mobile Number:  Edit with New Data Passed : Actual Value is: +65 9646671460Expected Value is: +65 9646671460
-18:39:55.588 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Email :  Edit with New Data Passed : Actual Value is: Duplicatechange@rsoft.inExpected Value is: Duplicatechange@rsoft.in
-18:39:56.955 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary PicListValue :  Edit with New Data Passed : Actual Value is: 4Expected Value is: 4
-18:39:58.294 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary MuultiCombo Values :  Edit with New Data Failed : Actual Value is: one,three,fiveExpected Value is: four
-18:39:59.645 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary City:  Edit with New Data Passed : Actual Value is: ChennaiExpected Value is: Chennai
-18:40:01.024 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary State:  Edit with New Data Passed : Actual Value is: TripuraExpected Value is: Tripura
-18:40:02.345 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Country:  Edit with New Data Passed : Actual Value is: CATExpected Value is: CAT
-18:40:03.704 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary CheckBox:  Edit with New Data Passed : Actual Value is: NoExpected Value is: No
-18:40:05.090 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Date:  Edit with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:40:06.452 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Time:  Edit with New Data Passed : Actual Value is: 02:35PMExpected Value is: 02:35PM
-18:40:07.859 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Date & Time :  Edit with New Data Passed : Actual Value is: 2024-01-05 06:00 PMExpected Value is: 2024-01-05 06:00 PM
-18:40:09.262 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary File Upload :  Edit with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-18:40:10.665 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Name:  Edit with New Data Passed : Actual Value is: Ms. SelviExpected Value is: Ms. Selvi
-18:40:12.025 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Number:  Edit with New Data Passed : Actual Value is: 44444444444Expected Value is: 44444444444
-18:40:13.422 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Currency:  Edit with New Data Failed : Actual Value is: 40000Expected Value is: 40,000
-18:40:14.682 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Url:  Edit with New Data Passed : Actual Value is: https://www.selenium.dev/Expected Value is: https://www.selenium.dev/
-18:40:16.078 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Name:  Edit with New Data Passed : Actual Value is: Mrs. SujayExpected Value is: Mrs. Sujay
-18:40:17.420 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Email:  Edit with New Data Passed : Actual Value is: EditChangeEnquiry@rsoft.inExpected Value is: EditChangeEnquiry@rsoft.in
-18:40:18.774 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Text:  Edit with New Data Passed : Actual Value is: Enquiry about MobileAppExpected Value is: Enquiry about MobileApp
-18:40:20.158 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Text Area:  Edit with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
-18:40:21.554 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Date:  Edit with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:40:22.937 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Phone Number:  Edit with New Data Passed : Actual Value is: +60 4845866929Expected Value is: +60 4845866929
-18:40:24.286 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Enquiry Category:  Edit with New Data Passed : Actual Value is: OrdinaryExpected Value is: Ordinary
-18:40:25.676 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead PhoneNumber:  Edit with New Data Passed : Actual Value is: +91 1499177741Expected Value is: +91 1499177741
-18:40:26.987 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead Email:  Edit with New Data Passed : Actual Value is: EditChangeLead@gmail.comExpected Value is: EditChangeLead@gmail.com
-18:40:28.352 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Lead Text:  Edit with New Data Passed : Actual Value is: Lead about MobileAppExpected Value is: Lead about MobileApp
-18:40:29.758 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Sales PhoneNumber:  Edit with New Data Passed : Actual Value is: +60 6863444754Expected Value is: +60 6863444754
-18:40:31.118 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Summary Sales Email:  Edit with New Data Passed : Actual Value is: EditChangeSales@gmail.comExpected Value is: EditChangeSales@gmail.com
-18:40:35.879 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View AssignedTo:  Edit with New Data Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
-18:40:37.242 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Text:  Edit with New Data Passed : Actual Value is: Edit TextExpected Value is: Edit Text
-18:40:38.625 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Mobile Number:  Edit with New Data Passed : Actual Value is: +65 9646671460Expected Value is: +65 9646671460
-18:40:40.005 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Email :  Edit with New Data Passed : Actual Value is: Duplicatechange@rsoft.inExpected Value is: Duplicatechange@rsoft.in
-18:40:41.379 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View PicListValue :  Edit with New Data Passed : Actual Value is: 4Expected Value is: 4
-18:40:42.739 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View MuultiCombo Values :  Edit with New Data Failed : Actual Value is: one,three,fiveExpected Value is: four
-18:40:44.111 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View City:  Edit with New Data Passed : Actual Value is: ChennaiExpected Value is: Chennai
-18:40:45.509 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Stat:  Edit with New Data Passed : Actual Value is: TripuraExpected Value is: Tripura
-18:40:46.845 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Country:  Edit with New Data Passed : Actual Value is: CATExpected Value is: CAT
-18:40:48.253 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View CheckBox:  Edit with New Data Passed : Actual Value is: NoExpected Value is: No
-18:40:49.642 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Date:  Edit with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:40:51.003 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Time:  Edit with New Data Failed : Actual Value is: 02:35 PMExpected Value is: 02:35PM
-18:40:52.379 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Date & Time :  Edit with New Data Passed : Actual Value is: 2024-01-05 06:00 PMExpected Value is: 2024-01-05 06:00 PM
-18:40:53.735 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Related Module :  Edit with New Data Failed : Actual Value is: Expected Value is: 7777777777
-18:40:55.188 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View File Upload :  Edit with New Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
-18:40:56.582 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Name:  Edit with New Data Passed : Actual Value is: Ms. SelviExpected Value is: Ms. Selvi
-18:40:57.894 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Number:  Edit with New Data Passed : Actual Value is: 44444444444Expected Value is: 44444444444
-18:40:59.274 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Currency:  Edit with New Data Failed : Actual Value is: 40000Expected Value is: 40,000
-18:41:00.585 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Url:  Edit with New Data Passed : Actual Value is: https://www.selenium.dev/Expected Value is: https://www.selenium.dev/
-18:41:02.000 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Name:  Edit with New Data Passed : Actual Value is: Mrs. SujayExpected Value is: Mrs. Sujay
-18:41:03.369 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Email:  Edit with New Data Passed : Actual Value is: EditChangeEnquiry@rsoft.inExpected Value is: EditChangeEnquiry@rsoft.in
-18:41:04.758 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Text:  Edit with New Data Passed : Actual Value is: Enquiry about MobileAppExpected Value is: Enquiry about MobileApp
-18:41:06.138 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Text Area:  Edit with New Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
-18:41:07.545 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Date:  Edit with New Data Passed : Actual Value is: 2024-01-05Expected Value is: 2024-01-05
-18:41:08.935 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Phone Number:  Edit with New Data Passed : Actual Value is: +60 4845866929Expected Value is: +60 4845866929
-18:41:10.252 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Detail View Enquiry Category:  Edit with New Data Passed : Actual Value is: OrdinaryExpected Value is: Ordinary
-18:41:11.617 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT Lead Mobile Number:  Edit with New Data Passed : Actual Value is: +91 1499177741Expected Value is: +91 1499177741
-18:41:12.952 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Lead Email  Edit with New Data Passed : Actual Value is: EditChangeLead@gmail.comExpected Value is: EditChangeLead@gmail.com
-18:41:14.334 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Lead Text Edit with New Data Passed : Actual Value is: Lead about MobileAppExpected Value is: Lead about MobileApp
-18:41:15.684 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT Sales Mobile Number:  Edit with New Data Passed : Actual Value is: +60 6863444754Expected Value is: +60 6863444754
-18:41:17.034 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - DT View Sales EmailEdit with New Data Passed : Actual Value is: EditChangeSales@gmail.comExpected Value is: EditChangeSales@gmail.com
-18:41:27.556 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [SMS Notifiers] is selected in List
-18:41:32.225 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 9646671460 entered in  input
-18:41:38.284 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:7
-18:41:38.284 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save New Data - 9646671460
-18:41:39.597 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save New Data -9646671460
-18:41:44.325 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4845866929 entered in  input
-18:41:50.818 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:7
-18:41:50.818 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save New Data - 4845866929
-18:41:52.138 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save New Data -4845866929
-18:41:54.818 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 1499177741 entered in  input
-18:42:01.350 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:7
-18:42:01.350 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save New Data - 1499177741
-18:42:02.633 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Edit&Save New Data -1499177741
-18:42:12.711 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [CRMNotification] is selected in List
-18:42:24.765 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - IndividualTextEdited entered in  input
-18:42:42.243 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - [SMS Notifiers] is selected in List
-18:42:45.951 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 9646671460 entered in  input
-18:42:53.583 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:8
-18:42:53.583 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Summary Single Edit - 9646671460
-18:42:54.865 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Summary Single Edit -9646671460
-18:42:56.487 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 4845866929 entered in  input
-18:43:03.007 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:8
-18:43:03.007 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Summary Single Edit - 4845866929
-18:43:04.284 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Summary Single Edit -4845866929
-18:43:06.937 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - 1499177741 entered in  input
-18:43:13.219 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - SMS Count:8
-18:43:13.219 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Summary Single Edit - 1499177741
-18:43:14.516 [main] INFO  testCases.TC005_WF5_Send_SMS_ETR_S - Passed: SMS Received after Summary Single Edit -1499177741
+15:13:49.806 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+15:13:49.811 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+15:13:49.814 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+15:13:50.937 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+15:13:51.009 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 13
+15:13:51.010 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+15:13:58.754 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+15:14:00.347 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+15:14:01.920 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+15:14:17.488 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+15:14:19.674 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+15:14:19.918 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+15:14:24.241 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+15:14:24.799 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Workflow from Combox Box List
+15:14:26.804 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Item to be selected:  CRMEditFieldModule Workflow
+15:14:34.042 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+15:14:34.042 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Item selected in combox Box  CRMEditFieldModule Workflow
+15:14:35.052 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+15:14:35.067 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current Workflow Row item: 1
+15:14:35.155 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current style of Worflow Status Element captured
+15:14:35.155 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow status: of row item: 1 false
+15:14:35.238 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Module Name:  CRMEditFieldModule
+15:14:35.240 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Workflow Name:  WF2CRMEditField
+15:14:35.240 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Exec Condition Name:  Only on the first save
+15:14:35.241 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module,workflow,conditions not matched 
+15:14:35.241 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - bCurrentWFStatus: false
+15:14:35.241 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current Workflow Row item: 2
+15:14:35.318 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current style of Worflow Status Element captured
+15:14:35.318 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow status: of row item: 2 false
+15:14:35.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Module Name:  CRMEditFieldModule
+15:14:35.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Workflow Name:  WFCRMEditField
+15:14:35.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Exec Condition Name:  Until the first time the condition is true
+15:14:35.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module,workflow,conditions not matched 
+15:14:35.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - bCurrentWFStatus: false
+15:14:35.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current Workflow Row item: 3
+15:14:35.436 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current style of Worflow Status Element captured
+15:14:35.436 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow status: of row item: 3 true
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Module Name:  CRMEditFieldModule
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Workflow Name:  WF1CRMEditField
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Exec Condition Name:  Every time the record is save
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module,workflow,condition matches
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - bCurrentWFStatus: true
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - WF1CRMEditFieldWorkflow enabled
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - WF1CRMEditFieldDisabled Workflow Manually Enabled
+15:14:35.502 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - true:3
+15:14:41.373 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Work flow clicked
+15:14:46.143 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Cliked Step 1 Next Button to Condition Page
+15:14:49.648 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Cliked Step 2 Next Button to Task List Page
+15:14:50.667 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Workflow and Navigated to Task Page
+15:14:50.686 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Number of Tasks Listed for this Workflow: WF1CRMEditField : 2
+15:14:50.736 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Task Active: 1 : true
+15:14:50.952 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Type:Send notification
+15:14:50.952 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Title:NewTriggerNotification
+15:14:50.952 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Action Type and Action Tile matches and also Task Button Enabled
+15:14:50.993 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Task Active: 2 : true
+15:14:51.168 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Type:Send SMS
+15:14:51.168 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Title:AddSMS
+15:14:51.276 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Task Deactivated for Action Type:Send SMSand Action Title:AddSMS
+15:14:51.276 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Workflow and Navigated to Task Page
+15:15:03.865 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule] is selected in List
+15:15:11.402 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 9087654321 entered in  input
+15:15:13.237 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 44444444444 entered in  input
+15:15:16.160 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - checker@afasdf.com entered in  input
+15:15:17.716 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 4444444444 entered in  input
+15:15:25.656 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [Bad] is selected in List
+15:16:04.438 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+15:16:06.203 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+15:16:07.501 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+15:16:08.768 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+15:16:10.066 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: BadExpected Value is: Bad
+15:16:17.468 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Phone Number Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+15:16:18.717 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Number Field Passed : Actual Value is: 44444444444Expected Value is: 44444444444
+15:16:19.949 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+15:16:21.251 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Picklist Item Passed : Actual Value is: BadExpected Value is: Bad
+15:16:22.474 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary Enter Your Number Passed : Actual Value is: 4444444444Expected Value is: 4444444444
+15:16:29.800 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+15:16:31.052 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Phone Numer Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+15:16:32.298 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+15:16:33.600 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Menu Item Passed : Actual Value is: BadExpected Value is: Bad
+15:16:34.852 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Enter Your Number Passed : Actual Value is: 4444444444Expected Value is: 4444444444
+15:16:36.243 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+15:16:38.034 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module Name Passed : Actual Value is: CRMEditFieldModuleExpected Value is: CRMEditFieldModule
+15:16:39.282 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Phone Number Passed : Actual Value is: +91 9087654321Expected Value is: +91 9087654321
+15:16:40.565 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Email Passed : Actual Value is: checker@afasdf.comExpected Value is: checker@afasdf.com
+15:16:41.810 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Piclist Value Passed : Actual Value is: BadExpected Value is: Bad
+15:16:43.284 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Notification Link Clicked
+15:16:48.639 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Notification detail view opened
+15:16:53.668 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Switched to New Window
+15:16:54.449 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+15:16:55.699 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+15:16:56.950 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Passed : Actual Value is:  Rsoft Expected Value is: rsoft
+15:16:58.181 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+15:17:03.449 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+15:17:04.699 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+15:17:05.982 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Passed : Actual Value is:  Rsoft Expected Value is: rsoft
+15:17:07.214 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+15:17:08.587 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Captured RecordId
+15:17:13.199 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+15:17:14.795 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Sudhakar entered in  input
+15:17:16.360 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
+15:17:30.718 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Notification Link Clicked
+15:17:36.057 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Notification detail view opened
+15:17:41.066 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Switched to New Window
+15:17:41.931 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+15:17:43.217 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+15:17:44.498 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Passed : Actual Value is:  Sudhakar Expected Value is: Sudhakar
+15:17:45.749 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+15:17:51.033 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+15:17:52.317 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+15:17:53.563 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Passed : Actual Value is:  Sudhakar Expected Value is: Sudhakar
+15:17:54.799 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+15:17:58.721 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+15:18:00.377 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Madhan entered in  input
+15:18:01.963 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Automation@123 entered in  input
+15:18:14.101 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Notification Link Clicked
+15:18:19.419 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Notification detail view opened
+15:18:24.478 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Switched to New Window
+15:18:25.267 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Assigned To Passed : Actual Value is: Madhan MohanExpected Value is: Madhan Mohan
+15:18:26.517 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Status Passed : Actual Value is: 0Expected Value is: 0
+15:18:27.865 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Summary/UserName Passed : Actual Value is:  Madhan Expected Value is: Madhan
+15:18:29.085 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Detail View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+15:18:34.248 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Assigned To Passed : Actual Value is: Madhan MohanExpected Value is: Madhan Mohan
+15:18:35.476 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Status Passed : Actual Value is: 0Expected Value is: 0
+15:18:36.767 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View User Passed : Actual Value is:  Madhan Expected Value is: Madhan
+15:18:38.030 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Summary View Action Title Passed : Actual Value is:      NewTriggerNotification     Expected Value is: NewTriggerNotification
+15:18:47.544 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 92834 entered in  input
+15:18:50.725 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - AssignedTo Record Details Passed : Actual Value is: Madhan MohanExpected Value is: Madhan Mohan
+15:18:52.004 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Status in Record Details Passed : Actual Value is: 0Expected Value is: 0
+15:18:53.306 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Created By in Record Details Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+15:18:54.572 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - UserName in Record Details Passed : Actual Value is: MadhanExpected Value is: Madhan
+15:18:55.835 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow Title in Record Details Passed : Actual Value is: NewTriggerNotificationExpected Value is: NewTriggerNotification
+15:18:57.101 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Record Id in Record Details Passed : Actual Value is: 92834Expected Value is: 92834
+15:40:28.029 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - ******starting WF1_EveryTime_Rec_Save ****
+15:40:28.035 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Test Execution on Browser: chrome
+15:40:28.038 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Excel file Utility instance created
+15:40:29.181 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Row Count is: 1
+15:40:29.251 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Col Count is: 13
+15:40:29.251 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Extracting DataSheet Values started...
+15:40:33.103 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - PRIYAN entered in  input
+15:40:34.741 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - rsoft entered in  input
+15:40:36.307 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - RSoft!@345 entered in  input
+15:40:48.626 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Avatar
+15:40:51.052 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu CRM Setting
+15:40:51.420 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Other Setting
+15:40:54.639 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Menu Item Workflow
+15:40:55.391 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Workflow from Combox Box List
+15:40:57.407 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Item to be selected:  CRMEditFieldModule Workflow
+15:41:04.658 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule Workflow] is selected in List
+15:41:04.659 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Item selected in combox Box  CRMEditFieldModule Workflow
+15:41:05.661 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Selected Module to View its Workflows
+15:41:05.689 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current Workflow Row item: 1
+15:41:05.792 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current style of Worflow Status Element captured
+15:41:05.793 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow status: of row item: 1 false
+15:41:05.864 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Module Name:  CRMEditFieldModule
+15:41:05.893 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Workflow Name:  WF2CRMEditField
+15:41:05.893 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Exec Condition Name:  Only on the first save
+15:41:05.894 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module,workflow,conditions not matched 
+15:41:05.894 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - bCurrentWFStatus: false
+15:41:05.894 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current Workflow Row item: 2
+15:41:06.029 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current style of Worflow Status Element captured
+15:41:06.029 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow status: of row item: 2 false
+15:41:06.088 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Module Name:  CRMEditFieldModule
+15:41:06.088 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Workflow Name:  WFCRMEditField
+15:41:06.088 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Exec Condition Name:  Until the first time the condition is true
+15:41:06.089 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module,workflow,conditions not matched 
+15:41:06.089 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - bCurrentWFStatus: false
+15:41:06.089 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current Workflow Row item: 3
+15:41:06.187 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Current style of Worflow Status Element captured
+15:41:06.187 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Workflow status: of row item: 3 true
+15:41:06.260 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Module Name:  CRMEditFieldModule
+15:41:06.260 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Workflow Name:  WF1CRMEditField
+15:41:06.260 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Actual Exec Condition Name:  Every time the record is save
+15:41:06.260 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Module,workflow,condition matches
+15:41:06.260 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - bCurrentWFStatus: true
+15:41:06.260 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - WF1CRMEditFieldWorkflow enabled
+15:41:06.261 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - WF1CRMEditFieldDisabled Workflow Manually Enabled
+15:41:06.261 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - true:3
+15:41:11.837 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Work flow clicked
+15:41:16.378 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Cliked Step 1 Next Button to Condition Page
+15:41:19.797 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Cliked Step 2 Next Button to Task List Page
+15:41:20.801 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Workflow and Navigated to Task Page
+15:41:20.850 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Number of Tasks Listed for this Workflow: WF1CRMEditField : 2
+15:41:20.895 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Task Active: 1 : true
+15:41:21.093 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Type:Send notification
+15:41:21.093 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Title:NewTriggerNotification
+15:41:21.093 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Action Type and Action Tile matches and also Task Button Enabled
+15:41:21.129 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Is Task Active: 2 : false
+15:41:21.311 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Type:Send SMS
+15:41:21.311 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Retrieved Action Title:AddSMS
+15:41:21.311 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - Clicked Workflow and Navigated to Task Page
+15:41:30.794 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - [CRMEditFieldModule] is selected in List
+15:41:37.187 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 9087654321 entered in  input
+15:41:38.964 [main] INFO  testCases.TC001_WF1_EveryTime_Rec_Save - 44444444444 entered in  input
+17:01:57.519 [main] INFO  testCases.TC003_WF3_Notify_ETR_M - ******starting WF3_Notify_Every_time_record_modifies ****
+17:01:57.524 [main] INFO  testCases.TC003_WF3_Notify_ETR_M - Test Execution on Browser: chrome
+17:01:57.526 [main] INFO  testCases.TC003_WF3_Notify_ETR_M - Excel file Utility instance created
+17:24:23.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:24:23.262 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:24:23.266 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:24:24.497 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:24:24.571 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 43
+17:24:24.571 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:24:34.722 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - PRIYAN entered in  input
+17:24:36.406 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - rsoft entered in  input
+17:24:37.962 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - RSoft!@345 entered in  input
+17:24:54.487 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:24:57.107 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+17:24:57.348 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Other Setting
+17:25:01.217 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Item Workflow
+17:25:01.754 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow from Combox Box List
+17:25:03.771 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item to be selected:  CRMNotification Workflow
+17:25:10.496 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [CRMNotification Workflow] is selected in List
+17:25:10.496 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item selected in combox Box  CRMNotification Workflow
+17:25:11.505 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Selected Module to View its Workflows
+17:25:11.532 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 1
+17:25:11.628 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:25:11.628 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 1 true
+17:25:11.721 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:25:11.721 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  testemailworkflow
+17:25:11.721 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is save
+17:25:11.721 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:25:11.721 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: true
+17:25:11.816 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - testemailworkflowWorkflow disabled manually
+17:25:11.816 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 2
+17:25:11.909 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:25:11.909 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 2 false
+17:25:11.977 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:25:11.977 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF5_Send_SMS_ETR_S
+17:25:11.977 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is save
+17:25:11.977 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:25:11.977 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:25:11.977 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 3
+17:25:12.056 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:25:12.056 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 3 false
+17:25:12.108 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:25:12.108 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF6_Send_SMS_ETR_M
+17:25:12.108 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is modified
+17:25:12.108 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:25:12.108 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:25:12.108 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 4
+17:25:12.190 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:25:12.190 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 4 false
+17:25:12.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:25:12.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF4_Send_SMS_OOF_S
+17:25:12.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:25:12.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:25:12.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:25:12.254 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 5
+17:25:12.489 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:25:12.489 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 5 true
+17:25:12.538 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:25:12.538 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF2_Only_On_First_Save
+17:25:12.538 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:25:12.538 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:25:12.538 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: true
+17:25:12.624 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF2_Only_On_First_SaveWorkflow disabled manually
+17:25:12.624 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF2_Only_On_First_SaveDisabled Workflow Manually Enabled
+17:25:12.624 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - false:0
+17:25:13.157 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF1CRMEditFieldWorkflow Not Enabled
+17:34:38.109 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:34:38.119 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:34:38.122 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:34:39.342 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:34:39.459 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 43
+17:34:39.467 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:34:45.010 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - PRIYAN entered in  input
+17:34:46.591 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - rsoft entered in  input
+17:34:48.096 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - RSoft!@345 entered in  input
+17:34:59.261 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:35:01.513 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+17:35:02.192 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Other Setting
+17:35:05.269 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Item Workflow
+17:35:05.728 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow from Combox Box List
+17:35:07.731 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item to be selected:  CRMNotification Workflow
+17:35:14.364 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [CRMNotification Workflow] is selected in List
+17:35:14.364 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item selected in combox Box  CRMNotification Workflow
+17:35:15.375 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Selected Module to View its Workflows
+17:35:15.391 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 1
+17:35:15.494 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:35:15.494 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 1 false
+17:35:15.561 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:35:15.561 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  testemailworkflow
+17:35:15.561 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is save
+17:35:15.561 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:35:15.561 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:35:15.561 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 2
+17:35:15.658 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:35:15.658 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 2 false
+17:35:15.711 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:35:15.711 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF5_Send_SMS_ETR_S
+17:35:15.711 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is save
+17:35:15.711 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:35:15.711 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:35:15.711 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 3
+17:35:15.776 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:35:15.776 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 3 false
+17:35:15.829 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:35:15.829 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF6_Send_SMS_ETR_M
+17:35:15.829 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is modified
+17:35:15.829 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:35:15.829 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:35:15.829 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 4
+17:35:15.892 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:35:15.892 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 4 false
+17:35:15.943 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:35:15.943 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF4_Send_SMS_OOF_S
+17:35:15.943 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:35:15.943 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:35:15.943 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:35:15.943 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 5
+17:35:16.027 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:35:16.027 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 5 false
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMNotification
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF2_Only_On_First_Save
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF2_Only_On_First_SaveDisabled Workflow Manually Enabled
+17:35:16.077 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - false:0
+17:35:16.328 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF1CRMEditFieldWorkflow Not Enabled

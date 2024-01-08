@@ -89,20 +89,27 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//button[normalize-space()='edit_square']")
 	WebElement eleEditButton;
 	
-	@FindBy(className = "select2-selection__choice__remove")
+	@FindBy(xpath = "//ul[@class='select2-selection__rendered']/li/span")
 	List<WebElement> lstMultiCombo;
 	
 	
 	
+	
 	public void fRemMultiComboValues() throws InterruptedException {
+		System.out.println("Inside remove existing values:");
 		int iCount = lstMultiCombo.size();
 		System.out.println("Multicombo: count" + iCount);
 		if(iCount>0) {
 			for(int i = 0;i<iCount;i++) {
+				Thread.sleep(3000);
+//				txtMultiComboBox.click();
 				lstMultiCombo.get(i).click();
 				Thread.sleep(1000);
 			}
 				
+		}
+		else {
+			txtMultiComboBox.click();
 		}
 	}
 	
@@ -180,32 +187,32 @@ public class CreateModuleDataPage extends BasePage{
 	
 	}
 	public void clickMultiComboBox(String sMS_Value) throws Exception {
-		System.out.println("Existing values:" + txtMultiComboBox.getAttribute("value"));
-		if(txtMultiComboBox.getAttribute("value")!=null) {
-			System.out.println("Existing values available");
 			fRemMultiComboValues();
-			txtMultiComboBox.click();
-		}
+
+
 		System.out.println("After get attribute in combo box");
 		Thread.sleep(3000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", txtMultiComboBox);
 		Thread.sleep(1000);
 		System.out.println("Expected values:" + sMS_Value);
 		String arrValues[]=sMS_Value.split(",");
-		Thread.sleep(1000);
-		System.out.println("Array Lenght: " + arrValues.length);
+		Thread.sleep(3000);
+//		System.out.println("Array Lenght: " + arrValues.length);
 		String sXpath = "//ul[@class='select2-results__options']//li[text()='"+arrValues[0]+"']";
 		System.out.println(sXpath);
-		txtMultiComboBox.click();
+//		txtMultiComboBox.click();
 		for(int i=0;i<arrValues.length;i++) {
-			Thread.sleep(1000);
+//			txtMultiComboBox.click();
+			Thread.sleep(3000);
 			System.out.println("Inside outer for loop: expected values");
 			Thread.sleep(3000);
 			sXpath = "//ul[@class='select2-results__options']//li[text()='"+arrValues[i]+"']";
-			System.out.println(sXpath);
+//			System.out.println(sXpath);
 			WebElement eleMultiCombo = driver.findElement(By.xpath(sXpath));
+			System.out.println("Multi Combo Print Values " + i + "Values:" + eleMultiCombo.getText());
 			UtilityCustomFunctions.doActionClick(driver, eleMultiCombo);
-			Thread.sleep(1000);
+//			UtilityCustomFunctions.doClick(driver, eleMultiCombo);
+			Thread.sleep(3000);
 			txtMultiComboBox.click();
 		}
 		
