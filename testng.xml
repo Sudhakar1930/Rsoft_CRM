@@ -14,7 +14,9 @@
       <class name="testCases.TC005_WF5_Send_SMS_ETR_S"/>
       <class name="testCases.TC006_WF6_Send_SMS_ETR_M"/>
       <class name="testCases.TC004_WF4_Send_SMS_OOF_S"/> -->
-   	  <class name="testCases.TC001_WF1_Send_Notify_ETR_S"/>
+      <class name="testCases.TC007_WF1_CRM_Schedule_Notify"/> 
+      <class name="testCases.TC007_WF1_Validate_Schedule_Notify"/>
+   	  
    	  
     </classes>
 	  </parameter>

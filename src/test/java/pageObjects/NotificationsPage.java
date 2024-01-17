@@ -1,5 +1,8 @@
 package pageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +15,9 @@ public class NotificationsPage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	
+	@FindBy(xpath="(//ul[@class='select2-selection__rendered'])[1]")
+	WebElement txtAssignedTo                                                                                                                                                                                                                                                                           ;
+			
 	@FindBy(xpath="//input[@name='notifications_modulerecid']")
 	WebElement txtSearchRecordId;
 	
@@ -67,6 +72,9 @@ public class NotificationsPage extends BasePage{
 	
 	@FindBy(xpath="//button[text()='Search']")
 	WebElement btnSearch;
+	
+//	@FindBy(xpath="//li[@class='select2-search select2-search--inline']")
+//	WebElement txtAssignedTo;
 	
 	//Get Text Methods
 	public String getSMAssignedTo() throws Exception {
@@ -169,6 +177,15 @@ public class NotificationsPage extends BasePage{
 		UtilityCustomFunctions.sendKeysNoEnter(driver, txtSearchRecordId, sRecordId);
 	}
 	
+	public void setAssignedTo(String sAssignedTo) throws Exception {
+		txtAssignedTo.click();
+		String sArrAssignTo[] = sAssignedTo.split("\\s+");
+		String sXpath="//ul[@class='select2-results__options']/li[contains(text(),'"+sArrAssignTo[1].trim()+"')]"; 
+		UtilityCustomFunctions.logWriteConsole(sXpath);
+		WebElement eleAssignedTo = driver.findElement(By.xpath(sXpath));
+		UtilityCustomFunctions.doActionClick(driver, eleAssignedTo);
+		
+	}
 	
 	
 	

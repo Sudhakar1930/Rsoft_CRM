@@ -82,8 +82,9 @@ public class DetailViewPage extends BasePage{
 	@FindBy(xpath="//span[@data-label='Text']//i[contains(@class,'fa fa-check')]")
 	WebElement btnTickSave;
 	
+	@FindBy(xpath="//span[@data-label='Number Field']//i[contains(@class,'fa fa-check')]")
+	WebElement btnNumberTickSave;
 	
-	 
 	
 	//click Methods
 	public void clickEditRecordItem() throws InterruptedException {
@@ -93,12 +94,29 @@ public class DetailViewPage extends BasePage{
 		Thread.sleep(2000);
 		action.moveToElement(eleArrSummary).perform();
 		String sXpath="//table[contains(@class,'table table-bordered')]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/i[1]";
+		
+		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
+		eleRecEdit.click();
+	}
+	public void clickEdtSngFldMod() throws InterruptedException {
+		Actions action = new Actions(driver);
+		String sXpath1 = "(//div[@class='col-lg-10'])[2]";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
+		Thread.sleep(2000);
+		action.moveToElement(eleArrSummary).perform();
+		String sXpath="//i[@class='fa fa-edit 5815_icon']";
 		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
 		eleRecEdit.click();
 	}
 	public void clickRecItemSave() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnTickSave);
 	}
+	
+	public void clickNMRecItemSave() throws Exception {
+		UtilityCustomFunctions.doClick(driver, btnNumberTickSave);
+	}
+	
+	
 	public void clickDetailView() throws Exception {
 		UtilityCustomFunctions.doClick(driver, lnkDetailView);
 	}

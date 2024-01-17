@@ -270,6 +270,7 @@ public class UtilityCustomFunctions extends BaseClass{
 		BaseClass.logger.info(sText);
 		System.out.println(sText);
 	}
+	
 	public static boolean doClick(WebDriver webDriver, WebElement element) throws Exception {
 		JavascriptExecutor js = (JavascriptExecutor) webDriver;
 		boolean isClicked = false;

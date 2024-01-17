@@ -60,8 +60,50 @@ public class CRMReUsables extends BaseClass {
 		return sCount;
 				
 	}
-	public void fValModuleView(String sExpModuleName, String sAssignedTo, String sPhoneNoumber, String sNumberField,
-			String sEmail, String sPickListItem, String sEnterYourNumber, ExtentTest node) throws Exception {
+	
+	
+	public void fValModuleView(String sEnv, String sExcelName,String sSheetName, String sMessage,String sAssignedTo,ExtentTest node) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\" + sExcelName + "Test.xlsx" ;	
+		}
+		else {
+			sPath=".\\testData\\" + sExcelName + "Live.xlsx" ;
+		}//get the test data sheet
+		
+		ExcelUtility xlValObj = new ExcelUtility(sPath);
+		logger.info("Excel file Utility instance created");
+	
+		int iRowCount = xlValObj.getRowCount(sSheetName);
+		System.out.println("Total rows: " + iRowCount);
+		logger.info("Row Count is: " + iRowCount);
+		
+	
+		int iColCount = xlValObj.getCellCount(sSheetName, iRowCount);
+		System.out.println("Cols: " + iColCount);
+		logger.info("Col Count is: " + iColCount);
+					
+		logger.info("Extracting DataSheet Values started...");
+		String sExpModuleName = xlValObj.getCellData(sSheetName, 1, 0);
+		String sExpWorkFlowName = xlValObj.getCellData(sSheetName, 1, 1);
+//		String sAssignedTo = xlValObj.getCellData(sSheetName, 1, 2);
+		String sPhoneNoumber=xlValObj.getCellData(sSheetName, 1, 3);
+		String sNumberField=xlValObj.getCellData(sSheetName, 1, 4);
+		String sEmail=xlValObj.getCellData(sSheetName, 1, 5);
+		String sPickListItem=xlValObj.getCellData(sSheetName, 1, 6);
+		String sEnterYourNumber=xlValObj.getCellData(sSheetName, 1, 7);
+		String sExecutionCondition=xlValObj.getCellData(sSheetName, 1, 8);
+		String sActionType=xlValObj.getCellData(sSheetName, 1, 9);
+		String sActionTitle=xlValObj.getCellData(sSheetName, 1, 10);
+		String sDisplayModuleName=xlValObj.getCellData(sSheetName, 1, 42);
+		String sNotifyTemplateMsg=xlValObj.getCellData(sSheetName, 1, 51);
+		System.out.println("Print Notify Template Message:" + sNotifyTemplateMsg);
+		String sRecordId="";
+		
+		System.out.println("Module Name:  " + sExpModuleName);
+		
+		
 		DetailViewPage objDVP = new DetailViewPage(driver);
 		String aActModuleName = objDVP.getNavBarModuleName();
 		System.out.println("Actual Module Name: " + aActModuleName);
@@ -75,6 +117,7 @@ public class CRMReUsables extends BaseClass {
 		String sActEMTitle = objDVP.getEmailTitle();
 		String sActMnuTitle = objDVP.getMenuItemTitle();
 
+		sPhoneNoumber = "+91" + " " + sPhoneNoumber;
 		// Validations
 		UtilityCustomFunctions.fSoftAssert(aActModuleName, sExpModuleName, "Module Name", node);
 		UtilityCustomFunctions.fSoftAssert(sActPNTitle, sPhoneNoumber, "Phone Number", node);
@@ -114,6 +157,7 @@ public class CRMReUsables extends BaseClass {
 		String sPNArrayDT[] = sActPNDTView.split("\\s+");
 		sActPNDTView = sPNArrayDT[0].trim() + " " + sPNArrayDT[1].trim();
 		System.out.println("Actual: DTView : " + sActPNDTView);
+		String sActNumberField = objDVP.getNumberFieldDTView();
 		String sActEMDTView = objDVP.getEmailDTView();
 		String sActMnuDTView = objDVP.getMenuListDTView();
 		String sActEYVDT = objDVP.getEYVDTView();
@@ -123,13 +167,17 @@ public class CRMReUsables extends BaseClass {
 		System.out.println("Expected Assigned To:" + sAssignedTo);
 		UtilityCustomFunctions.fSoftAssert(sActAsgnToDTView, sAssignedTo, "Detail View Assigned To", node);
 		UtilityCustomFunctions.fSoftAssert(sActPNDTView, sPhoneNoumber, "Detail View Phone Numer", node);
+		UtilityCustomFunctions.fSoftAssert(sActNumberField, sNumberField, "Detail View Number Field", node);
+		
+		
 		UtilityCustomFunctions.fSoftAssert(sActEMDTView, sEmail, "Detail View Email", node);
+		
 		UtilityCustomFunctions.fSoftAssert(sActMnuDTView, sPickListItem, "Detail View Menu Item", node);
 		UtilityCustomFunctions.fSoftAssert(sActEYVDT, sEnterYourNumber, "Detail View Enter Your Number", node);
 
 		// Title & NavBar Validation again
 		String aActModuleName1 = objDVP.getNavBarModuleName();
-		UtilityCustomFunctions.fSoftAssert(aActModuleName1, sExpModuleName, "Module Name", node);
+//		UtilityCustomFunctions.fSoftAssert(aActModuleName1, sExpModuleName, "Module Name", node);
 		// Title Actual Values
 		String sActPNTitle1 = objDVP.getPhoneNMTitle();
 		String sPNTitleArray1[] = sActPNTitle1.split("\\s+");
@@ -140,14 +188,14 @@ public class CRMReUsables extends BaseClass {
 		String sActMnuTitle1 = objDVP.getMenuItemTitle();
 
 		// Validations
-		UtilityCustomFunctions.fSoftAssert(aActModuleName1, sExpModuleName, "Module Name", node);
-		UtilityCustomFunctions.fSoftAssert(sActPNTitle1, sPhoneNoumber, "Phone Number", node);
-		UtilityCustomFunctions.fSoftAssert(sActEMTitle1, sEmail, "Email", node);
-		UtilityCustomFunctions.fSoftAssert(sActMnuTitle1, sPickListItem, "Piclist Value", node);
+		UtilityCustomFunctions.fSoftAssert(aActModuleName1, sExpModuleName, "Module Name Title", node);
+		UtilityCustomFunctions.fSoftAssert(sActPNTitle1, sPhoneNoumber, "Phone Number Title", node);
+		UtilityCustomFunctions.fSoftAssert(sActEMTitle1, sEmail, "Email Title", node);
+		UtilityCustomFunctions.fSoftAssert(sActMnuTitle1, sPickListItem, "Piclist Value Title", node);
 
 	}
 
-	public String fValNotifySummaryAndDetail(String sAssignedTo, String sUserName, String sActionTitle, ExtentTest node)
+	public String fValNotifySummaryAndDetail(String sAssignedTo, String sNotifyTemplMsg, String sActionTitle, ExtentTest node)
 			throws Exception {
 		NotificationsPage objNFP = new NotificationsPage(driver);
 
@@ -163,11 +211,11 @@ public class CRMReUsables extends BaseClass {
 		// Validations
 		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sAssignedTo, "Detail View Assigned To", node);
 		UtilityCustomFunctions.fSoftAssert(sActDTStatus, sStatus, "Detail View Status", node);
-		UtilityCustomFunctions.fSoftAssert(sActDTSummary, sUserName, "Detail View Summary/UserName", node);
+		UtilityCustomFunctions.fSoftAssert(sActDTSummary, sNotifyTemplMsg, "Detail View Summary", node);
 		UtilityCustomFunctions.fSoftAssert(sActDTTitle, sActionTitle, "Detail View Action Title", node);
 		objNFP.clickSummaryTab();
 		// getActualSummaryDetails
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String sActSMAssignedTo = objNFP.getSMAssignedTo();
 		String sActSMStatus = objNFP.getSMStatus();
 		String sActSMSummary = objNFP.getSMSummary();
@@ -175,34 +223,33 @@ public class CRMReUsables extends BaseClass {
 		// Validations
 		UtilityCustomFunctions.fSoftAssert(sAssignedTo, sActSMAssignedTo, "Summary View Assigned To", node);
 		UtilityCustomFunctions.fSoftAssert(sStatus, sActSMStatus, "Summary View Status", node);
-		UtilityCustomFunctions.fSoftAssert(sActSMSummary, sUserName, "Summary View User", node);
+		UtilityCustomFunctions.fSoftAssert(sActSMSummary, sNotifyTemplMsg, "Summary View User", node);
 		UtilityCustomFunctions.fSoftAssert(sActSMTitle, sActionTitle, "Summary View Action Title", node);
 
 		return sActDTModRecId;
 
 	}
 
-	public void fClickSearch(String sRecordId) throws Exception {
+	public void fClickSearch(String sRecordId,String sAssignedTo) throws Exception {
 		AllListPage objALP = new AllListPage(driver);
 		NotificationsPage objNFP = new NotificationsPage(driver);
 		objALP.clickAllList();
 		objALP.clickAllNotifications();
 		Thread.sleep(3000);
+		objNFP.setAssignedTo(sAssignedTo);
 		objNFP.setRecordId(sRecordId);
 		objNFP.clickSearchButton();
 
 	}
 
-	public void fgetTablevalues(String sAssignedTo, String sStatus, String sCreatedBy, String sUserName,
+	public void fgetTablevalues(String sAssignedTo, String sStatus, String sCreatedBy, String sNotifyTemplateMsg,
 			String sExpTitle, String sRecordId, ExtentTest node) throws Exception {
 		NotificationsPage objNFP = new NotificationsPage(driver);
 		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
 		for (int i = 2; i <= tRowCount.size(); i++) {
 			System.out.println("Current Row Number: " + i);
 			List<WebElement> tColCount = tRowCount.get(i).findElements(By.tagName("td"));
-//			for(int j=0;j<=tColCount.size();j++) {
-//				System.out.println("Values Selected is:" + tColCount.get(j).getText());
-//			}
+
 
 			String sActAssignedTo = UtilityCustomFunctions.getText(driver, tColCount.get(2));
 			String sActStatus = UtilityCustomFunctions.getText(driver, tColCount.get(3));
@@ -219,14 +266,14 @@ public class CRMReUsables extends BaseClass {
 
 			System.out.println("Expected status: " + sStatus);
 			System.out.println("Expected Created By: " + sCreatedBy);
-			System.out.println("Expected Summary: " + sUserName);
+			System.out.println("Expected Summary: " + sNotifyTemplateMsg);
 			System.out.println("Expected Title: " + sExpTitle);
 			System.out.println("Expected Record Id: " + sRecordId);
 
 			UtilityCustomFunctions.fSoftAssert(sAssignedTo, sAssignedTo, "AssignedTo Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActStatus, sStatus, "Status in Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActCreatedBy, sCreatedBy, "Created By in Record Details", node);
-			UtilityCustomFunctions.fSoftAssert(sActSummary, sUserName, "UserName in Record Details", node);
+			UtilityCustomFunctions.fSoftAssert(sActSummary, sNotifyTemplateMsg, "UserName in Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActTitle, sExpTitle, "Workflow Title in Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActModRecId, sRecordId, "Record Id in Record Details", node);
 			break;
@@ -486,11 +533,12 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("tel", sExpModuleName, "enquiryphonenumber", sEnquiry_PhoneNumber);
 		
-		objCMD.clickEnqCategory();
-		
+//		objCMD.clickEnqCategory();
+		objCMD.clickSelectControl(sExpModuleName,"enquirycategory");
+		Thread.sleep(3000);
 		objCMD.selectListValue(sEnquiry_category);
 		
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		//Lead PhoneNumber prefix
 		objCMD.ClickListPhonePrefix(sExpModuleName,"leadphonenumber_prefix-container");
@@ -927,6 +975,72 @@ public class CRMReUsables extends BaseClass {
 		System.out.println("Inside Validate All fields: isNotify" + isNotify);
 	}
 	
+	//Add Notification Values
+	public void fNotifyAddValuestoModulePage(String sEnv,String sExcelName,String sSheetName) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\"+ sExcelName +"Test.xlsx";
+		}
+		else {
+			sPath=".\\testData\\" + sExcelName +"Live.xlsx";
+		}
+
+		ExcelUtility xlAddObj = new ExcelUtility(sPath);
+	
+		logger.info("Excel file Utility instance created");
+	
+		int iRowCount = xlAddObj.getRowCount(sSheetName);
+		System.out.println("Total rows: " + iRowCount);
+		logger.info("Row Count is: " + iRowCount);
+		
+	
+		int iColCount = xlAddObj.getCellCount(sSheetName, iRowCount);
+		System.out.println("Cols: " + iColCount);
+		logger.info("Col Count is: " + iColCount);
+					
+		logger.info("Extracting DataSheet Values started...");
+
+		String sExpModuleName = xlAddObj.getCellData(sSheetName, 1, 0);
+		String sExpWorkFlowName = xlAddObj.getCellData(sSheetName, 1, 1);
+//		String sAssignedTo = xlAddObj.getCellData(sSheetName, 1, 2);
+		String sPhoneNoumber=xlAddObj.getCellData(sSheetName, 1, 3);
+		String sNumberField=xlAddObj.getCellData(sSheetName, 1, 4);
+		String sEmail=xlAddObj.getCellData(sSheetName, 1, 5);
+		String sPickListItem=xlAddObj.getCellData(sSheetName, 1, 6);
+		String sEnterYourNumber=xlAddObj.getCellData(sSheetName, 1, 7);
+		String sExecutionCondition=xlAddObj.getCellData(sSheetName, 1, 8);
+		String sActionType=xlAddObj.getCellData(sSheetName, 1, 9);
+		String sActionTitle=xlAddObj.getCellData(sSheetName, 1, 10);
+		String sDisplayModuleName=xlAddObj.getCellData(sSheetName, 1, 42);
+		
+		objCMD.SetPhoneNumber(sPhoneNoumber);
+
+		objCMD.SetNumberField(sNumberField);
+
+		Thread.sleep(1000);
+		if(objCMD.isEmailDisplayed()) {
+			System.out.println("Email control present");
+			objCMD.SetEmail(sEmail);
+		}
+		else {
+			System.out.println("Email control missing");
+		}
+
+		Thread.sleep(1000);
+		objCMD.SetEnterYourNumber(sEnterYourNumber);
+		Thread.sleep(2000);
+
+		//sPickListItem
+		objCMD.clickMenuList(sPickListItem);
+		
+		objCMD.selectMenuValue(sPickListItem);
+		objCMD.clickSave();
+		Thread.sleep(10000);
+		
+
+
+}		
 	
 	
 }

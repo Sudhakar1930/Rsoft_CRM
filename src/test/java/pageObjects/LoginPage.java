@@ -28,10 +28,27 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//*[@id='Changeicon']")
 	WebElement lnkEyeIcon;
 	
+	@FindBy(xpath="//*[@id='input_username']")
+	WebElement txtMySqlUserId;
+	
+	@FindBy(xpath="//*[@id='input_password']")
+	WebElement txtMySqlPwd;
+	
+	@FindBy(xpath="//*[@id='input_go']")
+	WebElement txtMysqlGo;
+	
+	
 	
 	
 	
 	//Set Methods
+	public void setMySqlUserId(String sUserName) {
+		UtilityCustomFunctions.sendKeys(driver, txtMySqlUserId, sUserName);
+	}
+	public void setMySqlPasswd(String sPassword) {
+		UtilityCustomFunctions.sendKeys(driver, txtMySqlPwd, sPassword);
+	}
+	
 	public void setCompanyName(String sCompanyName) {
 		UtilityCustomFunctions.sendKeys(driver, txtCompanyName, sCompanyName);
 	}
@@ -45,6 +62,10 @@ public class LoginPage extends BasePage {
 	}
 	
 	//Click Methods
+	public void clickMySqlSubmit() throws Exception {
+		UtilityCustomFunctions.doClick(driver, txtMysqlGo);
+	}
+	
 	public void clickLoginSubmit() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnSubmit);
 	}

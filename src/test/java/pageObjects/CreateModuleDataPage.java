@@ -40,7 +40,7 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//input[@type='email']")
 	WebElement eletxtEmail;
 	
-	@FindBy(xpath="//span[@id='select2-selfield_5803-container' and @title='Select An Option']")
+	@FindBy(xpath="//span[@id='select2-selfield_5803-container' and @class='select2-selection__rendered']")
 	WebElement eleSelectMnuList;
 	
 	@FindBy(xpath="//ul[@class='select2-results__options' and @role='tree']")
@@ -82,6 +82,12 @@ public class CreateModuleDataPage extends BasePage{
 	
 	@FindBy(xpath="//span[@id='select2-selfield_5893-container']")
 	WebElement eleEnqCatText;
+	
+	@FindBy(xpath="//span[@id='select2-selfield_6068-container']")
+	WebElement eleSchedEnqCatg;
+	
+	
+	
 	
 	@FindBy(xpath="(//i[contains(@class,'fa fa-edit')])[1]")
 	WebElement eleEllipsisEdit;
@@ -151,7 +157,9 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.doActionClick(driver, eleEnqCatText);
 	}
 	//get Methods
-	
+	public void clickSchedEnqCategory() throws Exception{
+		UtilityCustomFunctions.doActionClick(driver, eleSchedEnqCatg);
+	}
 	public String fGetModuleText(String sModuleName,String sText) throws Exception {
 		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
 		WebElement eleText = driver.findElement(By.xpath(sXpath));
@@ -273,6 +281,12 @@ public class CreateModuleDataPage extends BasePage{
 	
 	public void clickClose() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnClose);
+	}
+	public void clickSelectControl(String sModuleName,String sFieldLabel) throws Exception {
+		String sXpath = "//select[@name='"+ sModuleName.toLowerCase() + "_" + sFieldLabel +"']";
+		System.out.println("Select Control xpath:" + sXpath);
+		WebElement elecomboxBox = driver.findElement(By.xpath(sXpath));
+		UtilityCustomFunctions.doActionClick(driver, elecomboxBox);
 	}
 	public void clickMenuList(String sMenuItem) throws Exception {
 		System.out.println("Before clicking MenuItem");

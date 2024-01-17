@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TestHiddenControl">
+      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
         <methods>
           <include name="onStart"/>
-          <include name="testedit"/>
           <include name="setup"/>
+          <include name="testWFEveryTimeRecSave"/>
           <include name="flush"/>
+          <include name="testName"/>
         </methods>
-      </class> <!-- testCases.TestHiddenControl -->
+      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

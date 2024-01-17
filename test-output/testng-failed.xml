@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
+      <class name="testCases.TC007_WF1_Validate_Schedule_Notify">
         <methods>
           <include name="onStart"/>
-          <include name="testWFEveryTimeRecSave"/>
+          <include name="testName"/>
           <include name="setup"/>
           <include name="flush"/>
-          <include name="testName"/>
+          <include name="testDatainPhpMyAdmin"/>
         </methods>
-      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
+      </class> <!-- testCases.TC007_WF1_Validate_Schedule_Notify -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
