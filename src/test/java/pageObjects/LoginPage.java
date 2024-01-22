@@ -75,7 +75,8 @@ public class LoginPage extends BasePage {
 	
 	
 	//IsMethods
-	public boolean isLoginPageDisplayed(String sCRMUrl) {
+	public boolean isLoginPageDisplayed(String sCRMUrl) throws InterruptedException {
+		Thread.sleep(2000);
 		boolean bFlag = false;
 		if(driver.getCurrentUrl().equalsIgnoreCase(sCRMUrl)) {
 			bFlag = true;

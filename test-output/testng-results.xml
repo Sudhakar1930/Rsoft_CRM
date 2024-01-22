@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T18:20:19 IST" name="Suite" finished-at="2024-01-17T18:28:09 IST" duration-ms="470152">
+  <suite started-at="2024-01-22T18:47:47 IST" name="Suite" finished-at="2024-01-22T18:56:19 IST" duration-ms="511774">
     <groups>
     </groups>
-    <test started-at="2024-01-17T18:20:19 IST" name="chromeTest" finished-at="2024-01-17T18:28:09 IST" duration-ms="470102">
-      <class name="testCases.TC007_WF1_CRM_Schedule_Notify">
-        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC007_WF1_CRM_Schedule_Notify@bcec361]" started-at="2024-01-17T18:20:19 IST" name="testName" finished-at="2024-01-17T18:20:19 IST" duration-ms="16" status="PASS">
+    <test started-at="2024-01-22T18:47:47 IST" name="chromeTest" finished-at="2024-01-22T18:56:19 IST" duration-ms="511746">
+      <class name="testCases.TC012_WF6_SN_Yearly">
+        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC012_WF6_SN_Yearly@4b2bac3f]" started-at="2024-01-22T18:47:47 IST" name="testName" finished-at="2024-01-22T18:47:47 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testName -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC007_WF1_CRM_Schedule_Notify@bcec361]" started-at="2024-01-17T18:20:19 IST" name="setup" finished-at="2024-01-17T18:20:25 IST" duration-ms="5424" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC012_WF6_SN_Yearly@4b2bac3f]" started-at="2024-01-22T18:47:47 IST" name="setup" finished-at="2024-01-22T18:47:52 IST" duration-ms="5181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,51 +22,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testScheduleNotify()[pri:0, instance:testCases.TC007_WF1_CRM_Schedule_Notify@bcec361]" started-at="2024-01-17T18:20:25 IST" name="testScheduleNotify" finished-at="2024-01-17T18:27:35 IST" duration-ms="430555" status="PASS">
+        <test-method signature="testScheduleNotify()[pri:0, instance:testCases.TC012_WF6_SN_Yearly@4b2bac3f]" started-at="2024-01-22T18:47:52 IST" name="testScheduleNotify" finished-at="2024-01-22T18:56:19 IST" duration-ms="506486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScheduleNotify -->
-      </class> <!-- testCases.TC007_WF1_CRM_Schedule_Notify -->
-      <class name="testCases.TC007_WF1_Validate_Schedule_Notify">
-        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC007_WF1_Validate_Schedule_Notify@1c1bbc4e]" started-at="2024-01-17T18:20:19 IST" name="testName" finished-at="2024-01-17T18:20:19 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testName -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC007_WF1_Validate_Schedule_Notify@1c1bbc4e]" started-at="2024-01-17T18:27:35 IST" name="setup" finished-at="2024-01-17T18:27:38 IST" duration-ms="2263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testDatainPhpMyAdmin()[pri:0, instance:testCases.TC007_WF1_Validate_Schedule_Notify@1c1bbc4e]" started-at="2024-01-17T18:27:38 IST" name="testDatainPhpMyAdmin" finished-at="2024-01-17T18:28:09 IST" duration-ms="31755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDatainPhpMyAdmin -->
-      </class> <!-- testCases.TC007_WF1_Validate_Schedule_Notify -->
+      </class> <!-- testCases.TC012_WF6_SN_Yearly -->
     </test> <!-- chromeTest -->
-    <test started-at="2024-01-17T18:28:09 IST" name="edgeTest" finished-at="2024-01-17T18:28:09 IST" duration-ms="0">
-      <class name="testCases.TC007_WF1_CRM_Schedule_Notify">
-        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC007_WF1_CRM_Schedule_Notify@bcec361]" started-at="2024-01-17T18:20:19 IST" name="onStart" finished-at="2024-01-17T18:20:19 IST" duration-ms="610" status="PASS">
+    <test started-at="2024-01-22T18:56:19 IST" name="edgeTest" finished-at="2024-01-22T18:56:19 IST" duration-ms="0">
+      <class name="testCases.TC012_WF6_SN_Yearly">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC012_WF6_SN_Yearly@4b2bac3f]" started-at="2024-01-22T18:47:46 IST" name="onStart" finished-at="2024-01-22T18:47:47 IST" duration-ms="640" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5c59dfc7]]>
+                <![CDATA[org.testng.TestRunner@757ad227]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onStart -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC007_WF1_CRM_Schedule_Notify@bcec361]" started-at="2024-01-17T18:28:09 IST" name="flush" finished-at="2024-01-17T18:28:10 IST" duration-ms="550" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC012_WF6_SN_Yearly@4b2bac3f]" started-at="2024-01-22T18:56:19 IST" name="flush" finished-at="2024-01-22T18:56:19 IST" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- testCases.TC007_WF1_CRM_Schedule_Notify -->
+      </class> <!-- testCases.TC012_WF6_SN_Yearly -->
     </test> <!-- edgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -48,6 +48,13 @@ public class WorkFlowPage extends BasePage {
 	@FindBy(xpath="//table[@class='table table-striped workflowalltask']//tr")
 	List<WebElement> WbTblTasks;
 	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement btnSubmit;
+	
+	
+	public void clickSubmit() throws Exception {
+		UtilityCustomFunctions.doClick(driver,btnSubmit);
+	}
 	
 	
 	public String fWorkFlowStatus(String sModuleName,String sWorkflowName,String sExecCondition) {
@@ -201,9 +208,11 @@ public class WorkFlowPage extends BasePage {
 			String sActActionTitle = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(2));
 			sActActionType = sActActionType.trim();
 			sActActionTitle = sActActionTitle.trim();
+			System.out.println("Actual type:" + sActActionType + "actual title:" + sActActionTitle);
+			System.out.println("Expected type:" + sActionType + "Expected title:" + sActionTitle);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Type:" + sActActionType);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
-			if(sActActionType.equalsIgnoreCase(sActionType) && sActActionTitle.equalsIgnoreCase(sActionTitle)) {
+			if(sActActionType.trim().equalsIgnoreCase(sActionType) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle)) {
 				if(isCheckBoxSelected==true) {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");
@@ -224,12 +233,15 @@ public class WorkFlowPage extends BasePage {
 				}
 			}
 		}//for loop
+		System.out.println("Current Task status: " + j + bIsCurrentTaskDisabled);
 		if(bIsCurrentTaskDisabled==true) {
+		System.out.println("Inside the if condition when task is disabled");
 		String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+j+"]";
 		WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
 		eleTaskCheckBox.click();
 		bWorkflowTaskEnabled = true;
 		}
+		clickSubmit();
 		return bWorkflowTaskEnabled;
 	}//function
 	
