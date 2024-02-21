@@ -246,7 +246,7 @@ public class TC010_WF4_SN_SpecificDate extends BaseClass {
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
@@ -291,8 +291,8 @@ public class TC010_WF4_SN_SpecificDate extends BaseClass {
 		Thread.sleep(3000);
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
 		
-		//Validate Weekly Data
-		objPAP.checkWeeklyNotification(sUser1RecordId,"","Specific Date",sActionType,node); 
+		//Validate Specific Date
+		objPAP.check_SN_Weekly(sUser1RecordId,"","Specific Date",sActionType,node); 
 		
 	}	
 }

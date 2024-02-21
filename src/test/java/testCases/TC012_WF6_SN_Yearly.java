@@ -246,7 +246,7 @@ public class TC012_WF6_SN_Yearly extends BaseClass {
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
@@ -292,7 +292,7 @@ public class TC012_WF6_SN_Yearly extends BaseClass {
 		Thread.sleep(3000);
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
 		
-		objPAP.checkYearlyNotification(sUser1RecordId,sDisplayModuleName,"Yearly",sActionType,node);
+		objPAP.check_SN_Yearly(sUser1RecordId,sDisplayModuleName,"Yearly",sActionType,node);
 		
 	}	
 }

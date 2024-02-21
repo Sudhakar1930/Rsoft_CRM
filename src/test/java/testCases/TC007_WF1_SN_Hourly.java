@@ -14,6 +14,7 @@ import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
+import pageObjects.PHPMyAdminPage;
 import pageObjects.SMSNotifiers;
 import testBase.BaseClass;
 import utilities.CRMReUsables;
@@ -199,49 +200,49 @@ public class TC007_WF1_SN_Hourly extends BaseClass {
 			Assert.fail("Home Page Not Displayed");
 		}//avatar displayed.
 		
-//		Thread.sleep(1000);
-//		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
-//		String sWorkFlowStatus="";
-//		
-//		
-//		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
-//		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
-//		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
-//		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
-//		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
-//			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
-//			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
-//			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
-//			
-//		}
-//		else {
-//			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
-//			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			if(bTaskStatus==false) {
-//				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
-//				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
-//				
-//			}
-//			else {
-//				logger.info("Task Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Active " + sActionType + "  " + sActionTitle, "pass",node);
-//				
-//			}
-//			
-//		}//If
+		Thread.sleep(1000);
+		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
+		String sWorkFlowStatus="";
+		
+		
+		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
+		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
+		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
+		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
+		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
+			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
+			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
+			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
+			
+		}
+		else {
+			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
+			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			if(bTaskStatus==false) {
+				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
+				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
+				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
+				
+			}
+			else {
+				logger.info("Task Active " + sActionType + "  " + sActionTitle);
+				freport("Task Active " + sActionType + "  " + sActionTitle, "pass",node);
+				
+			}
+			
+		}//If
 		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
@@ -274,7 +275,22 @@ public class TC007_WF1_SN_Hourly extends BaseClass {
 		objLP.setMySqlUserId(sMySqlUid);
 		objLP.setMySqlPasswd(sMySqlPwd);
 		Thread.sleep(3000);
+		objLP.clickMySqlSubmit();
+		Thread.sleep(3000);
+//		objPAP.clickDB();
+		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
+		objPAP.clickDBLink();
+		Thread.sleep(3000);
+		objPAP.setTableInDB("rsoft_workflowtask_queue");
+		Thread.sleep(3000);
+		objPAP.clickaTableLink();
+		Thread.sleep(3000);
+		objPAP.aNavigtoLastPage();
 		
+		Thread.sleep(3000);
+		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
+		System.out.println(sUser1RecordId + ":" + sRecordId);
+		objPAP.check_SN_Hourly(sUser1RecordId,node);
 
 	}	
 }

@@ -1,0 +1,406 @@
+11:22:19.514 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View MuultiCombo Values :  Add New Module Data Passed : Actual Value is: oneExpected Value is: one
+11:22:20.868 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View City:  Add New Module Data Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
+11:22:22.198 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Stat:  Add New Module Data Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+11:22:23.652 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Country:  Add New Module Data Passed : Actual Value is: IndiaExpected Value is: India
+11:22:25.203 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View CheckBox:  Add New Module Data Passed : Actual Value is: YesExpected Value is: Yes
+11:22:26.584 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Date:  Add New Module Data Passed : Actual Value is: 2024-02-21Expected Value is: 2024-02-21
+11:22:28.033 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Time:  Add New Module Data Passed : Actual Value is: Expected Value is: 
+11:22:29.368 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Date & Time :  Add New Module Data Passed : Actual Value is: 2024-02-21 11:15:53 AMExpected Value is: 2024-02-21 11:15:53 AM
+11:22:30.748 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Related Module :  Add New Module Data Failed : Actual Value is: Expected Value is: 444444444
+11:22:32.184 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View File Upload :  Add New Module Data Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+11:22:33.641 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Name:  Add New Module Data Passed : Actual Value is: Mrs. StevenExpected Value is: Mrs. Steven
+11:22:34.979 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Number:  Add New Module Data Passed : Actual Value is: 11111111111Expected Value is: 11111111111
+11:22:36.314 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Currency:  Add New Module Data Failed : Actual Value is: 10000Expected Value is: 10,000
+11:22:37.610 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Url:  Add New Module Data Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+11:22:39.020 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Name:  Add New Module Data Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+11:22:40.382 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Email:  Add New Module Data Passed : Actual Value is: AddNewEnquiry@gmail.comExpected Value is: AddNewEnquiry@gmail.com
+11:22:41.890 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Text:  Add New Module Data Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+11:22:43.253 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Text Area:  Add New Module Data Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+11:22:44.641 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Date:  Add New Module Data Passed : Actual Value is: 2024-02-21Expected Value is: 2024-02-21
+11:22:45.979 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Phone Number:  Add New Module Data Passed : Actual Value is: +60 1359624562Expected Value is: +60 1359624562
+11:22:47.347 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Category:  Add New Module Data Failed : Actual Value is: OrdinaryExpected Value is: Urgent
+11:22:48.748 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT Lead Mobile Number:  Add New Module Data Passed : Actual Value is: +91 4951701364Expected Value is: +91 4951701364
+11:22:50.096 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT View Lead Email  Add New Module Data Failed : Actual Value is: 2024-02-21 11:20:58 AMExpected Value is: AddNewLead@gmail.com
+11:22:51.446 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT View Lead Text Add New Module Data Failed : Actual Value is: AddNewLead@gmail.comExpected Value is: Lead about Chatbot
+11:22:52.813 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT Sales Mobile Number:  Add New Module Data Failed : Actual Value is: Lead aboutExpected Value is: +60 4612685582
+11:22:54.197 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT View Sales EmailAdd New Module Data Failed : Actual Value is: +60
+  4612685582Expected Value is: AddNewSales@gmail.com
+11:22:55.444 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - New Values after added :
+11:22:59.697 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:1is: Leads
+11:22:59.697 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:22:59.764 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:2is: Tickets
+11:22:59.764 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:22:59.830 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:3is: ENQUIRY MODULE
+11:22:59.830 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:22:59.898 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:4is: LEAD MODULE
+11:22:59.898 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:22:59.981 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:5is: OPPORTUNITY MODULE
+11:22:59.981 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.048 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:6is: PRIYAN TM ONE
+11:23:00.048 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.115 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:7is: PRIYAN TM TWO
+11:23:00.115 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.197 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:8is: IVR Providers
+11:23:00.197 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.269 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:9is: PDF Makers
+11:23:00.269 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.315 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:10is: Chats
+11:23:00.315 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.410 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:11is: PRODUCTS
+11:23:00.410 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.548 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:12is: Email Templates
+11:23:00.548 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.616 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:13is: SMS Templates
+11:23:00.616 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.683 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:14is: WhatsApp Templates
+11:23:00.683 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.730 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:15is: Emails
+11:23:00.745 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:00.795 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:16is: SMS Notifiers
+11:23:00.795 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:06.730 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Notifiers Window OPened
+11:23:08.398 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 9913527335 entered in  input
+11:23:08.431 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Mobile Number set:9913527335
+11:23:16.915 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Count:2
+11:23:16.915 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Passed: SMS Received after New Record Add -9913527335
+11:23:21.513 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:1is: Leads
+11:23:21.513 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.598 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:2is: Tickets
+11:23:21.598 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.663 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:3is: ENQUIRY MODULE
+11:23:21.663 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.713 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:4is: LEAD MODULE
+11:23:21.713 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.778 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:5is: OPPORTUNITY MODULE
+11:23:21.778 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.846 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:6is: PRIYAN TM ONE
+11:23:21.846 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.912 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:7is: PRIYAN TM TWO
+11:23:21.912 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:21.980 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:8is: IVR Providers
+11:23:21.980 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.048 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:9is: PDF Makers
+11:23:22.048 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.114 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:10is: Chats
+11:23:22.114 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.180 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:11is: PRODUCTS
+11:23:22.180 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.264 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:12is: Email Templates
+11:23:22.264 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.364 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:13is: SMS Templates
+11:23:22.364 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.430 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:14is: WhatsApp Templates
+11:23:22.430 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.479 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:15is: Emails
+11:23:22.479 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:22.548 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:16is: SMS Notifiers
+11:23:22.548 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:23:28.811 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 1359624562 entered in  input
+11:23:35.297 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Count:2
+11:23:35.297 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Passed: SMS Received after New Record Add -1359624562
+11:23:40.215 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 4951701364 entered in  input
+11:23:45.763 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Count:2
+11:23:45.763 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Passed: SMS Received after New Record Add -4951701364
+11:23:51.399 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:1is: Leads
+11:23:51.399 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.463 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:2is: Tickets
+11:23:51.463 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.529 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:3is: ENQUIRY MODULE
+11:23:51.529 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.597 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:4is: LEAD MODULE
+11:23:51.597 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.663 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:5is: OPPORTUNITY MODULE
+11:23:51.663 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.728 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:6is: PRIYAN TM ONE
+11:23:51.728 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.779 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:7is: PRIYAN TM TWO
+11:23:51.779 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.856 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:8is: IVR Providers
+11:23:51.856 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.911 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:9is: PDF Makers
+11:23:51.911 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:51.962 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:10is: Chats
+11:23:51.962 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.028 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:11is: PRODUCTS
+11:23:52.028 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.094 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:12is: Email Templates
+11:23:52.094 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.161 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:13is: SMS Templates
+11:23:52.161 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.229 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:14is: WhatsApp Templates
+11:23:52.229 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.278 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:15is: Emails
+11:23:52.278 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.356 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:16is: SMS Notifiers
+11:23:52.356 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.429 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:17is: Notifications
+11:23:52.429 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.494 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:18is: Documents
+11:23:52.494 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.557 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:19is: Mail Manager
+11:23:52.557 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.611 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:20is: Track Locations
+11:23:52.611 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.678 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:21is: Attendances
+11:23:52.678 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.744 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:22is: Tipone
+11:23:52.744 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.811 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:23is: Thor
+11:23:52.811 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.878 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:24is: LEAD AAAAAA
+11:23:52.878 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:52.944 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:25is: Weapon
+11:23:52.944 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:53.129 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:26is: Gopal mod
+11:23:53.129 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:53.230 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:27is: New inventory
+11:23:53.230 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:53.347 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:28is: CRMEditFieldModule
+11:23:53.347 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:23:53.396 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:29is: CRMNotification
+11:23:53.396 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:24:10.064 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Excel file Utility instance created
+11:24:10.111 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Row Count is: 1
+11:24:10.145 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Col Count is: 52
+11:24:10.145 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Extracting DataSheet Values started...
+11:24:11.581 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Before Adding Module data
+11:24:14.788 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Assinged To Drop Down clicked
+11:24:20.185 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [Sudhakar VE] is selected in List
+11:24:20.185 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Assinged To Value Seleted is::  Sudhakar VE
+11:24:21.845 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Add Text entered in  input
+11:24:21.849 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Text Value added is::  Summary Add Text
+11:24:23.029 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Phone NUmber prefix clicked :  
+11:24:26.371 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [+65] is selected in List
+11:24:26.371 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Phone NUmber selected is :  9913527335
+11:24:28.098 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 9913527335 entered in  input
+11:24:30.894 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SummaryAdd@rsoft.in entered in  input
+11:24:31.909 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Email Added is: SummaryAdd@rsoft.in
+11:24:33.080 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Picklist clicked
+11:24:34.252 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Picklist selected: 4
+11:25:42.152 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - MultiCombo box values: two
+11:25:43.333 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - City Drop Down clicked
+11:25:47.728 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - City Selected: Madras9
+11:25:48.940 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - State Drop Down clicked
+11:25:53.151 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [Telangana] is selected in List
+11:25:53.151 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - State Selected: Telangana
+11:25:54.271 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Country List clicked
+11:25:57.697 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [A] is selected in List
+11:25:57.697 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Country Selected: A
+11:25:58.794 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Checkbox clicked
+11:25:58.950 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DateBox clicked
+11:26:01.960 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - (//td[contains(@class,'today')])[1]
+11:26:03.196 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Today Date Selected
+11:26:04.364 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Time Clicked
+11:26:11.010 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Time Selected is: 02:36 PM
+11:26:12.232 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Date & Time Clicked
+11:26:17.241 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - (//td[contains(@class,'today')])[2]
+11:26:20.396 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Clicked Current Date in Date&Time
+11:26:20.588 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Date & Time Selected
+11:26:22.426 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 55555555555 entered in  input
+11:27:17.145 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [Dr.] is selected in List
+11:27:18.647 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Sathyan entered in  input
+11:27:20.246 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 44444444444 entered in  input
+11:27:21.697 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 20,000 entered in  input
+11:27:23.380 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - https://www.rsoft.in/ entered in  input
+11:27:26.853 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [Mr.] is selected in List
+11:27:28.379 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Harry entered in  input
+11:27:30.196 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SummaryAddEnquiry@rsoft.in entered in  input
+11:27:31.929 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Enquiry about Surveyform entered in  input
+11:27:39.441 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+11:27:42.606 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - (//td[contains(@class,'today')])[2]
+11:27:48.600 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [+60] is selected in List
+11:27:51.328 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 1359624562 entered in  input
+11:28:51.332 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [+91] is selected in List
+11:28:54.077 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 4951701364 entered in  input
+11:28:55.874 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SummaryAddLead@gmail.com entered in  input
+11:28:57.543 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Lead about Surveyform entered in  input
+11:29:02.195 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - [+60] is selected in List
+11:29:04.976 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 4612685582 entered in  input
+11:29:06.743 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SummaryAddSales@gmail.com entered in  input
+11:29:28.343 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Excel file Utility instance created
+11:29:28.408 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Row Count is: 1
+11:29:28.423 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Col Count is: 52
+11:29:28.423 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Extracting DataSheet Values started...
+11:29:29.486 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Module Name : Summary Add Data Validation Passed : Actual Value is: CRMNotificationExpected Value is: CRMNotification
+11:29:31.041 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Text:  Summary Add Data Validation Passed : Actual Value is: Summary Add TextExpected Value is: Summary Add Text
+11:29:32.272 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Mobile Title: Summary Add Data Validation Passed : Actual Value is: +65 9913527335Expected Value is: +65 9913527335
+11:29:33.524 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Email: Summary Add Data Validation Passed : Actual Value is: SummaryAdd@rsoft.inExpected Value is: SummaryAdd@rsoft.in
+11:29:43.149 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary AssignedTo:  Summary Add Data Validation Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+11:29:44.446 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Text:  Summary Add Data Validation Passed : Actual Value is: Summary Add TextExpected Value is: Summary Add Text
+11:29:45.783 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +65 9913527335Expected Value is: +65 9913527335
+11:29:47.125 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Email :  Summary Add Data Validation Passed : Actual Value is: SummaryAdd@rsoft.inExpected Value is: SummaryAdd@rsoft.in
+11:29:48.463 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary PicListValue :  Summary Add Data Validation Passed : Actual Value is: 4Expected Value is: 4
+11:29:49.759 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary MuultiCombo Values :  Summary Add Data Validation Passed : Actual Value is: twoExpected Value is: two
+11:29:51.148 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary City:  Summary Add Data Validation Failed : Actual Value is: Expected Value is: Madras9
+11:29:52.514 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary State:  Summary Add Data Validation Passed : Actual Value is: TelanganaExpected Value is: Telangana
+11:29:53.843 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Country:  Summary Add Data Validation Passed : Actual Value is: AExpected Value is: A
+11:29:55.161 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary CheckBox:  Summary Add Data Validation Passed : Actual Value is: NoExpected Value is: No
+11:29:56.510 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Date:  Summary Add Data Validation Passed : Actual Value is: 2024-02-21Expected Value is: 2024-02-21
+11:29:57.897 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Time:  Summary Add Data Validation Passed : Actual Value is: Expected Value is: 
+11:29:59.261 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Date & Time :  Summary Add Data Validation Passed : Actual Value is: 2024-02-21 11:24:08 AMExpected Value is: 2024-02-21 11:24:08 AM
+11:30:00.677 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary File Upload :  Summary Add Data Validation Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+11:30:02.017 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Name:  Summary Add Data Validation Passed : Actual Value is: Dr. SathyanExpected Value is: Dr. Sathyan
+11:30:03.374 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Number:  Summary Add Data Validation Passed : Actual Value is: 44444444444Expected Value is: 44444444444
+11:30:04.729 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Currency:  Summary Add Data Validation Failed : Actual Value is: 20000Expected Value is: 20,000
+11:30:06.002 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Url:  Summary Add Data Validation Passed : Actual Value is: https://www.rsoft.in/Expected Value is: https://www.rsoft.in/
+11:30:07.376 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Name:  Summary Add Data Validation Passed : Actual Value is: Mr. HarryExpected Value is: Mr. Harry
+11:30:08.811 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Email:  Summary Add Data Validation Passed : Actual Value is: SummaryAddEnquiry@rsoft.inExpected Value is: SummaryAddEnquiry@rsoft.in
+11:30:10.176 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Text:  Summary Add Data Validation Passed : Actual Value is: Enquiry about SurveyformExpected Value is: Enquiry about Surveyform
+11:30:11.558 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Text Area:  Summary Add Data Validation Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+11:30:12.894 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Date:  Summary Add Data Validation Passed : Actual Value is: 2024-02-21Expected Value is: 2024-02-21
+11:30:14.250 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Phone Number:  Summary Add Data Validation Passed : Actual Value is: +60 1359624562Expected Value is: +60 1359624562
+11:30:15.645 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Enquiry Category:  Summary Add Data Validation Failed : Actual Value is: OrdinaryExpected Value is: Urgent
+11:30:17.006 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Lead PhoneNumber:  Summary Add Data Validation Passed : Actual Value is: +91 4951701364Expected Value is: +91 4951701364
+11:30:18.355 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Lead Email:  Summary Add Data Validation Passed : Actual Value is: SummaryAddLead@gmail.comExpected Value is: SummaryAddLead@gmail.com
+11:30:19.689 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Lead Text:  Summary Add Data Validation Passed : Actual Value is: Lead about SurveyformExpected Value is: Lead about Surveyform
+11:30:21.107 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Sales PhoneNumber:  Summary Add Data Validation Passed : Actual Value is: +60 4612685582Expected Value is: +60 4612685582
+11:30:22.423 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Summary Sales Email:  Summary Add Data Validation Passed : Actual Value is: SummaryAddSales@gmail.comExpected Value is: SummaryAddSales@gmail.com
+11:30:30.381 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View AssignedTo:  Summary Add Data Validation Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+11:30:31.743 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Text:  Summary Add Data Validation Passed : Actual Value is: Summary Add TextExpected Value is: Summary Add Text
+11:30:33.091 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +65 9913527335Expected Value is: +65 9913527335
+11:30:34.440 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Email :  Summary Add Data Validation Passed : Actual Value is: SummaryAdd@rsoft.inExpected Value is: SummaryAdd@rsoft.in
+11:30:35.775 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View PicListValue :  Summary Add Data Validation Passed : Actual Value is: 4Expected Value is: 4
+11:30:37.123 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View MuultiCombo Values :  Summary Add Data Validation Passed : Actual Value is: twoExpected Value is: two
+11:30:38.477 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View City:  Summary Add Data Validation Failed : Actual Value is: Expected Value is: Madras9
+11:30:39.806 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Stat:  Summary Add Data Validation Passed : Actual Value is: TelanganaExpected Value is: Telangana
+11:30:41.182 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Country:  Summary Add Data Validation Passed : Actual Value is: AExpected Value is: A
+11:30:42.523 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View CheckBox:  Summary Add Data Validation Passed : Actual Value is: NoExpected Value is: No
+11:30:43.841 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Date:  Summary Add Data Validation Passed : Actual Value is: 2024-02-21Expected Value is: 2024-02-21
+11:30:45.223 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Time:  Summary Add Data Validation Passed : Actual Value is: Expected Value is: 
+11:30:46.595 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Date & Time :  Summary Add Data Validation Passed : Actual Value is: 2024-02-21 11:24:08 AMExpected Value is: 2024-02-21 11:24:08 AM
+11:30:47.923 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Related Module :  Summary Add Data Validation Failed : Actual Value is: Expected Value is: 55555555555
+11:30:49.324 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View File Upload :  Summary Add Data Validation Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+11:30:50.674 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Name:  Summary Add Data Validation Passed : Actual Value is: Dr. SathyanExpected Value is: Dr. Sathyan
+11:30:52.039 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Number:  Summary Add Data Validation Passed : Actual Value is: 44444444444Expected Value is: 44444444444
+11:30:53.405 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Currency:  Summary Add Data Validation Failed : Actual Value is: 20000Expected Value is: 20,000
+11:30:54.719 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Url:  Summary Add Data Validation Passed : Actual Value is: https://www.rsoft.in/Expected Value is: https://www.rsoft.in/
+11:30:56.061 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Name:  Summary Add Data Validation Passed : Actual Value is: Mr. HarryExpected Value is: Mr. Harry
+11:30:57.373 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Email:  Summary Add Data Validation Passed : Actual Value is: SummaryAddEnquiry@rsoft.inExpected Value is: SummaryAddEnquiry@rsoft.in
+11:30:58.768 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Text:  Summary Add Data Validation Passed : Actual Value is: Enquiry about SurveyformExpected Value is: Enquiry about Surveyform
+11:31:00.508 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Text Area:  Summary Add Data Validation Passed : Actual Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.Expected Value is: RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+11:31:01.840 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Date:  Summary Add Data Validation Passed : Actual Value is: 2024-02-21Expected Value is: 2024-02-21
+11:31:03.171 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Phone Number:  Summary Add Data Validation Passed : Actual Value is: +60 1359624562Expected Value is: +60 1359624562
+11:31:04.572 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Detail View Enquiry Category:  Summary Add Data Validation Failed : Actual Value is: OrdinaryExpected Value is: Urgent
+11:31:05.928 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT Lead Mobile Number:  Summary Add Data Validation Passed : Actual Value is: +91 4951701364Expected Value is: +91 4951701364
+11:31:07.254 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT View Lead Email  Summary Add Data Validation Failed : Actual Value is: 2024-02-21 11:29:14 AMExpected Value is: SummaryAddLead@gmail.com
+11:31:08.572 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT View Lead Text Summary Add Data Validation Failed : Actual Value is: SummaryAddLead@gmail.comExpected Value is: Lead about Surveyform
+11:31:09.939 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT Sales Mobile Number:  Summary Add Data Validation Failed : Actual Value is: Lead aboutExpected Value is: +60 4612685582
+11:31:11.256 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - DT View Sales EmailSummary Add Data Validation Failed : Actual Value is: +60
+  4612685582Expected Value is: SummaryAddSales@gmail.com
+11:31:13.804 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:1is: Leads
+11:31:13.804 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:13.871 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:2is: Tickets
+11:31:13.871 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:13.941 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:3is: ENQUIRY MODULE
+11:31:13.941 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:13.988 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:4is: LEAD MODULE
+11:31:13.988 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.054 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:5is: OPPORTUNITY MODULE
+11:31:14.054 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.106 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:6is: PRIYAN TM ONE
+11:31:14.106 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.170 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:7is: PRIYAN TM TWO
+11:31:14.170 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.223 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:8is: IVR Providers
+11:31:14.223 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.292 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:9is: PDF Makers
+11:31:14.292 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.344 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:10is: Chats
+11:31:14.344 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.405 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:11is: PRODUCTS
+11:31:14.405 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.457 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:12is: Email Templates
+11:31:14.457 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.522 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:13is: SMS Templates
+11:31:14.522 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.588 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:14is: WhatsApp Templates
+11:31:14.588 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.644 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:15is: Emails
+11:31:14.644 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:14.704 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:16is: SMS Notifiers
+11:31:14.704 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:31:21.161 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 9913527335 entered in  input
+11:31:27.939 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Count:3
+11:31:27.939 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Passed: SMS Received after Summary Record Add -9913527335
+11:31:33.777 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 1359624562 entered in  input
+11:31:39.185 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Count:3
+11:31:39.185 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Passed: SMS Received after Summary Record Add -1359624562
+11:31:45.125 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - 4951701364 entered in  input
+11:31:50.722 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - SMS Count:3
+11:31:50.722 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Passed: SMS Received after Summary Record Add -4951701364
+11:31:56.486 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:1is: Leads
+11:31:56.486 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.553 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:2is: Tickets
+11:31:56.553 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.622 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:3is: ENQUIRY MODULE
+11:31:56.622 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.672 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:4is: LEAD MODULE
+11:31:56.672 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.722 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:5is: OPPORTUNITY MODULE
+11:31:56.722 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.775 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:6is: PRIYAN TM ONE
+11:31:56.775 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.838 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:7is: PRIYAN TM TWO
+11:31:56.838 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.904 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:8is: IVR Providers
+11:31:56.904 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:56.955 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:9is: PDF Makers
+11:31:56.955 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.012 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:10is: Chats
+11:31:57.012 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.069 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:11is: PRODUCTS
+11:31:57.069 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.122 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:12is: Email Templates
+11:31:57.122 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.187 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:13is: SMS Templates
+11:31:57.187 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.237 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:14is: WhatsApp Templates
+11:31:57.237 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.288 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:15is: Emails
+11:31:57.288 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.338 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:16is: SMS Notifiers
+11:31:57.338 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.392 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:17is: Notifications
+11:31:57.392 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.453 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:18is: Documents
+11:31:57.453 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.512 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:19is: Mail Manager
+11:31:57.512 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.570 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:20is: Track Locations
+11:31:57.570 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.620 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:21is: Attendances
+11:31:57.620 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.678 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:22is: Tipone
+11:31:57.678 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.737 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:23is: Thor
+11:31:57.737 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.789 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:24is: LEAD AAAAAA
+11:31:57.789 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.854 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:25is: Weapon
+11:31:57.854 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.913 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:26is: Gopal mod
+11:31:57.913 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:57.955 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:27is: New inventory
+11:31:57.955 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:58.022 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:28is: CRMEditFieldModule
+11:31:58.022 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:31:58.071 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:29is: CRMNotification
+11:31:58.071 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:CRMNotification
+11:32:37.184 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:1is: Leads
+11:32:37.184 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.254 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:2is: Tickets
+11:32:37.254 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.321 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:3is: ENQUIRY MODULE
+11:32:37.321 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.389 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:4is: LEAD MODULE
+11:32:37.389 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.455 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:5is: OPPORTUNITY MODULE
+11:32:37.455 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.538 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:6is: PRIYAN TM ONE
+11:32:37.538 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.621 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:7is: PRIYAN TM TWO
+11:32:37.621 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.704 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:8is: IVR Providers
+11:32:37.704 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers
+11:32:37.787 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Actual List Item:9is: PDF Makers
+11:32:37.787 [main] INFO  testCases.TC004_WF4_Send_SMS_OOF_S - Expected List Item:SMS Notifiers

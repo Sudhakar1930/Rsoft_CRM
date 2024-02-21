@@ -79,7 +79,7 @@ public class BaseClass extends ExtentReportManager{
 			options.addArguments("--disable-extensions");
 			options.addArguments("-–disable-notifications");
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			//options.addArguments("--headless");     
+//			options.addArguments("--headless");     
 	        //options.addArguments("--disable-gpu");
 	        //options.addArguments("--window-size=1400,800");
 

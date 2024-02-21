@@ -123,48 +123,48 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			Assert.fail("Home Page Not Displayed");
 			
 		}
-//		Thread.sleep(1000);
-//		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
-//		String sWorkFlowStatus="";
-//		
-//		
-//		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
-//		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
-//		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
-//		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
-//		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
-//			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
-//			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
-//			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
-//			
-//		}
-//		else {
-//			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
-//			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			if(bTaskStatus==false) {
-//				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
-//				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
-//				
-//			}
-//			else {
-//				logger.info("Task Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Active " + sActionType + "  " + sActionTitle, "pass",node);
-//				
-//			}
-//			
-//		}//If
+		Thread.sleep(1000);
+		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
+		String sWorkFlowStatus="";
+		
+		
+		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
+		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
+		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
+		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
+		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
+			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
+			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
+			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
+			
+		}
+		else {
+			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
+			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			if(bTaskStatus==false) {
+				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
+				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
+				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
+				
+			}
+			else {
+				logger.info("Task Active " + sActionType + "  " + sActionTitle);
+				freport("Task Active " + sActionType + "  " + sActionTitle, "pass",node);
+				
+			}
+			
+		}//If
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sExpModuleName,6);
+		objALP.clickModuleOnListAll(driver, sExpModuleName);
 		Thread.sleep(1000);
 		objEDT.clickModule(sExpModuleName);
 		Thread.sleep(1000);
@@ -373,7 +373,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
@@ -450,7 +450,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
@@ -542,7 +542,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
@@ -740,7 +740,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(5000);
 		objALP.clickAllList();
 		Thread.sleep(3000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
@@ -844,7 +844,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
@@ -951,7 +951,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);

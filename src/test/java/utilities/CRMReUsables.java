@@ -562,7 +562,7 @@ public class CRMReUsables extends BaseClass {
 		
 		//Sales Email
 		objCMD.setGenericInputValue("email", sExpModuleName, "salesemail", sSales_Email);
-		Thread.sleep(3000);		
+		Thread.sleep(5000);		
 		
 		objCMD.clickSave();
 		

@@ -290,7 +290,7 @@ import utilities.UtilityCustomFunctions;
 		//Submit new Data
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sExpModuleName,6);
+		objALP.clickModuleOnListAll(driver, sExpModuleName);
 		Thread.sleep(1000);
 		objEDT.clickModule(sExpModuleName);
 		Thread.sleep(2000);
@@ -303,506 +303,506 @@ import utilities.UtilityCustomFunctions;
 		
 		//**************Add New Record
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1");
-//		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1","Add New Module Data",sAssignedTo,node);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
-//		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName);
-//			freport("Notification not Received after new record added on ETRM "+ sUserName, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName, "Notification not Received after new record added on ETRM"+ sUserName);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName);
-//			freport("Notification Received after new record added on ETRM "+ sUserName, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName, "Notification not Received after new record added on ETRM"+ sUserName);
-//		}
-//		// Check count for User 2
-//		//Login with User 2
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		
-//		//Login Second User
-//		System.out.println(sCompName);
-//		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName1);
-//			objLP.setPassword(sPassword1);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
-//		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName1);
-//			freport("Notification not Received after new record added on ETRM "+ sUserName1, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName1, "Notification not Received after new record added on ETRM"+ sUserName1);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName1);
-//			freport("Notification Received after new record added on ETRM "+ sUserName1, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName1, "Notification not Received after new record added on ETRM"+ sUserName1);
-//		}
-//		
-//		//Login with User3 and Validate Notification count
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		//Third User
-//		Thread.sleep(3000);
-//		System.out.println("First Time 3rd User Login");
-//		System.out.println(sCompName);
-//		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName2);
-//			objLP.setPassword(sPassword2);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
-//		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName2);
-//			freport("Notification not Received after new record added on ETRM "+ sUserName2, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName2, "Notification not Received after new record added on ETRM"+ sUserName1);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName2);
-//			freport("Notification Received after new record added on ETRM "+ sUserName2, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName2, "Notification not Received after new record added on ETRM"+ sUserName2);
-//		}
-//		
-//		///************ New Record Add Completed *************
-//		Thread.sleep(2000);
-//		//************ Add New Summary Data Completed *************
-//		//Login with User 1 : rsoft
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName);
-//			objLP.setPassword(sPassword);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}		
-//		
-//		
-//		//Add Summary Data
-//		Thread.sleep(3000);
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
-//		System.out.println("Module clicked");
-//		Thread.sleep(3000);
-//		objCMD.clickExistingModData(1);
-//		
-//		objDVP.clickAddRecord();
-//		Thread.sleep(3000);
-//		
-//		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2");
-//		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2","Summary Add New Data",sAssignedTo,node);
-//		
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
-//		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data ETRM "+ sUserName);
-//			freport("Notification not Received after Summary Add New Data ETRM "+ sUserName, "pass",node);
-//			sAssertinFn.assertEquals("Notification not Received after Summary Add New Data ETRM"+ sUserName, "Notification not Received after Summary Add New Data ETRM"+ sUserName);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName);
-//			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName, "Notification not Received after Summary Add New Data on ETRM"+ sUserName);
-//		}
-//		//Login User 2
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		
-//		//Login Second User
-//		System.out.println(sCompName);
-//		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName1);
-//			objLP.setPassword(sPassword1);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
-//		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data on ETRM "+ sUserName1);
-//			freport("Notification not Received after new Summary Add New Data on ETRM "+ sUserName1, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName1, "Notification not Received after Summary Add New Data on ETRM"+ sUserName1);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName1);
-//			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName1, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName1, "Notification not Received after Summary Add New Data on ETRM"+ sUserName1);
-//		}
-//		
-//		//Logout Third User
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		//Login 3rd User
-//		System.out.println(sCompName);
-//		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName2);
-//			objLP.setPassword(sPassword2);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
-//		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data on ETRM "+ sUserName2);
-//			freport("Notification not Received after new Summary Add New Data on ETRM "+ sUserName2, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName2, "Notification not Received after Summary Add New Data on ETRM"+ sUserName2);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName2);
-//			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName2, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName2, "Notification not Received after Summary Add New Data on ETRM"+ sUserName2);
-//		}
-//		//Login with User 1 : rsoft
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName);
-//			objLP.setPassword(sPassword);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}	
-//		//Duplicate No Modify
-//		Thread.sleep(3000);
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
-//		System.out.println("Module clicked");
-//		Thread.sleep(3000);
-//		objCMD.clickExistingModData(1);
-//		Thread.sleep(1000);
-//		objDVP.clickDuplicateRecord();
-//		Thread.sleep(5000);
-//		objCMD.clickSave();
-//		UtilityCustomFunctions.checkPageLoadComplete();
-//		Thread.sleep(10000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
-//		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify ETRM "+ sUserName);
-//			freport("Notification not Received after Duplicate No Modify ETRM "+ sUserName, "pass",node);
-//			sAssertinFn.assertEquals("Notification not Received after Duplicate No Modify ETRM"+ sUserName, "Notification not Received after Duplicate No Modify ETRM"+ sUserName);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName);
-//			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName);
-//		}
-//		//Login User 2
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		
-//		//Login Second User
-//		System.out.println(sCompName);
-//		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName1);
-//			objLP.setPassword(sPassword1);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
-//		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify on ETRM "+ sUserName1);
-//			freport("Notification not Received after new Duplicate No Modify on ETRM "+ sUserName1, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName1, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName1);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName1);
-//			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName1, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName1, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName1);
-//		}
-//		
-//		//Third User
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName2);
-//			objLP.setPassword(sPassword2);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
-//		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify on ETRM "+ sUserName2);
-//			freport("Notification not Received after new Duplicate No Modify on ETRM "+ sUserName2, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName2, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName2);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName2);
-//			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName2, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName2, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName2);
-//		}
-//		//Login with User 1 : rsoft
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName);
-//			objLP.setPassword(sPassword);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		
-//		//Duplicate with Modification
-//		Thread.sleep(3000);
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
-//		System.out.println("Module clicked");
-//		Thread.sleep(3000);
-//		objCMD.clickExistingModData(1);
-//		Thread.sleep(1000);
-//		objDVP.clickDuplicateRecord();
-//		
-//		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3");
-//		Thread.sleep(5000);
-//		UtilityCustomFunctions.checkPageLoadComplete();
-//		Thread.sleep(10000);
-//		
-////		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3","Duplicate with New Data",sAssignedTo,node);
-//		
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
-//		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data ETRM "+ sUserName);
-//			freport("Notification not Received after Duplicate with New Data ETRM "+ sUserName, "pass",node);
-//			sAssertinFn.assertEquals("Notification not Received after Duplicate with New Data ETRM"+ sUserName, "Notification not Received after Duplicate with New Data ETRM"+ sUserName);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName);
-//			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName);
-//		}
-//		//Login User 2
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		
-//		//Login Second User
-//		System.out.println(sCompName);
-//		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName1);
-//			objLP.setPassword(sPassword1);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
-//		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data on ETRM "+ sUserName1);
-//			freport("Notification not Received after new Duplicate with New Data on ETRM "+ sUserName1, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName1, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName1);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName1);
-//			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName1, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName1, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName1);
-//		}
-//		
-//		//Third User
-//		Thread.sleep(3000);
-//		objHP.clickAvatar();
-//		Thread.sleep(2000);
-//		objHP.clickLogout();
-//		Thread.sleep(3000);
-//		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-//		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-//			objLP.setCompanyName(sCompName);
-//			objLP.setUserName(sUserName2);
-//			objLP.setPassword(sPassword2);
-//			objLP.clickEyeIcon();
-//			Thread.sleep(3000);
-//			objLP.clickLoginSubmit();
-//			Thread.sleep(3000);
-//		}
-//		else {
-//			logger.info("CRM Login failed");
-//			Assert.fail("Login Page not displayed");
-//			System.out.println("Login Page Not Displayed");
-//		}
-//		Thread.sleep(3000);
-//		sNotCount = objCRMRs.fgetNotificationCount();
-//		
-//		if(sNotCount==null) {
-//			sNotCount = "0";
-//		}
-//		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
-//		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-//			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data on ETRM "+ sUserName2);
-//			freport("Notification not Received after new Duplicate with New Data on ETRM "+ sUserName2, "pass",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName2, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName2);	
-//		
-//		}
-//		else {
-//			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName2);
-//			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName2, "fail",node);
-//			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName2, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName2);
-//		}
+		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1","Add New Module Data",sAssignedTo,node);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
+		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName);
+			freport("Notification not Received after new record added on ETRM "+ sUserName, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName, "Notification not Received after new record added on ETRM"+ sUserName);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName);
+			freport("Notification Received after new record added on ETRM "+ sUserName, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName, "Notification not Received after new record added on ETRM"+ sUserName);
+		}
+		// Check count for User 2
+		//Login with User 2
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		
+		//Login Second User
+		System.out.println(sCompName);
+		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName1);
+			objLP.setPassword(sPassword1);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
+		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName1);
+			freport("Notification not Received after new record added on ETRM "+ sUserName1, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName1, "Notification not Received after new record added on ETRM"+ sUserName1);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName1);
+			freport("Notification Received after new record added on ETRM "+ sUserName1, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName1, "Notification not Received after new record added on ETRM"+ sUserName1);
+		}
+		
+		//Login with User3 and Validate Notification count
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		//Third User
+		Thread.sleep(3000);
+		System.out.println("First Time 3rd User Login");
+		System.out.println(sCompName);
+		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName2);
+			objLP.setPassword(sPassword2);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
+		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName2);
+			freport("Notification not Received after new record added on ETRM "+ sUserName2, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName2, "Notification not Received after new record added on ETRM"+ sUserName1);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName2);
+			freport("Notification Received after new record added on ETRM "+ sUserName2, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName2, "Notification not Received after new record added on ETRM"+ sUserName2);
+		}
+		
+		///************ New Record Add Completed *************
+		Thread.sleep(2000);
+		//************ Add New Summary Data Completed *************
+		//Login with User 1 : rsoft
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}		
+		
+		
+		//Add Summary Data
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		
+		objDVP.clickAddRecord();
+		Thread.sleep(3000);
+		
+		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2");
+		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2","Summary Add New Data",sAssignedTo,node);
+		
+		sNotCount = objCRMRs.fgetNotificationCount();
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
+		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data ETRM "+ sUserName);
+			freport("Notification not Received after Summary Add New Data ETRM "+ sUserName, "pass",node);
+			sAssertinFn.assertEquals("Notification not Received after Summary Add New Data ETRM"+ sUserName, "Notification not Received after Summary Add New Data ETRM"+ sUserName);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName);
+			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName, "Notification not Received after Summary Add New Data on ETRM"+ sUserName);
+		}
+		//Login User 2
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		
+		//Login Second User
+		System.out.println(sCompName);
+		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName1);
+			objLP.setPassword(sPassword1);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
+		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data on ETRM "+ sUserName1);
+			freport("Notification not Received after new Summary Add New Data on ETRM "+ sUserName1, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName1, "Notification not Received after Summary Add New Data on ETRM"+ sUserName1);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName1);
+			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName1, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName1, "Notification not Received after Summary Add New Data on ETRM"+ sUserName1);
+		}
+		
+		//Logout Third User
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		//Login 3rd User
+		System.out.println(sCompName);
+		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName2);
+			objLP.setPassword(sPassword2);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
+		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data on ETRM "+ sUserName2);
+			freport("Notification not Received after new Summary Add New Data on ETRM "+ sUserName2, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName2, "Notification not Received after Summary Add New Data on ETRM"+ sUserName2);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName2);
+			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName2, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName2, "Notification not Received after Summary Add New Data on ETRM"+ sUserName2);
+		}
+		//Login with User 1 : rsoft
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}	
+		//Duplicate No Modify
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(1000);
+		objDVP.clickDuplicateRecord();
+		Thread.sleep(5000);
+		objCMD.clickSave();
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
+		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify ETRM "+ sUserName);
+			freport("Notification not Received after Duplicate No Modify ETRM "+ sUserName, "pass",node);
+			sAssertinFn.assertEquals("Notification not Received after Duplicate No Modify ETRM"+ sUserName, "Notification not Received after Duplicate No Modify ETRM"+ sUserName);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName);
+			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName);
+		}
+		//Login User 2
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		
+		//Login Second User
+		System.out.println(sCompName);
+		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName1);
+			objLP.setPassword(sPassword1);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
+		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify on ETRM "+ sUserName1);
+			freport("Notification not Received after new Duplicate No Modify on ETRM "+ sUserName1, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName1, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName1);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName1);
+			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName1, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName1, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName1);
+		}
+		
+		//Third User
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName2);
+			objLP.setPassword(sPassword2);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
+		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify on ETRM "+ sUserName2);
+			freport("Notification not Received after new Duplicate No Modify on ETRM "+ sUserName2, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName2, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName2);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName2);
+			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName2, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName2, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName2);
+		}
+		//Login with User 1 : rsoft
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		
+		//Duplicate with Modification
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(1000);
+		objDVP.clickDuplicateRecord();
+		
+		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+		
+//		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3","Duplicate with New Data",sAssignedTo,node);
+		
+		sNotCount = objCRMRs.fgetNotificationCount();
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
+		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data ETRM "+ sUserName);
+			freport("Notification not Received after Duplicate with New Data ETRM "+ sUserName, "pass",node);
+			sAssertinFn.assertEquals("Notification not Received after Duplicate with New Data ETRM"+ sUserName, "Notification not Received after Duplicate with New Data ETRM"+ sUserName);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName);
+			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName);
+		}
+		//Login User 2
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		
+		//Login Second User
+		System.out.println(sCompName);
+		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName1);
+			objLP.setPassword(sPassword1);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
+		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data on ETRM "+ sUserName1);
+			freport("Notification not Received after new Duplicate with New Data on ETRM "+ sUserName1, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName1, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName1);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName1);
+			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName1, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName1, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName1);
+		}
+		
+		//Third User
+		Thread.sleep(3000);
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objHP.clickLogout();
+		Thread.sleep(3000);
+		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName2);
+			objLP.setPassword(sPassword2);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sNotCount = objCRMRs.fgetNotificationCount();
+		
+		if(sNotCount==null) {
+			sNotCount = "0";
+		}
+		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
+		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
+			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data on ETRM "+ sUserName2);
+			freport("Notification not Received after new Duplicate with New Data on ETRM "+ sUserName2, "pass",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName2, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName2);	
+		
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName2);
+			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName2, "fail",node);
+			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName2, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName2);
+		}
 		//Login with User 1
 		objHP.clickAvatar();
 		Thread.sleep(2000);
@@ -826,7 +826,7 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(5000);
 		objALP.clickAllList();
 		Thread.sleep(3000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
@@ -1012,7 +1012,7 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
@@ -1205,7 +1205,7 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);

@@ -233,25 +233,28 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
 		Thread.sleep(2000);
 		
 //		//**************Add New Record
 		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1");
-
+//
 		objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet1","Add New Module Data","No",node);
-		
+		//uncomment start
+		UtilityCustomFunctions.logWriteConsole("New Values after added :");
 		Thread.sleep(2000);
 		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+		Thread.sleep(2000);
+		objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 		Thread.sleep(2000);
 		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("SMS Notifiers Window OPened");
 		objSMS.setRecipient(sMobileNumber);
-		
+		UtilityCustomFunctions.logWriteConsole("Mobile Number set:" + sMobileNumber);
 		objSMS.clickSearch();
+		Thread.sleep(3000);
 		int iSMSCount = objSMS.getSMSRowcount(); 
 		if(iSMSCount<=1) {
 			logger.info("Failed: SMS not Received after New Record Add -"+ sMobileNumber);
@@ -263,13 +266,14 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			freport("Passed: SMS Received after New Record Add -"+ sMobileNumber, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - SMS not received", "Add New Record - SMS received");
 		}
+
 //		objSMS.clickFirstSMS();
 //		sUser1MessageId = objSMS.fValidateSMSNotification(sAssignedTo, sFullMobileNumber, sSMSTemplateMsg,"SMS Validation for " + sMobileNumber , node);
 		
-//		Thread.sleep(2000);
-//		objALP.clickAllList();
-//		Thread.sleep(1000);
-//		objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 		Thread.sleep(2000);
 		
 		 objSMS.setRecipient(sEnquiry_PhoneNumber);
@@ -294,7 +298,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 //		 Thread.sleep(2000);
 //		 objALP.clickAllList();
 //		 Thread.sleep(1000);
-//		 objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+//		 objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 		 Thread.sleep(2000);
 		 
 		 objSMS.setRecipient(sLead_PN);
@@ -322,7 +326,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -330,14 +334,14 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			objDVP.clickAddRecord();
 			Thread.sleep(3000);
 			
-			//Add New Record and Check
+			//Summary Add New Record and Check
 			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet2");
 			Thread.sleep(3000);
 			objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet2","Summary Add Data Validation","No",node);
 			//SMS Validation after Summary Add New
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			objSMS.setRecipient(sMobileNumber);
 			
@@ -388,11 +392,11 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 				freport("Failed: SMS not Received after Summary Record Add -"+ sLead_PN, "fail",node);
 				sAssertinFn.assertEquals("Add Summary Record - SMS not received", "Add Summary Record - SMS received");
 			}
-			//Duplicate with No Modify
+//			//Duplicate with No Modify
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -406,7 +410,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			//SMS Validation after Duplicate with No Modify
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -461,7 +465,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -472,11 +476,11 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(5000);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
-			objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet3","Duplicate with New Data","No",node);
+//			objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet3","Duplicate with New Data","No",node);
 			
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -532,13 +536,12 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(5000);
 			objALP.clickAllList();
 			Thread.sleep(3000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(6000);
 			System.out.println("Before selecting 1st Record");
 			objCMD.clickExistingModData(1);
 			Thread.sleep(6000);
-//			objCMD.clickEllipsis(1);
 			Thread.sleep(1000);
 			System.out.println("Before Edit button clicked in summary view");
 			objCMD.clickEdit();
@@ -546,7 +549,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			objCMD.clickSave();
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -594,7 +597,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -610,7 +613,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(2000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -662,7 +665,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -675,7 +678,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(10000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);

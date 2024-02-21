@@ -106,7 +106,8 @@ public class CreateModuleDataPage extends BasePage{
 		int iCount = lstMultiCombo.size();
 		System.out.println("Multicombo: count" + iCount);
 		if(iCount>0) {
-			for(int i = 0;i<iCount;i++) {
+			for(int i = iCount-1;i>=0;i--) {
+				System.out.println("iCount Value within each iteration:" + i + ":"+ iCount);
 				Thread.sleep(3000);
 //				txtMultiComboBox.click();
 				lstMultiCombo.get(i).click();

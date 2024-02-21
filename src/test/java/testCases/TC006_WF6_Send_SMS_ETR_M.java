@@ -237,7 +237,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(1000);
 			objEDT.clickModule(sDisplayModuleName);
@@ -252,7 +252,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(2000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -307,7 +307,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -321,7 +321,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			//SMS Validation after Summary Add New
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			objSMS.setRecipient(sMobileNumber);
 			
@@ -378,7 +378,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -392,7 +392,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			//SMS Validation after Duplicate
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -451,7 +451,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -465,7 +465,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -525,7 +525,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(5000);
 			objALP.clickAllList();
 			Thread.sleep(3000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(6000);
 			System.out.println("Before selecting 1st Record");
@@ -539,7 +539,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objCMD.clickSave();
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -597,7 +597,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -613,7 +613,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(2000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);
@@ -666,7 +666,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 			System.out.println("Module clicked");
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
@@ -679,7 +679,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(10000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
-			objALP.clickModuleOnListAll(driver, "SMS Notifiers",2);
+			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
 			Thread.sleep(2000);
 			Thread.sleep(1000);
 			objSMS.setRecipient(sMobileNumber);

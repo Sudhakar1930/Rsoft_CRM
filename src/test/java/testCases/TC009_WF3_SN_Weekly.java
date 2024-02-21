@@ -33,7 +33,7 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 	}
 		
 	@Test
-	public void testScheduleNotify () throws Exception {
+	public void test_SN_Weekly () throws Exception {
 		node = test.createNode("Schedule_Notify_Weekly");
 		
 		logger.info("******starting WF Schedule Notify Weekly****");
@@ -246,7 +246,7 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
@@ -292,7 +292,7 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
 		
 		//Validate Weekly Data
-		objPAP.checkWeeklyNotification(sUser1RecordId,"Monday","Weekly",sActionType,node); 
+		objPAP.check_SN_Weekly(sUser1RecordId,"Monday","Weekly",sActionType,node); 
 
 	}	
 }

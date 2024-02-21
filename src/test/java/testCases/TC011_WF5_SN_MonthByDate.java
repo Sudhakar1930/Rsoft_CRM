@@ -246,7 +246,7 @@ public class TC011_WF5_SN_MonthByDate extends BaseClass {
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName,6);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
@@ -292,7 +292,7 @@ public class TC011_WF5_SN_MonthByDate extends BaseClass {
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
 		//Validate Weekly Data
 		String sDateArray="1:15:30";
-		objPAP.checkMonthByDateNotification(sUser1RecordId, sDisplayModuleName, sDateArray, "Monthly By Date", sActionType,node);
+		objPAP.check_SN_MonthByDate(sUser1RecordId, sDisplayModuleName, sDateArray, "Monthly By Date", sActionType,node);
 		
 	}	
 }
