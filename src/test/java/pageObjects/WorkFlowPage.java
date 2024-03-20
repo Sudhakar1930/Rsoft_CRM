@@ -194,6 +194,7 @@ public class WorkFlowPage extends BasePage {
 		BaseClass.logger.info("Number of Tasks Listed for this Workflow: " + sWorkFlow + " : " + tTaskRowCount);
 		System.out.println("Number of Tasks Listed for this Workflow: " + sWorkFlow + " : " + tTaskRowCount);
 		int j = 0;
+		
 		for(int i=1;i<=tTaskRowCount;i++) {
 			System.out.println("Current Row Number: " + i);
 		
@@ -201,15 +202,12 @@ public class WorkFlowPage extends BasePage {
 			WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
 	
 			boolean isCheckBoxSelected = eleTaskCheckBox.isSelected();
-			BaseClass.logger.info("Is Task Active: "+ i + " : "+ isCheckBoxSelected);
-			System.out.println("Is Task Active: "+ i + " : "+ isCheckBoxSelected);
+			UtilityCustomFunctions.logWriteConsole("Is Task Active: "+ i + " : "+ isCheckBoxSelected);
 			List<WebElement> tTaskColumnCount =WbTblTasks.get(i).findElements(By.tagName("td"));
 			String sActActionType = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(1));
 			String sActActionTitle = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(2));
 			sActActionType = sActActionType.trim();
 			sActActionTitle = sActActionTitle.trim();
-			System.out.println("Actual type:" + sActActionType + "actual title:" + sActActionTitle);
-			System.out.println("Expected type:" + sActionType + "Expected title:" + sActionTitle);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Type:" + sActActionType);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
 			if(sActActionType.trim().equalsIgnoreCase(sActionType) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle)) {
@@ -217,6 +215,7 @@ public class WorkFlowPage extends BasePage {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");
 					System.out.println("Action Type and Action Tile matches and also Task Button Enabled");
+					break;
 				}
 				else {
 					j = i;
@@ -233,6 +232,8 @@ public class WorkFlowPage extends BasePage {
 				}
 			}
 		}//for loop
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("Out of for loop:" + bIsCurrentTaskDisabled);
 		System.out.println("Current Task status: " + j + bIsCurrentTaskDisabled);
 		if(bIsCurrentTaskDisabled==true) {
 		System.out.println("Inside the if condition when task is disabled");

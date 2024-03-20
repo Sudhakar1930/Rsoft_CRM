@@ -27,8 +27,8 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		System.out.println("Bfore test");
 	}
 	@Test
-	public void test_Send_SMS_ETR_M_Test () throws Exception {
-		node = test.createNode("WF4_Send_SMS_OOF_S");
+	public void test_Send_SMS_OOF_S_Test () throws Exception {
+		node = test.createNode("Send_SMS_OOF_S");
 		System.out.println("In test");
 		logger.info("******starting TC004_WF4_Send_SMS_OOF_S ****");
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
@@ -195,10 +195,12 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
 		String sWorkFlowStatus="";
 		
-		
 		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
+		UtilityCustomFunctions.logWriteConsole("Initial workflow Status:"+ sWorkFlowStatus);
+		
 		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
 		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
+		
 		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
 		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
 			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
@@ -240,7 +242,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		
 //		//**************Add New Record
 		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1");
-//
+
 		objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet1","Add New Module Data","No",node);
 		//uncomment start
 		UtilityCustomFunctions.logWriteConsole("New Values after added :");

@@ -1,0 +1,332 @@
+18:40:24.525 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. StevenExpected:Mr. Steven Summary Name:  Create Entity Default Values
+18:40:24.540 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Name:  Create Entity Default Values Passed : Actual Value is: Mr. StevenExpected Value is: Mr. Steven
+18:40:25.927 [main] INFO  utilities.UtilityCustomFunctions - Actual:12345678987Expected:12345678987 Summary Number:  Create Entity Default Values
+18:40:25.927 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Number:  Create Entity Default Values Passed : Actual Value is: 12345678987Expected Value is: 12345678987
+18:40:27.243 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Summary Currency:  Create Entity Default Values
+18:40:27.243 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Currency:  Create Entity Default Values Passed : Actual Value is: 10000Expected Value is: 10000
+18:40:28.540 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Summary Url:  Create Entity Default Values
+18:40:28.540 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Url:  Create Entity Default Values Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+18:40:29.894 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. AnnieExpected:Dr. Annie Summary Enquiry Name:  Create Entity Default Values
+18:40:29.894 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Name:  Create Entity Default Values Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+18:40:31.226 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultEnquiry@gmail.comExpected:DefaultEnquiry@gmail.com Summary Enquiry Email:  Create Entity Default Values
+18:40:31.226 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Email:  Create Entity Default Values Passed : Actual Value is: DefaultEnquiry@gmail.comExpected Value is: DefaultEnquiry@gmail.com
+18:40:32.594 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about ChatbotExpected:Enquiry about Chatbot Summary Enquiry Text:  Create Entity Default Values
+18:40:32.594 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Text:  Create Entity Default Values Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+18:40:33.925 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management SystemExpected:India's First Lead Management System Summary Enquiry Text Area:  Create Entity Default Values
+18:40:33.925 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Text Area:  Create Entity Default Values Passed : Actual Value is: India's First Lead Management SystemExpected Value is: India's First Lead Management System
+18:40:35.241 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Summary Enquiry Date:  Create Entity Default Values
+18:40:35.241 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:40:36.611 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Summary Enquiry Phone Number:  Create Entity Default Values
+18:40:36.611 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Phone Number:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:40:37.943 [main] INFO  utilities.UtilityCustomFunctions - Actual:UrgentExpected:Urgent Summary Enquiry Category:  Create Entity Default Values
+18:40:37.943 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Category:  Create Entity Default Values Passed : Actual Value is: UrgentExpected Value is: Urgent
+18:40:39.298 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Summary Lead PhoneNumber:  Create Entity Default Values
+18:40:39.298 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Lead PhoneNumber:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:40:40.741 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultLead@gmail.comExpected:DefaultLead@gmail.com Summary Lead Email:  Create Entity Default Values
+18:40:40.741 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Lead Email:  Create Entity Default Values Passed : Actual Value is: DefaultLead@gmail.comExpected Value is: DefaultLead@gmail.com
+18:40:42.077 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about ChatbotExpected:Lead about Chatbot Summary Lead Text:  Create Entity Default Values
+18:40:42.077 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Lead Text:  Create Entity Default Values Passed : Actual Value is: Lead about ChatbotExpected Value is: Lead about Chatbot
+18:40:43.449 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Summary Sales PhoneNumber:  Create Entity Default Values
+18:40:43.449 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Sales PhoneNumber:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:40:44.794 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultSales@gmail.comExpected:DefaultSales@gmail.com Summary Sales Email:  Create Entity Default Values
+18:40:44.794 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Sales Email:  Create Entity Default Values Passed : Actual Value is: DefaultSales@gmail.comExpected Value is: DefaultSales@gmail.com
+18:40:46.756 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:40:49.884 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Detail View AssignedTo:  Create Entity Default Values
+18:40:49.885 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View AssignedTo:  Create Entity Default Values Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+18:40:51.218 [main] INFO  utilities.UtilityCustomFunctions - Actual:Default TextExpected:Default Text Detail View Text:  Create Entity Default Values
+18:40:51.218 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Text:  Create Entity Default Values Passed : Actual Value is: Default TextExpected Value is: Default Text
+18:40:52.603 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Detail View Mobile Number:  Create Entity Default Values
+18:40:52.603 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Mobile Number:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:40:53.982 [main] INFO  utilities.UtilityCustomFunctions - Actual:GeneralDefault@gmail.comExpected:GeneralDefault@gmail.com Detail View Email :  Create Entity Default Values
+18:40:53.982 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Email :  Create Entity Default Values Passed : Actual Value is: GeneralDefault@gmail.comExpected Value is: GeneralDefault@gmail.com
+18:40:55.349 [main] INFO  utilities.UtilityCustomFunctions - Actual:3Expected:3 Detail View PicListValue :  Create Entity Default Values
+18:40:55.349 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View PicListValue :  Create Entity Default Values Passed : Actual Value is: 3Expected Value is: 3
+18:40:56.696 [main] INFO  utilities.UtilityCustomFunctions - Actual:oneExpected:one Detail View MuultiCombo Values :  Create Entity Default Values
+18:40:56.696 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View MuultiCombo Values :  Create Entity Default Values Passed : Actual Value is: oneExpected Value is: one
+18:40:58.078 [main] INFO  utilities.UtilityCustomFunctions - Actual:ChengalpattuExpected:Chengalpattu Detail View City:  Create Entity Default Values
+18:40:58.078 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View City:  Create Entity Default Values Passed : Actual Value is: ChengalpattuExpected Value is: Chengalpattu
+18:40:59.498 [main] INFO  utilities.UtilityCustomFunctions - Actual:TamilnaduExpected:Tamilnadu Detail View Stat:  Create Entity Default Values
+18:40:59.498 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Stat:  Create Entity Default Values Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+18:41:00.837 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndiaExpected:India Detail View Country:  Create Entity Default Values
+18:41:00.837 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Country:  Create Entity Default Values Passed : Actual Value is: IndiaExpected Value is: India
+18:41:02.226 [main] INFO  utilities.UtilityCustomFunctions - Actual:YesExpected:Yes Detail View CheckBox:  Create Entity Default Values
+18:41:02.226 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View CheckBox:  Create Entity Default Values Passed : Actual Value is: YesExpected Value is: Yes
+18:41:03.612 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Detail View Date:  Create Entity Default Values
+18:41:03.612 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:41:04.982 [main] INFO  utilities.UtilityCustomFunctions - Actual:04:05:40 PMExpected:4:05:40 pm Detail View Time:  Create Entity Default Values
+18:41:04.982 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Time:  Create Entity Default Values Failed : Actual Value is: 04:05:40 PMExpected Value is: 4:05:40 pm
+18:41:06.332 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19 04:07:25 PMExpected:3/19/24 16:07 Detail View Date & Time :  Create Entity Default Values
+18:41:06.332 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Date & Time :  Create Entity Default Values Failed : Actual Value is: 2024-03-19 04:07:25 PMExpected Value is: 3/19/24 16:07
+18:41:07.709 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add TextExpected:Summary Add Text Detail View Related Module :  Create Entity Default Values
+18:41:07.710 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Related Module :  Create Entity Default Values Passed : Actual Value is: Summary Add TextExpected Value is: Summary Add Text
+18:41:09.121 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-sprattExpected:annie-spratt Detail View File Upload :  Create Entity Default Values
+18:41:09.122 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View File Upload :  Create Entity Default Values Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+18:41:10.493 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. StevenExpected:Mr. Steven Detail View Name:  Create Entity Default Values
+18:41:10.493 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Name:  Create Entity Default Values Passed : Actual Value is: Mr. StevenExpected Value is: Mr. Steven
+18:41:11.875 [main] INFO  utilities.UtilityCustomFunctions - Actual:12345678987Expected:12345678987 Detail View Number:  Create Entity Default Values
+18:41:11.875 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Number:  Create Entity Default Values Passed : Actual Value is: 12345678987Expected Value is: 12345678987
+18:41:13.224 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Detail View Currency:  Create Entity Default Values
+18:41:13.224 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Currency:  Create Entity Default Values Passed : Actual Value is: 10000Expected Value is: 10000
+18:41:14.510 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Detail View Url:  Create Entity Default Values
+18:41:14.510 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Url:  Create Entity Default Values Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+18:41:22.176 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. AnnieExpected:Dr. Annie Detail View Enquiry Name:  Create Entity Default Values
+18:41:22.176 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Name:  Create Entity Default Values Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+18:41:23.558 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultEnquiry@gmail.comExpected:DefaultEnquiry@gmail.com Detail View Enquiry Email:  Create Entity Default Values
+18:41:23.558 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Email:  Create Entity Default Values Passed : Actual Value is: DefaultEnquiry@gmail.comExpected Value is: DefaultEnquiry@gmail.com
+18:41:24.925 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about ChatbotExpected:Enquiry about Chatbot Detail View Enquiry Text:  Create Entity Default Values
+18:41:24.925 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Text:  Create Entity Default Values Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+18:41:26.294 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management SystemExpected:India's First Lead Management System Detail View Enquiry Text Area:  Create Entity Default Values
+18:41:26.294 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Text Area:  Create Entity Default Values Passed : Actual Value is: India's First Lead Management SystemExpected Value is: India's First Lead Management System
+18:41:27.659 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Detail View Enquiry Date:  Create Entity Default Values
+18:41:27.659 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:41:29.010 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Detail View Enquiry Phone Number:  Create Entity Default Values
+18:41:29.010 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Phone Number:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:41:30.425 [main] INFO  utilities.UtilityCustomFunctions - Actual:UrgentExpected:Urgent Detail View Enquiry Category:  Create Entity Default Values
+18:41:30.425 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Category:  Create Entity Default Values Passed : Actual Value is: UrgentExpected Value is: Urgent
+18:41:38.074 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 DT Lead Mobile Number:  Create Entity Default Values
+18:41:38.074 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT Lead Mobile Number:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:41:39.441 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultLead@gmail.comExpected:DefaultLead@gmail.com DT View Lead Email  Create Entity Default Values
+18:41:39.441 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT View Lead Email  Create Entity Default Values Passed : Actual Value is: DefaultLead@gmail.comExpected Value is: DefaultLead@gmail.com
+18:41:40.812 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about ChatbotExpected:Lead about Chatbot DT View Lead Text Create Entity Default Values
+18:41:40.812 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT View Lead Text Create Entity Default Values Passed : Actual Value is: Lead about ChatbotExpected Value is: Lead about Chatbot
+18:41:42.191 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 DT Sales Mobile Number:  Create Entity Default Values
+18:41:42.191 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT Sales Mobile Number:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:41:43.543 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultSales@gmail.comExpected:DefaultSales@gmail.com DT View Sales EmailCreate Entity Default Values
+18:41:43.543 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT View Sales EmailCreate Entity Default Values Passed : Actual Value is: DefaultSales@gmail.comExpected Value is: DefaultSales@gmail.com
+18:41:44.795 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after Summary Add is Done
+18:41:49.060 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+18:41:49.060 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.129 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+18:41:49.129 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.210 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+18:41:49.210 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.276 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+18:41:49.276 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.343 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+18:41:49.343 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.409 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+18:41:49.409 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.476 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+18:41:49.476 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.542 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+18:41:49.542 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.609 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+18:41:49.609 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.675 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+18:41:49.675 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.743 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+18:41:49.743 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.809 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+18:41:49.809 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.890 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+18:41:49.890 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:49.942 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+18:41:49.942 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.010 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+18:41:50.010 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.092 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+18:41:50.092 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.140 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+18:41:50.140 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.210 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+18:41:50.210 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.274 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+18:41:50.274 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.331 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+18:41:50.331 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.390 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+18:41:50.390 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.492 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+18:41:50.492 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.542 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+18:41:50.542 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.611 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: SourceA
+18:41:50.611 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.657 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: CreateEntityTarget
+18:41:50.657 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:41:50.724 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: CreateEntitySource
+18:41:50.724 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+18:42:22.576 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+18:42:22.576 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:22.644 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+18:42:22.644 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:22.710 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+18:42:22.710 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:22.792 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+18:42:22.792 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:22.857 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+18:42:22.857 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:22.924 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+18:42:22.924 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:22.992 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+18:42:22.992 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.107 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+18:42:23.107 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.210 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+18:42:23.210 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.309 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+18:42:23.309 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.394 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+18:42:23.394 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.457 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+18:42:23.457 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.541 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+18:42:23.541 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.623 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+18:42:23.623 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.675 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+18:42:23.675 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.740 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+18:42:23.740 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.811 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+18:42:23.811 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.876 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+18:42:23.876 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.939 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+18:42:23.939 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:23.995 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+18:42:23.995 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:24.060 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+18:42:24.060 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:24.129 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+18:42:24.129 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:24.192 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+18:42:24.192 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:24.256 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: SourceA
+18:42:24.256 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:24.310 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: CreateEntityTarget
+18:42:24.310 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+18:42:46.274 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Excel file Utility instance created
+18:42:46.305 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Row Count is: 1
+18:42:46.324 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Col Count is: 54
+18:42:46.324 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Extracting DataSheet Values started...
+18:42:47.437 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+18:42:53.476 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:42:54.658 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name:CreateEntityTarget
+18:42:54.658 [main] INFO  utilities.UtilityCustomFunctions - Actual:CreateEntityTargetExpected:CreateEntityTarget Module Name : Create Entity Default Values
+18:42:54.658 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Module Name : Create Entity Default Values Passed : Actual Value is: CreateEntityTargetExpected Value is: CreateEntityTarget
+18:42:56.391 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Assigned To Title: Create Entity Default Values
+18:42:56.391 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Assigned To Title: Create Entity Default Values Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+18:42:57.706 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Mobile Number Title : Create Entity Default Values
+18:42:57.706 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Mobile Number Title : Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:42:58.956 [main] INFO  utilities.UtilityCustomFunctions - Actual:GeneralDefault@gmail.comExpected:GeneralDefault@gmail.com Email Title: Create Entity Default Values
+18:42:58.956 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Email Title: Create Entity Default Values Passed : Actual Value is: GeneralDefault@gmail.comExpected Value is: GeneralDefault@gmail.com
+18:43:03.715 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Summary AssignedTo:  Create Entity Default Values
+18:43:03.715 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary AssignedTo:  Create Entity Default Values Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+18:43:05.049 [main] INFO  utilities.UtilityCustomFunctions - Actual:Default TextExpected:Default Text Summary Text:  Create Entity Default Values
+18:43:05.049 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Text:  Create Entity Default Values Passed : Actual Value is: Default TextExpected Value is: Default Text
+18:43:06.438 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Summary Mobile Number:  Create Entity Default Values
+18:43:06.438 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Mobile Number:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:43:07.808 [main] INFO  utilities.UtilityCustomFunctions - Actual:GeneralDefault@gmail.comExpected:GeneralDefault@gmail.com Summary Email :  Create Entity Default Values
+18:43:07.808 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Email :  Create Entity Default Values Passed : Actual Value is: GeneralDefault@gmail.comExpected Value is: GeneralDefault@gmail.com
+18:43:09.162 [main] INFO  utilities.UtilityCustomFunctions - Actual:3Expected:3 Summary PicListValue :  Create Entity Default Values
+18:43:09.162 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary PicListValue :  Create Entity Default Values Passed : Actual Value is: 3Expected Value is: 3
+18:43:10.529 [main] INFO  utilities.UtilityCustomFunctions - Actual:oneExpected:one Summary MuultiCombo Values :  Create Entity Default Values
+18:43:10.529 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary MuultiCombo Values :  Create Entity Default Values Passed : Actual Value is: oneExpected Value is: one
+18:43:11.936 [main] INFO  utilities.UtilityCustomFunctions - Actual:ChengalpattuExpected:Chengalpattu Summary City:  Create Entity Default Values
+18:43:11.936 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary City:  Create Entity Default Values Passed : Actual Value is: ChengalpattuExpected Value is: Chengalpattu
+18:43:13.283 [main] INFO  utilities.UtilityCustomFunctions - Actual:TamilnaduExpected:Tamilnadu Summary State:  Create Entity Default Values
+18:43:13.283 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary State:  Create Entity Default Values Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+18:43:14.627 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndiaExpected:India Summary Country:  Create Entity Default Values
+18:43:14.627 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Country:  Create Entity Default Values Passed : Actual Value is: IndiaExpected Value is: India
+18:43:15.992 [main] INFO  utilities.UtilityCustomFunctions - Actual:YesExpected:Yes Summary CheckBox:  Create Entity Default Values
+18:43:15.992 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary CheckBox:  Create Entity Default Values Passed : Actual Value is: YesExpected Value is: Yes
+18:43:17.376 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Summary Date:  Create Entity Default Values
+18:43:17.376 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:43:18.760 [main] INFO  utilities.UtilityCustomFunctions - Actual:04:05:40 PMExpected:4:05:40 pm Summary Time:  Create Entity Default Values
+18:43:18.760 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Time:  Create Entity Default Values Failed : Actual Value is: 04:05:40 PMExpected Value is: 4:05:40 pm
+18:43:20.143 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19 04:07:25 PMExpected:3/19/24 16:07 Summary Date & Time :  Create Entity Default Values
+18:43:20.143 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Date & Time :  Create Entity Default Values Failed : Actual Value is: 2024-03-19 04:07:25 PMExpected Value is: 3/19/24 16:07
+18:43:21.574 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-sprattExpected:annie-spratt Summary File Upload :  Create Entity Default Values
+18:43:21.574 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary File Upload :  Create Entity Default Values Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+18:43:22.940 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. StevenExpected:Mr. Steven Summary Name:  Create Entity Default Values
+18:43:22.940 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Name:  Create Entity Default Values Passed : Actual Value is: Mr. StevenExpected Value is: Mr. Steven
+18:43:24.324 [main] INFO  utilities.UtilityCustomFunctions - Actual:12345678987Expected:12345678987 Summary Number:  Create Entity Default Values
+18:43:24.324 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Number:  Create Entity Default Values Passed : Actual Value is: 12345678987Expected Value is: 12345678987
+18:43:25.684 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Summary Currency:  Create Entity Default Values
+18:43:25.684 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Currency:  Create Entity Default Values Passed : Actual Value is: 10000Expected Value is: 10000
+18:43:26.937 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Summary Url:  Create Entity Default Values
+18:43:26.937 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Url:  Create Entity Default Values Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+18:43:28.310 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. AnnieExpected:Dr. Annie Summary Enquiry Name:  Create Entity Default Values
+18:43:28.310 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Name:  Create Entity Default Values Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+18:43:29.655 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultEnquiry@gmail.comExpected:DefaultEnquiry@gmail.com Summary Enquiry Email:  Create Entity Default Values
+18:43:29.655 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Email:  Create Entity Default Values Passed : Actual Value is: DefaultEnquiry@gmail.comExpected Value is: DefaultEnquiry@gmail.com
+18:43:30.995 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about ChatbotExpected:Enquiry about Chatbot Summary Enquiry Text:  Create Entity Default Values
+18:43:30.995 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Text:  Create Entity Default Values Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+18:43:32.360 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management SystemExpected:India's First Lead Management System Summary Enquiry Text Area:  Create Entity Default Values
+18:43:32.360 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Text Area:  Create Entity Default Values Passed : Actual Value is: India's First Lead Management SystemExpected Value is: India's First Lead Management System
+18:43:33.689 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Summary Enquiry Date:  Create Entity Default Values
+18:43:33.689 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:43:35.089 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Summary Enquiry Phone Number:  Create Entity Default Values
+18:43:35.089 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Phone Number:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:43:36.439 [main] INFO  utilities.UtilityCustomFunctions - Actual:UrgentExpected:Urgent Summary Enquiry Category:  Create Entity Default Values
+18:43:36.439 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Enquiry Category:  Create Entity Default Values Passed : Actual Value is: UrgentExpected Value is: Urgent
+18:43:37.847 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Summary Lead PhoneNumber:  Create Entity Default Values
+18:43:37.847 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Lead PhoneNumber:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:43:39.188 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultLead@gmail.comExpected:DefaultLead@gmail.com Summary Lead Email:  Create Entity Default Values
+18:43:39.188 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Lead Email:  Create Entity Default Values Passed : Actual Value is: DefaultLead@gmail.comExpected Value is: DefaultLead@gmail.com
+18:43:40.573 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about ChatbotExpected:Lead about Chatbot Summary Lead Text:  Create Entity Default Values
+18:43:40.573 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Lead Text:  Create Entity Default Values Passed : Actual Value is: Lead about ChatbotExpected Value is: Lead about Chatbot
+18:43:41.939 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Summary Sales PhoneNumber:  Create Entity Default Values
+18:43:41.939 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Sales PhoneNumber:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:43:43.290 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultSales@gmail.comExpected:DefaultSales@gmail.com Summary Sales Email:  Create Entity Default Values
+18:43:43.290 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Summary Sales Email:  Create Entity Default Values Passed : Actual Value is: DefaultSales@gmail.comExpected Value is: DefaultSales@gmail.com
+18:43:45.253 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:43:48.380 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Detail View AssignedTo:  Create Entity Default Values
+18:43:48.380 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View AssignedTo:  Create Entity Default Values Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+18:43:49.749 [main] INFO  utilities.UtilityCustomFunctions - Actual:Default TextExpected:Default Text Detail View Text:  Create Entity Default Values
+18:43:49.749 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Text:  Create Entity Default Values Passed : Actual Value is: Default TextExpected Value is: Default Text
+18:43:51.126 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Detail View Mobile Number:  Create Entity Default Values
+18:43:51.126 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Mobile Number:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:43:52.513 [main] INFO  utilities.UtilityCustomFunctions - Actual:GeneralDefault@gmail.comExpected:GeneralDefault@gmail.com Detail View Email :  Create Entity Default Values
+18:43:52.513 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Email :  Create Entity Default Values Passed : Actual Value is: GeneralDefault@gmail.comExpected Value is: GeneralDefault@gmail.com
+18:43:53.913 [main] INFO  utilities.UtilityCustomFunctions - Actual:3Expected:3 Detail View PicListValue :  Create Entity Default Values
+18:43:53.913 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View PicListValue :  Create Entity Default Values Passed : Actual Value is: 3Expected Value is: 3
+18:43:55.308 [main] INFO  utilities.UtilityCustomFunctions - Actual:oneExpected:one Detail View MuultiCombo Values :  Create Entity Default Values
+18:43:55.309 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View MuultiCombo Values :  Create Entity Default Values Passed : Actual Value is: oneExpected Value is: one
+18:43:56.643 [main] INFO  utilities.UtilityCustomFunctions - Actual:ChengalpattuExpected:Chengalpattu Detail View City:  Create Entity Default Values
+18:43:56.643 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View City:  Create Entity Default Values Passed : Actual Value is: ChengalpattuExpected Value is: Chengalpattu
+18:43:58.008 [main] INFO  utilities.UtilityCustomFunctions - Actual:TamilnaduExpected:Tamilnadu Detail View Stat:  Create Entity Default Values
+18:43:58.008 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Stat:  Create Entity Default Values Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+18:43:59.376 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndiaExpected:India Detail View Country:  Create Entity Default Values
+18:43:59.376 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Country:  Create Entity Default Values Passed : Actual Value is: IndiaExpected Value is: India
+18:44:00.761 [main] INFO  utilities.UtilityCustomFunctions - Actual:YesExpected:Yes Detail View CheckBox:  Create Entity Default Values
+18:44:00.761 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View CheckBox:  Create Entity Default Values Passed : Actual Value is: YesExpected Value is: Yes
+18:44:02.163 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Detail View Date:  Create Entity Default Values
+18:44:02.163 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:44:03.495 [main] INFO  utilities.UtilityCustomFunctions - Actual:04:05:40 PMExpected:4:05:40 pm Detail View Time:  Create Entity Default Values
+18:44:03.495 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Time:  Create Entity Default Values Failed : Actual Value is: 04:05:40 PMExpected Value is: 4:05:40 pm
+18:44:04.844 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19 04:07:25 PMExpected:3/19/24 16:07 Detail View Date & Time :  Create Entity Default Values
+18:44:04.844 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Date & Time :  Create Entity Default Values Failed : Actual Value is: 2024-03-19 04:07:25 PMExpected Value is: 3/19/24 16:07
+18:44:06.183 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add TextExpected:Summary Add Text Detail View Related Module :  Create Entity Default Values
+18:44:06.183 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Related Module :  Create Entity Default Values Passed : Actual Value is: Summary Add TextExpected Value is: Summary Add Text
+18:44:07.625 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-sprattExpected:annie-spratt Detail View File Upload :  Create Entity Default Values
+18:44:07.625 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View File Upload :  Create Entity Default Values Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+18:44:09.023 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. StevenExpected:Mr. Steven Detail View Name:  Create Entity Default Values
+18:44:09.023 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Name:  Create Entity Default Values Passed : Actual Value is: Mr. StevenExpected Value is: Mr. Steven
+18:44:10.388 [main] INFO  utilities.UtilityCustomFunctions - Actual:12345678987Expected:12345678987 Detail View Number:  Create Entity Default Values
+18:44:10.388 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Number:  Create Entity Default Values Passed : Actual Value is: 12345678987Expected Value is: 12345678987
+18:44:11.722 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Detail View Currency:  Create Entity Default Values
+18:44:11.722 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Currency:  Create Entity Default Values Passed : Actual Value is: 10000Expected Value is: 10000
+18:44:13.036 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Detail View Url:  Create Entity Default Values
+18:44:13.036 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Url:  Create Entity Default Values Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+18:44:20.722 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. AnnieExpected:Dr. Annie Detail View Enquiry Name:  Create Entity Default Values
+18:44:20.722 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Name:  Create Entity Default Values Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+18:44:22.039 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultEnquiry@gmail.comExpected:DefaultEnquiry@gmail.com Detail View Enquiry Email:  Create Entity Default Values
+18:44:22.039 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Email:  Create Entity Default Values Passed : Actual Value is: DefaultEnquiry@gmail.comExpected Value is: DefaultEnquiry@gmail.com
+18:44:23.406 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about ChatbotExpected:Enquiry about Chatbot Detail View Enquiry Text:  Create Entity Default Values
+18:44:23.406 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Text:  Create Entity Default Values Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+18:44:24.820 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management SystemExpected:India's First Lead Management System Detail View Enquiry Text Area:  Create Entity Default Values
+18:44:24.820 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Text Area:  Create Entity Default Values Passed : Actual Value is: India's First Lead Management SystemExpected Value is: India's First Lead Management System
+18:44:26.222 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-19Expected:3/19/24 Detail View Enquiry Date:  Create Entity Default Values
+18:44:26.222 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Date:  Create Entity Default Values Failed : Actual Value is: 2024-03-19Expected Value is: 3/19/24
+18:44:27.604 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Detail View Enquiry Phone Number:  Create Entity Default Values
+18:44:27.604 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Phone Number:  Create Entity Default Values Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+18:44:28.938 [main] INFO  utilities.UtilityCustomFunctions - Actual:UrgentExpected:Urgent Detail View Enquiry Category:  Create Entity Default Values
+18:44:28.938 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - Detail View Enquiry Category:  Create Entity Default Values Passed : Actual Value is: UrgentExpected Value is: Urgent
+18:44:36.539 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 DT Lead Mobile Number:  Create Entity Default Values
+18:44:36.539 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT Lead Mobile Number:  Create Entity Default Values Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+18:44:37.939 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultLead@gmail.comExpected:DefaultLead@gmail.com DT View Lead Email  Create Entity Default Values
+18:44:37.939 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT View Lead Email  Create Entity Default Values Passed : Actual Value is: DefaultLead@gmail.comExpected Value is: DefaultLead@gmail.com
+18:44:39.355 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about ChatbotExpected:Lead about Chatbot DT View Lead Text Create Entity Default Values
+18:44:39.355 [main] INFO  testCases.TC014_CreateEntity_DefaultValues - DT View Lead Text Create Entity Default Values Passed : Actual Value is: Lead about ChatbotExpected Value is: Lead about Chatbot

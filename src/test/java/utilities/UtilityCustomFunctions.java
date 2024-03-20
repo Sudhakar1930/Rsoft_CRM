@@ -6,6 +6,8 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.JavascriptExecutor;
@@ -27,7 +29,7 @@ public class UtilityCustomFunctions extends BaseClass{
 
 //	static List<WebElement> trows;
 //	static List<WebElement> tcols;
-
+	static Logger logger = LogManager.getLogger(UtilityCustomFunctions.class);
 	public UtilityCustomFunctions(WebDriver driver) {
 		super();
 		// TODO Auto-generated constructor stub
@@ -267,7 +269,7 @@ public class UtilityCustomFunctions extends BaseClass{
 	}// function end
 	
 	public static void logWriteConsole(String sText) {
-		BaseClass.logger.info(sText);
+		logger.info(sText);
 		System.out.println(sText);
 	}
 	
@@ -475,19 +477,17 @@ public class UtilityCustomFunctions extends BaseClass{
 			throws IOException, InterruptedException {
 		
 		BaseClass a = new BaseClass();
-		System.out.println(sMessage + " Actual:   " + sActValue.trim());
-		System.out.println(sMessage + " Expected:   " +  sExpValue.trim());
-		
+		UtilityCustomFunctions.logWriteConsole("Actual:"+sActValue+"Expected:"+sExpValue + " " + sMessage);
 		if (sActValue.trim().equalsIgnoreCase(sExpValue.trim())) {
 			BaseClass.logger
 					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
-			a.freport(sMessage, "Pass", Node);
+			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "pass", Node);
 			System.out.println(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			
 		} else {
 			BaseClass.logger
 					.info(sMessage + " Failed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
-			a.freport(sMessage, "fail", Node);
+			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "fail", Node);
 			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
 		}
 		sAssertinFn.assertEquals(sActValue.trim(), sExpValue.trim());

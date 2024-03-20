@@ -8,10 +8,9 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-	  <class name="testCases.TC004_WF4_Send_SMS_OOF_S"/> 
-
+	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
 	  <!--
-	  <class name="testCases.TC007_WF1_Validate_Schedule_Notify"/>
+	  <class name="testCases.TC004_WF4_Send_SMS_OOF_S"/>
 	  <class name="testCases.TC012_WF6_SN_Yearly"/>
       <class name="testCases.TC005_WF5_Send_SMS_ETR_S"/>
       <class name="testCases.TC006_WF6_Send_SMS_ETR_M"/>

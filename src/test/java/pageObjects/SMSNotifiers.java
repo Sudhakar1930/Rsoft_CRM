@@ -100,7 +100,7 @@ public class SMSNotifiers extends BasePage {
 		String sActSMMsgId = objDVP.getArraySummary(3);
 		String sActSMType = objDVP.getArraySummary(6);
 		String sActSMMsg = objDVP.getArraySummary(10);
-		String sActSMAssgnTo = objDVP.getAssignToAllSummary();
+		String sActSMAssgnTo = objDVP.getSummaryAssignTo();
 		
 		//Summary Validations
 		
@@ -116,7 +116,8 @@ public class SMSNotifiers extends BasePage {
 		UtilityCustomFunctions.fSoftAssert(sActSMMsg, sSMSMsg , "Summary Message"+ sMessage , node);
 		
 		//Click Detail View
-		objDVP.clickDetailView();
+//		objDVP.clickDetailView();
+		objDVP.fSetDetailVew(true);
 		Thread.sleep(3000);
 		String sActDTAssignedTo = objDVP.getArrayDetails(1).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sAssignedTo, "Detail View AssignedTo:  " + sMessage, node);

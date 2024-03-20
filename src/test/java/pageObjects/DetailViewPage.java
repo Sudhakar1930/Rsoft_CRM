@@ -12,6 +12,36 @@ public class DetailViewPage extends BasePage{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	
+	@FindBy(xpath="(//div[starts-with(@id,'accordion')]/a)[2]")
+	WebElement tabBlockB;
+	
+	@FindBy(xpath="(//div[starts-with(@id,'accordion')]/a)[3]")
+	WebElement tabBlockC;
+	
+	@FindBy(xpath="//label[@for='cb4']")
+	WebElement tglSummary;
+	
+	@FindBy(xpath="//label[@for='title_toggle']")
+	WebElement tglHeaders;
+	
+	@FindBy(xpath="//input[@id='cb4']")
+	WebElement tglChkSummary;
+	
+	@FindBy(xpath="//input[@id='title_toggle']")
+	WebElement tglChkHeaders;
+	
+	@FindBy(xpath="//*[@id='createtime_CT']")
+	WebElement lblCurrentTime;
+	
+	@FindBy(xpath="//span[@class='label_name']")
+	WebElement tglSummaryLabel;
+	
+	@FindBy(xpath="//h3[@class='card-title']")
+	WebElement tglHeaderLabel;
+	
 	@FindBy(xpath="//button[normalize-space()='add']")
 	WebElement btnAddRecord;
 	
@@ -85,16 +115,108 @@ public class DetailViewPage extends BasePage{
 	@FindBy(xpath="//span[@data-label='Number Field']//i[contains(@class,'fa fa-check')]")
 	WebElement btnNumberTickSave;
 	
-	
+	public String getToggleViewText() {
+		try {
+		return tglSummaryLabel.getText();
+		}catch(Exception e) {
+			return "Detail view";
+		}
+	}
+	public String getToggleHeaderText() {
+		return tglHeaders.getText();
+	}
+	public String getCurrentTime() throws Exception {
+		return UtilityCustomFunctions.getText(driver, lblCurrentTime);
+	}
 	//click Methods
+	public void fSetToggleHeader(boolean bFlag) {
+		if(bFlag==true) {
+		if(tglChkHeaders.isSelected()==false) {
+			tglHeaders.click();
+			UtilityCustomFunctions.logWriteConsole("Header Toggle set  ON");
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Header Toggle Already ON");
+		}
+		}
+		else {
+			if(tglChkHeaders.isSelected()==true) {
+				tglHeaders.click();
+				UtilityCustomFunctions.logWriteConsole("Header Toggle set Off");
+			}else {
+				UtilityCustomFunctions.logWriteConsole("Header Toggle Already Off");
+			}
+		}
+	}
+	public void fSetDetailVew(boolean bFlag) {
+		if(bFlag==true) {
+		if(tglChkSummary.isSelected()==false) {
+			tglSummary.click();
+			UtilityCustomFunctions.logWriteConsole("Summary View Set ON");
+			}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Summary View Already ON");
+		}
+		}
+		else {
+			if(tglChkSummary.isSelected()==true) {
+				tglSummary.click();
+			}
+			else {
+				UtilityCustomFunctions.logWriteConsole("Summary View Already OFF");
+			}
+		}
+	}
+	public void fClickDetailBlockB() throws Exception {
+		UtilityCustomFunctions.doClick(driver, tabBlockB);
+	}
+	public void fClickDetailBlockC() throws Exception {
+		UtilityCustomFunctions.doClick(driver, tabBlockC);
+	}
+	public void fdefaultToggleStatus() {
+		System.out.println("Toggle Summary default: "+tglChkSummary.isSelected());
+		System.out.println("Toggle Headers default: "+ tglChkHeaders.isSelected());
+	}
+	public void clickSummaryView() throws InterruptedException{
+		Thread.sleep(3000);
+//		System.out.println("Toggle View: Before Click:" + getToggleViewText());
+//		tglSummary.click();
+		
+//		Thread.sleep(3000);
+//		System.out.println("Toggle View: After click:" + getToggleViewText());
+		
+		Thread.sleep(3000);
+		System.out.println("Toggle Header: Before click:" + getToggleHeaderText());
+		tglHeaders.click();
+		Thread.sleep(3000);
+		System.out.println("Toggle Header: After click:" + getToggleHeaderText());
+		Thread.sleep(3000);
+		
+//		System.out.println(tglSummary.getAttribute("checked"));
+//		String tglAttribute = tglSummary.getAttribute("innerHTML");
+//		System.out.println(tglAttribute);
+//		System.out.println(tglSummary.getAttribute("innerText"));
+//		System.out.println(tglSummary.getAttribute("value"));
+//		System.out.println(tglSummary.getAttribute("class"));
+//		tglSummary.click();
+//		Thread.sleep(3000);
+//		System.out.println("Toggle Text:" + getToggleViewText());
+//		tglAttribute = tglSummary.getAttribute("innerHTML");
+//		System.out.println(tglAttribute);
+//		System.out.println(tglSummary.getAttribute("innerText"));
+//		System.out.println(tglSummary.getAttribute("value"));
+//		System.out.println(tglSummary.getAttribute("class"));
+//		System.out.println(tglSummary.getAttribute("checked"));
+//		
+	}
+	
 	public void clickEditRecordItem() throws InterruptedException {
 		Actions action = new Actions(driver);
 		String sXpath1 = "(//div[@class='col-lg-10'])[1]";
 		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
 		Thread.sleep(2000);
 		action.moveToElement(eleArrSummary).perform();
-		String sXpath="//table[contains(@class,'table table-bordered')]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/i[1]";
-		
+		String sXpath="//table[contains(@class,'table table-bordered')]/tbody[1]/tr[6]/td[2]/div[1]/div[2]/i[1]";
 		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
 		eleRecEdit.click();
 	}
@@ -117,13 +239,11 @@ public class DetailViewPage extends BasePage{
 	}
 	
 	
-	public void clickDetailView() throws Exception {
-		UtilityCustomFunctions.doClick(driver, lnkDetailView);
-	}
 	
-	public void clickSummaryView() throws Exception {
-		UtilityCustomFunctions.doClick(driver, tabSummary);
-	}
+	
+//	public void clickSummaryView() throws Exception {
+//		UtilityCustomFunctions.doClick(driver, tabSummary);
+//	}
 	public void clickAddRecord() throws Exception {
 		UtilityCustomFunctions.doActionClick(driver, btnAddRecord);
 	}
@@ -183,8 +303,8 @@ public class DetailViewPage extends BasePage{
 		return  eleArrSummary.getAttribute("href");
 	}
 	public String getDTSummaryUrl() throws Exception {
-		String sXpath = "(//div[@class='col-lg-10'])[19]//a";
-//		String sXpath = "//a[normalize-space()='Click Here']";
+//		String sXpath = "(//div[@class='col-lg-10'])[19]//a";
+		String sXpath = "//a[normalize-space()='Click Here']";
 		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath));
 		return  eleArrSummary.getAttribute("href");
 	}
@@ -195,7 +315,7 @@ public class DetailViewPage extends BasePage{
 		return  eleArrDetail.getAttribute("href");
 	}
 	
-	public String getAssignToAllSummary() throws Exception {
+	public String getSummaryAssignTo() throws Exception {
 		String sActValue="";
 		sActValue = UtilityCustomFunctions.getText(driver, lblSummaryAssignedTo);
 		return sActValue;

@@ -81,7 +81,10 @@ public class PHPMyAdminPage extends BasePage{
 	
 	//click methods	
 	public void aNavigtoLastPage() {
-		aNavigateLastPage.click();
+	boolean sPresent = UtilityCustomFunctions.IsElementVisible(driver, aNavigateLastPage);
+		if(sPresent==true) {
+			aNavigateLastPage.click();
+		}
 	}
 	public void clickConsoleWindow() {
 		btnConsole.click();

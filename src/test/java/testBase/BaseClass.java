@@ -53,7 +53,11 @@ public class BaseClass extends ExtentReportManager{
 	public static SoftAssert sAssertinFn;
 	protected static File file;
 	
-	
+	public void testname(String testname, String name) {
+		test = extent.createTest(testname);
+		node = test.createNode(name);
+		extent.attachReporter(sparkReporter);
+	}
 
 	
 	//@BeforeClass(groups= {"Sanity","Regression","Master"})

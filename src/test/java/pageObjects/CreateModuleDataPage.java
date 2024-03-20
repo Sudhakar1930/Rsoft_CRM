@@ -1,6 +1,7 @@
 package pageObjects;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.List;
 
 import org.junit.Assert;
@@ -9,7 +10,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import testBase.BaseClass;
 import utilities.UtilityCustomFunctions;
@@ -184,15 +188,28 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, DandTApply);
 	}
 	public void clickTime(String sHours,String sMinues) throws Exception {
-		
-	String xPathHours = "//div[normalize-space()='" +sHours+ "']";
+	Actions action = new Actions(driver);
+	Thread.sleep(3000);	
+	//String xPathHours = "//div[normalize-space()='" +sHours+ "']";
+	String  xPathHours = "//div[@class='popover-content']//div[@class='clockpicker-tick' and text()='"+sHours+"']";
+	UtilityCustomFunctions.logWriteConsole("Hours:" + xPathHours);
 	WebElement eleHours = driver.findElement(By.xpath(xPathHours));
-	UtilityCustomFunctions.doActionClick(driver, eleHours);
+	eleHours.click();
 	Thread.sleep(3000);
-	String xPathMinutes = "//div[normalize-space()='" +sMinues+ "']";
+//	String xPathMinutes = "//div[normalize-space()='" +sMinues+ "']";
+	String xPathMinutes = "//div[@class='popover-content']//div[@class='clockpicker-tick' and text()='"+sMinues+"']";
 	WebElement eleMinutes = driver.findElement(By.xpath(xPathMinutes));
-	UtilityCustomFunctions.doActionClick(driver, eleMinutes);
+	eleMinutes.click();
+//	UtilityCustomFunctions.doActionClick(driver, eleMinutes);
 	Thread.sleep(3000);
+	int  sSeconds = 55;
+	String xPathSeconds = "(//div[@class='popover-content']//div[@class='clockpicker-tick' and text()='"+ sSeconds +"'])[2]";
+	WebElement eleZeroZero = driver.findElement(By.xpath(xPathSeconds));
+	Thread.sleep(2000);
+//	action.doubleClick(eleZeroZero).build().perform();
+	eleZeroZero.click();
+//	UtilityCustomFunctions.doActionClick(driver, eleZeroZero);
+	Thread.sleep(2000);
 	
 	}
 	public void clickMultiComboBox(String sMS_Value) throws Exception {
@@ -284,10 +301,15 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, btnClose);
 	}
 	public void clickSelectControl(String sModuleName,String sFieldLabel) throws Exception {
-		String sXpath = "//select[@name='"+ sModuleName.toLowerCase() + "_" + sFieldLabel +"']";
+//		String sXpath = "//select[@name='"+ sModuleName.toLowerCase() + "_" + sFieldLabel +"']";
+		String sXpath = "(//span[contains(@id,'select2-selfield')])[5]";
 		System.out.println("Select Control xpath:" + sXpath);
 		WebElement elecomboxBox = driver.findElement(By.xpath(sXpath));
-		UtilityCustomFunctions.doActionClick(driver, elecomboxBox);
+//		UtilityCustomFunctions.doActionClick(driver, elecomboxBox);
+//		UtilityCustomFunctions.doClick(driver, elecomboxBox);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(elecomboxBox)); 
+		elecomboxBox.click();
 	}
 	public void clickMenuList(String sMenuItem) throws Exception {
 		System.out.println("Before clicking MenuItem");
