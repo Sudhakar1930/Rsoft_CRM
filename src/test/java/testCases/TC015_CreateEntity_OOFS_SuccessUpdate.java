@@ -250,6 +250,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 			freport("Target Entity Created after Source Added", "pass", node);
 			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Create Entity in Target","No",node);
 		}
+		//Summary Add Record
 		
 //		//Validate Source Default Values
 //		objALP.clickAllList();
@@ -259,12 +260,190 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 //		objCRMRs.fClickFirstRecord();
 //		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		UtilityCustomFunctions.logWriteConsole("Navigate to Source Summary Page");
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		objDVP.clickAddRecord();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
+		
+		//Source Success Update Case Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Success Case in Summary Add", "fail", node);
+		}
+		else {
+			freport("Update on Success Case in Summary Add", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Success Update Case","No",node);
+		}
+		
+		//Target Entity Validation
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created after Summary Add", "fail", node);
+		}
+		else {
+			freport("Target Entity Not Created after Summary Add", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node);
+		}
+		//**************** Duplicate Record Validation **************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(1000);
+		objDVP.clickDuplicateRecord();
+		Thread.sleep(5000);
+		objCMD.clickSave();
+		Thread.sleep(5000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+		
+		//Source Success Update Case Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Success Case in Duplicate Record", "fail", node);
+		}
+		else {
+			freport("Update on Success Case in Duplicate Record", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Duplicate Success Update Case ","No",node);
+		}
+		
+		//Target Entity Validation
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+				
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created while Duplicate Record", "fail", node);
+		}
+		else {
+			freport("Target Entity Not Created while Duplicate Record", "pass", node);
+//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node);
+		}
 		
 		
+		//************** Edit & Save *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
 		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		System.out.println("Module clicked");
+		Thread.sleep(6000);
+		System.out.println("Before selecting 1st Record");
+		objCMD.clickExistingModData(1);
+		Thread.sleep(6000);
+		System.out.println("Before Edit button clicked in summary view");
+		objCMD.clickEdit();
+ 		Thread.sleep(6000);
+		objCMD.clickSave();
+		Thread.sleep(3000);
 		
+		//Source Success Update Case Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Success Case in Source Entity Edit & Save", "pass", node);
+		}
+		else {
+			freport("Update on Success Case in Source Entity Edit & Save", "fail", node);
+		}
+		
+		//Target Entity Validation
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+				
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created while Edit & Save Record", "pass", node);
+		}
+		else {
+			freport("Target Entity Not Created while Edit & Save Record", "fail", node);
+//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node);
+		}
+		//************** Single Line Summary Edit *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		System.out.println("Module clicked");
+		Thread.sleep(6000);
+		System.out.println("Before selecting 1st Record");
+		objCMD.clickExistingModData(1);
+		Thread.sleep(6000);
+		objDVP.clickEditRecordItem();
+		Thread.sleep(1000);
+		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
+		objDVP.clickRecItemSave();
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+		
+		//Source Success Update Case Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Success Case in Source Single Line Edit", "pass", node);
+		}
+		else {
+			freport("Update on Success Case in Source Single Line Edit", "fail", node);
+		}
+		
+		//Target Entity Validation
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Update on Success Case in Target Single Line Edit", "pass", node);
+		}
+		else {
+			freport("Update on Success Case in Target Single Line Edit", "fail", node);
+//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node);
+		}
 		
 		
 	}
