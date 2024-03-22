@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
+      <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate">
         <methods>
           <include name="onStart"/>
+          <include name="CreateTest"/>
+          <include name="testCreateEntity_OOFS_SuccessUpdate"/>
           <include name="setup"/>
-          <include name="testWFEveryTimeRecSave"/>
           <include name="flush"/>
-          <include name="testName"/>
         </methods>
-      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
+      </class> <!-- testCases.TC015_CreateEntity_OOFS_SuccessUpdate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

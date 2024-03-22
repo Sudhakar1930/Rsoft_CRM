@@ -243,10 +243,12 @@ public class CRMReUsables extends BaseClass {
 		objNFP.clickSearchButton();
 
 	}
-	public void fClickFirstRecord() {
-		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
-		List<WebElement> tColCount = tRowCount.get(2).findElements(By.tagName("td"));
-		tColCount.get(2).click();
+	public void fClickFirstRecord() throws InterruptedException {
+//		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
+//		List<WebElement> tColCount = tRowCount.get(2).findElements(By.tagName("td"));
+//		tColCount.get(2).click();
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		objCMD.clickExistingModData(1);
 	}
 	public void fgetTablevalues(String sAssignedTo, String sStatus, String sCreatedBy, String sNotifyTemplateMsg,
 			String sExpTitle, String sRecordId, ExtentTest node) throws Exception {
@@ -1587,7 +1589,7 @@ public class CRMReUsables extends BaseClass {
 		//Details View
 		objDVP.fSetDetailVew(true);
 		Thread.sleep(3000);
-		String sActDTAssignedTo = objDVP.getArrayDetails(1).trim();
+		String sActDTAssignedTo = objDVP.getArrayDetails(4).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sExpAssignedTo, "Detail View AssignedTo:  " + sMessage, node);
 		
 		String sActDTText= objDVP.getArrayDetails(6).trim();
@@ -1724,9 +1726,8 @@ public class CRMReUsables extends BaseClass {
 	}
 	//get RecordId of the Module
 	public int getLastRecordId() throws MalformedURLException, InterruptedException{
-//		fClickFirstRecord();
-		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
-		objCMD.clickExistingModData(1);
+		
+		
 		Thread.sleep(3000);
 		int sRecordId=0;
 		URL sCurrentUrl = new URL(driver.getCurrentUrl());

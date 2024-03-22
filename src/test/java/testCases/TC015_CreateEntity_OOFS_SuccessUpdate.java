@@ -191,17 +191,21 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 				
 			}
 		}//If
+		UtilityCustomFunctions.logWriteConsole("Capture Initial Record Id for Source & Target Started");
 		objALP.clickAllList();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
+		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		
 		//Add New Module Data
 		//Navigate to Source Module
 		Thread.sleep(3000);
@@ -216,13 +220,28 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 		Thread.sleep(5000);
+		
 		//Capture Record Ids
 		int iCurrSrcRecId= objCRMRs.getLastRecordId();
+		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
+		//Source Update Validation
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Source update on Create Entity Success when Pass not Happened", "fail", node);
+		}
+		else {
+			freport("Source update on Create Entity Success when Pass", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Success Update Case","No",node);
+		}
+				
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
+		
+		
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
 			freport("Target Entity Not Created after New source data added", "fail", node);
@@ -232,38 +251,16 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Create Entity in Target","No",node);
 		}
 		
+//		//Validate Source Default Values
+//		objALP.clickAllList();
+//		Thread.sleep(2000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+//		Thread.sleep(3000);
+//		objCRMRs.fClickFirstRecord();
+//		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		
-		//Source Update Validation
-		if(iOldSrcRecId==iCurrSrcRecId) {
-			freport("Source update on Create Entity Success not Happened", "fail", node);
-		}
-		else {
-			freport("Source update on Create Entity Success done", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Success Update Case","No",node);
-		}
 		
-		//***************Summary Add Create Entity ***********
-		iOldTrgRecId=iCurrTrgRecId;
-		iOldSrcRecId=iCurrSrcRecId;
-		UtilityCustomFunctions.logWriteConsole("Summary Add Entity");
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		Thread.sleep(2000);
-		objCMD.clickExistingModData(1);
-		objDVP.clickAddRecord();
-		Thread.sleep(3000);
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2");
-		Thread.sleep(5000);
-		//capture current Record Ids
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		iCurrSrcRecId= objCRMRs.getLastRecordId();
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		
 		
 		
 		

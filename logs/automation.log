@@ -1,136 +1,272 @@
-17:34:44.494 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:44.560 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
-17:34:44.560 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:44.647 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
-17:34:44.647 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:44.728 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
-17:34:44.728 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:44.793 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
-17:34:44.793 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:44.875 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: SourceA
-17:34:44.875 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:44.958 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: CreateEntityTarget
-17:34:44.960 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
-17:34:56.079 [main] INFO  utilities.UtilityCustomFunctions - Captured the Target & Source Latest Record Ids
-17:35:00.392 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
-17:35:00.392 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.477 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
-17:35:00.477 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.546 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
-17:35:00.546 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.608 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
-17:35:00.608 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.733 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
-17:35:00.733 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.792 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
-17:35:00.792 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.858 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
-17:35:00.858 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.933 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
-17:35:00.933 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:00.993 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
-17:35:00.993 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.059 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
-17:35:01.059 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.130 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
-17:35:01.130 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.179 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
-17:35:01.195 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.260 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
-17:35:01.260 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.326 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
-17:35:01.326 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.391 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
-17:35:01.391 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.458 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
-17:35:01.459 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.544 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
-17:35:01.544 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.610 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
-17:35:01.610 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.678 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
-17:35:01.678 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.759 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
-17:35:01.759 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.826 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
-17:35:01.826 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.892 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
-17:35:01.892 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:01.960 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
-17:35:01.960 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:02.027 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: SourceA
-17:35:02.027 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:02.093 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: CreateEntityTarget
-17:35:02.093 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:02.160 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: CreateEntitySource
-17:35:02.160 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-17:35:04.916 [main] INFO  utilities.UtilityCustomFunctions - Click Source Module:CreateEntitySource
-17:35:07.796 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:CreateEntitySource
-17:35:09.817 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Excel file Utility instance created
-17:35:09.902 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Row Count is: 1
-17:35:10.171 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Col Count is: 54
-17:35:10.171 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Extracting DataSheet Values started...
-17:35:11.243 [main] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+13:31:52.670 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Summary Enquiry Phone Number:  Success Update Case
+13:31:52.686 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Phone Number:  Success Update Case Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+13:31:54.085 [main] INFO  utilities.UtilityCustomFunctions - Actual:ModerateExpected:Moderate Summary Enquiry Category:  Success Update Case
+13:31:54.085 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Category:  Success Update Case Passed : Actual Value is: ModerateExpected Value is: Moderate
+13:31:55.437 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 Summary Lead PhoneNumber:  Success Update Case
+13:31:55.437 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Lead PhoneNumber:  Success Update Case Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+13:31:56.788 [main] INFO  utilities.UtilityCustomFunctions - Actual:SuccessDefaultLead@gmail.comExpected:SuccessDefaultLead@gmail.com Summary Lead Email:  Success Update Case
+13:31:56.788 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Lead Email:  Success Update Case Passed : Actual Value is: SuccessDefaultLead@gmail.comExpected Value is: SuccessDefaultLead@gmail.com
+13:31:58.121 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about CRMExpected:Lead about CRM Summary Lead Text:  Success Update Case
+13:31:58.121 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Lead Text:  Success Update Case Passed : Actual Value is: Lead about CRMExpected Value is: Lead about CRM
+13:31:59.505 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Summary Sales PhoneNumber:  Success Update Case
+13:31:59.505 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Sales PhoneNumber:  Success Update Case Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+13:32:00.836 [main] INFO  utilities.UtilityCustomFunctions - Actual:SuccessDefaultSales@gmail.comExpected:SuccessDefaultSales@gmail.com Summary Sales Email:  Success Update Case
+13:32:00.836 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Sales Email:  Success Update Case Passed : Actual Value is: SuccessDefaultSales@gmail.comExpected Value is: SuccessDefaultSales@gmail.com
+13:32:02.760 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+13:32:05.928 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft ITExpected:Rsoft IT Detail View AssignedTo:  Success Update Case
+13:32:05.928 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View AssignedTo:  Success Update Case Passed : Actual Value is: Rsoft ITExpected Value is: Rsoft IT
+13:32:07.278 [main] INFO  utilities.UtilityCustomFunctions - Actual:Default Success TextExpected:Default Success Text Detail View Text:  Success Update Case
+13:32:07.278 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Text:  Success Update Case Passed : Actual Value is: Default Success TextExpected Value is: Default Success Text
+13:32:08.646 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 1234567890Expected:+65 1234567890 Detail View Mobile Number:  Success Update Case
+13:32:08.646 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Mobile Number:  Success Update Case Passed : Actual Value is: +65 1234567890Expected Value is: +65 1234567890
+13:32:10.006 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultSuccessEmail@rsoft.inExpected:DefaultSuccessEmail@rsoft.in Detail View Email :  Success Update Case
+13:32:10.006 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Email :  Success Update Case Passed : Actual Value is: DefaultSuccessEmail@rsoft.inExpected Value is: DefaultSuccessEmail@rsoft.in
+13:32:11.326 [main] INFO  utilities.UtilityCustomFunctions - Actual:1Expected:1 Detail View PicListValue :  Success Update Case
+13:32:11.326 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View PicListValue :  Success Update Case Passed : Actual Value is: 1Expected Value is: 1
+13:32:12.657 [main] INFO  utilities.UtilityCustomFunctions - Actual:threeExpected:three Detail View MuultiCombo Values :  Success Update Case
+13:32:12.657 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View MuultiCombo Values :  Success Update Case Passed : Actual Value is: threeExpected Value is: three
+13:32:14.010 [main] INFO  utilities.UtilityCustomFunctions - Actual:AriyalurExpected:Ariyalur Detail View City:  Success Update Case
+13:32:14.010 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View City:  Success Update Case Passed : Actual Value is: AriyalurExpected Value is: Ariyalur
+13:32:15.373 [main] INFO  utilities.UtilityCustomFunctions - Actual:BiharExpected:Bihar Detail View Stat:  Success Update Case
+13:32:15.373 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Stat:  Success Update Case Passed : Actual Value is: BiharExpected Value is: Bihar
+13:32:16.722 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndiaExpected:India Detail View Country:  Success Update Case
+13:32:16.722 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Country:  Success Update Case Passed : Actual Value is: IndiaExpected Value is: India
+13:32:18.092 [main] INFO  utilities.UtilityCustomFunctions - Actual:NoExpected:No Detail View CheckBox:  Success Update Case
+13:32:18.093 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View CheckBox:  Success Update Case Passed : Actual Value is: NoExpected Value is: No
+13:32:19.440 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-20Expected:2024-03-20 Detail View Date:  Success Update Case
+13:32:19.440 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Date:  Success Update Case Passed : Actual Value is: 2024-03-20Expected Value is: 2024-03-20
+13:32:20.788 [main] INFO  utilities.UtilityCustomFunctions - Actual:03:30:20 PMExpected:03:30:20 PM Detail View Time:  Success Update Case
+13:32:20.788 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Time:  Success Update Case Passed : Actual Value is: 03:30:20 PMExpected Value is: 03:30:20 PM
+13:32:22.172 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-20 03:30:58 PMExpected:2024-03-20 03:30:58 PM Detail View Date & Time :  Success Update Case
+13:32:22.172 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Date & Time :  Success Update Case Passed : Actual Value is: 2024-03-20 03:30:58 PMExpected Value is: 2024-03-20 03:30:58 PM
+13:32:23.553 [main] INFO  utilities.UtilityCustomFunctions - Actual:Default TextExpected:Default Text Detail View Related Module :  Success Update Case
+13:32:23.553 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Related Module :  Success Update Case Passed : Actual Value is: Default TextExpected Value is: Default Text
+13:32:24.967 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-sprattExpected:annie-spratt Detail View File Upload :  Success Update Case
+13:32:24.967 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View File Upload :  Success Update Case Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+13:32:26.342 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. StephenExpected:Mrs. Stephen Detail View Name:  Success Update Case
+13:32:26.343 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Name:  Success Update Case Passed : Actual Value is: Mrs. StephenExpected Value is: Mrs. Stephen
+13:32:27.721 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111Expected:11111111111 Detail View Number:  Success Update Case
+13:32:27.721 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Number:  Success Update Case Passed : Actual Value is: 11111111111Expected Value is: 11111111111
+13:32:29.118 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Detail View Currency:  Success Update Case
+13:32:29.118 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Currency:  Success Update Case Passed : Actual Value is: 10000Expected Value is: 10000
+13:32:30.419 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Detail View Url:  Success Update Case
+13:32:30.419 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Url:  Success Update Case Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+13:32:38.075 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. BeasantExpected:Dr. Beasant Detail View Enquiry Name:  Success Update Case
+13:32:38.076 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Name:  Success Update Case Passed : Actual Value is: Dr. BeasantExpected Value is: Dr. Beasant
+13:32:39.435 [main] INFO  utilities.UtilityCustomFunctions - Actual:SuccessEnquiry@gmail.comExpected:SuccessEnquiry@gmail.com Detail View Enquiry Email:  Success Update Case
+13:32:39.435 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Email:  Success Update Case Passed : Actual Value is: SuccessEnquiry@gmail.comExpected Value is: SuccessEnquiry@gmail.com
+13:32:40.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about CRMExpected:Enquiry about CRM Detail View Enquiry Text:  Success Update Case
+13:32:40.752 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Text:  Success Update Case Passed : Actual Value is: Enquiry about CRMExpected Value is: Enquiry about CRM
+13:32:42.101 [main] INFO  utilities.UtilityCustomFunctions - Actual:It has turned out to be a pharma week of sorts, in some ways unexpectedly so. In a completely non-medical sense, pharma companies were among those named in the purchase of electoral bonds, over the week. While the details on who gave whom exactly what amount when will be clear in a couple of days, it is a clear indication of the growing clout of the pharma sector in the countryExpected:It has turned out to be a pharma week of sorts, in some ways unexpectedly so. In a completely non-medical sense, pharma companies were among those named in the purchase of electoral bonds, over the week. While the details on who gave whom exactly what amount when will be clear in a couple of days, it is a clear indication of the growing clout of the pharma sector in the country Detail View Enquiry Text Area:  Success Update Case
+13:32:42.101 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Text Area:  Success Update Case Passed : Actual Value is: It has turned out to be a pharma week of sorts, in some ways unexpectedly so. In a completely non-medical sense, pharma companies were among those named in the purchase of electoral bonds, over the week. While the details on who gave whom exactly what amount when will be clear in a couple of days, it is a clear indication of the growing clout of the pharma sector in the countryExpected Value is: It has turned out to be a pharma week of sorts, in some ways unexpectedly so. In a completely non-medical sense, pharma companies were among those named in the purchase of electoral bonds, over the week. While the details on who gave whom exactly what amount when will be clear in a couple of days, it is a clear indication of the growing clout of the pharma sector in the country
+13:32:43.435 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-20Expected:2024-03-20 Detail View Enquiry Date:  Success Update Case
+13:32:43.435 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Date:  Success Update Case Passed : Actual Value is: 2024-03-20Expected Value is: 2024-03-20
+13:32:44.786 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 Detail View Enquiry Phone Number:  Success Update Case
+13:32:44.786 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Phone Number:  Success Update Case Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+13:32:46.120 [main] INFO  utilities.UtilityCustomFunctions - Actual:ModerateExpected:Moderate Detail View Enquiry Category:  Success Update Case
+13:32:46.135 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Category:  Success Update Case Passed : Actual Value is: ModerateExpected Value is: Moderate
+13:32:53.721 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890Expected:+91 1234567890 DT Lead Mobile Number:  Success Update Case
+13:32:53.721 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT Lead Mobile Number:  Success Update Case Passed : Actual Value is: +91 1234567890Expected Value is: +91 1234567890
+13:32:55.118 [main] INFO  utilities.UtilityCustomFunctions - Actual:SuccessDefaultLead@gmail.comExpected:SuccessDefaultLead@gmail.com DT View Lead Email  Success Update Case
+13:32:55.118 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT View Lead Email  Success Update Case Passed : Actual Value is: SuccessDefaultLead@gmail.comExpected Value is: SuccessDefaultLead@gmail.com
+13:32:56.453 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about CRMExpected:Lead about CRM DT View Lead Text Success Update Case
+13:32:56.453 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT View Lead Text Success Update Case Passed : Actual Value is: Lead about CRMExpected Value is: Lead about CRM
+13:32:57.814 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 1234567890Expected:+60 1234567890 DT Sales Mobile Number:  Success Update Case
+13:32:57.815 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT Sales Mobile Number:  Success Update Case Passed : Actual Value is: +60 1234567890Expected Value is: +60 1234567890
+13:32:59.189 [main] INFO  utilities.UtilityCustomFunctions - Actual:SuccessDefaultSales@gmail.comExpected:SuccessDefaultSales@gmail.com DT View Sales EmailSuccess Update Case
+13:32:59.189 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT View Sales EmailSuccess Update Case Passed : Actual Value is: SuccessDefaultSales@gmail.comExpected Value is: SuccessDefaultSales@gmail.com
+13:33:01.752 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+13:33:01.752 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:01.818 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+13:33:01.818 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:01.885 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+13:33:01.885 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:01.952 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+13:33:01.952 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.021 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+13:33:02.021 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.087 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+13:33:02.087 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.151 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+13:33:02.152 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.201 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+13:33:02.201 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.268 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+13:33:02.268 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.337 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+13:33:02.337 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.385 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+13:33:02.385 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.451 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+13:33:02.451 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.517 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+13:33:02.517 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.585 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+13:33:02.585 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.652 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+13:33:02.652 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.719 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+13:33:02.719 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.785 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+13:33:02.785 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.855 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+13:33:02.855 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:02.937 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+13:33:02.937 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:03.002 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+13:33:03.002 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:03.088 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+13:33:03.088 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:03.152 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+13:33:03.152 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:03.221 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+13:33:03.221 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:03.318 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: SourceA
+13:33:03.318 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:03.386 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: CreateEntityTarget
+13:33:03.386 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntityTarget
+13:33:15.368 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id:101606
+13:33:16.651 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Excel file Utility instance created
+13:33:16.682 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Row Count is: 1
+13:33:16.719 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Col Count is: 54
+13:33:16.719 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Extracting DataSheet Values started...
+13:33:18.070 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+13:33:24.152 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+13:33:25.034 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name:CreateEntityTarget
+13:33:25.384 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Assigned To Title: Create Entity in Target
+13:33:25.384 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Assigned To Title: Create Entity in Target Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+13:33:26.651 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562Expected:+65 0231907562 Mobile Number Title : Create Entity in Target
+13:33:26.651 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Mobile Number Title : Create Entity in Target Passed : Actual Value is: +65 0231907562Expected Value is: +65 0231907562
+13:33:27.902 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNew@rsoft.inExpected:AddNew@rsoft.in Email Title: Create Entity in Target
+13:33:27.902 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Email Title: Create Entity in Target Passed : Actual Value is: AddNew@rsoft.inExpected Value is: AddNew@rsoft.in
+13:33:32.740 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Summary AssignedTo:  Create Entity in Target
+13:33:32.740 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary AssignedTo:  Create Entity in Target Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+13:33:34.119 [main] INFO  utilities.UtilityCustomFunctions - Actual:Add New TextExpected:Add New Text Summary Text:  Create Entity in Target
+13:33:34.119 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Text:  Create Entity in Target Passed : Actual Value is: Add New TextExpected Value is: Add New Text
+13:33:35.453 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562Expected:+65 0231907562 Summary Mobile Number:  Create Entity in Target
+13:33:35.453 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Mobile Number:  Create Entity in Target Passed : Actual Value is: +65 0231907562Expected Value is: +65 0231907562
+13:33:36.830 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNew@rsoft.inExpected:AddNew@rsoft.in Summary Email :  Create Entity in Target
+13:33:36.830 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Email :  Create Entity in Target Passed : Actual Value is: AddNew@rsoft.inExpected Value is: AddNew@rsoft.in
+13:33:38.194 [main] INFO  utilities.UtilityCustomFunctions - Actual:3Expected:3 Summary PicListValue :  Create Entity in Target
+13:33:38.194 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary PicListValue :  Create Entity in Target Passed : Actual Value is: 3Expected Value is: 3
+13:33:39.506 [main] INFO  utilities.UtilityCustomFunctions - Actual:oneExpected:one Summary MuultiCombo Values :  Create Entity in Target
+13:33:39.506 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary MuultiCombo Values :  Create Entity in Target Passed : Actual Value is: oneExpected Value is: one
+13:33:40.896 [main] INFO  utilities.UtilityCustomFunctions - Actual:KanchipuramExpected:Kanchipuram Summary City:  Create Entity in Target
+13:33:40.896 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary City:  Create Entity in Target Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
+13:33:42.255 [main] INFO  utilities.UtilityCustomFunctions - Actual:TamilnaduExpected:Tamilnadu Summary State:  Create Entity in Target
+13:33:42.255 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary State:  Create Entity in Target Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+13:33:43.588 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndiaExpected:India Summary Country:  Create Entity in Target
+13:33:43.588 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Country:  Create Entity in Target Passed : Actual Value is: IndiaExpected Value is: India
+13:33:44.956 [main] INFO  utilities.UtilityCustomFunctions - Actual:YesExpected:Yes Summary CheckBox:  Create Entity in Target
+13:33:44.956 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary CheckBox:  Create Entity in Target Passed : Actual Value is: YesExpected Value is: Yes
+13:33:46.291 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-22Expected:2024-03-22 Summary Date:  Create Entity in Target
+13:33:46.291 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Date:  Create Entity in Target Passed : Actual Value is: 2024-03-22Expected Value is: 2024-03-22
+13:33:47.654 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PMExpected:02:35:55 PM Summary Time:  Create Entity in Target
+13:33:47.654 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Time:  Create Entity in Target Passed : Actual Value is: 02:35:55 PMExpected Value is: 02:35:55 PM
+13:33:49.020 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-22 01:27:47 PMExpected:2024-03-22 01:27:47 PM Summary Date & Time :  Create Entity in Target
+13:33:49.020 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Date & Time :  Create Entity in Target Passed : Actual Value is: 2024-03-22 01:27:47 PMExpected Value is: 2024-03-22 01:27:47 PM
+13:33:50.434 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-sprattExpected:annie-spratt Summary File Upload :  Create Entity in Target
+13:33:50.434 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary File Upload :  Create Entity in Target Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+13:33:51.775 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. StevenExpected:Mrs. Steven Summary Name:  Create Entity in Target
+13:33:51.775 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Name:  Create Entity in Target Failed : Actual Value is: Mr. StevenExpected Value is: Mrs. Steven
+13:33:53.068 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111Expected:11111111111 Summary Number:  Create Entity in Target
+13:33:53.068 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Number:  Create Entity in Target Passed : Actual Value is: 11111111111Expected Value is: 11111111111
+13:33:54.401 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Summary Currency:  Create Entity in Target
+13:33:54.401 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Currency:  Create Entity in Target Passed : Actual Value is: 10000Expected Value is: 10000
+13:33:55.667 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Summary Url:  Create Entity in Target
+13:33:55.667 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Url:  Create Entity in Target Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+13:33:57.049 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. AnnieExpected:Dr. Annie Summary Enquiry Name:  Create Entity in Target
+13:33:57.049 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Name:  Create Entity in Target Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+13:33:58.417 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.comExpected:AddNewEnquiry@gmail.com Summary Enquiry Email:  Create Entity in Target
+13:33:58.417 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Email:  Create Entity in Target Passed : Actual Value is: AddNewEnquiry@gmail.comExpected Value is: AddNewEnquiry@gmail.com
+13:33:59.751 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about ChatbotExpected:Enquiry about Chatbot Summary Enquiry Text:  Create Entity in Target
+13:33:59.751 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Text:  Create Entity in Target Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+13:34:01.133 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"Expected:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" Summary Enquiry Text Area:  Create Entity in Target
+13:34:01.133 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Text Area:  Create Entity in Target Passed : Actual Value is: India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"Expected Value is: India's First Lead Management System with
 "Auto Lead Call Distribution With Call Recording"
-17:35:12.557 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-17:35:15.745 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-17:35:21.050 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [Sudhakar VE] is selected in List
-17:35:21.050 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-17:35:22.612 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
-17:35:22.630 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
-17:35:23.828 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:35:27.236 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [+65] is selected in List
-17:35:27.237 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
-17:35:28.929 [main] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
-17:35:31.547 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
-17:35:32.567 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
-17:35:33.728 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:35:34.885 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
-17:36:02.818 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
-17:36:04.050 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:36:07.651 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [Kanchipuram] is selected in List
-17:36:07.651 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
-17:36:08.799 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:36:12.877 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [Tamilnadu] is selected in List
-17:36:12.877 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:36:14.059 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:36:17.396 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [India] is selected in List
-17:36:17.397 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:36:18.558 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:36:18.769 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:36:21.774 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:36:23.009 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:36:24.147 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:36:27.155 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
-17:36:37.676 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
-17:36:38.864 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:36:43.873 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
-17:36:47.091 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:36:47.309 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:36:49.628 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
-17:37:04.324 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [Mrs.] is selected in List
-17:37:05.844 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
-17:37:07.444 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
-17:37:08.791 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
-17:37:10.477 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-17:37:14.030 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [Dr.] is selected in List
-17:37:15.558 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
-17:37:17.310 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
-17:37:19.028 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
-17:37:19.040 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
+13:34:02.502 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-22Expected:2024-03-22 Summary Enquiry Date:  Create Entity in Target
+13:34:02.502 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Date:  Create Entity in Target Passed : Actual Value is: 2024-03-22Expected Value is: 2024-03-22
+13:34:03.851 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413Expected:+60 9596754413 Summary Enquiry Phone Number:  Create Entity in Target
+13:34:03.851 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Phone Number:  Create Entity in Target Passed : Actual Value is: +60 9596754413Expected Value is: +60 9596754413
+13:34:05.184 [main] INFO  utilities.UtilityCustomFunctions - Actual:UrgentExpected:Urgent Summary Enquiry Category:  Create Entity in Target
+13:34:05.184 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Enquiry Category:  Create Entity in Target Passed : Actual Value is: UrgentExpected Value is: Urgent
+13:34:06.549 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441Expected:+91 9501926441 Summary Lead PhoneNumber:  Create Entity in Target
+13:34:06.549 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Lead PhoneNumber:  Create Entity in Target Passed : Actual Value is: +91 9501926441Expected Value is: +91 9501926441
+13:34:07.900 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewLead@gmail.comExpected:AddNewLead@gmail.com Summary Lead Email:  Create Entity in Target
+13:34:07.900 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Lead Email:  Create Entity in Target Passed : Actual Value is: AddNewLead@gmail.comExpected Value is: AddNewLead@gmail.com
+13:34:09.234 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about ChatbotExpected:Lead about Chatbot Summary Lead Text:  Create Entity in Target
+13:34:09.234 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Lead Text:  Create Entity in Target Passed : Actual Value is: Lead about ChatbotExpected Value is: Lead about Chatbot
+13:34:10.583 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025Expected:+60 0472103025 Summary Sales PhoneNumber:  Create Entity in Target
+13:34:10.583 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Sales PhoneNumber:  Create Entity in Target Passed : Actual Value is: +60 0472103025Expected Value is: +60 0472103025
+13:34:11.951 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewSales@gmail.comExpected:AddNewSales@gmail.com Summary Sales Email:  Create Entity in Target
+13:34:11.951 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Summary Sales Email:  Create Entity in Target Passed : Actual Value is: AddNewSales@gmail.comExpected Value is: AddNewSales@gmail.com
+13:34:13.881 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+13:34:17.002 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VEExpected:Sudhakar VE Detail View AssignedTo:  Create Entity in Target
+13:34:17.002 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View AssignedTo:  Create Entity in Target Passed : Actual Value is: Sudhakar VEExpected Value is: Sudhakar VE
+13:34:18.356 [main] INFO  utilities.UtilityCustomFunctions - Actual:Add New TextExpected:Add New Text Detail View Text:  Create Entity in Target
+13:34:18.356 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Text:  Create Entity in Target Passed : Actual Value is: Add New TextExpected Value is: Add New Text
+13:34:19.756 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562Expected:+65 0231907562 Detail View Mobile Number:  Create Entity in Target
+13:34:19.756 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Mobile Number:  Create Entity in Target Passed : Actual Value is: +65 0231907562Expected Value is: +65 0231907562
+13:34:21.121 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNew@rsoft.inExpected:AddNew@rsoft.in Detail View Email :  Create Entity in Target
+13:34:21.121 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Email :  Create Entity in Target Passed : Actual Value is: AddNew@rsoft.inExpected Value is: AddNew@rsoft.in
+13:34:22.474 [main] INFO  utilities.UtilityCustomFunctions - Actual:3Expected:3 Detail View PicListValue :  Create Entity in Target
+13:34:22.474 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View PicListValue :  Create Entity in Target Passed : Actual Value is: 3Expected Value is: 3
+13:34:23.823 [main] INFO  utilities.UtilityCustomFunctions - Actual:oneExpected:one Detail View MuultiCombo Values :  Create Entity in Target
+13:34:23.823 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View MuultiCombo Values :  Create Entity in Target Passed : Actual Value is: oneExpected Value is: one
+13:34:25.207 [main] INFO  utilities.UtilityCustomFunctions - Actual:KanchipuramExpected:Kanchipuram Detail View City:  Create Entity in Target
+13:34:25.207 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View City:  Create Entity in Target Passed : Actual Value is: KanchipuramExpected Value is: Kanchipuram
+13:34:26.571 [main] INFO  utilities.UtilityCustomFunctions - Actual:TamilnaduExpected:Tamilnadu Detail View Stat:  Create Entity in Target
+13:34:26.571 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Stat:  Create Entity in Target Passed : Actual Value is: TamilnaduExpected Value is: Tamilnadu
+13:34:27.975 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndiaExpected:India Detail View Country:  Create Entity in Target
+13:34:27.975 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Country:  Create Entity in Target Passed : Actual Value is: IndiaExpected Value is: India
+13:34:29.358 [main] INFO  utilities.UtilityCustomFunctions - Actual:YesExpected:Yes Detail View CheckBox:  Create Entity in Target
+13:34:29.358 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View CheckBox:  Create Entity in Target Passed : Actual Value is: YesExpected Value is: Yes
+13:34:30.736 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-22Expected:2024-03-22 Detail View Date:  Create Entity in Target
+13:34:30.737 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Date:  Create Entity in Target Passed : Actual Value is: 2024-03-22Expected Value is: 2024-03-22
+13:34:32.178 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PMExpected:02:35:55 PM Detail View Time:  Create Entity in Target
+13:34:32.179 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Time:  Create Entity in Target Passed : Actual Value is: 02:35:55 PMExpected Value is: 02:35:55 PM
+13:34:33.521 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-22 01:27:47 PMExpected:2024-03-22 01:27:47 PM Detail View Date & Time :  Create Entity in Target
+13:34:33.521 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Date & Time :  Create Entity in Target Passed : Actual Value is: 2024-03-22 01:27:47 PMExpected Value is: 2024-03-22 01:27:47 PM
+13:34:34.870 [main] INFO  utilities.UtilityCustomFunctions - Actual:Default Success TextExpected:Add New Text Detail View Related Module :  Create Entity in Target
+13:34:34.870 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Related Module :  Create Entity in Target Failed : Actual Value is: Default Success TextExpected Value is: Add New Text
+13:34:36.303 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-sprattExpected:annie-spratt Detail View File Upload :  Create Entity in Target
+13:34:36.303 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View File Upload :  Create Entity in Target Passed : Actual Value is: annie-sprattExpected Value is: annie-spratt
+13:34:37.653 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. StevenExpected:Mrs. Steven Detail View Name:  Create Entity in Target
+13:34:37.653 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Name:  Create Entity in Target Failed : Actual Value is: Mr. StevenExpected Value is: Mrs. Steven
+13:34:38.987 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111Expected:11111111111 Detail View Number:  Create Entity in Target
+13:34:39.000 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Number:  Create Entity in Target Passed : Actual Value is: 11111111111Expected Value is: 11111111111
+13:34:40.383 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000Expected:10000 Detail View Currency:  Create Entity in Target
+13:34:40.383 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Currency:  Create Entity in Target Passed : Actual Value is: 10000Expected Value is: 10000
+13:34:41.651 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/Expected:http://www.google.com/ Detail View Url:  Create Entity in Target
+13:34:41.651 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Url:  Create Entity in Target Passed : Actual Value is: http://www.google.com/Expected Value is: http://www.google.com/
+13:34:49.270 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. AnnieExpected:Dr. Annie Detail View Enquiry Name:  Create Entity in Target
+13:34:49.270 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Name:  Create Entity in Target Passed : Actual Value is: Dr. AnnieExpected Value is: Dr. Annie
+13:34:50.616 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.comExpected:AddNewEnquiry@gmail.com Detail View Enquiry Email:  Create Entity in Target
+13:34:50.616 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Email:  Create Entity in Target Passed : Actual Value is: AddNewEnquiry@gmail.comExpected Value is: AddNewEnquiry@gmail.com
+13:34:51.982 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about ChatbotExpected:Enquiry about Chatbot Detail View Enquiry Text:  Create Entity in Target
+13:34:51.982 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Text:  Create Entity in Target Passed : Actual Value is: Enquiry about ChatbotExpected Value is: Enquiry about Chatbot
+13:34:53.332 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"Expected:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" Detail View Enquiry Text Area:  Create Entity in Target
+13:34:53.332 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Text Area:  Create Entity in Target Passed : Actual Value is: India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"Expected Value is: India's First Lead Management System with
 "Auto Lead Call Distribution With Call Recording"
-17:37:21.711 [main] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" entered in  textarea
-17:37:24.856 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
-17:37:31.102 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [+60] is selected in List
-17:37:33.910 [main] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
-17:37:37.132 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
-17:37:40.498 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [Urgent] is selected in List
-17:37:47.145 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [+91] is selected in List
-17:37:49.878 [main] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
-17:37:51.610 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
-17:37:53.227 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
-17:37:57.878 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - [+60] is selected in List
-17:38:00.647 [main] INFO  utilities.UtilityCustomFunctions - 0472103025 entered in  input
-17:38:02.427 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
-17:38:20.705 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: CreateEntitySource
+13:34:54.718 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-03-22Expected:2024-03-22 Detail View Enquiry Date:  Create Entity in Target
+13:34:54.718 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Date:  Create Entity in Target Passed : Actual Value is: 2024-03-22Expected Value is: 2024-03-22
+13:34:56.083 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413Expected:+60 9596754413 Detail View Enquiry Phone Number:  Create Entity in Target
+13:34:56.083 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Phone Number:  Create Entity in Target Passed : Actual Value is: +60 9596754413Expected Value is: +60 9596754413
+13:34:57.467 [main] INFO  utilities.UtilityCustomFunctions - Actual:UrgentExpected:Urgent Detail View Enquiry Category:  Create Entity in Target
+13:34:57.467 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - Detail View Enquiry Category:  Create Entity in Target Passed : Actual Value is: UrgentExpected Value is: Urgent
+13:35:05.065 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441Expected:+91 9501926441 DT Lead Mobile Number:  Create Entity in Target
+13:35:05.065 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT Lead Mobile Number:  Create Entity in Target Passed : Actual Value is: +91 9501926441Expected Value is: +91 9501926441
+13:35:06.416 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewLead@gmail.comExpected:AddNewLead@gmail.com DT View Lead Email  Create Entity in Target
+13:35:06.416 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT View Lead Email  Create Entity in Target Passed : Actual Value is: AddNewLead@gmail.comExpected Value is: AddNewLead@gmail.com
+13:35:07.749 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about ChatbotExpected:Lead about Chatbot DT View Lead Text Create Entity in Target
+13:35:07.749 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT View Lead Text Create Entity in Target Passed : Actual Value is: Lead about ChatbotExpected Value is: Lead about Chatbot
+13:35:09.115 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025Expected:+60 0472103025 DT Sales Mobile Number:  Create Entity in Target
+13:35:09.115 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT Sales Mobile Number:  Create Entity in Target Passed : Actual Value is: +60 0472103025Expected Value is: +60 0472103025
+13:35:10.448 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewSales@gmail.comExpected:AddNewSales@gmail.com DT View Sales EmailCreate Entity in Target
+13:35:10.448 [main] INFO  testCases.TC015_CreateEntity_OOFS_SuccessUpdate - DT View Sales EmailCreate Entity in Target Passed : Actual Value is: AddNewSales@gmail.comExpected Value is: AddNewSales@gmail.com
