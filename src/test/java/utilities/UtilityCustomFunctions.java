@@ -477,18 +477,18 @@ public class UtilityCustomFunctions extends BaseClass{
 			throws IOException, InterruptedException {
 		
 		BaseClass a = new BaseClass();
-		UtilityCustomFunctions.logWriteConsole("Actual:"+sActValue+"Expected:"+sExpValue + " " + sMessage);
+		UtilityCustomFunctions.logWriteConsole("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage);
 		if (sActValue.trim().equalsIgnoreCase(sExpValue.trim())) {
-			BaseClass.logger
-					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
+//			BaseClass.logger
+//					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "pass", Node);
-			System.out.println(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
+//			System.out.println(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			
 		} else {
-			BaseClass.logger
-					.info(sMessage + " Failed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
+//			BaseClass.logger
+//					.info(sMessage + " Failed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "fail", Node);
-			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
+//			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
 		}
 		sAssertinFn.assertEquals(sActValue.trim(), sExpValue.trim());
 		

@@ -1416,16 +1416,16 @@ public class CRMReUsables extends BaseClass {
 		}//if
 		
 		String aActModuleName = objDVP.getNavBarModuleName();
-		UtilityCustomFunctions.logWriteConsole("Entity Module Name:"+sExpTrgModuleName);
+		UtilityCustomFunctions.logWriteConsole("Entity Module Name: "+sExpTrgModuleName);
 		UtilityCustomFunctions.fSoftAssert(aActModuleName, sExpTrgModuleName, "Module Name : " + sMessage, node);
 		
 		// Title Actual Values
-		String sActAssignedTo = objDVP.getGenericTitle(1).trim() + " "+objDVP.getGenericTitle(2).trim();
-		String sActPNTitle = objDVP.getGenericTitle(3).trim();
+		String sActAssignedTo = objDVP.getGenericTitle(1).trim() + " "+objDVP.getGenericTitle(2).trim() + " " +objDVP.getGenericTitle(2).trim();
+		String sActPNTitle = objDVP.getGenericTitle(3).trim(); 
 //		String sPNTitleArray[] = sActPNTitle.split("\\s+");
 //		sActPNTitle = sPNTitleArray[0].trim() + " " + sPNTitleArray[1].trim();
+//		String sActEMTitle = objDVP.getGenericTitle(4).trim();
 		String sActEMTitle = objDVP.getGenericTitle(4).trim();
-		
 		String sExpMobileNumber= sMobNumPrefix+" " + sMobileNumber;
 		//Title Validations
 		UtilityCustomFunctions.fSoftAssert(sActAssignedTo, sExpAssignedTo, "Assigned To Title: " + sMessage, node);
@@ -1589,50 +1589,50 @@ public class CRMReUsables extends BaseClass {
 		//Details View
 		objDVP.fSetDetailVew(true);
 		Thread.sleep(3000);
-		String sActDTAssignedTo = objDVP.getArrayDetails(4).trim();
+		String sActDTAssignedTo = objDVP.getArrayDetails(1).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sExpAssignedTo, "Detail View AssignedTo:  " + sMessage, node);
 		
-		String sActDTText= objDVP.getArrayDetails(6).trim();
+		String sActDTText= objDVP.getArrayDetails(2).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTText, sText, "Detail View Text:  " + sMessage, node);
 		
-		String sActDTMobileNumber= objDVP.getArrayDetails(7).trim();
+		String sActDTMobileNumber= objDVP.getArrayDetails(3).trim();
 		String sDTMobileNMArray[] = sActDTMobileNumber.split("\\s+");
 		sActDTMobileNumber = sDTMobileNMArray[0].trim() + " " + sDTMobileNMArray[1].trim();
 		
 		System.out.println("actual mobile number: " + sActMobileNumber);
 		UtilityCustomFunctions.fSoftAssert(sActDTMobileNumber, sExpMobileNumber, "Detail View Mobile Number:  " + sMessage, node);
 		
-		String sActDTEmail= objDVP.getArrayDetails(8).trim();
+		String sActDTEmail= objDVP.getArrayDetails(4).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEmail, sEmail, "Detail View Email :  " + sMessage, node);
 		
-		String sActDTPicList= objDVP.getArrayDetails(9).trim();
+		String sActDTPicList= objDVP.getArrayDetails(5).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTPicList, sPickListValue, "Detail View PicListValue :  " + sMessage, node);
 		
-		String sActDTMultiCombo= objDVP.getArrayDetails(10).trim();
+		String sActDTMultiCombo= objDVP.getArrayDetails(6).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTMultiCombo, sMultiComboValues, "Detail View MuultiCombo Values :  " + sMessage, node);
 		
-		String sActDTCity= objDVP.getArrayDetails(11).trim();
+		String sActDTCity= objDVP.getArrayDetails(7).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTCity, sCity, "Detail View City:  " + sMessage, node);
 		
-		String sActDTState= objDVP.getArrayDetails(12).trim();
+		String sActDTState= objDVP.getArrayDetails(8).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTState, sState, "Detail View Stat:  " + sMessage, node);
 		
-		String sActDTCountry= objDVP.getArrayDetails(13).trim();
+		String sActDTCountry= objDVP.getArrayDetails(9).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTCountry, sCountry, "Detail View Country:  " + sMessage, node);
 		
-		String sActDTChekBox= objDVP.getArrayDetails(14).trim();
+		String sActDTChekBox= objDVP.getArrayDetails(10).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTChekBox, sCheckBox, "Detail View CheckBox:  " + sMessage, node);
 		
-		String sActDTDate= objDVP.getArrayDetails(15).trim();
+		String sActDTDate= objDVP.getArrayDetails(11).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTDate, sDate, "Detail View Date:  " + sMessage, node);
 		
-		String sActDTTime= objDVP.getArrayDetails(16).trim();
+		String sActDTTime= objDVP.getArrayDetails(12).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTTime, sTime, "Detail View Time:  " + sMessage, node);
 		
-		String sActDTDateandTime= objDVP.getArrayDetails(17).trim();
+		String sActDTDateandTime= objDVP.getArrayDetails(13).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTDateandTime, sDateandTime, "Detail View Date & Time :  " + sMessage, node);
 		
-		String sActDTRelModule= objDVP.getArrayDetails(18).trim();
+		String sActDTRelModule= objDVP.getArrayDetails(14).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTRelModule, sRelatedModule, "Detail View Related Module :  " + sMessage, node);
 		
 		String sActDTUploadFile= objDVP.getUploadFileText().trim();
@@ -1643,15 +1643,15 @@ public class CRMReUsables extends BaseClass {
 			UtilityCustomFunctions.fSoftAssert(sActDTUploadFile, sFilePath, "Detail View Upload :  " + sMessage, node);
 		}
 		
-		String sActDTName= objDVP.getArrayDetails(20).trim();
+		String sActDTName= objDVP.getArrayDetails(16).trim();
 		String sDTNameArray[] = sActDTName.split("\\s+");
 		sActDTName = sDTNameArray[0].trim() + " " + sDTNameArray[1].trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTName, sExpName, "Detail View Name:  " + sMessage, node);
 		
-		String sActDTNumber= objDVP.getArrayDetails(21).trim();
+		String sActDTNumber= objDVP.getArrayDetails(17).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTNumber, sNumber, "Detail View Number:  " + sMessage, node);
 		
-		String sActDTCurrency= objDVP.getArrayDetails(22).trim();
+		String sActDTCurrency= objDVP.getArrayDetails(18).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTCurrency, sCurrency, "Detail View Currency:  " + sMessage, node);
 		
 		String sActDTUrl= objDVP.getDTSummaryUrl().trim();
@@ -1660,37 +1660,37 @@ public class CRMReUsables extends BaseClass {
 		objDVP.fClickDetailBlockB();
 		Thread.sleep(3000);
 		
-		String sActDTEnqName = objDVP.getArrayDetails(24).trim();
+		String sActDTEnqName = objDVP.getArrayDetails(20).trim();
 		
 		String sDTEnqNameArray[] = sActDTEnqName.split("\\s+");
 		sActDTEnqName = sDTEnqNameArray[0].trim() + " " + sDTEnqNameArray[1].trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqName, sEnquiry_Name, "Detail View Enquiry Name:  " + sMessage, node);
 		
-		String sActDTEnqEmail= objDVP.getArrayDetails(25).trim();
+		String sActDTEnqEmail= objDVP.getArrayDetails(21).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqEmail, sEnquiry_Email, "Detail View Enquiry Email:  " + sMessage, node);
 		
-		String sActDTEnqText= objDVP.getArrayDetails(26).trim();
+		String sActDTEnqText= objDVP.getArrayDetails(22).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqText, sEnquiry_Text, "Detail View Enquiry Text:  " + sMessage, node);
 		
-		String sActDTEnqTextArea= objDVP.getArrayDetails(27).trim();
+		String sActDTEnqTextArea= objDVP.getArrayDetails(23).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqTextArea, sEnquiry_TextArea, "Detail View Enquiry Text Area:  " + sMessage, node);
 		
-		String sActDTEnqDate= objDVP.getArrayDetails(28).trim();
+		String sActDTEnqDate= objDVP.getArrayDetails(24).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqDate, sEnquiry_Date, "Detail View Enquiry Date:  " + sMessage, node);
 		
-		String sActDTEnqPN= objDVP.getArrayDetails(29).trim();
+		String sActDTEnqPN= objDVP.getArrayDetails(25).trim();
 		String sEnqActDTArray[] = sActDTEnqPN.split("\\s+");
 		sActDTEnqPN = sEnqActDTArray[0].trim() + " " + sEnqActDTArray[1].trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqPN, sEnquiry_PhoneNumber, "Detail View Enquiry Phone Number:  " + sMessage, node);
 		
-		String sActDTEnqCategory= objDVP.getArrayDetails(30).trim();
+		String sActDTEnqCategory= objDVP.getArrayDetails(26).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqCategory, sEnquiry_category, "Detail View Enquiry Category:  " + sMessage, node);
 		
 		Thread.sleep(3000);
 		objDVP.fClickDetailBlockC();
 		Thread.sleep(3000);
 		
-		String sActLeadDTMobileNumber= objDVP.getArrayDetails(31).trim();
+		String sActLeadDTMobileNumber= objDVP.getArrayDetails(27).trim();
 		String sActLeadDTMobileNMArray[] = sActLeadDTMobileNumber.split("\\s+");
 		sActLeadDTMobileNumber = sActLeadDTMobileNMArray[0].trim() + " " + sActLeadDTMobileNMArray[1].trim();
 		System.out.println("actual mobile number: " + sActLeadDTMobileNumber);
@@ -1699,14 +1699,14 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.fSoftAssert(sActLeadDTMobileNumber, sDTLead_PN, "DT Lead Mobile Number:  " + sMessage, node);
 		//Created Time added which is not captured.
 		
-		String sActDTLeadEmail= objDVP.getArrayDetails(32).trim();
+		String sActDTLeadEmail= objDVP.getArrayDetails(28).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTLeadEmail, sLead_Email, "DT View Lead Email  " + sMessage, node);
 		
-		String sActDTLeadText= objDVP.getArrayDetails(33).trim();
+		String sActDTLeadText= objDVP.getArrayDetails(29).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTLeadText, sLead_Text, "DT View Lead Text " + sMessage, node);
 		
 		//Sales
-		String sActSalesDTMobileNumber= objDVP.getArrayDetails(34).trim();
+		String sActSalesDTMobileNumber= objDVP.getArrayDetails(30).trim();
 		String sActSalesDTMobileNMArray[] = sActSalesDTMobileNumber.split("\\s+");
 		sActSalesDTMobileNumber = sActSalesDTMobileNMArray[0].trim() + " " + sActSalesDTMobileNMArray[1].trim();
 		
@@ -1715,7 +1715,7 @@ public class CRMReUsables extends BaseClass {
 		String sDTSales_PN = sSales_PN_Prefix + " " + sSales_PN;
 		UtilityCustomFunctions.fSoftAssert(sActSalesDTMobileNumber, sDTSales_PN, "DT Sales Mobile Number:  " + sMessage, node);
 		
-		String sActDTSalesEmail= objDVP.getArrayDetails(35).trim();
+		String sActDTSalesEmail= objDVP.getArrayDetails(31).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTSalesEmail, sSales_Email, "DT View Sales Email" + sMessage, node);
 		
 		if(isNotify.equalsIgnoreCase("Yes")){

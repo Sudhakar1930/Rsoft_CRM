@@ -1,4 +1,435 @@
-15:45:52.478 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: CreateEntityTarget
-15:45:52.480 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
-15:45:52.553 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: CreateEntitySource
-15:45:52.554 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CreateEntitySource
+15:20:07.396 [main] INFO  utilities.UtilityCustomFunctions - Actual: DefaultFailureText Expected: DefaultFailureText Summary Text:  Fail Case Update on Summary Add
+15:20:08.749 [main] INFO  utilities.UtilityCustomFunctions - Actual: +65 1234567890 Expected: +65 1234567890 Summary Mobile Number:  Fail Case Update on Summary Add
+15:20:10.119 [main] INFO  utilities.UtilityCustomFunctions - Actual: DefaultFail@rsoft.in Expected: DefaultFail@rsoft.in Summary Email :  Fail Case Update on Summary Add
+15:20:11.464 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2 Expected: 2 Summary PicListValue :  Fail Case Update on Summary Add
+15:20:12.819 [main] INFO  utilities.UtilityCustomFunctions - Actual: three Expected: four Summary MuultiCombo Values :  Fail Case Update on Summary Add
+15:20:14.299 [main] INFO  utilities.UtilityCustomFunctions - Actual: Perambalur Expected: Perambalur Summary City:  Fail Case Update on Summary Add
+15:20:15.671 [main] INFO  utilities.UtilityCustomFunctions - Actual: West Bengal Expected: West Bengal Summary State:  Fail Case Update on Summary Add
+15:20:17.047 [main] INFO  utilities.UtilityCustomFunctions - Actual: India Expected: India Summary Country:  Fail Case Update on Summary Add
+15:20:18.419 [main] INFO  utilities.UtilityCustomFunctions - Actual: Yes Expected: Yes Summary CheckBox:  Fail Case Update on Summary Add
+15:20:19.769 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-03-23 Expected: 2024-03-23 Summary Date:  Fail Case Update on Summary Add
+15:20:21.109 [main] INFO  utilities.UtilityCustomFunctions - Actual: 03:30:20 PM Expected: 03:30:20 PM Summary Time:  Fail Case Update on Summary Add
+15:20:22.445 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-03-23 03:35:46 PM Expected: 2024-03-23 03:35:46 PM Summary Date & Time :  Fail Case Update on Summary Add
+15:20:23.869 [main] INFO  utilities.UtilityCustomFunctions - Actual: annie-spratt Expected: annie-spratt Summary File Upload :  Fail Case Update on Summary Add
+15:20:25.201 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mr. SpielBerg Expected: Mr. SpielBerg Summary Name:  Fail Case Update on Summary Add
+15:20:26.549 [main] INFO  utilities.UtilityCustomFunctions - Actual: 22222222222 Expected: 22222222222 Summary Number:  Fail Case Update on Summary Add
+15:20:27.910 [main] INFO  utilities.UtilityCustomFunctions - Actual: 1000 Expected: 5000 Summary Currency:  Fail Case Update on Summary Add
+15:20:29.199 [main] INFO  utilities.UtilityCustomFunctions - Actual: https://nodejs.org/en Expected: https://nodejs.org/en Summary Url:  Fail Case Update on Summary Add
+15:20:30.559 [main] INFO  utilities.UtilityCustomFunctions - Actual: Prof. Christopher Expected: Prof. Christopher Summary Enquiry Name:  Fail Case Update on Summary Add
+15:20:31.911 [main] INFO  utilities.UtilityCustomFunctions - Actual: FailureEnquiry@gmail.com Expected: FailureEnquiry@gmail.com Summary Enquiry Email:  Fail Case Update on Summary Add
+15:20:33.279 [main] INFO  utilities.UtilityCustomFunctions - Actual: Enquiry about Failure Entity Expected: Enquiry about Failure Entity Summary Enquiry Text:  Fail Case Update on Summary Add
+15:20:34.629 [main] INFO  utilities.UtilityCustomFunctions - Actual: Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops Expected: Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops Summary Enquiry Text Area:  Fail Case Update on Summary Add
+15:20:35.979 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-03-23 Expected: 2024-03-23 Summary Enquiry Date:  Fail Case Update on Summary Add
+15:20:37.345 [main] INFO  utilities.UtilityCustomFunctions - Actual: +44 9876543210 Expected: +44 9876543210 Summary Enquiry Phone Number:  Fail Case Update on Summary Add
+15:20:38.689 [main] INFO  utilities.UtilityCustomFunctions - Actual: Ordinary Expected: Ordinary Summary Enquiry Category:  Fail Case Update on Summary Add
+15:20:40.009 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 9876543210 Expected: +91 9876543210 Summary Lead PhoneNumber:  Fail Case Update on Summary Add
+15:20:41.360 [main] INFO  utilities.UtilityCustomFunctions - Actual: FailureDefaultLead@gmail.com Expected: FailureDefaultLead@gmail.com Summary Lead Email:  Fail Case Update on Summary Add
+15:20:42.749 [main] INFO  utilities.UtilityCustomFunctions - Actual: Lead About Failure Entity Expected: Lead About Failure Entity Summary Lead Text:  Fail Case Update on Summary Add
+15:20:44.099 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 9876543210 Expected: +60 9876543210 Summary Sales PhoneNumber:  Fail Case Update on Summary Add
+15:20:45.429 [main] INFO  utilities.UtilityCustomFunctions - Actual: FailureDefaultSales@gmail.com Expected: FailureDefaultSales@gmail.com Summary Sales Email:  Fail Case Update on Summary Add
+15:20:47.552 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+15:20:50.746 [main] INFO  utilities.UtilityCustomFunctions - Actual: Sudhakar VE Expected: Rsoft IT Detail View AssignedTo:  Fail Case Update on Summary Add
+15:20:52.085 [main] INFO  utilities.UtilityCustomFunctions - Actual: DefaultFailureText Expected: DefaultFailureText Detail View Text:  Fail Case Update on Summary Add
+15:20:53.459 [main] INFO  utilities.UtilityCustomFunctions - Actual: +65 1234567890 Expected: +65 1234567890 Detail View Mobile Number:  Fail Case Update on Summary Add
+15:20:54.813 [main] INFO  utilities.UtilityCustomFunctions - Actual: DefaultFail@rsoft.in Expected: DefaultFail@rsoft.in Detail View Email :  Fail Case Update on Summary Add
+15:20:56.169 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2 Expected: 2 Detail View PicListValue :  Fail Case Update on Summary Add
+15:20:57.495 [main] INFO  utilities.UtilityCustomFunctions - Actual: three Expected: four Detail View MuultiCombo Values :  Fail Case Update on Summary Add
+15:20:58.850 [main] INFO  utilities.UtilityCustomFunctions - Actual: Perambalur Expected: Perambalur Detail View City:  Fail Case Update on Summary Add
+15:21:00.163 [main] INFO  utilities.UtilityCustomFunctions - Actual: West Bengal Expected: West Bengal Detail View Stat:  Fail Case Update on Summary Add
+15:21:01.560 [main] INFO  utilities.UtilityCustomFunctions - Actual: India Expected: India Detail View Country:  Fail Case Update on Summary Add
+15:21:02.885 [main] INFO  utilities.UtilityCustomFunctions - Actual: Yes Expected: Yes Detail View CheckBox:  Fail Case Update on Summary Add
+15:21:04.231 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-03-23 Expected: 2024-03-23 Detail View Date:  Fail Case Update on Summary Add
+15:21:05.550 [main] INFO  utilities.UtilityCustomFunctions - Actual: 03:30:20 PM Expected: 03:30:20 PM Detail View Time:  Fail Case Update on Summary Add
+15:21:06.899 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-03-23 03:35:46 PM Expected: 2024-03-23 03:35:46 PM Detail View Date & Time :  Fail Case Update on Summary Add
+15:21:08.251 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text Expected: Default Text Detail View Related Module :  Fail Case Update on Summary Add
+15:21:09.645 [main] INFO  utilities.UtilityCustomFunctions - Actual: annie-spratt Expected: annie-spratt Detail View File Upload :  Fail Case Update on Summary Add
+15:21:10.985 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mr. SpielBerg Expected: Mr. SpielBerg Detail View Name:  Fail Case Update on Summary Add
+15:21:12.329 [main] INFO  utilities.UtilityCustomFunctions - Actual: 22222222222 Expected: 22222222222 Detail View Number:  Fail Case Update on Summary Add
+15:21:13.694 [main] INFO  utilities.UtilityCustomFunctions - Actual: 1000 Expected: 5000 Detail View Currency:  Fail Case Update on Summary Add
+15:21:14.959 [main] INFO  utilities.UtilityCustomFunctions - Actual: https://nodejs.org/en Expected: https://nodejs.org/en Detail View Url:  Fail Case Update on Summary Add
+15:21:22.667 [main] INFO  utilities.UtilityCustomFunctions - Actual: Prof. Christopher Expected: Prof. Christopher Detail View Enquiry Name:  Fail Case Update on Summary Add
+15:21:23.999 [main] INFO  utilities.UtilityCustomFunctions - Actual: FailureEnquiry@gmail.com Expected: FailureEnquiry@gmail.com Detail View Enquiry Email:  Fail Case Update on Summary Add
+15:21:25.339 [main] INFO  utilities.UtilityCustomFunctions - Actual: Enquiry about Failure Entity Expected: Enquiry about Failure Entity Detail View Enquiry Text:  Fail Case Update on Summary Add
+15:21:26.649 [main] INFO  utilities.UtilityCustomFunctions - Actual: Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops Expected: Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops Detail View Enquiry Text Area:  Fail Case Update on Summary Add
+15:21:27.979 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-03-23 Expected: 2024-03-23 Detail View Enquiry Date:  Fail Case Update on Summary Add
+15:21:29.304 [main] INFO  utilities.UtilityCustomFunctions - Actual: +44 9876543210 Expected: +44 9876543210 Detail View Enquiry Phone Number:  Fail Case Update on Summary Add
+15:21:30.639 [main] INFO  utilities.UtilityCustomFunctions - Actual: Ordinary Expected: Ordinary Detail View Enquiry Category:  Fail Case Update on Summary Add
+15:21:38.269 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 9876543210 Expected: +91 9876543210 DT Lead Mobile Number:  Fail Case Update on Summary Add
+15:21:39.629 [main] INFO  utilities.UtilityCustomFunctions - Actual: FailureDefaultLead@gmail.com Expected: FailureDefaultLead@gmail.com DT View Lead Email  Fail Case Update on Summary Add
+15:21:41.019 [main] INFO  utilities.UtilityCustomFunctions - Actual: Lead About Failure Entity Expected: Lead About Failure Entity DT View Lead Text Fail Case Update on Summary Add
+15:21:42.384 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 9876543210 Expected: +60 9876543210 DT Sales Mobile Number:  Fail Case Update on Summary Add
+15:21:43.729 [main] INFO  utilities.UtilityCustomFunctions - Actual: FailureDefaultSales@gmail.com Expected: FailureDefaultSales@gmail.com DT View Sales EmailFail Case Update on Summary Add
+15:21:46.279 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+15:21:46.279 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.362 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+15:21:46.362 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.429 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+15:21:46.429 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.499 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+15:21:46.499 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.569 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+15:21:46.569 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.629 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+15:21:46.629 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.699 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+15:21:46.699 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.769 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+15:21:46.769 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.844 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+15:21:46.844 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.899 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+15:21:46.899 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:46.989 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+15:21:46.989 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.049 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+15:21:47.049 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.119 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+15:21:47.119 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.189 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+15:21:47.189 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.249 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+15:21:47.249 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.311 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+15:21:47.311 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.369 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+15:21:47.369 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.439 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+15:21:47.439 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.499 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+15:21:47.499 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.560 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+15:21:47.560 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.627 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+15:21:47.627 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.689 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+15:21:47.689 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.829 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+15:21:47.829 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.889 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: Testing One
+15:21:47.889 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:47.961 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: Vinodh Sub Module
+15:21:47.961 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.019 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: Vinodh Testing
+15:21:48.019 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.082 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:27is: Ash One
+15:21:48.082 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.139 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:28is: Ash tow
+15:21:48.139 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.199 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:29is: CreateEntityTarget
+15:21:48.199 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.263 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:30is: CreateEntitySource
+15:21:48.263 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.329 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:31is: CESourceDupPrev
+15:21:48.329 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:21:48.399 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:32is: CETargetDupPrev
+15:21:48.399 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:22:00.353 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id:101889
+15:55:20.517 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Creation
+15:55:20.532 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Created
+15:55:25.405 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Node Created
+15:55:25.406 [main] INFO  utilities.UtilityCustomFunctions - ******TC016_CreateEntity_OOFS_FailureUpdate****
+15:55:25.406 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Test Execution on Browser: chrome
+15:55:25.406 [main] INFO  utilities.UtilityCustomFunctions - Browser:chrome
+15:55:25.413 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+15:55:27.017 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Row Count is: 1
+15:55:27.250 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Col Count is: 54
+15:55:35.741 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+15:55:37.643 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
+15:55:39.618 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+15:55:45.969 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - CRM Login Success with:Sudhakar
+15:55:45.969 [main] INFO  utilities.UtilityCustomFunctions - Actual: Login Success Expected: Login Success User: Sudhakar
+15:55:52.975 [main] INFO  utilities.UtilityCustomFunctions - Navigate Module:CESourceDupPrev
+15:55:52.988 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Avatar
+15:55:55.646 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Menu CRM Setting
+15:55:55.977 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Menu Other Setting
+15:55:58.779 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Menu Item Workflow
+15:55:59.184 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Workflow from Combox Box List
+15:56:01.189 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Item to be selected:  CESourceDupPrev Workflow
+15:56:08.382 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [CESourceDupPrev Workflow] is selected in List
+15:56:08.382 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Item selected in combox Box  CESourceDupPrev Workflow
+15:56:09.390 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Selected Module to View its Workflows
+15:56:09.390 [main] INFO  utilities.UtilityCustomFunctions - Exp Module Name:wfCreateEntity_OOFS_FailCaseUpdate
+15:56:09.390 [main] INFO  utilities.UtilityCustomFunctions - Execution Condition:Only on the first save
+15:56:09.427 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Current Workflow Row item: 1
+15:56:09.504 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Current style of Worflow Status Element captured
+15:56:09.504 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Workflow status: of row item: 1 true
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Actual Module Name:  CESourceDupPrev
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Actual Workflow Name:  wfCreateEntity_OOFS_FailCaseUpdate
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Actual Exec Condition Name:  Only on the first save
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Module,workflow,condition matches
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - bCurrentWFStatus: true
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - wfCreateEntity_OOFS_FailCaseUpdateWorkflow enabled
+15:56:09.570 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_OOFS_FailCaseUpdateDisabled Workflow Manually Enabled
+15:56:09.570 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - true:1
+15:56:09.570 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:1
+15:56:21.860 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Work flow clicked
+15:56:27.079 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Cliked Step 1 Next Button to Condition Page
+15:56:32.152 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Cliked Step 2 Next Button to Task List Page
+15:56:33.157 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Workflow and Navigated to Task Page
+15:56:33.178 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Number of Tasks Listed for this Workflow: wfCreateEntity_OOFS_FailCaseUpdate : 1
+15:56:33.222 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+15:56:33.439 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Create Entity - CETargetDupPrev
+15:56:33.439 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCreateEntity_FailCaseUpdate
+15:56:33.439 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Action Type and Action Tile matches and also Task Button Enabled
+15:56:34.441 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+15:56:37.496 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Clicked Workflow and Navigated to Task Page
+15:56:37.497 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Task Active Create Entity - CETargetDupPrev  tskCreateEntity_FailCaseUpdate
+15:56:38.781 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
+15:56:41.019 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+15:56:41.019 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.091 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+15:56:41.091 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.175 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+15:56:41.175 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.231 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+15:56:41.231 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.304 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+15:56:41.304 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.376 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+15:56:41.376 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.449 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+15:56:41.449 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.579 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+15:56:41.579 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.649 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+15:56:41.649 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.710 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+15:56:41.710 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.783 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+15:56:41.783 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.879 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+15:56:41.879 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:41.964 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+15:56:41.964 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.049 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+15:56:42.049 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.128 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+15:56:42.128 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.193 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+15:56:42.193 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.260 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+15:56:42.260 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.324 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+15:56:42.324 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.391 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+15:56:42.391 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.459 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+15:56:42.459 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.554 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+15:56:42.554 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.668 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+15:56:42.668 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.732 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+15:56:42.732 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.798 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: Testing One
+15:56:42.798 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.876 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: Vinodh Sub Module
+15:56:42.876 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:42.948 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: Vinodh Testing
+15:56:42.948 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:43.025 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:27is: Ash One
+15:56:43.025 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:43.092 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:28is: Ash tow
+15:56:43.092 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:43.159 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:29is: CreateEntityTarget
+15:56:43.159 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:43.229 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:30is: CreateEntitySource
+15:56:43.229 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:56:43.299 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:31is: CESourceDupPrev
+15:56:43.299 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:02.543 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+15:57:02.543 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:02.609 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+15:57:02.609 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:02.692 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+15:57:02.692 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:02.975 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+15:57:02.975 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.074 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+15:57:03.075 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.141 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+15:57:03.141 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.218 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+15:57:03.218 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.294 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+15:57:03.294 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.378 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+15:57:03.378 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.448 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+15:57:03.448 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.508 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+15:57:03.508 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.579 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+15:57:03.579 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.659 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+15:57:03.659 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.729 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+15:57:03.729 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.809 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+15:57:03.809 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.891 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+15:57:03.891 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:03.978 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+15:57:03.978 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.059 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+15:57:04.059 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.141 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+15:57:04.141 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.199 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+15:57:04.199 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.259 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+15:57:04.259 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.341 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+15:57:04.341 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.409 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+15:57:04.409 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.479 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: Testing One
+15:57:04.479 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.543 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: Vinodh Sub Module
+15:57:04.543 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.608 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: Vinodh Testing
+15:57:04.608 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.669 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:27is: Ash One
+15:57:04.673 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.741 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:28is: Ash tow
+15:57:04.741 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.807 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:29is: CreateEntityTarget
+15:57:04.807 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.873 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:30is: CreateEntitySource
+15:57:04.873 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.929 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:31is: CESourceDupPrev
+15:57:04.929 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:04.999 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:32is: CETargetDupPrev
+15:57:04.999 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CETargetDupPrev
+15:57:21.069 [main] INFO  utilities.UtilityCustomFunctions - Captured the Target & Source Latest Record Ids
+15:57:21.074 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id:101901
+15:57:21.074 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:101889
+15:57:25.359 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Calls
+15:57:25.359 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.440 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+15:57:25.440 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.519 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: Tickets
+15:57:25.519 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.610 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: ENQUIRY MODULE
+15:57:25.610 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.675 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: LEAD MODULE
+15:57:25.675 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.748 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: OPPORTUNITY MODULE
+15:57:25.748 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.824 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PRIYAN TM ONE
+15:57:25.829 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.909 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: PRIYAN TM TWO
+15:57:25.909 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:25.988 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: PICKLIST TEST ONE
+15:57:25.988 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.060 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: IVR Providers
+15:57:26.060 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.148 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: PDF Makers
+15:57:26.148 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.248 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: Chats
+15:57:26.248 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.348 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: PRODUCTS
+15:57:26.348 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.441 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Email Templates
+15:57:26.441 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.509 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: SMS Templates
+15:57:26.509 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.573 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: WhatsApp Templates
+15:57:26.573 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.640 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Emails
+15:57:26.640 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.708 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: SMS Notifiers
+15:57:26.708 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.773 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Notifications
+15:57:26.773 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.828 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Documents
+15:57:26.828 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.889 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: Mail Manager
+15:57:26.889 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:26.958 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: Track Locations
+15:57:26.958 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.018 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: Attendances
+15:57:27.018 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.080 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: Testing One
+15:57:27.080 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.148 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: Vinodh Sub Module
+15:57:27.148 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.213 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: Vinodh Testing
+15:57:27.213 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.280 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:27is: Ash One
+15:57:27.280 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.342 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:28is: Ash tow
+15:57:27.342 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.408 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:29is: CreateEntityTarget
+15:57:27.408 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.468 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:30is: CreateEntitySource
+15:57:27.468 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:27.539 [main] INFO  utilities.UtilityCustomFunctions - Actual List Item:31is: CESourceDupPrev
+15:57:27.539 [main] INFO  utilities.UtilityCustomFunctions - Expected List Item:CESourceDupPrev
+15:57:31.401 [main] INFO  utilities.UtilityCustomFunctions - Click Source Module:CESourceDupPrev
+15:57:34.767 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:CESourceDupPrev
+15:57:36.776 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Excel file Utility instance created
+15:57:36.886 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Row Count is: 1
+15:57:36.980 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Col Count is: 54
+15:57:36.980 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - Extracting DataSheet Values started...
+15:57:39.648 [main] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+15:57:40.598 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+15:57:43.823 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+15:57:49.219 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [Sudhakar VE] is selected in List
+15:57:49.219 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+15:57:50.879 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+15:57:50.893 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+15:57:52.092 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+15:57:55.476 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [+65] is selected in List
+15:57:55.476 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
+15:57:57.209 [main] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
+15:57:59.793 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+15:58:00.804 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+15:58:01.923 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+15:58:03.060 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+15:58:30.839 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+15:58:32.029 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+15:58:35.631 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [Kanchipuram] is selected in List
+15:58:35.631 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+15:58:36.834 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+15:58:40.961 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [Tamilnadu] is selected in List
+15:58:40.961 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+15:58:42.119 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+15:58:45.499 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [India] is selected in List
+15:58:45.499 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+15:58:46.651 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+15:58:46.812 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+15:58:49.822 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+15:58:51.063 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+15:58:52.232 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+15:58:55.237 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+15:59:05.724 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+15:59:07.036 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+15:59:12.038 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+15:59:15.305 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+15:59:15.499 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+15:59:17.937 [main] INFO  utilities.UtilityCustomFunctions - Default Text entered in  input
+15:59:32.690 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [Mrs.] is selected in List
+15:59:34.129 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+15:59:35.678 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+15:59:37.148 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+15:59:38.809 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+15:59:42.369 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [Dr.] is selected in List
+15:59:43.899 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+15:59:45.729 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+15:59:47.447 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+15:59:47.459 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+15:59:50.094 [main] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" entered in  textarea
+15:59:53.335 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+15:59:59.374 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [+60] is selected in List
+16:00:02.140 [main] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
+16:00:05.339 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+16:00:08.769 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [Urgent] is selected in List
+16:00:15.308 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [+91] is selected in List
+16:00:18.122 [main] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
+16:00:19.873 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+16:00:21.539 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+16:00:26.088 [main] INFO  testCases.TC016_CreateEntity_OOFS_FailureUpdate - [+60] is selected in List

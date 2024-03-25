@@ -12,28 +12,29 @@ import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.SummaryViewPage;
 import testBase.BaseClass;
 import utilities.CRMReUsables;
 import utilities.ExcelUtility;
 import utilities.UtilityCustomFunctions;
 
-public class TC014_CreateEntity_DefaultValues extends BaseClass{
+public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 	@BeforeTest()
 	public void CreateTest() {
 		UtilityCustomFunctions.logWriteConsole("Extent Test Creation");
-		test = extent.createTest("CreateEntity_DefaultValues");
+		test = extent.createTest("CreateEntity_OOFS_FailureUpdate");
 		UtilityCustomFunctions.logWriteConsole("Extent Test Created");
 	}
+	
 	@Test
-	public void testCreateEntity_DefaultValues_OOF_S() throws Exception {
-		node = test.createNode("CreateEntity_OOF_S_DefaultValues");
+	public void testCreateEntity_OOFS_FailureUpdate() throws Exception {
+		node = test.createNode("CreateEntity_OOFS_FailureUpdate");
 		UtilityCustomFunctions.logWriteConsole("Extent Test Node Created");
-		
-		logger.info("******starting TC014_CreateEntity_DefaultValues ****");
+		UtilityCustomFunctions.logWriteConsole("******TC016_CreateEntity_OOFS_FailureUpdate****");
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		UtilityCustomFunctions.logWriteConsole("Browser:" + sBrowserName);
-		String sPath=".\\testData\\CreateEntity\\" + "CreateEntity_DefaultValues" + "_Test.xlsx";
+		String sPath=".\\testData\\CreateEntity\\" + "CreateEntity_OOFS_FailureUpdate" + "_Test.xlsx";
 		
 		ExcelUtility xlObj = new ExcelUtility(sPath);
 		UtilityCustomFunctions.logWriteConsole("Excel file Utility instance created");
@@ -42,7 +43,6 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		System.out.println("Total rows: " + iRowCount);
 		logger.info("Row Count is: " + iRowCount);
 		
-	
 		int iColCount = xlObj.getCellCount("Sheet1", iRowCount);
 		System.out.println("Cols: " + iColCount);
 		logger.info("Col Count is: " + iColCount);
@@ -52,56 +52,14 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		String sExpTrgModuleName = xlObj.getCellData("Sheet1", 1, 1);
 		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 2);
 		
-//		String sExpAssignedTo = xlObj.getCellData("Sheet1", 1, 3);
-		String sText=xlObj.getCellData("Sheet1", 1, 4);
-		String sMobNumPrefix=xlObj.getCellData("Sheet1", 1, 5);
-		String sMobileNumber=xlObj.getCellData("Sheet1", 1, 6);
-		String sEmail=xlObj.getCellData("Sheet1", 1, 7);
-		String sPickListValue=xlObj.getCellData("Sheet1", 1, 8);
-		String sMultiComboValues=xlObj.getCellData("Sheet1", 1, 9);
-		String sCity=xlObj.getCellData("Sheet1", 1, 10);
-		String sState=xlObj.getCellData("Sheet1", 1, 11);
-		String sCountry=xlObj.getCellData("Sheet1", 1, 12);
-		String sCheckBox=xlObj.getCellData("Sheet1", 1, 13);
-		String sDate =xlObj.getCellData("Sheet1", 1, 14);
-		String sTime =xlObj.getCellData("Sheet1", 1, 15);
-		String sDateandTime =xlObj.getCellData("Sheet1", 1, 16);
-		String sRelatedModule =xlObj.getCellData("Sheet1", 1, 17);
-		String sFilePath =xlObj.getCellData("Sheet1", 1, 18);
-		String sNamePrefix =xlObj.getCellData("Sheet1", 1, 19);
-		String sName=xlObj.getCellData("Sheet1", 1, 20);
-		String sNumber=xlObj.getCellData("Sheet1", 1, 21);
-		String sCurrency=xlObj.getCellData("Sheet1", 1, 22);
-		String sUrl=xlObj.getCellData("Sheet1", 1, 23);
-		String sEnq_Name_Prefix=xlObj.getCellData("Sheet1", 1, 24);
-		String sEnquiry_Name=xlObj.getCellData("Sheet1", 1, 25);
-		String sEnquiry_Email=xlObj.getCellData("Sheet1", 1, 26);
-		String sEnquiry_Text=xlObj.getCellData("Sheet1", 1, 27);
-		String sEnquiry_TextArea=xlObj.getCellData("Sheet1", 1, 28);
-		String sEnquiry_Date=xlObj.getCellData("Sheet1", 1, 29);
-		String sEnquiry_PN_Prefix=xlObj.getCellData("Sheet1", 1, 30);
-		String sEnquiry_PhoneNumber=xlObj.getCellData("Sheet1", 1, 31);
-		String sEnquiry_Category=xlObj.getCellData("Sheet1", 1, 32);
 		String sExecutionCondition=xlObj.getCellData("Sheet1", 1, 33);
 		String sActionType=xlObj.getCellData("Sheet1", 1, 34);
 		String sActionTitle=xlObj.getCellData("Sheet1", 1, 35);
 		String sWorkFlowPos=xlObj.getCellData("Sheet1", 1, 36);
-		String sUser1MessageId=xlObj.getCellData("Sheet1", 1, 37);
-		String sUser2MessageId=xlObj.getCellData("Sheet1", 1, 38);
-		String sUser3MessageId=xlObj.getCellData("Sheet1", 1, 39);
-		String sUser1RecordId=xlObj.getCellData("Sheet1", 1, 40);
-		String sUser2RecordId=xlObj.getCellData("Sheet1", 1, 41);
-		String sUser3RecordId=xlObj.getCellData("Sheet1", 1, 42);
+		
 		String sDisplayMod1=xlObj.getCellData("Sheet1", 1, 43);
 		String sDisplayMod2=xlObj.getCellData("Sheet1", 1, 44);
 		String sEditIndText=xlObj.getCellData("Sheet1", 1, 45);
-		String sLead_PN_Prefix=xlObj.getCellData("Sheet1", 1, 46);
-		String sLead_PN=xlObj.getCellData("Sheet1", 1, 47);
-		String sLead_Email=xlObj.getCellData("Sheet1", 1, 48);
-		String sLead_Text=xlObj.getCellData("Sheet1", 1, 49);
-		String sSales_PN_Prefix=xlObj.getCellData("Sheet1", 1, 50);
-		String sSales_PN=xlObj.getCellData("Sheet1", 1, 51);
-		String sSales_Email=xlObj.getCellData("Sheet1", 1, 52);
 		
 		LoginPage objLP = new LoginPage(driver);
 		HomePage objHP = new HomePage(driver);
@@ -110,6 +68,7 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		CRMReUsables objCRMRs = new CRMReUsables();
 		DetailViewPage objDVP = new DetailViewPage(driver);
+		SummaryViewPage objSVP = new SummaryViewPage(driver);
 		driver.get(rb.getString("appURL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
@@ -117,11 +76,6 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		String sUserName =  rb.getString("userName1");
 		String sPassword =  rb.getString("passWord1");
 		String sAssignedTo = rb.getString("AssignedTo1");
-		
-		Thread.sleep(3000);
-		String sFullMobileNumber = sMobNumPrefix + " " + sMobileNumber;  
-		String sFullEnquiry_PhoneNumber = sEnquiry_PN_Prefix + sEnquiry_PhoneNumber; 
-		String sFullLead_PN = sLead_PN_Prefix+ " " + sLead_PN; 
 		
 		Thread.sleep(1000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -193,11 +147,26 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 				
 			}
 		}//If
+		UtilityCustomFunctions.logWriteConsole("Capture Initial Record Id for Source & Target Started");
+		objALP.clickAllList();
+		Thread.sleep(2000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		objCRMRs.fClickFirstRecord();
+		int iOldSrcRecId= objCRMRs.getLastRecordId();
+		Thread.sleep(5000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		int iTarRecId = objCRMRs.getLastRecordId();
-		UtilityCustomFunctions.logWriteConsole("Captured the Targer last record:"+iTarRecId);
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		int iOldTrgRecId= objCRMRs.getLastRecordId();
+		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
+		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
+		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		
+		//Add New Module Data
+		//Navigate to Source Module
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -207,83 +176,146 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		objEDT.clickModule(sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sDisplayMod1);
 		Thread.sleep(2000);
-		
-		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_DefaultValues_","Sheet1");
+//		objCRMRs.fClickFirstRecord();
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet1");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
-		Thread.sleep(5000);
-		objALP.clickAllList();
-		UtilityCustomFunctions.logWriteConsole("All Menu Items Clicked");
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
-		int iTarAfterNewRec = objCRMRs.getLastRecordId();
-		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
-		if(iTarRecId == iTarAfterNewRec) {
-			freport("Target Entity Not Created after New source data added", "fail", node);
+//		Thread.sleep(10000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		//Capture Record Ids
+		int iCurrSrcRecId= objCRMRs.getLastRecordId();
+		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
+		//Source Update Validation
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Source update on Create Entity Failure ", "fail", node);
 		}
 		else {
-			freport("Target Entity Created after Source Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Default Values","No",node);
+			freport("Source update on Create Entity Failure ", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Failure Update Add New Record","No",node);
 		}
-		UtilityCustomFunctions.logWriteConsole("Created Entity Validation in Target Module Done");
-		Thread.sleep(3000);
-		//Summary Add
-		UtilityCustomFunctions.logWriteConsole("Summary Add Entity");
+		
+		//get Target LastRecordId
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		int iCurrTrgRecId = objCRMRs.getLastRecordId();
+		
+		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created due to duplicate prevention in Target", "pass", node);
+		}
+		else {
+			freport("Target Entity Created even when duplicate prevention exist", "fail", node);
+		}
+		
+		//Summary Add Record
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		UtilityCustomFunctions.logWriteConsole("Navigate to Source Summary Page");
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
-		//Summary Add Mandatory values.
-		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_DefaultValues_","Sheet1");
-		
+		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet2");
 		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
+//		Thread.sleep(10000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(1000);
+		objSVP.fWaitTillControlVisible();
+		
+		//Capture Record Ids
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
+		//Source Update Validation
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Summary Add on Source in Create Entity Failure ", "fail", node);
+		}
+		else {
+			freport("Summary Add on Source in Create Entity Failure ", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Fail Case Update on Summary Add","No",node);
+		}
+		
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
-		if(iTarAfterNewRec == iTarAftSummaryAdd) {
-			freport("Target Entity Not Created for Summary Add", "fail", node);
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created after Summary data added", "pass", node);
 		}
 		else {
-			freport("Target Entity Created after Summary Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Default Values","No",node);
-			UtilityCustomFunctions.logWriteConsole("Created Entity after Summary Add is Done");
+			freport("Target Entity Created after Summary data Added", "fail", node);
 		}
 		
-		//Duplicate Entity Validation
+		//**************** Duplicate Record Validation **************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
 		Thread.sleep(5000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+		
+		//Source Failure case Update While Duplicate Record Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Failure Case in Duplicate Record", "fail", node);
+		}
+		else {
+			freport("Update on Failure Case in Duplicate Record", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Duplicate Failure Update Case ","No",node);
+		}
+		
+		//Target Entity Validation
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		int iTarAftDuplicate = objCRMRs.getLastRecordId();
-		if(iTarAftSummaryAdd== iTarAftDuplicate) {
-			freport("Target Entity Not Created for Duplicate Record", "fail", node);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity on Fail Case: OldRecordId: " + iOldTrgRecId + "Current Target RecId: " + iCurrTrgRecId, "pass", node);
 		}
 		else {
-			freport("Target Entity Created after Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Default Values","No",node);
-			UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
+			freport("Target Entity on Fail Case: OldRecordId: " + iOldTrgRecId + "Current Target RecId: " + iCurrTrgRecId, "fail", node);
 		}
 		
-		//Edit Source Module Validation
+		//************** Edit & Save *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -294,24 +326,44 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
 		Thread.sleep(6000);
-		Thread.sleep(1000);
 		System.out.println("Before Edit button clicked in summary view");
 		objCMD.clickEdit();
  		Thread.sleep(6000);
 		objCMD.clickSave();
 		Thread.sleep(3000);
+		
+		//Source Failure case Update While Edit & Save Record Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Failure Case in Edit & Save Record", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node);
+		}
+		else {
+			freport("Update on Failure Case in Edit & Save Record", "fail", node);
+			
+		}
+		
+		//Target Entity Validation
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		int iTarAftFullEdit = objCRMRs.getLastRecordId();
-		if(iTarAftDuplicate== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit", "pass", node);
-		}else {
-			freport("Target Entity Created for Edit source", "fail", node);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+				
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created while Edit & Save Record", "pass", node);
 		}
-		//Edit Single Line Summary
+		else {
+			freport("Target Entity Not Created while Edit & Save Record", "fail", node);
+		}
+		
+		//************** Single Line Summary Edit *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -329,19 +381,36 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
 		objDVP.clickRecItemSave();
 		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Update on Failure Case in Single Line Edit Record", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node);
+		}
+		else {
+			freport("Update on Failure Case in Single Line Edit Record", "fail", node);
+			
+		}
+				
+		//Target Entity Validation
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
-		if(iTarAftSingleLineEdit== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit", "pass", node);
-		}else {
-			freport("Target Entity Created for Edit source", "fail", node);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+				
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created while Single Line Edit Record", "pass", node);
 		}
-		
-	}//test
+		else {
+			freport("Target Entity Not Created while Single Line Edit Record", "fail", node);
+		}
+	}
 	
-}//class
+}

@@ -146,10 +146,5 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>eCommWebHybridFramework</groupId>
-			<artifactId>eCommWebHybridFramework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
   </dependencies>
 </project>

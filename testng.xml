@@ -8,8 +8,12 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
+	  
+	  <class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
+	  
 	  <!--
+	  <class name="testCases.TC013_CreateEntity_OOF_S_NewValues"/>
+	  <class name="testCases.TC014_CreateEntity_DefaultValues"/>
 	  <class name="testCases.TC004_WF4_Send_SMS_OOF_S"/>
 	  <class name="testCases.TC012_WF6_SN_Yearly"/>
       <class name="testCases.TC005_WF5_Send_SMS_ETR_S"/>

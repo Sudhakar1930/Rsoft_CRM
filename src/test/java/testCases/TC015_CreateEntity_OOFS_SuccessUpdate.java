@@ -411,6 +411,8 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
 		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
 		objDVP.clickEditRecordItem();
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
