@@ -10,6 +10,7 @@ import pageObjects.AllListPage;
 import pageObjects.DetailViewPage;
 import pageObjects.LoginPage;
 import pageObjects.SMSNotifiers;
+import pageObjects.SummaryViewPage;
 import testBase.BaseClass;
 import utilities.CRMReUsables;
 import utilities.UtilityCustomFunctions;
@@ -28,8 +29,8 @@ public class CheckObjonPage extends BaseClass {
 	
 	
 	
-	String sAppUrl = "https://rdot.in/public/admin?Module=Crmmodonlyonfirstsave&view=Detail&record=97660&Related=Summary";
-	driver.get("https://rdot.in/public/login");
+	String sAppUrl = "https://rdot.in/public/admin?Module=Cesourcedupprev&Related=Summary&record=101914&view=Detail";
+	driver.get(sAppUrl);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));		
 	System.out.println("AppURL:" + sAppUrl);
 	String sCompName =  rb.getString("companyName");
@@ -37,6 +38,8 @@ public class CheckObjonPage extends BaseClass {
 	String sPassword =  rb.getString("passWord1");
 	String sAssignedTo = rb.getString("AssignedTo1");
 	
+	
+	SummaryViewPage objSVP = new SummaryViewPage(driver);
 	AllListPage objALP = new AllListPage(driver);
 	DetailViewPage objDVP = new DetailViewPage(driver);
 	LoginPage objLP = new LoginPage(driver);
@@ -49,26 +52,7 @@ public class CheckObjonPage extends BaseClass {
 	objLP.clickLoginSubmit();
 	Thread.sleep(3000);
 	Thread.sleep(2000);
-	objALP.clickAllList();
-	Thread.sleep(1000);
-	objALP.clickModuleOnListAll(driver, "CRMNotification");
-	Thread.sleep(2000);
-	objCRS.fClickFirstRecord();
-	Thread.sleep(2000);
-	objDVP.fdefaultToggleStatus();
-	Thread.sleep(1000);
-	objDVP.fSetToggleHeader(true);
-	Thread.sleep(1000);
-	objDVP.fSetDetailVew(true);
-	Thread.sleep(1000);
-	objDVP.fdefaultToggleStatus();
-	Thread.sleep(3000);
-	objDVP.fClickDetailBlockB();
-	System.out.println("B Clicked");
-	Thread.sleep(3000);
-	objDVP.fClickDetailBlockC();
-	System.out.println("C Clicked");
-	
+	objSVP.clickEditCheckBox(1);
 //	 if(objLP.isLoginPageDisplayed(sAppUrl)) {
 //		objLP.setCompanyName(sCompName);
 //		objLP.setUserName(sUserName);

@@ -292,7 +292,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		}
 		else {
 			freport("Update on Failure Case in Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Duplicate Failure Update Case ","No",node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Duplicate Failure Update Case ","No",node);
 		}
 		
 		//Target Entity Validation
@@ -336,7 +336,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		if(iOldSrcRecId==iCurrSrcRecId) {
 			freport("Update on Failure Case in Edit & Save Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node);
 		}
 		else {
 			freport("Update on Failure Case in Edit & Save Record", "fail", node);
@@ -376,10 +376,14 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
-		objDVP.clickEditRecordItem();
+		objSVP.fWaitTillControlVisible();
+//		objDVP.clickEditRecordItem();
+		objSVP.clickEditCheckBox(1);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
+		Thread.sleep(1000);
 		objDVP.clickRecItemSave();
+		Thread.sleep(1000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -388,7 +392,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		if(iOldSrcRecId==iCurrSrcRecId) {
 			freport("Update on Failure Case in Single Line Edit Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node);
 		}
 		else {
 			freport("Update on Failure Case in Single Line Edit Record", "fail", node);
