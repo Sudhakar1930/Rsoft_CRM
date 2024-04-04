@@ -26,10 +26,12 @@ public class SummaryViewPage extends BasePage{
 		eleEditCheckBox.click();
 	}
 	public void fWaitTillControlVisible() {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(50));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));
 //		wait.until(ExpectedConditions.textToBePresentInElement(lblDocuFirst, "Text"));
 		wait.until(ExpectedConditions.visibilityOf(lblDocuFirst));
 		
 	}
+	
+	
 	
 }

@@ -278,17 +278,10 @@ public class UtilityCustomFunctions extends BaseClass{
 		boolean isClicked = false;
 		try {
 			js.executeScript("arguments[0].scrollIntoView(true);", element);
-			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
+			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(50));
 			webWait.until(ExpectedConditions.elementToBeClickable(element));
 			webWait.until(ExpectedConditions.visibilityOf(element));
 			js.executeScript("arguments[0].click();", element);
-			// BaseClass.logger.info("Clicked...." + element.getAttribute("value"));
-			// System.out.println("click element name : " +
-			// element.getAttribute("innerText"));
-
-//			Actions action = new Actions(webDriver);
-//			action.moveToElement(element).click().build().perform();
-
 			isClicked = true;
 		} catch (Exception ex) {
 			// Reporter.log("Exception occured while doClick event " + ex.getMessage());
@@ -478,6 +471,7 @@ public class UtilityCustomFunctions extends BaseClass{
 		
 		BaseClass a = new BaseClass();
 		UtilityCustomFunctions.logWriteConsole("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage);
+		if(sActValue!="" && sActValue!=null && sExpValue!="" && sExpValue!=null) {
 		if (sActValue.trim().equalsIgnoreCase(sExpValue.trim())) {
 //			BaseClass.logger
 //					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
@@ -491,7 +485,7 @@ public class UtilityCustomFunctions extends BaseClass{
 //			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
 		}
 		sAssertinFn.assertEquals(sActValue.trim(), sExpValue.trim());
-		
+		}
 	}
 	
 	

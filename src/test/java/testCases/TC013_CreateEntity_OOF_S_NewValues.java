@@ -13,6 +13,7 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
 import pageObjects.SMSNotifiers;
+import pageObjects.SummaryViewPage;
 import utilities.CRMReUsables;
 import utilities.ExcelUtility;
 import utilities.UtilityCustomFunctions;
@@ -146,6 +147,7 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		CRMReUsables objCRMRs = new CRMReUsables();
 		DetailViewPage objDVP = new DetailViewPage(driver);
+		SummaryViewPage objSVP = new SummaryViewPage(driver);
 		driver.get(rb.getString("appURL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
@@ -188,46 +190,51 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 			System.out.println("Home Page Not Displayed");
 			Assert.fail("Home Page Not Displayed");
 		}//avatar displayed.
-//		Thread.sleep(1000);
-//		objCRMRs.fNavigatetoWorkflow(sDisplayMod1);
-//		String sWorkFlowStatus="";
-//		
-//		
-//		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayMod1, sExpWorkFlowName, sExecutionCondition);
-//		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
-//		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
-//		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
-//		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
-//			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
-//			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
-//			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
-//			
-//		}
-//		else {
-//			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
-//			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
-//			logger.info("Clicked Workflow and Navigated to Task Page");
-//			System.out.println("Clicked Workflow and Navigated to Task Page");
-//			
-//			if(bTaskStatus==false) {
-//				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
-//				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
-//				
-//			}
-//			else {
-//				logger.info("Task Active " + sActionType + "  " + sActionTitle);
-//				freport("Task Active " + sActionType + "  " + sActionTitle, "pass",node);
-//				
-//			}
-//		}//If
+		Thread.sleep(1000);
+		objCRMRs.fNavigatetoWorkflow(sDisplayMod1);
+		String sWorkFlowStatus="";
+		
+		UtilityCustomFunctions.logWriteConsole("Exp Module Name:" + sExpWorkFlowName);
+		UtilityCustomFunctions.logWriteConsole("Execution Condition:" + sExecutionCondition);
+		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayMod1, sExpWorkFlowName, sExecutionCondition);
+		UtilityCustomFunctions.logWriteConsole("Current Workflow status:" + sWorkFlowStatus);
+		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
+		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
+		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
+		if(Boolean.parseBoolean(sWFStatusRetArr[0])==false){
+			logger.info(sExpWorkFlowName + "Workflow Not Enabled");
+			freport(sExpWorkFlowName + "Workflow Not Enabled", "fail",node);
+			Assert.fail(sExpWorkFlowName + "Workflow Not Enabled");
+			
+		}
+		else {
+			freport(sExpWorkFlowName + "Workflow Enabled", "pass",node);
+			objCRMRs.fClickWorkFlowAndGotoTask(iWFPos);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			boolean bTaskStatus = objCRMRs.fCheckTaskStatus(sExpWorkFlowName,sActionType,sActionTitle);
+			logger.info("Clicked Workflow and Navigated to Task Page");
+			System.out.println("Clicked Workflow and Navigated to Task Page");
+			
+			if(bTaskStatus==false) {
+				logger.info("Task Not Active " + sActionType + "  " + sActionTitle);
+				freport("Task Not Active " + sActionType + "  " + sActionTitle, "fail",node);
+				Assert.fail("Task Not Active " + sActionType + "  " + sActionTitle);
+				
+			}
+			else {
+				logger.info("Task Active " + sActionType + "  " + sActionTitle);
+				freport("Task Active " + sActionType + "  " + sActionTitle, "pass",node);
+				
+			}
+		}//If
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(1000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(1000);
 		int iTarRecId = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Targer last record:"+iTarRecId);
 //		int iTarRecId = 98496;
@@ -248,6 +255,9 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
+		Thread.sleep(1000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(1000);
 		int iTarAfterNewRec = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
 		if(iTarRecId == iTarAfterNewRec) {
@@ -273,6 +283,9 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(1000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(1000);
 		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
 		if(iTarAfterNewRec == iTarAftSummaryAdd) {
 			freport("Target Entity Not Created for Summary Add", "fail", node);
@@ -300,13 +313,17 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
+		Thread.sleep(1000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(1000);
 		int iTarAftDuplicate = objCRMRs.getLastRecordId();
+		boolean IsDate;
 		if(iTarAftSummaryAdd== iTarAftDuplicate) {
 			freport("Target Entity Not Created for Duplicate Record", "fail", node);
 		}
 		else {
 			freport("Target Entity Created after Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2","Create Entity after Summary Add","No",node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2","Create Entity after duplicate record","No",node,IsDate);
 			UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
 		}
 		//Edit Source Module Validation
@@ -330,12 +347,15 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
+		Thread.sleep(1000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(1000);
+		
 		int iTarAftFullEdit = objCRMRs.getLastRecordId();
 		if(iTarAftDuplicate== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit", "pass", node);
+			freport("Target Entity Not Created for Edit & Save", "pass", node);
 		}else {
-			freport("Target Entity Created for Edit source", "fail", node);
+			freport("Target Entity Created for Edit & save", "fail", node);
 		}
 		//Edit Single Line Summary
 		Thread.sleep(3000);
@@ -347,8 +367,13 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
+
 		Thread.sleep(6000);
-		objDVP.clickEditRecordItem();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+//		objDVP.clickEditRecordItem();
+		objSVP.clickEditCheckBox(1);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
 		objDVP.clickRecItemSave();
@@ -358,12 +383,15 @@ public class TC013_CreateEntity_OOF_S_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
+		Thread.sleep(1000);
+		Thread.sleep(1000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(1000);
 		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
 		if(iTarAftSingleLineEdit== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit", "pass", node);
+			freport("Target Entity Not Created for Single Line Edit", "pass", node);
 		}else {
-			freport("Target Entity Created for Edit source", "fail", node);
+			freport("Target Entity Created for Single Line Edit", "fail", node);
 		}
 		
 		

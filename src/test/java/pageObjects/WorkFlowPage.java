@@ -210,7 +210,10 @@ public class WorkFlowPage extends BasePage {
 			sActActionTitle = sActActionTitle.trim();
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Type:" + sActActionType);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
-			if(sActActionType.trim().equalsIgnoreCase(sActionType) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle)) {
+			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Type:" + sActionType);
+			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Title:" + sActionTitle);
+			
+			if(sActActionType.trim().equalsIgnoreCase(sActionType.trim()) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
 				if(isCheckBoxSelected==true) {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");
@@ -223,7 +226,7 @@ public class WorkFlowPage extends BasePage {
 				}
 			}
 			else {
-				System.out.println(" when task not matches:"+ isCheckBoxSelected +"  actual action type:" + sActActionType + "action title:" + sActActionTitle);
+				System.out.println(" When Mismatched:"+ isCheckBoxSelected +"  actual action type:" + sActActionType + "action title:" + sActActionTitle);
 				if(isCheckBoxSelected==true) {
 					System.out.println("checkbox sttus" + isCheckBoxSelected +"actual action type:" + sActActionType + "action title:" + sActActionTitle);
 					eleTaskCheckBox.click();

@@ -36,4 +36,13 @@ public class HomePage extends BasePage {
 		UtilityCustomFunctions.doClick(driver, eleLogout);
 	}
 	
+	public void clickLogoutCRM() throws Exception {
+		Thread.sleep(1000);;
+		clickAvatar();
+		Thread.sleep(1000);
+		clickLogout();
+		driver.close();
+		
+	}
+	
 }

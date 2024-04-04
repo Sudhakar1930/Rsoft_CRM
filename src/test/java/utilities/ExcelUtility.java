@@ -65,7 +65,7 @@ public class ExcelUtility {
 		DataFormatter formatter = new DataFormatter();
 		String data;
 		try{
-		data = formatter.formatCellValue(cell); //Returns the formatted value of a cell as a String regardless of the cell type.
+		data = formatter.formatCellValue(cell).toString(); //Returns the formatted value of a cell as a String regardless of the cell type.
 		}
 		catch(Exception e)
 		{

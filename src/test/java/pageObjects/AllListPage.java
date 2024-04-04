@@ -31,6 +31,7 @@ public class AllListPage extends BasePage{
 	
 	//Click Methods
 	public void clickAllList() throws Exception {
+		
 		UtilityCustomFunctions.doClick(driver,eleAllList);
 	}
 	public void clickAllNotifications() throws Exception {
@@ -45,8 +46,8 @@ public class AllListPage extends BasePage{
 		int iSize = eleAllULItems.size();
 		for(int i = 1;i<iSize;i++)
 		{	
-			UtilityCustomFunctions.logWriteConsole("Actual List Item:" + i + "is: " + eleAllULItems.get(i).getText());
-			UtilityCustomFunctions.logWriteConsole("Expected List Item:" + sModuleName);
+//			UtilityCustomFunctions.logWriteConsole("Actual List Item:" + i + "is: " + eleAllULItems.get(i).getText());
+//			UtilityCustomFunctions.logWriteConsole("Expected List Item:" + sModuleName);
 			String sActModName = eleAllULItems.get(i).getText();
 				if(sActModName.trim().equalsIgnoreCase(sModuleName)) {
 					UtilityCustomFunctions.doClick(driver, eleAllULItems.get(i));

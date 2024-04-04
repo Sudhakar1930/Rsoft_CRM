@@ -12,6 +12,7 @@ import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.SummaryViewPage;
 import testBase.BaseClass;
 import utilities.CRMReUsables;
 import utilities.ExcelUtility;
@@ -110,6 +111,7 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		CRMReUsables objCRMRs = new CRMReUsables();
 		DetailViewPage objDVP = new DetailViewPage(driver);
+		SummaryViewPage objSVP = new SummaryViewPage(driver);
 		driver.get(rb.getString("appURL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
@@ -193,14 +195,29 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 				
 			}
 		}//If
+		UtilityCustomFunctions.logWriteConsole("Capture Initial Record Id for Source & Target Started");
+		objALP.clickAllList();
+		Thread.sleep(2000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		objCRMRs.fClickFirstRecord();
+		int iOldSrcRecId= objCRMRs.getLastRecordId();
+		Thread.sleep(5000);
+		
+		Thread.sleep(5000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		int iTarRecId = objCRMRs.getLastRecordId();
-		UtilityCustomFunctions.logWriteConsole("Captured the Targer last record:"+iTarRecId);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		int iOldTrgRecId= objCRMRs.getLastRecordId();
+		
+		Thread.sleep(5000);
 		objALP.clickAllList();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Click Source Module:"+sDisplayMod1);
 		Thread.sleep(1000);
@@ -208,82 +225,170 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sDisplayMod1);
 		Thread.sleep(2000);
 		
+		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
+		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
+		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		Thread.sleep(2000);
 		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_DefaultValues_","Sheet1");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
+		
 		Thread.sleep(5000);
+		
+		objALP.clickAllList();
+		Thread.sleep(2000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		UtilityCustomFunctions.logWriteConsole("Source Module Opened:"+sDisplayMod1);
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		int iCurrSrcRecId= objCRMRs.getLastRecordId();
+		
+		UtilityCustomFunctions.logWriteConsole("Old Source Record: "+iOldSrcRecId +"New Source Record Id: "+iCurrSrcRecId);
+		if(iCurrSrcRecId != iOldSrcRecId) {
+			freport("Source Created after Source Added", "pass", node);
+		}
+		else {
+			freport("Source Created after Source Added", "fail", node);
+		}
+		
+		Thread.sleep(3000);
 		objALP.clickAllList();
 		UtilityCustomFunctions.logWriteConsole("All Menu Items Clicked");
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
-		int iTarAfterNewRec = objCRMRs.getLastRecordId();
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		int iCurrTrgRecId = objCRMRs.getLastRecordId();
+		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
-		if(iTarRecId == iTarAfterNewRec) {
-			freport("Target Entity Not Created after New source data added", "fail", node);
-		}
+		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
+		if(iOldTrgRecId != iCurrTrgRecId) {
+			freport("Target Entity Created after New Source Added", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity New Add","No",node,false);
+			
+			}
 		else {
-			freport("Target Entity Created after Source Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Default Values","No",node);
+			freport("Target Entity Not Created after New source data added", "fail", node);	
 		}
-		UtilityCustomFunctions.logWriteConsole("Created Entity Validation in Target Module Done");
+		UtilityCustomFunctions.logWriteConsole("Created Entity Validation in Target Module Done after new record added");
 		Thread.sleep(3000);
+		
 		//Summary Add
-		UtilityCustomFunctions.logWriteConsole("Summary Add Entity");
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		UtilityCustomFunctions.logWriteConsole("Navigate to Source Summary Page");
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
+		Thread.sleep(3000);
 		//Summary Add Mandatory values.
 		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_DefaultValues_","Sheet1");
-		
 		Thread.sleep(5000);
-		objALP.clickAllList();
+		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
+		objSVP.fWaitTillControlVisible();
 		
-		if(iTarAfterNewRec == iTarAftSummaryAdd) {
-			freport("Target Entity Not Created for Summary Add", "fail", node);
+		//Capture Record Ids
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		
+		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
+		//Source Update Validation
+		if(iOldSrcRecId!=iCurrSrcRecId) {
+			freport("Summary Add on Source in Create Entity default values ", "pass", node);
+			
 		}
 		else {
-			freport("Target Entity Created after Summary Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Default Values","No",node);
-			UtilityCustomFunctions.logWriteConsole("Created Entity after Summary Add is Done");
+			freport("Summary Add on Source in Create Entity default values ", "fail", node);
+			
 		}
 		
-		//Duplicate Entity Validation
+		//Summary Add Target Entity Validation
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		UtilityCustomFunctions.logWriteConsole("All Menu Items Clicked");
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
+		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
+		if(iOldTrgRecId != iCurrTrgRecId) {
+			freport("Target Entity Created after New Record Added in Summary", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Summary Add","No",node,false);
+			
+			}
+		else {
+			freport("Target Entity Not Created after Record added in Summary", "fail", node);	
+		}
+		UtilityCustomFunctions.logWriteConsole("Created Entity Validation for Summary Add Done");
+		Thread.sleep(3000);
+		
+		//**************** Duplicate Record Validation **************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
 		Thread.sleep(5000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		Thread.sleep(10000);
+				
+		//While Duplicate Record Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId!=iCurrSrcRecId) {
+			freport("Duplicate record the Source in Create Entity default values ", "pass", node);
+			
+		}
+		else {
+			freport("Duplicate record the Source in Create Entity default values ", "fail", node);
+			
+		}
+		//Target Entity Validation
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		int iTarAftDuplicate = objCRMRs.getLastRecordId();
-		if(iTarAftSummaryAdd== iTarAftDuplicate) {
-			freport("Target Entity Not Created for Duplicate Record", "fail", node);
-		}
-		else {
-			freport("Target Entity Created after Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Default Values","No",node);
-			UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
-		}
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
-		//Edit Source Module Validation
+		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
+		if(iOldTrgRecId != iCurrTrgRecId) {
+			freport("Target Entity Created after Record Duplicated", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Create Entity Duplicate Record","No",node,false);
+			
+			}
+		else {
+			freport("Target Entity Created after Record Duplicated", "fail", node);	
+		}
+		UtilityCustomFunctions.logWriteConsole("Created Entity Validation for Duplicate Record Done");
+		Thread.sleep(3000);
+		
+		//************** Edit & Save *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -294,23 +399,41 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
 		Thread.sleep(6000);
-		Thread.sleep(1000);
 		System.out.println("Before Edit button clicked in summary view");
 		objCMD.clickEdit();
  		Thread.sleep(6000);
 		objCMD.clickSave();
 		Thread.sleep(3000);
+		
+		//Source Default case Update While Edit & Save Record Validation
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		if(iOldSrcRecId!=iCurrSrcRecId) {
+			freport("Edit & Save record , source entity created ", "fail", node);
+			
+		}
+		else {
+			freport("Edit & Save record , source entity not created ", "pass", node);
+			
+		}
+		
+		//Target Entity Validation
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		int iTarAftFullEdit = objCRMRs.getLastRecordId();
-		if(iTarAftDuplicate== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit", "pass", node);
-		}else {
-			freport("Target Entity Created for Edit source", "fail", node);
+		Thread.sleep(2000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		
+		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
+		if(iOldTrgRecId != iCurrTrgRecId) {
+			freport("Target Entity Created after Record Edit & Save", "fail", node);
+			}
+		else {
+			freport("Target Entity not created after Record Edit & Save", "pass", node);	
 		}
+		UtilityCustomFunctions.logWriteConsole("Created Entity Validation for Edit & Save Record Done");
+		Thread.sleep(3000);
+
 		//Edit Single Line Summary
 		Thread.sleep(3000);
 		objALP.clickAllList();
@@ -324,22 +447,63 @@ public class TC014_CreateEntity_DefaultValues extends BaseClass{
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
-		objDVP.clickEditRecordItem();
+		objSVP.fWaitTillControlVisible();
+		objSVP.clickEditCheckBox(1);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
 		objDVP.clickRecItemSave();
 		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		
 		objALP.clickAllList();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
-		if(iTarAftSingleLineEdit== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit", "pass", node);
-		}else {
-			freport("Target Entity Created for Edit source", "fail", node);
+		Thread.sleep(3000);
+		objCRMRs.fClickFirstRecord();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
+		if(iOldTrgRecId != iCurrTrgRecId) {
+			freport("Target Entity Created after Record Single Line Edit", "fail", node);
+			}
+		else {
+			freport("Target Entity not Created after Record Single Line Edit", "pass", node);	
+		}
+		
+		
+		UtilityCustomFunctions.logWriteConsole("Created Entity Validation for Single Line Edit Record Done");
+		Thread.sleep(3000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		//Source Record Validation
+		objALP.clickAllList();
+		Thread.sleep(4000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		UtilityCustomFunctions.logWriteConsole("Source Module Opened:"+sDisplayMod1);
+		Thread.sleep(5000);
+		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		String sActSummaryText = objDVP.getArraySummary(1);
+		UtilityCustomFunctions.logWriteConsole("Old Source Record: "+iOldSrcRecId +"New Source Record Id: "+iCurrSrcRecId);
+		if(iCurrSrcRecId != iOldSrcRecId) {
+			freport("Source created in Single Line Edit", "fail", node);
+		}
+		else {
+			freport("Source not created in Single Line Edit", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActSummaryText, sEditIndText, "SourceUpdate_SummPage@SingleLineEdit-DefaultValuesCase", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActSourceDTViewText = objDVP.getArrayDetails(6);
+			UtilityCustomFunctions.fSoftAssert(sActSourceDTViewText, sEditIndText, "SourceUpdate_DetailViewPage@SingleLineEdit-DefaultValuesCase", node);
 		}
 		
 	}//test

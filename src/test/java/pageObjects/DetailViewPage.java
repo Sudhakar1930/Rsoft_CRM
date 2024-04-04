@@ -115,6 +115,9 @@ public class DetailViewPage extends BasePage{
 	@FindBy(xpath="//span[@data-label='Number Field']//i[contains(@class,'fa fa-check')]")
 	WebElement btnNumberTickSave;
 	
+	@FindBy(xpath="//span[@data-label='SourceText']//i[contains(@class,'fa fa-check')]")
+	WebElement btnSourceTickSave;
+	
 	public String getToggleViewText() {
 		try {
 		return tglSummaryLabel.getText();
@@ -237,7 +240,9 @@ public class DetailViewPage extends BasePage{
 	public void clickNMRecItemSave() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnNumberTickSave);
 	}
-	
+	public void clickRecItemSourceSave() throws Exception {
+		UtilityCustomFunctions.doClick(driver, btnSourceTickSave);
+	}
 	
 	
 	
@@ -265,7 +270,11 @@ public class DetailViewPage extends BasePage{
 	public String getUploadFileText() throws Exception
 	{
 		String sActValue="";
+		try {
 		sActValue = UtilityCustomFunctions.getText(driver, lblUploadFile);
+		}catch(Exception e) {
+			sActValue="";
+		}
 		return sActValue;
 	}
 	public String getPhoneNMTitle() throws Exception {

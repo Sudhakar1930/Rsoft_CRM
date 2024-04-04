@@ -151,14 +151,17 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objALP.clickAllList();
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
 		Thread.sleep(5000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
@@ -176,7 +179,6 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objEDT.clickModule(sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet1");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 //		Thread.sleep(10000);
@@ -189,35 +191,36 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
 		//Source Update Validation
 		if(iOldSrcRecId==iCurrSrcRecId) {
-			freport("Source update on Create Entity Failure ", "fail", node);
+			freport("Source not Updated on Fail Case - Add New Record ", "fail", node);
 		}
 		else {
-			freport("Source update on Create Entity Failure ", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Failure Update Add New Record","No",node);
+			freport("Source Updated on Fail Case - Add New Record ", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Failure Update Add New Record","No",node,false);
 		}
 		
 		//get Target LastRecordId
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
-		
-		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
 			freport("Target Entity Not Created due to duplicate prevention in Target", "pass", node);
+			
 		}
 		else {
 			freport("Target Entity Created even when duplicate prevention exist", "fail", node);
 		}
 		
-		//Summary Add Record
+		//**************** Summary Add Record *********************
 		iOldTrgRecId=iCurrTrgRecId;
 		iOldSrcRecId=iCurrSrcRecId;
 		
@@ -244,18 +247,19 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
 		//Source Update Validation
 		if(iOldSrcRecId==iCurrSrcRecId) {
-			freport("Summary Add on Source in Create Entity Failure ", "fail", node);
+			freport("Source Update on Fail Case @ Summary Add", "fail", node);
 		}
 		else {
-			freport("Summary Add on Source in Create Entity Failure ", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Fail Case Update on Summary Add","No",node);
+			freport("Source Update on Fail Case @ Summary Add", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Fail Case Update on Summary Add","No",node,false);
 		}
 		
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
@@ -284,15 +288,18 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(5000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
-		
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		objSVP.fWaitTillControlVisible();
 		//Source Failure case Update While Duplicate Record Validation
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		if(iOldSrcRecId==iCurrSrcRecId) {
-			freport("Update on Failure Case in Duplicate Record", "fail", node);
+			freport("Source not Updated on Fail Case @Duplicate Record", "fail", node);
 		}
 		else {
-			freport("Update on Failure Case in Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Duplicate Failure Update Case ","No",node);
+			freport("Source Updated on Fail Case @Duplicate Record", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Duplicate Failure Update Case ","No",node,false);
 		}
 		
 		//Target Entity Validation
@@ -300,16 +307,27 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-		objCRMRs.fClickFirstRecord();
+		Thread.sleep(2000);
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		Thread.sleep(3000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(1000);
+		objSVP.fWaitTillControlVisible();
+		UtilityCustomFunctions.logWriteConsole("CurrentUrl: Target URL"+driver.getCurrentUrl());
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
 			freport("Target Entity on Fail Case: OldRecordId: " + iOldTrgRecId + "Current Target RecId: " + iCurrTrgRecId, "pass", node);
+			freport("Target not created on Fail Case - Duplicate Record", "pass", node);
 		}
 		else {
 			freport("Target Entity on Fail Case: OldRecordId: " + iOldTrgRecId + "Current Target RecId: " + iCurrTrgRecId, "fail", node);
+			freport("Target not created on Fail Case - Duplicate Record", "fail", node);
 		}
 		
 		//************** Edit & Save *****************
@@ -327,19 +345,29 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objCMD.clickExistingModData(1);
 		Thread.sleep(6000);
 		System.out.println("Before Edit button clicked in summary view");
+		iCurrSrcRecId = objCRMRs.getLastRecordId(); 
+		UtilityCustomFunctions.logWriteConsole("Old Source Record Id before Edit & Save:" + iOldSrcRecId + "Current Record Id: Before Edit & Save" + iCurrSrcRecId);
+		iOldSrcRecId=iCurrSrcRecId;
 		objCMD.clickEdit();
  		Thread.sleep(6000);
 		objCMD.clickSave();
 		Thread.sleep(3000);
-		
-		//Source Failure case Update While Edit & Save Record Validation
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(5000);
+		objSVP.fWaitTillControlVisible();
+		//Source Success Update Case Validation
+		UtilityCustomFunctions.logWriteConsole("CurrentUrl: after edit & save"+driver.getCurrentUrl());
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("current Source Record Id: after edit & save" + iCurrSrcRecId + "Old Source Record Id: after edit & save" + iOldSrcRecId);
+		//Source Failure case Update While Edit & Save Record Validation
 		if(iOldSrcRecId==iCurrSrcRecId) {
-			freport("Update on Failure Case in Edit & Save Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node);
+			freport("Update on Failure Case in @ Edit & Save Record", "pass", node);
+//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node,false);
 		}
 		else {
-			freport("Update on Failure Case in Edit & Save Record", "fail", node);
+			freport("Update on Failure Case in @ Edit & Save Record", "fail", node);
 			
 		}
 		
@@ -348,16 +376,17 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 				
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
-			freport("Target Entity Not Created while Edit & Save Record", "pass", node);
+			freport("Target Entity Not Created for fail case @ Edit & Save Record", "pass", node);
 		}
 		else {
-			freport("Target Entity Not Created while Edit & Save Record", "fail", node);
+			freport("Target Entity Created for fail case @ Edit & Save Record", "fail", node);
 		}
 		
 		//************** Single Line Summary Edit *****************
@@ -379,24 +408,30 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objSVP.fWaitTillControlVisible();
 //		objDVP.clickEditRecordItem();
 		objSVP.clickEditCheckBox(1);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
-		Thread.sleep(1000);
-		objDVP.clickRecItemSave();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
+		objDVP.clickRecItemSourceSave();
+		Thread.sleep(3000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
 		
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		String sActSummaryText = objDVP.getArraySummary(1);
 		if(iOldSrcRecId==iCurrSrcRecId) {
-			freport("Update on Failure Case in Single Line Edit Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node);
+			
+			freport("Source Update on fail Case @ Single Line Edit", "pass", node);
+//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node,false);
+			UtilityCustomFunctions.fSoftAssert(sActSummaryText, sEditIndText, "SourceEdit_SummPage@SingleLineEdit-Update on fail Case", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActSourceDTViewText = objDVP.getArrayDetails(6);
+			UtilityCustomFunctions.fSoftAssert(sActSourceDTViewText, sEditIndText, "SourceEdit_DetailViewPage@SingleLineEdit-Update on fail Case", node);
 		}
 		else {
-			freport("Update on Failure Case in Single Line Edit Record", "fail", node);
-			
+			freport("Source Update on fail Case @ Single Line Edit", "fail", node);
 		}
 				
 		//Target Entity Validation
@@ -404,17 +439,21 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
-				
+		Thread.sleep(2000);		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
-			freport("Target Entity Not Created while Single Line Edit Record", "pass", node);
+			freport("Target Entity Not Created  @ Single Line Edit", "pass", node);
 		}
 		else {
-			freport("Target Entity Not Created while Single Line Edit Record", "fail", node);
+			freport("Target Entity Not Created  @ Single Line Edit", "fail", node);
 		}
+		
+		objHP.clickLogoutCRM();
 	}
 	
 }
