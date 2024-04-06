@@ -457,7 +457,15 @@ public class UtilityCustomFunctions extends BaseClass{
 		} // for loop
 
 	}// method
-
+	public  static String fArrayConcat(String sGivenText) {
+		String sEndText="";
+		String sGivenTextArray[] = sGivenText.split("\\s+");
+		for(int i=0;i<sGivenTextArray.length;i++) {
+			sEndText = sEndText + sGivenTextArray[i] + " "; 
+		}
+		sEndText = sEndText.trim();
+		return sEndText;  
+	}
 
 	// get Current Date in given format
 	public static String getCurrentDate(String dtFormat) {
@@ -470,7 +478,9 @@ public class UtilityCustomFunctions extends BaseClass{
 			throws IOException, InterruptedException {
 		
 		BaseClass a = new BaseClass();
-		UtilityCustomFunctions.logWriteConsole("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage);
+		UtilityCustomFunctions.logWriteConsole("Actual:"+sActValue);
+		UtilityCustomFunctions.logWriteConsole("Expected:"+sExpValue);
+		UtilityCustomFunctions.logWriteConsole("Message:"+sMessage);
 		if(sActValue!="" && sActValue!=null && sExpValue!="" && sExpValue!=null) {
 		if (sActValue.trim().equalsIgnoreCase(sExpValue.trim())) {
 //			BaseClass.logger

@@ -259,7 +259,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Target Updated on Success Case - Add New Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Update on Success Case -Target-Add new Record","No",node,false);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Update on Success Case -Target-Add new Record","No",node,true);
 		}
 		//Summary Add Record
 
@@ -316,7 +316,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Target Updated on Success Case - Summary Add Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node,false);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node,true);
 		}
 		//**************** Duplicate Record Validation **************
 		iOldTrgRecId=iCurrTrgRecId;

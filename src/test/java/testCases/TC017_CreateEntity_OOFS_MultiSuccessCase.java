@@ -69,6 +69,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		String sDisplayMod2=xlObj.getCellData("Sheet1", 1, 44);
 		String sEditIndText=xlObj.getCellData("Sheet1", 1, 45);
 		String sOriginalSummaryText =xlObj.getCellData("Sheet1", 1, 4);
+		String sSummaryAddText =xlObj.getCellData("Sheet2", 1, 4);
+		
 		LoginPage objLP = new LoginPage(driver);
 		HomePage objHP = new HomePage(driver);
 		AllListPage objALP = new AllListPage(driver);
@@ -186,7 +188,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldTrg1RecId = objCRMRs.getLastRecordId();
 		
@@ -195,7 +198,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldTrg2RecId = objCRMRs.getLastRecordId();
 		
@@ -204,7 +208,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldTrg3RecId = objCRMRs.getLastRecordId();
 		
@@ -228,19 +233,21 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objSVP.fWaitTillControlVisible();
 		//Capture Record Ids
 		int iCurrSrcRecId= objCRMRs.getLastRecordId();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
 		
 		//Navigate to source summary page 
 	
 		//Source Update Validation
-		boolean IsDate =false; 
+		boolean IsTarget =false; 
 		if(iOldSrcRecId==iCurrSrcRecId) {
 			freport("Source Add on Create Entity Failure ", "fail", node);
 		}
 		else {
 			freport("Source Add on Create Entity ", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet1","Create Entity Source","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet1","Create Entity Source","No",node,IsTarget);
 		}
 		
 		//Validate in Target Entity
@@ -249,18 +256,22 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		//Target Record Validation
+		IsTarget = true;
 		if(iOldTrgRecId==iCurrTrgRecId) {
 			freport("Target Entity Not Created after New source data added", "fail", node);
 		}
 		else {
-			freport("Target Entity Created after Source Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet1","Target Validation Create Entity","No",node,IsDate);
+			freport("Target Entity Created after New source Added", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet1","Target Validation Create Entity","No",node,IsTarget);
 		}
 		//On Success Update Case on Various Other Targets
 		//Navigate to first Target
@@ -268,12 +279,15 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		Thread.sleep(3000);
 		String sLeadSuccessEmailSummary = objDVP.getArraySummary(2);
 		if(iOldTrg1RecId == iCurrTrg1RecId) {
@@ -293,7 +307,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
@@ -301,15 +316,20 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(3000);
 		String sActEnqFullName = objDVP.getArraySummary(1);
-		sEnquiryDefaultCotent="";
-		sEnquiryDefaultCotent = "Mr." + " " + sEnquiryDefaultCotent;
+		String sActEnqFNArray[] = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqFNArray[0].trim() + " " + sActEnqFNArray[1].trim();
+		
+		String sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
 		if(iOldTrg2RecId == iCurrTrg2RecId) {
 			freport("Enquiry Module List Not Incremented After Create Entity Multi Success", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sEnquiryDefaultCotent, "Enquiry Related Module Summary Page Name Validation", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry Related Module Summary Page Name Validation", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);
 			String sActEnqNameDTView = objDVP.getArrayDetails(2);
-			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sEnquiryDefaultCotent, "Enquiry Module DT View Page Name Validation", node);
+			String sActEnqFNDTVArray[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqFNDTVArray[0].trim() + " " + sActEnqFNDTVArray[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry Module DT View Page Name Validation", node);
 		}
 		else {
 			freport("Enquiry Module List Incremented After Create Entity Multi Success", "fail", node);
@@ -320,7 +340,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
@@ -371,15 +392,17 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
 		
 		//Source Update Validation
-		IsDate =false; 
+		IsTarget =false; 
 		if(iOldSrcRecId!=iCurrSrcRecId) {
 			freport("Create Entity-Summary Add-Source added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","Create Entity Summary Add","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","Create Entity Summary Add","No",node,IsTarget);
 		}
 		else {
 			freport("Create Entity-Summary Add-Source not added", "fail", node);
@@ -391,18 +414,22 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+		IsTarget =true; 
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
 			freport("Target Entity Not Created after Summary Add", "fail", node);
 		}
 		else {
 			freport("Target Entity Created after Summary Add", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Target Validation Summary Add","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Target Validation Summary Add","No",node,IsTarget);
 		}
 		//On Success Update Case on Various Other Targets
 		//Navigate to first Target
@@ -410,13 +437,15 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(3000);
+		
 		sLeadSuccessEmailSummary = objDVP.getArraySummary(2);
 		if(iOldTrg1RecId == iCurrTrg1RecId) {
 			freport("Lead Module List Not Incremented at Summary Add", "pass", node);
@@ -436,22 +465,31 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		sActEnqFullName = objDVP.getArraySummary(1);
-		sEnquiryDefaultCotent = "Mr." + " " + sEnquiryDefaultCotent;
+		String sActEnqFNSummaryAddArr[] = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqFNSummaryAddArr[0].trim() + " " + sActEnqFNSummaryAddArr[1].trim();
+		
+		sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
 		if(iOldTrg2RecId == iCurrTrg2RecId) {
 			freport("Enquiry Module List Not Incremented at Summary Add", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sEnquiryDefaultCotent, "Enquiry_RelatedModule_SummPage@SummaryAdd-Multiple Success Case", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry_RelatedModule_SummPage@SummaryAdd-Multiple Success Case", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);
 			String sActEnqNameDTView = objDVP.getArrayDetails(2);
-			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sEnquiryDefaultCotent, "Enquiry_RelatedModule_DetailViewPage@SummaryAdd-Multiple Success Case", node);
+			
+			String sActEnqNameDTViewArr[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqNameDTViewArr[0].trim() + " " + sActEnqNameDTViewArr[1].trim();
+			
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry_RelatedModule_DetailViewPage@SummaryAdd-Multiple Success Case", node);
 		}
 		else {
 			freport("Enquiry Module List Incremented at Summary Add", "fail", node);
@@ -462,7 +500,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
@@ -511,14 +550,17 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
-		
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		//Source Update on Duplicate Record Validation
 		
-		IsDate =false; 
+		IsTarget =false; 
 		if(iOldSrcRecId!=iCurrSrcRecId) {
 			freport("Source Add after Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Source @DuplicateRecord","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Source @DuplicateRecord","No",node,IsTarget);
 		}
 		else {
 			freport("Source Add after Duplicate Record", "fail", node);
@@ -530,15 +572,18 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
-		
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id @duplicate record:" + iCurrTrgRecId);
 		//Target Record Validation
+		IsTarget =true;
 		if(iOldTrgRecId!=iCurrTrgRecId) {
 			freport("Target Add after Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Target @DuplicateRecord","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Target @DuplicateRecord","No",node,IsTarget);
 		}
 		else {
 			freport("Target Add after Duplicate Record", "fail", node);
@@ -550,12 +595,15 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		driver.navigate().refresh();
 		Thread.sleep(3000);
 		sLeadSuccessEmailSummary = objDVP.getArraySummary(2);
 		if(iOldTrg1RecId == iCurrTrg1RecId) {
@@ -575,7 +623,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
@@ -583,14 +632,20 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(3000);
 		sActEnqFullName = objDVP.getArraySummary(1);
-		sEnquiryDefaultCotent = "Mr." + " " + sEnquiryDefaultCotent;
+		String sActEnqDuplArray[] = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqDuplArray[0].trim() + " " + sActEnqDuplArray[1].trim();
+		
+		sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
 		if(iOldTrg2RecId == iCurrTrg2RecId) {
 			freport("Enquiry Module List Not Incremented @Duplicate Record", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sEnquiryDefaultCotent, "Enquiry_RelatedModule_SummPage@Duplicate Record-Multiple Success Case", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry_RelatedModule_SummPage@Duplicate Record-Multiple Success Case", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);
 			String sActEnqNameDTView = objDVP.getArrayDetails(2);
-			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sEnquiryDefaultCotent, "Enquiry_RelatedModule_DetailViewPage@Duplicate Record-Multiple Success Case", node);
+			String sActEnqDTVDuplArray[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqDTVDuplArray[0].trim() + " " + sActEnqDTVDuplArray[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry_RelatedModule_DetailViewPage@Duplicate Record-Multiple Success Case", node);
 		}
 		else {
 			freport("Enquiry Module List Incremented @Duplicate Record", "fail", node);
@@ -601,7 +656,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
@@ -656,17 +712,18 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
-		
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		//Source Update on Edit & Save Record Validation
 		
-		IsDate =false; 
+		IsTarget =false; 
 		if(iOldSrcRecId!=iCurrSrcRecId) {
 			freport("Source Add after Edit & Save", "fail", node);
 			
 		}
 		else {
 			freport("Source Add after Edit & Save", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Source @Edit & Save","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Source @Edit & Save","No",node,IsTarget);
 		}
 		
 		//Validate in Target Entity
@@ -675,18 +732,21 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
-		
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id @Edit & Save:" + iCurrTrgRecId);
+		IsTarget =true;
 		//Target Record Validation
 		if(iOldTrgRecId!=iCurrTrgRecId) {
 			freport("Target Entity @Edit & Save", "fail", node);
 		}
 		else {
 			freport("Target Entity @Edit & Save", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Target @Edit & Save","No",node,IsDate);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiSuccessCase_","Sheet2","CE Target @Edit & Save","No",node,IsTarget);
 		}
 		
 		//Multiple Success Case
@@ -695,7 +755,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
@@ -721,7 +782,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
@@ -729,14 +791,19 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(3000);
 		sActEnqFullName = objDVP.getArraySummary(1);
-		sEnquiryDefaultCotent = "Mr." + " " + sEnquiryDefaultCotent;
+		String sActEnqEandSArr[] = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqEandSArr[0].trim() + " " + sActEnqEandSArr[1].trim();
+		sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
 		if(iOldTrg2RecId == iCurrTrg2RecId) {
 			freport("Enquiry Module List Not Incremented @Edit & Save", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sEnquiryDefaultCotent, "Enquiry_RelatedModule_SummPage@Edit & Save-Multiple Success Case", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry_RelatedModule_SummPage@Edit & Save-Multiple Success Case", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);
 			String sActEnqNameDTView = objDVP.getArrayDetails(2);
-			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sEnquiryDefaultCotent, "Enquiry_RelatedModule_DetailViewPage@Edit & Save-Multiple Success Case", node);
+			String sActEnqEandSDTVArr[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqEandSDTVArr[0].trim() + " " + sActEnqEandSDTVArr[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry_RelatedModule_DetailViewPage@Edit & Save-Multiple Success Case", node);
 		}
 		else {
 			freport("Enquiry Module List Incremented @Edit & Save Record", "fail", node);
@@ -747,7 +814,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
@@ -804,12 +872,13 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		
+		Thread.sleep(5000);
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
-		
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		Thread.sleep(5000);
 		String sActSummaryText = objDVP.getArraySummary(1);
 		
-		IsDate =false; 
 		if(iOldSrcRecId!=iCurrSrcRecId) {
 			freport("Source Add after Single Line Edit", "fail", node);
 			
@@ -827,12 +896,15 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		Thread.sleep(3000);
+		driver.navigate().refresh();
 		Thread.sleep(3000);
 		sActSummaryText = objDVP.getArraySummary(1);
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id @SingleLineEdit:" + iCurrTrgRecId);
@@ -842,7 +914,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		}
 		else {
 			freport("Target Entity @SingleLineEdit", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sActSummaryText, sOriginalSummaryText, "Target Summary Page@SingleLineEdit-Multiple Success Case", node);
+			UtilityCustomFunctions.fSoftAssert(sActSummaryText, sSummaryAddText, "Target Summary Page@SingleLineEdit-Multiple Success Case", node);
 		}
 		//Multiple Success Case
 		//Navigate to LeadRelatedModule
@@ -850,7 +922,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -880,7 +953,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
@@ -889,14 +963,20 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objSVP.fWaitTillControlVisible();
 		Thread.sleep(3000);
 		sActEnqFullName = objDVP.getArraySummary(1);
-		sEnquiryDefaultCotent = "Mr." + " " + sEnquiryDefaultCotent;
+		String sActEnqFullNameArray[] = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqFullNameArray[0].trim() + " " + sActEnqFullNameArray[1].trim();
+		
+		sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
 		if(iOldTrg2RecId == iCurrTrg2RecId) {
 			freport("Enquiry Module List Not Incremented @SingleLineEdit", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sEnquiryDefaultCotent, "Enquiry_RelatedModule_SummPage@SingleLineEdit-Multiple Success Case", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry_RelatedModule_SummPage@SingleLineEdit-Multiple Success Case", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);
 			String sActEnqNameDTView = objDVP.getArrayDetails(2);
-			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sEnquiryDefaultCotent, "Enquiry_RelatedModule_DetailViewPage@SingleLineEdit-Multiple Success Case", node);
+			String sActEnqFullNameDTVArray[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqFullNameDTVArray[0].trim() + " " + sActEnqFullNameDTVArray[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry_RelatedModule_DetailViewPage@SingleLineEdit-Multiple Success Case", node);
 		}
 		else {
 			freport("Enquiry Module List Incremented @SingleLineEdit Record", "fail", node);
@@ -907,7 +987,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+//		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);

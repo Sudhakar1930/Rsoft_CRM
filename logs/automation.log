@@ -1,156 +1,106 @@
-14:39:56.744 [main] INFO  utilities.UtilityCustomFunctions - Actual: 10000 Expected: 10000 Detail View Currency:  CE Source @Edit & Save
-14:39:57.862 [main] INFO  utilities.UtilityCustomFunctions - Actual: http://www.google.com/ Expected: http://www.google.com/ Detail View Url:  CE Source @Edit & Save
-14:40:05.126 [main] INFO  utilities.UtilityCustomFunctions - Actual: Dr. Annie Expected: Dr. Annie Detail View Enquiry Name:  CE Source @Edit & Save
-14:40:06.271 [main] INFO  utilities.UtilityCustomFunctions - Actual: AddNewEnquiry@gmail.com Expected: AddNewEnquiry@gmail.com Detail View Enquiry Email:  CE Source @Edit & Save
-14:40:07.430 [main] INFO  utilities.UtilityCustomFunctions - Actual: Enquiry about Chatbot Expected: Enquiry about Chatbot Detail View Enquiry Text:  CE Source @Edit & Save
-14:40:08.591 [main] INFO  utilities.UtilityCustomFunctions - Actual: India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" Expected: India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" Detail View Enquiry Text Area:  CE Source @Edit & Save
-14:40:09.742 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 Expected: 2024-04-04 Detail View Enquiry Date:  CE Source @Edit & Save
-14:40:10.910 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 9596754413 Expected: +60 9596754413 Detail View Enquiry Phone Number:  CE Source @Edit & Save
-14:40:12.064 [main] INFO  utilities.UtilityCustomFunctions - Actual: Urgent Expected: Urgent Detail View Enquiry Category:  CE Source @Edit & Save
-14:40:19.378 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 9501926441 Expected: +91 9501926441 DT Lead Mobile Number:  CE Source @Edit & Save
-14:40:20.548 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNewLead@gmail.com Expected: SummaryAddNewLead@gmail.com DT View Lead Email  CE Source @Edit & Save
-14:40:21.723 [main] INFO  utilities.UtilityCustomFunctions - Actual: Lead about Chatbot Expected: Lead about Chatbot DT View Lead Text CE Source @Edit & Save
-14:40:22.939 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 0472103025 Expected: +60 0472103025 DT Sales Mobile Number:  CE Source @Edit & Save
-14:40:24.110 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNewSales@gmail.com Expected: SummaryAddNewSales@gmail.com DT View Sales EmailCE Source @Edit & Save
-14:40:42.046 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id @Edit & Save:121429
-14:40:43.175 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Excel file Utility instance created
-14:40:43.192 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Row Count is: 1
-14:40:43.202 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Col Count is: 54
-14:40:43.202 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Extracting DataSheet Values started...
-14:40:43.807 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
-14:40:49.849 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:40:50.621 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntityTarget
-14:40:50.621 [main] INFO  utilities.UtilityCustomFunctions - Actual: CreateEntityTarget Expected: CreateEntityTarget Module Name : CE Target @Edit & Save
-14:40:52.006 [main] INFO  utilities.UtilityCustomFunctions - Actual: Sudhakar VE Expected: Sudhakar VE Assigned To Title: CE Target @Edit & Save
-14:40:53.129 [main] INFO  utilities.UtilityCustomFunctions - Actual: +65 0231907562 Expected: +65 0231907562 Mobile Number Title : CE Target @Edit & Save
-14:40:54.247 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNew@rsoft.in Expected: SummaryAddNew@rsoft.in Email Title: CE Target @Edit & Save
-14:40:58.621 [main] INFO  utilities.UtilityCustomFunctions - Actual: Sudhakar VE Expected: Sudhakar VE Summary AssignedTo:  CE Target @Edit & Save
-14:40:59.794 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text Expected: Summary Add Text Summary Text:  CE Target @Edit & Save
-14:41:00.956 [main] INFO  utilities.UtilityCustomFunctions - Actual: +65 0231907562 Expected: +65 0231907562 Summary Mobile Number:  CE Target @Edit & Save
-14:41:02.121 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNew@rsoft.in Expected: SummaryAddNew@rsoft.in Summary Email :  CE Target @Edit & Save
-14:41:03.296 [main] INFO  utilities.UtilityCustomFunctions - Actual: 3 Expected: 3 Summary PicListValue :  CE Target @Edit & Save
-14:41:04.470 [main] INFO  utilities.UtilityCustomFunctions - Actual: one Expected: one Summary MuultiCombo Values :  CE Target @Edit & Save
-14:41:05.641 [main] INFO  utilities.UtilityCustomFunctions - Actual: Kanchipuram Expected: Kanchipuram Summary City:  CE Target @Edit & Save
-14:41:06.834 [main] INFO  utilities.UtilityCustomFunctions - Actual: Tamilnadu Expected: Tamilnadu Summary State:  CE Target @Edit & Save
-14:41:07.996 [main] INFO  utilities.UtilityCustomFunctions - Actual: India Expected: India Summary Country:  CE Target @Edit & Save
-14:41:09.164 [main] INFO  utilities.UtilityCustomFunctions - Actual: Yes Expected: Yes Summary CheckBox:  CE Target @Edit & Save
-14:41:10.335 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-04-04
-14:41:10.335 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 Expected: 2024-04-04 Summary Date:  CE Target @Edit & Save
-14:41:11.461 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
-14:41:11.507 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
-14:41:11.507 [main] INFO  utilities.UtilityCustomFunctions - Actual: 02:35:55 PM Expected: 02:35:55 PM Summary Time:  CE Target @Edit & Save
-14:41:12.614 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-04-04 02:22:54 PM
-14:41:12.664 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-04-04 02:22:54 PM
-14:41:12.664 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 02:22:54 PM Expected: 2024-04-04 02:22:54 PM Summary Date & Time :  CE Target @Edit & Save
-14:41:13.936 [main] INFO  utilities.UtilityCustomFunctions - Actual: annie-spratt Expected: annie-spratt Summary File Upload :  CE Target @Edit & Save
-14:41:15.103 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mrs. Steven Expected: Mrs. Steven Summary Name:  CE Target @Edit & Save
-14:41:16.262 [main] INFO  utilities.UtilityCustomFunctions - Actual: 11111111111 Expected: 11111111111 Summary Number:  CE Target @Edit & Save
-14:41:17.426 [main] INFO  utilities.UtilityCustomFunctions - Actual: 10000 Expected: 10000 Summary Currency:  CE Target @Edit & Save
-14:41:18.547 [main] INFO  utilities.UtilityCustomFunctions - Actual: http://www.google.com/ Expected: http://www.google.com/ Summary Url:  CE Target @Edit & Save
-14:41:19.717 [main] INFO  utilities.UtilityCustomFunctions - Actual: Dr. Annie Expected: Dr. Annie Summary Enquiry Name:  CE Target @Edit & Save
-14:41:20.878 [main] INFO  utilities.UtilityCustomFunctions - Actual: AddNewEnquiry@gmail.com Expected: AddNewEnquiry@gmail.com Summary Enquiry Email:  CE Target @Edit & Save
-14:41:22.105 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text
-Enquiry about Chatbot Expected: Enquiry about Chatbot Summary Enquiry Text:  CE Target @Edit & Save
-14:41:23.264 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text
-Enquiry about Chatbot
-India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" Expected: India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" Summary Enquiry Text Area:  CE Target @Edit & Save
-14:41:24.414 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-04-04
-14:41:24.468 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-04-04
-14:41:24.468 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 Expected: 2024-04-04 Summary Enquiry Date:  CE Target @Edit & Save
-14:41:25.636 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 9596754413 Expected: +60 9596754413 Summary Enquiry Phone Number:  CE Target @Edit & Save
-14:41:26.811 [main] INFO  utilities.UtilityCustomFunctions - Actual: Urgent Expected: Urgent Summary Enquiry Category:  CE Target @Edit & Save
-14:41:27.995 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 9501926441 Expected: +91 9501926441 Summary Lead PhoneNumber:  CE Target @Edit & Save
-14:41:29.153 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNewLead@gmail.com Expected: SummaryAddNewLead@gmail.com Summary Lead Email:  CE Target @Edit & Save
-14:41:30.319 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text
-Enquiry about Chatbot
-India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording"
-Lead about Chatbot Expected: Lead about Chatbot Summary Lead Text:  CE Target @Edit & Save
-14:41:31.494 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 0472103025 Expected: +60 0472103025 Summary Sales PhoneNumber:  CE Target @Edit & Save
-14:41:32.665 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNewSales@gmail.com Expected: SummaryAddNewSales@gmail.com Summary Sales Email:  CE Target @Edit & Save
-14:41:34.554 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:41:37.655 [main] INFO  utilities.UtilityCustomFunctions - Actual: Sudhakar VE Expected: Sudhakar VE Detail View AssignedTo:  CE Target @Edit & Save
-14:41:38.803 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text Expected: Summary Add Text Detail View Text:  CE Target @Edit & Save
-14:41:39.978 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
-  0231907562
-14:41:39.978 [main] INFO  utilities.UtilityCustomFunctions - Actual: +65 0231907562 Expected: +65 0231907562 Detail View Mobile Number:  CE Target @Edit & Save
-14:41:41.146 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNew@rsoft.in Expected: SummaryAddNew@rsoft.in Detail View Email :  CE Target @Edit & Save
-14:41:42.319 [main] INFO  utilities.UtilityCustomFunctions - Actual: 3 Expected: 3 Detail View PicListValue :  CE Target @Edit & Save
-14:41:43.496 [main] INFO  utilities.UtilityCustomFunctions - Actual: one Expected: one Detail View MuultiCombo Values :  CE Target @Edit & Save
-14:41:44.683 [main] INFO  utilities.UtilityCustomFunctions - Actual: Kanchipuram Expected: Kanchipuram Detail View City:  CE Target @Edit & Save
-14:41:45.838 [main] INFO  utilities.UtilityCustomFunctions - Actual: Tamilnadu Expected: Tamilnadu Detail View Stat:  CE Target @Edit & Save
-14:41:46.998 [main] INFO  utilities.UtilityCustomFunctions - Actual: India Expected: India Detail View Country:  CE Target @Edit & Save
-14:41:48.151 [main] INFO  utilities.UtilityCustomFunctions - Actual: Yes Expected: Yes Detail View CheckBox:  CE Target @Edit & Save
-14:41:49.320 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 Expected: 2024-04-04 Detail View Date:  CE Target @Edit & Save
-14:41:50.492 [main] INFO  utilities.UtilityCustomFunctions - Actual: 02:35:55 PM Expected: 02:35:55 PM Detail View Time:  CE Target @Edit & Save
-14:41:51.642 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 02:22:54 PM Expected: 2024-04-04 02:22:54 PM Detail View Date & Time :  CE Target @Edit & Save
-14:41:52.940 [main] INFO  utilities.UtilityCustomFunctions - Actual: annie-spratt Expected: annie-spratt Detail View File Upload :  CE Target @Edit & Save
-14:41:54.079 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mrs. Steven Expected: Mrs. Steven Detail View Name:  CE Target @Edit & Save
-14:41:55.239 [main] INFO  utilities.UtilityCustomFunctions - Actual: 11111111111 Expected: 11111111111 Detail View Number:  CE Target @Edit & Save
-14:41:56.402 [main] INFO  utilities.UtilityCustomFunctions - Actual: 10000 Expected: 10000 Detail View Currency:  CE Target @Edit & Save
-14:41:57.538 [main] INFO  utilities.UtilityCustomFunctions - Actual: http://www.google.com/ Expected: http://www.google.com/ Detail View Url:  CE Target @Edit & Save
-14:42:04.806 [main] INFO  utilities.UtilityCustomFunctions - Actual: Dr. Annie Expected: Dr. Annie Detail View Enquiry Name:  CE Target @Edit & Save
-14:42:05.981 [main] INFO  utilities.UtilityCustomFunctions - Actual: AddNewEnquiry@gmail.com Expected: AddNewEnquiry@gmail.com Detail View Enquiry Email:  CE Target @Edit & Save
-14:42:07.126 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text
-Enquiry about Chatbot Expected: Enquiry about Chatbot Detail View Enquiry Text:  CE Target @Edit & Save
-14:42:08.283 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text
-Enquiry about Chatbot
-India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" Expected: India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" Detail View Enquiry Text Area:  CE Target @Edit & Save
-14:42:09.447 [main] INFO  utilities.UtilityCustomFunctions - Actual: 2024-04-04 Expected: 2024-04-04 Detail View Enquiry Date:  CE Target @Edit & Save
-14:42:10.616 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 9596754413 Expected: +60 9596754413 Detail View Enquiry Phone Number:  CE Target @Edit & Save
-14:42:11.783 [main] INFO  utilities.UtilityCustomFunctions - Actual: Urgent Expected: Urgent Detail View Enquiry Category:  CE Target @Edit & Save
-14:42:19.098 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 9501926441 Expected: +91 9501926441 DT Lead Mobile Number:  CE Target @Edit & Save
-14:42:20.266 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNewLead@gmail.com Expected: SummaryAddNewLead@gmail.com DT View Lead Email  CE Target @Edit & Save
-14:42:21.410 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text
-Enquiry about Chatbot
-India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording"
-Lead about Chatbot Expected: Lead about Chatbot DT View Lead Text CE Target @Edit & Save
-14:42:22.624 [main] INFO  utilities.UtilityCustomFunctions - Actual: +60 0472103025 Expected: +60 0472103025 DT Sales Mobile Number:  CE Target @Edit & Save
-14:42:23.783 [main] INFO  utilities.UtilityCustomFunctions - Actual: SummaryAddNewSales@gmail.com Expected: SummaryAddNewSales@gmail.com DT View Sales EmailCE Target @Edit & Save
-14:42:47.569 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:42:52.419 [main] INFO  utilities.UtilityCustomFunctions - Actual: LeadMultiSuccess@gmail.com Expected: LeadMultiSuccess@gmail.com Lead_RelatedModule_SummPage@Edit & Save-Multiple Success Case
-14:42:54.087 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:42:57.155 [main] INFO  utilities.UtilityCustomFunctions - Actual: LeadMultiSuccess@gmail.com Expected: LeadMultiSuccess@gmail.com Lead_RelatedModule_DetailViewPage@Edit & Save-Multiple Success Case
-14:43:22.973 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:43:27.798 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mr.
-  EnquriyCheckName Expected: Mr. Mr. Mr. Mr.  Enquiry_RelatedModule_SummPage@Edit & Save-Multiple Success Case
-14:43:29.489 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:43:32.563 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mr.
-  EnquriyCheckName Expected: Mr. Mr. Mr. Mr.  Enquiry_RelatedModule_DetailViewPage@Edit & Save-Multiple Success Case
-14:43:52.499 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:43:57.265 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 7708674417 Expected: +91 7708674417 Opportunity_RelatedModule_SummPage@Edit & Save-Multiple Success Case
-14:43:58.958 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:44:02.015 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 7708674417 Expected: +91 7708674417 Opportunity_RelatedModule_DetailViewPage@Edit & Save-Multiple Success Case
-14:44:26.834 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:44:30.910 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input
-14:44:33.091 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:44:33.109 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-14:44:37.347 [main] INFO  utilities.UtilityCustomFunctions - Actual: IndividualTextEdited Expected: IndividualTextEdited SourceUpdate_SummPage@SingleLineEdit-Multiple Success Case
-14:44:39.109 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:44:42.168 [main] INFO  utilities.UtilityCustomFunctions - Actual: IndividualTextEdited Expected: IndividualTextEdited SourceUpdate_DetailViewPage@SingleLineEdit-Multiple Success Case
-14:44:57.146 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:45:05.030 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id @SingleLineEdit:121429
-14:45:06.154 [main] INFO  utilities.UtilityCustomFunctions - Actual: Summary Add Text Expected: Add New Text Target Summary Page@SingleLineEdit-Multiple Success Case
-14:45:20.817 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:45:31.372 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:45:31.391 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-14:45:35.609 [main] INFO  utilities.UtilityCustomFunctions - Actual: LeadMultiSuccess@gmail.com Expected: LeadMultiSuccess@gmail.com Lead_RelatedModule_SummPage@SingleLineEdit-Multiple Success Case
-14:45:37.354 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:45:40.410 [main] INFO  utilities.UtilityCustomFunctions - Actual: LeadMultiSuccess@gmail.com Expected: LeadMultiSuccess@gmail.com Lead_RelatedModule_DetailViewPage@SingleLineEdit-Multiple Success Case
-14:46:06.383 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:46:12.150 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mr.
-  EnquriyCheckName Expected: Mr. Mr. Mr. Mr. Mr.  Enquiry_RelatedModule_SummPage@SingleLineEdit-Multiple Success Case
-14:46:13.950 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:46:17.123 [main] INFO  utilities.UtilityCustomFunctions - Actual: Mr.
-  EnquriyCheckName Expected: Mr. Mr. Mr. Mr. Mr.  Enquiry_RelatedModule_DetailViewPage@SingleLineEdit-Multiple Success Case
-14:46:37.066 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:46:42.692 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 7708674417 Expected: +91 7708674417 Opportunity_RelatedModule_SummPage@SingleLineEdit-Multiple Success Case
-14:46:44.450 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:46:47.523 [main] INFO  utilities.UtilityCustomFunctions - Actual: +91 7708674417 Expected: +91 7708674417 Opportunity_RelatedModule_DetailViewPage@SingleLineEdit-Multiple Success Case
+15:03:18.917 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+15:03:18.918 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
+15:03:18.918 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Create Entity after duplicate record
+15:03:20.093 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 7013689143
+15:03:20.093 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 7013689143
+15:03:20.093 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Create Entity after duplicate record
+15:03:21.253 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+15:03:21.253 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+15:03:21.253 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Create Entity after duplicate record
+15:03:23.076 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+15:03:31.210 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+15:03:31.210 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+15:03:31.210 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Create Entity after duplicate record
+15:03:32.376 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+15:03:32.376 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+15:03:32.376 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Create Entity after duplicate record
+15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  5803514002
+15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 5803514002
+15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 5803514002
+15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Create Entity after duplicate record
+15:03:34.730 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+15:03:34.730 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+15:03:34.730 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Create Entity after duplicate record
+15:03:35.890 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+15:03:35.890 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+15:03:35.890 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Create Entity after duplicate record
+15:03:37.060 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+15:03:37.060 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+15:03:37.060 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Create Entity after duplicate record
+15:03:38.210 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+15:03:38.210 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+15:03:38.210 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Create Entity after duplicate record
+15:03:39.385 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+15:03:39.385 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+15:03:39.385 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Create Entity after duplicate record
+15:03:40.546 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+15:03:40.546 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+15:03:40.546 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Create Entity after duplicate record
+15:03:41.711 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+15:03:41.711 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+15:03:41.711 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Create Entity after duplicate record
+15:03:42.858 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-06
+15:03:42.858 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-06
+15:03:42.858 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Create Entity after duplicate record
+15:03:44.023 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+15:03:44.023 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+15:03:44.023 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Create Entity after duplicate record
+15:03:45.190 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-06 02:56:00 PM
+15:03:45.190 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-06 02:56:00 PM
+15:03:45.190 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Create Entity after duplicate record
+15:03:46.449 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+15:03:46.449 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+15:03:46.449 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Create Entity after duplicate record
+15:03:47.613 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+15:03:47.613 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+15:03:47.613 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Create Entity after duplicate record
+15:03:48.790 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+15:03:48.790 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+15:03:48.790 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Create Entity after duplicate record
+15:03:49.943 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+15:03:49.943 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+15:03:49.943 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Create Entity after duplicate record
+15:03:51.158 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+15:03:51.158 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+15:03:51.158 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Create Entity after duplicate record
+15:03:58.453 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+15:03:58.453 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+15:03:58.453 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Create Entity after duplicate record
+15:03:59.647 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+15:03:59.647 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+15:03:59.647 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Create Entity after duplicate record
+15:04:00.816 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+15:04:00.816 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
+15:04:00.816 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Create Entity after duplicate record
+15:04:01.996 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
+15:04:01.996 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
+15:04:01.996 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Create Entity after duplicate record
+15:04:03.185 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-06
+15:04:03.185 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-06
+15:04:03.185 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Create Entity after duplicate record
+15:04:04.359 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 2402685023
+15:04:04.359 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 2402685023
+15:04:04.359 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Create Entity after duplicate record
+15:04:05.532 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+15:04:05.532 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+15:04:05.532 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Create Entity after duplicate record
+15:04:12.836 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2392196750
+15:04:12.836 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2392196750
+15:04:12.836 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Create Entity after duplicate record
+15:04:14.008 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+15:04:14.008 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+15:04:14.008 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Create Entity after duplicate record
+15:04:15.195 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+15:04:15.195 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
+15:04:15.195 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Create Entity after duplicate record
+15:04:16.356 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 7013689143
+15:04:16.357 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 7013689143
+15:04:16.357 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Create Entity after duplicate record
+15:04:17.523 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+15:04:17.523 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+15:04:17.523 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCreate Entity after duplicate record
+15:04:18.658 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after Duplicate is Done
+15:05:35.832 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+15:05:35.850 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+15:05:38.306 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input
