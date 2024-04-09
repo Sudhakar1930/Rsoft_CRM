@@ -233,8 +233,11 @@ public class DetailViewPage extends BasePage{
 		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
 		eleRecEdit.click();
 	}
-	public void clickRecItemSave() throws Exception {
-		UtilityCustomFunctions.doClick(driver, btnTickSave);
+	public void clickRecItemSave(String sModuleName) throws Exception {
+		
+		String sXpath="//span[@data-colname='"+sModuleName.toLowerCase()+"_text']//i[contains(@class,'fa fa-check')]";
+		WebElement btnSingleLineSave = driver.findElement(By.xpath(sXpath));	
+		UtilityCustomFunctions.doClick(driver, btnSingleLineSave);
 	}
 	
 	public void clickNMRecItemSave() throws Exception {

@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import testBase.BaseClass;
+import utilities.CRMReUsables;
 import utilities.UtilityCustomFunctions;
 public class CreateModuleDataPage extends BasePage{
 	public static List<WebElement> objLists;
@@ -30,7 +31,14 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(id="select2-assign_to-r1-container")
 	WebElement eleClickAssignedTo;
 	
+	@FindBy(xpath="(//select[@class='monthselect'])[1]")
+	WebElement eleDateMonthSelect;
+
+	@FindBy(xpath="(//select[@class='monthselect'])[3]")
+	WebElement eleDTMonthSelect;
 	
+	@FindBy(xpath="//div[@class='drp-calendar left single']//select[@class='yearselect']")
+	WebElement eleYearSelect;
 	
 	@FindBy(xpath="//input[@name='crmeditfieldmodule_phonenumber']")
 	WebElement eletxtPhoneNumber;
@@ -102,8 +110,30 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath = "//ul[@class='select2-selection__rendered']/li/span")
 	List<WebElement> lstMultiCombo;
 	
+	public void SelectCurrMonthInDate() throws Exception {
+		CRMReUsables objCRMRs = new CRMReUsables();
+		Thread.sleep(1000);
+//		eleMonthSelect.click();
+		UtilityCustomFunctions.doClick(driver, eleDateMonthSelect);
+		Thread.sleep(2000);
+		UtilityCustomFunctions.selectFromComboBox(driver, eleDateMonthSelect, objCRMRs.getTodayMonth());
+	}
+	public void SelectCurrMonthInDT() throws Exception {
+		CRMReUsables objCRMRs = new CRMReUsables();
+		Thread.sleep(1000);
+//		eleMonthSelect.click();
+		UtilityCustomFunctions.doClick(driver, eleDTMonthSelect);
+		Thread.sleep(2000);
+		UtilityCustomFunctions.selectFromComboBox(driver, eleDTMonthSelect, objCRMRs.getTodayMonth());
+	}
 	
-	
+	public void SelectCurrYear() throws InterruptedException {
+		CRMReUsables objCRMRs = new CRMReUsables(); 
+		eleYearSelect.click();
+		Thread.sleep(1000);
+		String sYear =  Integer.toString(objCRMRs.getCurrentYear());
+		UtilityCustomFunctions.selectFromComboBox(driver, eleYearSelect, sYear);
+	}
 	
 	public void fRemMultiComboValues() throws InterruptedException {
 		System.out.println("Inside remove existing values:");
@@ -149,14 +179,48 @@ public class CreateModuleDataPage extends BasePage{
 		Thread.sleep(1000);
 		eleModData.click();
 	}
-	public void clickDay(int iDateIndex) throws Exception {
-		String sXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
-		UtilityCustomFunctions.logWriteConsole(sXpath);
-		WebElement eleDate = driver.findElement(By.xpath(sXpath));
+	
+	public void clickDayInDate(int iDateIndex,String sControlType) throws Exception {
+		CRMReUsables objCRMRs = new CRMReUsables();
+		String sXpath="";
+		String sYXpath="";
+		switch(sControlType) {
+		case "sDate":
+			sXpath = "(//select[@class='monthselect'])[1]";
+			sYXpath = "(//select[@class='yearselect'])[1]";
+		break;
+		case "sDateandTime":
+			sXpath = "(//select[@class='monthselect'])[3]";
+			sYXpath = "(//select[@class='yearselect'])[3]";
+		break;
+		case "sEnquiryDate":
+			sXpath = "(//select[@class='monthselect'])[3]";
+			sYXpath = "(//select[@class='yearselect'])[3]";
+		break;
+		}
+		
+		WebElement eleMonth = driver.findElement(By.xpath(sXpath)); 
+		UtilityCustomFunctions.doClick(driver, eleMonth);
+		Thread.sleep(2000);
+		UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, objCRMRs.getTodayMonth());
+		Thread.sleep(2000);
+		WebElement eleYear= driver.findElement(By.xpath(sYXpath));
+		eleYear.click();
+		Thread.sleep(1000);
+		String sYear =  Integer.toString(objCRMRs.getCurrentYear());
+		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
+		
+		Thread.sleep(1000);
+		String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
+		UtilityCustomFunctions.logWriteConsole(sDateXpath);
+		WebElement eleDate = driver.findElement(By.xpath(sDateXpath));
 		Thread.sleep(1000);
 		eleDate.click();
 //		UtilityCustomFunctions.doClick(driver, eleDate);
 	}
+	
+	
+	
 	public void clickEnqCategory() throws Exception {
 //		UtilityCustomFunctions.doClick(driver, eleEnqCatText);
 		UtilityCustomFunctions.doActionClick(driver, eleEnqCatText);

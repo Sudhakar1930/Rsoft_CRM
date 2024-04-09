@@ -376,7 +376,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objSVP.clickEditCheckBox(1);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
-		objDVP.clickRecItemSave();
+		objDVP.clickRecItemSave(sExpSrcModuleName);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
 		objALP.clickAllList();
@@ -394,6 +394,6 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 			freport("Target Entity Created for Single Line Edit", "fail", node);
 		}
 		
-		
+		objHP.clickLogoutCRM();
 	}
 }

@@ -9,6 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
+import utilities.CRMReUsables;
+
 
 public class SimpleTest {
 
@@ -32,11 +34,15 @@ public class SimpleTest {
 //			String sSubject = rs.getString(2);
 //			System.out.println("SNo: " + id + "Name : " + sName + "Subject: " + sSubject);
 //		}//while
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String	sActExecTime = "2024-01-30 14:30:00";
-		Date d1 = null;
-		d1 = format.parse(sActExecTime);	
-		System.out.println(d1.getDate()); 	
+//		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//		String	sActExecTime = "2024-01-30 14:30:00";
+//		Date d1 = null;
+//		d1 = format.parse(sActExecTime);	
+//		System.out.println(d1.getDate()); 	
+		CRMReUsables objCRMRs = new CRMReUsables();
+		System.out.println("Current Month:" + objCRMRs.getTodayMonth());
+		System.out.println("Current Year:" + objCRMRs.getCurrentYear());
+		
 		
 	}//main
 

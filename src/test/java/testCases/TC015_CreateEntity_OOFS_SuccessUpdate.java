@@ -457,7 +457,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
 		Thread.sleep(1000);
-		objDVP.clickRecItemSave();
+		objDVP.clickRecItemSave(sExpSrcModuleName);
 		Thread.sleep(1000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objDVP.fSetToggleHeader(true);

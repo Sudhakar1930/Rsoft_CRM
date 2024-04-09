@@ -623,7 +623,6 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
@@ -656,7 +655,6 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
@@ -866,7 +864,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
 		Thread.sleep(1000);
-		objDVP.clickRecItemSave();
+		objDVP.clickRecItemSave(sExpSrcModuleName);
 		Thread.sleep(1000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objDVP.fSetToggleHeader(true);

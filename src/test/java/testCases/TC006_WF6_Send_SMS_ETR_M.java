@@ -674,7 +674,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objDVP.clickEditRecordItem();
 			Thread.sleep(1000);
 			objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
-			objDVP.clickRecItemSave();
+			objDVP.clickRecItemSave(sExpModuleName);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
 			objALP.clickAllList();

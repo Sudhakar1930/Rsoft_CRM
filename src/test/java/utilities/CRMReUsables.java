@@ -3,6 +3,8 @@ package utilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -464,7 +466,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
 		Thread.sleep(3000);
-		objCMD.clickDay(1);
+		objCMD.clickDayInDate(1,"sDate");
 		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
@@ -475,7 +477,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "datetime");
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
-		objCMD.clickDay(2);
+		objCMD.clickDayInDate(2,"sDateandTime");
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
@@ -527,7 +529,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "enquirydate");
 		
 		Thread.sleep(3000);
-		objCMD.clickDay(2);
+		objCMD.clickDayInDate(2,"sEnquiryDate");
 
 		String sActEnquiryDate = objCMD.fGetModuleValue(sExpModuleName, "enquirydate");
 		System.out.println("AcutalDate: " + sActEnquiryDate);
@@ -1197,7 +1199,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
 		Thread.sleep(3000);
-		objCMD.clickDay(1);
+		objCMD.clickDayInDate(1,"sDate");
 		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
@@ -1208,7 +1210,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "datetime");
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
-		objCMD.clickDay(2);
+		objCMD.clickDayInDate(2,"sDateandTime");
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
@@ -1267,7 +1269,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "enquirydate");
 		
 		Thread.sleep(3000);
-		objCMD.clickDay(2);
+		objCMD.clickDayInDate(2,"sEnquiryDate");
 
 		String sActEnquiryDate = objCMD.fGetModuleValue(sExpModuleName, "enquirydate");
 		System.out.println("AcutalDate: " + sActEnquiryDate);
@@ -1551,6 +1553,7 @@ public class CRMReUsables extends BaseClass {
 		String sActName = objDVP.getArraySummary(14).trim();
 		String sNameArray[] = sActName.split("\\s+");
 		sActName = sNameArray[0].trim() + " " + sNameArray[1].trim();
+		UtilityCustomFunctions.logWriteConsole("ActualName:"+sActName+"ExpectedName:"+sExpName);
 		UtilityCustomFunctions.fSoftAssert(sActName, sExpName, "Summary Name:  " + sMessage, node);
 		String sActNumber = objDVP.getArraySummary(15).trim();
 		UtilityCustomFunctions.fSoftAssert(sActNumber, sNumber, "Summary Number:  " + sMessage, node);
@@ -1738,10 +1741,14 @@ public class CRMReUsables extends BaseClass {
 		else {
 			UtilityCustomFunctions.fSoftAssert(sActDTUploadFile, sFilePath, "Detail View Upload :  " + sMessage, node);
 		}
+		sExpName = sNamePrefix + " " + sName;
+		
+		sActName = sNameArray[0].trim() + " " + sNameArray[1].trim();
 		
 		String sActDTName= objDVP.getArrayDetails(20).trim();
 		String sDTNameArray[] = sActDTName.split("\\s+");
 		sActDTName = sDTNameArray[0].trim() + " " + sDTNameArray[1].trim();
+		UtilityCustomFunctions.logWriteConsole("ActualNameDT:"+sActDTName+"ExpectedNameDT:"+sExpName);
 		UtilityCustomFunctions.fSoftAssert(sActDTName, sExpName, "Detail View Name:  " + sMessage, node);
 		
 		String sActDTNumber= objDVP.getArrayDetails(21).trim();
@@ -1898,6 +1905,16 @@ public class CRMReUsables extends BaseClass {
 	
 	Thread.sleep(5000);
 }
+	public String getTodayMonth() {
+		Calendar cal = Calendar.getInstance();
+		return (new SimpleDateFormat("MMM").format(cal.getTime()));
+	}
+	
+	public int getCurrentYear() {
+		LocalDate currentdate = LocalDate.now();
+		return currentdate.getYear();
+		
+	}
 	
 	
 }

@@ -1,106 +1,184 @@
-15:03:18.917 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
-15:03:18.918 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
-15:03:18.918 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Create Entity after duplicate record
-15:03:20.093 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 7013689143
-15:03:20.093 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 7013689143
-15:03:20.093 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Create Entity after duplicate record
-15:03:21.253 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
-15:03:21.253 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
-15:03:21.253 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Create Entity after duplicate record
-15:03:23.076 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-15:03:31.210 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
-15:03:31.210 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
-15:03:31.210 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Create Entity after duplicate record
-15:03:32.376 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
-15:03:32.376 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
-15:03:32.376 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Create Entity after duplicate record
-15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
-  5803514002
-15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 5803514002
-15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 5803514002
-15:03:33.570 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Create Entity after duplicate record
-15:03:34.730 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
-15:03:34.730 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
-15:03:34.730 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Create Entity after duplicate record
-15:03:35.890 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
-15:03:35.890 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
-15:03:35.890 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Create Entity after duplicate record
-15:03:37.060 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
-15:03:37.060 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
-15:03:37.060 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Create Entity after duplicate record
-15:03:38.210 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
-15:03:38.210 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
-15:03:38.210 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Create Entity after duplicate record
-15:03:39.385 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-15:03:39.385 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-15:03:39.385 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Create Entity after duplicate record
-15:03:40.546 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
-15:03:40.546 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
-15:03:40.546 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Create Entity after duplicate record
-15:03:41.711 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
-15:03:41.711 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
-15:03:41.711 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Create Entity after duplicate record
-15:03:42.858 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-06
-15:03:42.858 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-06
-15:03:42.858 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Create Entity after duplicate record
-15:03:44.023 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
-15:03:44.023 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
-15:03:44.023 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Create Entity after duplicate record
-15:03:45.190 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-06 02:56:00 PM
-15:03:45.190 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-06 02:56:00 PM
-15:03:45.190 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Create Entity after duplicate record
-15:03:46.449 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
-15:03:46.449 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
-15:03:46.449 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Create Entity after duplicate record
-15:03:47.613 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
-15:03:47.613 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
-15:03:47.613 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Create Entity after duplicate record
-15:03:48.790 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
-15:03:48.790 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
-15:03:48.790 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Create Entity after duplicate record
-15:03:49.943 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
-15:03:49.943 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
-15:03:49.943 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Create Entity after duplicate record
-15:03:51.158 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
-15:03:51.158 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
-15:03:51.158 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Create Entity after duplicate record
-15:03:58.453 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
-15:03:58.453 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
-15:03:58.453 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Create Entity after duplicate record
-15:03:59.647 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
-15:03:59.647 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
-15:03:59.647 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Create Entity after duplicate record
-15:04:00.816 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
-15:04:00.816 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
-15:04:00.816 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Create Entity after duplicate record
-15:04:01.996 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
-15:04:01.996 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
-15:04:01.996 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Create Entity after duplicate record
-15:04:03.185 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-06
-15:04:03.185 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-06
-15:04:03.185 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Create Entity after duplicate record
-15:04:04.359 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 2402685023
-15:04:04.359 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 2402685023
-15:04:04.359 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Create Entity after duplicate record
-15:04:05.532 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
-15:04:05.532 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
-15:04:05.532 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Create Entity after duplicate record
-15:04:12.836 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2392196750
-15:04:12.836 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2392196750
-15:04:12.836 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Create Entity after duplicate record
-15:04:14.008 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
-15:04:14.008 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
-15:04:14.008 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Create Entity after duplicate record
-15:04:15.195 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
-15:04:15.195 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
-15:04:15.195 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Create Entity after duplicate record
-15:04:16.356 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 7013689143
-15:04:16.357 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 7013689143
-15:04:16.357 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Create Entity after duplicate record
-15:04:17.523 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
-15:04:17.523 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
-15:04:17.523 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCreate Entity after duplicate record
-15:04:18.658 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after Duplicate is Done
-15:05:35.832 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-15:05:35.850 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-15:05:38.306 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input
+18:04:54.501 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  Create Entity after duplicate record
+18:04:55.655 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:04:55.655 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:04:55.655 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  Create Entity after duplicate record
+18:04:56.826 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:04:56.826 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:04:56.826 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  Create Entity after duplicate record
+18:04:58.017 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:04:58.019 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:04:58.019 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  Create Entity after duplicate record
+18:04:59.205 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:04:59.205 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:04:59.205 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  Create Entity after duplicate record
+18:05:00.373 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:05:00.373 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:05:00.373 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  Create Entity after duplicate record
+18:05:01.539 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:05:01.539 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:05:01.539 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  Create Entity after duplicate record
+18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-04-09
+18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
+18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
+18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  Create Entity after duplicate record
+18:05:03.823 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
+18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
+18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Create Entity after duplicate record
+18:05:04.983 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-04-09 05:57:35 PM
+18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-04-09 05:57:35 PM
+18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09 05:57:35 PM
+18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09 05:57:35 PM
+18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Create Entity after duplicate record
+18:05:06.273 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:05:06.273 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:05:06.273 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Create Entity after duplicate record
+18:05:07.427 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
+18:05:07.428 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:05:07.428 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:05:07.428 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Create Entity after duplicate record
+18:05:08.600 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:05:08.600 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:05:08.600 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Create Entity after duplicate record
+18:05:09.772 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:05:09.772 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:05:09.772 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Create Entity after duplicate record
+18:05:10.900 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:05:10.900 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:05:10.900 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Create Entity after duplicate record
+18:05:12.061 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:05:12.061 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:05:12.061 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Create Entity after duplicate record
+18:05:13.219 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:05:13.219 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:05:13.219 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Create Entity after duplicate record
+18:05:14.468 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:05:14.468 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
+18:05:14.468 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Create Entity after duplicate record
+18:05:15.625 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
+18:05:15.626 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
+18:05:15.626 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Create Entity after duplicate record
+18:05:16.768 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-04-09
+18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-04-09
+18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
+18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
+18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Create Entity after duplicate record
+18:05:17.991 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 6508789240
+18:05:17.991 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 6508789240
+18:05:17.991 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Create Entity after duplicate record
+18:05:19.139 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:05:19.139 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:05:19.139 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Create Entity after duplicate record
+18:05:20.301 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 3577022448
+18:05:20.302 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 3577022448
+18:05:20.302 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Create Entity after duplicate record
+18:05:21.469 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:05:21.469 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:05:21.469 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Create Entity after duplicate record
+18:05:22.650 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:05:22.650 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
+18:05:22.650 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Create Entity after duplicate record
+18:05:23.832 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9441122515
+18:05:23.832 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9441122515
+18:05:23.832 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Create Entity after duplicate record
+18:05:25.001 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:05:25.001 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:05:25.001 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Create Entity after duplicate record
+18:05:26.865 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:05:35.421 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:05:35.421 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:05:35.421 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Create Entity after duplicate record
+18:05:36.581 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:05:36.581 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:05:36.581 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Create Entity after duplicate record
+18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  6043602472
+18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 6043602472
+18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 6043602472
+18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Create Entity after duplicate record
+18:05:38.915 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:05:38.915 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:05:38.915 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Create Entity after duplicate record
+18:05:40.081 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:05:40.081 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:05:40.081 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Create Entity after duplicate record
+18:05:41.246 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:05:41.246 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:05:41.246 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Create Entity after duplicate record
+18:05:42.402 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:05:42.402 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:05:42.402 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Create Entity after duplicate record
+18:05:43.589 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:05:43.589 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:05:43.589 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Create Entity after duplicate record
+18:05:44.748 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:05:44.748 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:05:44.748 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Create Entity after duplicate record
+18:05:45.905 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:05:45.906 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:05:45.906 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Create Entity after duplicate record
+18:05:47.043 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
+18:05:47.043 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
+18:05:47.043 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Create Entity after duplicate record
+18:05:48.196 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:05:48.196 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:05:48.196 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Create Entity after duplicate record
+18:05:49.366 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09 05:57:35 PM
+18:05:49.366 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09 05:57:35 PM
+18:05:49.366 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Create Entity after duplicate record
+18:05:50.635 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:05:50.635 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:05:50.635 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Create Entity after duplicate record
+18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Create Entity after duplicate record
+18:05:52.952 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:05:52.952 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:05:52.952 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Create Entity after duplicate record
+18:05:54.114 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:05:54.114 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:05:54.114 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Create Entity after duplicate record
+18:05:55.260 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:05:55.260 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:05:55.260 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Create Entity after duplicate record
+18:06:02.550 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:06:02.550 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:06:02.550 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Create Entity after duplicate record
+18:06:03.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:06:03.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:06:03.752 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Create Entity after duplicate record
+18:06:04.899 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:06:04.899 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
+18:06:04.899 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Create Entity after duplicate record
+18:06:06.073 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
+18:06:06.073 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
+18:06:06.073 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Create Entity after duplicate record
+18:06:07.223 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
+18:06:07.223 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
+18:06:07.223 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Create Entity after duplicate record
+18:06:08.384 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 6508789240
+18:06:08.384 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 6508789240
+18:06:08.384 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Create Entity after duplicate record
+18:06:09.566 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:06:09.566 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:06:09.566 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Create Entity after duplicate record
+18:06:16.879 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 3577022448
+18:06:16.879 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 3577022448
+18:06:16.879 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Create Entity after duplicate record
+18:06:18.055 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:06:18.055 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:06:18.055 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Create Entity after duplicate record
+18:06:19.214 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:06:19.214 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
+18:06:19.214 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Create Entity after duplicate record
+18:06:20.391 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9441122515
+18:06:20.391 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9441122515
+18:06:20.391 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Create Entity after duplicate record
+18:06:21.584 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:06:21.585 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:06:21.585 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCreate Entity after duplicate record
+18:06:22.710 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after Duplicate is Done
+18:07:42.760 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:07:47.119 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input

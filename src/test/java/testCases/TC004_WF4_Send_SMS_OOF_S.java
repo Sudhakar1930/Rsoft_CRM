@@ -675,7 +675,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			objDVP.clickEditRecordItem();
 			Thread.sleep(1000);
 			objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
-			objDVP.clickRecItemSave();
+			objDVP.clickRecItemSave(sExpModuleName);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
 			objALP.clickAllList();

@@ -86,9 +86,9 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		Thread.sleep(1000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -166,7 +166,6 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		Thread.sleep(1000);
@@ -178,7 +177,6 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
@@ -239,14 +237,14 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Old Source Id after add new record:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id after add new record:" + iCurrSrcRecId);
-		
+		boolean IsTarget =false; 
 		//Source Update Validation
 		if(iOldSrcRecId==iCurrSrcRecId) {
 			freport("Source not Updated on Fail Case - Add New Record ", "fail", node);
 		}
 		else {
 			freport("Source Updated on Fail Case - Add New Record ", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Add New Record","No",node,false);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Add New Record","No",node,IsTarget);
 		}
 		//get Target LastRecordId
 		objALP.clickAllList();
@@ -262,11 +260,11 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 
 		//Target Record Validation
 		if(iOldTrgRecId==iCurrTrgRecId) {
-			freport("Target Entity Not Created due to duplicate prevention in Target", "pass", node);
+			freport("Target Entity Not Created due to duplicate prevention in Target - Add New Record", "pass", node);
 			
 		}
 		else {
-			freport("Target Entity Created even when duplicate prevention exist", "fail", node);
+			freport("Target Entity Created even when duplicate prevention exist- Add New Record", "fail", node);
 		}
 		
 		
@@ -286,17 +284,532 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		Thread.sleep(3000);
 		String sLeadFailureEmailSummary = objDVP.getArraySummary(2);
 		if(iOldTrg1RecId == iCurrTrg1RecId) {
-			freport("Lead Module Not Incremented After Add New Record on MultiUpdate on Fail Case", "pass", node);
-			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailSummary, sLeadDefaultCotent, "Lead Module on Add New Record-Summary Record", node);
+			freport("Lead Module Not Incremented After @Add New Record - OOFS-on MultiUpdate on Fail Case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailSummary, sLeadDefaultCotent, "Lead Module on @Add New Record - OOFS--Summary Record", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);
-			String sLeadSuccessEmailDTView = objDVP.getArrayDetails(3);
-			UtilityCustomFunctions.fSoftAssert(sLeadSuccessEmailDTView, sLeadDefaultCotent, "Lead Module on Add New Record-Detail View", node);
+			String sLeadFailureEmailDTView = objDVP.getArrayDetails(3);
+			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailDTView, sLeadDefaultCotent, "Lead Module on @Add New Record - OOFS--Detail View", node);		}
+		else {
+			freport("Lead Module List Incremented After @Add New Record - OOFS- Multi Update on Fail case", "fail", node);
+		}
+		//Navigate to second Target
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule2);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		int iCurrTrg2RecId = objCRMRs.getLastRecordId();
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		String sActEnqFullName = objDVP.getArraySummary(1);
+		String sActEnqFNArray[] = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqFNArray[0].trim() + " " + sActEnqFNArray[1].trim();
+		
+		String sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
+		if(iOldTrg2RecId == iCurrTrg2RecId) {
+			freport("Enquiry Module List Not Incremented After @Add New Record - OOFS- MultiUpdate on Failure case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry Related Module Summary Page Name Validation @Add New Record - OOFS-", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActEnqNameDTView = objDVP.getArrayDetails(2);
+			String sActEnqFNDTVArray[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqFNDTVArray[0].trim() + " " + sActEnqFNDTVArray[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry Module DT View Page Name Validation @Add New Record - OOFS-", node);
 		}
 		else {
-			freport("Lead Module List Incremented After Create Entity Multi Update on Fail case", "fail", node);
+			freport("Enquiry Module List Incremented After @Add New Record - OOFS- MultiUpdate on Failure case", "fail", node);
 		}
 		
+		//Navigate to Third Module
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule3);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		int iCurrTrg3RecId = objCRMRs.getLastRecordId();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		String sActOpportPhoneNo = objDVP.getArraySummary(3);
+		String sPNTitleArray[] = sActOpportPhoneNo.split("\\s+");
+		sActOpportPhoneNo = sPNTitleArray[0].trim() + " " + sPNTitleArray[1].trim();
+		
+		String sExpOpportPhoneNo = sOpportPhonePrefix + " " + sOpportunityDefaultCotent; 
+		if(iOldTrg3RecId == iCurrTrg3RecId) {
+			freport("Opportunity Module List Not Incremented @Add New Record - OOFS- MultiUpdate on Failure Case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActOpportPhoneNo, sExpOpportPhoneNo, "Opportunity Related Module Phone Number  Validation@Add New Record - OOFS-", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActPhoneNoDTView = objDVP.getArrayDetails(4);
+			String sPNOpprtArray[] = sActPhoneNoDTView.split("\\s+");
+			sActPhoneNoDTView = sPNOpprtArray[0].trim() + " " + sPNOpprtArray[1].trim();
+			
+			UtilityCustomFunctions.fSoftAssert(sActPhoneNoDTView, sExpOpportPhoneNo, "Opportunity Module DT View Page Phone Number Validation@Add New Record - OOFS-", node);
+		}
+		else {
+			freport("Opportunity Module List Incremented @Add New Record - OOFS- MultiUpdate on Failure Case", "fail", node);
+		}
+		
+		//Summary Add New Record
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		iOldTrg1RecId = iCurrTrg1RecId;
+		iOldTrg2RecId = iCurrTrg2RecId;
+		iOldTrg3RecId = iCurrTrg3RecId;
+		
+		UtilityCustomFunctions.logWriteConsole("Navigate to Source Summary Page");
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		objDVP.clickAddRecord();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet2");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(1000);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
+		
+		//Source Update Validation
+		IsTarget =false; 
+		if(iOldSrcRecId!=iCurrSrcRecId) {
+			freport("Create Entity-Summary Add-Source added", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Summary Add","No",node,IsTarget);
+		}
+		else {
+			freport("Create Entity-Summary Add-Source not added", "fail", node);
+		}
+		//Failed Target  Count Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created due to duplicate prevention in Target @Summary Add New Record - OOFS-", "pass", node);
+			
+		}
+		else {
+			freport("Target Entity Created even when duplicate prevention exist- @Summary Add New Record - OOFS-", "fail", node);
+		}
+		
+		//Navigate to first Target
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule1);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrg1RecId = objCRMRs.getLastRecordId();
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		Thread.sleep(3000);
+		sLeadFailureEmailSummary = objDVP.getArraySummary(2);
+		if(iOldTrg1RecId == iCurrTrg1RecId) {
+			freport("Lead Module Not Incremented @Summary Add New Record - OOFS-on MultiUpdate on Fail Case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailSummary, sLeadDefaultCotent, "Lead Module on @Summary Add New Record - OOFS - Summary View", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sLeadFailureEmailDTView = objDVP.getArrayDetails(3);
+			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailDTView, sLeadDefaultCotent, "Lead Module on  @Summary Add New Record - OOFS- -Detail View", node);
+		}
+		else {
+			freport("Lead Module List Incremented After - @Summary Add New Record - OOFS- Multi Update on Fail case", "fail", node);
+		}
+		//Navigate to second Target
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule2);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrg2RecId = objCRMRs.getLastRecordId();
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		sActEnqFullName = objDVP.getArraySummary(1);
+		sActEnqFNArray = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqFNArray[0].trim() + " " + sActEnqFNArray[1].trim();
+		
+		sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
+		
+		freport("Enquiry Module List Not Incremented @Summary Add New Record - OOFS- MultiUpdate on Failure case", "pass", node);
+		UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry Related Module Summary Page Name Validation @Summary Add New Record - OOFS-", node);
+		objDVP.fSetDetailVew(true);
+		Thread.sleep(3000);
+		if(iOldTrg2RecId == iCurrTrg2RecId) {
+			freport("Enquiry Module List Not Incremented After - Summary Add New, MultiUpdate on Failure case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry Related Module - after Summary Add New, Summary Page Name Validation @Summary Add New Record - OOFS-", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActEnqNameDTView = objDVP.getArrayDetails(2);
+			String sActEnqFNDTVArray[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqFNDTVArray[0].trim() + " " + sActEnqFNDTVArray[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry Related Module - @Summary Add New Record - OOFS-, DT View Page Name Validation", node);
+		}
+		else {
+			freport("Enquiry Module List Incremented @Summary Add New Record - OOFS-, MultiUpdate on Failure case", "fail", node);
+		}
+		
+		//Navigate to Third Module
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule3);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrg3RecId = objCRMRs.getLastRecordId();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		sActOpportPhoneNo = objDVP.getArraySummary(3);
+		sPNTitleArray = sActOpportPhoneNo.split("\\s+");
+		sActOpportPhoneNo = sPNTitleArray[0].trim() + " " + sPNTitleArray[1].trim();
+		
+		sExpOpportPhoneNo = sOpportPhonePrefix + " " + sOpportunityDefaultCotent; 
+		
+		freport("Opportunity Module List Not Incremented After @Summary Add New Record - OOFS-MultiUpdate on Failure Case", "pass", node);
+		UtilityCustomFunctions.fSoftAssert(sActOpportPhoneNo, sExpOpportPhoneNo, "Opportunity Related Module Phone Number  Validation @Summary Add New Record - OOFS-", node);
+		objDVP.fSetDetailVew(true);
+		Thread.sleep(3000);
+		
+		if(iOldTrg3RecId == iCurrTrg3RecId) {
+			freport("Opportunity Module List Not Incremented After @Summary Add New Record - OOFS-, MultiUpdate on Failure Case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActOpportPhoneNo, sExpOpportPhoneNo, "Opportunity Related Summary View Module Phone Number  Validation @Summary Add New Record - OOFS", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActPhoneNoDTView = objDVP.getArrayDetails(4);
+			String sPNOpprtArray[] = sActPhoneNoDTView.split("\\s+");
+			sActPhoneNoDTView = sPNOpprtArray[0].trim() + " " + sPNOpprtArray[1].trim();
+			
+			UtilityCustomFunctions.fSoftAssert(sActPhoneNoDTView, sExpOpportPhoneNo, "Opportunity Module DT View Page Phone Number Validation@Summary Add New Record - OOFS", node);
+		}
+		else {
+			freport("Opportunity Module List Incremented @Summary Add New Record - OOFS, MultiUpdate on Failure Case", "fail", node);
+		}
+
+		//Duplicate Record Scenario
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		iOldTrg1RecId = iCurrTrg1RecId;
+		iOldTrg2RecId = iCurrTrg2RecId;
+		iOldTrg3RecId = iCurrTrg3RecId;
+		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(1000);
+		objDVP.clickDuplicateRecord();
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet3");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Duplicate Add Record completed");
+//		objCMD.clickSave();
+		Thread.sleep(5000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(1000);
+		objSVP.fWaitTillControlVisible();
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		//Source Update on Duplicate Record Validation
+		//Capture Record Ids
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Old Source Id after duplicate record:" + iOldSrcRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Source Id after duplicate record:" + iCurrSrcRecId);
+		IsTarget =false; 
+		//Source Update Validation
+		if(iOldSrcRecId==iCurrSrcRecId) {
+			freport("Source not Updated on Fail Case - @Duplicate Record - OOFS", "fail", node);
+		}
+		else {
+			freport("Source Updated on Fail Case - @Duplicate Record - OOFS", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: @Duplicate Record - OOFS","No",node,IsTarget);
+		}
+		//get Target LastRecordId
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created due to duplicate prevention in Target - @Duplicate Record - OOFS", "pass", node);
+			
+		}
+		else {
+			freport("Target Entity Created even when duplicate prevention exist- @Duplicate Record - OOFS", "fail", node);
+		}
+		
+		//Navigate to first Target
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule1);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrg1RecId = objCRMRs.getLastRecordId();
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		Thread.sleep(3000);
+		sLeadFailureEmailSummary = objDVP.getArraySummary(2);
+		if(iOldTrg1RecId == iCurrTrg1RecId) {
+			freport("Lead Module Not Incremented After @Duplicate Record - OOFS on MultiUpdate on Fail Case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailSummary, sLeadDefaultCotent, "Lead Module @Duplicate Record - OOFS - Summary View", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sLeadFailureEmailDTView = objDVP.getArrayDetails(3);
+			UtilityCustomFunctions.fSoftAssert(sLeadFailureEmailDTView, sLeadDefaultCotent, "Lead Module @Duplicate Record - OOFS-Detail View", node);
+		}
+		else {
+			freport("Lead Module List Incremented After @Duplicate Record - OOFS Multi Update on Fail case", "fail", node);
+		}
+		//Navigate to second Target
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule2);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrg2RecId = objCRMRs.getLastRecordId();
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		sActEnqFullName = objDVP.getArraySummary(1);
+		sActEnqFNArray = sActEnqFullName.split("\\s+");
+		sActEnqFullName = sActEnqFNArray[0].trim() + " " + sActEnqFNArray[1].trim();
+		
+		sExpEnquiryFullName="";
+		sExpEnquiryFullName = "Mr." + " " + sEnquiryDefaultCotent;
+		if(iOldTrg2RecId == iCurrTrg2RecId) {
+			freport("Enquiry Module List Not Incremented After  @Duplicate Record - OOFS MultiUpdate on Failure case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActEnqFullName, sExpEnquiryFullName, "Enquiry Related Module  @Duplicate Record - OOFS - Summary Page Name Validation", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActEnqNameDTView = objDVP.getArrayDetails(2);
+			String sActEnqFNDTVArray[] = sActEnqNameDTView.split("\\s+");
+			sActEnqNameDTView = sActEnqFNDTVArray[0].trim() + " " + sActEnqFNDTVArray[1].trim();
+			UtilityCustomFunctions.fSoftAssert(sActEnqNameDTView, sExpEnquiryFullName, "Enquiry Module  @Duplicate Record - OOFS - DT View Page Name Validation", node);
+		}
+		else {
+			freport("Enquiry Module List Incremented After  @Duplicate Record - OOFS MultiUpdate on Failure case", "fail", node);
+		}
+				
+		//Navigate to Third Module
+		Thread.sleep(2000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sTarModule3);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrg3RecId = objCRMRs.getLastRecordId();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(3000);
+		sActOpportPhoneNo = objDVP.getArraySummary(3);
+		sPNTitleArray = sActOpportPhoneNo.split("\\s+");
+		sActOpportPhoneNo = sPNTitleArray[0].trim() + " " + sPNTitleArray[1].trim();
+		
+		sExpOpportPhoneNo = sOpportPhonePrefix + " " + sOpportunityDefaultCotent; 
+		if(iOldTrg3RecId == iCurrTrg3RecId) {
+			freport("Opportunity Module List Not Incremented  @Duplicate Record - OOFS MultiUpdate on Failure Case", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActOpportPhoneNo, sExpOpportPhoneNo, "Opportunity Related Module Phone Number  Validation  @Duplicate Record - OOFS", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActPhoneNoDTView = objDVP.getArrayDetails(4);
+			String sPNOpprtArray[] = sActPhoneNoDTView.split("\\s+");
+			sActPhoneNoDTView = sPNOpprtArray[0].trim() + " " + sPNOpprtArray[1].trim();
+			
+			UtilityCustomFunctions.fSoftAssert(sActPhoneNoDTView, sExpOpportPhoneNo, "Opportunity Module DT View Page Phone Number Validation @Duplicate Record - OOFS", node);
+		}
+		else {
+			freport("Opportunity Module List Incremented After Create Entity MultiUpdate on Failure Case @Duplicate Record - OOFS", "fail", node);
+		}
+		
+		//************** Edit & Save *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		iOldTrg1RecId = iCurrTrg1RecId;
+		iOldTrg2RecId = iCurrTrg2RecId;
+		iOldTrg3RecId = iCurrTrg3RecId;
+		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		System.out.println("Module clicked");
+		Thread.sleep(6000);
+		System.out.println("Before selecting 1st Record");
+		objCMD.clickExistingModData(1);
+		Thread.sleep(6000);
+		System.out.println("Before Edit button clicked in summary view");
+		objCMD.clickEdit();
+ 		Thread.sleep(6000);
+ 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet4");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Edit & Save Record completed");
+//		objCMD.clickSave();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(1000);
+		objSVP.fWaitTillControlVisible();
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		//Source Update on Edit & Save Record Validation
+		
+		IsTarget =false; 
+		if(iOldSrcRecId!=iCurrSrcRecId) {
+			freport("Source Add after @Edit & Save - OOFS", "fail", node);
+			
+		}
+		else {
+			freport("Source Add after @Edit & Save - OOFS", "pass", node);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity/CreateEntity_OOFS_MultiFailureCase_","Sheet4","CE Source @Edit & Save - OOFS","No",node,IsTarget);
+		}
+		
+		//get Target LastRecordId
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created due to duplicate prevention in Target - @Edit & Save - OOFS", "pass", node);
+			
+		}
+		else {
+			freport("Target Entity Created even when duplicate prevention exist- @Edit & Save - OOFS", "fail", node);
+		}
+		
+		
+		
+		//************** Single Line Summary Edit *****************
+		iOldTrgRecId=iCurrTrgRecId;
+		iOldSrcRecId=iCurrSrcRecId;
+		
+		iOldTrg1RecId = iCurrTrg1RecId;
+		iOldTrg2RecId = iCurrTrg2RecId;
+		iOldTrg3RecId = iCurrTrg3RecId;
+		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+		Thread.sleep(2000);
+		System.out.println("Module clicked");
+		Thread.sleep(6000);
+		System.out.println("Before selecting 1st Record");
+		objCMD.clickExistingModData(1);
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+//				objDVP.clickEditRecordItem();
+		objSVP.clickEditCheckBox(1);
+		Thread.sleep(1000);
+		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
+		Thread.sleep(1000);
+		objDVP.clickRecItemSave(sExpSrcModuleName);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.checkPageLoadComplete();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		Thread.sleep(5000);
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		Thread.sleep(5000);
+		String sActSummaryText = objDVP.getArraySummary(1);
+		
+		if(iOldSrcRecId!=iCurrSrcRecId) {
+			freport("Source Add after Single Line Edit", "fail", node);
+			
+		}
+		else {
+			freport("Source Add after Single Line Edit", "pass", node);
+			UtilityCustomFunctions.fSoftAssert(sActSummaryText, sEditIndText, "SourceUpdate_SummPage@SingleLineEdit-Multiple Update on Fail Case", node);
+			objDVP.fSetDetailVew(true);
+			Thread.sleep(3000);
+			String sActSourceDTViewText = objDVP.getArrayDetails(6);
+			UtilityCustomFunctions.fSoftAssert(sActSourceDTViewText, sEditIndText, "SourceUpdate_DetailViewPage@SingleLineEdit-Multiple Update on Fail Case", node);
+		}
+			
+		//get Target LastRecordId
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+		Thread.sleep(2000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(2000);
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
+
+		//Target Record Validation
+		if(iOldTrgRecId==iCurrTrgRecId) {
+			freport("Target Entity Not Created due to duplicate prevention in Target - @Single Line Edit-OOFS Fail Case", "pass", node);
+			
+		}
+		else {
+			freport("Target Entity Created even when duplicate prevention exist- @Single Line Edit-OOFS Fail Case", "fail", node);
+		}	
+		
+		objHP.clickLogoutCRM();
 	}
 	
 }

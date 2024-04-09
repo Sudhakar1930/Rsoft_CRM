@@ -451,7 +451,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		objSVP.clickEditCheckBox(1);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
-		objDVP.clickRecItemSave();
+		objDVP.clickRecItemSave(sExpSrcModuleName);
 		Thread.sleep(10000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objDVP.fSetToggleHeader(true);
@@ -506,7 +506,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 			String sActSourceDTViewText = objDVP.getArrayDetails(6);
 			UtilityCustomFunctions.fSoftAssert(sActSourceDTViewText, sEditIndText, "SourceUpdate_DetailViewPage@SingleLineEdit-DefaultValuesCase", node);
 		}
-		
+		objHP.clickLogoutCRM();
 	}//test
 	
 }//class

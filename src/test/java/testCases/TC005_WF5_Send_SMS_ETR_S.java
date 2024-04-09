@@ -683,7 +683,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objDVP.clickEditRecordItem();
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
-		objDVP.clickRecItemSave();
+		objDVP.clickRecItemSave(sExpModuleName);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
 		objALP.clickAllList();
