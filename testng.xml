@@ -8,8 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.TC013_CreateEntity_OOFS_NewValues"/>
-		
+		<class name="testCases.TC010_WF4_SN_SpecificDate"/>
 	  <!--
 	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
 		<class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>

@@ -1,184 +1,290 @@
-18:04:54.501 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  Create Entity after duplicate record
-18:04:55.655 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
-18:04:55.655 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
-18:04:55.655 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  Create Entity after duplicate record
-18:04:56.826 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
-18:04:56.826 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
-18:04:56.826 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  Create Entity after duplicate record
-18:04:58.017 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
-18:04:58.019 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
-18:04:58.019 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  Create Entity after duplicate record
-18:04:59.205 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-18:04:59.205 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-18:04:59.205 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  Create Entity after duplicate record
-18:05:00.373 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
-18:05:00.373 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
-18:05:00.373 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  Create Entity after duplicate record
-18:05:01.539 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
-18:05:01.539 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
-18:05:01.539 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  Create Entity after duplicate record
-18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-04-09
-18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
-18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
-18:05:02.695 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  Create Entity after duplicate record
-18:05:03.823 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
-18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
-18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
-18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
-18:05:03.873 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Create Entity after duplicate record
-18:05:04.983 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-04-09 05:57:35 PM
-18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-04-09 05:57:35 PM
-18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09 05:57:35 PM
-18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09 05:57:35 PM
-18:05:05.032 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Create Entity after duplicate record
-18:05:06.273 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
-18:05:06.273 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
-18:05:06.273 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Create Entity after duplicate record
-18:05:07.427 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
-18:05:07.428 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
-18:05:07.428 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
-18:05:07.428 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Create Entity after duplicate record
-18:05:08.600 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
-18:05:08.600 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
-18:05:08.600 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Create Entity after duplicate record
-18:05:09.772 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
-18:05:09.772 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
-18:05:09.772 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Create Entity after duplicate record
-18:05:10.900 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
-18:05:10.900 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
-18:05:10.900 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Create Entity after duplicate record
-18:05:12.061 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
-18:05:12.061 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
-18:05:12.061 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Create Entity after duplicate record
-18:05:13.219 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
-18:05:13.219 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
-18:05:13.219 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Create Entity after duplicate record
-18:05:14.468 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
-18:05:14.468 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
-18:05:14.468 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Create Entity after duplicate record
-18:05:15.625 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
-18:05:15.626 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
-18:05:15.626 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Create Entity after duplicate record
-18:05:16.768 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-04-09
-18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-04-09
-18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
-18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
-18:05:16.818 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Create Entity after duplicate record
-18:05:17.991 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 6508789240
-18:05:17.991 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 6508789240
-18:05:17.991 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Create Entity after duplicate record
-18:05:19.139 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
-18:05:19.139 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
-18:05:19.139 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Create Entity after duplicate record
-18:05:20.301 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 3577022448
-18:05:20.302 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 3577022448
-18:05:20.302 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Create Entity after duplicate record
-18:05:21.469 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
-18:05:21.469 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
-18:05:21.469 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Create Entity after duplicate record
-18:05:22.650 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
-18:05:22.650 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
-18:05:22.650 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Create Entity after duplicate record
-18:05:23.832 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9441122515
-18:05:23.832 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9441122515
-18:05:23.832 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Create Entity after duplicate record
-18:05:25.001 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
-18:05:25.001 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
-18:05:25.001 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Create Entity after duplicate record
-18:05:26.865 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-18:05:35.421 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
-18:05:35.421 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
-18:05:35.421 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Create Entity after duplicate record
-18:05:36.581 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
-18:05:36.581 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
-18:05:36.581 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Create Entity after duplicate record
-18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
-  6043602472
-18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 6043602472
-18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 6043602472
-18:05:37.752 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Create Entity after duplicate record
-18:05:38.915 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
-18:05:38.915 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
-18:05:38.915 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Create Entity after duplicate record
-18:05:40.081 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
-18:05:40.081 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
-18:05:40.081 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Create Entity after duplicate record
-18:05:41.246 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
-18:05:41.246 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
-18:05:41.246 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Create Entity after duplicate record
-18:05:42.402 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
-18:05:42.402 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
-18:05:42.402 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Create Entity after duplicate record
-18:05:43.589 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-18:05:43.589 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-18:05:43.589 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Create Entity after duplicate record
-18:05:44.748 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
-18:05:44.748 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
-18:05:44.748 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Create Entity after duplicate record
-18:05:45.905 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
-18:05:45.906 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
-18:05:45.906 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Create Entity after duplicate record
-18:05:47.043 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
-18:05:47.043 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
-18:05:47.043 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Create Entity after duplicate record
-18:05:48.196 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
-18:05:48.196 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
-18:05:48.196 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Create Entity after duplicate record
-18:05:49.366 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09 05:57:35 PM
-18:05:49.366 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09 05:57:35 PM
-18:05:49.366 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Create Entity after duplicate record
-18:05:50.635 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
-18:05:50.635 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
-18:05:50.635 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Create Entity after duplicate record
-18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
-18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
-18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
-18:05:51.798 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Create Entity after duplicate record
-18:05:52.952 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
-18:05:52.952 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
-18:05:52.952 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Create Entity after duplicate record
-18:05:54.114 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
-18:05:54.114 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
-18:05:54.114 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Create Entity after duplicate record
-18:05:55.260 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
-18:05:55.260 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
-18:05:55.260 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Create Entity after duplicate record
-18:06:02.550 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
-18:06:02.550 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
-18:06:02.550 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Create Entity after duplicate record
-18:06:03.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
-18:06:03.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
-18:06:03.752 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Create Entity after duplicate record
-18:06:04.899 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
-18:06:04.899 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
-18:06:04.899 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Create Entity after duplicate record
-18:06:06.073 [main] INFO  utilities.UtilityCustomFunctions - Actual:India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
-18:06:06.073 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording"
-18:06:06.073 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Create Entity after duplicate record
-18:06:07.223 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-04-09
-18:06:07.223 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-04-09
-18:06:07.223 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Create Entity after duplicate record
-18:06:08.384 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 6508789240
-18:06:08.384 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 6508789240
-18:06:08.384 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Create Entity after duplicate record
-18:06:09.566 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
-18:06:09.566 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
-18:06:09.566 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Create Entity after duplicate record
-18:06:16.879 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 3577022448
-18:06:16.879 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 3577022448
-18:06:16.879 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Create Entity after duplicate record
-18:06:18.055 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
-18:06:18.055 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
-18:06:18.055 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Create Entity after duplicate record
-18:06:19.214 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
-18:06:19.214 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot India's First Lead Management System with "Auto Lead Call Distribution With Call Recording" Lead about Chatbot
-18:06:19.214 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Create Entity after duplicate record
-18:06:20.391 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9441122515
-18:06:20.391 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9441122515
-18:06:20.391 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Create Entity after duplicate record
-18:06:21.584 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
-18:06:21.585 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
-18:06:21.585 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCreate Entity after duplicate record
-18:06:22.710 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after Duplicate is Done
-18:07:42.760 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-18:07:47.119 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input
+18:18:30.830 [main] INFO  testCases.TC009_WF3_SN_Weekly - Module,workflow,conditions not matched 
+18:18:30.833 [main] INFO  testCases.TC009_WF3_SN_Weekly - bCurrentWFStatus: false
+18:18:30.833 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current Workflow Row item: 2
+18:18:30.883 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current style of Worflow Status Element captured
+18:18:30.883 [main] INFO  testCases.TC009_WF3_SN_Weekly - Workflow status: of row item: 2 false
+18:18:30.911 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Module Name:  CRMScheduleNotification
+18:18:30.911 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Workflow Name:  WF5_ScheduleNotify_MonthByDate
+18:18:30.911 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Exec Condition Name:  schedule
+18:18:30.912 [main] INFO  testCases.TC009_WF3_SN_Weekly - Module,workflow,conditions not matched 
+18:18:30.912 [main] INFO  testCases.TC009_WF3_SN_Weekly - bCurrentWFStatus: false
+18:18:30.912 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current Workflow Row item: 3
+18:18:30.949 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current style of Worflow Status Element captured
+18:18:30.949 [main] INFO  testCases.TC009_WF3_SN_Weekly - Workflow status: of row item: 3 false
+18:18:30.976 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Module Name:  CRMScheduleNotification
+18:18:30.976 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Workflow Name:  WF4_ScheduleNotify_SpecificDate
+18:18:30.976 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Exec Condition Name:  schedule
+18:18:30.976 [main] INFO  testCases.TC009_WF3_SN_Weekly - Module,workflow,conditions not matched 
+18:18:30.976 [main] INFO  testCases.TC009_WF3_SN_Weekly - bCurrentWFStatus: false
+18:18:30.976 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current Workflow Row item: 4
+18:18:31.013 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current style of Worflow Status Element captured
+18:18:31.013 [main] INFO  testCases.TC009_WF3_SN_Weekly - Workflow status: of row item: 4 false
+18:18:31.038 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Module Name:  CRMScheduleNotification
+18:18:31.038 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Workflow Name:  WF3_ScheduleNotify_Weekly
+18:18:31.038 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Exec Condition Name:  schedule
+18:18:31.038 [main] INFO  testCases.TC009_WF3_SN_Weekly - Module,workflow,condition matches
+18:18:31.038 [main] INFO  testCases.TC009_WF3_SN_Weekly - bCurrentWFStatus: false
+18:18:31.039 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current Workflow Row item: 5
+18:18:31.076 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current style of Worflow Status Element captured
+18:18:31.076 [main] INFO  testCases.TC009_WF3_SN_Weekly - Workflow status: of row item: 5 true
+18:18:31.101 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Module Name:  CRMScheduleNotification
+18:18:31.101 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Workflow Name:  WF2_ScheduleNotify_Daily
+18:18:31.101 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Exec Condition Name:  schedule
+18:18:31.101 [main] INFO  testCases.TC009_WF3_SN_Weekly - Module,workflow,conditions not matched 
+18:18:31.101 [main] INFO  testCases.TC009_WF3_SN_Weekly - bCurrentWFStatus: true
+18:18:31.136 [main] INFO  testCases.TC009_WF3_SN_Weekly - WF2_ScheduleNotify_DailyWorkflow disabled manually
+18:18:31.136 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current Workflow Row item: 6
+18:18:31.179 [main] INFO  testCases.TC009_WF3_SN_Weekly - Current style of Worflow Status Element captured
+18:18:31.179 [main] INFO  testCases.TC009_WF3_SN_Weekly - Workflow status: of row item: 6 false
+18:18:31.210 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Module Name:  CRMScheduleNotification
+18:18:31.210 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Workflow Name:  WF1_ScheduleNotify_Hourly
+18:18:31.210 [main] INFO  testCases.TC009_WF3_SN_Weekly - Actual Exec Condition Name:  schedule
+18:18:31.210 [main] INFO  testCases.TC009_WF3_SN_Weekly - Module,workflow,conditions not matched 
+18:18:31.210 [main] INFO  testCases.TC009_WF3_SN_Weekly - bCurrentWFStatus: false
+18:18:31.255 [main] INFO  utilities.UtilityCustomFunctions - WF1_ScheduleNotify_HourlyDisabled Workflow Manually Enabled
+18:18:31.255 [main] INFO  testCases.TC009_WF3_SN_Weekly - true:4
+18:18:38.010 [main] INFO  testCases.TC009_WF3_SN_Weekly - Work flow clicked
+18:18:43.156 [main] INFO  testCases.TC009_WF3_SN_Weekly - Cliked Step 1 Next Button to Condition Page
+18:18:47.178 [main] INFO  testCases.TC009_WF3_SN_Weekly - Cliked Step 2 Next Button to Task List Page
+18:18:48.179 [main] INFO  testCases.TC009_WF3_SN_Weekly - Clicked Workflow and Navigated to Task Page
+18:18:48.196 [main] INFO  testCases.TC009_WF3_SN_Weekly - Number of Tasks Listed for this Workflow: WF3_ScheduleNotify_Weekly : 1
+18:18:48.218 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+18:18:48.332 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+18:18:48.332 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerWeeklyNotify
+18:18:48.332 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:18:48.332 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerWeeklyNotify
+18:18:48.333 [main] INFO  testCases.TC009_WF3_SN_Weekly - Action Type and Action Tile matches and also Task Button Enabled
+18:18:49.343 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:18:52.792 [main] INFO  testCases.TC009_WF3_SN_Weekly - Clicked Workflow and Navigated to Task Page
+18:18:52.792 [main] INFO  testCases.TC009_WF3_SN_Weekly - Task Active Send notification  TriggerWeeklyNotify
+18:19:07.669 [main] INFO  testCases.TC009_WF3_SN_Weekly - Excel file Utility instance created
+18:19:07.703 [main] INFO  testCases.TC009_WF3_SN_Weekly - Row Count is: 1
+18:19:07.727 [main] INFO  testCases.TC009_WF3_SN_Weekly - Col Count is: 52
+18:19:07.727 [main] INFO  testCases.TC009_WF3_SN_Weekly - Extracting DataSheet Values started...
+18:19:08.886 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:19:11.984 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:19:17.181 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Sudhakar VE] is selected in List
+18:19:17.181 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:19:18.454 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+18:19:18.460 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+18:19:19.536 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:19:22.799 [main] INFO  testCases.TC009_WF3_SN_Weekly - [+65] is selected in List
+18:19:22.799 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  7031080838
+18:19:24.103 [main] INFO  utilities.UtilityCustomFunctions - 7031080838 entered in  input
+18:19:26.434 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+18:19:27.444 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+18:19:28.547 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:19:29.634 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+18:20:37.152 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
+18:20:38.235 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:20:41.538 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Kanchipuram] is selected in List
+18:20:41.538 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:20:42.611 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:20:46.196 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Tamilnadu] is selected in List
+18:20:46.197 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:20:47.296 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:20:50.477 [main] INFO  testCases.TC009_WF3_SN_Weekly - [India] is selected in List
+18:20:50.477 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:20:51.570 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:20:51.655 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:20:56.923 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Apr] is selected in Dropdown
+18:21:00.834 [main] INFO  testCases.TC009_WF3_SN_Weekly - [2024] is selected in Dropdown
+18:21:01.844 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:21:02.917 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:21:03.980 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:21:06.991 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:21:17.180 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:21:18.322 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:21:25.514 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Apr] is selected in Dropdown
+18:21:29.321 [main] INFO  testCases.TC009_WF3_SN_Weekly - [2024] is selected in Dropdown
+18:21:30.327 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:21:33.422 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:21:33.511 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:21:34.993 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+18:22:29.389 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Mrs.] is selected in List
+18:22:30.696 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:22:32.002 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+18:22:34.684 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+18:22:35.991 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:22:39.242 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Dr.] is selected in List
+18:22:40.487 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:22:41.866 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:22:43.296 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:22:46.950 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+18:22:52.218 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Apr] is selected in Dropdown
+18:22:56.132 [main] INFO  testCases.TC009_WF3_SN_Weekly - [2024] is selected in Dropdown
+18:22:57.139 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:23:02.643 [main] INFO  testCases.TC009_WF3_SN_Weekly - [+60] is selected in List
+18:23:04.981 [main] INFO  utilities.UtilityCustomFunctions - 5161090799 entered in  input
+18:23:11.233 [main] INFO  testCases.TC009_WF3_SN_Weekly - [Ordinary] is selected in List
+18:23:17.541 [main] INFO  testCases.TC009_WF3_SN_Weekly - [+91] is selected in List
+18:23:19.835 [main] INFO  utilities.UtilityCustomFunctions - 5624396525 entered in  input
+18:23:21.195 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+18:23:22.481 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:23:26.794 [main] INFO  testCases.TC009_WF3_SN_Weekly - [+60] is selected in List
+18:23:29.110 [main] INFO  utilities.UtilityCustomFunctions - 5372954369 entered in  input
+18:23:30.416 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+18:24:52.214 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+18:24:52.407 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+18:25:17.417 [main] INFO  utilities.UtilityCustomFunctions - Passed: Worflow scheduled to run atMon Apr 15 08:00:00 IST 2024 on UTC and WeekDay at:Monday Execution Time:2024-04-15 02:30:00 Created Time:2024-04-11 12:53:40 Scheduled Type: Weekly Action type:Send notification for EntityId 122145and Task Id:100
+18:44:14.635 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - ******starting WF Schedule SpecificDate****
+18:44:14.639 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Test Execution on Browser: chrome
+18:44:14.640 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Excel file Utility instance created
+18:44:15.248 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Row Count is: 1
+18:44:15.322 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Col Count is: 52
+18:44:15.323 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Extracting DataSheet Values started...
+18:44:19.053 [main] INFO  utilities.UtilityCustomFunctions - PN1:6079928231
+18:44:19.053 [main] INFO  utilities.UtilityCustomFunctions - PN2:8238268599
+18:44:19.053 [main] INFO  utilities.UtilityCustomFunctions - PN3:2973023394
+18:44:19.053 [main] INFO  utilities.UtilityCustomFunctions - PN4:6330167310
+18:44:29.444 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:44:30.718 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
+18:44:31.970 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+18:44:38.529 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - CRM Login Success with:Sudhakar
+18:44:38.530 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+18:44:38.530 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+18:44:38.530 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
+18:44:44.981 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Avatar
+18:44:47.898 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Menu CRM Setting
+18:44:48.043 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Menu Other Setting
+18:44:51.125 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Menu Item Workflow
+18:44:51.332 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Workflow from Combox Box List
+18:44:53.341 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Item to be selected:  CRMScheduleNotification Workflow
+18:44:59.764 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [CRMScheduleNotification Workflow] is selected in List
+18:44:59.764 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Item selected in combox Box  CRMScheduleNotification Workflow
+18:45:00.776 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Selected Module to View its Workflows
+18:45:00.794 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current Workflow Row item: 1
+18:45:00.844 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current style of Worflow Status Element captured
+18:45:00.844 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Workflow status: of row item: 1 false
+18:45:00.874 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Module Name:  CRMScheduleNotification
+18:45:00.875 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Workflow Name:  WF6_ScheduleNotify_Yearly
+18:45:00.875 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Exec Condition Name:  schedule
+18:45:00.875 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Module,workflow,conditions not matched 
+18:45:00.875 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - bCurrentWFStatus: false
+18:45:00.875 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current Workflow Row item: 2
+18:45:00.916 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current style of Worflow Status Element captured
+18:45:00.916 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Workflow status: of row item: 2 false
+18:45:00.950 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Module Name:  CRMScheduleNotification
+18:45:00.950 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Workflow Name:  WF5_ScheduleNotify_MonthByDate
+18:45:00.950 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Exec Condition Name:  schedule
+18:45:00.950 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Module,workflow,conditions not matched 
+18:45:00.950 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - bCurrentWFStatus: false
+18:45:00.950 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current Workflow Row item: 3
+18:45:00.982 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current style of Worflow Status Element captured
+18:45:00.982 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Workflow status: of row item: 3 true
+18:45:01.005 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Module Name:  CRMScheduleNotification
+18:45:01.005 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Workflow Name:  WF4_ScheduleNotify_SpecificDate
+18:45:01.005 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Exec Condition Name:  schedule
+18:45:01.006 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Module,workflow,condition matches
+18:45:01.006 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - bCurrentWFStatus: true
+18:45:01.006 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - WF4_ScheduleNotify_SpecificDateWorkflow enabled
+18:45:01.006 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current Workflow Row item: 4
+18:45:01.040 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current style of Worflow Status Element captured
+18:45:01.040 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Workflow status: of row item: 4 false
+18:45:01.063 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Module Name:  CRMScheduleNotification
+18:45:01.063 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Workflow Name:  WF3_ScheduleNotify_Weekly
+18:45:01.063 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Exec Condition Name:  schedule
+18:45:01.063 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Module,workflow,conditions not matched 
+18:45:01.063 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - bCurrentWFStatus: false
+18:45:01.063 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current Workflow Row item: 5
+18:45:01.097 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current style of Worflow Status Element captured
+18:45:01.098 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Workflow status: of row item: 5 false
+18:45:01.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Module Name:  CRMScheduleNotification
+18:45:01.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Workflow Name:  WF2_ScheduleNotify_Daily
+18:45:01.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Exec Condition Name:  schedule
+18:45:01.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Module,workflow,conditions not matched 
+18:45:01.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - bCurrentWFStatus: false
+18:45:01.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current Workflow Row item: 6
+18:45:01.153 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Current style of Worflow Status Element captured
+18:45:01.153 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Workflow status: of row item: 6 false
+18:45:01.176 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Module Name:  CRMScheduleNotification
+18:45:01.176 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Workflow Name:  WF1_ScheduleNotify_Hourly
+18:45:01.176 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Actual Exec Condition Name:  schedule
+18:45:01.176 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Module,workflow,conditions not matched 
+18:45:01.176 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - bCurrentWFStatus: false
+18:45:01.176 [main] INFO  utilities.UtilityCustomFunctions - WF1_ScheduleNotify_HourlyDisabled Workflow Manually Enabled
+18:45:01.177 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - true:3
+18:45:07.460 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Work flow clicked
+18:45:12.133 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Cliked Step 1 Next Button to Condition Page
+18:45:16.018 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Cliked Step 2 Next Button to Task List Page
+18:45:17.019 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Workflow and Navigated to Task Page
+18:45:17.033 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Number of Tasks Listed for this Workflow: WF4_ScheduleNotify_SpecificDate : 1
+18:45:17.055 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+18:45:17.161 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+18:45:17.161 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:NotifySpecificDate
+18:45:17.161 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:45:17.161 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:NotifySpecificDate
+18:45:17.161 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Action Type and Action Tile matches and also Task Button Enabled
+18:45:18.166 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:45:21.529 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Clicked Workflow and Navigated to Task Page
+18:45:21.530 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Task Active Send notification  NotifySpecificDate
+18:45:36.252 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Excel file Utility instance created
+18:45:36.283 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Row Count is: 1
+18:45:36.321 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Col Count is: 52
+18:45:36.321 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - Extracting DataSheet Values started...
+18:45:37.427 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:45:40.543 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:45:45.761 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Sudhakar VE] is selected in List
+18:45:45.761 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:45:47.124 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+18:45:47.128 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+18:45:48.238 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:45:51.461 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [+65] is selected in List
+18:45:51.461 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  6079928231
+18:45:52.769 [main] INFO  utilities.UtilityCustomFunctions - 6079928231 entered in  input
+18:45:55.052 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+18:45:56.067 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+18:45:57.151 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:45:58.233 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+18:47:05.767 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
+18:47:06.854 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:47:10.130 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Kanchipuram] is selected in List
+18:47:10.130 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:47:11.226 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:47:14.771 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Tamilnadu] is selected in List
+18:47:14.772 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:47:15.839 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:47:18.987 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [India] is selected in List
+18:47:18.987 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:47:20.096 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:47:20.217 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:47:25.365 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Apr] is selected in Dropdown
+18:47:29.302 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [2024] is selected in Dropdown
+18:47:30.308 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:47:31.416 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:47:32.481 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:47:35.494 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:47:45.756 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:47:46.868 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:47:54.037 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Apr] is selected in Dropdown
+18:47:57.887 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [2024] is selected in Dropdown
+18:47:58.892 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:48:02.069 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:48:02.182 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:48:03.742 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+18:48:58.083 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Mrs.] is selected in List
+18:48:59.424 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:49:01.382 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+18:49:02.575 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+18:49:03.874 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:49:07.120 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Dr.] is selected in List
+18:49:08.380 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:49:09.707 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:49:10.988 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:49:14.138 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+18:49:19.391 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Apr] is selected in Dropdown
+18:49:23.288 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [2024] is selected in Dropdown
+18:49:24.302 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:49:29.838 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [+60] is selected in List
+18:49:32.202 [main] INFO  utilities.UtilityCustomFunctions - 8238268599 entered in  input
+18:49:38.524 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [Ordinary] is selected in List
+18:49:44.796 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [+91] is selected in List
+18:49:47.195 [main] INFO  utilities.UtilityCustomFunctions - 2973023394 entered in  input
+18:49:48.608 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+18:49:49.896 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:49:54.167 [main] INFO  testCases.TC010_WF4_SN_SpecificDate - [+60] is selected in List
+18:49:56.492 [main] INFO  utilities.UtilityCustomFunctions - 6330167310 entered in  input
+18:49:57.821 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+18:51:18.252 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+18:51:18.451 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+18:51:43.417 [main] INFO  utilities.UtilityCustomFunctions - Passed: Worflow scheduled to run at Thu Jan 18 08:00:00 IST 2024 on UTC and WeekDay at:  Execution Time: 2024-01-18 02:30:00 Created Time: 2024-04-11 13:20:05 Scheduled Type: Specific Date Action type:Send notification for EntityId 122147and Task Id:101

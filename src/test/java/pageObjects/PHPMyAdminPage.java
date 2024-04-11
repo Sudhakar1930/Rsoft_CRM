@@ -81,10 +81,17 @@ public class PHPMyAdminPage extends BasePage{
 	
 	//click methods	
 	public void aNavigtoLastPage() {
-	boolean sPresent = UtilityCustomFunctions.IsElementVisible(driver, aNavigateLastPage);
-		if(sPresent==true) {
-			aNavigateLastPage.click();
-		}
+	boolean sPresent=false;
+	try {	
+		sPresent = UtilityCustomFunctions.IsElementVisible(driver, aNavigateLastPage);
+
+	if(sPresent==true) {
+		aNavigateLastPage.click();
+	}
+	}catch(Exception e) {
+		UtilityCustomFunctions.logWriteConsole("No EndPage Link");
+	}
+	
 	}
 	public void clickConsoleWindow() {
 		btnConsole.click();
@@ -106,8 +113,8 @@ public class PHPMyAdminPage extends BasePage{
 	public void clickaClearButton() {
 		btnClear.click();
 	}
-	public void clickaTableLink() {
-		aTableLink.click();
+	public void clickaTableLink() throws Exception {
+		UtilityCustomFunctions.doClick(driver, aTableLink);
 	}
 	public void clickaEditInLine() {
 		aEditInline.click();
@@ -360,7 +367,7 @@ public class PHPMyAdminPage extends BasePage{
 		System.out.println("Send Type:" + tCols.get(17).getText());
 		System.out.println("Created Time:" + tCols.get(18).getText());
 		
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 Date d1 = null;
 		 d1 = format.parse(sActExecTime);
 		 Date newDate = DateUtils.addMinutes(d1, 330);
@@ -368,14 +375,14 @@ public class PHPMyAdminPage extends BasePage{
 		 Thread.sleep(3000);
 		 js.executeScript("arguments[0].scrollIntoView();", tCols.get(4));
 		 if(sDateTime.contains("08:00:00") && sActWeeklyDay.equalsIgnoreCase(sWeekday) && sActSchdName.equalsIgnoreCase(schTypeName) && sActSendType.equalsIgnoreCase(sSendType)) {
-			 objBase.freport("Passed: Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "Created Time:" + sActCreatdTime +", Schedule Type" + sActSchdName + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId, "pass",node);
-			 UtilityCustomFunctions.logWriteConsole("Passed: Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "Created Time:" + sActCreatdTime +", Schedule Type" + sActSchdName + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
-			 BaseClass.sAssertinFn.assertEquals("Worflow scheduled to run at 08:00:00 AM on UTC:"+ sActExecTime + "Created Time:" + sActCreatdTime + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId, "Worflow scheduled to run at 08:00:00 AM on UTC:"+ sActExecTime + "Created Time:" + sActCreatdTime + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
+			 objBase.freport("Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at: " + sActWeeklyDay + " Execution Time: "+ sActExecTime + " Created Time: " + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId, "pass",node);
+			 UtilityCustomFunctions.logWriteConsole("Passed: Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at: " + sActWeeklyDay + " Execution Time: "+ sActExecTime + " Created Time: " + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Action type:" + sActSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
+			 BaseClass.sAssertinFn.assertEquals("Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at:" + sActWeeklyDay + " Execution Time:"+ sActExecTime + " Created Time:" + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId, "Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at:" + sActWeeklyDay + " Execution Time:"+ sActExecTime + " Created Time:" + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId);
 		 }
 		 else {
-			 objBase.freport("Failed: Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "Created Time:" + sActCreatdTime +"Schedule Type" + sActSchdName + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId, "fail",node);
-			 UtilityCustomFunctions.logWriteConsole("Failed: Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "Created Time:" + sActCreatdTime + "Schedule Type" + sActSchdName + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
-			 BaseClass.sAssertinFn.assertEquals("Worflow not scheduled to run at 08:00:00 AM on UTC:"+ sActExecTime + "Created Time:" + sActCreatdTime + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId, "Worflow scheduled to run at 08:00:00 AM on UTC:"+ sActExecTime + "Created Time:" + sActCreatdTime + "Scheduled Type: " + schTypeName + " Action type:" + sSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
+			 objBase.freport("Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at: " + sActWeeklyDay + " Execution Time: "+ sActExecTime + " Created Time: " + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId, "fail",node);
+			 UtilityCustomFunctions.logWriteConsole("Failed: Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at: " + sActWeeklyDay + " Execution Time: "+ sActExecTime + " Created Time: " + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Action type:" + sActSendType + " for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
+			 BaseClass.sAssertinFn.assertEquals("Worflow not schedule to run at " + sDateTime + " on UTC and WeekDay at: " + sActWeeklyDay + " Execution Time:"+ sActExecTime + " Created Time:" + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId, "Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at:" + sActWeeklyDay + " Execution Time:"+ sActExecTime + " Created Time:" + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId);
 		 }
 		}//if Entity Id
 		}
@@ -385,9 +392,9 @@ public class PHPMyAdminPage extends BasePage{
 		BaseClass objBase = new BaseClass();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
-		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
-		int itRowCount = eleTblRows.size();
+//		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
+//		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
+//		int itRowCount = eleTblRows.size();
 		
 		int iTaskId = 0; 
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
@@ -433,13 +440,13 @@ public class PHPMyAdminPage extends BasePage{
 			 String sDateTime = newDate.toString();
 			 js.executeScript("arguments[0].scrollIntoView();", tCols.get(5));
 			 if(sDateTime.contains("08:00:00")) {
-				 objBase.freport("Passed: Worflow scheduled to run daily at 08:00:00 AM for EntityId "+ sEntityId + "and Task Id:" + sActTaskId, "pass",node);
-				 UtilityCustomFunctions.logWriteConsole("Passed: Worflow scheduled to run daily at 08:00:00 AM for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
-				 BaseClass.sAssertinFn.assertEquals("Workflow schedule to run at 8 AM for Entity:" + sEntityId +"and Task Id:" + sActTaskId, "Workflow schedule to run at 8 AM for Entity:"  + sEntityId + "and Task Id:" + sActTaskId);
+				 objBase.freport("Worflow execution time : " +sActExecTime +" add 300 minutes added to GMT that is 08:00:00 AM "+" Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " and Task Id:" + sActTaskId, "pass",node);
+				 UtilityCustomFunctions.logWriteConsole("Worflow execution time : " +sActExecTime +" add 300 minutes added to GMT that is 08:00:00 AM "+" Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + "and Task Id:" + sActTaskId);
+				 BaseClass.sAssertinFn.assertEquals("Workflow schedule to run Daily at 8 AM for Entity:" + sEntityId +"and Task Id:" + sActTaskId, "Workflow schedule to run Daily at 8 AM for Entity:"  + sEntityId + "and Task Id:" + sActTaskId);
 			 }
 			 else {
-				 objBase.freport("Failed: Worflow not scheduled to run daily at 08:00:00 AM for EntityId "+ sEntityId + "and Task Id:" + sActTaskId, "fail",node);
-				 UtilityCustomFunctions.logWriteConsole("Failed: Worflow not scheduled to run daily at 08:00:00 AM for EntityId "+ sEntityId + "and Task Id:" + sActTaskId);
+				 objBase.freport("Worflow execution time : " +sActExecTime +" add 300 minutes added to GMT that is not 8:00:00AM which actually is :"+sDateTime +" Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " and Task Id:" + sActTaskId, "fail",node);
+				 UtilityCustomFunctions.logWriteConsole("Failed: " + "Worflow execution time : " +sActExecTime +" add 300 minutes added to GMT that is not 8:00:00 AM which actually is :"+sDateTime +" Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " and Task Id:" + sActTaskId);
 				 BaseClass.sAssertinFn.assertEquals("Workflow not scheduled for daily run for Entity:" + sEntityId +"and Task Id:" + sActTaskId, "Workflow scheduled for daily run for Entity:"  + sEntityId + "and Task Id:" + sActTaskId);
 			 }
 			}//if Entity Id
@@ -447,11 +454,12 @@ public class PHPMyAdminPage extends BasePage{
 		
 	}
 	public void check_SN_Hourly(String sEntityId,ExtentTest node) throws IOException, InterruptedException {
+		BaseClass objBase = new BaseClass();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
 		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
 		int itRowCount = eleTblRows.size();
-		
+		UtilityCustomFunctions.logWriteConsole("RowCount:"+itRowCount);
 		int iTaskId = 0; 
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
 		
@@ -488,9 +496,18 @@ public class PHPMyAdminPage extends BasePage{
 			System.out.println("Execution Time:" + tCols.get(14).getText());
 			System.out.println("Send Type:" + tCols.get(17).getText());
 			System.out.println("Created Time:" + tCols.get(18).getText());
-			
-			fCustomDateDiff(sEntityId,sActTaskId,sActExecTime,sActCreatdTime,node);
-			
+			long lDiffMinutes = fCustomDateDiff(sActExecTime,sActCreatdTime);
+			 if(lDiffMinutes==60) {
+				 objBase.freport("Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference In Minutes:="+lDiffMinutes +" and Task Id:" + sActTaskId, "pass",node);
+				 UtilityCustomFunctions.logWriteConsole("Passed: " + " Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference In Minutes:="+lDiffMinutes +" and Task Id:" + sActTaskId);
+				 BaseClass.sAssertinFn.assertEquals("Scheduled Workflow triggered for Entity:" + sEntityId +"and Task Id:" + sActTaskId, "Scheduled Workflow triggered for Entity:" + sEntityId + "and Task Id:" + sActTaskId);
+			 }
+			 else
+			 {
+				 objBase.freport("Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference In Minutes:="+lDiffMinutes +" and Task Id:" + sActTaskId, "fail",node);
+				 UtilityCustomFunctions.logWriteConsole("Failed: " + " Actual EntityId:"+sActEntityId + " ScheduleName:" +sActSchdName +" Created Time:"+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference In Minutes:="+lDiffMinutes +" and Task Id:" + sActTaskId);
+				 BaseClass.sAssertinFn.assertEquals("Scheduled Workflow not triggered for Entity:" + sEntityId , "Scheduled Workflow triggered for Entity:" + sActTaskId); 
+			 }
 			 
 			
 			
@@ -513,9 +530,9 @@ public class PHPMyAdminPage extends BasePage{
 		 }
 		 
 	}
-	public void fCustomDateDiff(String sEntityId,String sTaskId,String sExecTime,String sCreatedTime,ExtentTest node) throws IOException, InterruptedException {
+	public long fCustomDateDiff(String sExecTime,String sCreatedTime) throws IOException, InterruptedException {
 		UtilityCustomFunctions.logWriteConsole("Within Date Diff Validation");
-		BaseClass objReport = new BaseClass();
+		
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 Date d1 = null;
 		 Date d2 = null;
@@ -525,26 +542,14 @@ public class PHPMyAdminPage extends BasePage{
 		 } catch (Exception e) {
 		   e.printStackTrace();
 		 }
-		 
-		 
 		 long duration  = d1.getTime() - d2.getTime();
 		 long diffMinutes = duration / (60 * 1000);
 		 //long diffHours = duration / (60 * 60 * 1000);     
 		 //long diffSeconds = diff / 1000;         
 		 //long diffMinutes = diff / (60 * 1000);  
+		 System.out.println("Difference in Time in Minutes: " + diffMinutes);
 		 
-		 System.out.println("Differene in Time in Minutes: " + diffMinutes);
-		 if(diffMinutes==60) {
-			 objReport.freport("Passed: Scheduled Worflow task displayed in DB: "+ sEntityId + "and Task Id:" + sTaskId, "pass",node);
-			 UtilityCustomFunctions.logWriteConsole("Passed: Scheduled Worflow task displayed in DB :"+ sEntityId + "and Task Id:" + sTaskId);
-			 BaseClass.sAssertinFn.assertEquals("Scheduled Workflow triggered for Entity:" + sEntityId +"and Task Id:" + sTaskId, "Scheduled Workflow triggered for Entity:" + sEntityId + "and Task Id:" + sTaskId);
-		 }
-		 else
-		 {
-			 objReport.freport("Failed: Scheduled Worflow task not displayed in DB: "+ sEntityId, "fail",node);
-			 UtilityCustomFunctions.logWriteConsole("Failed: Scheduled Worflow task not displayed in DB :"+ sEntityId);
-			 BaseClass.sAssertinFn.assertEquals("Scheduled Workflow not triggered for Entity:" + sEntityId , "Scheduled Workflow triggered for Entity:" + sEntityId); 
-		 }
+		 return diffMinutes;
 	}
 	}
 

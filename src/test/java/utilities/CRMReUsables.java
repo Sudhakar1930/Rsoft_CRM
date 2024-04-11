@@ -1584,7 +1584,7 @@ public class CRMReUsables extends BaseClass {
 			sExpEnquiry_Text = sText + " " + sEnquiry_Text;	
 		}
 		sExpEnquiry_Text = UtilityCustomFunctions.fArrayConcat(sExpEnquiry_Text);
-		UtilityCustomFunctions.fSoftAssert(sActEnq_Text, sExpEnquiry_Text, "Summary Enquiry Text:  " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(sActEnq_Text, sEnquiry_Text, "Summary Enquiry Text:  " + sMessage, node);
 		
 		String sActEnq_TextArea=objDVP.getArraySummary(21).trim();
 		sActEnq_TextArea = UtilityCustomFunctions.fArrayConcat(sActEnq_TextArea);
@@ -1593,7 +1593,8 @@ public class CRMReUsables extends BaseClass {
 			sExpEnquiryTextArea_Text = sText + " " + sEnquiry_Text + " " + sEnquiry_TextArea;	
 		}
 		sExpEnquiryTextArea_Text = UtilityCustomFunctions.fArrayConcat(sExpEnquiryTextArea_Text);
-		UtilityCustomFunctions.fSoftAssert(sActEnq_TextArea, sExpEnquiryTextArea_Text, "Summary Enquiry Text Area:  " + sMessage, node);
+		sEnquiry_TextArea = UtilityCustomFunctions.fArrayConcat(sEnquiry_TextArea);
+		UtilityCustomFunctions.fSoftAssert(sActEnq_TextArea, sEnquiry_TextArea, "Summary Enquiry Text Area:  " + sMessage, node);
 		
 		UtilityCustomFunctions.logWriteConsole("Expected enq Date:" + sEnquiry_Date);
 		String sActEnq_Date=objDVP.getArraySummary(22).trim();
@@ -1659,7 +1660,7 @@ public class CRMReUsables extends BaseClass {
 			sExpLead_Text = sText + " " + sEnquiry_Text +" " + sEnquiry_TextArea + " " + sLead_Text;	
 		}
 		sExpLead_Text = UtilityCustomFunctions.fArrayConcat(sExpLead_Text);
-		UtilityCustomFunctions.fSoftAssert(sActLead_Text, sExpLead_Text, "Summary Lead Text:  " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(sActLead_Text, sLead_Text, "Summary Lead Text:  " + sMessage, node);
 		//Sales Validation
 		String sSales_PhoneNumber = sSales_PN_Prefix + " " + sSales_PN ;
 		
@@ -1774,11 +1775,11 @@ public class CRMReUsables extends BaseClass {
 		
 		String sActDTEnqText= objDVP.getArrayDetails(26).trim();
 		sActDTEnqText = UtilityCustomFunctions.fArrayConcat(sActDTEnqText);
-		UtilityCustomFunctions.fSoftAssert(sActDTEnqText, sExpEnquiry_Text, "Detail View Enquiry Text:  " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(sActDTEnqText, sEnquiry_Text, "Detail View Enquiry Text:  " + sMessage, node);
 		
 		String sActDTEnqTextArea= objDVP.getArrayDetails(27).trim();
 		sActDTEnqTextArea = UtilityCustomFunctions.fArrayConcat(sActDTEnqTextArea);
-		UtilityCustomFunctions.fSoftAssert(sActDTEnqTextArea, sExpEnquiryTextArea_Text, "Detail View Enquiry Text Area:  " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(sActDTEnqTextArea, sEnquiry_TextArea, "Detail View Enquiry Text Area:  " + sMessage, node);
 		
 		String sActDTEnqDate= objDVP.getArrayDetails(28).trim();
 		UtilityCustomFunctions.fSoftAssert(sActDTEnqDate, sEnquiry_Date, "Detail View Enquiry Date:  " + sMessage, node);
@@ -1814,7 +1815,7 @@ public class CRMReUsables extends BaseClass {
 			sExpLead_Text = sText + " " + sEnquiry_Text +" " + sEnquiry_TextArea + " " + sLead_Text;	
 		}
 		sExpLead_Text = UtilityCustomFunctions.fArrayConcat(sExpLead_Text);
-		UtilityCustomFunctions.fSoftAssert(sActDTLeadText, sExpLead_Text, "DT View Lead Text " + sMessage, node);
+		UtilityCustomFunctions.fSoftAssert(sActDTLeadText, sLead_Text, "DT View Lead Text " + sMessage, node);
 		
 		//Sales
 		String sActSalesDTMobileNumber= objDVP.getArrayDetails(34).trim();

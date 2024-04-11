@@ -66,21 +66,6 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		xlObj.setCellData("Sheet1", 1, 45, sPhoneNumber3);
 		xlObj.setCellData("Sheet1", 1, 49, sPhoneNumber4);
 		
-		xlObj.setCellData("Sheet2", 1, 5, sPhoneNumber1);
-		xlObj.setCellData("Sheet2", 1, 30, sPhoneNumber2);
-		xlObj.setCellData("Sheet2", 1, 45, sPhoneNumber3);
-		xlObj.setCellData("Sheet2", 1, 49, sPhoneNumber4);
-		
-		xlObj.setCellData("Sheet3", 1, 5, sPhoneNumber1);
-		xlObj.setCellData("Sheet3", 1, 30, sPhoneNumber2);
-		xlObj.setCellData("Sheet3", 1, 45, sPhoneNumber3);
-		xlObj.setCellData("Sheet3", 1, 49, sPhoneNumber4);
-		
-		xlObj.setCellData("Sheet4", 1, 5, sPhoneNumber1);
-		xlObj.setCellData("Sheet4", 1, 30, sPhoneNumber2);
-		xlObj.setCellData("Sheet4", 1, 45, sPhoneNumber3);
-		xlObj.setCellData("Sheet4", 1, 49, sPhoneNumber4);
-		 
 		Thread.sleep(1000);
 		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
 		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
@@ -134,7 +119,8 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		String sSales_PN=xlObj.getCellData("Sheet1", 1, 49);
 		String sSales_Email=xlObj.getCellData("Sheet1", 1, 50);
 		String sSMSTemplateMsg = xlObj.getCellData("Sheet1", 1, 51);
-
+		String sWeekDayName = xlObj.getCellData("Sheet1", 1, 52);
+		
 		sMobileNumber=xlObj.getCellData("Sheet1", 1, 5);
 		sEnquiry_PhoneNumber=xlObj.getCellData("Sheet1", 1, 30);
 		sLead_PN=xlObj.getCellData("Sheet1", 1, 45);
@@ -292,7 +278,7 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
 		
 		//Validate Weekly Data
-		objPAP.check_SN_Weekly(sUser1RecordId,"Monday","Weekly",sActionType,node); 
+		objPAP.check_SN_Weekly(sUser1RecordId,sWeekDayName,"Weekly",sActionType,node); 
 
 	}	
 }

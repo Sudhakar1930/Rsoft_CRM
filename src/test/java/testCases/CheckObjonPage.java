@@ -7,8 +7,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageObjects.AllListPage;
+import pageObjects.AllModuleValues;
+import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
+import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.NotificationsPage;
+import pageObjects.PHPMyAdminPage;
 import pageObjects.SMSNotifiers;
 import pageObjects.SummaryViewPage;
 import testBase.BaseClass;
@@ -26,33 +31,43 @@ public class CheckObjonPage extends BaseClass {
 	@Test
 	public void testControl() throws Exception {
 	node = test.createNode("checkToggleOn Summary");
+	String sMySqlUid = rb.getString("MySqlUid");
+	String sMySqlPwd = rb.getString("MySqlPwd");
+	String sMySqlUrl= rb.getString("MySqlUrl");
 	
-	
-	
-	String sAppUrl = "https://rdot.in/public/admin?Module=Cesourcedupprev&Related=Summary&record=101914&view=Detail";
-	driver.get(sAppUrl);
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));		
-	System.out.println("AppURL:" + sAppUrl);
-	String sCompName =  rb.getString("companyName");
-	String sUserName =  rb.getString("userName1");
-	String sPassword =  rb.getString("passWord1");
-	String sAssignedTo = rb.getString("AssignedTo1");
-	
-	
-	SummaryViewPage objSVP = new SummaryViewPage(driver);
-	AllListPage objALP = new AllListPage(driver);
-	DetailViewPage objDVP = new DetailViewPage(driver);
+	String sRecordId="122097";
+	String sMySqlQuery = "SELECT * FROM `rsoft_workflowtask_queue` where `entity_id` ="+ sRecordId + ";";
+	driver.get(sMySqlUrl);
 	LoginPage objLP = new LoginPage(driver);
+	HomePage objHP = new HomePage(driver);
+	AllListPage objALP = new AllListPage(driver);
+	AllModuleValues objEDT = new AllModuleValues(driver);
+	CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+	CRMReUsables objCRMRs = new CRMReUsables();
+	NotificationsPage objNFP = new NotificationsPage(driver);
+	DetailViewPage objDVP = new DetailViewPage(driver);
 	SMSNotifiers objSMS = new SMSNotifiers(driver);
-	CRMReUsables objCRS = new CRMReUsables();
-	
-	objLP.setCompanyName(sCompName);
-	objLP.setUserName(sUserName);
-	objLP.setPassword(sPassword);
-	objLP.clickLoginSubmit();
+	objLP.setMySqlUserId(sMySqlUid);
+	objLP.setMySqlPasswd(sMySqlPwd);
 	Thread.sleep(3000);
-	Thread.sleep(2000);
-	objSVP.clickEditCheckBox(1);
+	objLP.clickMySqlSubmit();
+	Thread.sleep(3000);
+//	objPAP.clickDB();
+	PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
+	objPAP.clickDBLink();
+	Thread.sleep(3000);
+	objPAP.setTableInDB("rsoft_workflowtask_queue");
+	Thread.sleep(4000);
+	objPAP.clickaTableLink();
+	Thread.sleep(3000);
+	objPAP.aNavigtoLastPage();
+	
+	objPAP.check_SN_Hourly(sRecordId,node);
+	
+	
+	
+	
+	
 //	 if(objLP.isLoginPageDisplayed(sAppUrl)) {
 //		objLP.setCompanyName(sCompName);
 //		objLP.setUserName(sUserName);

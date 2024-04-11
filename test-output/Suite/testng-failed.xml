@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC014_CreateEntity_OOFS_DefaultValues">
+      <class name="testCases.CheckObjonPage">
         <methods>
           <include name="onStart"/>
-          <include name="CreateTest"/>
-          <include name="testCreateEntity_DefaultValues_OOF_S"/>
+          <include name="testName"/>
+          <include name="testControl"/>
           <include name="setup"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testCases.TC014_CreateEntity_OOFS_DefaultValues -->
+      </class> <!-- testCases.CheckObjonPage -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
