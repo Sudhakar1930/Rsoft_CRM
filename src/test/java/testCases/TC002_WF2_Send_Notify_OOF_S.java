@@ -89,9 +89,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		String sUserName =  rb.getString("userName");
 		String sPassword =  rb.getString("passWord");
 		String sAssignedTo = rb.getString("AssignedTo");
-		String sUserName1 =  rb.getString("userName1");
-		String sPassword1 =  rb.getString("passWord1");
-		String sAssignedTo1 = rb.getString("AssignedTo1");
+		String sUserName1 =  rb.getString("userName3");
+		String sPassword1 =  rb.getString("passWord3");
+		String sAssignedTo1 = rb.getString("AssignedTo3");
 		String sUserName2 =  rb.getString("userName2");
 		String sPassword2 =  rb.getString("passWord2");
 		String sAssignedTo2 = rb.getString("AssignedTo2");
@@ -215,7 +215,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
 		
-		int iNotificationCount = objSMS.getSMSRowcount(); 
+		int iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
@@ -232,7 +232,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//AssignedTo1
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
 		
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
@@ -249,7 +249,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//AssignedTo2
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
 		
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
@@ -293,7 +293,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		driver.switchTo().window(sCurrentWinHandle);
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
@@ -339,7 +339,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		driver.switchTo().window(sCurrentWinHandle);
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
@@ -399,7 +399,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
 		
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Add Summary Record-"+ sAssignedTo + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Add Summary Record -"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
@@ -416,7 +416,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notification for 2nd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Add Summary Record-"+ sAssignedTo1 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Add Summary Record -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
@@ -432,7 +432,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notification for 3rd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Add Summary Record-"+ sAssignedTo2 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Add Summary Record -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
@@ -476,7 +476,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
 				
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate-"+ sAssignedTo + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate -"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
@@ -492,7 +492,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notifications 2
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate-"+ sAssignedTo1 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
@@ -507,7 +507,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sRecordId,node);
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate Record-"+ sAssignedTo2 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate Record -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
@@ -524,7 +524,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notification 3
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate Record-"+ sAssignedTo2 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate Record -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
@@ -569,7 +569,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
 						
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate Change-"+ sAssignedTo + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate Change-"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
@@ -585,7 +585,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notification 2
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate change-"+ sAssignedTo1 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate change -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
@@ -600,7 +600,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notification 3
 		sStatus = "0";
 		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-		iNotificationCount = objSMS.getSMSRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount(); 
 		if(iNotificationCount==2) {
 			logger.info("Passed: Notification Received after Duplicate change Record-"+ sAssignedTo2 + " Record Id: " + sRecordId);
 			freport("Passed: Notification Received after Duplicate change Record -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);

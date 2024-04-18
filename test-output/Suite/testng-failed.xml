@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.CheckObjonPage">
+      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
         <methods>
           <include name="onStart"/>
-          <include name="testName"/>
-          <include name="testControl"/>
           <include name="setup"/>
           <include name="flush"/>
+          <include name="testName"/>
+          <include name="testNotifyETR_S"/>
         </methods>
-      </class> <!-- testCases.CheckObjonPage -->
+      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

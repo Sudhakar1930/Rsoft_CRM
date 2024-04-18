@@ -37,11 +37,11 @@ public class HomePage extends BasePage {
 	}
 	
 	public void clickLogoutCRM() throws Exception {
-		Thread.sleep(1000);;
+		Thread.sleep(2000);;
 		clickAvatar();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		clickLogout();
-		driver.close();
+//		driver.close();
 		
 	}
 	

@@ -31,11 +31,19 @@ public class NotificationsPage extends BasePage{
 	WebElement lblNotificUserName;
 	
 	
-	@FindBy(xpath="(//p[@class='view-column-txt notification-msg-txt'])[1]")
+//	@FindBy(xpath="(//p[@class='view-column-txt notification-msg-txt'])[1]")
+	@FindBy(xpath="(//h6[contains(@class,'text-secondary font-weight-bold notification-msg-txt')])[1]")
 	WebElement lnkFirstNotifyMsg;
+	
+	@FindBy(xpath="//i[@class='ficon ft-bell bell-shake']")
+	WebElement btnBellIcon;
 	
 	@FindBy(xpath="(//div[@class='msg-container']/h6)[1]")
 	WebElement lnkNotification;
+	
+	//Notification Summary
+	@FindBy(xpath="//div[@class='col-lg-9']/label")
+	WebElement lblSmryAssignedTo;
 	
 	//NotificationDetail
 	@FindBy(xpath="(//div[@class='col-lg-10']//p)[1]")
@@ -53,10 +61,10 @@ public class NotificationsPage extends BasePage{
 	@FindBy(xpath="(//div[@class='col-lg-10']//p)[5]")
 	WebElement lblDTModRecId;
 	
-	@FindBy(xpath="//a[normalize-space()='Summary']")
+	@FindBy(xpath="//a[normalize-space()='Summary view']")
 	WebElement tabSummary;
 		
-	//Notificatin Summary
+	//Notification Summary
 	
 	@FindBy(xpath="(//div[@class='col-lg-10'])[3]")
 	WebElement lblActionTitle;
@@ -163,7 +171,7 @@ public class NotificationsPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, lnkFirstNotifyMsg);
 	}
 	public void clickOpnNotifyPage() throws Exception {
-		UtilityCustomFunctions.doClick(driver, lnkNotification);
+		UtilityCustomFunctions.doClick(driver, btnBellIcon);
 	}
 	public void clickSummaryTab() throws Exception {
 		UtilityCustomFunctions.doClick(driver, tabSummary);

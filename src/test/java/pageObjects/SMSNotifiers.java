@@ -39,7 +39,7 @@ public class SMSNotifiers extends BasePage {
 	
 	
 	public String ValidateSMSRecord(String sReceipientNo,String sType,String sStatus,ExtentTest node) throws IOException, InterruptedException {
-		int iSMSCount = getSMSRowcount(); 
+		int iSMSCount = getWebTblRowcount(); 
 		if(iSMSCount<=1) {
 			BaseClass.logger.info("Failed: SMS Not Received for the Mobile Number"+ sReceipientNo);
 			UtilityCustomFunctions.fSoftAssert("Failed: SMS Not Received for the Mobile Number"+ sReceipientNo, "Failed: SMS Received for the Mobile Number"+ sReceipientNo, "SMS Receipient after Module change",node);
@@ -69,10 +69,10 @@ public class SMSNotifiers extends BasePage {
 		UtilityCustomFunctions.sendKeysNoEnter(driver, txtSearchReceipientNo, sNumber);
 	}
 	//get
-	public int getSMSRowcount() throws InterruptedException {
+	public int getWebTblRowcount() throws InterruptedException {
 		Thread.sleep(3000);
 		List<WebElement> tRowCount = WbTblRow.findElements(By.tagName("tr"));
-		UtilityCustomFunctions.logWriteConsole("SMS Count:" + tRowCount.size());
+		UtilityCustomFunctions.logWriteConsole("table row Count:" + tRowCount.size());
 		return tRowCount.size();
 	}
 	//click

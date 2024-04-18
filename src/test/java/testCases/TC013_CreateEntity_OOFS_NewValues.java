@@ -233,7 +233,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(1000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		int iTarRecId = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Targer last record:"+iTarRecId);
@@ -256,7 +256,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
 		Thread.sleep(1000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		int iTarAfterNewRec = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
@@ -274,7 +274,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
+//		objCMD.clickExistingModData(1);
 		objCMD.clickExistingModData(1);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
@@ -284,7 +284,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(1000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
 		if(iTarAfterNewRec == iTarAftSummaryAdd) {
@@ -301,7 +301,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
+//		objCMD.clickExistingModData(1);
 		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		objDVP.clickDuplicateRecord();
@@ -314,7 +314,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
 		Thread.sleep(1000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		int iTarAftDuplicate = objCRMRs.getLastRecordId();
 	
@@ -348,7 +348,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(1000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		
 		int iTarAftFullEdit = objCRMRs.getLastRecordId();
@@ -383,9 +383,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(1000);
-		Thread.sleep(1000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
 		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
 		if(iTarAftSingleLineEdit== iTarAftFullEdit) {

@@ -1,0 +1,487 @@
+16:03:21.985 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  CE Source @Edit & Save - OOFS
+16:03:23.153 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+16:03:23.153 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+16:03:23.153 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  CE Source @Edit & Save - OOFS
+16:03:30.443 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441
+16:03:30.443 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9501926441
+16:03:30.443 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  CE Source @Edit & Save - OOFS
+16:03:31.613 [main] INFO  utilities.UtilityCustomFunctions - Actual:Edit&SaveNewLead@gmail.com
+16:03:31.615 [main] INFO  utilities.UtilityCustomFunctions - Expected:Edit&SaveNewLead@gmail.com
+16:03:31.615 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  CE Source @Edit & Save - OOFS
+16:03:32.762 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+16:03:32.762 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+16:03:32.762 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text CE Source @Edit & Save - OOFS
+16:03:33.935 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025
+16:03:33.935 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 0472103025
+16:03:33.935 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  CE Source @Edit & Save - OOFS
+16:03:35.117 [main] INFO  utilities.UtilityCustomFunctions - Actual:Edit&SaveNewSales@gmail.com
+16:03:35.117 [main] INFO  utilities.UtilityCustomFunctions - Expected:Edit&SaveNewSales@gmail.com
+16:03:35.117 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCE Source @Edit & Save - OOFS
+16:03:55.837 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:121908
+16:03:55.837 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id:121908
+16:04:21.965 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:04:26.398 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input
+16:04:29.645 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:04:29.659 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:04:49.062 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndividualTextEdited
+16:04:49.062 [main] INFO  utilities.UtilityCustomFunctions - Expected:IndividualTextEdited
+16:04:49.062 [main] INFO  utilities.UtilityCustomFunctions - Message:SourceUpdate_SummPage@SingleLineEdit-Multiple Update on Fail Case
+16:04:50.953 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:04:54.040 [main] INFO  utilities.UtilityCustomFunctions - Actual:IndividualTextEdited
+16:04:54.040 [main] INFO  utilities.UtilityCustomFunctions - Expected:IndividualTextEdited
+16:04:54.040 [main] INFO  utilities.UtilityCustomFunctions - Message:SourceUpdate_DetailViewPage@SingleLineEdit-Multiple Update on Fail Case
+16:05:15.724 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:121908
+16:05:15.724 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id:121908
+17:15:23.726 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Creation
+17:15:23.732 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Created
+17:15:26.261 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Node Created
+17:15:26.261 [main] INFO  utilities.UtilityCustomFunctions - ******TC018_CreateEntity_OOFS_MultiUpdOnFailCase ****
+17:15:26.261 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Test Execution on Browser: chrome
+17:15:26.261 [main] INFO  utilities.UtilityCustomFunctions - Browser:chrome
+17:15:26.263 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+17:15:26.861 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+17:15:26.943 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+17:15:35.657 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:15:36.950 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:15:38.238 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:15:48.969 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - CRM Login Success with:rsoft
+17:15:48.969 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+17:15:48.969 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+17:15:48.969 [main] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+17:15:59.688 [main] INFO  utilities.UtilityCustomFunctions - Navigate Module:CESourceDupPrev
+17:15:59.696 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Avatar
+17:16:02.302 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Menu CRM Setting
+17:16:02.469 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Menu Other Setting
+17:16:05.244 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Menu Item Workflow
+17:16:05.479 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow from Combox Box List
+17:16:07.481 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Item to be selected:  CESourceDupPrev Workflow
+17:16:14.059 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [CESourceDupPrev Workflow] is selected in List
+17:16:14.059 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Item selected in combox Box  CESourceDupPrev Workflow
+17:16:15.069 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Selected Module to View its Workflows
+17:16:15.069 [main] INFO  utilities.UtilityCustomFunctions - Exp Module Name:wfCreateEntity_OOFS_MultiFailureCase
+17:16:15.070 [main] INFO  utilities.UtilityCustomFunctions - Execution Condition:Only on the first save
+17:16:15.130 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Current Workflow Row item: 1
+17:16:15.181 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Current style of Worflow Status Element captured
+17:16:15.181 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Workflow status: of row item: 1 true
+17:16:15.216 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Actual Module Name:  CESourceDupPrev
+17:16:15.216 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Actual Workflow Name:  wfCreateEntity_OOFS_MultiFailureCase
+17:16:15.216 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Actual Exec Condition Name:  Only on the first save
+17:16:15.216 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Module,workflow,condition matches
+17:16:15.216 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - bCurrentWFStatus: true
+17:16:15.216 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - wfCreateEntity_OOFS_MultiFailureCaseWorkflow enabled
+17:16:15.217 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Current Workflow Row item: 2
+17:16:15.254 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Current style of Worflow Status Element captured
+17:16:15.254 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Workflow status: of row item: 2 false
+17:16:15.281 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Actual Module Name:  CESourceDupPrev
+17:16:15.281 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Actual Workflow Name:  wfCreateEntity_OOFS_FailCaseUpdate
+17:16:15.281 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Actual Exec Condition Name:  Only on the first save
+17:16:15.282 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Module,workflow,conditions not matched 
+17:16:15.282 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - bCurrentWFStatus: false
+17:16:15.282 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_OOFS_FailCaseUpdateDisabled Workflow Manually Enabled
+17:16:15.282 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - true:1
+17:16:15.282 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:1
+17:16:22.229 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Work flow clicked
+17:16:31.743 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Cliked Step 1 Next Button to Condition Page
+17:16:36.654 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Cliked Step 2 Next Button to Task List Page
+17:16:37.657 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow and Navigated to Task Page
+17:16:37.675 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Number of Tasks Listed for this Workflow: wfCreateEntity_OOFS_MultiFailureCase : 2
+17:16:37.698 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+17:16:37.796 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Create Entity - CETargetDupPrev
+17:16:37.796 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCreateEntity_MultiFailureUpdate
+17:16:37.796 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CETargetDupPrev
+17:16:37.796 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCreateEntity_MultiFailureUpdate
+17:16:37.796 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Action Type and Action Tile matches and also Task Button Enabled
+17:16:38.803 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+17:16:42.258 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow and Navigated to Task Page
+17:16:42.259 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Task Active Create Entity - CETargetDupPrev  tskCreateEntity_MultiFailureUpdate
+17:16:43.406 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
+17:17:17.876 [main] INFO  utilities.UtilityCustomFunctions - Captured the Target & Source Latest Record Ids
+17:17:17.877 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id:122183
+17:17:17.877 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:121908
+17:18:20.716 [main] INFO  utilities.UtilityCustomFunctions - Click Source Module:CESourceDupPrev
+17:18:24.938 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:CESourceDupPrev
+17:18:26.945 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
+17:18:26.996 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+17:18:27.031 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+17:18:27.031 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
+17:18:27.876 [main] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+17:18:28.405 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+17:18:32.429 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+17:18:39.942 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Sudhakar VE] is selected in List
+17:18:39.943 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+17:18:41.224 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+17:18:41.227 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+17:18:42.313 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+17:18:45.488 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+65] is selected in List
+17:18:45.488 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
+17:18:46.847 [main] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
+17:18:49.106 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+17:18:50.115 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+17:18:51.169 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+17:18:52.234 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+17:19:19.693 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+17:19:20.777 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+17:19:24.040 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Kanchipuram] is selected in List
+17:19:24.040 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+17:19:25.110 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+17:19:28.644 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Tamilnadu] is selected in List
+17:19:28.644 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+17:19:29.705 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+17:19:32.850 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [India] is selected in List
+17:19:32.851 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+17:19:33.942 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+17:19:34.025 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+17:19:39.215 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Apr] is selected in Dropdown
+17:19:43.055 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [2024] is selected in Dropdown
+17:19:44.062 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+17:19:45.198 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+17:19:46.267 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+17:19:49.270 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+17:19:59.513 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+17:20:00.650 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+17:20:07.796 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Apr] is selected in Dropdown
+17:20:11.608 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [2024] is selected in Dropdown
+17:20:12.620 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+17:20:15.760 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+17:20:15.875 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+17:20:15.930 [main] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:12-04-2024
+17:20:30.639 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Mrs.] is selected in List
+17:20:31.912 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+17:20:33.217 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+17:20:34.414 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+17:20:35.764 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+17:20:39.012 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Dr.] is selected in List
+17:20:40.291 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+17:20:41.647 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+17:20:42.969 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+17:20:42.973 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+17:20:44.663 [main] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" entered in  textarea
+17:20:49.924 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Apr] is selected in Dropdown
+17:20:53.688 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [2024] is selected in Dropdown
+17:20:54.690 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+17:21:00.323 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+17:21:02.673 [main] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
+17:21:05.748 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+17:21:08.900 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Urgent] is selected in List
+17:21:15.136 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+91] is selected in List
+17:21:17.456 [main] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
+17:21:18.823 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+17:21:20.102 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+17:21:24.371 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+17:21:26.757 [main] INFO  utilities.UtilityCustomFunctions - 0472103025 entered in  input
+17:21:28.070 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+17:21:46.952 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: CESourceDupPrev
+17:21:47.001 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:21:47.022 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+17:22:46.420 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id after add new record:122183
+17:22:46.420 [main] INFO  utilities.UtilityCustomFunctions - Curr Source Id after add new record:122186
+17:22:49.276 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
+17:22:49.302 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+17:22:49.324 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+17:22:49.325 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
+17:22:50.293 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+17:22:56.345 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:22:56.365 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+17:23:04.531 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CESourceDupPrev
+17:23:04.532 [main] INFO  utilities.UtilityCustomFunctions - Actual:CESourceDupPrev
+17:23:04.532 [main] INFO  utilities.UtilityCustomFunctions - Expected:CESourceDupPrev
+17:23:04.532 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name : Source Update on FailCase: Add New Record
+17:23:05.927 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:23:05.927 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:23:05.927 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To Title: Source Update on FailCase: Add New Record
+17:23:07.046 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 1234567890
+17:23:07.046 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 1234567890
+17:23:07.046 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Title : Source Update on FailCase: Add New Record
+17:23:08.143 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultMultiFail@rsoft.in
+17:23:08.143 [main] INFO  utilities.UtilityCustomFunctions - Expected:DefaultMultiFail@rsoft.in
+17:23:08.143 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title: Source Update on FailCase: Add New Record
+17:23:12.501 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:23:12.501 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:23:12.501 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  Source Update on FailCase: Add New Record
+17:23:13.668 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultMultiFailureText
+17:23:13.668 [main] INFO  utilities.UtilityCustomFunctions - Expected:DefaultMultiFailureText
+17:23:13.668 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Text:  Source Update on FailCase: Add New Record
+17:23:14.824 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 1234567890
+17:23:14.825 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 1234567890
+17:23:14.825 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Mobile Number:  Source Update on FailCase: Add New Record
+17:23:15.997 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultMultiFail@rsoft.in
+17:23:15.997 [main] INFO  utilities.UtilityCustomFunctions - Expected:DefaultMultiFail@rsoft.in
+17:23:15.997 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  Source Update on FailCase: Add New Record
+17:23:17.165 [main] INFO  utilities.UtilityCustomFunctions - Actual:2
+17:23:17.165 [main] INFO  utilities.UtilityCustomFunctions - Expected:2
+17:23:17.165 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  Source Update on FailCase: Add New Record
+17:23:18.313 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+17:23:18.313 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+17:23:18.313 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  Source Update on FailCase: Add New Record
+17:23:19.478 [main] INFO  utilities.UtilityCustomFunctions - Actual:Perambalur
+17:23:19.478 [main] INFO  utilities.UtilityCustomFunctions - Expected:Perambalur
+17:23:19.478 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  Source Update on FailCase: Add New Record
+17:23:20.660 [main] INFO  utilities.UtilityCustomFunctions - Actual:West Bengal
+17:23:20.661 [main] INFO  utilities.UtilityCustomFunctions - Expected:West Bengal
+17:23:20.661 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  Source Update on FailCase: Add New Record
+17:23:21.845 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+17:23:21.845 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+17:23:21.845 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  Source Update on FailCase: Add New Record
+17:23:23.019 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+17:23:23.019 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+17:23:23.019 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  Source Update on FailCase: Add New Record
+17:23:24.197 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:23-03-2024
+17:23:24.198 [main] INFO  utilities.UtilityCustomFunctions - Actual:23-03-2024
+17:23:24.198 [main] INFO  utilities.UtilityCustomFunctions - Expected:23-03-2024
+17:23:24.198 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  Source Update on FailCase: Add New Record
+17:23:25.315 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:03:30:20 PM
+17:23:25.365 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:03:30:20 PM
+17:23:25.365 [main] INFO  utilities.UtilityCustomFunctions - Actual:03:30:20 PM
+17:23:25.365 [main] INFO  utilities.UtilityCustomFunctions - Expected:03:30:20 PM
+17:23:25.365 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Source Update on FailCase: Add New Record
+17:23:26.480 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:23-03-2024 03:35:46 PM
+17:23:26.545 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:23-03-2024 03:35:46 PM
+17:23:26.545 [main] INFO  utilities.UtilityCustomFunctions - Actual:23-03-2024 03:35:46 PM
+17:23:26.545 [main] INFO  utilities.UtilityCustomFunctions - Expected:23-03-2024 03:35:46 PM
+17:23:26.545 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Source Update on FailCase: Add New Record
+17:23:27.805 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+17:23:27.805 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+17:23:27.806 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Source Update on FailCase: Add New Record
+17:23:28.999 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mr. MarlonExpectedName:Mr. Marlon
+17:23:28.999 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. Marlon
+17:23:28.999 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. Marlon
+17:23:28.999 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Source Update on FailCase: Add New Record
+17:23:30.168 [main] INFO  utilities.UtilityCustomFunctions - Actual:22222222222
+17:23:30.169 [main] INFO  utilities.UtilityCustomFunctions - Expected:22222222222
+17:23:30.169 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Source Update on FailCase: Add New Record
+17:23:31.385 [main] INFO  utilities.UtilityCustomFunctions - Actual:1,000
+17:23:31.385 [main] INFO  utilities.UtilityCustomFunctions - Expected:1,000
+17:23:31.385 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Source Update on FailCase: Add New Record
+17:23:32.533 [main] INFO  utilities.UtilityCustomFunctions - Actual:https://testng.org/testng-eclipse-update-site/
+17:23:32.533 [main] INFO  utilities.UtilityCustomFunctions - Expected:https://testng.org/testng-eclipse-update-site/
+17:23:32.533 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Source Update on FailCase: Add New Record
+17:23:33.709 [main] INFO  utilities.UtilityCustomFunctions - Actual:Prof. Christopher
+17:23:33.709 [main] INFO  utilities.UtilityCustomFunctions - Expected:Prof. Christopher
+17:23:33.709 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Source Update on FailCase: Add New Record
+17:23:34.891 [main] INFO  utilities.UtilityCustomFunctions - Actual:MultiFailureEnquiry@gmail.com
+17:23:34.891 [main] INFO  utilities.UtilityCustomFunctions - Expected:MultiFailureEnquiry@gmail.com
+17:23:34.891 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Source Update on FailCase: Add New Record
+17:23:36.050 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Multi Failure Entity
+17:23:36.050 [main] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Multi Failure Entity
+17:23:36.050 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Source Update on FailCase: Add New Record
+17:23:37.193 [main] INFO  utilities.UtilityCustomFunctions - Actual:Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops
+17:23:37.193 [main] INFO  utilities.UtilityCustomFunctions - Expected:Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops
+17:23:37.194 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Source Update on FailCase: Add New Record
+17:23:38.335 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:23-03-2024
+17:23:38.383 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:23-03-2024
+17:23:38.383 [main] INFO  utilities.UtilityCustomFunctions - Actual:23-03-2024
+17:23:38.383 [main] INFO  utilities.UtilityCustomFunctions - Expected:23-03-2024
+17:23:38.383 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Source Update on FailCase: Add New Record
+17:23:39.557 [main] INFO  utilities.UtilityCustomFunctions - Actual:+44 9876543210
+17:23:39.557 [main] INFO  utilities.UtilityCustomFunctions - Expected:+44 9876543210
+17:23:39.557 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Source Update on FailCase: Add New Record
+17:23:40.736 [main] INFO  utilities.UtilityCustomFunctions - Actual:Ordinary
+17:23:40.736 [main] INFO  utilities.UtilityCustomFunctions - Expected:Ordinary
+17:23:40.736 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Source Update on FailCase: Add New Record
+17:23:41.912 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9876543210
+17:23:41.912 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9876543210
+17:23:41.912 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Source Update on FailCase: Add New Record
+17:23:43.076 [main] INFO  utilities.UtilityCustomFunctions - Actual:MultiFailLead@gmail.com
+17:23:43.076 [main] INFO  utilities.UtilityCustomFunctions - Expected:MultiFailLead@gmail.com
+17:23:43.076 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Source Update on FailCase: Add New Record
+17:23:44.244 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead About Multi Failure Entity
+17:23:44.244 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lead About Multi Failure Entity
+17:23:44.244 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Source Update on FailCase: Add New Record
+17:23:45.422 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9876543210
+17:23:45.422 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9876543210
+17:23:45.422 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Source Update on FailCase: Add New Record
+17:23:46.617 [main] INFO  utilities.UtilityCustomFunctions - Actual:SalesMultiFailDefault@gmail.com
+17:23:46.617 [main] INFO  utilities.UtilityCustomFunctions - Expected:SalesMultiFailDefault@gmail.com
+17:23:46.617 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Source Update on FailCase: Add New Record
+17:23:48.566 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:23:58.328 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:23:58.328 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:23:58.328 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Source Update on FailCase: Add New Record
+17:23:59.472 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultMultiFailureText
+17:23:59.472 [main] INFO  utilities.UtilityCustomFunctions - Expected:DefaultMultiFailureText
+17:23:59.473 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Source Update on FailCase: Add New Record
+17:24:00.645 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  1234567890
+17:24:00.645 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 1234567890
+17:24:00.645 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 1234567890
+17:24:00.645 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Source Update on FailCase: Add New Record
+17:24:01.801 [main] INFO  utilities.UtilityCustomFunctions - Actual:DefaultMultiFail@rsoft.in
+17:24:01.801 [main] INFO  utilities.UtilityCustomFunctions - Expected:DefaultMultiFail@rsoft.in
+17:24:01.801 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Source Update on FailCase: Add New Record
+17:24:02.980 [main] INFO  utilities.UtilityCustomFunctions - Actual:2
+17:24:02.980 [main] INFO  utilities.UtilityCustomFunctions - Expected:2
+17:24:02.980 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Source Update on FailCase: Add New Record
+17:24:04.138 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+17:24:04.138 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+17:24:04.139 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Source Update on FailCase: Add New Record
+17:24:05.334 [main] INFO  utilities.UtilityCustomFunctions - Actual:Perambalur
+17:24:05.334 [main] INFO  utilities.UtilityCustomFunctions - Expected:Perambalur
+17:24:05.334 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Source Update on FailCase: Add New Record
+17:24:06.493 [main] INFO  utilities.UtilityCustomFunctions - Actual:West Bengal
+17:24:06.493 [main] INFO  utilities.UtilityCustomFunctions - Expected:West Bengal
+17:24:06.493 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Source Update on FailCase: Add New Record
+17:24:07.659 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+17:24:07.659 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+17:24:07.659 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Source Update on FailCase: Add New Record
+17:24:08.828 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+17:24:08.828 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+17:24:08.828 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Source Update on FailCase: Add New Record
+17:24:10.000 [main] INFO  utilities.UtilityCustomFunctions - Actual:23-03-2024
+17:24:10.000 [main] INFO  utilities.UtilityCustomFunctions - Expected:23-03-2024
+17:24:10.000 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Source Update on FailCase: Add New Record
+17:24:11.178 [main] INFO  utilities.UtilityCustomFunctions - Actual:03:30:20 PM
+17:24:11.178 [main] INFO  utilities.UtilityCustomFunctions - Expected:03:30:20 PM
+17:24:11.178 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Source Update on FailCase: Add New Record
+17:24:12.362 [main] INFO  utilities.UtilityCustomFunctions - Actual:23-03-2024 03:35:46 PM
+17:24:12.362 [main] INFO  utilities.UtilityCustomFunctions - Expected:23-03-2024 03:35:46 PM
+17:24:12.362 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Source Update on FailCase: Add New Record
+17:24:13.658 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+17:24:13.658 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+17:24:13.658 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Source Update on FailCase: Add New Record
+17:24:14.842 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mr. MarlonExpectedNameDT:Mr. Marlon
+17:24:14.842 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. Marlon
+17:24:14.842 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. Marlon
+17:24:14.842 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Source Update on FailCase: Add New Record
+17:24:16.009 [main] INFO  utilities.UtilityCustomFunctions - Actual:22222222222
+17:24:16.009 [main] INFO  utilities.UtilityCustomFunctions - Expected:22222222222
+17:24:16.009 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Source Update on FailCase: Add New Record
+17:24:17.182 [main] INFO  utilities.UtilityCustomFunctions - Actual:1,000
+17:24:17.182 [main] INFO  utilities.UtilityCustomFunctions - Expected:1,000
+17:24:17.182 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Source Update on FailCase: Add New Record
+17:24:18.327 [main] INFO  utilities.UtilityCustomFunctions - Actual:https://testng.org/testng-eclipse-update-site/
+17:24:18.327 [main] INFO  utilities.UtilityCustomFunctions - Expected:https://testng.org/testng-eclipse-update-site/
+17:24:18.327 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Source Update on FailCase: Add New Record
+17:24:25.648 [main] INFO  utilities.UtilityCustomFunctions - Actual:Prof. Christopher
+17:24:25.648 [main] INFO  utilities.UtilityCustomFunctions - Expected:Prof. Christopher
+17:24:25.648 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Source Update on FailCase: Add New Record
+17:24:26.818 [main] INFO  utilities.UtilityCustomFunctions - Actual:MultiFailureEnquiry@gmail.com
+17:24:26.818 [main] INFO  utilities.UtilityCustomFunctions - Expected:MultiFailureEnquiry@gmail.com
+17:24:26.818 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Source Update on FailCase: Add New Record
+17:24:27.983 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Multi Failure Entity
+17:24:27.983 [main] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Multi Failure Entity
+17:24:27.983 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Source Update on FailCase: Add New Record
+17:24:29.153 [main] INFO  utilities.UtilityCustomFunctions - Actual:Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops
+17:24:29.153 [main] INFO  utilities.UtilityCustomFunctions - Expected:Will take affirmative action to ensure safer Indian Ocean Region: Navy chief on anti-piracy ops
+17:24:29.153 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Source Update on FailCase: Add New Record
+17:24:30.332 [main] INFO  utilities.UtilityCustomFunctions - Actual:23-03-2024
+17:24:30.332 [main] INFO  utilities.UtilityCustomFunctions - Expected:23-03-2024
+17:24:30.332 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Source Update on FailCase: Add New Record
+17:24:31.511 [main] INFO  utilities.UtilityCustomFunctions - Actual:+44 9876543210
+17:24:31.511 [main] INFO  utilities.UtilityCustomFunctions - Expected:+44 9876543210
+17:24:31.511 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Source Update on FailCase: Add New Record
+17:24:32.680 [main] INFO  utilities.UtilityCustomFunctions - Actual:Ordinary
+17:24:32.680 [main] INFO  utilities.UtilityCustomFunctions - Expected:Ordinary
+17:24:32.680 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Source Update on FailCase: Add New Record
+17:24:39.997 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9876543210
+17:24:39.997 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9876543210
+17:24:39.997 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Source Update on FailCase: Add New Record
+17:24:41.152 [main] INFO  utilities.UtilityCustomFunctions - Actual:MultiFailLead@gmail.com
+17:24:41.152 [main] INFO  utilities.UtilityCustomFunctions - Expected:MultiFailLead@gmail.com
+17:24:41.152 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Source Update on FailCase: Add New Record
+17:24:42.326 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead About Multi Failure Entity
+17:24:42.326 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lead About Multi Failure Entity
+17:24:42.326 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Source Update on FailCase: Add New Record
+17:24:43.530 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9876543210
+17:24:43.530 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9876543210
+17:24:43.530 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Source Update on FailCase: Add New Record
+17:24:44.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:SalesMultiFailDefault@gmail.com
+17:24:44.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:SalesMultiFailDefault@gmail.com
+17:24:44.752 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailSource Update on FailCase: Add New Record
+17:31:22.190 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Creation
+17:31:22.197 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Created
+17:31:24.264 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Node Created
+17:31:24.264 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - ******starting TC013_CreateEntity_OOF_S_NewValues ****
+17:31:24.264 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Test Execution on Browser: chrome
+17:31:24.265 [main] INFO  utilities.UtilityCustomFunctions - Browser:chrome
+17:31:24.268 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+17:31:24.881 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Row Count is: 1
+17:31:24.964 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Col Count is: 54
+17:31:26.279 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Extracting DataSheet Values started...
+17:31:28.598 [main] INFO  utilities.UtilityCustomFunctions - PN1:2670941835
+17:31:28.598 [main] INFO  utilities.UtilityCustomFunctions - PN2:0482100564
+17:31:28.598 [main] INFO  utilities.UtilityCustomFunctions - PN3:0234851072
+17:31:28.598 [main] INFO  utilities.UtilityCustomFunctions - PN4:0286435996
+17:31:37.677 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:31:38.929 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
+17:31:40.189 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+17:31:47.751 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - CRM Login Success with:Sudhakar
+17:31:47.751 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+17:31:47.751 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+17:31:47.751 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
+17:31:54.281 [main] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Clicked Avatar
+17:46:24.975 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:46:24.979 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:46:24.980 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:46:25.570 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:46:25.637 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:46:25.637 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:46:34.235 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:46:35.521 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:46:36.834 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:46:49.221 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:46:51.857 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+17:46:51.994 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Other Setting
+17:46:56.247 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Item Workflow
+17:46:56.457 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow from Combox Box List
+17:46:58.468 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item to be selected:  CRMEditFieldModule Workflow
+17:47:04.659 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [CRMEditFieldModule Workflow] is selected in List
+17:47:04.659 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item selected in combox Box  CRMEditFieldModule Workflow
+17:47:05.673 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Selected Module to View its Workflows
+17:47:05.688 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 1
+17:47:05.737 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:47:05.738 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 1 false
+17:47:05.763 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMEditFieldModule
+17:47:05.763 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  wfcreateentity
+17:47:05.763 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:47:05.763 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:47:05.763 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:47:05.763 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 2
+17:47:05.801 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:47:05.801 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 2 false
+17:47:05.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMEditFieldModule
+17:47:05.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  wf2
+17:47:05.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:47:05.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:47:05.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:47:05.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 3
+17:47:05.874 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:47:05.874 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 3 false
+17:47:05.900 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMEditFieldModule
+17:47:05.900 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  wfUpdateEntity
+17:47:05.900 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:47:05.900 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:47:05.900 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:47:05.900 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 4
+17:47:05.937 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:47:05.937 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 4 false
+17:47:05.960 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMEditFieldModule
+17:47:05.960 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF3CRMEditField
+17:47:05.960 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is modified
+17:47:05.960 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:47:05.960 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:47:05.960 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 5
+17:47:05.993 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:47:05.993 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 5 false
+17:47:06.017 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMEditFieldModule
+17:47:06.018 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF2CRMEditField
+17:47:06.018 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Only on the first save
+17:47:06.018 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:47:06.018 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:47:06.018 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current Workflow Row item: 6
+17:47:06.053 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Current style of Worflow Status Element captured
+17:47:06.054 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Workflow status: of row item: 6 false
+17:47:06.076 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Module Name:  CRMEditFieldModule
+17:47:06.076 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Workflow Name:  WF1CRMEditField
+17:47:06.076 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Actual Exec Condition Name:  Every time the record is save
+17:47:06.076 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,condition matches
+17:47:06.076 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:47:06.163 [main] INFO  utilities.UtilityCustomFunctions - WF1CRMEditFieldDisabled Workflow Manually Enabled
+17:47:06.163 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - true:6
+17:47:12.708 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Work flow clicked
+17:47:18.138 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Cliked Step 1 Next Button to Condition Page
+17:47:22.104 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Cliked Step 2 Next Button to Task List Page
+17:47:23.109 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow and Navigated to Task Page
+17:47:23.125 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Number of Tasks Listed for this Workflow: WF1CRMEditField : 2

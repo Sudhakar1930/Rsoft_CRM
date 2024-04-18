@@ -262,7 +262,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sMobileNumber);
 		
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount<=1) {
 			logger.info("Failed: SMS Not Received after New Record Add -"+ sMobileNumber);
 			freport("Failed: SMS Not Received after New Record Add -"+ sMobileNumber, "fail",node);
@@ -279,7 +279,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount(); 
+		iSMSCount = objSMS.getWebTblRowcount(); 
 		if(iSMSCount<=1) {
 			logger.info("Failed: SMS Not Received after New Record Add -"+ sEnquiry_PhoneNumber);
 			freport("Failed: SMS Not Received after New Record Add -"+ sEnquiry_PhoneNumber, "fail",node);
@@ -298,7 +298,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(3000);
 		objSMS.setRecipient(sLead_PN);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount(); 
+		iSMSCount = objSMS.getWebTblRowcount(); 
 		if(iSMSCount<=1) {
 			logger.info("Failed: SMS Not Received after New Record Add -"+ sLead_PN);
 			freport("Failed: SMS Not Received after New Record Add -"+ sLead_PN, "fail",node);
@@ -336,7 +336,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(1000);
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==3) {
 			logger.info("Passed: SMS Received after Summary New Record Add -"+ sMobileNumber);
 			freport("Passed: SMS Received after  Summary New Record Add -"+ sMobileNumber, "pass",node);
@@ -353,7 +353,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==3) {
 			logger.info("Passed: SMS Received after Summary New Record Add -"+ sEnquiry_PhoneNumber);
 			freport("Passed: SMS Received after  Summary New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -371,7 +371,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sLead_PN);
 		
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==3) {
 			logger.info("Passed: SMS Received after Summary New Record Add -"+ sLead_PN);
 			freport("Passed: SMS Received after  Summary New Record Add -"+ sLead_PN, "pass",node);
@@ -409,7 +409,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==4) {
 			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber);
 			freport("Passed: SMS Received after Duplicate No Modify -"+ sMobileNumber, "pass",node);
@@ -426,7 +426,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==4) {
 			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber);
 			freport("Passed: SMS Received after Duplicate No Modify -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -443,7 +443,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sLead_PN);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==4) {
 			logger.info("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN);
 			freport("Passed: SMS Received after Duplicate No Modify -"+ sLead_PN, "pass",node);
@@ -479,7 +479,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(1000);
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==5) {
 			logger.info("Passed: SMS Received after Duplicate with New Data-"+ sMobileNumber);
 			freport("Passed: SMS Received after Duplicate with New Data -"+ sMobileNumber, "pass",node);
@@ -496,7 +496,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==5) {
 			logger.info("Passed: SMS Received after Duplicate with New Data-"+ sEnquiry_PhoneNumber);
 			freport("Passed: SMS Received after Duplicate with New Data -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -513,7 +513,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sLead_PN);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==5) {
 			logger.info("Passed: SMS Received after Duplicate with New Data-"+ sLead_PN);
 			freport("Passed: SMS Received after Duplicate with New Data -"+ sLead_PN, "pass",node);
@@ -552,7 +552,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==6) {
 			logger.info("Passed: SMS Received after Edit&Save No Modify - "+ sMobileNumber);
 			freport("Passed: SMS Received after Edit&Save No Modify -"+ sMobileNumber, "pass",node);
@@ -569,7 +569,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==6) {
 			logger.info("Passed: SMS Received after Edit&Save No Modify - "+ sEnquiry_PhoneNumber);
 			freport("Passed: SMS Received after Edit&Save No Modify -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -585,7 +585,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(1000);
 		objSMS.setRecipient(sLead_PN);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==6) {
 			logger.info("Passed: SMS Received after Edit&Save No Modify - "+ sLead_PN);
 			freport("Passed: SMS Received after Edit&Save No Modify -"+ sLead_PN, "pass",node);
@@ -624,7 +624,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sMobileNumber);
 		
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount(); 
+		iSMSCount = objSMS.getWebTblRowcount(); 
 		if(iSMSCount==7) {
 			logger.info("Passed: SMS Received after Edit&Save New Data - "+ sMobileNumber);
 			freport("Passed: SMS Received after Edit&Save New Data -"+ sMobileNumber, "pass",node);
@@ -641,7 +641,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==7) {
 			logger.info("Passed: SMS Received after Edit&Save New Data - "+ sEnquiry_PhoneNumber);
 			freport("Passed: SMS Received after Edit&Save New Data -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -658,7 +658,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sLead_PN);
 		Thread.sleep(1000);
 		objSMS.clickSearch();
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==7) {
 			logger.info("Passed: SMS Received after Edit&Save New Data - "+ sLead_PN);
 			freport("Passed: SMS Received after Edit&Save New Data -"+ sLead_PN, "pass",node);
@@ -694,7 +694,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(1000);
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==8) {
 			logger.info("Passed: SMS Received after Summary Single Edit - "+ sMobileNumber);
 			freport("Passed: SMS Received after Summary Single Edit -"+ sMobileNumber, "pass",node);
@@ -710,7 +710,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sEnquiry_PhoneNumber);
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==8) {
 			logger.info("Passed: SMS Received after Summary Single Edit - "+ sEnquiry_PhoneNumber);
 			freport("Passed: SMS Received after Summary Single Edit -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -727,7 +727,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		objSMS.setRecipient(sLead_PN);
 		objSMS.clickSearch();
 		Thread.sleep(1000);
-		iSMSCount = objSMS.getSMSRowcount();
+		iSMSCount = objSMS.getWebTblRowcount();
 		if(iSMSCount==8) {
 			logger.info("Passed: SMS Received after Summary Single Edit - "+ sLead_PN);
 			freport("Passed: SMS Received after Summary Single Edit -"+ sLead_PN, "pass",node);

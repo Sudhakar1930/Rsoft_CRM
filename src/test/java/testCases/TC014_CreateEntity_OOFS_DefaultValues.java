@@ -199,7 +199,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		objALP.clickAllList();
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
 		Thread.sleep(5000);
 		
@@ -208,7 +208,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -239,7 +239,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Source Module Opened:"+sDisplayMod1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrSrcRecId= objCRMRs.getLastRecordId();
 		
@@ -258,7 +258,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
 		Thread.sleep(1000);
@@ -320,7 +320,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		Thread.sleep(1000);
@@ -370,7 +370,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
@@ -421,7 +421,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
@@ -462,7 +462,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		Thread.sleep(3000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(3000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -487,7 +487,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Source Module Opened:"+sDisplayMod1);
 		Thread.sleep(5000);
-		objCRMRs.fClickFirstRecord();
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);

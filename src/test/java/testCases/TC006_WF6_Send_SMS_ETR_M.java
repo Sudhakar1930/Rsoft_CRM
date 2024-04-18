@@ -258,7 +258,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sMobileNumber);
 
 			objSMS.clickSearch();
-			int iSMSCount = objSMS.getSMSRowcount(); 
+			int iSMSCount = objSMS.getWebTblRowcount(); 
 			
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after New Record Add -"+ sMobileNumber);
@@ -274,7 +274,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after New Record Add -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
@@ -291,7 +291,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after New Record Add -"+ sLead_PN);
@@ -329,7 +329,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(1000);
 			
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after New Record Add in Summary View -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after New Record Add - in Summary View "+ sMobileNumber, "pass",node);
@@ -345,7 +345,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after New Record Add in Summary View-"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after New Record Add - in Summary View"+ sEnquiry_PhoneNumber, "pass",node);
@@ -361,7 +361,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after New Record Add - in Summary View"+ sLead_PN);
@@ -400,7 +400,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after Duplicate with No Modify -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after Duplicate with No Modify "+ sMobileNumber, "pass",node);
@@ -418,7 +418,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after Duplicate with No Modify -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after Duplicate with No Modify "+ sEnquiry_PhoneNumber, "pass",node);
@@ -434,7 +434,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			Thread.sleep(1000);
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after Duplicate with No Modify -"+ sLead_PN);
@@ -473,7 +473,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after Duplicate with Modification data -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after Duplicate with Modification data "+ sMobileNumber, "pass",node);
@@ -490,7 +490,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after Duplicate with Modification data -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after Duplicate with Modification data "+ sEnquiry_PhoneNumber, "pass",node);
@@ -507,7 +507,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			
 			if(iSMSCount<=1) {
 				logger.info("Passed: SMS Not Received after Duplicate with Modification data -"+ sLead_PN);
@@ -547,7 +547,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount==2) {
 				logger.info("Passed: SMS Received after Edit with No Modify -"+ sMobileNumber);
 				freport("Passed: SMS Received after Edit with No Modify "+ sMobileNumber, "pass",node);
@@ -564,7 +564,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount==2) {
 				logger.info("Passed: SMS Received after Edit with No Modify -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Received after Edit with No Modify "+ sEnquiry_PhoneNumber, "pass",node);
@@ -580,7 +580,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			
 			if(iSMSCount==2) {
 				logger.info("Passed: SMS Received after Edit with No Modify -"+ sLead_PN);
@@ -619,7 +619,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sMobileNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount(); 
+			iSMSCount = objSMS.getWebTblRowcount(); 
 			if(iSMSCount==3) {
 				logger.info("Passed: SMS Received after Edit with updated Record -"+ sMobileNumber);
 				freport("Passed: SMS Received after Edit with updated  Record "+ sMobileNumber, "pass",node);
@@ -635,7 +635,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			if(iSMSCount==3) {
 				logger.info("Passed: SMS Received after Edit with updated Record -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Received after Edit with updated  Record "+ sEnquiry_PhoneNumber, "pass",node);
@@ -649,7 +649,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(1000);
 			objSMS.setRecipient(sLead_PN);
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			
 			if(iSMSCount==3) {
 				logger.info("Passed: SMS Received after Edit with updated Record -"+ sLead_PN);
@@ -687,7 +687,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			System.out.println("Total SMS Count:"+iSMSCount+ "for PN:"+ sMobileNumber);
 			if(iSMSCount==4) {
 				logger.info("Passed: SMS Received after Single Value Edit -"+ sMobileNumber);
@@ -707,7 +707,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			System.out.println("Total SMS Count:"+iSMSCount+ "for PN: "+ sEnquiry_PhoneNumber);
 			if(iSMSCount==4) {
 				logger.info("Passed: SMS Received after Single Value Edit -"+ sEnquiry_PhoneNumber);
@@ -729,7 +729,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getSMSRowcount();
+			iSMSCount = objSMS.getWebTblRowcount();
 			System.out.println("Total SMS Count:"+iSMSCount+ "for PN: "+ sLead_PN);
 			if(iSMSCount==4) {
 				logger.info("Passed: SMS Received after Single Value Edit -"+ sLead_PN);

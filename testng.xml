@@ -8,8 +8,10 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.TC010_WF4_SN_SpecificDate"/>
+		<class name="testCases.TC001_WF1_Send_Notify_ETR_S"/>
+		
 	  <!--
+	  <class name="testCases.TC012_WF6_SN_Yearly"/>
 	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
 		<class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
 		<class name="testCases.TC017_CreateEntity_OOFS_MultiSuccessCase"/>

@@ -36,12 +36,11 @@ public class CRMReUsables extends BaseClass {
 		
 		NotificationsPage objNotfy = new NotificationsPage(driver);
 		objNotfy.clickNotificatons();
-		logger.info("Notification Link Clicked");
-		System.out.println("Notification link clicked");
-		Thread.sleep(5000);
-		objNotfy.clickOpnNotifyPage();
+		Thread.sleep(10000);
+		objNotfy.clickNotifyFirstMsg();
+		Thread.sleep(10000);
 		logger.info("Notification detail view opened");
-//		objNotfy.clickNotifyFirstMsg();
+		
 		Thread.sleep(5000);
 		Set<String> Handles = driver.getWindowHandles();
 		for (String actual : Handles) {
@@ -55,7 +54,9 @@ public class CRMReUsables extends BaseClass {
 			}
 		}
 		}catch(Exception e) {
+			System.out.println(e.getCause());
 			Assert.fail("Notification Failed opening");
+			
 		}
 		return sActualWindow;
 
@@ -130,8 +131,9 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.fSoftAssert(sActEMTitle, sEmail, "Email", node);
 		UtilityCustomFunctions.fSoftAssert(sActMnuTitle, sPickListItem, "Piclist Value", node);
 
-		objDVP.clickSummaryView();
-		Thread.sleep(3000);
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
 		// Summary Actual Values
 		String sActPNSummary = objDVP.getPhoneNMSummary();
 		System.out.println("Actual raw: " + sActPNSummary.trim());
@@ -141,10 +143,13 @@ public class CRMReUsables extends BaseClass {
 		sActPNSummary = sPNArray[0].trim() + " " + sPNArray[1].trim();
 		System.out.println("Actual: Summary" + sActPNSummary);
 		String sActNFSummary = objDVP.getNumberFieldSummary();
+		Thread.sleep(1000);
 		String sActEMSummary = objDVP.getEmailSummary();
+		Thread.sleep(1000);
 		String sActMnuSummary = objDVP.getMenuItemSummary();
+		Thread.sleep(1000);
 		String sActEYNSummary = objDVP.getEYNumberSummary();
-
+		Thread.sleep(1000);
 		// Summary Values Validation
 		UtilityCustomFunctions.fSoftAssert(sActPNSummary, sPhoneNoumber, "Summary Phone Number", node);
 		UtilityCustomFunctions.fSoftAssert(sActNFSummary, sNumberField, "Summary Number Field", node);
@@ -153,7 +158,9 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.fSoftAssert(sActEYNSummary, sEnterYourNumber, "Summary Enter Your Number", node);
 
 		// Click Detail View
-//		objDVP.clickDetailView();
+		objDVP.fSetDetailVew(true);
+		Thread.sleep(3000);
+		driver.navigate().refresh();
 		Thread.sleep(3000);
 		// Detail View Actual Values
 		String sActAsgnToDTView = objDVP.getAssignedToDTView();
@@ -164,10 +171,17 @@ public class CRMReUsables extends BaseClass {
 		sActPNDTView = sPNArrayDT[0].trim() + " " + sPNArrayDT[1].trim();
 		System.out.println("Actual: DTView : " + sActPNDTView);
 		String sActNumberField = objDVP.getNumberFieldDTView();
+		
+		Thread.sleep(3000);
+		objDVP.fClickDetailBlockB();
+		Thread.sleep(3000);
+			
 		String sActEMDTView = objDVP.getEmailDTView();
+		Thread.sleep(1000);
 		String sActMnuDTView = objDVP.getMenuListDTView();
+		Thread.sleep(1000);
 		String sActEYVDT = objDVP.getEYVDTView();
-
+		Thread.sleep(1000);
 		// Detail View Validation
 		System.out.println("Actual Assigned To:" + sActAsgnToDTView);
 		System.out.println("Expected Assigned To:" + sAssignedTo);
@@ -183,16 +197,19 @@ public class CRMReUsables extends BaseClass {
 
 		// Title & NavBar Validation again
 		String aActModuleName1 = objDVP.getNavBarModuleName();
+		Thread.sleep(1000);
 //		UtilityCustomFunctions.fSoftAssert(aActModuleName1, sExpModuleName, "Module Name", node);
 		// Title Actual Values
 		String sActPNTitle1 = objDVP.getPhoneNMTitle();
+		Thread.sleep(1000);
 		String sPNTitleArray1[] = sActPNTitle1.split("\\s+");
 		sActPNTitle1 = sPNTitleArray1[0].trim() + " " + sPNTitleArray1[1].trim();
 		System.out.println("Actual: " + sActPNTitle1);
-
+		Thread.sleep(1000);
 		String sActEMTitle1 = objDVP.getEmailTitle();
+		Thread.sleep(1000);
 		String sActMnuTitle1 = objDVP.getMenuItemTitle();
-
+		Thread.sleep(1000);
 		// Validations
 		UtilityCustomFunctions.fSoftAssert(aActModuleName1, sExpModuleName, "Module Name Title", node);
 		UtilityCustomFunctions.fSoftAssert(sActPNTitle1, sPhoneNoumber, "Phone Number Title", node);
@@ -201,25 +218,15 @@ public class CRMReUsables extends BaseClass {
 
 	}
 
-	public String fValNotifySummaryAndDetail(String sAssignedTo, String sNotifyTemplMsg, String sActionTitle, ExtentTest node)
+	public void fValNotifySummaryAndDetail(String sCurrRecordId, String sAssignedTo, String sNotifyTemplMsg, String sActionTitle, ExtentTest node)
 			throws Exception {
 		NotificationsPage objNFP = new NotificationsPage(driver);
-
+		DetailViewPage objDVP = new DetailViewPage(driver);
 		String sStatus = "0";
-
-//		sActionTitle
-		// get Details
-		String sActDTAssignedTo = objNFP.getDTAssignedTo();
-		String sActDTStatus = objNFP.getDTStatus();
-		String sActDTSummary = objNFP.getDTSummary();
-		String sActDTTitle = objNFP.getDTTitle();
-		String sActDTModRecId = objNFP.getDTModRecId();
-		// Validations
-		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sAssignedTo, "Detail View Assigned To", node);
-		UtilityCustomFunctions.fSoftAssert(sActDTStatus, sStatus, "Detail View Status", node);
-		UtilityCustomFunctions.fSoftAssert(sActDTSummary, sNotifyTemplMsg, "Detail View Summary", node);
-		UtilityCustomFunctions.fSoftAssert(sActDTTitle, sActionTitle, "Detail View Action Title", node);
-		objNFP.clickSummaryTab();
+		Thread.sleep(6000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		
 		// getActualSummaryDetails
 		Thread.sleep(2000);
 		String sActSMAssignedTo = objNFP.getSMAssignedTo();
@@ -231,8 +238,25 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.fSoftAssert(sStatus, sActSMStatus, "Summary View Status", node);
 		UtilityCustomFunctions.fSoftAssert(sActSMSummary, sNotifyTemplMsg, "Summary View User", node);
 		UtilityCustomFunctions.fSoftAssert(sActSMTitle, sActionTitle, "Summary View Action Title", node);
+				
+		// get Details
+		objDVP.fSetDetailVew(true);
+		Thread.sleep(3000);
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		
+		String sActDTAssignedTo = objNFP.getDTAssignedTo();
+		String sActDTStatus = objNFP.getDTStatus();
+		String sActDTSummary = objNFP.getDTSummary();
+		String sActDTTitle = objNFP.getDTTitle();
+		String sActDTModRecId = objNFP.getDTModRecId();
+		// Validations
+		UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sAssignedTo, "Detail View Assigned To", node);
+		UtilityCustomFunctions.fSoftAssert(sActDTStatus, sStatus, "Detail View Status", node);
+		UtilityCustomFunctions.fSoftAssert(sActDTSummary, sNotifyTemplMsg, "Detail View Summary", node);
+		UtilityCustomFunctions.fSoftAssert(sActDTTitle, sActionTitle, "Detail View Action Title", node);
+		UtilityCustomFunctions.fSoftAssert(sActDTModRecId, sCurrRecordId, "Detail View Module Record Id", node);
 
-		return sActDTModRecId;
 
 	}
 
