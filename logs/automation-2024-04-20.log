@@ -1,0 +1,546 @@
+16:30:45.609 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:30:45.612 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:30:45.612 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:30:46.778 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:30:46.778 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:30:46.778 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:30:47.913 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:30:47.914 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:30:47.914 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:30:49.026 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:30:49.026 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:30:49.026 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:30:50.150 [main] INFO  utilities.UtilityCustomFunctions - Actual:122889
+16:30:50.150 [main] INFO  utilities.UtilityCustomFunctions - Expected:122889
+16:30:50.150 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:30:57.031 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+16:30:58.600 [main] INFO  utilities.UtilityCustomFunctions - 122889 entered in  input
+16:31:03.828 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:31:03.828 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Passed: Notification Received after New Record Add -Madhan Mohan Record Id: 122889
+16:31:05.209 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+16:31:05.209 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+16:31:05.209 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:31:06.331 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:31:06.331 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:31:06.331 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:31:07.465 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:31:07.465 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:31:07.465 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:31:08.610 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:31:08.610 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:31:08.610 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:31:09.710 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:31:09.710 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:31:09.711 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:31:10.861 [main] INFO  utilities.UtilityCustomFunctions - Actual:122889
+16:31:10.862 [main] INFO  utilities.UtilityCustomFunctions - Expected:122889
+16:31:10.862 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:31:19.522 [main] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+16:31:19.522 [main] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+16:31:21.738 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:31:23.012 [main] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+16:31:24.310 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+16:31:42.932 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+16:31:44.457 [main] INFO  utilities.UtilityCustomFunctions - 122889 entered in  input
+16:31:50.219 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:31:50.219 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Passed: Notification Received after New Record Add -Indiana Jones Record Id: 122889
+16:31:51.579 [main] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+16:31:51.579 [main] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+16:31:51.579 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:31:52.698 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:31:52.698 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:31:52.698 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:31:53.812 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:31:53.812 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:31:53.812 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:31:54.916 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:31:54.916 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:31:54.916 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:31:56.050 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:31:56.050 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:31:56.050 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:31:57.195 [main] INFO  utilities.UtilityCustomFunctions - Actual:122889
+16:31:57.195 [main] INFO  utilities.UtilityCustomFunctions - Expected:122889
+16:31:57.195 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:32:11.022 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:32:12.246 [main] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+16:32:13.472 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+16:32:31.109 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+16:32:32.608 [main] INFO  utilities.UtilityCustomFunctions - 122889 entered in  input
+16:32:38.252 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:32:38.252 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Passed: Notification Received after New Record Add -Madhan Mohan Record Id: 122889
+16:32:39.628 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+16:32:39.628 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+16:32:39.628 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:32:40.760 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:32:40.761 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:32:40.761 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:32:41.906 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:32:41.906 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:32:41.907 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:32:43.023 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:32:43.023 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:32:43.023 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:32:44.168 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:32:44.168 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:32:44.168 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:32:45.279 [main] INFO  utilities.UtilityCustomFunctions - Actual:122889
+16:32:45.279 [main] INFO  utilities.UtilityCustomFunctions - Expected:122889
+16:32:45.279 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:32:59.178 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:33:00.423 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:33:01.714 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:33:25.369 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+16:33:25.395 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+16:33:25.409 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+16:33:25.409 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+16:33:26.877 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+16:33:28.166 [main] INFO  utilities.UtilityCustomFunctions - 3333333333 entered in  input
+16:33:30.605 [main] INFO  utilities.UtilityCustomFunctions - SummaryAdd@gmail.com entered in  input
+16:33:31.846 [main] INFO  utilities.UtilityCustomFunctions - 5555555555 entered in  input
+16:33:39.156 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [Good] is selected in List
+16:33:57.850 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:34:09.664 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+16:34:09.678 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+16:34:09.694 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+16:34:09.694 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+16:34:09.961 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+16:34:09.961 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+16:34:09.961 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+16:34:11.276 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+16:34:11.276 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+16:34:11.276 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+16:34:12.374 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:34:12.374 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:34:12.374 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+16:34:13.500 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAdd@gmail.com
+16:34:13.501 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAdd@gmail.com
+16:34:13.501 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:34:14.623 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+16:34:14.623 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+16:34:14.623 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+16:34:21.768 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:34:21.784 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:34:26.273 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:34:26.273 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:34:26.273 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+16:34:27.398 [main] INFO  utilities.UtilityCustomFunctions - Actual:3333333333
+16:34:27.398 [main] INFO  utilities.UtilityCustomFunctions - Expected:3333333333
+16:34:27.398 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+16:34:28.535 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAdd@gmail.com
+16:34:28.535 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAdd@gmail.com
+16:34:28.535 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+16:34:29.660 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+16:34:29.660 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+16:34:29.660 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+16:34:30.773 [main] INFO  utilities.UtilityCustomFunctions - Actual:5555555555
+16:34:30.773 [main] INFO  utilities.UtilityCustomFunctions - Expected:5555555555
+16:34:30.773 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+16:34:32.588 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:34:49.974 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:34:49.974 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:34:49.974 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+16:34:51.075 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:34:51.075 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:34:51.075 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
+16:34:52.176 [main] INFO  utilities.UtilityCustomFunctions - Actual:3333333333
+16:34:52.176 [main] INFO  utilities.UtilityCustomFunctions - Expected:3333333333
+16:34:52.176 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
+16:34:53.317 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAdd@gmail.com
+16:34:53.317 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAdd@gmail.com
+16:34:53.317 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
+16:34:54.432 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+16:34:54.432 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+16:34:54.432 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
+16:34:55.552 [main] INFO  utilities.UtilityCustomFunctions - Actual:5555555555
+16:34:55.552 [main] INFO  utilities.UtilityCustomFunctions - Expected:5555555555
+16:34:55.553 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
+16:35:02.062 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+16:35:02.062 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+16:35:02.062 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
+16:35:03.180 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:35:03.180 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:35:03.180 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
+16:35:04.324 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAdd@gmail.com
+16:35:04.324 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAdd@gmail.com
+16:35:04.324 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title
+16:35:05.449 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+16:35:05.449 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+16:35:05.449 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
+16:35:29.791 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Notification detail view opened
+16:35:34.825 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Switched to New Window
+16:35:40.879 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:35:44.088 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:35:44.088 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:35:44.088 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+16:35:45.188 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:35:45.188 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:35:45.188 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+16:35:46.336 [main] INFO  utilities.UtilityCustomFunctions - Actual: Welcome to Notification test automation for ETRS. 
+16:35:46.336 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:35:46.336 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+16:35:47.466 [main] INFO  utilities.UtilityCustomFunctions - Actual:       NewTriggerNotification       
+16:35:47.466 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:35:47.466 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+16:35:49.291 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:35:57.436 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:35:57.436 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:35:57.436 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+16:35:58.575 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:35:58.575 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:35:58.575 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+16:35:59.680 [main] INFO  utilities.UtilityCustomFunctions - Actual: Welcome to Notification test automation for ETRS. 
+16:35:59.680 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:35:59.680 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+16:36:00.784 [main] INFO  utilities.UtilityCustomFunctions - Actual:       NewTriggerNotification       
+16:36:00.784 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:36:00.784 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+16:36:01.910 [main] INFO  utilities.UtilityCustomFunctions - Actual:122893
+16:36:01.910 [main] INFO  utilities.UtilityCustomFunctions - Expected:122893
+16:36:01.910 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+16:36:09.055 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'IT')]
+16:36:10.555 [main] INFO  utilities.UtilityCustomFunctions - 122893 entered in  input
+16:36:16.070 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:36:16.070 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Add -Rsoft IT Record Id: 122893
+16:36:17.493 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:36:17.494 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:36:17.494 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:36:18.627 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:36:18.627 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:36:18.627 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:36:19.767 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:36:19.767 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:36:19.767 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:36:20.902 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:36:20.902 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:36:20.902 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:36:22.041 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:36:22.041 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:36:22.041 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:36:23.151 [main] INFO  utilities.UtilityCustomFunctions - Actual:122893
+16:36:23.151 [main] INFO  utilities.UtilityCustomFunctions - Expected:122893
+16:36:23.151 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:36:30.152 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+16:36:31.768 [main] INFO  utilities.UtilityCustomFunctions - 122893 entered in  input
+16:36:37.370 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:36:37.370 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Record Add -Indiana Jones Record Id: 122893
+16:36:38.770 [main] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+16:36:38.770 [main] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+16:36:38.770 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:36:39.882 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:36:39.882 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:36:39.882 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:36:41.007 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:36:41.007 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:36:41.007 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:36:42.159 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:36:42.159 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:36:42.159 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:36:43.307 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:36:43.307 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:36:43.307 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:36:44.430 [main] INFO  utilities.UtilityCustomFunctions - Actual:122893
+16:36:44.430 [main] INFO  utilities.UtilityCustomFunctions - Expected:122893
+16:36:44.430 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:36:51.439 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+16:36:53.061 [main] INFO  utilities.UtilityCustomFunctions - 122893 entered in  input
+16:36:58.241 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:36:58.241 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Record Add -Madhan Mohan Record Id: 122893
+16:36:59.635 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+16:36:59.635 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+16:36:59.635 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:37:00.762 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:37:00.762 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:37:00.762 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:37:01.888 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:37:01.888 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:37:01.888 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:37:03.039 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:37:03.040 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:37:03.040 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:37:04.158 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:37:04.159 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:37:04.159 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:37:05.306 [main] INFO  utilities.UtilityCustomFunctions - Actual:122893
+16:37:05.306 [main] INFO  utilities.UtilityCustomFunctions - Expected:122893
+16:37:05.306 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:37:13.979 [main] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+16:37:13.979 [main] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+16:37:16.199 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:37:17.537 [main] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+16:37:18.796 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+16:37:39.474 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+16:37:41.003 [main] INFO  utilities.UtilityCustomFunctions - 122893 entered in  input
+16:37:46.691 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:37:46.691 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Record Add -Indiana Jones Record Id: 122893
+16:37:48.043 [main] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+16:37:48.044 [main] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+16:37:48.044 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:37:49.176 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:37:49.176 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:37:49.176 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:37:50.308 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:37:50.308 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:37:50.308 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:37:51.445 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:37:51.446 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:37:51.446 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:37:52.585 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:37:52.585 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:37:52.586 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:37:53.717 [main] INFO  utilities.UtilityCustomFunctions - Actual:122893
+16:37:53.717 [main] INFO  utilities.UtilityCustomFunctions - Expected:122893
+16:37:53.717 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:38:07.592 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:38:08.823 [main] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+16:38:10.056 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+16:38:27.442 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+16:38:28.921 [main] INFO  utilities.UtilityCustomFunctions - 122893 entered in  input
+16:38:34.476 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:38:34.477 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Record Add -Madhan Mohan Record Id: 122893
+16:38:35.899 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+16:38:35.899 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+16:38:35.899 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:38:37.014 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:38:37.014 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:38:37.014 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:38:38.141 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:38:38.141 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:38:38.141 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:38:39.238 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:38:39.238 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:38:39.238 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:38:40.373 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:38:40.373 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:38:40.373 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:38:41.495 [main] INFO  utilities.UtilityCustomFunctions - Actual:122893
+16:38:41.495 [main] INFO  utilities.UtilityCustomFunctions - Expected:122893
+16:38:41.495 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:38:55.334 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:38:56.619 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:38:57.852 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:39:21.240 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+16:39:21.274 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+16:39:21.309 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+16:39:21.309 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+16:39:24.388 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+16:39:25.713 [main] INFO  utilities.UtilityCustomFunctions - 2222222222 entered in  input
+16:39:28.147 [main] INFO  utilities.UtilityCustomFunctions - DuplicateChange@gmail.com entered in  input
+16:39:29.407 [main] INFO  utilities.UtilityCustomFunctions - 666666666 entered in  input
+16:39:36.856 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [Very good] is selected in List
+16:39:55.739 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:40:07.678 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+16:40:07.689 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+16:40:07.700 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+16:40:07.700 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+16:40:07.925 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+16:40:07.925 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+16:40:07.925 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+16:40:09.245 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+16:40:09.245 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+16:40:09.245 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+16:40:10.346 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:40:10.346 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:40:10.346 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+16:40:11.435 [main] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateChange@gmail.com
+16:40:11.435 [main] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateChange@gmail.com
+16:40:11.435 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:40:12.538 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+16:40:12.538 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+16:40:12.538 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+16:40:19.674 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:40:19.687 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:40:24.186 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:40:24.186 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:40:24.186 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+16:40:25.310 [main] INFO  utilities.UtilityCustomFunctions - Actual:2222222222
+16:40:25.310 [main] INFO  utilities.UtilityCustomFunctions - Expected:2222222222
+16:40:25.310 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+16:40:26.433 [main] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateChange@gmail.com
+16:40:26.434 [main] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateChange@gmail.com
+16:40:26.434 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+16:40:27.553 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+16:40:27.553 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+16:40:27.553 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+16:40:28.703 [main] INFO  utilities.UtilityCustomFunctions - Actual:666666666
+16:40:28.703 [main] INFO  utilities.UtilityCustomFunctions - Expected:666666666
+16:40:28.703 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+16:40:30.533 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:40:48.044 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:40:48.044 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:40:48.044 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+16:40:49.163 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:40:49.163 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:40:49.163 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
+16:40:50.296 [main] INFO  utilities.UtilityCustomFunctions - Actual:2222222222
+16:40:50.296 [main] INFO  utilities.UtilityCustomFunctions - Expected:2222222222
+16:40:50.296 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
+16:40:51.419 [main] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateChange@gmail.com
+16:40:51.419 [main] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateChange@gmail.com
+16:40:51.419 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
+16:40:52.541 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+16:40:52.541 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+16:40:52.541 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
+16:40:53.681 [main] INFO  utilities.UtilityCustomFunctions - Actual:666666666
+16:40:53.681 [main] INFO  utilities.UtilityCustomFunctions - Expected:666666666
+16:40:53.681 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
+16:41:00.123 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+16:41:00.123 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+16:41:00.123 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
+16:41:01.210 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:41:01.210 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:41:01.210 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
+16:41:02.337 [main] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateChange@gmail.com
+16:41:02.338 [main] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateChange@gmail.com
+16:41:02.338 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title
+16:41:03.463 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+16:41:03.463 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+16:41:03.463 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
+16:41:24.822 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Notification detail view opened
+16:41:29.843 [main] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Switched to New Window
+16:41:35.918 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:41:39.085 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:41:39.085 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:41:39.085 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+16:41:40.224 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:41:40.224 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:41:40.224 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+16:41:41.377 [main] INFO  utilities.UtilityCustomFunctions - Actual: Welcome to Notification test automation for ETRS. 
+16:41:41.378 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:41:41.378 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+16:41:42.492 [main] INFO  utilities.UtilityCustomFunctions - Actual:       NewTriggerNotification       
+16:41:42.492 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:41:42.492 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+16:41:44.331 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:41:52.496 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:41:52.496 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:41:52.496 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+16:41:53.632 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:41:53.632 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:41:53.632 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+16:41:54.737 [main] INFO  utilities.UtilityCustomFunctions - Actual: Welcome to Notification test automation for ETRS. 
+16:41:54.737 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:41:54.737 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+16:41:55.882 [main] INFO  utilities.UtilityCustomFunctions - Actual:       NewTriggerNotification       
+16:41:55.882 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:41:55.882 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+16:41:57.008 [main] INFO  utilities.UtilityCustomFunctions - Actual:122897
+16:41:57.008 [main] INFO  utilities.UtilityCustomFunctions - Expected:122897
+16:41:57.008 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+16:42:04.322 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'IT')]
+16:42:05.838 [main] INFO  utilities.UtilityCustomFunctions - 122897 entered in  input
+16:42:11.022 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:42:11.022 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Add -Rsoft IT Record Id: 122897
+16:42:12.339 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:42:12.339 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:42:12.339 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:42:13.452 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:42:13.452 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:42:13.452 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:42:14.578 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:42:14.578 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:42:14.578 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:42:15.729 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:42:15.729 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:42:15.729 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:42:16.847 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:42:16.847 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:42:16.847 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:42:17.956 [main] INFO  utilities.UtilityCustomFunctions - Actual:122897
+16:42:17.956 [main] INFO  utilities.UtilityCustomFunctions - Expected:122897
+16:42:17.956 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:42:25.467 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+16:42:26.981 [main] INFO  utilities.UtilityCustomFunctions - 122897 entered in  input
+16:42:32.334 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:42:32.334 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Record Add -Indiana Jones Record Id: 122897
+16:42:33.686 [main] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+16:42:33.686 [main] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+16:42:33.686 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:42:34.799 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:42:34.799 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:42:34.799 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:42:35.915 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:42:35.915 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:42:35.915 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:42:37.039 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:42:37.039 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:42:37.039 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:42:38.164 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:42:38.164 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:42:38.164 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:42:39.271 [main] INFO  utilities.UtilityCustomFunctions - Actual:122897
+16:42:39.271 [main] INFO  utilities.UtilityCustomFunctions - Expected:122897
+16:42:39.271 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:42:46.059 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+16:42:47.638 [main] INFO  utilities.UtilityCustomFunctions - 122897 entered in  input
+16:42:52.909 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:42:52.909 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Record Add -Madhan Mohan Record Id: 122897
+16:42:54.245 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+16:42:54.246 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+16:42:54.246 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:42:55.350 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:42:55.350 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:42:55.351 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:42:56.485 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:42:56.485 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:42:56.485 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:42:57.617 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:42:57.617 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:42:57.617 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:42:58.766 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:42:58.766 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:42:58.766 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:42:59.913 [main] INFO  utilities.UtilityCustomFunctions - Actual:122897
+16:42:59.913 [main] INFO  utilities.UtilityCustomFunctions - Expected:122897
+16:42:59.913 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:43:08.528 [main] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+16:43:08.528 [main] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+16:43:10.747 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:43:12.043 [main] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+16:43:13.284 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+16:43:34.673 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+16:43:36.282 [main] INFO  utilities.UtilityCustomFunctions - 122897 entered in  input
+16:43:41.934 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:43:41.934 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Record Add -Indiana Jones Record Id: 122897
+16:43:43.343 [main] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+16:43:43.343 [main] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+16:43:43.343 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:43:44.446 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:43:44.446 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:43:44.446 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:43:45.566 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:43:45.566 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:43:45.566 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:43:46.686 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:43:46.686 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:43:46.686 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:43:47.825 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:43:47.825 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:43:47.825 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:43:48.949 [main] INFO  utilities.UtilityCustomFunctions - Actual:122897
+16:43:48.949 [main] INFO  utilities.UtilityCustomFunctions - Expected:122897
+16:43:48.949 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+16:44:02.811 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:44:04.030 [main] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+16:44:05.259 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+16:44:22.685 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+16:44:24.192 [main] INFO  utilities.UtilityCustomFunctions - 122897 entered in  input
+16:44:29.697 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:44:29.697 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Record Add -Madhan Mohan Record Id: 122897
+16:44:31.050 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+16:44:31.050 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+16:44:31.050 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+16:44:32.159 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+16:44:32.159 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+16:44:32.159 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+16:44:33.324 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:44:33.325 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:44:33.325 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+16:44:34.474 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Notification test ...
+16:44:34.474 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Notification test automation for ETRS.
+16:44:34.474 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+16:44:35.597 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewTriggerNotification ...
+16:44:35.597 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewTriggerNotification
+16:44:35.597 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+16:44:36.748 [main] INFO  utilities.UtilityCustomFunctions - Actual:122897
+16:44:36.748 [main] INFO  utilities.UtilityCustomFunctions - Expected:122897

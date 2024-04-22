@@ -182,7 +182,7 @@ public class UtilityCustomFunctions extends BaseClass{
 				System.out.print("Expected item:" + textValue);
 				int i=0;
 				for (WebElement option : options) {
-					System.out.println(i+1 + option.getText().trim());
+//					System.out.println(i+1 + option.getText().trim());
 					if (textValue.equalsIgnoreCase(option.getText().trim())) {
 						option.click();
 						System.out.println("[" + textValue + "] is selected");

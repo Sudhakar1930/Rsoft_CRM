@@ -295,8 +295,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		String sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
-		int iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		int iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo , "Add New Record - Notification received for " +sAssignedTo);
@@ -312,8 +314,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo1 , "Add New Record - Notification received for " +sAssignedTo1);
@@ -328,8 +332,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo2 , "Add New Record - Notification received for " +sAssignedTo2);
@@ -369,8 +375,7 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		Thread.sleep(3000);
 		
 		String sUser2CurrNotifyCount = objCRMRs.fgetNotificationCount();
-		Thread.sleep(2000);
-		objHP.clickLogoutCRM();
+		
 		if(sUser2OldNotifyCount!=sUser2CurrNotifyCount) {
 			freport("Notification Sent after new Record Added for: " + sUserName1, "pass", node);
 		}
@@ -380,8 +385,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user 2" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo1 , "Add New Record - Notification received for " +sAssignedTo1);
@@ -423,8 +430,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		}
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user 3" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo2 , "Add New Record - Notification received for " +sAssignedTo2);
@@ -437,7 +446,32 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
 		
+		
+		
 		//******************* Summary Data Validation ***********************************************
+		//Logout & Login as User 1
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		//Login Back as 1st User to Perform SubmitNewModuleData, 
+		//Capture RecordId,check summary, CheckNotification+1 & NotificationPage, 
+		//Search Record In Notificaiton for all users 
+		Thread.sleep(3000);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickLoginSubmit();
+			
+		}
+		else {
+			logger.info("CRM Login failed");
+			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
+		}
+		
+		
 		sUser1OldNotifyCount = sUser1CurrNotifyCount;
 		sUser2OldNotifyCount = sUser2CurrNotifyCount;
 		sUser3OldNotifyCount = sUser3CurrNotifyCount;
@@ -465,23 +499,23 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		iCurrRecordId= objCRMRs.getLastRecordId();
 		sCurrRecordId = String.valueOf(iCurrRecordId);
 		
-		objCRMRs.fValModuleView("Test", "//Notification//WF1_Send_Notify_ETR_S_","Sheet2","Summary Add New Data",sAssignedTo,node);
-		Thread.sleep(3000);
+		
 		//Capture new Record Id & New Notification Count in User 1
 		
 		
 		//Validate Notification Count
 		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
 		if(sUser1OldNotifyCount!=sUser1CurrNotifyCount) {
-			freport("Notification Sent after new Record Added for: " + sUserName, "pass", node);
+			freport("Notification Sent after Summary Record Added for: " + sUserName, "pass", node);
 		}
 		else {
-			freport("Notification not Sent after new Record Added for: "+sUserName, "fail", node);
+			freport("Notification not Sent after Summary Record Added for: "+sUserName, "fail", node);
 		}
 		//Validate Module Summary Added Record 
 		if(iOldRecordId!=iCurrRecordId) {
 			freport("Notification Sent after Summary Record Added: New Record Id " + sCurrRecordId + "User: " + sUserName , "pass", node);
-			objCRMRs.fValModuleView("Test", "//Notification//WF1_Send_Notify_ETR_S_","Sheet1","Add Summary Data " + sUserName ,sAssignedTo,node);
+			objCRMRs.fValModuleView("Test", "//Notification//WF1_Send_Notify_ETR_S_","Sheet2","Summary Add New Data",sAssignedTo,node);
+			Thread.sleep(3000);
 		}
 		else {
 			freport("Notification not Sent after Summary Record Added" + sCurrRecordId + "User: " + sUserName, "fail", node);
@@ -504,7 +538,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 				
 		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 1" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Summary Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Summary Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Summary New Record - Notification received for " +sAssignedTo , "Summary New Record - Notification received for " +sAssignedTo);
@@ -519,8 +555,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 1" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo1 , "Add Summary Record - Notification received for " +sAssignedTo1);
@@ -535,8 +573,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 1" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo2 , "Add Summary Record - Notification received for " +sAssignedTo2);
@@ -588,7 +628,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
 		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 2" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo1 , "Add Summary Record - Notification received for " +sAssignedTo1);
@@ -630,8 +672,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		}
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 2" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo2 , "Add Summary Record - Notification received for " +sAssignedTo2);
@@ -647,12 +691,6 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		//******************************Duplicate Record *********************************************
-		sUser1OldNotifyCount = sUser1CurrNotifyCount;
-		sUser2OldNotifyCount = sUser2CurrNotifyCount;
-		sUser3OldNotifyCount = sUser3CurrNotifyCount;
-		iOldRecordId = iCurrRecordId;
-		sOldRecordId = sCurrRecordId;
-		
 		//Login as User 1
 		Thread.sleep(3000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -668,6 +706,14 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 			Assert.fail("Login Page not displayed");
 			
 		}
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		sOldRecordId = sCurrRecordId;
+		
+		
+		Thread.sleep(3000);
 		
 		//Click Duplicate & Add  New Record
 		Thread.sleep(3000);
@@ -698,7 +744,7 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		else {
 			freport("Notification not Sent after Duplicate Record Added for: "+sUserName, "fail", node);
 		}
-		//Validate Module Summary Added Record 
+		//Validate Module Duplicate Added Record 
 		if(iOldRecordId!=iCurrRecordId) {
 			freport("Notification Sent after duplicate Record Added: Record Id " + sCurrRecordId + "User: " + sUserName , "pass", node);
 			objCRMRs.fValModuleView("Test", "//Notification//WF1_Send_Notify_ETR_S_","Sheet3","Duplicate with New Data",sAssignedTo,node);
@@ -724,7 +770,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 						
 		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Duplicate Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Duplicate Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Duplicate New Record - Notification received for " +sAssignedTo , "Duplicate New Record - Notification received for " +sAssignedTo);
@@ -739,8 +787,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo1 , "Add Duplicate Record - Notification received for " +sAssignedTo1);
@@ -755,8 +805,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo2 , "Add Duplicate Record - Notification received for " +sAssignedTo2);
@@ -807,8 +859,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 2 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo1 , "Add Duplicate Record - Notification received for " +sAssignedTo1);
@@ -852,8 +906,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		}
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 3 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo2 , "Add Duplicate Record - Notification received for " +sAssignedTo2);
@@ -869,12 +925,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objHP.clickLogoutCRM();
 		
 		//**************************** Edit with New Data *****************************
-		sUser1OldNotifyCount = sUser1CurrNotifyCount;
-		sUser2OldNotifyCount = sUser2CurrNotifyCount;
-		sUser3OldNotifyCount = sUser3CurrNotifyCount;
-		iOldRecordId = iCurrRecordId;
-		sOldRecordId = sCurrRecordId;
 		
+		//Login Back as 1st User to Perform SubmitNewModuleData, 
+		//Capture RecordId,check summary, CheckNotification+1 & NotificationPage, 
+		//Search Record In Notificaiton for all users 
 		Thread.sleep(3000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
@@ -889,7 +943,13 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 			Assert.fail("Login Page not displayed");
 			
 		}
-		
+		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		sOldRecordId = sCurrRecordId;
+		UtilityCustomFunctions.logWriteConsole("Old Record Id: Before Edit & Save:" + sOldRecordId);
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -906,28 +966,26 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
 		driver.navigate().refresh();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		iCurrRecordId= objCRMRs.getLastRecordId();
 		sCurrRecordId = String.valueOf(iCurrRecordId);
+		UtilityCustomFunctions.logWriteConsole("Current Record Id: after Edit & Save:" + sCurrRecordId);
 		//Validate Module Summary & Detail Page
 		//Validate Notification Count
 		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
-		if(sUser1OldNotifyCount!=sUser1CurrNotifyCount) {
+		
+		UtilityCustomFunctions.logWriteConsole("After Edit & Save : Old Notification count : "+sUser1OldNotifyCount+" current Notification count "+ sUser1CurrNotifyCount);
+		
+		if(Integer.parseInt(sUser1OldNotifyCount) +1 == Integer.parseInt(sUser1CurrNotifyCount)) {
 			freport("Notification Sent after Edit &  With New Record Added for: " + sUserName, "pass", node);
 		}
 		else {
 			freport("Notification not Sent after Edit &  With New Record Added for: "+sUserName, "fail", node);
 		}
 		//Validate Module Summary Added Record 
-		if(iOldRecordId!=iCurrRecordId) {
-			freport("Notification Sent after Edit &  With New Record Added: Record Id " + sCurrRecordId + "User: " + sUserName , "pass", node);
-			objCRMRs.fValModuleView("Test", "//Notification//WF1_Send_Notify_ETR_S_","Sheet3","Edit &  With New Record",sAssignedTo,node);
-		}
-		else {
-			freport("Notification not Sent after Edit &  With New Record Added" + sCurrRecordId + "User: " + sUserName, "fail", node);
-		}
-
+		
+		objCRMRs.fValModuleView("Test", "//Notification//WF1_Send_Notify_ETR_S_","Sheet4","Edit &  With New Record",sAssignedTo,node);
 		//Validate Notifications Module
 		//Notifications 1/AssignedTo 
 		sCurrentWinHandle = driver.getWindowHandle();
@@ -944,7 +1002,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 								
-		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==2) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
@@ -961,6 +1021,8 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
 		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==2) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
@@ -976,7 +1038,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==2) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
@@ -1028,7 +1092,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
-		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 2 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==2) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
@@ -1073,7 +1139,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		}
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 3 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==2) {
 			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
@@ -1089,12 +1157,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		//****************************** Single Line Summary Edit  ****************************
-		sUser1OldNotifyCount = sUser1CurrNotifyCount;
-		sUser2OldNotifyCount = sUser2CurrNotifyCount;
-		sUser3OldNotifyCount = sUser3CurrNotifyCount;
-		iOldRecordId = iCurrRecordId;
-		sOldRecordId = sCurrRecordId;
-		
+
+		//Login Back as 1st User to Perform SubmitNewModuleData, 
+		//Capture RecordId,check summary, CheckNotification+1 & NotificationPage, 
+		//Search Record In Notificaiton for all users 
 		Thread.sleep(3000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
@@ -1109,22 +1175,34 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 			Assert.fail("Login Page not displayed");
 			
 		}
+		
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		sOldRecordId = sCurrRecordId;
+		UtilityCustomFunctions.logWriteConsole("Before Single LIne Edit: Old Record Id: "+iOldRecordId+" current record id "+ iCurrRecordId);
 		Thread.sleep(3000);
+	
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		objDVP.clickEditRecordItem();
-		Thread.sleep(1000);
-		objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
-		objDVP.clickRecItemSave(sExpModuleName);
-		
 		Thread.sleep(5000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
+		Thread.sleep(5000);
+		objDVP.clickEditNotificationItem();
+		Thread.sleep(3000);
+
+		
+		sEditIndText = "1234567890";
+		objCMD.setGenericInputValue("tel", sExpModuleName, "phonenumber", sEditIndText);
+		objDVP.clickNotifyRecItemSave(sExpModuleName,"phonenumber");
+		Thread.sleep(5000);
+		
 		objSVP.fWaitTillControlVisible();
 		driver.navigate().refresh();
 		Thread.sleep(3000);
@@ -1142,12 +1220,8 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		}
 		//Validate Module Summary Added Record
 		// check whether new record createdfor this scnario manually\
-		if(iOldRecordId!=iCurrRecordId) {
-			freport("Notification Sent after Single Line Edit Added: Record Id " + sCurrRecordId + "User: " + sUserName , "pass", node);
-		}
-		else {
-			freport("Notification not Sent after Single Line Edit Added" + sCurrRecordId + "User: " + sUserName, "fail", node);
-		}
+		UtilityCustomFunctions.logWriteConsole("after single line edit Old Record Id: "+iOldRecordId+" current record id "+ iCurrRecordId);
+		
 		
 		//Validate Notifications Module
 		//Notifications 1/AssignedTo 
@@ -1166,7 +1240,9 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 										
 				iNotificationCount = objSMS.getWebTblRowcount(); 
-				if(iNotificationCount==2) {
+				iNotificationCount = iNotificationCount - 1;
+				UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+				if(iNotificationCount==3) {
 					UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
 					freport("Passed: Notification Received after Single Line Edit Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
 					sAssertinFn.assertEquals("Single Line Edit New Record - Notification received for " +sAssignedTo , "Single Line Edit New Record - Notification received for " +sAssignedTo);
@@ -1181,8 +1257,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 				//Notifications 1/AssignedTo 1
 				objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 								
-				iNotificationCount = objSMS.getWebTblRowcount(); 
-				if(iNotificationCount==2) {
+				iNotificationCount = objSMS.getWebTblRowcount();
+				iNotificationCount = iNotificationCount - 1;
+				UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+				if(iNotificationCount==3) {
 					UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 					freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 					sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo1 , "Add Single Line Edit Record - Notification received for " +sAssignedTo1);
@@ -1197,8 +1275,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 				//Notifications 1/AssignedTo 2
 				objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 						
-				iNotificationCount = objSMS.getWebTblRowcount(); 
-				if(iNotificationCount==2) {
+				iNotificationCount = objSMS.getWebTblRowcount();
+				iNotificationCount = iNotificationCount - 1;
+				UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+				if(iNotificationCount==3) {
 					UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 					freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 					sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo2 , "Add Single Line Edit Record - Notification received for " +sAssignedTo2);
@@ -1249,8 +1329,10 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 				//Notifications 1/AssignedTo 1
 				objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 				
-				iNotificationCount = objSMS.getWebTblRowcount(); 
-				if(iNotificationCount==2) {
+				iNotificationCount = objSMS.getWebTblRowcount();
+				iNotificationCount = iNotificationCount - 1;
+				UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 2 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+				if(iNotificationCount==3) {
 					UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 					freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
 					sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo1 , "Add Single Line Edit Record - Notification received for " +sAssignedTo1);
@@ -1294,8 +1376,11 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 				}
 				objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 						
-				iNotificationCount = objSMS.getWebTblRowcount(); 
-				if(iNotificationCount==2) {
+				iNotificationCount = objSMS.getWebTblRowcount();
+				iNotificationCount = iNotificationCount - 1;
+				UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 2 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+				
+				if(iNotificationCount==3) {
 					UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
 					freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
 					sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo2 , "Add Single Line Edit Record - Notification received for " +sAssignedTo2);

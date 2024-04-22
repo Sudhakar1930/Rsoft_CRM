@@ -223,6 +223,18 @@ public class DetailViewPage extends BasePage{
 		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
 		eleRecEdit.click();
 	}
+	
+	public void clickEditNotificationItem() throws InterruptedException {
+		Actions action = new Actions(driver);
+		String sXpath1 = "(//div[@class='col-lg-10'])[1]";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
+		Thread.sleep(2000);
+		action.moveToElement(eleArrSummary).perform();
+		String sXpath="//td[@class='rs_col_2']//div[@class='col-lg-2']/i[@data_fieldid='5800']";
+		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
+		eleRecEdit.click();
+	}
+	
 	public void clickEdtSngFldMod() throws InterruptedException {
 		Actions action = new Actions(driver);
 		String sXpath1 = "(//div[@class='col-lg-10'])[2]";
@@ -236,6 +248,12 @@ public class DetailViewPage extends BasePage{
 	public void clickRecItemSave(String sModuleName) throws Exception {
 		
 		String sXpath="//span[@data-colname='"+sModuleName.toLowerCase()+"_text']//i[contains(@class,'fa fa-check')]";
+		WebElement btnSingleLineSave = driver.findElement(By.xpath(sXpath));	
+		UtilityCustomFunctions.doClick(driver, btnSingleLineSave);
+	}
+	public void clickNotifyRecItemSave(String sModuleName,String sControlType) throws Exception {
+		
+		String sXpath="//span[@data-colname='"+sModuleName.toLowerCase()+"_"+sControlType+"']";
 		WebElement btnSingleLineSave = driver.findElement(By.xpath(sXpath));	
 		UtilityCustomFunctions.doClick(driver, btnSingleLineSave);
 	}
