@@ -1,0 +1,558 @@
+17:46:56.019 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+17:46:57.361 [main] INFO  utilities.UtilityCustomFunctions - 3333333333 entered in  input
+17:46:59.738 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddOOFS@gmail.com entered in  input
+17:47:00.964 [main] INFO  utilities.UtilityCustomFunctions - 5555555555 entered in  input
+17:47:08.258 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [Good] is selected in List
+17:47:27.260 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:47:40.093 [main] INFO  utilities.UtilityCustomFunctions - After summary record  added: sUser1OldNotifyCount:3sUser1CurrNotifyCount3
+17:47:42.376 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+17:47:42.390 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+17:47:42.404 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+17:47:42.404 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+17:47:42.680 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:47:42.680 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:47:42.680 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+17:47:44.035 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:47:44.035 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:47:44.035 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+17:47:45.157 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+17:47:45.157 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+17:47:45.157 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+17:47:46.277 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddOOFS@gmail.com
+17:47:46.277 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddOOFS@gmail.com
+17:47:46.277 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+17:47:47.409 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:47:47.409 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:47:47.409 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+17:47:54.578 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:47:54.593 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+17:47:59.118 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+17:47:59.118 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+17:47:59.118 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+17:48:00.249 [main] INFO  utilities.UtilityCustomFunctions - Actual:3333333333
+17:48:00.249 [main] INFO  utilities.UtilityCustomFunctions - Expected:3333333333
+17:48:00.249 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+17:48:01.361 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddOOFS@gmail.com
+17:48:01.362 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddOOFS@gmail.com
+17:48:01.362 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+17:48:02.492 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:48:02.492 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:48:02.492 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+17:48:03.622 [main] INFO  utilities.UtilityCustomFunctions - Actual:5555555555
+17:48:03.622 [main] INFO  utilities.UtilityCustomFunctions - Expected:5555555555
+17:48:03.622 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+17:48:05.433 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:48:22.818 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:48:22.818 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:48:22.818 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+17:48:23.939 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+17:48:23.940 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+17:48:23.940 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
+17:48:25.063 [main] INFO  utilities.UtilityCustomFunctions - Actual:3333333333
+17:48:25.063 [main] INFO  utilities.UtilityCustomFunctions - Expected:3333333333
+17:48:25.063 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
+17:48:26.180 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddOOFS@gmail.com
+17:48:26.180 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddOOFS@gmail.com
+17:48:26.180 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
+17:48:27.298 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:48:27.298 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:48:27.298 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
+17:48:28.436 [main] INFO  utilities.UtilityCustomFunctions - Actual:5555555555
+17:48:28.436 [main] INFO  utilities.UtilityCustomFunctions - Expected:5555555555
+17:48:28.436 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
+17:48:34.924 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:48:34.924 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:48:34.924 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
+17:48:36.045 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+17:48:36.045 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+17:48:36.045 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
+17:48:37.167 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddOOFS@gmail.com
+17:48:37.167 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddOOFS@gmail.com
+17:48:37.167 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title
+17:48:38.286 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:48:38.286 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:48:38.286 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
+17:49:02.654 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Notification detail view opened
+17:49:07.667 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Switched to New Window
+17:49:13.694 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:49:16.675 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:49:16.675 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:49:16.675 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+17:49:17.796 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:49:17.796 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:49:17.796 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+17:49:18.918 [main] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+17:49:18.918 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:49:18.918 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+17:49:20.040 [main] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+17:49:20.040 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:49:20.040 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+17:49:21.856 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:49:29.888 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:49:29.888 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:49:29.888 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+17:49:31.011 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:49:31.011 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:49:31.011 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+17:49:32.126 [main] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+17:49:32.126 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:49:32.126 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+17:49:33.248 [main] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+17:49:33.248 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:49:33.249 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+17:49:34.373 [main] INFO  utilities.UtilityCustomFunctions - Actual:123241
+17:49:34.373 [main] INFO  utilities.UtilityCustomFunctions - Expected:123241
+17:49:34.373 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+17:49:41.190 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'IT')]
+17:49:42.724 [main] INFO  utilities.UtilityCustomFunctions - 123241 entered in  input
+17:49:47.779 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:49:47.779 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Passed: Notification Received after Add Summary Record-Rsoft IT Record Id: 
+17:49:49.136 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:49:49.136 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:49:49.136 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:49:50.269 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:49:50.270 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:49:50.270 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:49:51.401 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:49:51.402 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:49:51.402 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:49:52.520 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:49:52.520 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:49:52.520 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:49:53.655 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:49:53.655 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:49:53.655 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:49:54.780 [main] INFO  utilities.UtilityCustomFunctions - Actual:123241
+17:49:54.780 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+17:49:54.780 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:50:00.408 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Khan')]
+17:50:01.914 [main] INFO  utilities.UtilityCustomFunctions - 123241 entered in  input
+17:50:06.914 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:50:06.914 [main] INFO  utilities.UtilityCustomFunctions - After summary new add : user 1Aamir KhanNotification record count: 1
+17:50:06.914 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Passed: Notification Received after Add Summary Record-Aamir Khan Record Id: 
+17:50:08.353 [main] INFO  utilities.UtilityCustomFunctions - Actual:Aamir Khan
+17:50:08.353 [main] INFO  utilities.UtilityCustomFunctions - Expected:Aamir Khan
+17:50:08.353 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:50:09.482 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:50:09.482 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:50:09.482 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:50:10.609 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:50:10.609 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:50:10.609 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:50:11.739 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:50:11.739 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:50:11.739 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:50:12.872 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:50:12.872 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:50:12.872 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:50:13.984 [main] INFO  utilities.UtilityCustomFunctions - Actual:123241
+17:50:13.985 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+17:50:13.985 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:50:19.577 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+17:50:21.146 [main] INFO  utilities.UtilityCustomFunctions - 123241 entered in  input
+17:50:26.203 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:50:26.203 [main] INFO  utilities.UtilityCustomFunctions - After summary new add : user 1Madhan MohanNotification record count: 1
+17:50:26.203 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Passed: Notification Received after Add Summary Record-Madhan Mohan Record Id: 
+17:50:27.617 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+17:50:27.618 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+17:50:27.618 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:50:28.726 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:50:28.726 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:50:28.726 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:50:29.859 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:50:29.859 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:50:29.859 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:50:30.988 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:50:30.988 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:50:30.988 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:50:32.113 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:50:32.114 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:50:32.114 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:50:33.251 [main] INFO  utilities.UtilityCustomFunctions - Actual:123241
+17:50:33.251 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+17:50:33.251 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:50:40.716 [main] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+17:50:40.716 [main] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+17:50:42.907 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:50:44.213 [main] INFO  utilities.UtilityCustomFunctions - Aamir entered in  input
+17:50:45.475 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+17:51:05.793 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Khan')]
+17:51:07.202 [main] INFO  utilities.UtilityCustomFunctions - 123241 entered in  input
+17:51:12.704 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:51:12.705 [main] INFO  utilities.UtilityCustomFunctions - After summary new add : user 2Aamir KhanNotification record count: 1
+17:51:12.705 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Record Add -Aamir Khan Record Id: 123241
+17:51:14.063 [main] INFO  utilities.UtilityCustomFunctions - Actual:Aamir Khan
+17:51:14.063 [main] INFO  utilities.UtilityCustomFunctions - Expected:Aamir Khan
+17:51:14.063 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:51:15.169 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:51:15.169 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:51:15.169 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:51:16.275 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:51:16.275 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:51:16.275 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:51:17.402 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:51:17.402 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:51:17.402 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:51:18.530 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:51:18.530 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:51:18.530 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:51:19.664 [main] INFO  utilities.UtilityCustomFunctions - Actual:123241
+17:51:19.664 [main] INFO  utilities.UtilityCustomFunctions - Expected:123241
+17:51:19.664 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:51:33.463 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:51:34.749 [main] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+17:51:36.020 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+17:51:53.358 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+17:51:54.945 [main] INFO  utilities.UtilityCustomFunctions - 123241 entered in  input
+17:52:00.535 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:52:00.535 [main] INFO  utilities.UtilityCustomFunctions - After summary new add : user 2Madhan MohanNotification record count: 1
+17:52:00.535 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Summary Record Add -Madhan Mohan Record Id: 123241
+17:52:01.942 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+17:52:01.942 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+17:52:01.942 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:52:03.066 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:52:03.066 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:52:03.066 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:52:04.204 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:52:04.204 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:52:04.204 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:52:05.314 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:52:05.314 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:52:05.314 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:52:06.452 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:52:06.452 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:52:06.452 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:52:07.572 [main] INFO  utilities.UtilityCustomFunctions - Actual:123241
+17:52:07.572 [main] INFO  utilities.UtilityCustomFunctions - Expected:123241
+17:52:07.572 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:52:21.383 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:52:22.627 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:52:23.923 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:52:46.659 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+17:52:46.693 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+17:52:46.723 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+17:52:46.723 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+17:52:49.822 [main] INFO  utilities.UtilityCustomFunctions - 7123412344 entered in  input
+17:52:51.104 [main] INFO  utilities.UtilityCustomFunctions - 666666666 entered in  input
+17:52:53.524 [main] INFO  utilities.UtilityCustomFunctions - OOFSDuplicate@gmail.com entered in  input
+17:52:54.760 [main] INFO  utilities.UtilityCustomFunctions - 7777777777 entered in  input
+17:53:02.088 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [Good] is selected in List
+17:53:20.999 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:53:30.547 [main] INFO  utilities.UtilityCustomFunctions - After duplicate record  added: sUser1OldNotifyCount:3sUser1CurrNotifyCount3
+17:53:34.793 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+17:53:34.805 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+17:53:34.817 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+17:53:34.818 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+17:53:35.149 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:53:35.149 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:53:35.149 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+17:53:36.505 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:53:36.505 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:53:36.505 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+17:53:37.642 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 7123412344
+17:53:37.642 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 7123412344
+17:53:37.642 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+17:53:38.778 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFSDuplicate@gmail.com
+17:53:38.778 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFSDuplicate@gmail.com
+17:53:38.778 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+17:53:39.903 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:53:39.903 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:53:39.903 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+17:53:47.062 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:53:47.076 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+17:53:51.561 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 7123412344
+17:53:51.561 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 7123412344
+17:53:51.561 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+17:53:52.682 [main] INFO  utilities.UtilityCustomFunctions - Actual:666666666
+17:53:52.682 [main] INFO  utilities.UtilityCustomFunctions - Expected:666666666
+17:53:52.682 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+17:53:53.806 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFSDuplicate@gmail.com
+17:53:53.806 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFSDuplicate@gmail.com
+17:53:53.806 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+17:53:54.928 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:53:54.928 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:53:54.928 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+17:53:56.077 [main] INFO  utilities.UtilityCustomFunctions - Actual:7777777777
+17:53:56.077 [main] INFO  utilities.UtilityCustomFunctions - Expected:7777777777
+17:53:56.077 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+17:53:57.847 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:54:15.357 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:54:15.357 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:54:15.358 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+17:54:16.476 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 7123412344
+17:54:16.476 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 7123412344
+17:54:16.476 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
+17:54:17.601 [main] INFO  utilities.UtilityCustomFunctions - Actual:666666666
+17:54:17.601 [main] INFO  utilities.UtilityCustomFunctions - Expected:666666666
+17:54:17.601 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
+17:54:18.716 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFSDuplicate@gmail.com
+17:54:18.716 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFSDuplicate@gmail.com
+17:54:18.716 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
+17:54:19.842 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:54:19.842 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:54:19.842 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
+17:54:20.958 [main] INFO  utilities.UtilityCustomFunctions - Actual:7777777777
+17:54:20.958 [main] INFO  utilities.UtilityCustomFunctions - Expected:7777777777
+17:54:20.958 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
+17:54:27.395 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:54:27.395 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:54:27.395 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
+17:54:28.500 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 7123412344
+17:54:28.500 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 7123412344
+17:54:28.500 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
+17:54:29.628 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFSDuplicate@gmail.com
+17:54:29.628 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFSDuplicate@gmail.com
+17:54:29.628 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title
+17:54:30.745 [main] INFO  utilities.UtilityCustomFunctions - Actual:Good
+17:54:30.745 [main] INFO  utilities.UtilityCustomFunctions - Expected:Good
+17:54:30.745 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
+17:54:52.076 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Notification detail view opened
+17:54:57.107 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Switched to New Window
+17:55:03.133 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:55:06.114 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:55:06.114 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:55:06.114 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+17:55:07.237 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:55:07.237 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:55:07.237 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+17:55:08.360 [main] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+17:55:08.360 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:55:08.360 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+17:55:09.469 [main] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+17:55:09.469 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:55:09.469 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+17:55:11.231 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:55:19.301 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:55:19.301 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:55:19.301 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+17:55:20.406 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:55:20.406 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:55:20.406 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+17:55:21.521 [main] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+17:55:21.521 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:55:21.521 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+17:55:22.640 [main] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+17:55:22.640 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:55:22.640 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+17:55:23.767 [main] INFO  utilities.UtilityCustomFunctions - Actual:123245
+17:55:23.767 [main] INFO  utilities.UtilityCustomFunctions - Expected:123245
+17:55:23.767 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+17:55:30.644 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'IT')]
+17:55:32.184 [main] INFO  utilities.UtilityCustomFunctions - 123245 entered in  input
+17:55:37.264 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:55:37.264 [main] INFO  utilities.UtilityCustomFunctions - After Duplicate record : user 1 and AssignedTo:Rsoft ITNotification record count: 1
+17:55:37.264 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Add -Rsoft IT Record Id: 123245
+17:55:38.614 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:55:38.614 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:55:38.614 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:55:39.741 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:55:39.741 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:55:39.741 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:55:40.876 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:55:40.876 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:55:40.876 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:55:42.006 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:55:42.006 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:55:42.006 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:55:43.111 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:55:43.111 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:55:43.111 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:55:44.262 [main] INFO  utilities.UtilityCustomFunctions - Actual:123245
+17:55:44.262 [main] INFO  utilities.UtilityCustomFunctions - Expected:123245
+17:55:44.262 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:55:50.916 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Khan')]
+17:55:52.428 [main] INFO  utilities.UtilityCustomFunctions - 123245 entered in  input
+17:55:57.514 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:55:57.514 [main] INFO  utilities.UtilityCustomFunctions - After Duplicate record : user 1 and AssignedTo:Aamir KhanNotification record count: 1
+17:55:57.514 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Passed: Notification Received after Duplicate-Aamir Khan Record Id: 
+17:55:58.934 [main] INFO  utilities.UtilityCustomFunctions - Actual:Aamir Khan
+17:55:58.934 [main] INFO  utilities.UtilityCustomFunctions - Expected:Aamir Khan
+17:55:58.934 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:56:00.059 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:56:00.059 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:56:00.059 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:56:01.184 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:56:01.184 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:56:01.184 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:56:02.311 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:56:02.311 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:56:02.311 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:56:03.431 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:56:03.431 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:56:03.431 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:56:04.587 [main] INFO  utilities.UtilityCustomFunctions - Actual:123245
+17:56:04.587 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+17:56:04.587 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:56:10.534 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+17:56:12.074 [main] INFO  utilities.UtilityCustomFunctions - 123245 entered in  input
+17:56:17.152 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:56:17.152 [main] INFO  utilities.UtilityCustomFunctions - After Duplicate record : user 1 and AssignedTo:Madhan MohanNotification record count: 1
+17:56:17.152 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Passed: Notification Received after Duplicate Record-Madhan Mohan Record Id: 
+17:56:18.515 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+17:56:18.515 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+17:56:18.515 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:56:19.643 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:56:19.643 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:56:19.643 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:56:20.774 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:56:20.774 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:56:20.774 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:56:21.913 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:56:21.913 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:56:21.913 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:56:23.046 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:56:23.046 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:56:23.046 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:56:24.182 [main] INFO  utilities.UtilityCustomFunctions - Actual:123245
+17:56:24.182 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+17:56:24.182 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:56:31.684 [main] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+17:56:31.684 [main] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+17:56:33.979 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:56:35.209 [main] INFO  utilities.UtilityCustomFunctions - Aamir entered in  input
+17:56:36.439 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+17:56:56.629 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Khan')]
+17:56:58.116 [main] INFO  utilities.UtilityCustomFunctions - 123245 entered in  input
+17:57:03.560 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:57:03.560 [main] INFO  utilities.UtilityCustomFunctions - After Duplicate record : user 2 and AssignedTo:Aamir KhanNotification record count: 1
+17:57:03.560 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Record Add -Aamir Khan Record Id: 123245
+17:57:04.927 [main] INFO  utilities.UtilityCustomFunctions - Actual:Aamir Khan
+17:57:04.927 [main] INFO  utilities.UtilityCustomFunctions - Expected:Aamir Khan
+17:57:04.928 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:57:06.040 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:57:06.040 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:57:06.040 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:57:07.167 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:57:07.167 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:57:07.167 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:57:08.296 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:57:08.296 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:57:08.296 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:57:09.424 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:57:09.424 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:57:09.424 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:57:10.537 [main] INFO  utilities.UtilityCustomFunctions - Actual:123245
+17:57:10.537 [main] INFO  utilities.UtilityCustomFunctions - Expected:123245
+17:57:10.537 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:57:24.393 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:57:25.709 [main] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+17:57:26.982 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+17:57:46.231 [main] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+17:57:47.741 [main] INFO  utilities.UtilityCustomFunctions - 123245 entered in  input
+17:57:53.231 [main] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:57:53.231 [main] INFO  utilities.UtilityCustomFunctions - After Duplicate record : user 3 and AssignedTo:Madhan MohanNotification record count: 1
+17:57:53.231 [main] INFO  utilities.UtilityCustomFunctions - Passed: Notification Received after Duplicate Record Add -Madhan Mohan Record Id: 123245
+17:57:54.604 [main] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+17:57:54.604 [main] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+17:57:54.604 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+17:57:55.732 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+17:57:55.732 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+17:57:55.732 [main] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+17:57:56.862 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:57:56.862 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:57:56.862 [main] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+17:57:57.992 [main] INFO  utilities.UtilityCustomFunctions - Actual:OOFS Notify
+17:57:57.992 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+17:57:57.992 [main] INFO  utilities.UtilityCustomFunctions - Message:UserName in Record Details
+17:57:59.128 [main] INFO  utilities.UtilityCustomFunctions - Actual:TriggerNotifyOOFS
+17:57:59.128 [main] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+17:57:59.128 [main] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+17:58:00.251 [main] INFO  utilities.UtilityCustomFunctions - Actual:123245
+17:58:00.252 [main] INFO  utilities.UtilityCustomFunctions - Expected:123245
+17:58:00.252 [main] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+17:58:14.207 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:58:15.446 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:58:16.681 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:58:20.512 [main] INFO  utilities.UtilityCustomFunctions - Old Record Id: Before Edit & Save:123245
+17:58:41.335 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+17:58:41.358 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+17:58:41.370 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+17:58:41.370 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+17:58:42.901 [main] INFO  utilities.UtilityCustomFunctions - 6532158912 entered in  input
+17:58:44.192 [main] INFO  utilities.UtilityCustomFunctions - 3331117778 entered in  input
+17:58:46.619 [main] INFO  utilities.UtilityCustomFunctions - EditNewDataOOFS@gmail.com entered in  input
+17:58:47.854 [main] INFO  utilities.UtilityCustomFunctions - 7777777777 entered in  input
+17:58:55.194 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [Very good] is selected in List
+17:59:15.253 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:59:26.628 [main] INFO  utilities.UtilityCustomFunctions - Current Record Id: after Edit & Save:123245
+17:59:26.735 [main] INFO  utilities.UtilityCustomFunctions - After Edit & Save : Old Notification count : 2 current Notification count 2
+17:59:27.858 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+17:59:27.869 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+17:59:27.881 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+17:59:27.881 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+17:59:28.098 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:59:28.098 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:59:28.098 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+17:59:29.529 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+17:59:29.530 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+17:59:29.530 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+17:59:30.658 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 6532158912
+17:59:30.658 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 6532158912
+17:59:30.658 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+17:59:31.772 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewDataOOFS@gmail.com
+17:59:31.772 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewDataOOFS@gmail.com
+17:59:31.772 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+17:59:32.890 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+17:59:32.890 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+17:59:32.891 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+17:59:40.060 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:59:40.075 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+17:59:44.573 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 6532158912
+17:59:44.573 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 6532158912
+17:59:44.573 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+17:59:45.698 [main] INFO  utilities.UtilityCustomFunctions - Actual:3331117778
+17:59:45.698 [main] INFO  utilities.UtilityCustomFunctions - Expected:3331117778
+17:59:45.698 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+17:59:46.825 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewDataOOFS@gmail.com
+17:59:46.825 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewDataOOFS@gmail.com
+17:59:46.825 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+17:59:47.954 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+17:59:47.954 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+17:59:47.954 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+17:59:49.058 [main] INFO  utilities.UtilityCustomFunctions - Actual:7777777777
+17:59:49.058 [main] INFO  utilities.UtilityCustomFunctions - Expected:7777777777
+17:59:49.058 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+17:59:50.957 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:00:08.390 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+18:00:08.390 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+18:00:08.390 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+18:00:09.508 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 6532158912
+18:00:09.508 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 6532158912
+18:00:09.508 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
+18:00:10.639 [main] INFO  utilities.UtilityCustomFunctions - Actual:3331117778
+18:00:10.639 [main] INFO  utilities.UtilityCustomFunctions - Expected:3331117778
+18:00:10.639 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
+18:00:11.779 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewDataOOFS@gmail.com
+18:00:11.779 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewDataOOFS@gmail.com
+18:00:11.779 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
+18:00:12.899 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+18:00:12.899 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+18:00:12.899 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
+18:00:14.030 [main] INFO  utilities.UtilityCustomFunctions - Actual:7777777777
+18:00:14.030 [main] INFO  utilities.UtilityCustomFunctions - Expected:7777777777
+18:00:14.030 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
+18:00:20.503 [main] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+18:00:20.503 [main] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+18:00:20.503 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
+18:00:21.654 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 6532158912
+18:00:21.654 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 6532158912
+18:00:21.654 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
+18:00:22.775 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewDataOOFS@gmail.com
+18:00:22.775 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewDataOOFS@gmail.com
+18:00:22.775 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title
+18:00:23.883 [main] INFO  utilities.UtilityCustomFunctions - Actual:Very good
+18:00:23.884 [main] INFO  utilities.UtilityCustomFunctions - Expected:Very good
+18:00:23.884 [main] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
+18:00:45.229 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Notification detail view opened
+18:00:50.252 [main] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Switched to New Window
+18:00:56.307 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:00:59.325 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+18:00:59.326 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+18:00:59.326 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+18:01:00.440 [main] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:01:00.440 [main] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:01:00.440 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+18:01:01.563 [main] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:01:01.563 [main] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:01:01.563 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+18:01:02.683 [main] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     

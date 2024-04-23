@@ -96,7 +96,7 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		String sPassword2 =  rb.getString("passWord2");
 		String sAssignedTo2 = rb.getString("AssignedTo2");
 		
-		
+		//Login as User 1
 		Thread.sleep(3000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
