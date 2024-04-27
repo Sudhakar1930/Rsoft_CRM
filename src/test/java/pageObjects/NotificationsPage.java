@@ -141,6 +141,9 @@ public class NotificationsPage extends BasePage{
 		String sValue="";
 		try {
 			sValue = UtilityCustomFunctions.getText(driver, iconNotification);
+			if(sValue==null) {
+				sValue = "0";
+			}
 		}catch(Exception e) {
 			sValue = "0";
 		}

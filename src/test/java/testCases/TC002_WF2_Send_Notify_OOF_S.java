@@ -280,29 +280,34 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		
 		//Validate Module Summary Added Record 
 		if(iOldRecordId!=iCurrRecordId) {
-			freport("Notification Sent after new Record Added: New Record Id " + sCurrRecordId , "pass", node);
+			freport("Notification Sent after new Record Added: New Record Id " + sCurrRecordId + "user:"+sUserName, "pass", node);
 			objCRMRs.fValModuleView("Test", "//Notification//WF2_Send_Notify_OOF_S_","Sheet1","Add New Module Data",sAssignedTo,node);
 		}
 		else {
-			freport("Notification not Sent after new Record Added" + sCurrRecordId, "fail", node);
+			freport("Notification not Sent after new Record Added" + sCurrRecordId +" user:"+sUserName, "fail", node);
 		}
 		
 		//Validate Notifications Module
 		//Notifications 1/AssignedTo 
-		String sCurrentWinHandle = driver.getWindowHandle();
-		String sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
+		//*************
+//		String sCurrentWinHandle = driver.getWindowHandle();
+//		String sNewWindowHanlde="";
+//		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
+		//***********************
 		
-		//Notification sub window
-		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet1", 1, 11, sCurrRecordId);
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
+		//***********************
+//		driver.close();
+//		driver.switchTo().window(sCurrentWinHandle);
+		//***********************
+		Thread.sleep(3000);
+		
 		String sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
-		
+		Thread.sleep(3000);
 		int iNotificationCount = objSMS.getWebTblRowcount();
 		iNotificationCount = iNotificationCount - 1;
 		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo +"Notification record count: "+ iNotificationCount);
@@ -318,6 +323,11 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 		
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
@@ -335,8 +345,13 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			freport("Failed: Notification not Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
 			sAssertinFn.assertEquals("Add New Record - Notification not received for " +sAssignedTo1 , "Add New Record - Notification received for " +sAssignedTo1);
 		}
-		
+		UtilityCustomFunctions.logWriteConsole("sNotifyTemplateMsg: "+sNotifyTemplateMsg);
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
@@ -356,6 +371,11 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
 		
 		
 		//Logout from CurrentUser
@@ -402,7 +422,7 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		if(iNotificationCount==1) {
 			logger.info("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
 			freport("Passed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
-			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo , "Add New Record - Notification received for " +sAssignedTo1);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo1 , "Add New Record - Notification received for " +sAssignedTo1);
 		}
 		else {
 			logger.info("Failed: Notification not Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
@@ -410,7 +430,14 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			sAssertinFn.assertEquals("Add New Record - Notification not received for " +sAssignedTo1 , "Add New Record - Notification received for " +sAssignedTo1);
 		}
 		
-		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sUserName1,sActionTitle,sCurrRecordId,node);
+		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 //		//Third User
@@ -460,6 +487,13 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+			
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 		//******************* Summary Data Validation ***********************************************
 		//Logout & Login as User 1
 		Thread.sleep(2000);
@@ -534,17 +568,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		//Notifications 1/AssignedTo
-		sCurrentWinHandle = driver.getWindowHandle();
-		sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-				
-		//Notification sub window
-		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-				
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet2", 1, 11, sCurrRecordId);
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
+
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
@@ -562,6 +588,11 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 				
 		//Notification for 2nd AssignedTo User
 		sStatus = "0";
@@ -581,6 +612,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
 		//Notification for 3rd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
@@ -599,6 +636,10 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
 		
 		//Logout from CurrentUser
 		Thread.sleep(2000);
@@ -653,6 +694,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 				
@@ -699,6 +746,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
@@ -770,17 +823,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		//Validate Notifications Module
 		//Notifications 1/AssignedTo 
-		sCurrentWinHandle = driver.getWindowHandle();
-		sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-						
-		//Notification sub window
-		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-						
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet3", 1, 11, sCurrRecordId);
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
+		
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 				
@@ -798,6 +843,13 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			sAssertinFn.assertEquals("Add Duplicate Record - Notification not received for " +sAssignedTo , "Add Duplicate Record - Notification received for " +sAssignedTo);
 		}
 		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
 		
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
@@ -817,6 +869,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 				
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
 		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
@@ -835,6 +893,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 				
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		//Logout from CurrentUser
 		Thread.sleep(2000);
@@ -890,6 +954,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
 		
 		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
+		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		
 		//Third User
@@ -937,6 +1007,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		
@@ -1004,17 +1080,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCRMRs.fValModuleView("Test", "//Notification//WF2_Send_Notify_OOF_S_","Sheet4","Edit &  With New Record",sAssignedTo,node);
 		//Validate Notifications Module
 		//Notifications 1/AssignedTo 
-		sCurrentWinHandle = driver.getWindowHandle();
-		sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-						
-		//Notification sub window
-		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-		
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId);
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
+	
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 								
@@ -1022,16 +1090,20 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		iNotificationCount = iNotificationCount - 1;
 		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==1) {
-			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
-			freport("Passed: Notification Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit & Save New Record New Record - Notification received for " +sAssignedTo , "Edit & Save New Record New Record - Notification received for " +sAssignedTo);
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Edit & Save New Record New Record - Notification not received for " +sAssignedTo , "Edit & Save New Record New Record - Notification not received for " +sAssignedTo);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit & Save New Record Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
-			freport("Failed: Notification not Received after Edit & Save New Record Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
-			sAssertinFn.assertEquals("Add Edit & Save New Record Record - Notification not received for " +sAssignedTo , "Add Edit & Save New Record Record - Notification received for " +sAssignedTo);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Received after Edit & Save New Record Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Received after Edit & Save New Record Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save New Record Record - Notification  received for " +sAssignedTo , "Add Edit & Save New Record Record - Notification not received for " +sAssignedTo);
 		}
 		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 						
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
@@ -1040,17 +1112,23 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		iNotificationCount = iNotificationCount - 1;
 		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==1) {
-			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
-			freport("Passed: Notification Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
-			sAssertinFn.assertEquals("Add Edit & Save New Record Record - Notification received for " +sAssignedTo1 , "Add Edit & Save New Record Record - Notification received for " +sAssignedTo1);
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save New Record Record - Notification Not received for " +sAssignedTo1 , "Add Edit & Save New Record Record - Notification Not received for " +sAssignedTo1);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
-			freport("Failed: Notification not Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
-			sAssertinFn.assertEquals("Add Edit & Save New Record - Notification not received for " +sAssignedTo1 , "Add Edit & Save New Record received for " +sAssignedTo1);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save New Record - Notification received for " +sAssignedTo1 , "Add Edit & Save New Record not received for " +sAssignedTo1);
 		}
 								
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
@@ -1059,17 +1137,23 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		iNotificationCount = iNotificationCount - 1;
 		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==1) {
-			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
-			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
-			sAssertinFn.assertEquals("Add Edit & Save Record - Notification received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification Not received for " +sAssignedTo2 , "Add Edit & Save Record - Notification Not received for " +sAssignedTo2);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
-			freport("Failed: Notification not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
-			sAssertinFn.assertEquals("Add Edit & Save Record - Notification not received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification  received for " +sAssignedTo2 , "Add Edit & Save Record - Notification not received for " +sAssignedTo2);
 		}
 								
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		//Logout from CurrentUser
 		Thread.sleep(2000);
@@ -1114,17 +1198,23 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		iNotificationCount = iNotificationCount - 1;
 		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 2 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==1) {
-			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
-			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
-			sAssertinFn.assertEquals("Add Edit & Save Record - Notification received for " +sAssignedTo1 , "Add Edit & Save Record - Notification received for " +sAssignedTo1);
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification Not received for " +sAssignedTo1 , "Add Edit & Save Record - Notification Not received for " +sAssignedTo1);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
-			freport("Failed: Notification not Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
-			sAssertinFn.assertEquals("Add Edit & Save Record - Notification not received for " +sAssignedTo1 , "Add Edit & Save Record - Notification received for " +sAssignedTo1);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification  received for " +sAssignedTo1 , "Add Edit & Save Record - Notification not received for " +sAssignedTo1);
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
 		
 		//Logout from CurrentUser
 		Thread.sleep(2000);
@@ -1165,17 +1255,22 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		iNotificationCount = iNotificationCount - 1;
 		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 3 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
 		if(iNotificationCount==1) {
-			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
-			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
-			sAssertinFn.assertEquals("Add Edit & Save Record - Notification received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification not received for " +sAssignedTo2 , "Add Edit & Save Record - Notification not received for " +sAssignedTo2);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
-			freport("Failed: Notification not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
-			sAssertinFn.assertEquals("Add Edit & Save Record - Notification not received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification  received for " +sAssignedTo2 , "Add Edit & Save Record - Notification not received for " +sAssignedTo2);
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		
@@ -1247,18 +1342,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("after single line edit Old Record Id: "+iOldRecordId+" current record id "+ iCurrRecordId);
 		
 		//Validate Notifications Module
-		//Notifications 1/AssignedTo 
-		sCurrentWinHandle = driver.getWindowHandle();
-		sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-						
-		//Notification sub window
-		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-										
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId); //check with new record created
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
+		
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 										
@@ -1276,6 +1362,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo , "Add Single Line Edit Record - Notification not received for " +sAssignedTo);
 		}
 		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
+		
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
@@ -1295,6 +1387,11 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 								
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
 		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
@@ -1313,6 +1410,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 								
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 						
 		//Logout from CurrentUser
 		Thread.sleep(2000);
@@ -1370,6 +1473,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
 		
 		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
+		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		
 		//Third User
@@ -1418,6 +1527,12 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		}
 		
 		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		

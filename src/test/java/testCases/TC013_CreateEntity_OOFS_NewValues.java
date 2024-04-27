@@ -247,7 +247,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objEDT.clickModule(sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sDisplayMod1);
 		Thread.sleep(2000);
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet1");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 		Thread.sleep(5000);
 		objALP.clickAllList();
@@ -278,7 +278,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objCMD.clickExistingModData(1);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2",false);
 		Thread.sleep(5000);
 		objALP.clickAllList();
 		Thread.sleep(1000);

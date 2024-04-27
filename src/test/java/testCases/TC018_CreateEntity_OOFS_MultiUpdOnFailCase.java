@@ -225,7 +225,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		Thread.sleep(2000);
 
 		//Add New Record
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet1");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -375,7 +375,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet2");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet2",false);
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
 		objDVP.fSetToggleHeader(true);
@@ -526,7 +526,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet3");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet3",true);
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Duplicate Add Record completed");
 //		objCMD.clickSave();
@@ -686,7 +686,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		System.out.println("Before Edit button clicked in summary view");
 		objCMD.clickEdit();
  		Thread.sleep(6000);
- 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet4");
+ 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet4",true);
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Edit & Save Record completed");
 //		objCMD.clickSave();

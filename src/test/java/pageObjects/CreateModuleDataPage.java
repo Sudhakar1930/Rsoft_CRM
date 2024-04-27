@@ -3,6 +3,7 @@ package pageObjects;
 import java.io.File;
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -24,6 +25,9 @@ public class CreateModuleDataPage extends BasePage{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
+	@FindBy(xpath="//table[contains(@class,'table table-striped')]//tbody/tr[2]/td[3]")
+	WebElement eleOpenNotifyFirstItem;
 	
 	@FindBy(xpath="//span[@id='select2-assign_to-1y-container']")
 	WebElement eleSelectAssignedTo;
@@ -110,6 +114,36 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath = "//ul[@class='select2-selection__rendered']/li/span")
 	List<WebElement> lstMultiCombo;
 	
+	
+	@FindBy(xpath = "//i[@class='fa fa-search searchicon']")
+	WebElement btnRelativeSearch;
+
+	
+		
+	public void clickRelativeSearch() throws Exception {
+		UtilityCustomFunctions.doClick(driver, btnRelativeSearch);
+	}
+	
+	public void SelectRelModValue(String sRelModText) throws Exception {
+		Thread.sleep(5000);
+		RelatedModulePage objRMP = new RelatedModulePage(driver);
+		clickRelativeSearch();
+		Thread.sleep(3000);
+		String currentWindow = driver.getWindowHandle();
+		Set<String> sWinHandles = driver.getWindowHandles();
+		for(String window:sWinHandles) {
+			driver.switchTo().window(window);
+			Thread.sleep(3000);
+			if(!window.equals(currentWindow)) {
+				objRMP.SelectRelatedModuleRow(sRelModText);
+				Thread.sleep(3000);
+				UtilityCustomFunctions.logWriteConsole("Related Module Value Selected");
+//				driver.close();
+				Thread.sleep(3000);
+			}
+		}
+		driver.switchTo().window(currentWindow);
+	}
 	public void SelectCurrMonthInDate() throws Exception {
 		CRMReUsables objCRMRs = new CRMReUsables();
 		Thread.sleep(1000);
@@ -136,6 +170,7 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	
 	public void fRemMultiComboValues() throws InterruptedException {
+		
 		System.out.println("Inside remove existing values:");
 		int iCount = lstMultiCombo.size();
 		System.out.println("Multicombo: count" + iCount);
@@ -154,6 +189,9 @@ public class CreateModuleDataPage extends BasePage{
 		}
 	}
 	
+	public void clickMultiComboBox() throws Exception {
+		UtilityCustomFunctions.doClick(driver, txtMultiComboBox);
+	}
 	public void clickAssignedTo() throws Exception {
 		UtilityCustomFunctions.doClick(driver, eleClickAssignedTo);
 	}
@@ -180,6 +218,13 @@ public class CreateModuleDataPage extends BasePage{
 		eleModData.click();
 	}
 	
+	public void clickLatestNotification() throws Exception {
+		try {
+			UtilityCustomFunctions.doClick(driver, eleOpenNotifyFirstItem);
+		}catch(Exception e) {
+			System.out.println(e.getCause());
+		}
+	}
 	public void clickDayInDate(int iDateIndex,String sControlType) throws Exception {
 		CRMReUsables objCRMRs = new CRMReUsables();
 		String sXpath="";
@@ -276,17 +321,18 @@ public class CreateModuleDataPage extends BasePage{
 	Thread.sleep(2000);
 	
 	}
-	public void clickMultiComboBox(String sMS_Value) throws Exception {
+	public void clickMultiComboBox(String sMS_Value,boolean IsAmend) throws Exception {
+		txtMultiComboBox.click();
+		if(IsAmend==true) {
 			fRemMultiComboValues();
-
-
+		}
 		System.out.println("After get attribute in combo box");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", txtMultiComboBox);
 		Thread.sleep(1000);
 		System.out.println("Expected values:" + sMS_Value);
 		String arrValues[]=sMS_Value.split(",");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 //		System.out.println("Array Lenght: " + arrValues.length);
 		String sXpath = "//ul[@class='select2-results__options']//li[text()='"+arrValues[0]+"']";
 		System.out.println(sXpath);
@@ -302,44 +348,10 @@ public class CreateModuleDataPage extends BasePage{
 			System.out.println("Multi Combo Print Values " + i + "Values:" + eleMultiCombo.getText());
 			UtilityCustomFunctions.doActionClick(driver, eleMultiCombo);
 //			UtilityCustomFunctions.doClick(driver, eleMultiCombo);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			txtMultiComboBox.click();
 		}
-		
-//			System.out.println("Size after click:" + objLists.size());
-//			iListSize = objLists.size();
-//			System.out.println("Multicombo List size before click again:" + iListSize);
-//			if(iListSize==0) {
-//				System.out.println("Inside if block when size 0");
-//				txtMultiComboBox.click();
-//			}
-//			Thread.sleep(1000);
-//			iListSize = objLists.size();
-//			System.out.println("List size after combo box click after clear" + iListSize);
-////			System.out.println("Multicombo List size:" + objLists.size());
-//			System.out.println("First item:" + objLists.get(i).getText());
-//			for(int j=0;j<iListSize;j++) {
-//				System.out.println("Inside Inner for loop: " + objLists.get(j).getText());
-//				System.out.println("acutal: " + objLists.get(j).getText().trim());
-//				System.out.println("expected is: " + arrValues[i].trim());
-////				objLists = driver.findElements(By.xpath("//li[@role='treeitem']"));	
-//					 if (arrValues[i].equalsIgnoreCase(objLists.get(j).getText().trim())) {
-//						 Thread.sleep(1000);
-//						 System.out.println("actual vlaue:" +objLists.get(j).getText().trim());
-//						 objLists = driver.findElements(By.xpath("//li[@role='treeitem']"));
-////						 UtilityCustomFunctions.doActionClick(driver, objLists.get(j));
-//						 UtilityCustomFunctions.doClick(driver, objLists.get(j));
-//						 System.out.println(" Item selected in Multi combox Box : "+objLists.get(j));
-//						 BaseClass.logger.info(" Item selected in Multi combox Box: "+objLists.get(j));
-//						 Thread.sleep(3000);
-//						 break;
-//					 }//inner if
-//					 	 
-//			}//for loop of objList
-//			System.out.println("After inner for loop");
-//		}// for loop of array items.
-//		System.out.println("After outer for loop");
-//		txtMultiComboBox.sendKeys(Keys.ENTER);
+			txtMultiComboBox.click();
 	}
 	
 	
@@ -397,9 +409,11 @@ public class CreateModuleDataPage extends BasePage{
 		eleDropDown.click();
 	}
 	
-	public void clickArrayCheckBox(int iObjIndex,String sValue) {
+	public void clickArrayCheckBox(int iObjIndex,String sValue) throws InterruptedException {
 		String xPath = "(//input[@type='checkbox'])[" + iObjIndex + "]";  
-		WebElement eleCheckBox = driver.findElement(By.xpath(xPath));		
+		WebElement eleCheckBox = driver.findElement(By.xpath(xPath));
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("check box value: "+sValue);
 		if(sValue.equalsIgnoreCase("ON")) {
 			if(eleCheckBox.isSelected()) {
 				

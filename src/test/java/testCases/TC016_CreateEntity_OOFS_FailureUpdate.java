@@ -179,7 +179,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objEDT.clickModule(sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sDisplayMod1);
 		Thread.sleep(2000);
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet1");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 //		Thread.sleep(10000);
 		objDVP.fSetToggleHeader(true);
@@ -233,7 +233,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet2");
+		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet2",false);
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
 //		Thread.sleep(10000);

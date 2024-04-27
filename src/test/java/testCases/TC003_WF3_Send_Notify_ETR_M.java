@@ -14,6 +14,7 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
 import pageObjects.SMSNotifiers;
+import pageObjects.SummaryViewPage;
 import testBase.BaseClass;
 import utilities.CRMReUsables;
 import utilities.ExcelUtility;
@@ -65,7 +66,7 @@ import utilities.UtilityCustomFunctions;
 		String sEditIndText=xlObj.getCellData("Sheet1", 1, 43);
 		String sNotifyTemplateMsg=xlObj.getCellData("Sheet1", 1, 51);
 		System.out.println("Print Notify Template Message:" + sNotifyTemplateMsg);
-		String sRecordId="";
+		String sCurrRecordId="";
 		
 		System.out.println("Module Name:  " + sExpModuleName);
 		
@@ -77,6 +78,7 @@ import utilities.UtilityCustomFunctions;
 		CRMReUsables objCRMRs = new CRMReUsables();  
 		SMSNotifiers objSMS = new SMSNotifiers(driver);
 		DetailViewPage objDVP = new DetailViewPage(driver);
+		SummaryViewPage objSVP = new SummaryViewPage(driver);
 		driver.get(rb.getString("appURL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		String sAppUrl = rb.getString("appURL");
@@ -84,13 +86,13 @@ import utilities.UtilityCustomFunctions;
 		String sUserName =  rb.getString("userName");
 		String sPassword =  rb.getString("passWord");
 		String sAssignedTo = rb.getString("AssignedTo");
-		String sUserName1 =  rb.getString("userName3");
-		String sPassword1 =  rb.getString("passWord3");
-		String sAssignedTo1 = rb.getString("AssignedTo3");
+		String sUserName1 =  rb.getString("userName4");
+		String sPassword1 =  rb.getString("passWord4");
+		String sAssignedTo1 = rb.getString("AssignedTo4");
 		String sUserName2 =  rb.getString("userName2");
 		String sPassword2 =  rb.getString("passWord2");
 		String sAssignedTo2 = rb.getString("AssignedTo2");
-		
+		//Login as User 1
 		Thread.sleep(3000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
@@ -158,178 +160,26 @@ import utilities.UtilityCustomFunctions;
 			}
 			
 		}//If
-		String iOldCount1 = "0";
-		String iOldCount2 = "0";
-		String iOldCount3 = "0";
-		String sNotCount="0";
-		int iNotificationCount = 0;
-		//Capture Old Count Values
-		Thread.sleep(1000);
-		objHP.clickAvatar();
+		String sUser1OldNotifyCount = objCRMRs.fgetNotificationCount();
+		UtilityCustomFunctions.logWriteConsole("User1NotifyCount:" + sUser1OldNotifyCount);
 		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
-	
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName);
-			objLP.setPassword(sPassword);
-			objLP.clickLoginSubmit();
-			
-		}
-		else {
-			logger.info("CRM Login failed");
-			System.out.println("Login Page Not Displayed");
-			Assert.fail("Login Page not displayed");
-			
-		}
-		Thread.sleep(3000);
-		
-		if(objHP.isAvatarDisplayed()) {
-			logger.info("Home Page Displayed");
-			freport("Home Page Displayed" , "pass",node);
-			System.out.println("Home Page Displayed");
-		}
-		else {
-			logger.info("Home Page Not Displayed");
-			freport("Home Page Not Displayed" , "fail",node);
-			System.out.println("Home Page Not Displayed");
-			Assert.fail("Home Page Not Displayed");
-			
-		}
-		sNotCount = objCRMRs.fgetNotificationCount();
-		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		iOldCount1 =sNotCount;
-		//get iOldCount2 value
-		//Login with User 2
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
-		
-		//Login Second User
-		System.out.println(sCompName);
-		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName1);
-			objLP.setPassword(sPassword1);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		iOldCount2 =sNotCount;
-		//get iOldCount3 Value
-		//Login with 3rd User
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-//		//Third User
-		Thread.sleep(3000);
-		System.out.println("First Time 3rd User Login");
-		System.out.println(sCompName);
-		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName2);
-			objLP.setPassword(sPassword2);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		iOldCount3 =sNotCount;
-		
-		Thread.sleep(2000);
-		//Validate Notification count Values
-		//Login with User 1 : rsoft
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName);
-			objLP.setPassword(sPassword);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		Thread.sleep(3000);
-		//Submit new Data
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sExpModuleName);
-		Thread.sleep(1000);
-		objEDT.clickModule(sExpModuleName);
+		Thread.sleep(5000);
+		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
-		String sPrevCount = objCRMRs.fgetNotificationCount();
-		if(sPrevCount==null) {
-			sPrevCount = "0";
-		}
-		System.out.println("Prevcount before add:" + sPrevCount);
-		UtilityCustomFunctions.logWriteConsole("Prevcount before add:" + sPrevCount);
+		int iOldRecordId = objCRMRs.getLastRecordId();
 		
-		//**************Add New Record
-		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1");
-		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1","Add New Module Data",sAssignedTo,node);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
-		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName);
-			freport("Notification not Received after new record added on ETRM "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName, "Notification not Received after new record added on ETRM"+ sUserName);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName);
-			freport("Notification Received after new record added on ETRM "+ sUserName, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName, "Notification not Received after new record added on ETRM"+ sUserName);
-		}
-		// Check count for User 2
-		//Login with User 2
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
+		objHP.clickLogoutCRM();
+		Thread.sleep(5000);
 		
 		//Login Second User
 		System.out.println(sCompName);
 		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		UtilityCustomFunctions.logWriteConsole("current ulr:" + driver.getCurrentUrl());
+		UtilityCustomFunctions.logWriteConsole("app ulr:" + sAppUrl);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName1);
@@ -345,28 +195,13 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
-		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName1);
-			freport("Notification not Received after new record added on ETRM "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName1, "Notification not Received after new record added on ETRM"+ sUserName1);	
+		String sUser2OldNotifyCount = objCRMRs.fgetNotificationCount();
+		UtilityCustomFunctions.logWriteConsole("sUser2OldNotifyCount:" + sUser2OldNotifyCount);
 		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName1);
-			freport("Notification Received after new record added on ETRM "+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName1, "Notification not Received after new record added on ETRM"+ sUserName1);
-		}
-		
-		//Login with User3 and Validate Notification count
-		objHP.clickAvatar();
 		Thread.sleep(2000);
-		objHP.clickLogout();
+		objHP.clickLogoutCRM();
+		
 		//Third User
 		Thread.sleep(3000);
 		System.out.println("First Time 3rd User Login");
@@ -387,31 +222,16 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
+		String sUser3OldNotifyCount = objCRMRs.fgetNotificationCount();
+		UtilityCustomFunctions.logWriteConsole("sUser3OldNotifyCount:" + sUser3OldNotifyCount);
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after add: " + sNotCount);
-		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after new record added on ETRM "+ sUserName2);
-			freport("Notification not Received after new record added on ETRM "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName2, "Notification not Received after new record added on ETRM"+ sUserName1);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new record added on ETRM "+ sUserName2);
-			freport("Notification Received after new record added on ETRM "+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after new record added on ETRM"+ sUserName2, "Notification not Received after new record added on ETRM"+ sUserName2);
-		}
-		
-		///************ New Record Add Completed *************
 		Thread.sleep(2000);
-		//************ Add New Summary Data Completed *************
+		objHP.clickLogoutCRM();
+		
+		Thread.sleep(2000);
+		//Validate Notification count Values
 		//Login with User 1 : rsoft
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
+		
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName);
@@ -425,46 +245,108 @@ import utilities.UtilityCustomFunctions;
 			logger.info("CRM Login failed");
 			Assert.fail("Login Page not displayed");
 			System.out.println("Login Page Not Displayed");
-		}		
-		
-		
-		//Add Summary Data
+		}
 		Thread.sleep(3000);
+		//Submit new Data
+		//Click Module to Add New Data
 		objALP.clickAllList();
 		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
-		System.out.println("Module clicked");
+		objALP.clickModuleOnListAll(driver, sExpModuleName);
+		Thread.sleep(1000);
+		objEDT.clickModule(sExpModuleName);
+		Thread.sleep(1000);
+		
+		//**************Add New Record
+		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1");
+		
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
 		Thread.sleep(3000);
-		objCMD.clickExistingModData(1);
 		
-		objDVP.clickAddRecord();
-		Thread.sleep(3000);
+		//Capture new Record Id & New Notification Count in User 1
+		int iCurrRecordId= objCRMRs.getLastRecordId();
+		sCurrRecordId = String.valueOf(iCurrRecordId);
 		
-		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2");
-		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2","Summary Add New Data",sAssignedTo,node);
-		
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
-		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data ETRM "+ sUserName);
-			freport("Notification not Received after Summary Add New Data ETRM "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Notification not Received after Summary Add New Data ETRM"+ sUserName, "Notification not Received after Summary Add New Data ETRM"+ sUserName);	
-		
+		//Validate Notification Count
+		String sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		UtilityCustomFunctions.logWriteConsole("sUser1CurrNotifyCount:" + sUser1CurrNotifyCount);
+		if(Integer.parseInt(sUser1OldNotifyCount) == Integer.parseInt(sUser1CurrNotifyCount)) {
+			freport("Notification not Sent after new Record Added for: " + sUserName, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName);
-			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName, "Notification not Received after Summary Add New Data on ETRM"+ sUserName);
-		}
-		//Login User 2
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
 		
+			freport("Notification Sent after new Record Added for: "+sUserName, "fail", node);
+		}
+				
+		//Validate Module Summary Added Record 
+		if(iOldRecordId!=iCurrRecordId) {
+			freport("New Record Added: " + sCurrRecordId + " for user: "+sUserName, "pass", node);
+			objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1","Add New Module Data",sAssignedTo,node);
+		}
+		else {
+			freport("New Record not Added: " + sCurrRecordId + " for user: "+sUserName, "fail", node);
+		}
+				
+		xlObj.setCellData("Sheet1", 1, 11, sCurrRecordId);
+		
+		String sStatus = "0";
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
+		Thread.sleep(3000);
+		int iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add New Record - Notification Not received for " +sAssignedTo , "Add New Record - Notification Not received for " +sAssignedTo);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo , "Add New Record - Notification not received for " +sAssignedTo);
+		}
+		
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		Thread.sleep(3000);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add New Record - Notification Not received for " +sAssignedTo1 , "Add New Record - Notification Not received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo1 , "Add New Record - Notification not received for " +sAssignedTo1);
+		}
+		
+		//Notifications 1/AssignedTo 2
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+		Thread.sleep(3000);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add New Record - Notification Not received for " +sAssignedTo2 , "Add New Record - Notification Not received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo2 , "Add New Record - Notification not received for " +sAssignedTo2);
+		}
+				
+		//Logout from CurrentUser
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		// Check count for User 2
 		//Login Second User
 		System.out.println(sCompName);
 		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
@@ -483,29 +365,263 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
-		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data on ETRM "+ sUserName1);
-			freport("Notification not Received after new Summary Add New Data on ETRM "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName1, "Notification not Received after Summary Add New Data on ETRM"+ sUserName1);	
+		String sUser2CurrNotifyCount = objCRMRs.fgetNotificationCount();
 		
+		if(Integer.parseInt(sUser2OldNotifyCount)== Integer.parseInt(sUser2CurrNotifyCount)) {
+			freport("Notification Not Sent after new Record Added for: " + sUserName1, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName1);
-			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName1, "Notification not Received after Summary Add New Data on ETRM"+ sUserName1);
+			freport("Notification Sent after new Record Added for: "+sUserName1, "fail", node);
 		}
 		
-		//Logout Third User
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		Thread.sleep(3000);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user 2: " + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add New Record - Notification Not received for " +sAssignedTo1 , "Add New Record - Notification Not received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after New Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo1 , "Add New Record - Notification Not received for " +sAssignedTo1);
+		}
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		
+		//Third User
+		Thread.sleep(3000);
+		System.out.println("First Time 3rd User Login");
+		System.out.println(sCompName);
+		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName2);
+			objLP.setPassword(sPassword2);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		String sUser3CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		
+		if(Integer.parseInt(sUser3OldNotifyCount) == Integer.parseInt(sUser3CurrNotifyCount)) {
+			freport("Notification Not Sent after new Record Added for: " + sUserName2, "pass", node);
+		}
+		else {
+			freport("Notification Sent after new Record Added for: "+sUserName2, "fail", node);
+		}
+		
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+		Thread.sleep(3000);
+		
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After new record added: user 3" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo2 , "Add New Record - Notification not received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after New Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add New Record - Notification received for " +sAssignedTo2 , "Add New Record - Notification not received for " +sAssignedTo2);
+		}
+		///************ New Record Add Completed *************
+		Thread.sleep(2000);
+		
+		//************ Add New Summary Data Started *************
+		//Login with User 1 : rsoft
+		//Logout & Login as User 1
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+				
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}		
+		
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		String sOldRecordId = sCurrRecordId;
+		
+		Thread.sleep(3000);
+		
+		//Add Summary Data
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		
+		objDVP.clickAddRecord();
+		Thread.sleep(3000);
+		
+		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2");
+		Thread.sleep(3000);
+		
+		
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		
+		iCurrRecordId= objCRMRs.getLastRecordId();
+		sCurrRecordId = String.valueOf(iCurrRecordId);
+		Thread.sleep(3000);
+		
+		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		UtilityCustomFunctions.logWriteConsole("sUser1CurrNotifyCount:" + sUser1CurrNotifyCount);
+		if(Integer.parseInt(sUser1OldNotifyCount) == Integer.parseInt(sUser1CurrNotifyCount)) {
+			freport("Notification not Sent after new Summary Record Added for: " + sUserName, "pass", node);
+		}
+		else {
+		
+			freport("Notification Sent after new Summary Record Added for: "+sUserName, "fail", node);
+		}
+		
+		//Validate Module Summary Added Record 
+		if(iOldRecordId!=iCurrRecordId) {
+			freport("New Summary Record Added: " + sCurrRecordId + " for user: "+sUserName, "pass", node);
+			objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2","Add Summary New Data",sAssignedTo,node);
+		}
+			else {
+			freport("New Summary Record not Added: " + sCurrRecordId + " for user: "+sUserName, "fail", node);
+		}
+				
+		xlObj.setCellData("Sheet2", 1, 11, sCurrRecordId);
+		
+		sStatus = "0";
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
+		Thread.sleep(3000);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After New Summary record added: user" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after New Summary Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after New Summary Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("New Summary Record - Notification Not received for " +sAssignedTo , "New Summary Record - Notification Not received for " +sAssignedTo);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after New Summary Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after New Summary Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("New Summary Record - Notification received for " +sAssignedTo , "New Summary Record - Notification not received for " +sAssignedTo);
+		}
+		
+		//Notification for 2nd AssignedTo User
+		sStatus = "0";
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 1" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Add Summary Record-"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Add Summary Record -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification Not received for " +sAssignedTo1 , "Add Summary Record - Notification Not received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Add Summary Record -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Add Summary Record -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo1 , "Add Summary Record - Notification not received for " +sAssignedTo1);
+		}
+		
+		//Notification for 3rd AssignedTo User
+		sStatus = "0";
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 1" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Add Summary Record-"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Add Summary Record -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification Not received for " +sAssignedTo2 , "Add Summary Record - Notification Not received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Add Summary Record -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Add Summary Record -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo2 , "Add Summary Record - Notification not received for " +sAssignedTo2);
+		}
+		
+		//Logout from CurrentUser
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		//Login Second User
+		Thread.sleep(3000);
+		System.out.println(sCompName);
+		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName1);
+			objLP.setPassword(sPassword1);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
+			objLP.clickLoginSubmit();
+			Thread.sleep(3000);
+		}
+		else {
+			logger.info("CRM Login failed");
+			Assert.fail("Login Page not displayed");
+			System.out.println("Login Page Not Displayed");
+		}
+		Thread.sleep(3000);
+		sUser2CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
+		
+		if(Integer.parseInt(sUser2OldNotifyCount) == Integer.parseInt(sUser2CurrNotifyCount)) {
+			freport("Notification Not Sent after Summary Record Added for: " + sUserName1, "pass", node);
+		}
+		else {
+			freport("Notification Sent after Summary Record Added for: "+sUserName1, "fail", node);
+		}
+		
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		Thread.sleep(2000);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 2" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo1 , "Add Summary Record - Notification Not received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Summary Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo1 , "Add Summary Record - Notification Not received for " +sAssignedTo1);
+		}
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 		//Login 3rd User
 		System.out.println(sCompName);
 		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
@@ -524,171 +640,60 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Summary Add New Data: " + sNotCount);
-		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Summary Add New Data on ETRM "+ sUserName2);
-			freport("Notification not Received after new Summary Add New Data on ETRM "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName2, "Notification not Received after Summary Add New Data on ETRM"+ sUserName2);	
-		
+		sUser3CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
+		if(Integer.parseInt(sUser3OldNotifyCount) == Integer.parseInt(sUser3CurrNotifyCount)) {
+			freport("Notification Not Sent after Summary Record Added for: " + sUserName2, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Add New Data on ETRM "+ sUserName2);
-			freport("Notification Received after Summary Add New Data on ETRM "+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Summary Add New Data on ETRM"+ sUserName2, "Notification not Received after Summary Add New Data on ETRM"+ sUserName2);
+			freport("Notification Sent after Summary Record Added for: "+sUserName2, "fail", node);
 		}
-		//Login with User 1 : rsoft
-		objHP.clickAvatar();
+		
+		//Notification page for Third  User
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		Thread.sleep(2000);
-		objHP.clickLogout();
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After summary new add : user 2" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification Not received for " +sAssignedTo2 , "Add Summary Record - Notification Not received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Summary Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo2 , "Add Summary Record - Notification Not received for " +sAssignedTo2);
+		}
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+				
+		//******************************Duplicate Record *********************************************
+		//Login as User 1
+		Thread.sleep(3000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName);
 			objLP.setPassword(sPassword);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
 			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
+			
 		}
 		else {
 			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
 			System.out.println("Login Page Not Displayed");
-		}	
-		//Duplicate No Modify
-		Thread.sleep(3000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
-		System.out.println("Module clicked");
-		Thread.sleep(3000);
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		objDVP.clickDuplicateRecord();
-		Thread.sleep(5000);
-		objCMD.clickSave();
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
-		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify ETRM "+ sUserName);
-			freport("Notification not Received after Duplicate No Modify ETRM "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Notification not Received after Duplicate No Modify ETRM"+ sUserName, "Notification not Received after Duplicate No Modify ETRM"+ sUserName);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName);
-			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName);
-		}
-		//Login User 2
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
-		
-		//Login Second User
-		System.out.println(sCompName);
-		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName1);
-			objLP.setPassword(sPassword1);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
 			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
+			
 		}
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		sOldRecordId = sCurrRecordId;
+		
+		
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
-		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify on ETRM "+ sUserName1);
-			freport("Notification not Received after new Duplicate No Modify on ETRM "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName1, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName1);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName1);
-			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName1, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName1);
-		}
-		
-		//Third User
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
-		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName2);
-			objLP.setPassword(sPassword2);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate No Modify: " + sNotCount);
-		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate No Modify on ETRM "+ sUserName2);
-			freport("Notification not Received after new Duplicate No Modify on ETRM "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName2, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName2);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate No Modify on ETRM "+ sUserName2);
-			freport("Notification Received after Duplicate No Modify on ETRM "+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate No Modify on ETRM"+ sUserName2, "Notification not Received after Duplicate No Modify on ETRM"+ sUserName2);
-		}
-		//Login with User 1 : rsoft
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName);
-			objLP.setPassword(sPassword);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		
-		//Duplicate with Modification
+		//Duplicate with New Record
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -700,220 +705,93 @@ import utilities.UtilityCustomFunctions;
 		objDVP.clickDuplicateRecord();
 		
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3");
-		Thread.sleep(5000);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);;
+
+		//Notification for AssignedTo User 1
+		iCurrRecordId= objCRMRs.getLastRecordId();
+		sCurrRecordId = String.valueOf(iCurrRecordId);
 		
-//		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3","Duplicate with New Data",sAssignedTo,node);
-		
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
-		if(Integer.parseInt(iOldCount1)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data ETRM "+ sUserName);
-			freport("Notification not Received after Duplicate with New Data ETRM "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Notification not Received after Duplicate with New Data ETRM"+ sUserName, "Notification not Received after Duplicate with New Data ETRM"+ sUserName);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName);
-			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName);
-		}
-		//Login User 2
-		objHP.clickAvatar();
+		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		UtilityCustomFunctions.logWriteConsole("After duplicate record  added: sUser1OldNotifyCount:"+sUser1OldNotifyCount+"sUser1CurrNotifyCount"+ sUser1CurrNotifyCount);
 		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
-		
-		//Login Second User
-		System.out.println(sCompName);
-		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName1);
-			objLP.setPassword(sPassword1);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
+		if(Integer.parseInt(sUser1OldNotifyCount) == Integer.parseInt(sUser1CurrNotifyCount)) {
+			freport("Notification not Sent after Duplicate Record Added for: " + sUserName, "pass", node);
 		}
 		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
+			freport("Notification Sent after Duplicate Record Added for: " + sUserName, "fail", node);
 		}
-		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
-		if(Integer.parseInt(iOldCount2)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data on ETRM "+ sUserName1);
-			freport("Notification not Received after new Duplicate with New Data on ETRM "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName1, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName1);	
-		
+		//Validate Module Duplicate Added Record 
+		if(iOldRecordId!=iCurrRecordId) {
+			freport("New Duplicate Record Added: Record Id " + sCurrRecordId + "User: " + sUserName , "pass", node);
+			objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3","Duplicate with New Data",sAssignedTo,node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName1);
-			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName1, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName1);
+			freport("New Duplicate Record Added" + sCurrRecordId + "User: " + sUserName, "fail", node);
 		}
 		
-		//Third User
-		Thread.sleep(3000);
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
-		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName2);
-			objLP.setPassword(sPassword2);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
+		xlObj.setCellData("Sheet3", 1, 11, sCurrRecordId);
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Duplicate with New Data: " + sNotCount);
-		if(Integer.parseInt(iOldCount3)== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after Duplicate with New Data on ETRM "+ sUserName2);
-			freport("Notification not Received after new Duplicate with New Data on ETRM "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName2, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName2);	
-		
-		}
-		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate with New Data on ETRM "+ sUserName2);
-			freport("Notification Received after Duplicate with New Data on ETRM "+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after Duplicate with New Data on ETRM"+ sUserName2, "Notification not Received after Duplicate with New Data on ETRM"+ sUserName2);
-		}
-		//Login with User 1
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName);
-			objLP.setPassword(sPassword);
-			objLP.clickEyeIcon();
-			Thread.sleep(3000);
-			objLP.clickLoginSubmit();
-			Thread.sleep(3000);
-		}
-		else {
-			logger.info("CRM Login failed");
-			Assert.fail("Login Page not displayed");
-			System.out.println("Login Page Not Displayed");
-		}
-		
-		//Edit & Save
-		Thread.sleep(5000);
-		objALP.clickAllList();
-		Thread.sleep(3000);
-		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
-		System.out.println("Module clicked");
-		Thread.sleep(6000);
-		System.out.println("Before selecting 1st Record");
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		System.out.println("Before Edit button clicked in summary view");
-		objCMD.clickEdit();
- 		Thread.sleep(6000);
-		objCMD.clickSave();
-		objALP.clickAllList();
-		Thread.sleep(3000);
-		//Notification count
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(Integer.parseInt(iOldCount1)+1==Integer.parseInt(sNotCount)) {
-			logger.info("Notification Received on Edit & Save "+ sUserName);
-			freport("Notification Received on Edit & Save "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Edit Notification received", "Edit Notification received");
-		}else {
-			logger.info("Failed: Notification not Received on Edit "+ sUserName);
-			freport("Failed: Notification not Received on Edit "+ sUserName, "fail",node);
-			sAssertinFn.assertEquals("Edit Notification not received", "Edit Notification received");
-		}
-		//Notifications 1
-		String sCurrentWinHandle = driver.getWindowHandle();
-		String sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-		System.out.println("Captured Record Id:" + sRecordId);
-		xlObj.setCellData("Sheet1", 1, 11, sRecordId);
-		logger.info("Captured RecordId");
-		UtilityCustomFunctions.logWriteConsole("Record Id:After New Record Added: " + sRecordId);
-		
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
-		String sStatus = "0";
-		//Notifications Assigned To 1
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
-			logger.info("Passed: Notification Received Edit & Save -"+ sAssignedTo + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received Edit & Save -"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit & Save - Notification received for " +sAssignedTo , "Edit & Save - Notification received for " +sAssignedTo);
-		}
-		else {
-			logger.info("Failed: Notification not Received Edit & Save -"+ sAssignedTo + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received Edit & Save -"+ sAssignedTo + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Edit & Save - Notification received for " +sAssignedTo , "Edit & Save - Notification received for " +sAssignedTo);
-		}
-		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sUserName,sActionTitle,sRecordId,node);
-		
-		//Assigned To 2
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
-			logger.info("Passed: Notification Received Edit & Save Add -"+ sAssignedTo1 + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received after Edit & Save -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit & Save - Notification received for " +sAssignedTo1 , "Edit & Save - Notification received for " +sAssignedTo1);
-		}
-		else {
-			logger.info("Failed: Notification not Received after Edit & Save -"+ sAssignedTo1 + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received after Edit & Save -"+ sAssignedTo1 + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Edit & Save - Notification not received for " +sAssignedTo1 , "Edit & Save - Notification received for " +sAssignedTo1);
-		}
-		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sUserName1,sActionTitle,sRecordId,node);
-		
-		//Assigned To 3
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
+		sStatus = "0";
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
 		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==2) {
-			logger.info("Passed: Notification Received after Edit & Save -"+ sAssignedTo2 + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received after Edit & Save -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit & Save - Notification received for " +sAssignedTo2 , "Edit & Save - Notification received for " +sAssignedTo2);
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Duplicate Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Duplicate Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Duplicate New Record - Notification Not received for " +sAssignedTo , "Duplicate New Record - Notification Not received for " +sAssignedTo);
 		}
 		else {
-			logger.info("Failed: Notification not Received after Edit & Save -"+ sAssignedTo2 + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received after Edit & Save -"+ sAssignedTo2 + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Edit & Save - Notification not received for " +sAssignedTo2 , "Edit & Save - Notification received for " +sAssignedTo2);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Duplicate Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo , "Add Duplicate Record - Notification not received for " +sAssignedTo);
 		}
-		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sUserName2,sActionTitle,sRecordId,node);
 		
-		//Login User 2
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
-		Thread.sleep(3000);
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Duplicate-"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Duplicate -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Duplicate Record - Notification Not received for " +sAssignedTo1 , "Duplicate Record - Notification Not received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Duplicate -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Duplicate Record - Notification received for " +sAssignedTo1 , "Duplicate Record - Notification Not received for " +sAssignedTo1);
+		}
+		
+		//Notifications 1/AssignedTo 2
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Duplicate Record-"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Duplicate Record -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Duplicate Record - Notification Not received for " +sAssignedTo2 , "Duplicate Record - Notification Not received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate Record -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Duplicate Record -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Duplicate Record - Notification received for " +sAssignedTo2 , "Duplicate Record - Notification not received for " +sAssignedTo2);
+		}
+				
+				
+		//Logout from CurrentUser
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
 		//Login Second User
 		System.out.println(sCompName);
 		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
@@ -932,28 +810,36 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
+		sUser2CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Edit & Save on ETRM: " + sNotCount);
-		if(Integer.parseInt(iOldCount2)+1== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification Received after Edit & Save on ETRM "+ sUserName1);
-			freport("Notification Received after new Edit & Save on ETRM "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Edit & Save on ETRM"+ sUserName1, "Notification not Received after Edit & Save on ETRM"+ sUserName1);	
-		
+		if(Integer.parseInt(sUser2OldNotifyCount) == Integer.parseInt(sUser2CurrNotifyCount)) {
+			freport("Notification  Not Sent after Duplicate Record Added for: " + sUserName1, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit & Save on ETRM "+ sUserName1);
-			freport("Notification not Received after Edit & Save on ETRM "+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification not Received after Edit & Save on ETRM"+ sUserName1, "Notification not Received after Edit & Save on ETRM"+ sUserName1);
+			freport("Notification Sent after Duplicate Record Added for: "+sUserName1, "fail", node);
 		}
-		//Third User
-		Thread.sleep(3000);
-		objHP.clickAvatar();
+		
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 2 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Duplicate Record - Notification Not received for " +sAssignedTo1 , "Add Duplicate Record - Notification Not received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Duplicate Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo1 , "Add Duplicate Record - Notification not received for " +sAssignedTo1);
+		}
+		
 		Thread.sleep(2000);
-		objHP.clickLogout();
+		objHP.clickLogoutCRM();
+		//Third User
 		Thread.sleep(3000);
 		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -971,28 +857,41 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
+		sUser3CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
 		
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after new Edit & Save on ETRM: " + sNotCount);
-		if(Integer.parseInt(iOldCount3)+1== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification not Received after new Edit & Save on ETRM"+ sUserName2);
-			freport("Notification not Received after new Edit & Save on ETRM "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after new Edit & Save on ETRM"+ sUserName2, "Notification not Received after new Edit & Save on ETRM"+ sUserName2);	
-		
+		if(Integer.parseInt(sUser3OldNotifyCount) == Integer.parseInt(sUser3CurrNotifyCount)) {
+			freport("Notification Not Sent after Duplicate Record Added for: " + sUserName2, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after new Edit & Save on ETRM "+ sUserName2);
-			freport("Notification Received after new Edit & Save on ETRM "+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification Received after new Edit & Save on ETRM"+ sUserName2, "Notification not Received after new Edit & Save on ETRM"+ sUserName2);
+			freport("Notification Sent after Duplicate Record Added for: " + sUserName2, "fail", node);
 		}
 		
-		//Login with User 1
-		objHP.clickAvatar();
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+		
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Duplicate record : user 3 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==0) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Not Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Not Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Duplicate Record - Notification Not received for " +sAssignedTo2 , "Add Duplicate Record - Notification Not received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Received after Duplicate Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Duplicate Record - Notification received for " +sAssignedTo2 , "Add Duplicate Record - Notification Not received for " +sAssignedTo2);
+		}
+		
 		Thread.sleep(2000);
-		objHP.clickLogout();
+		objHP.clickLogoutCRM();
+		//**************************** Edit with New Data *****************************
+		//Login Back as 1st User to Perform SubmitNewModuleData, 
+		//Capture RecordId,check summary, CheckNotification+1 & NotificationPage, 
+		//Search Record In Notificaiton for all users 
+				
+		//Login with User 1
+		Thread.sleep(2000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName);
@@ -1007,6 +906,13 @@ import utilities.UtilityCustomFunctions;
 			Assert.fail("Login Page not displayed");
 			System.out.println("Login Page Not Displayed");
 		}
+		
+		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		sOldRecordId = sCurrRecordId;
 		
 		//Edit with New Data
 		Thread.sleep(3000);
@@ -1021,92 +927,110 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(3000);
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet4");
 		Thread.sleep(5000);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet4","Edit with New Data",sAssignedTo,node);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
 		Thread.sleep(5000);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
 		
-		//Validate Edit with New Data
-		//Notification count
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(Integer.parseInt(iOldCount1)+2==Integer.parseInt(sNotCount)) {
-			logger.info("Notification Received on Edit with New Data "+ sUserName);
-			freport("Notification Received on Edit with New Data "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Edit Notification received", "Edit Notification received");
-		}else {
-			logger.info("Failed: Notification not Received on Edit "+ sUserName);
-			freport("Failed: Notification not Received on Edit "+ sUserName, "fail",node);
-			sAssertinFn.assertEquals("Edit Notification not received", "Edit Notification received");
+		iCurrRecordId= objCRMRs.getLastRecordId();
+		sCurrRecordId = String.valueOf(iCurrRecordId);
+		UtilityCustomFunctions.logWriteConsole("Current Record Id: after Edit & Save:" + sCurrRecordId);
+		//Validate Module Summary & Detail Page
+		//Validate Notification Count
+		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		
+		UtilityCustomFunctions.logWriteConsole("After Edit & Save : Old Notification count : "+sUser1OldNotifyCount+" current Notification count "+ sUser1CurrNotifyCount);
+		
+		if(Integer.parseInt(sUser1OldNotifyCount) + 1 == Integer.parseInt(sUser1CurrNotifyCount)) {
+			freport("Notification Sent after Edit &  With New Record Added for: " + sUserName, "pass", node);
 		}
-		//Notifications 1
-		sCurrentWinHandle = driver.getWindowHandle();
-		sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-		System.out.println("Captured Record Id:" + sRecordId);
-		xlObj.setCellData("Sheet1", 1, 11, sRecordId);
-		logger.info("Captured RecordId");
-		UtilityCustomFunctions.logWriteConsole("Record Id:After Edit with New Data: " + sRecordId);
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
+		else {
+			freport("Notification Not Sent after Edit &  With New Record Added for: "+sUserName, "fail", node);
+		}
+		
+		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet4","Edit with New Data",sAssignedTo,node);
+		
+		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId);
+		
 		sStatus = "0";
-		//Validate for Each User
-		//Notifications Assigned To 1
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==3) {
-			logger.info("Passed: Notification Received Edit with New Data -"+ sAssignedTo + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received Edit with New Data -"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit with New Data - Notification received for " +sAssignedTo , "Edit with New Data - Notification received for " +sAssignedTo);
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
+								
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Edit & Save New Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Edit & Save New Record New Record - Notification received for " +sAssignedTo , "Edit & Save New Record New Record - Notification received for " +sAssignedTo);
 		}
 		else {
-		logger.info("Failed: Notification not Received Edit with New Data -"+ sAssignedTo + " Record Id: " + sRecordId);
-		freport("Failed: Notification not Received Edit with New Data -"+ sAssignedTo + " Record Id: " + sRecordId, "fail",node);
-		sAssertinFn.assertEquals("Edit with New Data - Notification not received for " +sAssignedTo , "Edit with New Data - Notification received for " +sAssignedTo);
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Edit & Save New Record Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Edit & Save New Record Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save New Record Record - Notification  Not received for " +sAssignedTo , "Add Edit & Save New Record Record - Notification received for " +sAssignedTo);
 		}
-		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sUserName,sActionTitle,sRecordId,node);
-				
-		//Assigned To 2
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==3) {
-			logger.info("Passed: Notification Received Edit with New Data Add -"+ sAssignedTo1 + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received after Edit with New Data -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit with New Data - Notification received for " +sAssignedTo1 , "Edit with New Data - Notification received for " +sAssignedTo1);
-		}
-		else {
-			logger.info("Failed: Notification not Received after Edit with New Data -"+ sAssignedTo1 + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received after Edit with New Data -"+ sAssignedTo1 + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Edit with New Data - Notification not received for " +sAssignedTo1 , "Edit with New Data - Notification received for " +sAssignedTo1);
-		}
-		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sUserName1,sActionTitle,sRecordId,node);
-				
-		//Assigned To 3
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-				
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==3) {
-			logger.info("Passed: Notification Received after Edit with New Data -"+ sAssignedTo2 + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received after Edit with New Data -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Edit with New Data - Notification received for " +sAssignedTo2 , "Edit with New Data - Notification received for " +sAssignedTo2);
-		}
-		else {
-			logger.info("Failed: Notification not Received after Edit with New Data -"+ sAssignedTo2 + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received after Edit with New Data -"+ sAssignedTo2 + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Edit with New Data - Notification not received for " +sAssignedTo2 , "Edit with New Data - Notification received for " +sAssignedTo2);
-		}
-				
-		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sUserName2,sActionTitle,sRecordId,node);
 		
-		//*******************
-		//Login User 2
-		objHP.clickAvatar();
+		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
 		Thread.sleep(2000);
-		objHP.clickLogout();
+		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
+		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save New Record Record - Notification received for " +sAssignedTo1 , "Add Edit & Save New Record Record - Notification received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Edit & Save New Record Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save New Record - Notification Not received for " +sAssignedTo1 , "Add Edit & Save New Record received for " +sAssignedTo1);
+		}
+								
+		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+					
+		//Notifications 1/AssignedTo 2
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+				
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification Not received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+		}
+								
+		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+
+		
+		//Logout from CurrentUser
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+				
+		//*******************
 		//Login Second User
 		System.out.println(sCompName);
 		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
@@ -1125,27 +1049,45 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after Edit with New Data on ETRM: " + sNotCount);
-		if(Integer.parseInt(iOldCount2)+2== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification Received after Edit with New Data on ETRM "+ sUserName1);
-			freport("Notification Received after new Edit with New Data on ETRM "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Edit with New Data on ETRM"+ sUserName1, "Notification Received after Edit with New Data on ETRM"+ sUserName1);	
+		sUser2CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
 		
+		if(Integer.parseInt(sUser2OldNotifyCount)+1==Integer.parseInt(sUser2CurrNotifyCount)) {
+			freport("Notification not Sent after Edit & Save Record Added for: " + sUserName1, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after Edit with New Data on ETRM "+ sUserName1);
-			freport("Notification not Received after Edit with New Data on ETRM "+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification not Received after Edit with New Data on ETRM"+ sUserName1, "Notification not Received after Edit with New Data on ETRM"+ sUserName1);
+			freport("Notification Sent after Edit & Save Record Added for: "+sUserName1, "fail", node);
 		}
-		//Third User
-		Thread.sleep(3000);
-		objHP.clickAvatar();
+		
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 2 and AssignedTo1:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification received for " +sAssignedTo1 , "Add Edit & Save Record - Notification received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Edit & Save Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification  Not received for " +sAssignedTo1 , "Add Edit & Save Record - Notification received for " +sAssignedTo1);
+		}
+		
+		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
 		Thread.sleep(2000);
-		objHP.clickLogout();
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		//Third User
+		
 		Thread.sleep(3000);
 		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -1163,29 +1105,46 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		Thread.sleep(3000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-			
-		if(sNotCount==null) {
-			sNotCount = "0";
-		}
-		UtilityCustomFunctions.logWriteConsole("Notification count after new Edit with New Data on ETRM: " + sNotCount);
-		if(Integer.parseInt(iOldCount3)+2== Integer.parseInt(sNotCount)){
-			UtilityCustomFunctions.logWriteConsole("Notification Received after new Edit with New Data on ETRM"+ sUserName2);
-			freport("Notification Received after new Edit with New Data on ETRM "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after new Edit with New Data on ETRM"+ sUserName2, "Notification Received after new Edit with New Data on ETRM"+ sUserName2);	
+		sUser3CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
 		
+		if(Integer.parseInt(sUser3OldNotifyCount)+1==Integer.parseInt(sUser3CurrNotifyCount)) {
+			freport("Notification Sent after Edit & Save Record Added for: " + sUserName2, "pass", node);
 		}
 		else {
-			UtilityCustomFunctions.logWriteConsole("Failed: Notification not Received after new Edit with New Data on ETRM "+ sUserName2);
-			freport("Notification not Received after new Edit with New Data on ETRM "+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification not Received after new Edit with New Data on ETRM"+ sUserName2, "Notification not Received after new Edit with New Data on ETRM"+ sUserName2);
+			freport("Notification not Sent after Edit & Save Record Added for: "+sUserName2, "fail", node);
 		}
+		
+		//Notification Page
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+		
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Edit with New Data : user 3 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==1) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Edit & Save Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Edit & Save Record - Notification  Not received for " +sAssignedTo2 , "Add Edit & Save Record - Notification received for " +sAssignedTo2);
+		}
+		
+		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 			
 		//************ Single Line Edit
 		//Login with User 1
-		objHP.clickAvatar();
-		Thread.sleep(2000);
-		objHP.clickLogout();
+
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName);
@@ -1201,153 +1160,248 @@ import utilities.UtilityCustomFunctions;
 			System.out.println("Login Page Not Displayed");
 		}
 		
-		//Single Summary Edit
+		sUser1OldNotifyCount = sUser1CurrNotifyCount;
+		sUser2OldNotifyCount = sUser2CurrNotifyCount;
+		sUser3OldNotifyCount = sUser3CurrNotifyCount;
+		iOldRecordId = iCurrRecordId;
+		sOldRecordId = sCurrRecordId;
+		UtilityCustomFunctions.logWriteConsole("Before Single LIne Edit: Old Record Id: "+iOldRecordId+" current record id "+ iCurrRecordId);
 		Thread.sleep(3000);
+		
+		//Single Summary Edit
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		objDVP.clickEdtSngFldMod();
-		Thread.sleep(1000);
-		System.out.println("Module Name:" + sExpModuleName);
-		System.out.println("Edit Ind Text:" + sEditIndText);
-		objCMD.setGenericInputValue("number", sExpModuleName, "numberfield", sEditIndText);
-		objDVP.clickNMRecItemSave();
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(Integer.parseInt(iOldCount2)+3==Integer.parseInt(sNotCount)) {
-			logger.info("Passed:Notification Received after Single Line Edit "+ sUserName);
-			freport("Passed: Notification Received after Single Line Edit "+ sUserName, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Single Line Edit ", "Notification Received after Single Line Edit ");
-		}else {
-			logger.info("Failed: Notification not Received after Single Line Edit"+ sUserName);
-			freport("Failed: Notification not Received after Single Line Edit"+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification not Received after Single Line Edit", "Notification Received after Single Line Edit");sAssertinFn.assertEquals("Single Edit Notification not received", "Single Edit Notification received");
+		Thread.sleep(5000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(5000);
+		objDVP.clickEditNotificationItem();
+		Thread.sleep(3000);
+		
+		sEditIndText = "1234567890";
+		objCMD.setGenericInputValue("tel", sExpModuleName, "phonenumber", sEditIndText);
+		objDVP.clickNotifyRecItemSave(sExpModuleName,"phonenumber");
+		Thread.sleep(5000);
+		
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		
+		iCurrRecordId= objCRMRs.getLastRecordId();
+		sCurrRecordId = String.valueOf(iCurrRecordId);
+		//Validate Module Summary & Detail Page
+		//Validate Notification Count
+		Thread.sleep(3000);
+		sUser1CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		
+		if(Integer.parseInt(sUser1OldNotifyCount)+1 ==Integer.parseInt(sUser1CurrNotifyCount)) {
+			freport("Notification Sent after Single Line Edit Added for: " + sUserName, "pass", node);
+		}
+		else {
+			freport("Notification Not Sent after Single Line Edit Added for: "+sUserName, "fail", node);
 		}
 		
-		//Notifications 1
-		sCurrentWinHandle = driver.getWindowHandle();
-		sNewWindowHanlde="";
-		sNewWindowHanlde = objCRMRs.fOpenNotification(sCurrentWinHandle);
-		sRecordId = objCRMRs.fValNotifySummaryAndDetail(sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-		System.out.println("Captured Record Id:" + sRecordId);
-		xlObj.setCellData("Sheet1", 1, 11, sRecordId);
-		logger.info("Captured RecordId");
-		UtilityCustomFunctions.logWriteConsole("Record Id:Single Line Edit: " + sRecordId);
-		driver.close();
-		driver.switchTo().window(sCurrentWinHandle);
-		sStatus = "0";
-		//Validate for Each User
-		//Notifications Assigned To 1
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo);
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==4) {
-			logger.info("Passed: Notification Received Single Line Edit -"+ sAssignedTo + " Record Id: " + sRecordId);
-			freport("Passed: Notification Not Received Single Line Edit -"+ sAssignedTo + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Single Line Edit - Notification received for " +sAssignedTo , "Single Line Edit - Notification received for " +sAssignedTo);
-		}
-		else {
-			logger.info("Failed: Notification not Received Single Line Edit -"+ sAssignedTo + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received Single Line Edit -"+ sAssignedTo + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Single Line Edit - Notification not received for " +sAssignedTo , "Single Line Edit - Notification received for " +sAssignedTo);
-		}
-		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sUserName,sActionTitle,sRecordId,node);
-						
-		//Assigned To 2
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo1);
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==4) {
-			logger.info("Passed: Notification Received Single Line Edit Add -"+ sAssignedTo1 + " Record Id: " + sRecordId);
-			freport("Passed: Notification not Received after Single Line Edit -"+ sAssignedTo1 + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Single Line Edit - Notification received for " +sAssignedTo1 , "Single Line Edit - Notification received for " +sAssignedTo1);
-		}
-		else {
-			logger.info("Failed: Notification not Received after Single Line Edit -"+ sAssignedTo1 + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received after Single Line Edit -"+ sAssignedTo1 + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Single Line Edit - Notification not received for " +sAssignedTo1 , "Single Line Edit - Notification received for " +sAssignedTo1);
-		}
-		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sUserName1,sActionTitle,sRecordId,node);
-						
-		//Assigned To 3
-		objCRMRs.fClickSearch(sRecordId,sAssignedTo2);
-						
-		iNotificationCount = objSMS.getWebTblRowcount(); 
-		if(iNotificationCount==4) {
-			logger.info("Passed: Notification Received after Single Line Edit -"+ sAssignedTo2 + " Record Id: " + sRecordId);
-			freport("Passed: Notification Received after Single Line Edit -"+ sAssignedTo2 + " Record Id: " + sRecordId, "pass",node);
-			sAssertinFn.assertEquals("Single Line Edit - Notification received for " +sAssignedTo2 , "Single Line Edit - Notification received for " +sAssignedTo2);
-		}
-		else {
-			logger.info("Failed: Notification not Received after Single Line Edit -"+ sAssignedTo2 + " Record Id: " + sRecordId);
-			freport("Failed: Notification not Received after Single Line Edit -"+ sAssignedTo2 + " Record Id: " + sRecordId, "fail",node);
-			sAssertinFn.assertEquals("Single Line Edit - Notification not received for " +sAssignedTo2 , "Single Line Edit - Notification received for " +sAssignedTo2);
-		}
-		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sUserName2,sActionTitle,sRecordId,node);
+		//Validate Module Summary Added Record
+		// check whether new record created for this scenario manually\
+		UtilityCustomFunctions.logWriteConsole("after single line edit Old Record Id: "+iOldRecordId+" current record id "+ iCurrRecordId);
+		
+		//Validate Notifications Module
+		//Notification Module from Menu
+		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId); //check with new record created
 				
-		//Logout & Login as User 2
-		objHP.clickAvatar();
-		objHP.clickLogout();
+		sStatus = "0";
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
+										
+		iNotificationCount = objSMS.getWebTblRowcount(); 
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 1 and AssignedTo:" + sAssignedTo +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==2) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Single Line Edit Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Single Line Edit New Record - Notification received for " +sAssignedTo , "Single Line Edit New Record - Notification received for " +sAssignedTo);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Single Line Edit Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Single Line Edit Record Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification not received for " +sAssignedTo , "Add Single Line Edit Record - Notification received for " +sAssignedTo);
+		}
+		objCRMRs.fgetTablevalues(sAssignedTo,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+			
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
+						
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+						
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 1 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==2) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo1 , "Add Single Line Edit Record - Notification received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification  Not Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification  Not Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Single Line Edit - Notification not received for " +sAssignedTo1 , "Add Single Line Edit received for " +sAssignedTo1);
+		}
+								
+		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+							
+		//Notifications 1/AssignedTo 2
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+				
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 1 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==2) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo2 , "Add Single Line Edit Record - Notification received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Not Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Not Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo2 , "Add Single Line Edit Record - Notification not received for " +sAssignedTo2);
+		}
+								
+		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
+		//Logout from CurrentUser
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		//Validate Notification Count for Other Users.
+		//Login Second User
+		System.out.println(sCompName);
+		System.out.println("UserName1:" + sUserName1 + "Password1: " +sPassword1);
+		UtilityCustomFunctions.logWriteConsole("current ulr:" + driver.getCurrentUrl());
+		UtilityCustomFunctions.logWriteConsole("app ulr:" + sAppUrl);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName1);
 			objLP.setPassword(sPassword1);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
 			objLP.clickLoginSubmit();
-			
+			Thread.sleep(3000);
 		}
 		else {
 			logger.info("CRM Login failed");
-			System.out.println("Login Page Not Displayed");
 			Assert.fail("Login Page not displayed");
-			
+			System.out.println("Login Page Not Displayed");
 		}
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(Integer.parseInt(iOldCount2)+3==Integer.parseInt(sNotCount)) {
-			logger.info("Passed:Notification Received after Single Line Edit "+ sUserName1);
-			freport("Passed: Notification Received after Single Line Edit "+ sUserName1, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Single Line Edit ", "Notification Received after Single Line Edit ");
-		}else {
-			logger.info("Failed: Notification not Received after Single Line Edit"+ sUserName1);
-			freport("Failed: Notification not Received after Single Line Edit"+ sUserName1, "fail",node);
-			sAssertinFn.assertEquals("Notification not Received after Single Line Edit ", "Notification Received after Single Line Edit ");sAssertinFn.assertEquals("Single Edit Notification not received", "Single Edit Notification received");
-		}
-		//Logout
-		objHP.clickAvatar();
-		objHP.clickLogout();
 		Thread.sleep(3000);
+										
+		sUser2CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
 		
-		//Login as User 3
+		if(Integer.parseInt(sUser2OldNotifyCount)+1==Integer.parseInt(sUser2CurrNotifyCount)) {
+			freport("Notification Sent after Edit & Save Record Added for: " + sUserName1, "pass", node);
+		}
+		else {
+			freport("Notification not Sent after Edit & Save Record Added for: "+sUserName1, "fail", node);
+		}
+				
+		//Notifications 1/AssignedTo 1
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
+		
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 2 and AssignedTo:" + sAssignedTo1 +"Notification record count: "+ iNotificationCount);
+		if(iNotificationCount==2) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo1 , "Add Single Line Edit Record - Notification received for " +sAssignedTo1);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Not Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Not Received after Single Line Edit Record Add -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification Not received for " +sAssignedTo1 , "Add Single Line Edit Record - Notification received for " +sAssignedTo1);
+		}
+		
+		objCRMRs.fgetTablevalues(sAssignedTo1,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+		
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
+		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
+		
+				
+		//Logout
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		//Third User
+		Thread.sleep(3000);
+		System.out.println("UserName2:" + sUserName2 + "Password2: " +sPassword2);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName2);
 			objLP.setPassword(sPassword2);
+			objLP.clickEyeIcon();
+			Thread.sleep(3000);
 			objLP.clickLoginSubmit();
-			
+			Thread.sleep(3000);
 		}
 		else {
 			logger.info("CRM Login failed");
-			System.out.println("Login Page Not Displayed");
 			Assert.fail("Login Page not displayed");
-			
+			System.out.println("Login Page Not Displayed");
 		}
-		sNotCount = objCRMRs.fgetNotificationCount();
-		if(Integer.parseInt(iOldCount3)+3==Integer.parseInt(sNotCount)) {
-			logger.info("Passed:Notification Received after Single Line Edit "+ sUserName2);
-			freport("Passed: Notification Received after Single Line Edit "+ sUserName2, "pass",node);
-			sAssertinFn.assertEquals("Notification Received after Single Line Edit ", "Notification Received after Single Line Edit ");
-		}else {
-			logger.info("Failed: Notification not Received after Single Line Edit"+ sUserName2);
-			freport("Failed: Notification not Received after Single Line Edit"+ sUserName2, "fail",node);
-			sAssertinFn.assertEquals("Notification not Received after Single Line Edit ", "Notification Received after Single Line Edit ");
+				
+		sUser3CurrNotifyCount = objCRMRs.fgetNotificationCount();
+		Thread.sleep(2000);
+		if(Integer.parseInt(sUser3OldNotifyCount)+1==Integer.parseInt(sUser3CurrNotifyCount)) {
+			freport("Notification Sent after Single Line Edit Record Added for: " + sUserName2, "pass", node);
 		}
+		else {
+			freport("Notification Not Sent after Single Line Edit Record Added for: "+sUserName2, "fail", node);
+		}
+				
+				
+		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
+				
+		iNotificationCount = objSMS.getWebTblRowcount();
+		iNotificationCount = iNotificationCount - 1;
+		UtilityCustomFunctions.logWriteConsole("After Single Line Edit : user 2 and AssignedTo:" + sAssignedTo2 +"Notification record count: "+ iNotificationCount);
 		
-		//Logout
-		objHP.clickAvatar();
-		objHP.clickLogout();
+		if(iNotificationCount==2) {
+			UtilityCustomFunctions.logWriteConsole("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Passed: Notification Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "pass",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification received for " +sAssignedTo2 , "Add Single Line Edit Record - Notification received for " +sAssignedTo2);
+		}
+		else {
+			UtilityCustomFunctions.logWriteConsole("Failed: Notification Not Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId);
+			freport("Failed: Notification Not Received after Single Line Edit Record Add -"+ sAssignedTo2 + " Record Id: " + sCurrRecordId, "fail",node);
+			sAssertinFn.assertEquals("Add Single Line Edit Record - Notification Not received for " +sAssignedTo2 , "Add Single Line Edit Record - Notification received for " +sAssignedTo2);
+		}
+		objCRMRs.fgetTablevalues(sAssignedTo2,sStatus,sAssignedTo,sNotifyTemplateMsg,sActionTitle,sCurrRecordId,node);
+				
+		Thread.sleep(2000);
+		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
+		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+				
 	}//test method
 }//class

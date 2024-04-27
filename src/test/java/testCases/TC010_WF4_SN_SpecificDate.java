@@ -255,7 +255,7 @@ public class TC010_WF4_SN_SpecificDate extends BaseClass {
 		
 		String sRecordId="";
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_SpecificDate_","Sheet1");
+		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_SpecificDate_","Sheet1",false);
 		Thread.sleep(5000);
 		URL sCurrentUrl = new URL(driver.getCurrentUrl());
 

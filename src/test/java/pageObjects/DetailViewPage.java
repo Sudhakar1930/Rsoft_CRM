@@ -327,7 +327,7 @@ public class DetailViewPage extends BasePage{
 		return UtilityCustomFunctions.getText(driver, eleArrSummary); 
 	}
 	public String getSummaryUrl() throws Exception {
-		String sXpath = "(//div[@class='col-lg-10'])[17]//a";
+		String sXpath = "//div[@class='col-lg-10']/label/p/a";
 //		String sXpath = "//a[normalize-space()='Click Here']";
 		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath));
 		return  eleArrSummary.getAttribute("href");

@@ -1,0 +1,458 @@
+15:35:08.438 [main] INFO  utilities.UtilityCustomFunctions - Actual:ETNotification
+15:35:08.440 [main] INFO  utilities.UtilityCustomFunctions - Expected:ETNotification
+15:35:08.441 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name in SummaryDetail View Page
+15:35:14.746 [main] INFO  utilities.UtilityCustomFunctions - sAssign1:RsoftsAssign2:IT
+15:35:14.746 [main] INFO  utilities.UtilityCustomFunctions - Get Text:
+15:35:14.906 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+15:35:14.906 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+15:35:14.907 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+15:35:16.029 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+15:35:16.030 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+15:35:16.030 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number - Summary Title
+15:35:17.130 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+15:35:17.131 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+15:35:17.131 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+16:25:37.058 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC001_NT_ExecuteTask_CTAfterMinutes ****
+16:25:37.060 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+16:25:37.062 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:25:37.618 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+16:25:37.654 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+16:25:37.655 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:25:45.982 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:25:47.282 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:25:48.541 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:25:57.334 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Avatar
+16:26:01.046 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu CRM Setting
+16:26:03.170 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Other Setting
+16:26:07.624 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Item Workflow
+16:26:07.796 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow from Combox Box List
+16:26:09.798 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item to be selected:  ETNotification Workflow
+16:26:15.844 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - [ETNotification Workflow] is selected in List
+16:26:15.844 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item selected in combox Box  ETNotification Workflow
+16:26:18.848 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Selected Module to View its Workflows
+16:26:18.864 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current Workflow Row item: 1
+16:26:18.910 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current style of Worflow Status Element captured
+16:26:18.911 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Workflow status: of row item: 1 true
+16:26:18.939 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Module Name:  ETNotification
+16:26:18.939 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Workflow Name:  wf_ET_OOFS_Notifications
+16:26:18.939 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Exec Condition Name:  Only on the first save
+16:26:18.940 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Module,workflow,condition matches
+16:26:18.940 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - bCurrentWFStatus: true
+16:26:18.940 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - wf_ET_OOFS_NotificationsWorkflow enabled
+16:26:18.940 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+16:26:18.940 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - true:1
+16:26:25.188 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Work flow clicked
+16:26:30.356 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 1 Next Button to Condition Page
+16:26:33.942 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 2 Next Button to Task List Page
+16:26:34.954 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+16:26:34.997 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Number of Tasks Listed for this Workflow: wf_ET_OOFS_Notifications : 18
+16:26:35.027 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+16:26:35.151 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:26:35.152 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:26:35.152 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:35.152 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:26:35.152 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Action Type and Action Tile matches and also Task Button Enabled
+16:26:36.162 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+16:26:39.075 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+16:26:39.075 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Task Active Send notification  tskNT_ExecuteTask_CTAfterMinutes
+16:26:52.908 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:26:52.941 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:26:52.959 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+16:26:52.959 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:26:53.326 [main] INFO  utilities.UtilityCustomFunctions - Before Verify Detail Summary Module data
+16:26:59.384 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:26:59.407 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:26:59.763 [main] INFO  utilities.UtilityCustomFunctions - Actual:ETNotification
+16:26:59.763 [main] INFO  utilities.UtilityCustomFunctions - Expected:ETNotification
+16:26:59.763 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name in SummaryDetail View Page
+16:27:06.076 [main] INFO  utilities.UtilityCustomFunctions - sAssign1:RsoftsAssign2:IT
+16:27:06.076 [main] INFO  utilities.UtilityCustomFunctions - Get Text:
+16:27:06.231 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:27:06.231 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:27:06.231 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+16:27:07.335 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:27:07.335 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:27:07.335 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number - Summary Title
+16:27:08.436 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+16:27:08.436 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+16:27:08.437 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+16:27:09.617 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:27:09.617 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:27:09.617 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To - Summary View Page : 
+16:27:10.791 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:27:10.791 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:27:10.791 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Summary View Page : New Add Data in Summary Verification
+16:27:11.966 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+16:27:11.966 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+16:27:11.966 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary View Page: New Add Data in Summary Verification
+16:27:13.127 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddText
+16:27:13.127 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddText
+16:27:13.127 [main] INFO  utilities.UtilityCustomFunctions - Message:Text - Summary View Page:New Add Data in Summary Verification
+16:27:14.285 [main] INFO  utilities.UtilityCustomFunctions - Actual:one,two
+16:27:14.285 [main] INFO  utilities.UtilityCustomFunctions - Expected:one,two
+16:27:14.285 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiComboValues - Summary View Page:  New Add Data in Summary Verification
+16:27:15.456 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddTextArea
+16:27:15.456 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddTextArea
+16:27:15.456 [main] INFO  utilities.UtilityCustomFunctions - Message:Text Area - Summary View Page:  New Add Data in Summary Verification
+16:27:16.636 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:27:16.637 [main] INFO  utilities.UtilityCustomFunctions - Expected:ON
+16:27:16.637 [main] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Summary View Page:   New Add Data in Summary Verification
+16:30:18.817 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC001_NT_ExecuteTask_CTAfterMinutes ****
+16:30:18.819 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+16:30:18.821 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:30:19.331 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+16:30:19.379 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+16:30:19.379 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:30:27.638 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:30:28.910 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:30:30.203 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:30:39.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Avatar
+16:30:42.931 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu CRM Setting
+16:30:45.053 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Other Setting
+16:30:49.585 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Item Workflow
+16:30:49.805 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow from Combox Box List
+16:30:51.811 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item to be selected:  ETNotification Workflow
+16:30:57.879 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - [ETNotification Workflow] is selected in List
+16:30:57.880 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item selected in combox Box  ETNotification Workflow
+16:31:00.909 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Selected Module to View its Workflows
+16:31:00.923 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current Workflow Row item: 1
+16:31:00.963 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current style of Worflow Status Element captured
+16:31:00.963 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Workflow status: of row item: 1 true
+16:31:00.984 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Module Name:  ETNotification
+16:31:00.984 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Workflow Name:  wf_ET_OOFS_Notifications
+16:31:00.984 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Exec Condition Name:  Only on the first save
+16:31:00.984 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Module,workflow,condition matches
+16:31:00.984 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - bCurrentWFStatus: true
+16:31:00.984 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - wf_ET_OOFS_NotificationsWorkflow enabled
+16:31:00.985 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+16:31:00.985 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - true:1
+16:31:07.114 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Work flow clicked
+16:31:12.484 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 1 Next Button to Condition Page
+16:31:16.024 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 2 Next Button to Task List Page
+16:31:17.035 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+16:31:17.080 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Number of Tasks Listed for this Workflow: wf_ET_OOFS_Notifications : 18
+16:31:17.108 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+16:31:17.246 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:31:17.246 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:31:17.246 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:31:17.246 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:31:17.246 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Action Type and Action Tile matches and also Task Button Enabled
+16:31:18.249 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+16:31:21.268 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+16:31:21.268 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Task Active Send notification  tskNT_ExecuteTask_CTAfterMinutes
+16:31:35.835 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:31:35.863 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:31:35.879 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+16:31:35.879 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:31:36.239 [main] INFO  utilities.UtilityCustomFunctions - Before Verify Detail Summary Module data
+16:31:42.300 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:31:42.320 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:31:42.523 [main] INFO  utilities.UtilityCustomFunctions - Actual:ETNotification
+16:31:42.523 [main] INFO  utilities.UtilityCustomFunctions - Expected:ETNotification
+16:31:42.524 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name in SummaryDetail View Page
+16:31:48.953 [main] INFO  utilities.UtilityCustomFunctions - sAssign1:RsoftsAssign2:IT
+16:31:48.953 [main] INFO  utilities.UtilityCustomFunctions - Get Text:
+16:31:49.140 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:31:49.140 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:31:49.140 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+16:31:50.257 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:31:50.257 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:31:50.258 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number - Summary Title
+16:31:51.378 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+16:31:51.378 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+16:31:51.378 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+16:31:52.667 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:31:52.668 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:31:52.668 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To - Summary View Page : 
+16:31:53.848 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:31:53.849 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:31:53.849 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Summary View Page : New Add Data in Summary Verification
+16:31:55.003 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+16:31:55.003 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+16:31:55.003 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary View Page: New Add Data in Summary Verification
+16:31:56.189 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddText
+16:31:56.189 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddText
+16:31:56.189 [main] INFO  utilities.UtilityCustomFunctions - Message:Text - Summary View Page:New Add Data in Summary Verification
+16:31:57.361 [main] INFO  utilities.UtilityCustomFunctions - Actual:one,two
+16:31:57.362 [main] INFO  utilities.UtilityCustomFunctions - Expected:one,two
+16:31:57.362 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiComboValues - Summary View Page:  New Add Data in Summary Verification
+16:31:58.526 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddTextArea
+16:31:58.526 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddTextArea
+16:31:58.526 [main] INFO  utilities.UtilityCustomFunctions - Message:Text Area - Summary View Page:  New Add Data in Summary Verification
+16:31:59.699 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:31:59.699 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+16:31:59.699 [main] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Summary View Page:   New Add Data in Summary Verification
+16:32:00.954 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:32:00.954 [main] INFO  utilities.UtilityCustomFunctions - Expected:27-04-2024
+16:32:00.954 [main] INFO  utilities.UtilityCustomFunctions - Message:Date - Summary View Page:  New Add Data in Summary Verification
+16:33:18.249 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC001_NT_ExecuteTask_CTAfterMinutes ****
+16:33:18.252 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+16:33:18.254 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:33:18.838 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+16:33:18.907 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+16:33:18.907 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:33:27.688 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:33:29.011 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:33:30.291 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:33:38.930 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Avatar
+16:33:42.562 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu CRM Setting
+16:33:44.667 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Other Setting
+16:33:49.157 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Item Workflow
+16:33:49.341 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow from Combox Box List
+16:33:51.348 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item to be selected:  ETNotification Workflow
+16:33:57.501 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - [ETNotification Workflow] is selected in List
+16:33:57.501 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item selected in combox Box  ETNotification Workflow
+16:34:00.514 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Selected Module to View its Workflows
+16:34:00.529 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current Workflow Row item: 1
+16:34:00.572 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current style of Worflow Status Element captured
+16:34:00.572 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Workflow status: of row item: 1 true
+16:34:00.594 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Module Name:  ETNotification
+16:34:00.595 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Workflow Name:  wf_ET_OOFS_Notifications
+16:34:00.595 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Exec Condition Name:  Only on the first save
+16:34:00.595 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Module,workflow,condition matches
+16:34:00.595 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - bCurrentWFStatus: true
+16:34:00.595 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - wf_ET_OOFS_NotificationsWorkflow enabled
+16:34:00.595 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+16:34:00.595 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - true:1
+16:34:06.665 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Work flow clicked
+16:34:11.812 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 1 Next Button to Condition Page
+16:34:15.492 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 2 Next Button to Task List Page
+16:34:16.506 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+16:34:16.520 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Number of Tasks Listed for this Workflow: wf_ET_OOFS_Notifications : 18
+16:34:16.542 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+16:34:16.653 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:34:16.653 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:34:16.653 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:34:16.654 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:34:16.654 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Action Type and Action Tile matches and also Task Button Enabled
+16:34:17.666 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+16:34:20.678 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+16:34:20.678 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Task Active Send notification  tskNT_ExecuteTask_CTAfterMinutes
+16:34:34.316 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:34:34.344 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:34:34.364 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+16:34:34.364 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:34:34.801 [main] INFO  utilities.UtilityCustomFunctions - Before Verify Detail Summary Module data
+16:34:40.863 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:34:40.884 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:34:41.086 [main] INFO  utilities.UtilityCustomFunctions - Actual:ETNotification
+16:34:41.086 [main] INFO  utilities.UtilityCustomFunctions - Expected:ETNotification
+16:34:41.086 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name in SummaryDetail View Page
+16:34:47.489 [main] INFO  utilities.UtilityCustomFunctions - sAssign1:RsoftsAssign2:IT
+16:34:47.489 [main] INFO  utilities.UtilityCustomFunctions - Get Text:
+16:34:47.666 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:34:47.666 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:34:47.666 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+16:34:48.789 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:34:48.789 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:34:48.789 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number - Summary Title
+16:34:49.920 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+16:34:49.920 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+16:34:49.920 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+16:34:51.171 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:34:51.171 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:34:51.171 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To - Summary View Page : 
+16:34:52.355 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+16:34:52.355 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+16:34:52.355 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Summary View Page : New Add Data in Summary Verification
+16:34:53.539 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+16:34:53.540 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+16:34:53.540 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary View Page: New Add Data in Summary Verification
+16:34:54.700 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddText
+16:34:54.700 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddText
+16:34:54.700 [main] INFO  utilities.UtilityCustomFunctions - Message:Text - Summary View Page:New Add Data in Summary Verification
+16:34:55.864 [main] INFO  utilities.UtilityCustomFunctions - Actual:one,two
+16:34:55.864 [main] INFO  utilities.UtilityCustomFunctions - Expected:one,two
+16:34:55.864 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiComboValues - Summary View Page:  New Add Data in Summary Verification
+16:34:57.036 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddTextArea
+16:34:57.036 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddTextArea
+16:34:57.036 [main] INFO  utilities.UtilityCustomFunctions - Message:Text Area - Summary View Page:  New Add Data in Summary Verification
+16:34:58.199 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:34:58.200 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+16:34:58.200 [main] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Summary View Page:   New Add Data in Summary Verification
+16:34:59.370 [main] INFO  utilities.UtilityCustomFunctions - Actual:27-04-2024
+16:34:59.370 [main] INFO  utilities.UtilityCustomFunctions - Expected:27-04-2024
+16:34:59.370 [main] INFO  utilities.UtilityCustomFunctions - Message:Date - Summary View Page:  New Add Data in Summary Verification
+17:06:49.859 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC001_NT_ExecuteTask_CTAfterMinutes ****
+17:06:49.863 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+17:06:49.866 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+17:06:50.463 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+17:06:50.522 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+17:06:50.522 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+17:06:58.603 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:06:59.887 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:07:01.161 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:07:10.656 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Avatar
+17:07:14.179 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu CRM Setting
+17:07:16.347 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Other Setting
+17:07:21.174 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Item Workflow
+17:07:21.359 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow from Combox Box List
+17:07:23.366 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item to be selected:  ETNotification Workflow
+17:07:29.300 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - [ETNotification Workflow] is selected in List
+17:07:29.300 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item selected in combox Box  ETNotification Workflow
+17:07:32.319 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Selected Module to View its Workflows
+17:07:32.333 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current Workflow Row item: 1
+17:07:32.377 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current style of Worflow Status Element captured
+17:07:32.377 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Workflow status: of row item: 1 true
+17:07:32.403 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Module Name:  ETNotification
+17:07:32.404 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Workflow Name:  wf_ET_OOFS_Notifications
+17:07:32.404 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Exec Condition Name:  Only on the first save
+17:07:32.404 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Module,workflow,condition matches
+17:07:32.404 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - bCurrentWFStatus: true
+17:07:32.404 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - wf_ET_OOFS_NotificationsWorkflow enabled
+17:07:32.404 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+17:07:32.404 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - true:1
+17:07:38.475 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Work flow clicked
+17:07:43.758 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 1 Next Button to Condition Page
+17:07:47.344 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Cliked Step 2 Next Button to Task List Page
+17:07:48.357 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+17:07:48.371 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Number of Tasks Listed for this Workflow: wf_ET_OOFS_Notifications : 18
+17:07:48.394 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : true
+17:07:48.519 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+17:07:48.520 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinutes
+17:07:48.520 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+17:07:48.520 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_CTAfterMinutes
+17:07:48.520 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Action Type and Action Tile matches and also Task Button Enabled
+17:07:49.523 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+17:07:52.511 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow and Navigated to Task Page
+17:07:52.511 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Task Active Send notification  tskNT_ExecuteTask_CTAfterMinutes
+17:08:06.563 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+17:08:06.589 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+17:08:06.605 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+17:08:06.605 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+17:08:07.002 [main] INFO  utilities.UtilityCustomFunctions - Before Verify Detail Summary Module data
+17:08:13.058 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:08:13.076 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+17:08:13.283 [main] INFO  utilities.UtilityCustomFunctions - Actual:ETNotification
+17:08:13.284 [main] INFO  utilities.UtilityCustomFunctions - Expected:ETNotification
+17:08:13.284 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name in SummaryDetail View Page
+17:08:19.648 [main] INFO  utilities.UtilityCustomFunctions - sAssign1:RsoftsAssign2:IT
+17:08:19.648 [main] INFO  utilities.UtilityCustomFunctions - Get Text:
+17:08:19.826 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:08:19.826 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:08:19.826 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+17:08:20.924 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+17:08:20.924 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+17:08:20.924 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number - Summary Title
+17:08:22.058 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+17:08:22.058 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+17:08:22.058 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+17:08:23.353 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+17:08:23.354 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+17:08:23.354 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To - Summary View Page : 
+17:08:24.537 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+17:08:24.537 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+17:08:24.537 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Summary View Page : New Add Data in Summary Verification
+17:08:25.736 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAdd@gmail.com
+17:08:25.736 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAdd@gmail.com
+17:08:25.736 [main] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary View Page: New Add Data in Summary Verification
+17:08:26.914 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddText
+17:08:26.914 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddText
+17:08:26.914 [main] INFO  utilities.UtilityCustomFunctions - Message:Text - Summary View Page:New Add Data in Summary Verification
+17:08:28.075 [main] INFO  utilities.UtilityCustomFunctions - Actual:one,two
+17:08:28.075 [main] INFO  utilities.UtilityCustomFunctions - Expected:one,two
+17:08:28.075 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiComboValues - Summary View Page:  New Add Data in Summary Verification
+17:08:29.228 [main] INFO  utilities.UtilityCustomFunctions - Actual:NewAddTextArea
+17:08:29.228 [main] INFO  utilities.UtilityCustomFunctions - Expected:NewAddTextArea
+17:08:29.229 [main] INFO  utilities.UtilityCustomFunctions - Message:Text Area - Summary View Page:  New Add Data in Summary Verification
+17:08:30.400 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+17:08:30.400 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+17:08:30.400 [main] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Summary View Page:   New Add Data in Summary Verification
+17:08:31.632 [main] INFO  utilities.UtilityCustomFunctions - Actual:27-04-2024
+17:08:31.632 [main] INFO  utilities.UtilityCustomFunctions - Expected:27-04-2024
+17:08:31.632 [main] INFO  utilities.UtilityCustomFunctions - Message:Date - Summary View Page:  New Add Data in Summary Verification
+17:08:32.811 [main] INFO  utilities.UtilityCustomFunctions - Actual:1
+17:08:32.811 [main] INFO  utilities.UtilityCustomFunctions - Expected:1
+17:08:32.812 [main] INFO  utilities.UtilityCustomFunctions - Message:PickList - Summary View Page:  New Add Data in Summary Verification
+17:08:34.095 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+17:08:34.095 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+17:08:34.096 [main] INFO  utilities.UtilityCustomFunctions - Message:Sequence Number - Summary View Page: New Add Data in Summary Verification
+17:08:35.280 [main] INFO  utilities.UtilityCustomFunctions - Actual:27-04-2024 03:09:14 PM
+17:08:35.280 [main] INFO  utilities.UtilityCustomFunctions - Expected:27-04-2024 03:09:14 PM
+17:08:35.280 [main] INFO  utilities.UtilityCustomFunctions - Message:Date & Time - Summary View Page:   New Add Data in Summary Verification
+17:08:36.455 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+17:08:36.456 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+17:08:36.456 [main] INFO  utilities.UtilityCustomFunctions - Message:Time - Summary View Page:   New Add Data in Summary Verification
+17:08:37.625 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mr. NewAddNameExpectedName:Mr. NewAddName
+17:08:37.625 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. NewAddName
+17:08:37.625 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. NewAddName
+17:08:37.625 [main] INFO  utilities.UtilityCustomFunctions - Message:Name - Summary View Page:   New Add Data in Summary Verification
+17:08:38.795 [main] INFO  utilities.UtilityCustomFunctions - Actual:1111111111
+17:08:38.795 [main] INFO  utilities.UtilityCustomFunctions - Expected:1111111111
+17:08:38.796 [main] INFO  utilities.UtilityCustomFunctions - Message:Number - Summary View Page:   New Add Data in Summary Verification
+17:08:39.965 [main] INFO  utilities.UtilityCustomFunctions - Actual:1,000
+17:08:39.965 [main] INFO  utilities.UtilityCustomFunctions - Expected:1000
+17:08:39.965 [main] INFO  utilities.UtilityCustomFunctions - Message:Currency - Summary View Page:   New Add Data in Summary Verification
+17:08:41.110 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+17:08:41.110 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com
+17:08:41.110 [main] INFO  utilities.UtilityCustomFunctions - Message:URL - Summary View Page:  New Add Data in Summary Verification
+17:08:42.290 [main] INFO  utilities.UtilityCustomFunctions - Actual:Ariyalur
+17:08:42.291 [main] INFO  utilities.UtilityCustomFunctions - Expected:Ariyalur
+17:08:42.291 [main] INFO  utilities.UtilityCustomFunctions - Message:City - Summary View Page: New Add Data in Summary Verification
+17:08:43.459 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+17:08:43.459 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+17:08:43.459 [main] INFO  utilities.UtilityCustomFunctions - Message:State - Summary View Page:New Add Data in Summary Verification
+17:08:44.642 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+17:08:44.642 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+17:08:44.642 [main] INFO  utilities.UtilityCustomFunctions - Message:Country - Summary View Page:  New Add Data in Summary Verification
+17:08:45.826 [main] INFO  utilities.UtilityCustomFunctions - Actual:RelatedModuleText
+17:08:45.826 [main] INFO  utilities.UtilityCustomFunctions - Expected:RelatedModuleText
+17:08:45.826 [main] INFO  utilities.UtilityCustomFunctions - Message:Related Module Text - Summary View Page:  New Add Data in Summary Verification
+17:50:43.970 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC001_NT_ExecuteTask_CTAfterMinutes ****
+17:50:43.972 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+17:50:43.974 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+17:50:44.484 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+17:50:44.523 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+17:50:44.524 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+17:50:52.725 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:50:54.035 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:50:55.305 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:51:04.205 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Avatar
+17:51:07.756 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu CRM Setting
+17:51:09.901 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Other Setting
+17:51:14.441 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Item Workflow
+17:51:14.600 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow from Combox Box List
+17:51:16.603 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item to be selected:  ETNotification Workflow
+17:51:22.659 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - [ETNotification Workflow] is selected in List
+17:51:22.659 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item selected in combox Box  ETNotification Workflow
+17:51:25.672 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Selected Module to View its Workflows
+17:51:25.717 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current Workflow Row item: 1
+17:51:25.766 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current style of Worflow Status Element captured
+17:51:25.766 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Workflow status: of row item: 1 true
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Module Name:  ETNotification
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Workflow Name:  wf_ET_OOFS_Notifications
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Exec Condition Name:  Only on the first save
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Module,workflow,condition matches
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - bCurrentWFStatus: true
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - wf_ET_OOFS_NotificationsWorkflow enabled
+17:51:25.795 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+17:51:25.795 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - true:1
+17:52:09.678 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC001_NT_ExecuteTask_CTAfterMinutes ****
+17:52:09.681 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+17:52:09.683 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+17:52:10.197 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+17:52:10.241 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+17:52:10.241 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+17:52:18.915 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:52:20.267 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:52:21.530 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:52:30.565 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Avatar
+17:52:34.258 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu CRM Setting
+17:52:36.381 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Other Setting
+17:52:40.864 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Menu Item Workflow
+17:52:41.069 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Clicked Workflow from Combox Box List
+17:52:43.078 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item to be selected:  ETNotification Workflow
+17:52:49.149 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - [ETNotification Workflow] is selected in List
+17:52:49.149 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Item selected in combox Box  ETNotification Workflow
+17:52:52.164 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Selected Module to View its Workflows
+17:52:52.196 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current Workflow Row item: 1
+17:52:52.241 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Current style of Worflow Status Element captured
+17:52:52.241 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Workflow status: of row item: 1 true
+17:52:52.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Module Name:  ETNotification
+17:52:52.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Workflow Name:  wf_ET_OOFS_Notifications
+17:52:52.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Actual Exec Condition Name:  Only on the first save
+17:52:52.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - Module,workflow,condition matches
+17:52:52.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - bCurrentWFStatus: true
+17:52:52.270 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - wf_ET_OOFS_NotificationsWorkflow enabled
+17:52:52.271 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+17:52:52.271 [main] INFO  testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes - true:1

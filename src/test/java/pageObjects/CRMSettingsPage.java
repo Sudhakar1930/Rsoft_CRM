@@ -11,7 +11,10 @@ import utilities.UtilityCustomFunctions;
 	}
 	
 	
-	@FindBy(xpath="(//a[@class='dropdown-item'])[3]")
+//	@FindBy(xpath="(//a[@class='dropdown-item'])[3]")
+//	WebElement mnuCRMSetting;
+	
+	@FindBy(linkText="CRM Setting")
 	WebElement mnuCRMSetting;
 	
 	@FindBy(xpath="//label[normalize-space()='Other Settings']")

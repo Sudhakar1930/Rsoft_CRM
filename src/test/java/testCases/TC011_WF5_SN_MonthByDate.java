@@ -255,7 +255,7 @@ public class TC011_WF5_SN_MonthByDate extends BaseClass {
 		
 		String sRecordId="";
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_MonthbyDate_","Sheet1");
+		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_MonthbyDate_","Sheet1",false);
 		Thread.sleep(5000);
 		URL sCurrentUrl = new URL(driver.getCurrentUrl());
 

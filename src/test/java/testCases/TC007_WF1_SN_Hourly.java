@@ -251,7 +251,7 @@ public class TC007_WF1_SN_Hourly extends BaseClass {
 		
 		String sRecordId="";
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_Hourly_","Sheet1");
+		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_Hourly_","Sheet1",false);
 		Thread.sleep(5000);
 		URL sCurrentUrl = new URL(driver.getCurrentUrl());
 		

@@ -23,6 +23,7 @@ import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
 import pageObjects.NotificationsPage;
+import pageObjects.SummaryViewPage;
 import pageObjects.WorkFlowPage;
 import utilities.UtilityCustomFunctions;
 import utilities.ExcelUtility;
@@ -218,6 +219,270 @@ public class CRMReUsables extends BaseClass {
 
 	}
 
+		public void	fVerifyETNotificationSummary(String sEnv, String sExcelName,String sSheetName, String sMessage,ExtentTest node) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\" + sExcelName + "Test.xlsx" ;	
+		}
+		else {
+			sPath=".\\testData\\" + sExcelName + "Live.xlsx" ;
+			}//get the test data sheet
+
+			ExcelUtility xlAddObj = new ExcelUtility(sPath);
+			UtilityCustomFunctions.logWriteConsole("Excel file Utility instance created");
+			
+			int iRowCount = xlAddObj.getRowCount(sSheetName);
+			System.out.println("Total rows: " + iRowCount);
+			UtilityCustomFunctions.logWriteConsole("Row Count to Add Values: " + iRowCount);
+
+			int iColCount = xlAddObj.getCellCount(sSheetName, iRowCount);
+
+			UtilityCustomFunctions.logWriteConsole("Col Count is: " + iColCount);	
+			UtilityCustomFunctions.logWriteConsole("Extracting DataSheet Values started...");
+
+			//DataSheet Values Extracted
+
+			String sExpModuleName = xlAddObj.getCellData(sSheetName, 1, 0);
+			String sExpWorkFlowName = xlAddObj.getCellData(sSheetName, 1, 1);
+			String sExpAssignedTo = xlAddObj.getCellData(sSheetName, 1, 2);
+			String sMobilePrefix = xlAddObj.getCellData(sSheetName, 1, 3);
+			String sMobileNumber = xlAddObj.getCellData(sSheetName, 1, 4);
+
+			String sEmail=xlAddObj.getCellData(sSheetName, 1, 5);
+			String sText=xlAddObj.getCellData(sSheetName, 1, 6);
+			String sMultiComboValues=xlAddObj.getCellData(sSheetName, 1, 7);
+			String sTextArea=xlAddObj.getCellData(sSheetName, 1, 8);
+			String sCheckBox=xlAddObj.getCellData(sSheetName, 1, 9);
+			
+			if(sCheckBox.equalsIgnoreCase("ON")) {
+				sCheckBox = "Yes";
+			}
+			else {
+				sCheckBox = "No";
+			}
+			
+			String sDate=xlAddObj.getCellData(sSheetName, 1, 10);
+			String sPickList=xlAddObj.getCellData(sSheetName, 1, 11);
+			String sFile=xlAddObj.getCellData(sSheetName, 1, 12);
+			String sDateandTime =xlAddObj.getCellData(sSheetName, 1, 13);
+			String sTime =xlAddObj.getCellData(sSheetName, 1, 14);
+			String sNamePrefix =xlAddObj.getCellData(sSheetName, 1, 15);
+			String sName =xlAddObj.getCellData(sSheetName, 1, 16);
+			String sNumber =xlAddObj.getCellData(sSheetName, 1, 17);
+			String sCurrency=xlAddObj.getCellData(sSheetName, 1, 18);
+			String sURL=xlAddObj.getCellData(sSheetName, 1, 19);
+			String sCity=xlAddObj.getCellData(sSheetName, 1, 20);
+			String sState=xlAddObj.getCellData(sSheetName, 1, 21);
+			String sCountry=xlAddObj.getCellData(sSheetName, 1, 22);
+			String sRelatedModText =xlAddObj.getCellData(sSheetName, 1, 23);
+			System.out.println("Module Name:  " + sExpModuleName);
+			UtilityCustomFunctions.logWriteConsole("Before Verify Detail Summary Module data");
+
+				SummaryViewPage objSVP = new SummaryViewPage(driver);
+				DetailViewPage objDVP = new DetailViewPage(driver);
+				
+				Thread.sleep(6000);
+				objDVP.fSetToggleHeader(true);
+				objDVP.fSetDetailVew(false);
+				
+				
+				String sSequenceNo = objSVP.getCurrentSequenceNo();
+				xlAddObj.setCellData(sSheetName, 1, 32, sSequenceNo);
+				
+				//Title Validation on Summary SummaryViewPage
+				String aActModuleName = objDVP.getNavBarModuleName();
+				UtilityCustomFunctions.fSoftAssert(aActModuleName, sExpModuleName, "Module Name in SummaryDetail View Page", node);
+				
+				// Title Actual Values
+				Thread.sleep(2000);
+				String sActAssignedTo =objSVP.getTitleAssignedTo();
+				String sActMobileNumber =objSVP.getTitlePhoneNumber();
+				String sActEmail =objSVP.getTitleEmail();
+						
+//				String sActPNTitle = objDVP.getPhoneNMTitle();
+//				String sPNTitleArray[] = sActPNTitle.split("\\s+");
+//				sActPNTitle = sPNTitleArray[0].trim() + " " + sPNTitleArray[1].trim();
+//				System.out.println("Actual: " + sActPNTitle);
+//				String sActEMTitle = objDVP.getEmailTitle();
+//				String sActMnuTitle = objDVP.getMenuItemTitle();
+
+				String sPhoneNoumber = sMobilePrefix + " " + sMobileNumber;
+				// Title Validations
+				UtilityCustomFunctions.fSoftAssert(sActAssignedTo, sExpAssignedTo, "Assigned To-Summary Title", node);
+				UtilityCustomFunctions.fSoftAssert(sActMobileNumber, sPhoneNoumber, "Phone Number - Summary Title", node);
+				UtilityCustomFunctions.fSoftAssert(sActEmail, sEmail, "Email - Summary Title", node);
+				
+				//Summary Page Validation
+				String sActSummaryAssignedTo = objDVP.getSummaryAssignTo();
+				UtilityCustomFunctions.fSoftAssert(sActSummaryAssignedTo, sExpAssignedTo, "Assigned To - Summary View Page : ", node);
+				
+				sActMobileNumber = objDVP.getArraySummary(1).trim();
+				String sMobNMArray[] = sActMobileNumber.split("\\s+");
+				sActMobileNumber = sMobNMArray[0].trim() + " " + sMobNMArray[1].trim();
+				UtilityCustomFunctions.fSoftAssert(sActMobileNumber, sPhoneNoumber, "Mobile Number - Summary View Page : " + sMessage, node);
+				
+				sActEmail = objDVP.getArraySummary(2).trim();
+				UtilityCustomFunctions.fSoftAssert(sActEmail, sEmail, "Email - Summary View Page: " + sMessage, node);
+				
+				String sActSummaryText = objDVP.getArraySummary(3).trim();
+				UtilityCustomFunctions.fSoftAssert(sActSummaryText, sText, "Text - Summary View Page:" + sMessage, node);
+				
+				String sActMultiComboValues = objDVP.getArraySummary(4).trim();
+				UtilityCustomFunctions.fSoftAssert(sActMultiComboValues, sMultiComboValues, "MultiComboValues - Summary View Page:  " + sMessage, node);
+				System.out.println("Actual Summary sActMultiComboValues: " + sActMultiComboValues);
+				
+				String sActTextArea=objDVP.getArraySummary(5).trim();
+				sActTextArea = UtilityCustomFunctions.fArrayConcat(sActTextArea);
+				sTextArea = UtilityCustomFunctions.fArrayConcat(sTextArea);
+				
+				UtilityCustomFunctions.fSoftAssert(sActTextArea, sTextArea, "Text Area - Summary View Page:  " + sMessage, node);
+				
+				String sActCheckBox = objDVP.getArraySummary(6).trim();
+				UtilityCustomFunctions.fSoftAssert(sActCheckBox, sCheckBox, "CheckBox - Summary View Page:   " + sMessage, node);
+				
+				String sActDate = objDVP.getArraySummary(7).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDate, sDate, "Date - Summary View Page:  " + sMessage, node);
+
+				String sActPickListValue = objDVP.getArraySummary(8).trim();
+				UtilityCustomFunctions.fSoftAssert(sActPickListValue, sPickList, "PickList - Summary View Page:  " + sMessage, node);
+				
+//				String sActSequenceNo= objDVP.getArraySummary(9).trim();
+//				UtilityCustomFunctions.fSoftAssert(sActSequenceNo, sSequenceNo, "Sequence Number - Summary View Page:  " + sMessage, node);
+				
+				String sActUploadFile="";
+				if(objDVP.getUploadFileText()!=null) {
+					sActUploadFile= objDVP.getUploadFileText();
+				}
+				if(sActUploadFile.contains(sFile)) {
+					UtilityCustomFunctions.fSoftAssert(sFile, sFile, "File Upload - Summary View Page: " + sMessage, node);
+				}
+				else {
+					UtilityCustomFunctions.fSoftAssert(sActUploadFile, sFile, "File Upload - Summary View Page: " + sMessage, node);
+				}
+				
+				String sActDTandTime = objDVP.getArraySummary(9).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTandTime, sDateandTime, "Date & Time - Summary View Page:   " + sMessage, node);
+				
+				String sActTime= objDVP.getArraySummary(10).trim();
+				UtilityCustomFunctions.fSoftAssert(sActTime, sTime, "Time - Summary View Page:   " + sMessage, node);
+				
+				String sExpName = sNamePrefix + " " + sName;
+				String sActName = objDVP.getArraySummary(11).trim();
+				String sNameArray[] = sActName.split("\\s+");
+				sActName = sNameArray[0].trim() + " " + sNameArray[1].trim();
+				UtilityCustomFunctions.logWriteConsole("ActualName:"+sActName+"ExpectedName:"+sExpName);
+				UtilityCustomFunctions.fSoftAssert(sActName, sExpName, "Name - Summary View Page:   " + sMessage, node);
+				
+				String sActNumber = objDVP.getArraySummary(12).trim();
+				UtilityCustomFunctions.fSoftAssert(sActNumber, sNumber, "Number - Summary View Page:   " + sMessage, node);
+				
+				String sActCurrency = objDVP.getArraySummary(13).trim();
+				UtilityCustomFunctions.fSoftAssert(sActCurrency, sCurrency, "Currency - Summary View Page:   " + sMessage, node);
+				
+				String sActUrl = objDVP.getSummaryUrl().trim();
+				UtilityCustomFunctions.fSoftAssert(sActUrl, sURL, "URL - Summary View Page:  " + sMessage, node);
+				
+				String sActCity = objDVP.getArraySummary(15).trim();
+				UtilityCustomFunctions.fSoftAssert(sActCity, sCity, "City - Summary View Page: " + sMessage, node);
+				
+				String sActState = objDVP.getArraySummary(16).trim();
+				UtilityCustomFunctions.fSoftAssert(sActState, sState, "State - Summary View Page:" + sMessage, node);
+				
+				String sActCountry = objDVP.getArraySummary(17).trim();
+				UtilityCustomFunctions.fSoftAssert(sActCountry, sCountry, "Country - Summary View Page:  " + sMessage, node);
+				
+				String sActRelatedModuleText = objDVP.getArraySummary(18).trim();
+				UtilityCustomFunctions.fSoftAssert(sActRelatedModuleText, sRelatedModText, "Related Module Text - Summary View Page:  " + sMessage, node);
+				
+				//Detail View Page Validation
+				objDVP.fSetDetailVew(true);
+				Thread.sleep(3000);
+				driver.navigate().refresh();
+				Thread.sleep(3000);
+				
+				String sActDTAssignedTo = objDVP.getArrayDetails(1).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sExpAssignedTo, "AssignedTo - Detail View Page:   " + sMessage, node);
+				
+				String sActDTMobileNumber= objDVP.getArrayDetails(2).trim();
+				UtilityCustomFunctions.logWriteConsole("sActDTMobileNumber "+ sActDTMobileNumber);
+
+				String sDTMobileNMArray[] = sActDTMobileNumber.split("\\s+");
+				if(sDTMobileNMArray.length>=1) {
+				 sActDTMobileNumber = sDTMobileNMArray[0].trim() + " " + sDTMobileNMArray[1].trim();
+				}
+				System.out.println("actual mobile number: " + sActDTMobileNumber);
+				UtilityCustomFunctions.fSoftAssert(sActDTMobileNumber, sPhoneNoumber, "Mobile Number - Detail View Page:   " + sMessage, node);
+				
+				String sActDTEmail= objDVP.getArrayDetails(3).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTEmail, sEmail, "Email - Detail View Page: " + sMessage, node);
+				
+				String sActDTText= objDVP.getArrayDetails(4).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTText, sText, "Text - Detail View Page:  " + sMessage, node);
+				
+				String sActDTMultiCombo= objDVP.getArrayDetails(5).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTMultiCombo, sMultiComboValues, "MultiCombo - Detail View Page:   " + sMessage, node);
+				
+				String sActDTTextArea= objDVP.getArrayDetails(6).trim();
+				sActDTTextArea = UtilityCustomFunctions.fArrayConcat(sActDTTextArea);
+				UtilityCustomFunctions.fSoftAssert(sActDTTextArea, sTextArea, "TextArea - Detail View Page:  " + sMessage, node);
+				
+				String sActDTChekBox= objDVP.getArrayDetails(7).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTChekBox, sCheckBox, "CheckBox - Detail View Page: " + sMessage, node);
+				
+				String sActDTDate= objDVP.getArrayDetails(8).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTDate, sDate, "Date - Detail View Page: " + sMessage, node);
+				
+				String sActDTPicList= objDVP.getArrayDetails(9).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTPicList, sPickList, "PickList - Detail View Page:   " + sMessage, node);
+				
+				String sActDTUploadFile = "";
+				if(objDVP.getUploadFileText()!=null) {
+					sActDTUploadFile= objDVP.getUploadFileText();
+				}
+				if(sActDTUploadFile.contains(sFile)) {
+					UtilityCustomFunctions.fSoftAssert(sFile, sFile, "File Upload - Detail View Page:   " + sMessage, node);
+				}
+				else {
+					UtilityCustomFunctions.fSoftAssert(sActDTUploadFile, sFile, "File Upload - Detail View Page:   " + sMessage, node);
+				}
+				
+				String sActDTDateandTime= objDVP.getArrayDetails(12).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTDateandTime, sDateandTime, "Date & Time - Detail View Page: " + sMessage, node);
+
+				String sActDTTime= objDVP.getArrayDetails(13).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTTime, sTime, "Time - Detail View Page:    " + sMessage, node);
+				
+				String sActDTName= objDVP.getArrayDetails(14).trim();
+				String sDTNameArray[] = sActDTName.split("\\s+");
+				sActDTName = sDTNameArray[0].trim() + " " + sDTNameArray[1].trim();
+				UtilityCustomFunctions.logWriteConsole("ActualNameDT: "+sActDTName +" ExpectedNameDT: "+sExpName);
+				UtilityCustomFunctions.fSoftAssert(sActDTName, sExpName, "Name - Detail View Page:  " + sMessage, node);
+				
+				String sActDTNumber= objDVP.getArrayDetails(15).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTNumber, sNumber, "Number - Detail View Page:  " + sMessage, node);
+				
+				String sActDTCurrency= objDVP.getArrayDetails(16).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTCurrency, sCurrency, "Currency - Detail View Page:  " + sMessage, node);
+				
+				String sActDTUrl= objDVP.getDTSummaryUrl().trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTUrl, sURL, "URL - Detail View Page:  " + sMessage, node);
+				Thread.sleep(3000);
+				
+				String sActDTCity= objDVP.getArrayDetails(18).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTCity, sCity, "City - Detail View Page:   " + sMessage, node);
+
+				String sActDTState= objDVP.getArrayDetails(19).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTState, sState, "State - Detail View Page:   " + sMessage, node);
+				
+				String sActDTCountry= objDVP.getArrayDetails(20).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTCountry, sCountry, "Country - Detail View Page:  " + sMessage, node);
+				
+				String sActDTRelatedModText= objDVP.getArrayDetails(21).trim();
+				UtilityCustomFunctions.fSoftAssert(sActDTRelatedModText, sRelatedModText, "Related Module Text - Detail View Page:  " + sMessage, node);
+				
+		}
+	
 	public void fValNotifySummaryAndDetail(String sCurrRecordId, String sAssignedTo, String sNotifyTemplMsg, String sActionTitle, ExtentTest node)
 			throws Exception {
 		NotificationsPage objNFP = new NotificationsPage(driver);
@@ -309,7 +574,7 @@ public class CRMReUsables extends BaseClass {
 			UtilityCustomFunctions.fSoftAssert(sAssignedTo, sAssignedTo, "AssignedTo Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActStatus, sStatus, "Status in Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActCreatedBy, sCreatedBy, "Created By in Record Details", node);
-			UtilityCustomFunctions.fSoftAssert(sActSummary, sNotifyTemplateMsg, "UserName in Record Details", node);
+			UtilityCustomFunctions.fSoftAssert(sActSummary, sNotifyTemplateMsg, "Summary in Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActTitle, sExpTitle, "Workflow Title in Record Details", node);
 			UtilityCustomFunctions.fSoftAssert(sActModRecId, sRecordId, "Record Id in Record Details", node);
 			break;
@@ -324,16 +589,20 @@ public class CRMReUsables extends BaseClass {
 		BaseClass.logger.info("Clicked Avatar");
 		System.out.println("Clicked Avatar");
 		objHP.clickAvatar();
+		Thread.sleep(2000);
 		objCRMs.clickMnuCRMSetting();
 		BaseClass.logger.info("Clicked Menu CRM Setting");
 		System.out.println("Clicked Menu CRM Setting");
 		objCRMs.clickMnuOtherSetting();
+		Thread.sleep(2000);
 		BaseClass.logger.info("Clicked Menu Other Setting");
 		System.out.println("Clicked Menu Other Setting");
 		objCRMs.clickMnuItemWorkflow();
+		Thread.sleep(2000);
 		BaseClass.logger.info("Clicked Menu Item Workflow");
 		System.out.println("Clicked Menu Item Workflow");
 		objWFP.fClickWorkflowsList(sModule);
+		Thread.sleep(2000);
 		BaseClass.logger.info("Selected Module to View its Workflows");
 		System.out.println("Selected Module to View its Workflows");
 
@@ -360,7 +629,7 @@ public class CRMReUsables extends BaseClass {
 		return bTaskStatus = objWFP.fValidateTaskStatus(sWorkflow, sActionType, sActionTitle);
 	}
 
-	public void fAddValuestoModulePage(String sEnv,String sExcelName,String sSheetName) throws Exception {
+	public void fAddValuestoModulePage(String sEnv,String sExcelName,String sSheetName,boolean IsAmend) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
@@ -467,7 +736,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.selectListValue2(sPickListValue);
 		UtilityCustomFunctions.logWriteConsole("Picklist selected: "+sPickListValue);
 		Thread.sleep(1000);
-		objCMD.clickMultiComboBox(sMultiComboValues);
+		objCMD.clickMultiComboBox(sMultiComboValues,IsAmend);
 		UtilityCustomFunctions.logWriteConsole("MultiCombo box values: " + sMultiComboValues);
 		Thread.sleep(1000);
 		objCMD.clickArrayDropDown(4);
@@ -1090,7 +1359,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(10000);
 	}
 	//Add Values to Entity Module
-	public void fAddValuestoEntityModule(String sEnv,String sExcelName,String sSheetName) throws Exception {
+	public void fAddValuestoEntityModule(String sEnv,String sExcelName,String sSheetName,boolean IsAmend) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
@@ -1192,15 +1461,16 @@ public class CRMReUsables extends BaseClass {
 		objCMD.setEmailValue(sExpModuleName, sEmail);
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Email Added is: "+sEmail);
-		objCMD.clickArrayDropDown(3);
 		
+		objCMD.clickArrayDropDown(3);
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Picklist clicked");
 		Thread.sleep(1000);
 		objCMD.selectListValue2(sPickListValue);
 		UtilityCustomFunctions.logWriteConsole("Picklist selected: "+sPickListValue);
+		
 		Thread.sleep(1000);
-		objCMD.clickMultiComboBox(sMultiComboValues);
+		objCMD.clickMultiComboBox(sMultiComboValues,IsAmend);
 		UtilityCustomFunctions.logWriteConsole("MultiCombo box values: " + sMultiComboValues);
 		Thread.sleep(1000);
 		objCMD.clickArrayDropDown(4);
@@ -1344,6 +1614,180 @@ public class CRMReUsables extends BaseClass {
 		
 		Thread.sleep(5000);
 	}
+	public void fAddValuestoETNotification(String sEnv,String sExcelName,String sSheetName,boolean isAmend) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\"+ sExcelName +"Test.xlsx";
+		}
+		else {
+			sPath=".\\testData\\" + sExcelName +"Live.xlsx";
+		}
+		ExcelUtility xlAddObj = new ExcelUtility(sPath);
+		UtilityCustomFunctions.logWriteConsole("Excel file Utility instance created");
+		
+		int iRowCount = xlAddObj.getRowCount(sSheetName);
+		System.out.println("Total rows: " + iRowCount);
+		UtilityCustomFunctions.logWriteConsole("Row Count to Add Values: " + iRowCount);
+
+		int iColCount = xlAddObj.getCellCount(sSheetName, iRowCount);
+
+		UtilityCustomFunctions.logWriteConsole("Col Count is: " + iColCount);	
+		UtilityCustomFunctions.logWriteConsole("Extracting DataSheet Values started...");		
+
+		String sExpModuleName = xlAddObj.getCellData(sSheetName, 1, 0);
+		String sExpWorkFlowName = xlAddObj.getCellData(sSheetName, 1, 1);
+		String sExpAssignedTo = xlAddObj.getCellData(sSheetName, 1, 2);
+		String sMobilePrefix = xlAddObj.getCellData(sSheetName, 1, 3);
+		String sMobileNumber = xlAddObj.getCellData(sSheetName, 1, 4);
+
+		String sEmail=xlAddObj.getCellData(sSheetName, 1, 5);
+		String sText=xlAddObj.getCellData(sSheetName, 1, 6);
+		String sMultiComboValues=xlAddObj.getCellData(sSheetName, 1, 7);
+		String sTextArea=xlAddObj.getCellData(sSheetName, 1, 8);
+		String sCheckBox=xlAddObj.getCellData(sSheetName, 1, 9);
+		String sDate=xlAddObj.getCellData(sSheetName, 1, 10);
+		String sPickList=xlAddObj.getCellData(sSheetName, 1, 11);
+		String sFile=xlAddObj.getCellData(sSheetName, 1, 12);
+		String sDateandTime =xlAddObj.getCellData(sSheetName, 1, 13);
+		String sTime =xlAddObj.getCellData(sSheetName, 1, 14);
+		String sNamePrefix =xlAddObj.getCellData(sSheetName, 1, 15);
+		String sName =xlAddObj.getCellData(sSheetName, 1, 16);
+		String sNumber =xlAddObj.getCellData(sSheetName, 1, 17);
+		String sCurrency=xlAddObj.getCellData(sSheetName, 1, 18);
+		String sURL=xlAddObj.getCellData(sSheetName, 1, 19);
+		String sCity=xlAddObj.getCellData(sSheetName, 1, 20);
+		String sState=xlAddObj.getCellData(sSheetName, 1, 21);
+		String sCountry=xlAddObj.getCellData(sSheetName, 1, 22);
+		String sRelatedModText =xlAddObj.getCellData(sSheetName, 1, 23);
+		System.out.println("Module Name:  " + sExpModuleName);
+		UtilityCustomFunctions.logWriteConsole("Before Adding Module data");
+		Thread.sleep(3000);
+		//Assigned To
+		objCMD.clickArrayDropDown(1);
+//		objCMD.clickAssignedTo();
+		UtilityCustomFunctions.logWriteConsole("Assinged To Drop Down clicked");
+		Thread.sleep(2000);
+		objCMD.selectListValue(sExpAssignedTo);
+		//Phone Number
+		objCMD.ClickListPhonePrefix(sExpModuleName,"mobilenumber_prefix-container");
+		UtilityCustomFunctions.logWriteConsole("Phone NUmber prefix clicked :  ");
+		objCMD.selectListValue(sMobilePrefix);
+		UtilityCustomFunctions.logWriteConsole("Phone NUmber selected is :  "+sMobileNumber);
+		objCMD.setMobileNumber(sMobileNumber);
+		Thread.sleep(1000);
+		//Email
+		Thread.sleep(1000);
+		objCMD.setEmailValue(sExpModuleName, sEmail);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("Email Added is: "+sEmail);
+		//Text
+		objCMD.setInputValue(sExpModuleName, "text",sText);
+		UtilityCustomFunctions.logWriteConsole("Text Value added is::  "+sText);
+		Thread.sleep(1000);
+		//MultiCombo Values
+		Thread.sleep(1000);
+		objCMD.clickMultiComboBox(sMultiComboValues,isAmend);
+		UtilityCustomFunctions.logWriteConsole("MultiCombo box values: " + sMultiComboValues);
+		Thread.sleep(1000);
+		//Text Area Value
+		objCMD.setTextAreaValue(sExpModuleName, "textarea", sTextArea);
+		//CheckBox
+		Thread.sleep(1000);
+		objCMD.clickArrayCheckBox(1, sCheckBox);
+		UtilityCustomFunctions.logWriteConsole("Checkbox clicked");
+		//Date
+		objCMD.clickDateBox(sExpModuleName, "date");
+		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
+		Thread.sleep(3000);
+		objCMD.clickDayInDate(1,"sDate");
+		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
+		Thread.sleep(1000);
+		//PickList
+		objCMD.clickArrayDropDown(3);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("Picklist clicked");
+		Thread.sleep(1000);
+		objCMD.selectListValue2(sPickList);
+		UtilityCustomFunctions.logWriteConsole("Picklist selected: "+sPickList);
+		//File Upload
+		objCMD.setUploadFile();
+		//Date & Time
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "datetime");
+		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
+		Thread.sleep(5000);
+		objCMD.clickDayInDate(2,"sDateandTime");
+		Thread.sleep(2000);
+		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
+		objCMD.clickDandTApply();
+		UtilityCustomFunctions.logWriteConsole("Date & Time Selected");
+		//Time
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "time");
+		UtilityCustomFunctions.logWriteConsole("Time Clicked");
+		objCMD.clickTime("2", "35");
+		UtilityCustomFunctions.logWriteConsole("Time Selected is: 02:35 PM");
+		Thread.sleep(1000);
+		
+		//Write Date, Time & Date&Time to Datasheet.
+		String sActDate = objCMD.fGetModuleValue(sExpModuleName, "date");
+		UtilityCustomFunctions.logWriteConsole("Actual Date Selected :" + sActDate);
+        xlAddObj.setCellData(sSheetName, 1, 10, sActDate);
+        
+        String sActDateandTime= objCMD.fGetModuleValue(sExpModuleName, "datetime");
+		System.out.println("Date & Time" + sActDateandTime);
+		xlAddObj.setCellData(sSheetName, 1, 13, sActDateandTime);
+		
+        String sActTime= objCMD.fGetModuleValue(sExpModuleName, "time");
+		System.out.println("Time" + sActTime);
+		xlAddObj.setCellData(sSheetName, 1, 14, sActTime);
+		
+		//Enter Name
+		objCMD.clickArrayDropDown(4);
+		objCMD.selectListValue(sNamePrefix);
+		objCMD.setInputValue(sExpModuleName, "name", sName);
+		
+		//Enter Number
+		objCMD.setInputNumber(sExpModuleName, "number", sNumber);
+		
+		//Enter Currency
+		objCMD.setInputValue(sExpModuleName, "currency", sCurrency);
+		
+		//Enter URL
+		objCMD.setGenericInputValue("url", sExpModuleName, "url", sURL);
+		
+		//City 
+		Thread.sleep(1000);
+		objCMD.clickArrayDropDown(5);
+		UtilityCustomFunctions.logWriteConsole("City Drop Down clicked");
+		objCMD.selectListValue(sCity);
+		UtilityCustomFunctions.logWriteConsole("City Selected: " + sCity);
+		Thread.sleep(1000);
+		//State
+		objCMD.clickArrayDropDown(6);
+		UtilityCustomFunctions.logWriteConsole("State Drop Down clicked");
+		objCMD.selectListValue(sState);
+		UtilityCustomFunctions.logWriteConsole("State Selected: "+sState);
+		Thread.sleep(1000);
+		//Country
+		objCMD.clickArrayDropDown(7);
+		UtilityCustomFunctions.logWriteConsole("Country List clicked");
+		objCMD.selectListValue(sCountry);
+		UtilityCustomFunctions.logWriteConsole("Country Selected: " + sCountry);
+		Thread.sleep(1000);
+		
+		//Related Module
+		objCMD.SelectRelModValue(sRelatedModText);
+		Thread.sleep(2000);		
+		
+		objCMD.clickSave();
+		
+		Thread.sleep(5000);
+		
+	}	
+	
+	
 	//Validate the Summary Page Values of Entity Module
 	public void fValidateEntityModuleSummary(String sEnv,String sExcelName,String sSheetName,String sMessage,String isNotify,ExtentTest node,boolean IsTarget) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);

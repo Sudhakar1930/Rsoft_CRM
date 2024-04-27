@@ -251,7 +251,7 @@ public class TC008_WF2_SN_Daily extends BaseClass {
 		
 		String sRecordId="";
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_Daily_","Sheet1");
+		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_Daily_","Sheet1",false);
 		Thread.sleep(5000);
 		URL sCurrentUrl = new URL(driver.getCurrentUrl());
 

@@ -8,10 +8,11 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.TC002_WF2_Send_Notify_OOF_S"/>
-		
+		 <class name="testCases.ExecuteTask.Notification.TC001_NT_ExecuteTask_CTAfterMinutes"/>
 	  <!--
-	  <class name="testCases.TC012_WF6_SN_Yearly"/>
+	  <class name="testCases.TC002_WF2_Send_Notify_OOF_S"/>
+	 
+	 
 	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
 		<class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
 		<class name="testCases.TC017_CreateEntity_OOFS_MultiSuccessCase"/>

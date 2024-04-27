@@ -12,6 +12,7 @@ public class HomePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
+//	@FindBy(xpath="(//a[@class='dropdown-toggle nav-link dropdown-user-link']//img)[2]")
 	@FindBy(xpath="//a[@class='dropdown-toggle nav-link dropdown-user-link']//img")
 	WebElement eleAvatar;
 	

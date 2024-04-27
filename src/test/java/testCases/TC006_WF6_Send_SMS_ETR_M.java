@@ -245,7 +245,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(2000);
 			
 			//**************Add New Record First Time
-			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet1");
+			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet1",false);
 
 			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet1","Direct Entry Module Data","No",node);
 			
@@ -315,7 +315,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objDVP.clickAddRecord();
 			Thread.sleep(3000);
 			//Add New Record and Check
-			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet2");
+			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet2",false);
 			Thread.sleep(3000);
 			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet2","Summary Add Data Validation","No",node);
 			//SMS Validation after Summary Add New
@@ -457,7 +457,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objCMD.clickExistingModData(1);
 			Thread.sleep(1000);
 			objDVP.clickDuplicateRecord();
-			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet3");
+			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet3",true);
 			Thread.sleep(5000);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
@@ -604,7 +604,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objCMD.clickEdit();
 			Thread.sleep(3000);
-			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet4");
+			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet4",true);
 			Thread.sleep(5000);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
