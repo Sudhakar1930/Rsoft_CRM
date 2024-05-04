@@ -12,6 +12,7 @@ import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.PHPMyAdminPage;
 import pageObjects.SummaryViewPage;
 import testBase.BaseClass;
 import utilities.CRMReUsables;
@@ -65,9 +66,11 @@ public class TC001_NT_ExecuteTask_CTAfterMinutes extends BaseClass{
 		CRMReUsables objCRMRs = new CRMReUsables();
 		DetailViewPage objDVP = new DetailViewPage(driver);
 		SummaryViewPage objSVP = new SummaryViewPage(driver);
-
+		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
+		BaseClass objBase = new BaseClass();
+		
 		driver.get(rb.getString("appURL"));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
 		String sUserName =  rb.getString("userName");
@@ -79,9 +82,22 @@ public class TC001_NT_ExecuteTask_CTAfterMinutes extends BaseClass{
 		String sUserName2 =  rb.getString("userName2");
 		String sPassword2 =  rb.getString("passWord2");
 		String sAssignedTo2 = rb.getString("AssignedTo2");
+		String sMySqlUid = rb.getString("MySqlUid");
+		String sMySqlPwd = rb.getString("MySqlPwd");
+		String sMySqlUrl= rb.getString("MySqlUrl");
 		
-		//Login as User 1
-		Thread.sleep(3000);
+		
+		boolean bFlag = false;
+		String sCurrModRecId ="";
+		String sOldModRecId="";
+		String sMySqlQuery = "";
+		String sCurrTaskId="";
+		String sReturnValue="";
+		String sCreatedTime="";
+		String sModifiedTime="";
+		String sRetrieveCTandMT="";
+		String sRetArr[];
+		String arrPhpRetArray[];
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
 			objLP.setCompanyName(sCompName);
 			objLP.setUserName(sUserName);
@@ -146,25 +162,353 @@ public class TC001_NT_ExecuteTask_CTAfterMinutes extends BaseClass{
 			}
 			
 		}//If
-		
+//		
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sExpModuleName);
 		
-//		UtilityCustomFunctions.logWriteConsole("Click Source Module:"+sExpModuleName);
-//		Thread.sleep(1000);
-//		objEDT.clickModule(sExpModuleName);
-//		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sExpModuleName);
-		objCRMRs.fClickFirstRecord();
+		UtilityCustomFunctions.logWriteConsole("Click Source Module:"+sExpModuleName);
+		Thread.sleep(1000);
+		objEDT.clickModule(sExpModuleName);
+		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sExpModuleName);
+//		objCRMRs.fClickFirstRecord();
 		Thread.sleep(2000);
-////		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet1",false);
-//		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet1",false);
+		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+		Thread.sleep(2000);
 		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet1","New Add Data in Summary Verification", node);
+		 sCurrModRecId = objCRMRs.getModuleRecordId();
+		
+		//Logout from CurrentUser
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		sRetrieveCTandMT = objPAP.getEntityCTandMT(sMySqlUrl, sMySqlUid, sMySqlPwd, "CT", sCurrModRecId,"rsoft_crmentity");
+		UtilityCustomFunctions.logWriteConsole("CT&MT after new record Add"+sRetrieveCTandMT);
+		
+		sRetArr = sRetrieveCTandMT.split(",");
+		
+		if(sRetArr[0]!="0") {
+			sCreatedTime = sRetArr[0]; 
+		}
+		if(sRetArr[1]!="0") {
+			sModifiedTime = sRetArr[1]; 
+		}
+		
+		UtilityCustomFunctions.logWriteConsole("After new  Record: " + sCreatedTime  + "  " + sModifiedTime);
+		
+
+		sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"Add New Record","M",sCreatedTime);
+
+		UtilityCustomFunctions.logWriteConsole("sReturnValue: After AddNew"+sReturnValue);	
+		arrPhpRetArray = sReturnValue.split(":");
+		
+		sCurrTaskId = arrPhpRetArray[1];
+		UtilityCustomFunctions.logWriteConsole("Entity Status: " + arrPhpRetArray[0] + " Current Task Id: "+ arrPhpRetArray[1] + "And Entity Id: " +sCurrModRecId);
+		if(Boolean.parseBoolean(arrPhpRetArray[0]) == false) {
+			 objBase.freport(" Actual EntityId: "+sCurrModRecId + " not created in DB @Add New Record" , "fail",node);
+			 UtilityCustomFunctions.logWriteConsole(" Actual EntityId: "+sCurrModRecId + " not created in DB @Add New Record"); 
+			 BaseClass.sAssertinFn.assertEquals(" Actual EntityId: "+sCurrModRecId + " not created in DB @Add New Record"," Actual EntityId: "+sCurrModRecId + "  created in DB @Add New Record");
+		}
+		
+		objLP.clickPHPMyAdminLogout();
+		Thread.sleep(1000);
+	
+		//********************************* Summary Add ************************************
+		driver.get(rb.getString("appURL"));
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickLoginSubmit();
+			
+		}
+		else {
+			logger.info("CRM Login failed");
+			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
+		}
+		
+		Thread.sleep(3000);
+		//****************************** Add Summary Data ********************************
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sExpModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		
+		objDVP.clickAddRecord();
+		Thread.sleep(3000);
+		
+		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet2",false);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet2","Summary Page Add Data", node);
+		Thread.sleep(2000);
+		sCurrModRecId = objCRMRs.getModuleRecordId();
+		
+		Thread.sleep(3000);
+		objHP.clickLogoutCRM();
+		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Record Id after summary add:" + sCurrModRecId);
+		sRetrieveCTandMT = objPAP.getEntityCTandMT(sMySqlUrl, sMySqlUid, sMySqlPwd, "CT", sCurrModRecId,"rsoft_crmentity");
+		UtilityCustomFunctions.logWriteConsole("CT&MT after summary Add"+sRetrieveCTandMT);
+		sRetArr = sRetrieveCTandMT.split(",");
+		
+		if(sRetArr[0]!="0") {
+			sCreatedTime = sRetArr[0]; 
+		}
+		if(sRetArr[1]!="0") {
+			sModifiedTime = sRetArr[1]; 
+		}
+		
+		UtilityCustomFunctions.logWriteConsole("After Summary Add" + sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
+		
+		sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"Summary New Record","M",sCreatedTime);
+			
+		arrPhpRetArray = sReturnValue.split(":");
+		
+		sCurrTaskId = arrPhpRetArray[1];
+		UtilityCustomFunctions.logWriteConsole("Entity Status: " + arrPhpRetArray[0] + " Current Task Id: "+ arrPhpRetArray[1] + "And Entity Id: " +sCurrModRecId);
+		if(Boolean.parseBoolean(arrPhpRetArray[0]) == false) {
+			 objBase.freport(" Actual EntityId: "+sCurrModRecId + " not created in DB @Summary New  Record" , "fail",node);
+			 UtilityCustomFunctions.logWriteConsole(" Actual EntityId: "+sCurrModRecId + " not created in DB @Summary New  Record"); 
+			 BaseClass.sAssertinFn.assertEquals(" Actual EntityId: "+sCurrModRecId + " not created in DB @Summary New  Record"," Actual EntityId: "+sCurrModRecId + "  created in DB @Summary New  Record");
+		}
+		
+		objLP.clickPHPMyAdminLogout();
+		Thread.sleep(1000);
+		
+		//********************************* Duplicate Add Record ************************************
+		//Login as User 1
+		driver.get(rb.getString("appURL"));
+		//Logout from CurrentUser
+//		Thread.sleep(2000);
+//		objHP.clickLogoutCRM();
+		Thread.sleep(3000);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickLoginSubmit();
+			
+		}
+		else {
+			logger.info("CRM Login failed");
+			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
+		}
+		//Click Duplicate & Add  New Record
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(1000);
+		objDVP.clickDuplicateRecord();		
+		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet3",true);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet3","Duplicate Record", node);
+		sCurrModRecId = objCRMRs.getModuleRecordId();
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		Thread.sleep(3000);
+		sRetrieveCTandMT = objPAP.getEntityCTandMT(sMySqlUrl, sMySqlUid, sMySqlPwd, "CT", sCurrModRecId,"rsoft_crmentity");
+		UtilityCustomFunctions.logWriteConsole("CT&MT after modified record "+sRetrieveCTandMT);
+		sRetArr = sRetrieveCTandMT.split(",");
+		
+		if(sRetArr[0]!="0") {
+			sCreatedTime = sRetArr[0]; 
+		}
+		if(sRetArr[1]!="0") {
+			sModifiedTime = sRetArr[1]; 
+		}
+		
+		UtilityCustomFunctions.logWriteConsole("After Duplicate Record "+sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
+		
+		sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"Duplicate Record","M",sCreatedTime);
+		UtilityCustomFunctions.logWriteConsole("Return Value: in Duplicate Previous Page " + sReturnValue);
+
+		
+		arrPhpRetArray = sReturnValue.split(":");
+		
+		sCurrTaskId = arrPhpRetArray[1];
+		UtilityCustomFunctions.logWriteConsole("Entity Status: " + arrPhpRetArray[0] + " Current Task Id: "+ arrPhpRetArray[1] + "And Entity Id: " +sCurrModRecId);
+		if(Boolean.parseBoolean(arrPhpRetArray[0]) == false) {
+			 objBase.freport(" Actual EntityId: "+sCurrModRecId + " not created in DB @Duplicate Record" , "fail",node);
+			 UtilityCustomFunctions.logWriteConsole(" Actual EntityId: "+sCurrModRecId + " not created in DB @duplicate record"); 
+			 BaseClass.sAssertinFn.assertEquals(" Actual EntityId: "+sCurrModRecId + " not created in DB @duplicate record"," Actual EntityId: "+sCurrModRecId + "  created in DB @duplicate record");
+		}
+		
+		Thread.sleep(3000);
+		objLP.clickPHPMyAdminLogout();
+		Thread.sleep(3000);
+		
+		//**************************** Edit with New Data *****************************
+		//Login as User 1
+		driver.get(rb.getString("appURL"));
+		Thread.sleep(3000);
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickLoginSubmit();
+			
+		}
+		else {
+			logger.info("CRM Login failed");
+			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
+		}
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(3000);
+		objCMD.clickEdit();
+		Thread.sleep(3000);
+		
+		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet4",true);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterMinutes_","Sheet4","Edit & Save Record", node);
+		sCurrModRecId = objCRMRs.getModuleRecordId();
+		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();		
+		
+		sRetrieveCTandMT = objPAP.getEntityCTandMT(sMySqlUrl, sMySqlUid, sMySqlPwd, "CT", sCurrModRecId,"rsoft_crmentity");
+		
+		UtilityCustomFunctions.logWriteConsole("CT&MT after edit & save"+sRetrieveCTandMT);
+		sRetArr = sRetrieveCTandMT.split(",");
+		
+		if(sRetArr[0]!="0") {
+			sCreatedTime = sRetArr[0]; 
+		}
+		if(sRetArr[1]!="0") {
+			sModifiedTime = sRetArr[1]; 
+		}
+		
+		UtilityCustomFunctions.logWriteConsole("After Edit & Save "+sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
 		
 		
+		sMySqlQuery = "SELECT * FROM `rsoft_workflowtask_queue` where `entity_id` ="+ sCurrModRecId + ";"; 
+		driver.get(sMySqlUrl);
+		objLP.setMySqlUserId(sMySqlUid);
+		objLP.setMySqlPasswd(sMySqlPwd);
+		Thread.sleep(3000);
+		objLP.clickMySqlSubmit();
+		Thread.sleep(3000);
 		
+
+		objPAP.Check_No_Entity("rsoft_workflowtask_queue",sCurrModRecId,sCurrTaskId,node, "Edit & Save",sCreatedTime,sModifiedTime);
+	
+			
+		objLP.clickPHPMyAdminLogout();
+		Thread.sleep(1000);
 		
+		//****************************** Single Line Summary Edit  ****************************
+		driver.get(rb.getString("appURL"));
+		Thread.sleep(3000);
+		//Login
+		if(objLP.isLoginPageDisplayed(sAppUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickLoginSubmit();
+			
+		}
+		else {
+			logger.info("CRM Login failed");
+			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
+		}
+		UtilityCustomFunctions.logWriteConsole("Before Single LIne Edit: Last Task Id: "+sCurrTaskId+" current record id "+ sCurrModRecId);
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
+		Thread.sleep(5000);
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Mobile Number Edit On in Summary Page");
+		objDVP.clickEditNotificationItem();
+		Thread.sleep(3000);
+//		sEditIndText = "1234567890";
+		objCMD.setGenericInputValue("tel", sExpModuleName, "mobilenumber", sEditIndText);
+		objDVP.clickNotifyRecItemSave(sExpModuleName,"mobilenumber");
+		UtilityCustomFunctions.logWriteConsole(sEditIndText + " Is Updated Text for Mobile Number@Single Line Edit");
+		Thread.sleep(5000);
+		
+		objSVP.fWaitTillControlVisible();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		
+		sCurrModRecId = objCRMRs.getModuleRecordId();
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+		
+		sRetrieveCTandMT = objPAP.getEntityCTandMT(sMySqlUrl, sMySqlUid, sMySqlPwd, "CT", sCurrModRecId,"rsoft_crmentity");
+		
+		UtilityCustomFunctions.logWriteConsole("CT&MT after Single line edit: "+sRetrieveCTandMT);
+		
+		sRetArr = sRetrieveCTandMT.split(",");
+		
+		if(sRetArr[0]!="0") {
+			sCreatedTime = sRetArr[0]; 
+		}
+		if(sRetArr[1]!="0") {
+			sModifiedTime = sRetArr[1]; 
+		}
+		
+		UtilityCustomFunctions.logWriteConsole("After Single Line Edit "+ sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
+		
+		sMySqlQuery = "SELECT * FROM `rsoft_workflowtask_queue` where `entity_id` ="+ sCurrModRecId + ";"; 
+		driver.get(sMySqlUrl);
+		objLP.setMySqlUserId(sMySqlUid);
+		objLP.setMySqlPasswd(sMySqlPwd);
+		Thread.sleep(3000);
+		objLP.clickMySqlSubmit();
+		Thread.sleep(3000);
+		
+		objPAP.Check_No_Entity("rsoft_workflowtask_queue",sCurrModRecId,sCurrTaskId,node, "Single Line Edit",sCreatedTime,sModifiedTime);
+	
+		if(objPAP.aClickNextPage()==true) {
+			objPAP.Check_No_Entity("rsoft_workflowtask_queue",sCurrModRecId,sCurrTaskId,node, "Single Line Edit",sCreatedTime,sModifiedTime);
+		}
+		
+		objLP.clickPHPMyAdminLogout();
+		Thread.sleep(1000);
 	}
 	
 }

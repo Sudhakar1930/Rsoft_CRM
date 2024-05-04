@@ -245,7 +245,12 @@ public class CreateModuleDataPage extends BasePage{
 		}
 		
 		WebElement eleMonth = driver.findElement(By.xpath(sXpath)); 
-		UtilityCustomFunctions.doClick(driver, eleMonth);
+		UtilityCustomFunctions.logWriteConsole("Current Month:" + objCRMRs.getTodayMonth());
+		Thread.sleep(2000);
+//		UtilityCustomFunctions.doClick(driver, eleMonth);
+		eleMonth.click();
+		Thread.sleep(2000);
+		UtilityCustomFunctions.logWriteConsole("Current Month:" + objCRMRs.getTodayMonth());
 		Thread.sleep(2000);
 		UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, objCRMRs.getTodayMonth());
 		Thread.sleep(2000);
@@ -253,13 +258,15 @@ public class CreateModuleDataPage extends BasePage{
 		eleYear.click();
 		Thread.sleep(1000);
 		String sYear =  Integer.toString(objCRMRs.getCurrentYear());
+		Thread.sleep(2000);
+		UtilityCustomFunctions.logWriteConsole("Year to be selected is:" + sYear);
 		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
 		
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
 		UtilityCustomFunctions.logWriteConsole(sDateXpath);
 		WebElement eleDate = driver.findElement(By.xpath(sDateXpath));
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		eleDate.click();
 //		UtilityCustomFunctions.doClick(driver, eleDate);
 	}
@@ -323,9 +330,11 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	public void clickMultiComboBox(String sMS_Value,boolean IsAmend) throws Exception {
 		txtMultiComboBox.click();
+		Thread.sleep(1000);
 		if(IsAmend==true) {
 			fRemMultiComboValues();
 		}
+		Thread.sleep(1000);
 		System.out.println("After get attribute in combo box");
 		Thread.sleep(1000);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", txtMultiComboBox);

@@ -230,7 +230,8 @@ public class DetailViewPage extends BasePage{
 		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
 		Thread.sleep(2000);
 		action.moveToElement(eleArrSummary).perform();
-		String sXpath="//td[@class='rs_col_2']//div[@class='col-lg-2']/i[@data_fieldid='5800']";
+		//String sXpath="//td[@class='rs_col_2']//div[@class='col-lg-2']/i[@data_fieldid='5800']";
+		String sXpath = "(//td[@class='rs_col_2']//div[@class='col-lg-2'])[1]";
 		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
 		eleRecEdit.click();
 	}
@@ -254,7 +255,8 @@ public class DetailViewPage extends BasePage{
 	public void clickNotifyRecItemSave(String sModuleName,String sControlType) throws Exception {
 		
 		String sXpath="//span[@data-colname='"+sModuleName.toLowerCase()+"_"+sControlType+"']";
-		WebElement btnSingleLineSave = driver.findElement(By.xpath(sXpath));	
+		WebElement btnSingleLineSave = driver.findElement(By.xpath(sXpath));
+		Thread.sleep(2000);
 		UtilityCustomFunctions.doClick(driver, btnSingleLineSave);
 	}
 	

@@ -11,7 +11,9 @@ import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -22,13 +24,37 @@ import pageObjects.CRMSettingsPage;
 import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
+import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
+import pageObjects.PHPMyAdminPage;
 import pageObjects.SummaryViewPage;
 import pageObjects.WorkFlowPage;
 import utilities.UtilityCustomFunctions;
 import utilities.ExcelUtility;
 
 public class CRMReUsables extends BaseClass {
+	
+		public String getModuleRecordId() throws MalformedURLException {
+			String sCurrRecordId="";
+			try {
+			URL sCurrentUrl = new URL(driver.getCurrentUrl());
+			String sUrlQuery = sCurrentUrl.getQuery();
+			String sQryArray[] =sUrlQuery.split("=");
+			for(int i = 0;i<sQryArray.length;i++) {
+				System.out.println("Split - " + i + "Value is: " + sQryArray[i]);
+				if(i==3) {
+					String sArrayRecId[] = sQryArray[i].split("&");
+					System.out.println("Record Id is:" + sArrayRecId[0]);
+					sCurrRecordId = sArrayRecId[0];
+					break;
+				}
+			}
+			}catch(Exception e) {
+				sCurrRecordId = "0";
+				System.out.println(e.getCause());
+			}
+			return sCurrRecordId;
+		}
 	
 		public String fOpenNotification(String sCurrWinHandle) throws Exception {
 		String sActualWindow = "";
@@ -369,11 +395,15 @@ public class CRMReUsables extends BaseClass {
 				
 				String sExpName = sNamePrefix + " " + sName;
 				String sActName = objDVP.getArraySummary(11).trim();
-				String sNameArray[] = sActName.split("\\s+");
-				sActName = sNameArray[0].trim() + " " + sNameArray[1].trim();
-				UtilityCustomFunctions.logWriteConsole("ActualName:"+sActName+"ExpectedName:"+sExpName);
-				UtilityCustomFunctions.fSoftAssert(sActName, sExpName, "Name - Summary View Page:   " + sMessage, node);
-				
+				if(sActName== null || sActName.isEmpty()) {
+					String sNameArray[] = sActName.split("\\s+");
+					sActName = sNameArray[0].trim() + " " + sNameArray[1].trim();
+					UtilityCustomFunctions.logWriteConsole("ActualName:"+sActName+"ExpectedName:"+sExpName);
+					UtilityCustomFunctions.fSoftAssert(sActName, sExpName, "Name - Summary View Page:   " + sMessage, node);
+				}
+				else {
+					UtilityCustomFunctions.fSoftAssert("", sExpName, "Name - Summary View Page:   " + sMessage, node);
+				}
 				String sActNumber = objDVP.getArraySummary(12).trim();
 				UtilityCustomFunctions.fSoftAssert(sActNumber, sNumber, "Number - Summary View Page:   " + sMessage, node);
 				
@@ -381,10 +411,13 @@ public class CRMReUsables extends BaseClass {
 				UtilityCustomFunctions.fSoftAssert(sActCurrency, sCurrency, "Currency - Summary View Page:   " + sMessage, node);
 				
 				String sActUrl = objDVP.getSummaryUrl().trim();
-				UtilityCustomFunctions.fSoftAssert(sActUrl, sURL, "URL - Summary View Page:  " + sMessage, node);
-				
-				String sActCity = objDVP.getArraySummary(15).trim();
-				UtilityCustomFunctions.fSoftAssert(sActCity, sCity, "City - Summary View Page: " + sMessage, node);
+				if(sActUrl!=null) {
+					UtilityCustomFunctions.fSoftAssert(sActUrl, sURL, "URL - Summary View Page:  " + sMessage, node);
+				}
+				String sActCity="";
+				if(objDVP.getArraySummary(15).trim()!=null) {
+					UtilityCustomFunctions.fSoftAssert(sActCity, sCity, "City - Summary View Page: " + sMessage, node);
+				}
 				
 				String sActState = objDVP.getArraySummary(16).trim();
 				UtilityCustomFunctions.fSoftAssert(sActState, sState, "State - Summary View Page:" + sMessage, node);
@@ -1717,6 +1750,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "datetime");
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
+		//For Modifying record Index 2 value passed.
 		objCMD.clickDayInDate(2,"sDateandTime");
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
@@ -1779,11 +1813,9 @@ public class CRMReUsables extends BaseClass {
 		
 		//Related Module
 		objCMD.SelectRelModValue(sRelatedModText);
-		Thread.sleep(2000);		
-		
+		Thread.sleep(1000);		
 		objCMD.clickSave();
-		
-		Thread.sleep(5000);
+		Thread.sleep(1000);		
 		
 	}	
 	
@@ -2385,5 +2417,5 @@ public class CRMReUsables extends BaseClass {
 		
 	}
 	
-	
-}
+
+	}

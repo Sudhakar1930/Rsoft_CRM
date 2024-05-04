@@ -46,7 +46,7 @@ public class UtilityCustomFunctions extends BaseClass{
 		boolean bIsElementVisible=false;
 		try {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		wait.until(ExpectedConditions.visibilityOf(element));
 		js.executeScript("arguments[0].scrollIntoView();", element);
@@ -151,7 +151,10 @@ public class UtilityCustomFunctions extends BaseClass{
 				List<WebElement> options = element.findElements(By.tagName("option"));
 				for (WebElement option : options) {
 					if (textValue.equalsIgnoreCase(option.getText().trim())) {
+						Thread.sleep(1000);
 						option.click();
+						option.sendKeys(Keys.ENTER);
+						Thread.sleep(1000);
 						System.out.println("[" + textValue + "] is selected");
 						BaseClass.logger.info("[" + textValue + "] is selected in Dropdown");
 						flag = true;

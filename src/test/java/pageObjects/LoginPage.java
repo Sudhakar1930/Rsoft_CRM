@@ -37,6 +37,10 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//*[@id='input_go']")
 	WebElement txtMysqlGo;
 	
+	@FindBy(xpath="//a/img[@class='icon ic_s_loggoff']")
+	WebElement btnPHPLogout;
+	
+	
 	
 	
 	
@@ -73,6 +77,10 @@ public class LoginPage extends BasePage {
 		UtilityCustomFunctions.doClick(driver, lnkEyeIcon);
 	}
 	
+	public void clickPHPMyAdminLogout() throws Exception {
+		UtilityCustomFunctions.doClick(driver, btnPHPLogout);
+		
+	}
 	
 	//IsMethods
 	public boolean isLoginPageDisplayed(String sCRMUrl) throws InterruptedException {
