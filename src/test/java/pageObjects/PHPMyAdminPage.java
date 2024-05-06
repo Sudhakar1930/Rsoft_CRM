@@ -434,6 +434,44 @@ public class PHPMyAdminPage extends BasePage{
 				
 			}
 	}
+	public boolean IsEntityInQueue(String Url,String Uid,String pwd,String sTable,String sEntityId) throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		LoginPage objLP = new LoginPage(driver);
+		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
+		boolean bFlag = false;
+		driver.get(Url);
+		objLP.setMySqlUserId(Uid);
+		objLP.setMySqlPasswd(pwd);
+		Thread.sleep(3000);
+		objLP.clickMySqlSubmit();
+		Thread.sleep(3000);
+		objPAP.clickDBLink();
+		Thread.sleep(3000);
+		objPAP.setTableInDB(sTable);
+		Thread.sleep(2000);
+		objPAP.clickTableLink(sTable);
+		Thread.sleep(3000);
+		objPAP.aLastPage();
+		Thread.sleep(2000);
+		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
+		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
+		objPAP.setRecordId(sEntityId);
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		for(int i=0;i<tRows.size();i++) {
+			js.executeScript("arguments[0].scrollIntoView();", tRows.get(i));
+			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
+			String sActEntityId = tCols.get(5).getText();
+			if(sEntityId.equalsIgnoreCase(sActEntityId)) {
+				bFlag = true;
+				break;
+			}
+		}
+		return bFlag;
+	}
 	public String check_ET_Notify_CT(String Url,String Uid,String pwd,String sTable,String sEntityId,ExtentTest Node,String sMessage,String sDiffType,String sCreatedTime) throws Exception {
 		LoginPage objLP = new LoginPage(driver);
 		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
@@ -453,14 +491,12 @@ public class PHPMyAdminPage extends BasePage{
 		Thread.sleep(2000);
 		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
 		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");
-//		eleSelect.selectByValue("PRIMARY (DESC)");
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
 		objPAP.setRecordId(sEntityId);
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
 		
-		UtilityCustomFunctions.logWriteConsole("Within check_ET_Notify_CT Method");
 		boolean bFlag = false;
 		String sActTaskId = "0"; 
 		String sRetValue = "";
