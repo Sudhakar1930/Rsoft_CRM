@@ -460,7 +460,7 @@ public class PHPMyAdminPage extends BasePage{
 		objPAP.setRecordId(sEntityId);
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
-		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[contains(not(@class='off ends')])"));
 		for(int i=0;i<tRows.size();i++) {
 			js.executeScript("arguments[0].scrollIntoView();", tRows.get(i));
 			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
@@ -472,6 +472,45 @@ public class PHPMyAdminPage extends BasePage{
 		}
 		return bFlag;
 	}
+	public String fGetExecutionStartTime(String Url,String Uid,String pwd,String sTable,String sEntityId) throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		LoginPage objLP = new LoginPage(driver);
+		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
+		String sExec_StartTime="";
+		driver.get(Url);
+		objLP.setMySqlUserId(Uid);
+		objLP.setMySqlPasswd(pwd);
+		Thread.sleep(3000);
+		objLP.clickMySqlSubmit();
+		Thread.sleep(3000);
+		objPAP.clickDBLink();
+		Thread.sleep(3000);
+		objPAP.setTableInDB(sTable);
+		Thread.sleep(2000);
+		objPAP.clickTableLink(sTable);
+		Thread.sleep(3000);
+		objPAP.aLastPage();
+		Thread.sleep(2000);
+		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
+		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
+		objPAP.setRecordId(sEntityId);
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		for(int i=0;i<tRows.size();i++) {
+			js.executeScript("arguments[0].scrollIntoView();", tRows.get(i));
+			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
+			String sActEntityId = tCols.get(5).getText();
+			if(sEntityId.equalsIgnoreCase(sActEntityId)) {
+				sExec_StartTime = tCols.get(20).getText();
+				break;
+			}
+		}
+		return sExec_StartTime;
+	}
+	
 	public String check_ET_Notify_CT(String Url,String Uid,String pwd,String sTable,String sEntityId,ExtentTest Node,String sMessage,String sDiffType,String sCreatedTime) throws Exception {
 		LoginPage objLP = new LoginPage(driver);
 		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);

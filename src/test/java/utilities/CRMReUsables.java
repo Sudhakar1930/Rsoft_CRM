@@ -2417,5 +2417,217 @@ public class CRMReUsables extends BaseClass {
 		
 	}
 	
+	//***************************
+	public void fAddValuestoETBySpecificValues(String sEnv,String sExcelName,String sSheetName,boolean isAmend,String sAddType) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\"+ sExcelName +"Test.xlsx";
+		}
+		else {
+			sPath=".\\testData\\" + sExcelName +"Live.xlsx";
+		}
+		ExcelUtility xlAddObj = new ExcelUtility(sPath);
+		UtilityCustomFunctions.logWriteConsole("Excel file Utility instance created");
+		
+		int iRowCount = xlAddObj.getRowCount(sSheetName);
+		System.out.println("Total rows: " + iRowCount);
+		UtilityCustomFunctions.logWriteConsole("Row Count to Add Values: " + iRowCount);
+
+		int iColCount = xlAddObj.getCellCount(sSheetName, iRowCount);
+
+		UtilityCustomFunctions.logWriteConsole("Col Count is: " + iColCount);	
+		UtilityCustomFunctions.logWriteConsole("Extracting DataSheet Values started...");		
+
+		String sExpModuleName = xlAddObj.getCellData(sSheetName, 1, 0);
+		String sExpWorkFlowName = xlAddObj.getCellData(sSheetName, 1, 1);
+		String sExpAssignedTo = xlAddObj.getCellData(sSheetName, 1, 2);
+		String sMobilePrefix = xlAddObj.getCellData(sSheetName, 1, 3);
+		String sMobileNumber = xlAddObj.getCellData(sSheetName, 1, 4);
+
+		String sEmail=xlAddObj.getCellData(sSheetName, 1, 5);
+		String sText=xlAddObj.getCellData(sSheetName, 1, 6);
+		String sMultiComboValues=xlAddObj.getCellData(sSheetName, 1, 7);
+		String sTextArea=xlAddObj.getCellData(sSheetName, 1, 8);
+		String sCheckBox=xlAddObj.getCellData(sSheetName, 1, 9);
+		String sDate=xlAddObj.getCellData(sSheetName, 1, 10);
+		String sPickList=xlAddObj.getCellData(sSheetName, 1, 11);
+		String sFile=xlAddObj.getCellData(sSheetName, 1, 12);
+		String sDateandTime =xlAddObj.getCellData(sSheetName, 1, 13);
+		String sTime =xlAddObj.getCellData(sSheetName, 1, 14);
+		String sNamePrefix =xlAddObj.getCellData(sSheetName, 1, 15);
+		String sName =xlAddObj.getCellData(sSheetName, 1, 16);
+		String sNumber =xlAddObj.getCellData(sSheetName, 1, 17);
+		String sCurrency=xlAddObj.getCellData(sSheetName, 1, 18);
+		String sURL=xlAddObj.getCellData(sSheetName, 1, 19);
+		String sCity=xlAddObj.getCellData(sSheetName, 1, 20);
+		String sState=xlAddObj.getCellData(sSheetName, 1, 21);
+		String sCountry=xlAddObj.getCellData(sSheetName, 1, 22);
+		String sRelatedModText =xlAddObj.getCellData(sSheetName, 1, 23);
+		System.out.println("Module Name:  " + sExpModuleName);
+		UtilityCustomFunctions.logWriteConsole("Before Adding Module data");
+		Thread.sleep(3000);
+		//Assigned To
+		objCMD.clickArrayDropDown(1);
+//		objCMD.clickAssignedTo();
+		UtilityCustomFunctions.logWriteConsole("Assinged To Drop Down clicked");
+		Thread.sleep(2000);
+		objCMD.selectListValue(sExpAssignedTo);
+		//Phone Number
+		objCMD.ClickListPhonePrefix(sExpModuleName,"mobilenumber_prefix-container");
+		UtilityCustomFunctions.logWriteConsole("Phone NUmber prefix clicked :  ");
+		objCMD.selectListValue(sMobilePrefix);
+		UtilityCustomFunctions.logWriteConsole("Phone NUmber selected is :  "+sMobileNumber);
+		objCMD.setMobileNumber(sMobileNumber);
+		Thread.sleep(1000);
+		//Email
+		Thread.sleep(1000);
+		objCMD.setEmailValue(sExpModuleName, sEmail);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("Email Added is: "+sEmail);
+		//Text
+		objCMD.setInputValue(sExpModuleName, "text",sText);
+		UtilityCustomFunctions.logWriteConsole("Text Value added is::  "+sText);
+		Thread.sleep(1000);
+		//MultiCombo Values
+		Thread.sleep(1000);
+		objCMD.clickMultiComboBox(sMultiComboValues,isAmend);
+		UtilityCustomFunctions.logWriteConsole("MultiCombo box values: " + sMultiComboValues);
+		Thread.sleep(1000);
+		//Text Area Value
+		objCMD.setTextAreaValue(sExpModuleName, "textarea", sTextArea);
+		//CheckBox
+		Thread.sleep(1000);
+		objCMD.clickArrayCheckBox(1, sCheckBox);
+		UtilityCustomFunctions.logWriteConsole("Checkbox clicked");
+		//Date
+		objCMD.clickDateBox(sExpModuleName, "date");
+		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
+		Thread.sleep(3000);
+		if(sAddType.equalsIgnoreCase("sDate")) {
+			Thread.sleep(3000);
+			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
+			boolean bFound = false;
+			int iCurrDate=0;
+			String sDateXpath="(//td[contains(@class,'today')])[1]";
+			WebElement eleCurrDate = driver.findElement(By.xpath(sDateXpath));
+			String sActCurrDate = eleCurrDate.getText();
+			iCurrDate = Integer.parseInt(sActCurrDate);
+			int jCounter=iCurrDate+3;
+			Date dMonthDate = new Date();
+			@SuppressWarnings("deprecation")
+			int iMonthIndex = dMonthDate.getMonth(); 
+			Calendar calendar1 = Calendar.getInstance();
+			calendar1.set(Calendar.MONTH, iMonthIndex);
+			int iMonthLastDay = calendar1.getActualMaximum(calendar1.DAY_OF_MONTH); 
+			System.out.println("Last day of current month:" + iMonthLastDay);
+			System.out.println("j counter:" + jCounter);
+			if(jCounter >iMonthLastDay) {
+				System.out.println("Select next month");
+			}
+			for(int i=2;i<sDateRows.size();i++) {
+				System.out.println("Table Row: " + i);
+				List<WebElement> sDateCols = sDateRows.get(i).findElements(By.tagName("td"));
+				for(int j=0;j<sDateCols.size();j++) {
+					String sDay = sDateCols.get(j).getText();
+					if(jCounter==Integer.parseInt(sDay)) {
+						sDateCols.get(j).click();
+						bFound = true;
+						break;
+					}
+				}
+				if(bFound == true) {
+					break;
+				}
+				
+			}
+			Thread.sleep(1000);
+		}else {
+			objCMD.clickDayInDate(1,"sDate");
+			UtilityCustomFunctions.logWriteConsole("Today Date Selected");
+			Thread.sleep(1000);
+		}
+		//PickList
+		objCMD.clickArrayDropDown(3);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.logWriteConsole("Picklist clicked");
+		Thread.sleep(1000);
+		objCMD.selectListValue2(sPickList);
+		UtilityCustomFunctions.logWriteConsole("Picklist selected: "+sPickList);
+		//File Upload
+		objCMD.setUploadFile();
+		//Date & Time
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "datetime");
+		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
+		Thread.sleep(5000);
+		//For Modifying record Index 2 value passed.
+		objCMD.clickDayInDate(2,"sDateandTime");
+		Thread.sleep(2000);
+		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
+		objCMD.clickDandTApply();
+		UtilityCustomFunctions.logWriteConsole("Date & Time Selected");
+		//Time
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "time");
+		UtilityCustomFunctions.logWriteConsole("Time Clicked");
+		objCMD.clickTime("2", "35");
+		UtilityCustomFunctions.logWriteConsole("Time Selected is: 02:35 PM");
+		Thread.sleep(1000);
+		
+		//Write Date, Time & Date&Time to Datasheet.
+		String sActDate = objCMD.fGetModuleValue(sExpModuleName, "date");
+		UtilityCustomFunctions.logWriteConsole("Actual Date Selected :" + sActDate);
+        xlAddObj.setCellData(sSheetName, 1, 10, sActDate);
+        xlAddObj.setCellData(sSheetName, 1, 33, sActDate);
+        String sActDateandTime= objCMD.fGetModuleValue(sExpModuleName, "datetime");
+		System.out.println("Date & Time" + sActDateandTime);
+		xlAddObj.setCellData(sSheetName, 1, 13, sActDateandTime);
+		
+        String sActTime= objCMD.fGetModuleValue(sExpModuleName, "time");
+		System.out.println("Time" + sActTime);
+		xlAddObj.setCellData(sSheetName, 1, 14, sActTime);
+		
+		//Enter Name
+		objCMD.clickArrayDropDown(4);
+		objCMD.selectListValue(sNamePrefix);
+		objCMD.setInputValue(sExpModuleName, "name", sName);
+		
+		//Enter Number
+		objCMD.setInputNumber(sExpModuleName, "number", sNumber);
+		
+		//Enter Currency
+		objCMD.setInputValue(sExpModuleName, "currency", sCurrency);
+		
+		//Enter URL
+		objCMD.setGenericInputValue("url", sExpModuleName, "url", sURL);
+		
+		//City 
+		Thread.sleep(1000);
+		objCMD.clickArrayDropDown(5);
+		UtilityCustomFunctions.logWriteConsole("City Drop Down clicked");
+		objCMD.selectListValue(sCity);
+		UtilityCustomFunctions.logWriteConsole("City Selected: " + sCity);
+		Thread.sleep(1000);
+		//State
+		objCMD.clickArrayDropDown(6);
+		UtilityCustomFunctions.logWriteConsole("State Drop Down clicked");
+		objCMD.selectListValue(sState);
+		UtilityCustomFunctions.logWriteConsole("State Selected: "+sState);
+		Thread.sleep(1000);
+		//Country
+		objCMD.clickArrayDropDown(7);
+		UtilityCustomFunctions.logWriteConsole("Country List clicked");
+		objCMD.selectListValue(sCountry);
+		UtilityCustomFunctions.logWriteConsole("Country Selected: " + sCountry);
+		Thread.sleep(1000);
+		
+		//Related Module
+		objCMD.SelectRelModValue(sRelatedModText);
+		Thread.sleep(1000);		
+		objCMD.clickSave();
+		Thread.sleep(1000);		
+		
+	}	
 
 	}
