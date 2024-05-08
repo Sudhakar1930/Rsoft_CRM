@@ -303,7 +303,7 @@ public class CreateModuleDataPage extends BasePage{
 	public void clickDandTApply() throws Exception {
 		UtilityCustomFunctions.doClick(driver, DandTApply);
 	}
-	public void clickTime(String sHours,String sMinues) throws Exception {
+	public void clickTime(String sHours,String sMinues,String sSeconds) throws Exception {
 	Actions action = new Actions(driver);
 	Thread.sleep(3000);	
 	//String xPathHours = "//div[normalize-space()='" +sHours+ "']";
@@ -318,7 +318,7 @@ public class CreateModuleDataPage extends BasePage{
 	eleMinutes.click();
 //	UtilityCustomFunctions.doActionClick(driver, eleMinutes);
 	Thread.sleep(3000);
-	int  sSeconds = 55;
+//	int  sSeconds = 55;
 	String xPathSeconds = "(//div[@class='popover-content']//div[@class='clockpicker-tick' and text()='"+ sSeconds +"'])[2]";
 	WebElement eleZeroZero = driver.findElement(By.xpath(xPathSeconds));
 	Thread.sleep(2000);

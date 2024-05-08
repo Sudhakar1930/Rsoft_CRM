@@ -164,8 +164,9 @@ public class PHPMyAdminPage extends BasePage{
 	
 	public void clickTableLink(String sTableName) throws Exception {
 		WebElement eleLink = driver.findElement(By.linkText(sTableName));
-		Thread.sleep(1000);
-		UtilityCustomFunctions.doClick(driver, eleLink);
+		Thread.sleep(2000);
+		eleLink.click();
+//		UtilityCustomFunctions.doClick(driver, eleLink);
 		
 	}
 	
@@ -489,7 +490,7 @@ public class PHPMyAdminPage extends BasePage{
 		Thread.sleep(2000);
 		objPAP.clickTableLink(sTable);
 		Thread.sleep(3000);
-		objPAP.aLastPage();
+//		objPAP.aLastPage();
 		Thread.sleep(2000);
 		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
 		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");

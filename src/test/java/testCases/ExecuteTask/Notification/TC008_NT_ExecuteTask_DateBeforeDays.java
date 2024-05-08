@@ -179,7 +179,7 @@ public class TC008_NT_ExecuteTask_DateBeforeDays extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DateBeforeDays_","Sheet1",false,"sDate");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DateBeforeDays_","Sheet1","New Add Data in Summary Verification", node);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DateBeforeDays_","Sheet1","New Add Data in Summary Verification", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		Thread.sleep(2000);

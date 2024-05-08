@@ -797,7 +797,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
 		UtilityCustomFunctions.logWriteConsole("Time Clicked");
-		objCMD.clickTime("2", "35");
+		objCMD.clickTime("2", "35","55");
 		UtilityCustomFunctions.logWriteConsole("Time Selected is: 02:36 PM");
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "datetime");
@@ -1531,7 +1531,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
 		UtilityCustomFunctions.logWriteConsole("Time Clicked");
-		objCMD.clickTime("2", "35");
+		objCMD.clickTime("2", "35","55");
 		UtilityCustomFunctions.logWriteConsole("Time Selected is: 02:36 PM");
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "datetime");
@@ -1760,7 +1760,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
 		UtilityCustomFunctions.logWriteConsole("Time Clicked");
-		objCMD.clickTime("2", "35");
+		objCMD.clickTime("2", "35","55");
 		UtilityCustomFunctions.logWriteConsole("Time Selected is: 02:35 PM");
 		Thread.sleep(1000);
 		
@@ -2464,6 +2464,9 @@ public class CRMReUsables extends BaseClass {
 		String sState=xlAddObj.getCellData(sSheetName, 1, 21);
 		String sCountry=xlAddObj.getCellData(sSheetName, 1, 22);
 		String sRelatedModText =xlAddObj.getCellData(sSheetName, 1, 23);
+		String sTimeHour = xlAddObj.getCellData(sSheetName, 1, 33);
+		String sTimeMinutes = xlAddObj.getCellData(sSheetName, 1, 34);
+		String sTimeSeconds = xlAddObj.getCellData(sSheetName, 1, 34);
 		System.out.println("Module Name:  " + sExpModuleName);
 		UtilityCustomFunctions.logWriteConsole("Before Adding Module data");
 		Thread.sleep(3000);
@@ -2571,15 +2574,17 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
 		UtilityCustomFunctions.logWriteConsole("Time Clicked");
-		objCMD.clickTime("2", "35");
-		UtilityCustomFunctions.logWriteConsole("Time Selected is: 02:35 PM");
+		
+		
+		objCMD.clickTime(sTimeHour, sTimeMinutes,sTimeSeconds);
+		
 		Thread.sleep(1000);
 		
 		//Write Date, Time & Date&Time to Datasheet.
 		String sActDate = objCMD.fGetModuleValue(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("Actual Date Selected :" + sActDate);
         xlAddObj.setCellData(sSheetName, 1, 10, sActDate);
-        xlAddObj.setCellData(sSheetName, 1, 33, sActDate);
+        
         String sActDateandTime= objCMD.fGetModuleValue(sExpModuleName, "datetime");
 		System.out.println("Date & Time" + sActDateandTime);
 		xlAddObj.setCellData(sSheetName, 1, 13, sActDateandTime);
