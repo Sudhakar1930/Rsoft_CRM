@@ -2,6 +2,8 @@ package pageObjects;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -117,9 +119,20 @@ public class CreateModuleDataPage extends BasePage{
 	
 	@FindBy(xpath = "//i[@class='fa fa-search searchicon']")
 	WebElement btnRelativeSearch;
-
 	
-		
+	@FindBy(xpath = "//div[@class='calendar-time']/select[@class='hourselect']") 
+	WebElement eleDTHour;
+	
+	@FindBy(xpath = "//div[@class='calendar-time']/select[@class='minuteselect']") 
+	WebElement eleDTMinute;
+	
+	@FindBy(xpath = "//div[@class='calendar-time']/select[@class='secondselect']") 
+	WebElement eleDTSecond;
+	
+	@FindBy(xpath = "//div[@class='calendar-time']/select[@class='ampmselect']") 
+	WebElement eleDTAMPM;
+	
+	
 	public void clickRelativeSearch() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnRelativeSearch);
 	}
@@ -262,17 +275,53 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.logWriteConsole("Year to be selected is:" + sYear);
 		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
 		
-		Thread.sleep(3000);
-		String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
-		UtilityCustomFunctions.logWriteConsole(sDateXpath);
-		WebElement eleDate = driver.findElement(By.xpath(sDateXpath));
-		Thread.sleep(3000);
-		eleDate.click();
-//		UtilityCustomFunctions.doClick(driver, eleDate);
+		if(!sControlType.equalsIgnoreCase("sDateandTime")) {
+			Thread.sleep(3000);
+			String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
+			UtilityCustomFunctions.logWriteConsole(sDateXpath);
+			WebElement eleDate = driver.findElement(By.xpath(sDateXpath));
+			Thread.sleep(3000);
+			eleDate.click();
+		}
+		else {
+			Thread.sleep(3000);
+			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
+			boolean bFound = false;
+			int iCurrDate=0;
+			String sDateXpath="(//td[contains(@class,'today')])[2]";
+			WebElement eleCurrDate = driver.findElement(By.xpath(sDateXpath));
+			String sActCurrDate = eleCurrDate.getText();
+			iCurrDate = Integer.parseInt(sActCurrDate);
+			int jCounter=iCurrDate+3;
+			Date dMonthDate = new Date();
+			@SuppressWarnings("deprecation")
+			int iMonthIndex = dMonthDate.getMonth(); 
+			Calendar calendar1 = Calendar.getInstance();
+			calendar1.set(Calendar.MONTH, iMonthIndex);
+			int iMonthLastDay = calendar1.getActualMaximum(calendar1.DAY_OF_MONTH); 
+			System.out.println("Last day of current month:" + iMonthLastDay);
+			System.out.println("j counter:" + jCounter);
+			if(jCounter >iMonthLastDay) {
+				System.out.println("Select next month");
+			}
+			List<WebElement> sDateCols = driver.findElements(By.xpath("(//table[@class='table-condensed'])[3]//td"));
+			for(int i = 0;i<sDateCols.size();i++) {
+				String sDay = sDateCols.get(i).getText();
+				if(jCounter==Integer.parseInt(sDay)) {
+					sDateCols.get(i).click();
+					System.out.println("Inside if sDay Value is: " + i + "Column: " + sDay);
+                    UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,"5","option");
+                    UtilityCustomFunctions.selectItemfromListBox(driver,eleDTMinute,"00","option");
+                    UtilityCustomFunctions.selectItemfromListBox(driver,eleDTSecond,"00","option");
+                    UtilityCustomFunctions.selectItemfromListBox(driver,eleDTAMPM,"PM","option");
+                    bFound = true;
+                    break;
+				}
+			}
+			
+		}//if sDateandTime
+
 	}
-	
-	
-	
 	public void clickEnqCategory() throws Exception {
 //		UtilityCustomFunctions.doClick(driver, eleEnqCatText);
 		UtilityCustomFunctions.doActionClick(driver, eleEnqCatText);

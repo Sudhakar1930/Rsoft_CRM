@@ -210,7 +210,7 @@ public class UtilityCustomFunctions extends BaseClass{
 
 		try {
 			((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", element);
-
+			element.click();
 			System.out.println("Element:" + element.getTagName());
 			if (element.isDisplayed() || element.isEnabled()) {
 				Thread.sleep(3000);

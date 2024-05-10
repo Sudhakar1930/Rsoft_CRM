@@ -1,0 +1,486 @@
+15:35:24.540 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 10 : false
+15:35:24.733 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:24.734 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterMinutes
+15:35:24.734 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:24.734 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:24.766 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 11 : false
+15:35:24.948 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:24.949 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeHours
+15:35:24.949 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:24.949 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:25.057 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 12 : false
+15:35:25.230 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:25.230 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeMinutes
+15:35:25.230 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:25.230 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:25.262 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 13 : false
+15:35:25.437 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:25.438 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterMinutes
+15:35:25.438 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:25.438 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:25.471 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 14 : false
+15:35:25.655 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:25.655 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterHours
+15:35:25.655 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:25.655 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:25.693 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 15 : true
+15:35:25.877 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:25.877 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterDays
+15:35:25.877 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:25.878 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:25.968 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Task Deactivated for Action Type:Send notificationand Action Title:tskNT_ExecuteTask_DTAfterDays
+15:35:26.002 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 16 : false
+15:35:26.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:26.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeMinutes
+15:35:26.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:26.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:26.217 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 17 : false
+15:35:26.393 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:26.393 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeHours
+15:35:26.394 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:26.394 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:26.431 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 18 : false
+15:35:26.634 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+15:35:26.634 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeDays
+15:35:26.634 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+15:35:26.635 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+15:35:27.636 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:true
+15:35:30.505 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Workflow and Navigated to Task Page
+15:35:30.506 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Task Active Send notification   tskNT_ExecuteTask_DTBeforeDays
+15:35:41.585 [main] INFO  utilities.UtilityCustomFunctions - Click Module:ETNotification
+15:35:44.884 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:ETNotification
+15:35:46.896 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+15:35:46.968 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+15:35:47.073 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+15:35:47.073 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+15:35:48.208 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+15:35:51.404 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+15:35:56.754 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Rsoft IT] is selected in List
+15:35:56.905 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+15:36:00.202 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [+91] is selected in List
+15:36:00.202 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9087654321
+15:36:01.841 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+15:36:05.479 [main] INFO  utilities.UtilityCustomFunctions - NewAdd@gmail.com entered in  input
+15:36:06.500 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: NewAdd@gmail.com
+15:36:07.886 [main] INFO  utilities.UtilityCustomFunctions - NewAddText entered in  input
+15:36:07.902 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  NewAddText
+15:36:30.512 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
+15:36:33.097 [main] INFO  utilities.UtilityCustomFunctions - NewAddTextArea entered in  textarea
+15:36:35.180 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+15:36:35.305 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+15:36:35.441 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+15:36:38.520 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:36:42.745 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:36:51.363 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:36:57.140 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+15:37:00.300 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+15:37:02.463 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+15:37:03.586 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+15:37:10.984 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+15:37:16.037 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:37:20.250 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:37:28.779 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:37:38.523 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [5] is selected in List
+15:37:41.908 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+15:37:45.310 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+15:37:48.681 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PM] is selected in List
+15:37:50.694 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+15:37:50.894 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+15:37:52.119 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+15:37:55.125 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='5']
+15:38:06.762 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :10-05-2024
+15:38:10.739 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Mr.] is selected in List
+15:38:12.355 [main] INFO  utilities.UtilityCustomFunctions - NewAddName entered in  input
+15:38:13.886 [main] INFO  utilities.UtilityCustomFunctions - 1111111111 entered in  input
+15:38:15.282 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
+15:38:16.871 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+15:38:18.060 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+15:38:21.388 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Ariyalur] is selected in List
+15:38:21.390 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Ariyalur
+15:38:22.619 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+15:38:26.338 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Tamilnadu] is selected in List
+15:38:26.338 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+15:38:27.493 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+15:38:30.789 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [India] is selected in List
+15:38:30.790 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+15:38:47.788 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
+15:38:47.808 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
+15:38:51.633 [main] INFO  utilities.UtilityCustomFunctions - Button Search
+15:38:54.722 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
+15:39:03.565 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
+15:39:16.966 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+15:39:31.537 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+15:39:32.001 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+15:40:01.087 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PRIMARY (DESC)] is selected in List
+15:40:06.088 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124755
+15:40:10.560 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124755
+15:40:12.774 [main] INFO  utilities.UtilityCustomFunctions - Failed: Execute Task Notification Date&Time before Days Actual Value: 2024-05-12 17:00:00Expected Value: 2024-05-13 17:00:00 EntityId: 124755@Add New
+15:40:18.470 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+15:40:20.034 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+15:40:21.560 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+15:40:50.804 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+15:40:50.874 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+15:40:50.930 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 36
+15:40:50.930 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+15:40:51.761 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+15:40:54.966 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+15:41:00.432 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Rsoft IT] is selected in List
+15:41:00.637 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+15:41:03.969 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [+91] is selected in List
+15:41:03.970 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
+15:41:05.614 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
+15:41:09.360 [main] INFO  utilities.UtilityCustomFunctions - SummaryAdd@gmail.com entered in  input
+15:41:10.375 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAdd@gmail.com
+15:41:11.953 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddText entered in  input
+15:41:11.966 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  SummaryAddText
+15:41:34.521 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: three,four
+15:41:37.089 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddTextArea entered in  textarea
+15:41:39.139 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+15:41:39.266 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+15:41:39.389 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+15:41:42.464 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:41:46.649 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:41:55.207 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:42:00.991 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+15:42:04.259 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+15:42:06.443 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+15:42:07.594 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+15:42:15.015 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+15:42:20.069 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:42:24.240 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:42:32.879 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:42:42.446 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [5] is selected in List
+15:42:45.815 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+15:42:49.249 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+15:42:52.616 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PM] is selected in List
+15:42:54.618 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+15:42:54.816 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+15:42:55.986 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+15:42:58.996 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='5']
+15:43:10.600 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :10-05-2024
+15:43:14.550 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Mr.] is selected in List
+15:43:16.181 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddName entered in  input
+15:43:17.718 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
+15:43:19.121 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
+15:43:20.762 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
+15:43:21.956 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+15:43:25.319 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Chennai] is selected in List
+15:43:25.321 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
+15:43:26.481 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+15:43:30.152 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Tamilnadu] is selected in List
+15:43:30.153 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+15:43:31.329 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+15:43:34.583 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [India] is selected in List
+15:43:34.583 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+15:43:51.413 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
+15:43:51.433 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
+15:43:55.265 [main] INFO  utilities.UtilityCustomFunctions - Button Search
+15:43:58.348 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
+15:44:07.209 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
+15:44:19.867 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+15:44:21.881 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+15:44:32.964 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+15:44:33.572 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+15:45:01.114 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PRIMARY (DESC)] is selected in List
+15:45:06.129 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124757
+15:45:10.619 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124757
+15:45:12.291 [main] INFO  utilities.UtilityCustomFunctions - Failed: Execute Task Notification Date&Time before Days Actual Value: 2024-05-12 17:00:00Expected Value: 2024-05-13 17:00:00 EntityId: 124757@Summary Add New
+15:45:21.069 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+15:45:22.624 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+15:45:24.126 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+15:45:49.915 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+15:45:49.982 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+15:45:50.099 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+15:45:50.099 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+15:45:51.198 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+15:45:54.338 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+15:45:59.691 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Rsoft IT] is selected in List
+15:45:59.929 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+15:46:03.365 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [+91] is selected in List
+15:46:03.365 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
+15:46:04.976 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
+15:46:08.806 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAdd@gmail.com entered in  input
+15:46:09.819 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateAdd@gmail.com
+15:46:11.372 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddText entered in  input
+15:46:11.382 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  DuplicateAddText
+15:46:42.467 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: four,five
+15:46:45.145 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddTextArea entered in  textarea
+15:46:47.215 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+15:46:47.261 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+15:46:47.419 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+15:46:50.482 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:46:54.652 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:47:03.198 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:47:08.819 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+15:47:12.045 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+15:47:14.214 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+15:47:15.401 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+15:47:18.800 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+15:47:23.873 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:47:28.067 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+15:47:36.675 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:47:46.280 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [5] is selected in List
+15:47:49.683 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+15:47:53.070 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+15:47:56.459 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PM] is selected in List
+15:47:58.471 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+15:47:58.662 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+15:47:59.853 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+15:48:02.862 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='5']
+15:48:14.573 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :10-05-2024
+15:48:18.315 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Mr.] is selected in List
+15:48:19.987 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddName entered in  input
+15:48:21.591 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
+15:48:23.080 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
+15:48:24.884 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
+15:48:26.038 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+15:48:29.345 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Chennai] is selected in List
+15:48:29.345 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
+15:48:30.508 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+15:48:34.209 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Tamilnadu] is selected in List
+15:48:34.210 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+15:48:35.422 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+15:48:38.679 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [India] is selected in List
+15:48:38.679 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+15:48:55.617 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
+15:48:55.637 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
+15:48:59.591 [main] INFO  utilities.UtilityCustomFunctions - Button Search
+15:49:02.664 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
+15:49:11.446 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
+15:49:24.486 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+15:49:35.642 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+15:49:36.093 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+15:50:03.785 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PRIMARY (DESC)] is selected in List
+15:50:08.791 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124759
+15:50:13.457 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124759
+15:50:15.026 [main] INFO  utilities.UtilityCustomFunctions - Failed: Execute Task Notification Date&Time before Days Actual Value: 2024-05-12 17:00:00Expected Value: 2024-05-13 17:00:00 EntityId: 124759@Duplicate Record
+16:02:53.116 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC018_NT_ExecuteTask_DTBeforeDays ****
+16:02:53.123 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+16:02:53.126 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:02:54.681 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+16:02:54.820 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+16:02:54.820 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:03:01.455 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:03:03.079 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:03:04.910 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:03:15.088 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Avatar
+16:03:19.360 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Menu CRM Setting
+16:03:21.644 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Menu Other Setting
+16:03:26.169 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Menu Item Workflow
+16:03:26.466 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Workflow from Combox Box List
+16:03:28.470 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Item to be selected:  ETNotification Workflow
+16:03:34.620 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [ETNotification Workflow] is selected in List
+16:03:34.621 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Item selected in combox Box  ETNotification Workflow
+16:03:37.641 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Selected Module to View its Workflows
+16:03:37.695 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Current Workflow Row item: 1
+16:03:37.788 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Current style of Worflow Status Element captured
+16:03:37.788 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Workflow status: of row item: 1 true
+16:03:37.840 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Actual Module Name:  ETNotification
+16:03:37.840 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Actual Workflow Name:  wf_ET_OOFS_Notifications
+16:03:37.840 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Actual Exec Condition Name:  Only on the first save
+16:03:37.841 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Module,workflow,condition matches
+16:03:37.841 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - bCurrentWFStatus: true
+16:03:37.841 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - wf_ET_OOFS_NotificationsWorkflow enabled
+16:03:37.841 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
+16:03:37.842 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - true:1
+16:03:45.440 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Work flow clicked
+16:03:52.184 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Cliked Step 1 Next Button to Condition Page
+16:03:57.278 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Cliked Step 2 Next Button to Task List Page
+16:03:58.280 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Workflow and Navigated to Task Page
+16:03:58.336 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Number of Tasks Listed for this Workflow: wf_ET_OOFS_Notifications : 18
+16:03:58.378 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 1 : false
+16:03:58.580 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:58.581 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinutes
+16:03:58.581 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:58.581 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:58.612 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 2 : false
+16:03:58.801 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:58.802 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterHours
+16:03:58.802 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:58.802 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:58.838 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 3 : false
+16:03:59.019 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:59.019 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterDays
+16:03:59.019 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:59.019 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:59.053 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 4 : false
+16:03:59.289 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:59.290 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterMinutes
+16:03:59.290 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:59.290 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:59.321 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 5 : false
+16:03:59.496 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:59.496 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterHours
+16:03:59.497 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:59.497 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:59.530 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 6 : false
+16:03:59.729 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:59.729 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterDays
+16:03:59.730 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:59.730 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:59.769 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 7 : false
+16:03:59.958 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:03:59.959 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DateAfterDays
+16:03:59.959 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:03:59.959 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:03:59.991 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 8 : false
+16:04:00.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:00.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DateBeforeDays
+16:04:00.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:00.182 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:00.214 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 9 : false
+16:04:00.408 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:00.408 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterHours
+16:04:00.408 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:00.408 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:00.448 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 10 : false
+16:04:00.635 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:00.636 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterMinutes
+16:04:00.636 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:00.636 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:00.679 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 11 : false
+16:04:00.903 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:00.903 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeHours
+16:04:00.904 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:00.904 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:00.953 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 12 : false
+16:04:01.155 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:01.156 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeMinutes
+16:04:01.156 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:01.156 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:01.193 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 13 : false
+16:04:01.391 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:01.391 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterMinutes
+16:04:01.391 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:01.391 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:01.428 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 14 : false
+16:04:01.623 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:01.623 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterHours
+16:04:01.623 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:01.623 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:01.655 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 15 : false
+16:04:01.842 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:01.842 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterDays
+16:04:01.842 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:01.842 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:01.877 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 16 : false
+16:04:02.062 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:02.062 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeMinutes
+16:04:02.062 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:02.062 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:02.099 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 17 : false
+16:04:02.276 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:02.276 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeHours
+16:04:02.276 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:02.276 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:02.308 [main] INFO  utilities.UtilityCustomFunctions - Is Task Active: 18 : true
+16:04:02.475 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+16:04:02.475 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeDays
+16:04:02.476 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:04:02.476 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title: tskNT_ExecuteTask_DTBeforeDays
+16:04:02.476 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Action Type and Action Tile matches and also Task Button Enabled
+16:04:03.484 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+16:04:06.543 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Clicked Workflow and Navigated to Task Page
+16:04:06.543 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - Task Active Send notification   tskNT_ExecuteTask_DTBeforeDays
+16:04:17.473 [main] INFO  utilities.UtilityCustomFunctions - Click Module:ETNotification
+16:04:20.641 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:ETNotification
+16:04:22.647 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:04:22.722 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:04:22.778 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+16:04:22.778 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:04:23.908 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+16:04:27.119 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+16:04:32.497 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Rsoft IT] is selected in List
+16:04:32.656 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+16:04:36.023 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [+91] is selected in List
+16:04:36.023 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9087654321
+16:04:37.767 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+16:04:41.392 [main] INFO  utilities.UtilityCustomFunctions - NewAdd@gmail.com entered in  input
+16:04:42.405 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: NewAdd@gmail.com
+16:04:43.859 [main] INFO  utilities.UtilityCustomFunctions - NewAddText entered in  input
+16:04:43.872 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  NewAddText
+16:05:06.330 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
+16:05:08.870 [main] INFO  utilities.UtilityCustomFunctions - NewAddTextArea entered in  textarea
+16:05:10.910 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+16:05:11.019 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+16:05:11.182 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+16:05:14.252 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:05:18.516 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:05:27.116 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:05:32.885 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+16:05:36.112 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+16:05:38.274 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+16:05:39.395 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+16:05:46.728 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+16:05:51.791 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:05:55.976 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:06:04.581 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:06:14.186 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [5] is selected in List
+16:06:17.558 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+16:06:20.959 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [00] is selected in List
+16:06:24.323 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PM] is selected in List
+16:06:26.328 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+16:06:26.525 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+16:06:27.691 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+16:06:30.694 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='5']
+16:06:42.327 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :10-05-2024
+16:06:46.310 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Mr.] is selected in List
+16:06:47.878 [main] INFO  utilities.UtilityCustomFunctions - NewAddName entered in  input
+16:06:49.422 [main] INFO  utilities.UtilityCustomFunctions - 1111111111 entered in  input
+16:06:50.823 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
+16:06:52.409 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+16:06:53.589 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+16:06:57.003 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Ariyalur] is selected in List
+16:06:57.003 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Ariyalur
+16:06:58.155 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+16:07:01.830 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Tamilnadu] is selected in List
+16:07:01.830 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+16:07:02.961 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+16:07:06.253 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [India] is selected in List
+16:07:06.253 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+16:07:23.092 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
+16:07:23.117 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
+16:07:27.359 [main] INFO  utilities.UtilityCustomFunctions - Button Search
+16:07:30.450 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
+16:07:39.244 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
+16:07:52.559 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+16:08:04.452 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:08:05.012 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:08:33.126 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [PRIMARY (DESC)] is selected in List
+16:08:38.132 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124769
+16:08:42.561 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 124769
+16:08:44.581 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Days Actual Value: 2024-05-13 17:00:00Expected Value: 2024-05-13 17:00:00 EntityId: 124769@Add New
+16:08:50.292 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:08:51.896 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:08:53.469 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:09:22.515 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:09:22.600 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:09:22.635 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 36
+16:09:22.636 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:09:23.484 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+16:09:26.684 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+16:09:32.027 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [Rsoft IT] is selected in List
+16:09:32.191 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+16:09:35.507 [main] INFO  testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays - [+91] is selected in List
+16:09:35.508 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
+16:09:37.270 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
+16:09:40.944 [main] INFO  utilities.UtilityCustomFunctions - SummaryAdd@gmail.com entered in  input
+16:09:41.968 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAdd@gmail.com
+16:09:43.440 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddText entered in  input
+16:09:43.453 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  SummaryAddText
+16:10:05.795 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: three,four
+16:10:08.443 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddTextArea entered in  textarea
+16:10:10.527 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+16:10:10.654 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+16:10:10.882 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+16:10:13.954 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:10:18.141 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:10:26.718 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:10:32.484 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+16:10:35.707 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+16:10:37.902 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+16:10:39.047 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+16:10:46.485 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+16:10:51.524 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:10:55.675 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+16:11:04.164 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
