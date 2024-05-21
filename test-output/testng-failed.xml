@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.ExecuteTask.Notification.TC013_NT_ExecuteTask_DTAfterMinutes">
+      <class name="testCases.ExecuteTask.Notification.TC022_NT_ET_ETRS_MTAfterMinutes">
         <methods>
-          <include name="onStart"/>
           <include name="testName"/>
-          <include name="testExecuteTask__DTAfterMinutes"/>
+          <include name="onStart"/>
+          <include name="testExecuteTask_NT_MTAfterMinutes"/>
           <include name="setup"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testCases.ExecuteTask.Notification.TC013_NT_ExecuteTask_DTAfterMinutes -->
+      </class> <!-- testCases.ExecuteTask.Notification.TC022_NT_ET_ETRS_MTAfterMinutes -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

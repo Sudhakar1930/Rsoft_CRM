@@ -141,14 +141,16 @@ public class PHPMyAdminPage extends BasePage{
 			if(sEntityId.equalsIgnoreCase(sActEntityId)) {
 				switch (sReturnType) {
 				case "CT":
-					sReturnValue = sActCreatedTime + ",0"; 	
+					sReturnValue = sActCreatedTime + ",0";
+					break;
 				case "MT":
 					sReturnValue =  "0" + "," +  sActModifiedTime;
+					break;
 				case "Both":	
 					sReturnValue = sActCreatedTime + "," + sActModifiedTime;
+					break;
 			}
-				
-				
+				break;
 			}
 			
 		}	
@@ -440,6 +442,7 @@ public class PHPMyAdminPage extends BasePage{
 		LoginPage objLP = new LoginPage(driver);
 		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
 		boolean bFlag = false;
+		try {
 		driver.get(Url);
 		objLP.setMySqlUserId(Uid);
 		objLP.setMySqlPasswd(pwd);
@@ -471,6 +474,9 @@ public class PHPMyAdminPage extends BasePage{
 				break;
 			}
 		}
+		}catch(Exception e) {
+			bFlag = false;
+			e.getCause();		}
 		return bFlag;
 	}
 	public String fGetExecutionStartTime(String Url,String Uid,String pwd,String sTable,String sEntityId) throws Exception {
@@ -524,7 +530,7 @@ public class PHPMyAdminPage extends BasePage{
 		objPAP.clickDBLink();
 		Thread.sleep(3000);
 		objPAP.setTableInDB(sTable);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		objPAP.clickTableLink(sTable);
 		Thread.sleep(3000);
 		objPAP.aLastPage();
@@ -622,7 +628,7 @@ public class PHPMyAdminPage extends BasePage{
 					else {
 						objBase.freport(sMessage + " Actual EntityId: "+sActEntityId + " ScheduleName:" +sActSchdName +" Actual Created Time: "+ sActCreatdTime + "Expected Created Time: " + sCreatedTime + " ExecutionTime: " + sActExecTime + " Difference In Minutes:="+lDiffTime +" Send Type: " + sActSendType + " Module Name: "+sActModName + " and Task Id:" + sActTaskId, "fail",Node);
 						UtilityCustomFunctions.logWriteConsole(sMessage + " Failed: " + "Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Actual Created Time: "+ sActCreatdTime + "Expected Created Time: " + sCreatedTime + " ExecutionTime:" + sActExecTime + " Difference In Minutes:= "+lDiffTime +" Send Type: " + sActSendType + " Module Name: "+sActModName + " and Task Id: " + sActTaskId);
-						BaseClass.sAssertinFn.assertEquals(sMessage + " Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Created Time: "+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference In Minutes:= "+lDiffTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id: " + sActTaskId," Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Created Time: "+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference Not 5 Minutes:="+lDiffTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId);
+						BaseClass.sAssertinFn.assertEquals(sMessage + " Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Created Time: "+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference In Minutes:= "+lDiffTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id: " + sActTaskId," Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Created Time: "+ sActCreatdTime +" ExecutionTime:" + sActExecTime + " Difference Not 45 Minutes:="+lDiffTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId);
 					}
 				}else if(sDiffType.equalsIgnoreCase("H")) {
 					if(lDiffTime ==60) {
@@ -651,7 +657,7 @@ public class PHPMyAdminPage extends BasePage{
 					
 				}
 				
-				
+				break;
 			}
 	
 		}	

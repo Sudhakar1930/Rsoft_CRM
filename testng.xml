@@ -8,10 +8,14 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.ExecuteTask.Notification.TC018_NT_ExecuteTask_DTBeforeDays"/>
-		
+		<class name="testCases.ExecuteTask.Notification.TC024_NT_ET_ETRS_MTAfterDays"/>
+	 </classes>	
 	  <!--
 	
+		<class name="testCases.ExecuteTask.Notification.TC004_NT_ExecuteTask_MTAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC005_NT_ExecuteTask_MTAfterHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC006_NT_ExecuteTask_MTAfterDays"/>
+
 	  <class name="testCases.SimpleTest"/>
 	 
 	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
@@ -41,7 +45,7 @@
    	  <class name="testCases.TC012_WF6_SN_Yearly"/>
    	  -->
    	  
-    </classes>
+   
 	  </parameter>
 	  </test>
 	
