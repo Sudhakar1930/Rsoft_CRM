@@ -42,11 +42,15 @@ public class WorkFlowPage extends BasePage {
 	@FindBy(xpath="//button[@id='nextButton']")
 	WebElement btnstep2Next;
 	
-	@FindBy(xpath="//*[@id='workflowlist']//table//tr")
+	@FindBy(xpath="//*[@id='workflowlist']//table//tr[contains(@class,'mainrow Removerow')]")
+	List<WebElement> OldNotUsed;
+	
+	@FindBy(xpath="(//table[contains(@class,'table')])[1]//tr[contains(@class,'mainrow Removerow')]")
 	List<WebElement> WbTblWorkflows;
 	
-	@FindBy(xpath="//table[@class='table table-striped workflowalltask']//tr")
+	@FindBy(xpath="//table[contains(@class,'table table-striped workflowalltask')]//tr")
 	List<WebElement> WbTblTasks;
+	
 	
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement btnSubmit;
@@ -67,17 +71,42 @@ public class WorkFlowPage extends BasePage {
 		String sActExecCondition="";
 		int j=0;
 		int tRowCount = WbTblWorkflows.size();
-		System.out.println("Workflows count:" + tRowCount);
-		for(int i=1;i<tRowCount;i++) {
+		System.out.println("Workflows Size:" + tRowCount);
+		for(int i=1;i<WbTblWorkflows.size();i++) {
 			
 			System.out.println("Current Row Number: " + i);
-			bObj.logger.info("Current Workflow Row item: " + i);
 			
-			List<WebElement> tColumnCount =WbTblWorkflows.get(i).findElements(By.tagName("td"));
+			List<WebElement> tColumnCount =WbTblWorkflows.get(i-1).findElements(By.tagName("td"));
+			System.out.println("Column count :" + tColumnCount.size() + " In Row: " + i);
 			
-			String sXpath="(//span[@class='switchery switchery-default'])["+i+"]/small";
+			String sActModuleValues=tColumnCount.get(3).getText();
+			System.out.println("table column value: " +sActModuleValues);
+			String sModNameArray[] = sActModuleValues.split("\\s+");
+			String sActModuleName = sModNameArray[1].trim();
+			
+			sActWorkflowName=tColumnCount.get(4).getText().trim();
+			sActExecCondition=tColumnCount.get(5).getText().trim();
+			
+			System.out.println("Actual Module Name:  " + sActModuleName);
+			System.out.println("Actual Workflow Name:  " + sActWorkflowName);
+			System.out.println("Actual Exec Condition Name:  " + sActExecCondition);
+			
+			System.out.println("Expected Module Name:  " + sModuleName);
+			System.out.println("Expected Workflow Name:  " + sWorkflowName);
+			System.out.println("Expected Exec Condition Name:  " + sExecCondition);
+			
+			System.out.println("Row Position: Outside If: " + i);
+			
+			
+//			String sXpath="(//span[@class='switchery switchery-default'])["+i+"]/small";
+			int k = i + 1;
+			String sXpath="((//table[contains(@class,'table')])[1]//tr[contains(@class,'mainrow Removerow')]//span[@class='switchery switchery-default']/small)[" + i + "]";
+			
+					
+			System.out.println("xpath: " + sXpath);
 			WebElement eleStatus = driver.findElement(By.xpath(sXpath));
 			String sAttrValues =eleStatus.getAttribute("style");
+			System.out.println("Style attribute values: "  + sAttrValues);
 			bObj.logger.info("Current style of Worflow Status Element captured");
 			System.out.println("Current style of Worflow Status Element captured");
 			if(sAttrValues.contains("0px")) {
@@ -88,23 +117,8 @@ public class WorkFlowPage extends BasePage {
 				bCurrentWFStatus = true;
 			}
 			System.out.println("Workflow status: of row item: " + i + " " + bCurrentWFStatus);
-			bObj.logger.info("Workflow status: of row item: " + i + " " + bCurrentWFStatus);
-			String sActModuleValues=tColumnCount.get(1).getText();
-			String sModNameArray[] = sActModuleValues.split("\\s+");
-			String sActModuleName = sModNameArray[1].trim(); 
-			sActWorkflowName=tColumnCount.get(2).getText().trim();
-			sActExecCondition=tColumnCount.get(3).getText().trim();
 			
-			BaseClass.logger.info("Actual Module Name:  " + sActModuleName);
-			BaseClass.logger.info("Actual Workflow Name:  " + sActWorkflowName);
-			BaseClass.logger.info("Actual Exec Condition Name:  " + sActExecCondition);
-			System.out.println("Actual Module Name:  " + sActModuleName);
-			System.out.println("Expected Module Name:  " + sModuleName);
-			System.out.println("Actual Workflow Name:  " + sActWorkflowName);
-			System.out.println("Expected Workflow Name:  " + sWorkflowName);
-			System.out.println("Actual Exec Condition Name:  " + sActExecCondition);
-			System.out.println("Expected Exec Condition Name:  " + sExecCondition);
-			System.out.println("Row Position: Outside If" + i);
+			
 			if(sActModuleName.trim().equalsIgnoreCase(sModuleName) && sActWorkflowName.trim().equalsIgnoreCase(sWorkflowName) && sActExecCondition.equalsIgnoreCase(sExecCondition)){
 				System.out.println("bCurrentWFStatus:" + bCurrentWFStatus);
 				BaseClass.logger.info("Module,workflow,condition matches");
@@ -134,7 +148,8 @@ public class WorkFlowPage extends BasePage {
 			}//conditon checking
 		}//for loop
 		if(bIfCurWrkFlwNotEnabled==true) {
-		String sXpath="(//span[@class='switchery switchery-default'])["+j+"]/small";
+//		String sXpath="(//span[@class='switchery switchery-default'])["+j+"]/small";
+		String sXpath="((//table[contains(@class,'table')])[1]//tr[contains(@class,'mainrow Removerow')]//span[@class='switchery switchery-default']/small)[" + j + "]";
 		WebElement eleCurrentWFStatus = driver.findElement(By.xpath(sXpath));
 		bWorkFlowEnabled = "true:"+j;
 		eleCurrentWFStatus.click();
@@ -189,6 +204,7 @@ public class WorkFlowPage extends BasePage {
 	public boolean fValidateTaskStatus(String sWorkFlow,String sActionType,String sActionTitle) throws Exception {
 		boolean bWorkflowTaskEnabled = false;
 		boolean bIsCurrentTaskDisabled = false;
+		boolean bCurrentTaskStatus = false;
 		int tTaskRowCount = WbTblTasks.size()-1; 
 		System.out.println("Rowcount:" + tTaskRowCount);
 		BaseClass.logger.info("Number of Tasks Listed for this Workflow: " + sWorkFlow + " : " + tTaskRowCount);
@@ -198,14 +214,28 @@ public class WorkFlowPage extends BasePage {
 		for(int i=1;i<=tTaskRowCount;i++) {
 			System.out.println("Current Row Number: " + i);
 		
-			String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+i+"]";
+//			String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+i+"]";
+			String sTaskXPath ="((//table[contains(@class,'table table-striped workflowalltask')])[1]//tr//span[@class='switchery switchery-default']/small)[" + i + "]";
+			
 			WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
+			String sAttrValues =eleTaskCheckBox.getAttribute("style");
+			System.out.println("Style attribute values: "  + sAttrValues);
+			if(sAttrValues.contains("0px")) {
+				bCurrentTaskStatus = false;
+			}
+			else
+			{
+				bCurrentTaskStatus = true;
+			}
+			System.out.println("Workflow status: of row item: " + i + " " + bCurrentTaskStatus);
+			
 	
-			boolean isCheckBoxSelected = eleTaskCheckBox.isSelected();
-			UtilityCustomFunctions.logWriteConsole("Is Task Active: "+ i + " : "+ isCheckBoxSelected);
+//			boolean isCheckBoxSelected = eleTaskCheckBox.isSelected();
+//			UtilityCustomFunctions.logWriteConsole("Is Task Selected: "+ i + " : "+ isCheckBoxSelected);
+			
 			List<WebElement> tTaskColumnCount =WbTblTasks.get(i).findElements(By.tagName("td"));
-			String sActActionType = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(1));
-			String sActActionTitle = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(2));
+			String sActActionType = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(3));
+			String sActActionTitle = UtilityCustomFunctions.getText(driver, tTaskColumnCount.get(4));
 			sActActionType = sActActionType.trim();
 			sActActionTitle = sActActionTitle.trim();
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Type:" + sActActionType);
@@ -214,11 +244,11 @@ public class WorkFlowPage extends BasePage {
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Title:" + sActionTitle);
 			
 			if(sActActionType.trim().equalsIgnoreCase(sActionType.trim()) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
-				if(isCheckBoxSelected==true) {
+				if(bCurrentTaskStatus==true) {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");
 					System.out.println("Action Type and Action Tile matches and also Task Button Enabled");
-					break;
+//					break;
 				}
 				else {
 					j = i;
@@ -226,10 +256,16 @@ public class WorkFlowPage extends BasePage {
 				}
 			}
 			else {
-				System.out.println(" When Mismatched:"+ isCheckBoxSelected +"  actual action type:" + sActActionType + "action title:" + sActActionTitle);
-				if(isCheckBoxSelected==true) {
-					System.out.println("checkbox sttus" + isCheckBoxSelected +"actual action type:" + sActActionType + "action title:" + sActActionTitle);
+				System.out.println(" When Mismatched: default check box status: "+ bCurrentTaskStatus +"  actual action type:" + sActActionType + "action title:" + sActActionTitle);
+				if(bCurrentTaskStatus==true) {
+					Thread.sleep(3000);
+					System.out.println("checkbox status" + bCurrentTaskStatus +"actual action type:" + sActActionType + "action title:" + sActActionTitle);
 					eleTaskCheckBox.click();
+					WebElement eleToastMsg = driver.findElement(By.xpath("//div[@class='toast-message']"));
+					if(eleToastMsg.isDisplayed()) {
+						eleToastMsg.click();
+					}
+					Thread.sleep(3000);
 					BaseClass.logger.info("Task Deactivated for Action Type:" + sActActionType + "and Action Title:" + sActActionTitle);
 					System.out.println("Task Deactivated for Action Type:" + sActActionType + "and Action Title:" + sActActionTitle);
 				}
@@ -237,14 +273,15 @@ public class WorkFlowPage extends BasePage {
 		}//for loop
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Out of for loop:" + bIsCurrentTaskDisabled);
-		System.out.println("Current Task status: " + j + bIsCurrentTaskDisabled);
-		if(bIsCurrentTaskDisabled==true) {
-		System.out.println("Inside the if condition when task is disabled");
-		String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+j+"]";
-		WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
-		eleTaskCheckBox.click();
-		bWorkflowTaskEnabled = true;
-		}
+			System.out.println("Current Task status: " + j + bIsCurrentTaskDisabled);
+			if(bIsCurrentTaskDisabled==true) {
+			System.out.println("Inside the if condition when task is disabled");
+	//		String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+j+"]";
+			String sTaskXPath ="((//table[contains(@class,'table table-striped workflowalltask')])[1]//tr//span[@class='switchery switchery-default']/small)[" + j + "]";
+			WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
+			eleTaskCheckBox.click();
+			bWorkflowTaskEnabled = true;
+			}
 		clickSubmit();
 		return bWorkflowTaskEnabled;
 	}//function
