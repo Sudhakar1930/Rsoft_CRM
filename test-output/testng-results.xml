@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-23T15:24:21 IST" name="Suite" finished-at="2024-05-23T15:48:59 IST" duration-ms="1477837">
+  <suite started-at="2024-05-23T18:05:32 IST" name="Suite" finished-at="2024-05-23T18:11:28 IST" duration-ms="355584">
     <groups>
     </groups>
-    <test started-at="2024-05-23T15:24:21 IST" name="chromeTest" finished-at="2024-05-23T15:48:59 IST" duration-ms="1477774">
-      <class name="testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays">
-        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays@ba2f4ec]" started-at="2024-05-23T15:24:21 IST" name="testName" finished-at="2024-05-23T15:24:21 IST" duration-ms="10" status="PASS">
+    <test started-at="2024-05-23T18:05:32 IST" name="chromeTest" finished-at="2024-05-23T18:11:28 IST" duration-ms="355515">
+      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
+        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC001_WF1_Send_Notify_ETR_S@ba2f4ec]" started-at="2024-05-23T18:05:32 IST" name="testName" finished-at="2024-05-23T18:05:32 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testName -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays@ba2f4ec]" started-at="2024-05-23T15:24:21 IST" name="setup" finished-at="2024-05-23T15:24:27 IST" duration-ms="6139" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_WF1_Send_Notify_ETR_S@ba2f4ec]" started-at="2024-05-23T18:05:32 IST" name="setup" finished-at="2024-05-23T18:05:38 IST" duration-ms="5762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,30 +22,70 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testExecuteTask_DateAfterDays()[pri:0, instance:testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays@ba2f4ec]" started-at="2024-05-23T15:24:27 IST" name="testExecuteTask_DateAfterDays" finished-at="2024-05-23T15:48:59 IST" duration-ms="1471547" status="PASS">
+        <test-method signature="testNotifyETR_S()[pri:0, instance:testCases.TC001_WF1_Send_Notify_ETR_S@ba2f4ec]" started-at="2024-05-23T18:05:38 IST" name="testNotifyETR_S" finished-at="2024-05-23T18:11:28 IST" duration-ms="349655" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Notification Failed opening]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Notification Failed opening
+at org.junit.Assert.fail(Assert.java:89)
+at utilities.CRMReUsables.fOpenNotification(CRMReUsables.java:85)
+at testCases.TC001_WF1_Send_Notify_ETR_S.testNotifyETR_S(TC001_WF1_Send_Notify_ETR_S.java:287)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testExecuteTask_DateAfterDays -->
-      </class> <!-- testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays -->
+        </test-method> <!-- testNotifyETR_S -->
+      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
     </test> <!-- chromeTest -->
-    <test started-at="2024-05-23T15:48:59 IST" name="edgeTest" finished-at="2024-05-23T15:48:59 IST" duration-ms="0">
-      <class name="testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays">
-        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays@ba2f4ec]" started-at="2024-05-23T15:24:20 IST" name="onStart" finished-at="2024-05-23T15:24:21 IST" duration-ms="667" status="PASS">
+    <test started-at="2024-05-23T18:11:28 IST" name="edgeTest" finished-at="2024-05-23T18:11:28 IST" duration-ms="1">
+      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC001_WF1_Send_Notify_ETR_S@ba2f4ec]" started-at="2024-05-23T18:05:32 IST" name="onStart" finished-at="2024-05-23T18:05:32 IST" duration-ms="676" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@11d264c2]]>
+                <![CDATA[org.testng.TestRunner@259ae1a9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onStart -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays@ba2f4ec]" started-at="2024-05-23T15:48:59 IST" name="flush" finished-at="2024-05-23T15:49:00 IST" duration-ms="612" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC001_WF1_Send_Notify_ETR_S@ba2f4ec]" started-at="2024-05-23T18:11:28 IST" name="flush" finished-at="2024-05-23T18:11:29 IST" duration-ms="733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays -->
+      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
     </test> <!-- edgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

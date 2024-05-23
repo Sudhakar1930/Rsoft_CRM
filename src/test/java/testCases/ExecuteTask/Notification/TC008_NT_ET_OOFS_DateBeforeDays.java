@@ -251,7 +251,7 @@ public class TC008_NT_ET_OOFS_DateBeforeDays extends BaseClass{
 			objHP.clickLogoutCRM();
 			
 			sActExeStart_Date = objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
-			sExecFrom_Date = xlObj.getCellData("Sheet1", 1, 10);
+			sExecFrom_Date = xlObj.getCellData("Sheet2", 1, 10);
 			System.out.println("Date as is: " + sActExeStart_Date + " " + sExecFrom_Date);
 			formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			dDBDate = formatter.parse(sActExeStart_Date);

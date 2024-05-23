@@ -8,10 +8,10 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.ExecuteTask.Notification.TC025_NT_ET_ETRS_DateAfterDays"/>
+		<class name="testCases.TC001_WF1_Send_Notify_ETR_S"/>
 	 </classes>	
 	  <!--
-	
+		<class name="testCases.ExecuteTask.Notification.TC026_NT_ET_ETRS_DateBeforeDays"/>
 		<class name="testCases.ExecuteTask.Notification.TC004_NT_ExecuteTask_MTAfterMinutes"/>
 		<class name="testCases.ExecuteTask.Notification.TC005_NT_ExecuteTask_MTAfterHours"/>
 		<class name="testCases.ExecuteTask.Notification.TC006_NT_ExecuteTask_MTAfterDays"/>

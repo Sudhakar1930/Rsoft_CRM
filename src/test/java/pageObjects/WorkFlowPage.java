@@ -72,7 +72,7 @@ public class WorkFlowPage extends BasePage {
 		int j=0;
 		int tRowCount = WbTblWorkflows.size();
 		System.out.println("Workflows Size:" + tRowCount);
-		for(int i=1;i<WbTblWorkflows.size();i++) {
+		for(int i=1;i<=WbTblWorkflows.size();i++) {
 			
 			System.out.println("Current Row Number: " + i);
 			
@@ -107,8 +107,7 @@ public class WorkFlowPage extends BasePage {
 			WebElement eleStatus = driver.findElement(By.xpath(sXpath));
 			String sAttrValues =eleStatus.getAttribute("style");
 			System.out.println("Style attribute values: "  + sAttrValues);
-			bObj.logger.info("Current style of Worflow Status Element captured");
-			System.out.println("Current style of Worflow Status Element captured");
+			
 			if(sAttrValues.contains("0px")) {
 				bCurrentWFStatus = false;
 			}
@@ -131,6 +130,7 @@ public class WorkFlowPage extends BasePage {
 				}
 				else {
 					j = i;
+					iEditPos = i;
 //					bWorkFlowEnabled = "true:"+j;
 					bIfCurWrkFlwNotEnabled = true;
 				}
@@ -147,11 +147,13 @@ public class WorkFlowPage extends BasePage {
 				}
 			}//conditon checking
 		}//for loop
+		
+		
 		if(bIfCurWrkFlwNotEnabled==true) {
 //		String sXpath="(//span[@class='switchery switchery-default'])["+j+"]/small";
 		String sXpath="((//table[contains(@class,'table')])[1]//tr[contains(@class,'mainrow Removerow')]//span[@class='switchery switchery-default']/small)[" + j + "]";
 		WebElement eleCurrentWFStatus = driver.findElement(By.xpath(sXpath));
-		bWorkFlowEnabled = "true:"+j;
+		bWorkFlowEnabled = "true:"+iEditPos;
 		eleCurrentWFStatus.click();
 		}
 		UtilityCustomFunctions.logWriteConsole(sActWorkflowName + "Disabled Workflow Manually Enabled");
@@ -186,7 +188,8 @@ public class WorkFlowPage extends BasePage {
 	}
 	
 	public void fNavigateToTask(int iEditPos) throws Exception {
-		String sEditXpath="(//i[@class='fa fa-edit'])[" + iEditPos +"]";
+		String sEditXpath="(//tr[contains(@class,'mainrow Removerow')]//i[@class='fa fa-edit'])[" + iEditPos +"]";
+		System.out.println("XPath Edit: " + sEditXpath);
 		WebElement btnEditWFRow  = driver.findElement(By.xpath(sEditXpath));
 		UtilityCustomFunctions.doClick(driver, btnEditWFRow);
 		BaseClass.logger.info("Work flow clicked");

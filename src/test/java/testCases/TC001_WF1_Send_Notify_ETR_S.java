@@ -130,6 +130,7 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		
 		
 		sWorkFlowStatus = objCRMRs.IsCheckWorkflowStatus(sDisplayModuleName, sExpWorkFlowName, sExecutionCondition);
+		System.out.println("Workflow Status Returned: " + sWorkFlowStatus);
 		String sWFStatusRetArr[] = sWorkFlowStatus.split(":");
 		xlObj.setCellData("Sheet1", 1, 36, sWFStatusRetArr[1]);
 		int iWFPos = Integer.parseInt(sWFStatusRetArr[1]);
