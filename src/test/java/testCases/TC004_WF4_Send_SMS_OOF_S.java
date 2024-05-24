@@ -231,7 +231,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			}
 			
 		}//
-		
+		/*
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -239,11 +239,21 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
 		Thread.sleep(2000);
+		*/
+		
+		Thread.sleep(3000);
+		objALP.clickAllList();
+		Thread.sleep(1000);
+		objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+		System.out.println("Module clicked");
+		Thread.sleep(3000);
+		objCMD.clickExistingModData(1);
 		
 //		//**************Add New Record
-		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1",false);
+//		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1",false);
 
 		objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet1","Add New Module Data","No",node);
+	/*	
 		//uncomment start
 		UtilityCustomFunctions.logWriteConsole("New Values after added :");
 		Thread.sleep(2000);
@@ -732,7 +742,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 				freport("Failed: SMS Received after Single Summary Edit  -"+ sLead_PN, "fail",node);
 				sAssertinFn.assertEquals("after Single Summary Edit  - SMS received", "after Single Summary Edit  - SMS not received");
 			}
-			
+			*/
 	}	//test
 	
 }

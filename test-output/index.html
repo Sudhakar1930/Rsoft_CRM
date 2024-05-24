@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_WF1_Send_Notify_ETR_S" class="method navigator-link" hash-for-method="testNotifyETR_S">testNotifyETR_S</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_WF4_Send_SMS_OOF_S" class="method navigator-link" hash-for-method="test_Send_SMS_OOF_S_Test">test_Send_SMS_OOF_S_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,21 +118,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC001_WF1_Send_Notify_ETR_S</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC004_WF4_Send_SMS_OOF_S</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testNotifyETR_S">
-                  </a> <!-- testNotifyETR_S -->
-                  <span class="method-name">testNotifyETR_S</span>
+                  <a name="test_Send_SMS_OOF_S_Test">
+                  </a> <!-- test_Send_SMS_OOF_S_Test -->
+                  <span class="method-name">test_Send_SMS_OOF_S_Test</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: .\testData\SMS\WF4_Send_SMS_OOF_S_Test.xlsx (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:123)
+	at utilities.ExcelUtility.setCellData(ExcelUtility.java:102)
+	at testCases.TC004_WF4_Send_SMS_OOF_S.test_Send_SMS_OOF_S_Test(TC004_WF4_Send_SMS_OOF_S.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -149,7 +159,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;chromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TC001_WF1_Send_Notify_ETR_S&quot;/&gt;
+      &lt;class name=&quot;testCases.TC004_WF4_Send_SMS_OOF_S&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chromeTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;edgeTest&quot;&gt;
@@ -197,14 +207,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testNotifyETR_S')
-data.setCell(0, 2, 'testCases.TC001_WF1_Send_Notify_ETR_S')
-data.setCell(0, 3, 2598377);
+data.setCell(0, 1, 'test_Send_SMS_OOF_S_Test')
+data.setCell(0, 2, 'testCases.TC004_WF4_Send_SMS_OOF_S')
+data.setCell(0, 3, 2209);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -230,26 +240,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC001_WF1_Send_Notify_ETR_S</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC004_WF4_Send_SMS_OOF_S</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">onStart(org.testng.TestRunner@de43fd3)</span>
+                <span class="method-name">onStart(org.testng.TestRunner@2407a36c)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">testName</span>
-                <span class="method-start">697 ms</span>
+                <span class="method-start">704 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">734 ms</span>
+                <span class="method-start">748 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testNotifyETR_S</span>
-                <span class="method-start">6298 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_Send_SMS_OOF_S_Test</span>
+                <span class="method-start">6918 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">flush</span>
-                <span class="method-start">2604750 ms</span>
+                <span class="method-start">9220 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

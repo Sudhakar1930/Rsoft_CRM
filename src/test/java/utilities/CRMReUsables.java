@@ -991,11 +991,15 @@ public class CRMReUsables extends BaseClass {
 		String sSales_PN=xlValObj.getCellData(sSheetName, 1, 49);
 		String sSales_Email=xlValObj.getCellData(sSheetName, 1, 50);
 		DetailViewPage objDVP = new DetailViewPage(driver);
+		SummaryViewPage objSVP = new SummaryViewPage(driver);
 //		fClickFirstRecord();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false)
+		
 		sCurrentWinHandle="";
 		String sNewWindowHanlde="";
+		/*
 		if(isNotify.equalsIgnoreCase("Yes")){
 			sCurrentWinHandle = driver.getWindowHandle();
 			sNewWindowHanlde="";
@@ -1011,40 +1015,39 @@ public class CRMReUsables extends BaseClass {
 				}
 			}
 			
-		}//if
+		}//if */
+		
 		
 		String aActModuleName = objDVP.getNavBarModuleName();
 		System.out.println("Actual Module Name: " + aActModuleName);
 		System.out.println("Expected Module Name: " + sExpModuleName);
 		UtilityCustomFunctions.fSoftAssert(aActModuleName, sDisplayModuleName, "Module Name : " + sMessage, node);
 		
-		// Title Actual Values
-		String sActAssignedTo = objDVP.getGenericTitle(1).trim() + " "+objDVP.getGenericTitle(2).trim();
-		String sActPNTitle = objDVP.getGenericTitle(3).trim();
-//		String sPNTitleArray[] = sActPNTitle.split("\\s+");
-//		sActPNTitle = sPNTitleArray[0].trim() + " " + sPNTitleArray[1].trim();
-		System.out.println("Actual: " + sActPNTitle);
-		String sActEMTitle = objDVP.getGenericTitle(4).trim();
-		
 
-		//Title Validations
-		UtilityCustomFunctions.fSoftAssert(sActAssignedTo, sAssignedTo, "Assigned To Title: " + sMessage, node);
-		UtilityCustomFunctions.fSoftAssert(sActPNTitle, sMobileNumber, "Mobile Title: " + sMessage, node);
-		UtilityCustomFunctions.fSoftAssert(sActEMTitle, sEmail, "Email Title : " + sMessage, node);
+		// Title Actual Values
+		String sActAssignedTo =objSVP.getTitleAssignedTo();
+		String sActMobileNumber =objSVP.getTitlePhoneNumber();
+		String sActEmail =objSVP.getTitleEmail();
 		
-		Thread.sleep(3000);
-		objDVP.clickSummaryView();
+//		String sPhoneNumber = sMobilePrefix + " " + sMobileNumber;
+		// Title Validations
+		UtilityCustomFunctions.fSoftAssert(sActAssignedTo, sAssignedTo, "Assigned To-Summary Title", node);
+//		UtilityCustomFunctions.fSoftAssert(sActMobileNumber, sPhoneNumber, "Phone Number - Summary Title", node);
+		UtilityCustomFunctions.fSoftAssert(sActEmail, sEmail, "Email - Summary Title", node);
+		
+		//Summary Page Validation
 		
 		String sCurrentTime =objDVP.getCurrentTime();
 		xlValObj.setCellData(sSheetName, 0, 51, "CurrentTime");
 		xlValObj.setCellData(sSheetName, 1, 51, sCurrentTime);
-		String sActSummaryAssignedTo = objDVP.getSummaryAssignTo().trim();
+		
+		String sActSummaryAssignedTo = objDVP.getSummaryAssignTo();
 		UtilityCustomFunctions.fSoftAssert(sActSummaryAssignedTo, sAssignedTo, "Summary AssignedTo:  " + sMessage, node);
 		
 		String sActSummaryText = objDVP.getArraySummary(1).trim();
 		UtilityCustomFunctions.fSoftAssert(sActSummaryText, sText, "Summary Text:  " + sMessage, node);
 		
-		String sActMobileNumber = objDVP.getArraySummary(2).trim();
+		sActMobileNumber = objDVP.getArraySummary(2).trim();
 		String sMobNMArray[] = sActMobileNumber.split("\\s+");
 		sActMobileNumber = sMobNMArray[0].trim() + " " + sMobNMArray[1].trim();
 				

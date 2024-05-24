@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
+      <class name="testCases.TC004_WF4_Send_SMS_OOF_S">
         <methods>
           <include name="onStart"/>
           <include name="setup"/>
           <include name="flush"/>
+          <include name="test_Send_SMS_OOF_S_Test"/>
           <include name="testName"/>
-          <include name="testNotifyETR_S"/>
         </methods>
-      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
+      </class> <!-- testCases.TC004_WF4_Send_SMS_OOF_S -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

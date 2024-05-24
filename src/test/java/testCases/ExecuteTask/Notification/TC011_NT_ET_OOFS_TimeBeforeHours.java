@@ -62,6 +62,7 @@ public class TC011_NT_ET_OOFS_TimeBeforeHours extends BaseClass{
 		String sHours = xlObj.getCellData("Sheet1", 1, 33);
 		String sSHours = xlObj.getCellData("Sheet2", 1, 33);
 		String sMHours = xlObj.getCellData("Sheet3", 1, 33);
+		String sEDHours = xlObj.getCellData("Sheet4", 1, 33);
 		String sMinutes = xlObj.getCellData("Sheet1", 1, 34);
 		String sSeconds = xlObj.getCellData("Sheet1", 1, 35);
 		

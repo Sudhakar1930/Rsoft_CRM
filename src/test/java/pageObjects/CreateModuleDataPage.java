@@ -529,6 +529,7 @@ public class CreateModuleDataPage extends BasePage{
 	
 	public void clickDateBox(String sModuleName,String sText) throws Exception {
 		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		System.out.println("Date Box Xpath: " + sXpath);
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
 		UtilityCustomFunctions.doClick(driver, eleTextBox);
 	}
