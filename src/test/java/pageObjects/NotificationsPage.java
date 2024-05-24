@@ -1,11 +1,15 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import utilities.UtilityCustomFunctions;
 
 public class NotificationsPage extends BasePage{
@@ -171,6 +175,8 @@ public class NotificationsPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, lblNotificUserName);
 	}
 	public void clickNotifyFirstMsg() throws Exception {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(120));
+		wait.until(ExpectedConditions.visibilityOf(lnkFirstNotifyMsg));
 		UtilityCustomFunctions.doClick(driver, lnkFirstNotifyMsg);
 	}
 	public void clickOpnNotifyPage() throws Exception {

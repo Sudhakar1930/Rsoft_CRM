@@ -377,19 +377,14 @@ public class TC025_NT_ET_ETRS_DateAfterDays extends BaseClass{
 			Thread.sleep(3000);
 			objCMD.clickEdit();
 			Thread.sleep(3000);
-			objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_DateAfterDays_","Sheet4",true);
-			objDVP.fSetToggleHeader(true);
-			objDVP.fSetDetailVew(false);
-			objSVP.fWaitTillControlVisible();
-			driver.navigate().refresh();
-			Thread.sleep(3000);
+			
+			objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_DateAfterDays_","Sheet4",true,"sDate");
 			UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-			objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_DateAfterDays_","Sheet4","Edit & Save Record", node);
-			sCurrModRecId = objCRMRs.getModuleRecordId();
-						
 			Thread.sleep(2000);
-			objHP.clickLogoutCRM();	
-				
+			sCurrModRecId = objCRMRs.getModuleRecordId();
+			Thread.sleep(2000);
+			objHP.clickLogoutCRM();
+			
 			sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
 			sExecFrom_Time=xlObj.getCellData("Sheet4", 1, 10);
 			System.out.println("Date as is: " + sActExeStart_Time + " " + sExecFrom_Time);

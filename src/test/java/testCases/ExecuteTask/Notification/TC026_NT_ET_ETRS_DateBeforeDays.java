@@ -29,7 +29,7 @@ public class TC026_NT_ET_ETRS_DateBeforeDays extends BaseClass{
 	}
 	@Test
 	public void testExecuteTask_DateBeforeDays () throws Exception {
-		node = test.createNode("NT_ExecuteTask_DateAfterDays");
+		node = test.createNode("NT_ExecuteTask_DaysBeforeDate ");
 		UtilityCustomFunctions.logWriteConsole("******starting TC026_NT_ET_ETRS_DateBeforeDays ****");
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
 		UtilityCustomFunctions.logWriteConsole("Browser Execution on: "+ sBrowserName);
@@ -339,8 +339,147 @@ public class TC026_NT_ET_ETRS_DateBeforeDays extends BaseClass{
 			 }
 			  objLP.clickPHPMyAdminLogout();
 			  Thread.sleep(1000);
+			//********************************** Edit & Save ********************************** 
+			//Login as User 1
+			driver.get(rb.getString("appURL"));
+			Thread.sleep(3000);
+			if(objLP.isLoginPageDisplayed(sAppUrl)) {
+				objLP.setCompanyName(sCompName);
+				objLP.setUserName(sUserName);
+				objLP.setPassword(sPassword);
+				objLP.clickLoginSubmit();
+				
+			}
+			else {
+				logger.info("CRM Login failed");
+				System.out.println("Login Page Not Displayed");
+				Assert.fail("Login Page not displayed");
+				
+			}
+			Thread.sleep(3000);
+			objALP.clickAllList();
+			Thread.sleep(1000);
+			objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+			System.out.println("Module clicked");
+			Thread.sleep(3000);
+			objCMD.clickExistingModData(1);
+			Thread.sleep(3000);
+			objCMD.clickEdit();
+			Thread.sleep(3000);
+			objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_DateBeforeDays_","Sheet4",true,"sDate");
+			UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+			Thread.sleep(2000);
+			sCurrModRecId = objCRMRs.getModuleRecordId();
+			Thread.sleep(2000);
+			objHP.clickLogoutCRM();
+			
+			sActExeStart_Date = objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+			sExecFrom_Date = xlObj.getCellData("Sheet4", 1, 10);
+			System.out.println("Date as is: " + sActExeStart_Date + " " + sExecFrom_Date);
+			formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			dDBDate = formatter.parse(sActExeStart_Date);
+			formatter.applyPattern("dd-MM-yyyy");
+			sExeStartDate = formatter.format(dDBDate);
+			System.out.println("Execution Start Date" + sExeStartDate);
+			System.out.println("Execution From Date" + sExecFrom_Date);
+			format1 = new SimpleDateFormat("dd-MM-yyyy");
+			d1 = null;
+			d2 = null;
+			d1 = format1.parse(sExeStartDate);
+			d2 = format1.parse(sExecFrom_Date);
+				
+			numberOfDays = d2.getTime() - d1.getTime();
+			days = numberOfDays/(1000*60*60*24); 
+			System.out.println("Number of Days: " + days);
+			if(days==1) {
+				 objBase.freport("Date Selected: "+ d2 +" And Execution Start Date: "+ d1 +" Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save" , "pass",node);
+				 UtilityCustomFunctions.logWriteConsole("Date Selected: "+ d2 +" And Execution Start Date: "+ d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save"); 
+				 BaseClass.sAssertinFn.assertEquals("Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save","Date Selected: "+ d1 +" And Execution Start Date: "+d2 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save");
+			 }else {
+				 objBase.freport("Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save" , "fail",node);
+				 UtilityCustomFunctions.logWriteConsole("Failed: "+"Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save"); 
+				 BaseClass.sAssertinFn.assertEquals("Failed: "+ "Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and EntityId: "+sCurrModRecId + "@Edit & Save","Execute Task Notification Days before given Date is: "+numberOfDays +" days and "+ "EntityId: "+sCurrModRecId + "@Edit & Save"); 
+			 }
+			  objLP.clickPHPMyAdminLogout();
+			  Thread.sleep(1000);
 			  
+			//****************************** Single Line Summary Edit  ****************************
+				driver.get(rb.getString("appURL"));
+				Thread.sleep(3000);
+				//Login
+				if(objLP.isLoginPageDisplayed(sAppUrl)) {
+					objLP.setCompanyName(sCompName);
+					objLP.setUserName(sUserName);
+					objLP.setPassword(sPassword);
+					objLP.clickLoginSubmit();
+					
+				}
+				else {
+					logger.info("CRM Login failed");
+					System.out.println("Login Page Not Displayed");
+					Assert.fail("Login Page not displayed");
+					
+				}
+				UtilityCustomFunctions.logWriteConsole("Before Single LIne Edit: Last Task Id: "+sCurrTaskId+" current record id "+ sCurrModRecId);
+				Thread.sleep(3000);
+				objALP.clickAllList();
+				Thread.sleep(1000);
+				objALP.clickModuleOnListAll(driver, sDisplayModuleName);
+				System.out.println("Module clicked");
+				Thread.sleep(3000);
+				objCMD.clickExistingModData(1);
+				Thread.sleep(5000);
+				objDVP.fSetToggleHeader(true);
+				objDVP.fSetDetailVew(false);
+				Thread.sleep(5000);
+				UtilityCustomFunctions.logWriteConsole("Mobile Number Edit On in Summary Page");
+				objDVP.clickEditNotificationItem();
+				Thread.sleep(3000);
+				objCMD.setGenericInputValue("tel", sExpModuleName, "mobilenumber", sEditIndText);
+				objDVP.clickNotifyRecItemSave(sExpModuleName,"mobilenumber");
+				UtilityCustomFunctions.logWriteConsole(sEditIndText + " Is Updated Text for Mobile Number@Single Line Edit");
+				Thread.sleep(5000);
+						
+				objSVP.fWaitTillControlVisible();
+				driver.navigate().refresh();
+				Thread.sleep(3000);
+				
+				sCurrModRecId = objCRMRs.getModuleRecordId();
+				Thread.sleep(2000);
+				objHP.clickLogoutCRM();
+				
+				sActExeStart_Date = objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+				sExecFrom_Date = xlObj.getCellData("Sheet4", 1, 10);
+				System.out.println("Date as is: " + sActExeStart_Date + " " + sExecFrom_Date);
+				formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+				dDBDate = formatter.parse(sActExeStart_Date);
+				formatter.applyPattern("dd-MM-yyyy");
+				sExeStartDate = formatter.format(dDBDate);
+				System.out.println("Execution Start Date" + sExeStartDate);
+				System.out.println("Execution From Date" + sExecFrom_Date);
+				format1 = new SimpleDateFormat("dd-MM-yyyy");
+				d1 = null;
+				d2 = null;
+				d1 = format1.parse(sExeStartDate);
+				d2 = format1.parse(sExecFrom_Date);
+					
+				numberOfDays = d2.getTime() - d1.getTime();
+				days = numberOfDays/(1000*60*60*24); 
+				System.out.println("Number of Days: " + days);
+				if(days==1) {
+					 objBase.freport("Date Selected: "+ d2 +" And Execution Start Date: "+ d1 +" Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit" , "pass",node);
+					 UtilityCustomFunctions.logWriteConsole("Date Selected: "+ d2 +" And Execution Start Date: "+ d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit"); 
+					 BaseClass.sAssertinFn.assertEquals("Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit","Date Selected: "+ d1 +" And Execution Start Date: "+d2 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit");
+				 }else {
+					 objBase.freport("Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit" , "fail",node);
+					 UtilityCustomFunctions.logWriteConsole("Failed: "+"Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit"); 
+					 BaseClass.sAssertinFn.assertEquals("Failed: "+ "Date Selected: "+ d2 +" And Execution Start Date: "+d1 +"Execute Task Notification Days before given Date is: "+days +" days and EntityId: "+sCurrModRecId + "@Single Line Edit","Execute Task Notification Days before given Date is: "+numberOfDays +" days and "+ "EntityId: "+sCurrModRecId + "@Single Line Edit"); 
+				 }
+				  objLP.clickPHPMyAdminLogout();
+				  Thread.sleep(1000);
 			  
+			
+			
 			  
 		
 	}//Test

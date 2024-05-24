@@ -63,9 +63,9 @@ public class CRMReUsables extends BaseClass {
 		
 		NotificationsPage objNotfy = new NotificationsPage(driver);
 		objNotfy.clickNotificatons();
-		Thread.sleep(10000);
+
 		objNotfy.clickNotifyFirstMsg();
-		Thread.sleep(10000);
+		Thread.sleep(2000);
 		logger.info("Notification detail view opened");
 		
 		Thread.sleep(5000);
