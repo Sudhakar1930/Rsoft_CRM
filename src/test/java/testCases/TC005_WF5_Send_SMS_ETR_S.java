@@ -79,7 +79,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(1000);
 		String sExpModuleName = xlObj.getCellData("Sheet1", 1, 0);
 		String sExpWorkFlowName = xlObj.getCellData("Sheet1", 1, 1);
-//		String sExpAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
+		String sExpAssignedTo = xlObj.getCellData("Sheet1", 1, 2);
 		String sText=xlObj.getCellData("Sheet1", 1, 3);
 		String sMobNumPrefix=xlObj.getCellData("Sheet1", 1, 4);
 		String sMobileNumber=xlObj.getCellData("Sheet1", 1, 5);
@@ -251,7 +251,7 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 //		//**************Add New Record
 		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF5_Send_SMS_ETR_S_","Sheet1",false);
 
-		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet1","Add Direct Entry Module Data","No",node);
+		objCRMRs.fValidateAllFields("Test", "//SMS//WF5_Send_SMS_ETR_S_","Sheet1","@Add New Record","No",node);
 		
 		Thread.sleep(2000);
 		objALP.clickAllList();
@@ -680,7 +680,10 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
-		objDVP.clickEditRecordItem();
+		objDVP.fSetToggleHeader(true);
+		objDVP.fSetDetailVew(false);
+		Thread.sleep(5000);
+		objDVP.clickEditNotificationItem();
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
 		objDVP.clickRecItemSave(sExpModuleName);
@@ -740,7 +743,8 @@ public class TC005_WF5_Send_SMS_ETR_S extends BaseClass{
 			UtilityCustomFunctions.logWriteConsole("Failed: SMS Not Received after Summary Single Edit -"+ sLead_PN);
 			sAssertinFn.assertEquals("Summary Single Edit - SMS Not received", "Summary Single Edit - SMS received");
 		}
-		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 		
 								
 								

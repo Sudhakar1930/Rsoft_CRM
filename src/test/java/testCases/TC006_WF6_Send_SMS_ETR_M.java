@@ -671,7 +671,10 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
 			Thread.sleep(1000);
-			objDVP.clickEditRecordItem();
+			objDVP.fSetToggleHeader(true);
+			objDVP.fSetDetailVew(false);
+			Thread.sleep(5000);
+			objDVP.clickEditNotificationItem();
 			Thread.sleep(1000);
 			objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
 			objDVP.clickRecItemSave(sExpModuleName);
@@ -743,7 +746,8 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 				Thread.sleep(1000);
 				UtilityCustomFunctions.logWriteConsole("Single Edit Record:" + sLead_PN + "RecordId: "+ sCaptureRecordId );
 			}
-			
+			Thread.sleep(2000);
+			objHP.clickLogoutCRM();
 			
 			
 	}//test

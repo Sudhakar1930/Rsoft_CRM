@@ -231,7 +231,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			}
 			
 		}//
-		/*
+		
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -239,8 +239,9 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		Thread.sleep(1000);
 		objEDT.clickModule(sDisplayModuleName);
 		Thread.sleep(2000);
-		*/
 		
+		
+		/* Clicking the last record without adding
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -248,12 +249,13 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
-		
+		*/
 //		//**************Add New Record
-//		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1",false);
+		
+		objCRMRs.fAddValuestoModulePage("Test","//SMS//WF4_Send_SMS_OOF_S_","Sheet1",false);
 
 		objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet1","Add New Module Data","No",node);
-	/*	
+		
 		//uncomment start
 		UtilityCustomFunctions.logWriteConsole("New Values after added :");
 		Thread.sleep(2000);
@@ -293,14 +295,14 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		 Thread.sleep(1000);
 		 iSMSCount = objSMS.getWebTblRowcount(); 
 		 if(iSMSCount<=1) {
-				logger.info("Failed: SMS not Received after New Record Add -"+ sEnquiry_PhoneNumber);
-				freport("Failed: SMS not Received after New Record Add -"+ sEnquiry_PhoneNumber, "fail",node);
+				logger.info("Failed: Enquiry SMS not Received after New Record Add -"+ sEnquiry_PhoneNumber);
+				freport("Failed: Enquiry SMS not Received after New Record Add -"+ sEnquiry_PhoneNumber, "fail",node);
 				sAssertinFn.assertEquals("Add New Record - SMS not received", "Add New Record - SMS received");
 			}
 			else {
-				logger.info("Passed: SMS Received after New Record Add -"+ sEnquiry_PhoneNumber);
-				freport("Passed: SMS Received after New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
-				sAssertinFn.assertEquals("Add New Record - SMS not received", "Add New Record - SMS received");
+				logger.info("Passed: Enquiry SMS Received after New Record Add -"+ sEnquiry_PhoneNumber);
+				freport("Passed: Enquiry SMS Received after New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
+				sAssertinFn.assertEquals("Enquiry Add New Record - SMS not received", "Add New Record - SMS received");
 			}
 		 	
 //		 System.out.println("Total SMS Count:" + objSMS.getWebTblRowcount());
@@ -317,14 +319,14 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		 objSMS.clickSearch();
 		 iSMSCount = objSMS.getWebTblRowcount(); 
 		 if(iSMSCount<=1) {
-				logger.info("Failed: SMS not Received after New Record Add -"+ sLead_PN);
-				freport("Failed: SMS not Received after New Record Add -"+ sLead_PN, "fail",node);
+				logger.info("Failed: Lead SMS not Received after New Record Add -"+ sLead_PN);
+				freport("Failed: Lead SMS not Received after New Record Add -"+ sLead_PN, "fail",node);
 				sAssertinFn.assertEquals("Add New Record - SMS not received", "Add New Record - SMS received");
 		}
 		else {
-				logger.info("Passed: SMS Received after New Record Add -"+ sLead_PN);
-				freport("Passed: SMS Received after New Record Add -"+ sLead_PN, "pass",node);
-				sAssertinFn.assertEquals("Add New Record - SMS not received", "Add New Record - SMS received");
+				logger.info("Passed: Lead SMS Received after New Record Add -"+ sLead_PN);
+				freport("Passed: Lead SMS Received after New Record Add -"+ sLead_PN, "pass",node);
+				sAssertinFn.assertEquals("Lead Add New Record - SMS not received", "Add New Record - SMS received");
 		}
 //			 System.out.println("Total SMS Count:" + objSMS.getWebTblRowcount());
 //			 objSMS.clickFirstSMS();
@@ -488,7 +490,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(5000);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
-//			objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet3","Duplicate with New Data","No",node);
+			objCRMRs.fValidateAllFields("Test", "//SMS//WF4_Send_SMS_OOF_S_","Sheet3","Duplicate with New Data","No",node);
 			
 			objALP.clickAllList();
 			Thread.sleep(1000);
@@ -673,6 +675,7 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 				freport("Failed: SMS Received after Edit with Modification  -"+ sLead_PN, "fail",node);
 				sAssertinFn.assertEquals("Edit with Modification  - SMS received", "Edit with Modification  - SMS not received");
 			}
+			
 			//Single Summary Edit
 			Thread.sleep(3000);
 			objALP.clickAllList();
@@ -682,7 +685,10 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 			Thread.sleep(3000);
 			objCMD.clickExistingModData(1);
 			Thread.sleep(1000);
-			objDVP.clickEditRecordItem();
+			objDVP.fSetToggleHeader(true);
+			objDVP.fSetDetailVew(false);
+			Thread.sleep(5000);
+			objDVP.clickEditNotificationItem();
 			Thread.sleep(1000);
 			objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
 			objDVP.clickRecItemSave(sExpModuleName);
@@ -742,7 +748,9 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 				freport("Failed: SMS Received after Single Summary Edit  -"+ sLead_PN, "fail",node);
 				sAssertinFn.assertEquals("after Single Summary Edit  - SMS received", "after Single Summary Edit  - SMS not received");
 			}
-			*/
+			Thread.sleep(2000);
+			objHP.clickLogoutCRM();
+			
 	}	//test
 	
 }

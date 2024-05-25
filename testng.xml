@@ -8,8 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		
-		<class name="testCases.TC004_WF4_Send_SMS_OOF_S"/>
+			<class name="testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes"/>
 	 </classes>	
 	  <!--
 	  <class name="testCases.TC027_NT_ET_ETRS_TimeBeforeMinutes"/>

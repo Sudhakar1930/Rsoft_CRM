@@ -263,7 +263,8 @@ public class WorkFlowPage extends BasePage {
 				if(bCurrentTaskStatus==true) {
 					Thread.sleep(3000);
 					System.out.println("checkbox status" + bCurrentTaskStatus +"actual action type:" + sActActionType + "action title:" + sActActionTitle);
-					eleTaskCheckBox.click();
+//					eleTaskCheckBox.click();
+					UtilityCustomFunctions.doClick(driver, eleTaskCheckBox);
 					WebElement eleToastMsg = driver.findElement(By.xpath("//div[@class='toast-message']"));
 					if(eleToastMsg.isDisplayed()) {
 						eleToastMsg.click();
@@ -282,7 +283,8 @@ public class WorkFlowPage extends BasePage {
 	//		String sTaskXPath = "(//tr//input[@name='activetemp' and @type='checkbox'])["+j+"]";
 			String sTaskXPath ="((//table[contains(@class,'table table-striped workflowalltask')])[1]//tr//span[@class='switchery switchery-default']/small)[" + j + "]";
 			WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
-			eleTaskCheckBox.click();
+//			eleTaskCheckBox.click();
+			UtilityCustomFunctions.doClick(driver, eleTaskCheckBox);
 			bWorkflowTaskEnabled = true;
 			}
 		clickSubmit();

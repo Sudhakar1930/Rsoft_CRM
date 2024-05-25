@@ -256,7 +256,7 @@ public class CreateModuleDataPage extends BasePage{
 			sYXpath = "(//select[@class='yearselect'])[3]";
 		break;
 		}
-		
+		Thread.sleep(3000);		
 		WebElement eleMonth = driver.findElement(By.xpath(sXpath)); 
 		UtilityCustomFunctions.logWriteConsole("Current Month:" + objCRMRs.getTodayMonth());
 		Thread.sleep(2000);
@@ -285,11 +285,15 @@ public class CreateModuleDataPage extends BasePage{
 		}
 		else {
 			Thread.sleep(3000);
-			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
+//			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
+			List<WebElement> sDateRows = driver.findElements(By.xpath("//div[@class='daterangepicker ltr single opensright show-calendar']//div[@class='drp-calendar left single']//table//tr"));
 			boolean bFound = false;
 			int iCurrDate=0;
-			String sDateXpath="(//td[contains(@class,'today')])[2]";
-			WebElement eleCurrDate = driver.findElement(By.xpath(sDateXpath));
+//			String sDateXpath="(//td[contains(@class,'today')])[2]";
+			String sCurrDateXPath="//div[@class='daterangepicker ltr single opensright show-calendar']/div[@class='drp-calendar left single']//table//tr//td[contains(@class,'today')]";
+//			Index changed back from 2 to 1 while ETRS DateTime: again changed to 2			
+//			String sDateXpath="(//td[contains(@class,'today')])[1]";
+			WebElement eleCurrDate = driver.findElement(By.xpath(sCurrDateXPath));
 			String sActCurrDate = eleCurrDate.getText();
 			iCurrDate = Integer.parseInt(sActCurrDate);
 			int jCounter=iCurrDate+3;
@@ -304,10 +308,16 @@ public class CreateModuleDataPage extends BasePage{
 			if(jCounter >iMonthLastDay) {
 				System.out.println("Select next month");
 			}
-			List<WebElement> sDateCols = driver.findElements(By.xpath("(//table[@class='table-condensed'])[3]//td"));
+//			List<WebElement> sDateCols = driver.findElements(By.xpath("(//table[@class='table-condensed'])[3]//td"));
+			// ETRS Date&Time control index c hanged to 1 
+//			List<WebElement> sDateCols = driver.findElements(By.xpath("(//table[@class='table-condensed'])[1]//td"));
+			
+			List<WebElement> sDateCols = driver.findElements(By.xpath("//div[@class='daterangepicker ltr single opensright show-calendar']/div[@class='drp-calendar left single']//table//tr//td"));
 			for(int i = 0;i<sDateCols.size();i++) {
+				System.out.println("J Counter: " + jCounter);
 				String sDay = sDateCols.get(i).getText();
 				if(jCounter==Integer.parseInt(sDay)) {
+					System.out.println("J Counter: " + jCounter + "Day is :  " + sDay);
 					sDateCols.get(i).click();
 					System.out.println("Inside if sDay Value is: " + i + "Column: " + sDay);
                     UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,"5","option");

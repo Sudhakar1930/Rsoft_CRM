@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_WF4_Send_SMS_OOF_S" class="method navigator-link" hash-for-method="test_Send_SMS_OOF_S_Test">test_Send_SMS_OOF_S_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes" class="method navigator-link" hash-for-method="testExecuteTask__DTAfterMinutes">testExecuteTask__DTAfterMinutes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -121,21 +121,17 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.TC004_WF4_Send_SMS_OOF_S</span>
+              <span class="class-name">testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_Send_SMS_OOF_S_Test">
-                  </a> <!-- test_Send_SMS_OOF_S_Test -->
-                  <span class="method-name">test_Send_SMS_OOF_S_Test</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: .\testData\SMS\WF4_Send_SMS_OOF_S_Test.xlsx (The process cannot access the file because it is being used by another process)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:123)
-	at utilities.ExcelUtility.setCellData(ExcelUtility.java:102)
-	at testCases.TC004_WF4_Send_SMS_OOF_S.test_Send_SMS_OOF_S_Test(TC004_WF4_Send_SMS_OOF_S.java:57)
+                  <a name="testExecuteTask__DTAfterMinutes">
+                  </a> <!-- testExecuteTask__DTAfterMinutes -->
+                  <span class="method-name">testExecuteTask__DTAfterMinutes</span>
+                  <div class="stack-trace">java.text.ParseException: Unparseable date: &quot;&quot;
+	at java.base/java.text.DateFormat.parse(DateFormat.java:399)
+	at testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes.testExecuteTask__DTAfterMinutes(TC031_NT_ET_ETRS_DTAfterMinutes.java:206)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -159,7 +155,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;chromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TC004_WF4_Send_SMS_OOF_S&quot;/&gt;
+      &lt;class name=&quot;testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chromeTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;edgeTest&quot;&gt;
@@ -207,14 +203,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_Send_SMS_OOF_S_Test')
-data.setCell(0, 2, 'testCases.TC004_WF4_Send_SMS_OOF_S')
-data.setCell(0, 3, 2209);
+data.setCell(0, 1, 'testExecuteTask__DTAfterMinutes')
+data.setCell(0, 2, 'testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes')
+data.setCell(0, 3, 358564);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -240,28 +236,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC004_WF4_Send_SMS_OOF_S</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">onStart(org.testng.TestRunner@2407a36c)</span>
+                <span class="method-name">onStart(org.testng.TestRunner@4598961d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">testName</span>
-                <span class="method-start">704 ms</span>
+                <span class="method-start">1133 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">748 ms</span>
+                <span class="method-start">1175 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_Send_SMS_OOF_S_Test</span>
-                <span class="method-start">6918 ms</span>
+                <span class="method-name">testExecuteTask__DTAfterMinutes</span>
+                <span class="method-start">7426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">flush</span>
-                <span class="method-start">9220 ms</span>
+                <span class="method-start">366085 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
