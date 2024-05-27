@@ -261,9 +261,10 @@ public class WorkFlowPage extends BasePage {
 			else {
 				System.out.println(" When Mismatched: default check box status: "+ bCurrentTaskStatus +"  actual action type:" + sActActionType + "action title:" + sActActionTitle);
 				if(bCurrentTaskStatus==true) {
-					Thread.sleep(3000);
+					
 					System.out.println("checkbox status" + bCurrentTaskStatus +"actual action type:" + sActActionType + "action title:" + sActActionTitle);
 //					eleTaskCheckBox.click();
+					Thread.sleep(2000);
 					UtilityCustomFunctions.doClick(driver, eleTaskCheckBox);
 					WebElement eleToastMsg = driver.findElement(By.xpath("//div[@class='toast-message']"));
 					if(eleToastMsg.isDisplayed()) {
@@ -284,6 +285,7 @@ public class WorkFlowPage extends BasePage {
 			String sTaskXPath ="((//table[contains(@class,'table table-striped workflowalltask')])[1]//tr//span[@class='switchery switchery-default']/small)[" + j + "]";
 			WebElement eleTaskCheckBox = driver.findElement(By.xpath(sTaskXPath));
 //			eleTaskCheckBox.click();
+			Thread.sleep(2000);
 			UtilityCustomFunctions.doClick(driver, eleTaskCheckBox);
 			bWorkflowTaskEnabled = true;
 			}

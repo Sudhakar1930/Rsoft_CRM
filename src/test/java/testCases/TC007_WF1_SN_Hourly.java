@@ -3,6 +3,8 @@ package testCases;
 import java.net.URL;
 import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -270,22 +272,28 @@ public class TC007_WF1_SN_Hourly extends BaseClass {
 		
 		
 //		objCRMRs.fValidateAllFields("Test", "//Schedule//Schedule_Notify_Hourly_","Sheet1","Add Direct Entry Module Data","No",node);
-		String sMySqlQuery = "SELECT * FROM `rsoft_workflowtask_queue` where `entity_id` ="+ sRecordId + ";"; 
+		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
 		driver.get(sMySqlUrl);
 		objLP.setMySqlUserId(sMySqlUid);
 		objLP.setMySqlPasswd(sMySqlPwd);
 		Thread.sleep(3000);
 		objLP.clickMySqlSubmit();
 		Thread.sleep(3000);
-//		objPAP.clickDB();
-		PHPMyAdminPage objPAP = new PHPMyAdminPage(driver);
 		objPAP.clickDBLink();
 		Thread.sleep(3000);
 		objPAP.setTableInDB("rsoft_workflowtask_queue");
-		Thread.sleep(4000);
-		objPAP.clickaTableLink();
+		Thread.sleep(5000);
+		objPAP.clickTableLink("rsoft_workflowtask_queue");
 		Thread.sleep(3000);
-		objPAP.aNavigtoLastPage();
+		objPAP.aLastPage();
+		Thread.sleep(2000);
+		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
+		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");
+		Thread.sleep(5000);
+		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sRecordId);
+		objPAP.setRecordId(sRecordId);
+		Thread.sleep(3000);
+		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sRecordId);
 		
 		Thread.sleep(3000);
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);

@@ -792,7 +792,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
 		Thread.sleep(3000);
-		objCMD.clickDayInDate(1,"sDate");
+		objCMD.clickDayInDate(1,"sDate",null);
 		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
@@ -803,7 +803,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "datetime");
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
-		objCMD.clickDayInDate(2,"sDateandTime");
+		objCMD.clickDayInDate(3,"sDateandTime",null);
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
@@ -855,7 +855,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "enquirydate");
 		
 		Thread.sleep(3000);
-		objCMD.clickDayInDate(2,"sEnquiryDate");
+		objCMD.clickDayInDate(3,"sEnquiryDate",null);
 
 		String sActEnquiryDate = objCMD.fGetModuleValue(sExpModuleName, "enquirydate");
 		System.out.println("AcutalDate: " + sActEnquiryDate);
@@ -1533,7 +1533,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
 		Thread.sleep(3000);
-		objCMD.clickDayInDate(1,"sDate");
+		objCMD.clickDayInDate(1,"sDate",null);
 		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "time");
@@ -1544,7 +1544,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "datetime");
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
-		objCMD.clickDayInDate(2,"sDateandTime");
+		objCMD.clickDayInDate(2,"sDateandTime",null);
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
@@ -1603,7 +1603,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "enquirydate");
 		
 		Thread.sleep(3000);
-		objCMD.clickDayInDate(2,"sEnquiryDate");
+		objCMD.clickDayInDate(2,"sEnquiryDate",null);
 
 		String sActEnquiryDate = objCMD.fGetModuleValue(sExpModuleName, "enquirydate");
 		System.out.println("AcutalDate: " + sActEnquiryDate);
@@ -1740,7 +1740,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
 		Thread.sleep(3000);
-		objCMD.clickDayInDate(1,"sDate");
+		objCMD.clickDayInDate(1,"sDate",null);
 		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 		Thread.sleep(1000);
 		//PickList
@@ -1758,7 +1758,7 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
 		//For Modifying record Index 2 value passed.
-		objCMD.clickDayInDate(2,"sDateandTime");
+		objCMD.clickDayInDate(2,"sDateandTime",null);
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
@@ -2476,7 +2476,7 @@ public class CRMReUsables extends BaseClass {
 		String sTimeSeconds = xlAddObj.getCellData(sSheetName, 1, 34);
 		System.out.println("Module Name:  " + sExpModuleName);
 		UtilityCustomFunctions.logWriteConsole("Before Adding Module data");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		//Assigned To
 		objCMD.clickArrayDropDown(1);
 //		objCMD.clickAssignedTo();
@@ -2513,9 +2513,9 @@ public class CRMReUsables extends BaseClass {
 		//Date
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		if(sAddType.equalsIgnoreCase("sDate")) {
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
 			boolean bFound = false;
 			int iCurrDate=0;
@@ -2553,7 +2553,7 @@ public class CRMReUsables extends BaseClass {
 			}
 			Thread.sleep(1000);
 		}else {
-			objCMD.clickDayInDate(1,"sDate");
+			objCMD.clickDayInDate(1,"sDate",null);
 			UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 			Thread.sleep(1000);
 		}
@@ -2572,8 +2572,9 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
 		//For Modifying record Index 2 value passed.
-		objCMD.clickDayInDate(2,"sDateandTime");
-		Thread.sleep(2000);
+		System.out.println("Before Calling ClickDayInDate: " + sTimeHour);
+		objCMD.clickDayInDate(2,"sDateandTime",sTimeHour);
+		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
 		UtilityCustomFunctions.logWriteConsole("Date & Time Selected");

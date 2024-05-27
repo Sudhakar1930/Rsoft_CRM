@@ -1,152 +1,213 @@
-17:13:54.288 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Module,workflow,conditions not matched 
-17:13:54.288 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - bCurrentWFStatus: false
-17:13:54.306 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_OOFS_NotificationsDisabled Workflow Manually Enabled
-17:13:54.306 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - true:1
-17:14:01.827 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Work flow clicked
-17:14:08.810 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Cliked Step 1 Next Button to Condition Page
-17:14:14.433 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Cliked Step 2 Next Button to Task List Page
-17:14:15.435 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Clicked Workflow and Navigated to Task Page
-17:14:15.473 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Number of Tasks Listed for this Workflow: wf_ET_ETRS_Notifications : 18
-17:14:15.740 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:15.740 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterMinutes
-17:14:15.740 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:15.740 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:16.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:16.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeDays
-17:14:16.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:16.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:16.211 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:16.211 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeHours
-17:14:16.211 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:16.211 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:16.411 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:16.411 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeMinutes
-17:14:16.411 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:16.411 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:16.622 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:16.622 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterDays
-17:14:16.622 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:16.622 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:16.873 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:16.873 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterHours
-17:14:16.873 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:16.873 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:17.077 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:17.077 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:17.077 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:17.077 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:17.077 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Action Type and Action Tile matches and also Task Button Enabled
-17:14:17.273 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:17.273 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeMinutes
-17:14:17.273 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:17.273 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:17.490 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:17.490 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeHours
-17:14:17.490 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:17.490 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:17.723 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:17.723 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinutes
-17:14:17.723 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:17.723 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:17.956 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:17.956 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterHours
-17:14:17.956 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:17.956 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:18.173 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:18.173 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DateBeforeDays
-17:14:18.173 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:18.173 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:18.373 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:18.373 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DateAfterDays
-17:14:18.373 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:18.373 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:18.572 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:18.572 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterDays
-17:14:18.572 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:18.572 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:18.789 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:18.789 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterHours
-17:14:18.789 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:18.789 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:19.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:19.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterMinutes
-17:14:19.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:19.006 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:19.221 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:19.221 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterDays
-17:14:19.221 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:19.237 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:19.455 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
-17:14:19.455 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterHours
-17:14:19.455 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:14:19.455 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTAfterMinutes
-17:14:20.458 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-17:14:23.565 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Clicked Workflow and Navigated to Task Page
-17:14:23.566 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - Task Active Send notification  tskNT_ExecuteTask_DTAfterMinutes
-17:14:34.309 [main] INFO  utilities.UtilityCustomFunctions - Click Module:ETNotification
-17:14:37.578 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:ETNotification
-17:14:39.586 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-17:14:39.639 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-17:14:39.689 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
-17:14:39.689 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-17:14:40.694 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-17:14:43.870 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-17:14:49.195 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [Rsoft IT] is selected in List
-17:14:49.350 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:14:52.679 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [+91] is selected in List
-17:14:52.679 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9087654321
-17:14:54.308 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
-17:14:57.944 [main] INFO  utilities.UtilityCustomFunctions - NewAdd@gmail.com entered in  input
-17:14:58.960 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: NewAdd@gmail.com
-17:15:00.373 [main] INFO  utilities.UtilityCustomFunctions - NewAddText entered in  input
-17:15:00.373 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  NewAddText
-17:15:22.729 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
-17:15:25.211 [main] INFO  utilities.UtilityCustomFunctions - NewAddTextArea entered in  textarea
-17:15:27.268 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-17:15:27.390 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:15:27.549 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:15:33.609 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:15:37.788 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:15:46.471 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:15:52.205 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:15:55.414 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:15:57.639 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:15:58.823 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-17:16:06.231 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:16:14.293 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:16:18.501 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:16:27.069 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:16:36.437 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [5] is selected in List
-17:16:39.854 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [00] is selected in List
-17:16:43.229 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [00] is selected in List
-17:16:46.671 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [PM] is selected in List
-17:16:48.687 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:16:48.900 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:16:50.043 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:16:53.055 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='5']
-17:17:04.706 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :25-05-2024
-17:17:08.596 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [Mr.] is selected in List
-17:17:10.122 [main] INFO  utilities.UtilityCustomFunctions - NewAddName entered in  input
-17:17:11.605 [main] INFO  utilities.UtilityCustomFunctions - 1111111111 entered in  input
-17:17:13.006 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-17:17:14.589 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-17:17:15.779 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:17:19.089 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [Ariyalur] is selected in List
-17:17:19.089 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Ariyalur
-17:17:20.251 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:17:23.954 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [Tamilnadu] is selected in List
-17:17:23.954 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:17:25.157 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:17:28.490 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [India] is selected in List
-17:17:28.490 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:17:45.457 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-17:17:45.476 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-17:17:49.290 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-17:17:52.385 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-17:18:01.168 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-17:18:14.206 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-17:18:25.437 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:18:25.891 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:18:53.394 [main] INFO  testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes - [PRIMARY (DESC)] is selected in List
-17:18:58.409 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 125462
-17:19:02.844 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 125462
+18:36:30.163 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:36:33.585 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Kanchipuram] is selected in List
+18:36:33.585 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:36:34.845 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:36:38.554 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Tamilnadu] is selected in List
+18:36:38.554 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:36:39.805 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:36:43.109 [main] INFO  testCases.TC007_WF1_SN_Hourly - [India] is selected in List
+18:36:43.109 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:36:45.179 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+18:36:45.369 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:36:45.512 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:36:49.585 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+18:36:58.454 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:37:04.202 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:37:06.397 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:37:07.549 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:37:10.555 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:37:21.053 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:37:22.342 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:37:28.418 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+18:37:37.152 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:37:50.987 [main] INFO  testCases.TC007_WF1_SN_Hourly - [5] is selected in List
+18:37:55.507 [main] INFO  testCases.TC007_WF1_SN_Hourly - [00] is selected in List
+18:37:59.960 [main] INFO  testCases.TC007_WF1_SN_Hourly - [00] is selected in List
+18:38:04.338 [main] INFO  testCases.TC007_WF1_SN_Hourly - [PM] is selected in List
+18:38:07.368 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:38:07.621 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:38:09.621 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+18:39:04.322 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Mrs.] is selected in List
+18:39:05.859 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:39:07.382 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+18:39:08.855 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+18:39:10.539 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:39:13.969 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Dr.] is selected in List
+18:39:15.499 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:39:17.306 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:39:19.035 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:39:26.238 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+18:39:30.416 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+18:39:39.167 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:39:44.765 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
+18:39:51.754 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+60] is selected in List
+18:39:54.452 [main] INFO  utilities.UtilityCustomFunctions - 5438895854 entered in  input
+18:40:00.915 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Ordinary] is selected in List
+18:40:07.616 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+91] is selected in List
+18:40:10.353 [main] INFO  utilities.UtilityCustomFunctions - 7618590043 entered in  input
+18:40:12.133 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+18:40:13.733 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:40:18.221 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+60] is selected in List
+18:40:20.869 [main] INFO  utilities.UtilityCustomFunctions - 2259631347 entered in  input
+18:40:22.569 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+18:40:48.403 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+18:40:48.849 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+18:41:16.768 [main] INFO  utilities.UtilityCustomFunctions - RowCount:26
+18:41:16.840 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125565
+18:41:16.855 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125567
+18:41:16.886 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125567
+18:41:16.929 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125567
+18:41:16.951 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125571
+18:41:16.982 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125573
+18:41:17.013 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125575
+18:41:17.045 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125577
+18:41:17.076 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125579
+18:41:17.092 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125581
+18:41:17.130 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125581
+18:41:17.155 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125581
+18:41:17.186 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125584
+18:41:17.219 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125586
+18:41:17.251 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125590
+18:41:17.282 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125590
+18:41:17.304 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125590
+18:41:17.336 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125596
+18:41:17.367 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125598
+18:41:17.382 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125600
+18:41:17.419 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125602
+18:41:17.451 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125604
+18:41:17.478 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125606
+18:41:17.509 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125608
+18:41:17.540 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125620 Actual Entity Id:125608
+18:57:01.879 [main] INFO  testCases.TC007_WF1_SN_Hourly - ******starting WF Schedule Notify Hourly****
+18:57:01.889 [main] INFO  testCases.TC007_WF1_SN_Hourly - Test Execution on Browser: chrome
+18:57:01.892 [main] INFO  testCases.TC007_WF1_SN_Hourly - Excel file Utility instance created
+18:57:03.420 [main] INFO  testCases.TC007_WF1_SN_Hourly - Row Count is: 1
+18:57:03.774 [main] INFO  testCases.TC007_WF1_SN_Hourly - Col Count is: 52
+18:57:03.774 [main] INFO  testCases.TC007_WF1_SN_Hourly - Extracting DataSheet Values started...
+18:57:11.583 [main] INFO  utilities.UtilityCustomFunctions - PN1:1481696994
+18:57:11.583 [main] INFO  utilities.UtilityCustomFunctions - PN2:2506260541
+18:57:11.583 [main] INFO  utilities.UtilityCustomFunctions - PN3:6843540293
+18:57:11.583 [main] INFO  utilities.UtilityCustomFunctions - PN4:3319911342
+18:57:21.093 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:57:22.696 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:57:24.317 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:57:28.674 [main] INFO  testCases.TC007_WF1_SN_Hourly - CRM Login Success with:rsoft
+18:57:28.674 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+18:57:28.674 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+18:57:28.674 [main] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+18:57:35.881 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Avatar
+18:57:39.958 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Menu CRM Setting
+18:57:42.231 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Menu Other Setting
+18:57:46.679 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Menu Item Workflow
+18:57:46.968 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Workflow from Combox Box List
+18:57:48.979 [main] INFO  testCases.TC007_WF1_SN_Hourly - Item to be selected:  CRMScheduleNotification Workflow
+18:57:55.174 [main] INFO  testCases.TC007_WF1_SN_Hourly - [CRMScheduleNotification Workflow] is selected in List
+18:57:55.174 [main] INFO  testCases.TC007_WF1_SN_Hourly - Item selected in combox Box  CRMScheduleNotification Workflow
+18:57:58.177 [main] INFO  testCases.TC007_WF1_SN_Hourly - Selected Module to View its Workflows
+18:57:58.380 [main] INFO  testCases.TC007_WF1_SN_Hourly - Module,workflow,condition matches
+18:57:58.380 [main] INFO  testCases.TC007_WF1_SN_Hourly - bCurrentWFStatus: true
+18:57:58.380 [main] INFO  testCases.TC007_WF1_SN_Hourly - WF1_ScheduleNotify_HourlyWorkflow enabled
+18:57:58.507 [main] INFO  testCases.TC007_WF1_SN_Hourly - Module,workflow,conditions not matched 
+18:57:58.507 [main] INFO  testCases.TC007_WF1_SN_Hourly - bCurrentWFStatus: false
+18:57:58.631 [main] INFO  testCases.TC007_WF1_SN_Hourly - Module,workflow,conditions not matched 
+18:57:58.631 [main] INFO  testCases.TC007_WF1_SN_Hourly - bCurrentWFStatus: false
+18:57:58.746 [main] INFO  testCases.TC007_WF1_SN_Hourly - Module,workflow,conditions not matched 
+18:57:58.746 [main] INFO  testCases.TC007_WF1_SN_Hourly - bCurrentWFStatus: false
+18:57:58.880 [main] INFO  testCases.TC007_WF1_SN_Hourly - Module,workflow,conditions not matched 
+18:57:58.880 [main] INFO  testCases.TC007_WF1_SN_Hourly - bCurrentWFStatus: false
+18:57:59.046 [main] INFO  testCases.TC007_WF1_SN_Hourly - Module,workflow,conditions not matched 
+18:57:59.046 [main] INFO  testCases.TC007_WF1_SN_Hourly - bCurrentWFStatus: false
+18:57:59.062 [main] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
+18:57:59.062 [main] INFO  testCases.TC007_WF1_SN_Hourly - true:1
+18:58:05.900 [main] INFO  testCases.TC007_WF1_SN_Hourly - Work flow clicked
+18:58:12.533 [main] INFO  testCases.TC007_WF1_SN_Hourly - Cliked Step 1 Next Button to Condition Page
+18:58:17.410 [main] INFO  testCases.TC007_WF1_SN_Hourly - Cliked Step 2 Next Button to Task List Page
+18:58:18.411 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Workflow and Navigated to Task Page
+18:58:18.447 [main] INFO  testCases.TC007_WF1_SN_Hourly - Number of Tasks Listed for this Workflow: WF1_ScheduleNotify_Hourly : 1
+18:58:18.680 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:Send notification
+18:58:18.680 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ScheduleNotificationHourly
+18:58:18.680 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:58:18.695 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ScheduleNotificationHourly
+18:58:18.695 [main] INFO  testCases.TC007_WF1_SN_Hourly - Action Type and Action Tile matches and also Task Button Enabled
+18:58:19.711 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:58:22.606 [main] INFO  testCases.TC007_WF1_SN_Hourly - Clicked Workflow and Navigated to Task Page
+18:58:22.606 [main] INFO  testCases.TC007_WF1_SN_Hourly - Task Active Send notification  ScheduleNotificationHourly
+18:58:39.755 [main] INFO  testCases.TC007_WF1_SN_Hourly - Excel file Utility instance created
+18:58:39.810 [main] INFO  testCases.TC007_WF1_SN_Hourly - Row Count is: 1
+18:58:39.859 [main] INFO  testCases.TC007_WF1_SN_Hourly - Col Count is: 52
+18:58:39.860 [main] INFO  testCases.TC007_WF1_SN_Hourly - Extracting DataSheet Values started...
+18:58:41.730 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:58:44.935 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:58:52.450 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Sudhakar VE] is selected in List
+18:58:52.450 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:58:54.069 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+18:58:54.083 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+18:58:55.301 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:58:58.634 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+65] is selected in List
+18:58:58.634 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1481696994
+18:59:00.299 [main] INFO  utilities.UtilityCustomFunctions - 1481696994 entered in  input
+18:59:02.966 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+18:59:03.997 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+18:59:05.162 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:59:06.296 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+18:59:20.218 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
+18:59:21.354 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:59:24.818 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Kanchipuram] is selected in List
+18:59:24.818 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:59:25.990 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:59:29.700 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Tamilnadu] is selected in List
+18:59:29.700 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:59:30.819 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:59:34.135 [main] INFO  testCases.TC007_WF1_SN_Hourly - [India] is selected in List
+18:59:34.135 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:59:36.230 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+18:59:36.387 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:59:36.542 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:59:40.629 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+18:59:49.446 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:59:55.195 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:59:57.356 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:59:58.489 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+19:00:01.492 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+19:00:11.912 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+19:00:13.134 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+19:00:19.211 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+19:00:27.897 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+19:00:41.871 [main] INFO  testCases.TC007_WF1_SN_Hourly - [5] is selected in List
+19:00:46.290 [main] INFO  testCases.TC007_WF1_SN_Hourly - [00] is selected in List
+19:00:50.781 [main] INFO  testCases.TC007_WF1_SN_Hourly - [00] is selected in List
+19:00:55.228 [main] INFO  testCases.TC007_WF1_SN_Hourly - [PM] is selected in List
+19:00:58.260 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+19:00:58.500 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+19:01:00.905 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+19:01:55.628 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Mrs.] is selected in List
+19:01:57.149 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+19:01:58.746 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+19:02:00.195 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+19:02:01.929 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+19:02:05.379 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Dr.] is selected in List
+19:02:06.912 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+19:02:08.660 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+19:02:10.329 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+19:02:17.773 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+19:02:21.961 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+19:02:30.643 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+19:02:36.245 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
+19:02:43.214 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+60] is selected in List
+19:02:46.046 [main] INFO  utilities.UtilityCustomFunctions - 2506260541 entered in  input
+19:02:52.596 [main] INFO  testCases.TC007_WF1_SN_Hourly - [Ordinary] is selected in List
+19:02:59.100 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+91] is selected in List
+19:03:01.735 [main] INFO  utilities.UtilityCustomFunctions - 6843540293 entered in  input
+19:03:03.412 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+19:03:04.961 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+19:03:09.481 [main] INFO  testCases.TC007_WF1_SN_Hourly - [+60] is selected in List
+19:03:12.177 [main] INFO  utilities.UtilityCustomFunctions - 3319911342 entered in  input
+19:03:13.874 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+19:03:39.160 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+19:03:39.608 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+19:04:11.381 [main] INFO  testCases.TC007_WF1_SN_Hourly - [PRIMARY (DESC)] is selected in List
+19:04:16.395 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 125622
+19:04:20.833 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 125622
+19:04:23.968 [main] INFO  utilities.UtilityCustomFunctions - Exp EntityId:125622 Actual Entity Id:125622
+19:04:24.383 [main] INFO  utilities.UtilityCustomFunctions - Within Date Diff Validation
+19:04:25.599 [main] INFO  utilities.UtilityCustomFunctions - Passed:  Actual EntityId:125622 ScheduleName:Hourly Created Time:2024-05-27 13:33:22 ExecutionTime:2024-05-27 14:33:22 Difference In Minutes:=60 and Task Id:493

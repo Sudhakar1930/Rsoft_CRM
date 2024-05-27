@@ -238,7 +238,7 @@ public class CreateModuleDataPage extends BasePage{
 			System.out.println(e.getCause());
 		}
 	}
-	public void clickDayInDate(int iDateIndex,String sControlType) throws Exception {
+	public void clickDayInDate(int iDateIndex,String sControlType,String sTimeHour) throws Exception {
 		CRMReUsables objCRMRs = new CRMReUsables();
 		String sXpath="";
 		String sYXpath="";
@@ -256,35 +256,36 @@ public class CreateModuleDataPage extends BasePage{
 			sYXpath = "(//select[@class='yearselect'])[3]";
 		break;
 		}
-		Thread.sleep(3000);		
+		Thread.sleep(1000);		
 		WebElement eleMonth = driver.findElement(By.xpath(sXpath)); 
 		UtilityCustomFunctions.logWriteConsole("Current Month:" + objCRMRs.getTodayMonth());
 		Thread.sleep(2000);
 //		UtilityCustomFunctions.doClick(driver, eleMonth);
 		eleMonth.click();
-		Thread.sleep(2000);
-		UtilityCustomFunctions.logWriteConsole("Current Month:" + objCRMRs.getTodayMonth());
-		Thread.sleep(2000);
-		UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, objCRMRs.getTodayMonth());
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		String sCurrMonth = objCRMRs.getTodayMonth();
+		Thread.sleep(1000);
+		UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, sCurrMonth);
+		Thread.sleep(1000);
 		WebElement eleYear= driver.findElement(By.xpath(sYXpath));
 		eleYear.click();
 		Thread.sleep(1000);
 		String sYear =  Integer.toString(objCRMRs.getCurrentYear());
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Year to be selected is:" + sYear);
 		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
 		
+		Thread.sleep(2000);		
 		if(!sControlType.equalsIgnoreCase("sDateandTime")) {
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
 			UtilityCustomFunctions.logWriteConsole(sDateXpath);
 			WebElement eleDate = driver.findElement(By.xpath(sDateXpath));
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			eleDate.click();
 		}
 		else {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 //			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
 			List<WebElement> sDateRows = driver.findElements(By.xpath("//div[@class='daterangepicker ltr single opensright show-calendar']//div[@class='drp-calendar left single']//table//tr"));
 			boolean bFound = false;
@@ -295,6 +296,8 @@ public class CreateModuleDataPage extends BasePage{
 //			String sDateXpath="(//td[contains(@class,'today')])[1]";
 			WebElement eleCurrDate = driver.findElement(By.xpath(sCurrDateXPath));
 			String sActCurrDate = eleCurrDate.getText();
+			System.out.println("Current Date In DT Control:" + sActCurrDate);
+			System.out.println("Month Selected in DT Control:" + eleMonth.getText());
 			iCurrDate = Integer.parseInt(sActCurrDate);
 			int jCounter=iCurrDate+3;
 			Date dMonthDate = new Date();
@@ -312,22 +315,43 @@ public class CreateModuleDataPage extends BasePage{
 			// ETRS Date&Time control index c hanged to 1 
 //			List<WebElement> sDateCols = driver.findElements(By.xpath("(//table[@class='table-condensed'])[1]//td"));
 			
-			List<WebElement> sDateCols = driver.findElements(By.xpath("//div[@class='daterangepicker ltr single opensright show-calendar']/div[@class='drp-calendar left single']//table//tr//td"));
+			List<WebElement> sDateCols = driver.findElements(By.xpath("//div[@class='daterangepicker ltr single opensright show-calendar']/div[@class='drp-calendar left single']//table//tr//td[contains(@class,'today') or contains(@class,'active') or @class='available' or @class='weekend available']"));
 			for(int i = 0;i<sDateCols.size();i++) {
+				try {
 				System.out.println("J Counter: " + jCounter);
 				String sDay = sDateCols.get(i).getText();
+				System.out.println("sDay Value is: " + sDay);
 				if(jCounter==Integer.parseInt(sDay)) {
 					System.out.println("J Counter: " + jCounter + "Day is :  " + sDay);
+					Thread.sleep(1000);
+//					UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, sCurrMonth);
+//					Thread.sleep(3000);
+//					UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
+//					Thread.sleep(3000);
 					sDateCols.get(i).click();
-					System.out.println("Inside if sDay Value is: " + i + "Column: " + sDay);
-                    UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,"5","option");
+					Thread.sleep(1000);
+					System.out.println("Inside if sDay Value is: " + i + "Column: " + sDay + "And sTimeHour: " + sTimeHour);
+					
+					Thread.sleep(1000);
+					if(sTimeHour!=null) {
+						UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,sTimeHour,"option");
+					}else {
+						UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,"5","option");
+					}
+                    Thread.sleep(1000);
                     UtilityCustomFunctions.selectItemfromListBox(driver,eleDTMinute,"00","option");
+                    Thread.sleep(1000);
                     UtilityCustomFunctions.selectItemfromListBox(driver,eleDTSecond,"00","option");
+                    Thread.sleep(1000);
                     UtilityCustomFunctions.selectItemfromListBox(driver,eleDTAMPM,"PM","option");
+                    Thread.sleep(1000);
                     bFound = true;
                     break;
 				}
-			}
+				}catch(NumberFormatException e) {
+					System.out.println("Value: " + i + " not an Integer");
+				}
+			}//for loop
 			
 		}//if sDateandTime
 

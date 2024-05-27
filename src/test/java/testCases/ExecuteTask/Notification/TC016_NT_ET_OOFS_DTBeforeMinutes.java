@@ -282,7 +282,7 @@ public class TC016_NT_ET_OOFS_DTBeforeMinutes extends BaseClass{
 		
 		sActualValue = sTargetFormat.format(date);
 		System.out.println("Actual Formatted Date & Time" + sActualValue);
-		sDateandTime = xlObj.getCellData("Sheet1", 1, 13);
+		sDateandTime = xlObj.getCellData("Sheet2", 1, 13);
 		dExpDate = sExpConvFromFormat.parse(sDateandTime);
 		dExpDate = DateUtils.addMinutes(dExpDate, 675);
 		sExpDate = sTargetFormat.format(dExpDate);
@@ -352,7 +352,7 @@ public class TC016_NT_ET_OOFS_DTBeforeMinutes extends BaseClass{
 		
 		sActualValue = sTargetFormat.format(date);
 		System.out.println("Actual Formatted Date & Time" + sActualValue);
-		sDateandTime = xlObj.getCellData("Sheet1", 1, 13);
+		sDateandTime = xlObj.getCellData("Sheet3", 1, 13);
 		dExpDate = sExpConvFromFormat.parse(sDateandTime);
 		dExpDate = DateUtils.addMinutes(dExpDate, 675);
 		sExpDate = sTargetFormat.format(dExpDate);

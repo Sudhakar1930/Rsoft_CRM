@@ -970,14 +970,14 @@ public class PHPMyAdminPage extends BasePage{
 	public void check_SN_Hourly(String sEntityId,ExtentTest node) throws IOException, InterruptedException {
 		BaseClass objBase = new BaseClass();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
-		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
-		int itRowCount = eleTblRows.size();
-		UtilityCustomFunctions.logWriteConsole("RowCount:"+itRowCount);
+//		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
+//		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
+//		int itRowCount = eleTblRows.size();
+//		UtilityCustomFunctions.logWriteConsole("RowCount:"+itRowCount);
 		int iTaskId = 0; 
-		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
-		
-		
+//		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		System.out.println("Schedule Notify Hourly record count: " + tRows.size());
 		for(int i=0;i<tRows.size();i++) {
 			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
 			String sActEntityId = tCols.get(5).getText();
@@ -1034,7 +1034,7 @@ public class PHPMyAdminPage extends BasePage{
 				 BaseClass.sAssertinFn.assertEquals("Scheduled Workflow not triggered for Entity:" + sEntityId , "Scheduled Workflow triggered for Entity:" + sActTaskId); 
 			 }
 			 
-			
+			break;
 			
 			}//if Entity Id
 		}
