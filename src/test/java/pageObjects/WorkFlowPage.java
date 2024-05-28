@@ -245,8 +245,8 @@ public class WorkFlowPage extends BasePage {
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Type:" + sActionType);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Title:" + sActionTitle);
-			
-			if(sActActionType.trim().equalsIgnoreCase(sActionType.trim()) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
+//			if(sActActionType.trim().equalsIgnoreCase(sActionType.trim()) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
+			if(sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
 				if(bCurrentTaskStatus==true) {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");

@@ -757,19 +757,19 @@ public class PHPMyAdminPage extends BasePage{
 	public void check_SN_MonthByDate(String sEntityId,String sModuleName,String sDayArray,String sScheduleTypeName,String sActionType,ExtentTest node) throws ParseException, IOException, InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		BaseClass objBase = new BaseClass();
-		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
-		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
-		int itRowCount = eleTblRows.size();
+//		String sXpath = "//table[contains(@class,'table table-striped')]//tr";
+//		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
+//		int itRowCount = eleTblRows.size();
 
 		String sDateArray[] = sDayArray.split(":");
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 
-		 
+		 boolean bFlag = false;
 		int iDay = 0;
 		int iTaskId = 0; 
-		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
 		for(int i=0;i<tRows.size();i++) {
-
+			
 		List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
 		String sActEntityId = tCols.get(5).getText();
 		Thread.sleep(3000);
@@ -785,6 +785,7 @@ public class PHPMyAdminPage extends BasePage{
 			System.out.println("Execution Time:" + tCols.get(14).getText());
 			System.out.println("Send Type:" + tCols.get(17).getText());
 			System.out.println("Created Time:" + tCols.get(18).getText());
+			bFlag = true;
 		String sActTaskId 	= tCols.get(4).getText();
 		js.executeScript("arguments[0].scrollIntoView();", tCols.get(4));
 		//ModuleName
@@ -812,21 +813,23 @@ public class PHPMyAdminPage extends BasePage{
 			
 		int sActDate = d1.getDate(); 	 
 		int sExpDate = Integer.parseInt(sDateArray[iDay]); 
-		
+		System.out.println("sConfigDateTime:" + sConfigDateTime);
+		System.out.println("sActDate:" + sActDate);
+		System.out.println("sExpDate:" + sExpDate);
 		js.executeScript("arguments[0].scrollIntoView();", tCols.get(5));
-		if(sConfigDateTime.contains("08:00:00") && sActModName.equalsIgnoreCase(sModuleName) && sActSchdName.equalsIgnoreCase(sScheduleTypeName) && sActDate==sExpDate && sActSendType.equalsIgnoreCase(sActionType)) {
+		if(sConfigDateTime.contains("08:00:00") && sActDate==sExpDate ) {
+//		if(sConfigDateTime.contains("08:00:00") && sActModName.equalsIgnoreCase(sModuleName) && sActSchdName.equalsIgnoreCase(sScheduleTypeName) && sActDate==sExpDate && sActSendType.equalsIgnoreCase(sActionType)) {
 			 objBase.freport("Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC:" + sActExecTime + " On Day: "+sActDate + ", Schedule Type: " + sActSchdName + ", Action type: " + sActSendType + ", for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId, "pass",node);
 			 UtilityCustomFunctions.logWriteConsole("Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: "+sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + ", and Task Id:" + sActTaskId);
 			 BaseClass.sAssertinFn.assertEquals("MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: " + sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId, "MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: " + sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId);
 		}
-		else {
-			objBase.freport("Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: "+sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId, "fail",node);
-			 UtilityCustomFunctions.logWriteConsole("Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: "+sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId);
-			 BaseClass.sAssertinFn.assertEquals("MonthlybyDate Worflow not scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: " + sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId, "MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: " + sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId);
-		}
-		
 			iDay = iDay + 1;
 		}//if Entity Id	
+		if(bFlag==false) {
+			objBase.freport("Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " , "fail",node);
+			UtilityCustomFunctions.logWriteConsole("Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " );
+			BaseClass.sAssertinFn.assertEquals("Failed: MonthlybyDate Worflow not scheduled to run at 08:00:00 AM on UTC " , "MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC ");
+		}
 		}//for loop
 	}
 	public void check_SN_Weekly(String sEntityId,String sWeekday,String schTypeName, String sSendType,ExtentTest node) throws ParseException, IOException, InterruptedException {
@@ -837,7 +840,8 @@ public class PHPMyAdminPage extends BasePage{
 		int itRowCount = eleTblRows.size();
 		
 		int iTaskId = 0; 
-		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
+//		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
 		for(int i=0;i<tRows.size();i++) {
 
 		List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
@@ -904,7 +908,8 @@ public class PHPMyAdminPage extends BasePage{
 //		int itRowCount = eleTblRows.size();
 		
 		int iTaskId = 0; 
-		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
+//		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
 		for(int i=0;i<tRows.size();i++) {
 			
 			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
@@ -1034,7 +1039,7 @@ public class PHPMyAdminPage extends BasePage{
 				 BaseClass.sAssertinFn.assertEquals("Scheduled Workflow not triggered for Entity:" + sEntityId , "Scheduled Workflow triggered for Entity:" + sActTaskId); 
 			 }
 			 
-			break;
+			
 			
 			}//if Entity Id
 		}

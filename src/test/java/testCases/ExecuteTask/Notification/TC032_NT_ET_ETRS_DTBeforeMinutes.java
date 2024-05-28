@@ -29,8 +29,9 @@ public class TC032_NT_ET_ETRS_DTBeforeMinutes extends BaseClass{
 		test = extent.createTest("TC032_NT_ET_ETRS_DTBeforeMinutes");
 	}
 	@Test
-	public void testExecuteTask__DTAfterMinutes () throws Exception {
-		node = test.createNode("NT_ExecuteTask_DTAfterMinutes");
+	public void testExecuteTask__DTBeforeMinutes () throws Exception {
+		
+		node = test.createNode("NT_ExecuteTask_DTBeforeMinutes");
 		UtilityCustomFunctions.logWriteConsole("******starting TC032_NT_ET_ETRS_DTBeforeMinutes ****");
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
 		UtilityCustomFunctions.logWriteConsole("Browser Execution on: "+ sBrowserName);

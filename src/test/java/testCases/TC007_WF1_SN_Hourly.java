@@ -299,6 +299,10 @@ public class TC007_WF1_SN_Hourly extends BaseClass {
 		sUser1RecordId=xlObj.getCellData("Sheet1", 1, 39);
 		System.out.println(sUser1RecordId + ":" + sRecordId);
 		objPAP.check_SN_Hourly(sUser1RecordId,node);
+		
+		objLP.clickPHPMyAdminLogout();
+		Thread.sleep(1000);
+		driver.close();
 
 	}	
 }

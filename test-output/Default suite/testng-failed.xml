@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate">
+      <class name="testCases.ExecuteTask.Notification.TC032_NT_ET_ETRS_DTBeforeMinutes">
         <methods>
           <include name="onStart"/>
-          <include name="CreateTest"/>
-          <include name="testCreateEntity_OOFS_SuccessUpdate"/>
+          <include name="testName"/>
           <include name="setup"/>
           <include name="flush"/>
+          <include name="testExecuteTask__DTAfterMinutes"/>
         </methods>
-      </class> <!-- testCases.TC015_CreateEntity_OOFS_SuccessUpdate -->
+      </class> <!-- testCases.ExecuteTask.Notification.TC032_NT_ET_ETRS_DTBeforeMinutes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
