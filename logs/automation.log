@@ -1,459 +1,357 @@
-17:30:57.462 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
-17:30:57.469 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:30:57.469 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
-17:30:57.469 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Action Type and Action Tile matches and also Task Button Enabled
-17:30:58.477 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-17:31:01.569 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-17:31:01.571 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Active Send notification  TriggerMonthlybyDateNotify
-17:31:18.901 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-17:31:18.965 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-17:31:19.000 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-17:31:19.000 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-17:31:20.793 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-17:31:24.001 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-17:31:29.316 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Sudhakar VE] is selected in List
-17:31:29.316 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-17:31:30.897 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
-17:31:30.915 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
-17:31:32.049 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:31:35.380 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+65] is selected in List
-17:31:35.380 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  6277757028
-17:31:36.995 [main] INFO  utilities.UtilityCustomFunctions - 6277757028 entered in  input
-17:31:39.648 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
-17:31:40.675 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
-17:31:41.812 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:31:42.985 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-17:31:56.849 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
-17:31:58.016 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:32:01.419 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Kanchipuram] is selected in List
-17:32:01.419 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
-17:32:02.551 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:32:06.178 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Tamilnadu] is selected in List
-17:32:06.178 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:32:07.347 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:32:10.661 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [India] is selected in List
-17:32:10.661 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:32:12.728 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-17:32:12.871 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:32:13.015 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:32:17.096 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:32:25.846 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:32:31.558 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:32:33.795 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:32:34.955 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:32:37.960 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
-17:32:48.361 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
-17:32:49.562 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:32:55.609 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:33:04.376 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:33:18.308 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [5] is selected in List
-17:33:22.767 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
-17:33:27.171 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
-17:33:31.560 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [PM] is selected in List
-17:33:34.576 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:33:34.811 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:33:36.946 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
-17:34:31.564 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
-17:34:33.062 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
-17:34:34.577 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
-17:34:35.992 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
-17:34:37.644 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-17:34:41.144 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
-17:34:42.645 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
-17:34:44.362 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
-17:34:46.057 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
-17:34:53.326 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
-17:34:57.561 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-17:35:06.142 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:35:11.658 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
-17:35:18.630 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
-17:35:21.310 [main] INFO  utilities.UtilityCustomFunctions - 2829293662 entered in  input
-17:35:27.797 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
-17:35:34.380 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
-17:35:37.042 [main] INFO  utilities.UtilityCustomFunctions - 5643658693 entered in  input
-17:35:38.776 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
-17:35:40.360 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
-17:35:44.895 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
-17:35:47.625 [main] INFO  utilities.UtilityCustomFunctions - 0666618525 entered in  input
-17:35:49.328 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
-17:36:14.673 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:36:15.107 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:36:46.913 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [PRIMARY (DESC)] is selected in List
-17:36:51.927 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126182
-17:36:56.331 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126182
-17:37:07.165 [main] INFO  utilities.UtilityCustomFunctions - Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2024-05-30 02:30:00On Day: 30Schedule Type: Monthly By Date Action type: Send notification for EntityId: 126182and Task Id:543
-17:37:14.876 [main] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2024-05-15 02:30:00On Day: 15Schedule Type: Monthly By Date Action type: Send notification for EntityId: 126182, and Task Id:542
-17:37:22.610 [main] INFO  utilities.UtilityCustomFunctions - Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2024-05-01 02:30:00On Day: 1Schedule Type: Monthly By Date Action type: Send notification for EntityId: 126182and Task Id:541
-17:46:27.770 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
-17:46:27.776 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
-17:46:27.779 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-17:46:29.213 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-17:46:29.557 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-17:46:29.558 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-17:46:38.564 [main] INFO  utilities.UtilityCustomFunctions - PN1:6579715451
-17:46:38.564 [main] INFO  utilities.UtilityCustomFunctions - PN2:0498110804
-17:46:38.564 [main] INFO  utilities.UtilityCustomFunctions - PN3:9926513922
-17:46:38.564 [main] INFO  utilities.UtilityCustomFunctions - PN4:9679704000
-17:46:53.744 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-17:46:55.349 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
-17:46:57.045 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-17:47:01.426 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:Sudhakar
-17:47:01.426 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
-17:47:01.426 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-17:47:01.426 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-17:47:08.363 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
-17:47:12.585 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
-17:47:14.862 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
-17:47:19.528 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
-17:47:19.847 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
-17:47:21.860 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
-17:47:28.060 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
-17:47:28.060 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
-17:47:31.078 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
-17:47:31.277 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-17:47:31.277 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-17:47:31.445 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-17:47:31.445 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-17:47:31.593 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-17:47:31.593 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-17:47:31.729 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-17:47:31.729 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-17:47:31.843 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
-17:47:31.843 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
-17:47:31.843 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
-17:47:31.976 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-17:47:31.976 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-17:47:31.991 [main] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
-17:47:31.991 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
-17:47:39.440 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
-17:47:45.886 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
-17:47:51.262 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
-17:47:52.281 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-17:47:52.312 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
-17:47:52.561 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-17:47:52.561 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
-17:47:52.561 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-17:47:52.561 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
-17:47:58.225 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Deactivated for Action Type:notifications
-  Send notificationand Action Title:TriggerMonthlybyDateNotify
-17:47:59.227 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-17:48:02.086 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-17:48:02.087 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Not Active Send notification  TriggerMonthlybyDateNotify
-18:07:11.936 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
-18:07:11.943 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
-18:07:11.946 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-18:07:13.482 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-18:07:14.016 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-18:07:14.017 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-18:07:22.342 [main] INFO  utilities.UtilityCustomFunctions - PN1:6852451328
-18:07:22.342 [main] INFO  utilities.UtilityCustomFunctions - PN2:9461619139
-18:07:22.342 [main] INFO  utilities.UtilityCustomFunctions - PN3:6615039310
-18:07:22.342 [main] INFO  utilities.UtilityCustomFunctions - PN4:8382074868
-18:07:31.539 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-18:07:33.106 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
-18:07:34.702 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-18:07:38.736 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:Sudhakar
-18:07:38.737 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
-18:07:38.737 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-18:07:38.737 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-18:07:45.742 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
-18:07:50.056 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
-18:07:52.307 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
-18:07:57.173 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
-18:07:57.477 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
-18:07:59.488 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
-18:08:05.686 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
-18:08:05.686 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
-18:08:08.690 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
-18:08:08.878 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:08:08.878 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:08:09.042 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:08:09.042 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:08:09.155 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:08:09.155 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:08:09.278 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:08:09.278 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:08:09.393 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
-18:08:09.393 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
-18:08:09.393 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
-18:08:09.505 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:08:09.505 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:08:09.521 [main] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
-18:08:09.521 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
-18:08:16.669 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
-18:08:22.743 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
-18:08:28.247 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
-18:08:29.255 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-18:08:29.311 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
-18:08:29.554 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-18:08:29.554 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
-18:08:29.554 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-18:08:29.554 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
-18:08:30.572 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-18:08:33.447 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-18:08:33.447 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Not Active Send notification  TriggerMonthlybyDateNotify
-18:13:56.342 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
-18:13:56.352 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
-18:13:56.355 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-18:13:57.846 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-18:13:58.300 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-18:13:58.301 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-18:14:08.053 [main] INFO  utilities.UtilityCustomFunctions - PN1:3971120084
-18:14:08.053 [main] INFO  utilities.UtilityCustomFunctions - PN2:2555274299
-18:14:08.053 [main] INFO  utilities.UtilityCustomFunctions - PN3:2349461912
-18:14:08.053 [main] INFO  utilities.UtilityCustomFunctions - PN4:8648157444
-18:14:17.366 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-18:14:18.972 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
-18:14:20.612 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-18:14:24.787 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:Sudhakar
-18:14:24.788 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
-18:14:24.788 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-18:14:24.788 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-18:14:31.751 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
-18:14:35.838 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
-18:14:38.117 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
-18:14:42.783 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
-18:14:43.064 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
-18:14:45.066 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
-18:14:51.254 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
-18:14:51.255 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
-18:14:54.282 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
-18:14:54.532 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:14:54.532 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:14:54.665 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:14:54.665 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:14:54.781 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:14:54.781 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:14:54.899 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:14:54.899 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:14:55.019 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
-18:14:55.019 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
-18:14:55.019 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
-18:14:55.146 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:14:55.146 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:14:55.162 [main] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
-18:14:55.162 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
-18:15:02.103 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
-18:15:08.656 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
-18:15:14.002 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
-18:15:15.013 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-18:15:15.061 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
-18:15:15.299 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-18:15:15.300 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
-18:15:15.300 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-18:15:15.300 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
-18:15:16.313 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:true
-18:15:21.404 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-18:15:21.405 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Active Send notification  TriggerMonthlybyDateNotify
-18:15:38.900 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-18:15:38.935 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-18:15:38.972 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-18:15:38.972 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-18:15:40.946 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-18:15:44.128 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-18:15:49.520 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Sudhakar VE] is selected in List
-18:15:49.520 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-18:15:51.053 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
-18:15:51.067 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
-18:15:52.231 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-18:15:55.555 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+65] is selected in List
-18:15:55.555 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  3971120084
-18:15:57.205 [main] INFO  utilities.UtilityCustomFunctions - 3971120084 entered in  input
-18:15:59.802 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
-18:16:00.829 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
-18:16:01.945 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-18:16:03.105 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-18:16:17.056 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
-18:16:18.202 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-18:16:21.690 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Kanchipuram] is selected in List
-18:16:21.690 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
-18:16:22.856 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-18:16:26.484 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Tamilnadu] is selected in List
-18:16:26.484 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-18:16:27.620 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-18:16:30.902 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [India] is selected in List
-18:16:30.902 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-18:16:32.932 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-18:16:33.102 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-18:16:33.242 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-18:16:37.314 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-18:16:46.014 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:16:51.631 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-18:16:53.863 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-18:16:54.964 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-18:16:57.980 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
-18:17:08.397 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
-18:17:09.619 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-18:17:15.662 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-18:17:24.345 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:17:38.302 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [5] is selected in List
-18:17:42.745 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
-18:17:47.120 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
-18:17:51.594 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [PM] is selected in List
-18:17:54.597 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-18:17:54.825 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-18:17:56.798 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
-18:18:51.519 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
-18:18:52.999 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
-18:18:54.531 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
-18:18:55.915 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
-18:18:57.547 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-18:19:01.035 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
-18:19:02.572 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
-18:19:04.375 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
-18:19:06.031 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
-18:19:13.450 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
-18:19:17.700 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-18:19:26.358 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:19:31.928 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
-18:19:38.859 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
-18:19:41.678 [main] INFO  utilities.UtilityCustomFunctions - 2555274299 entered in  input
-18:19:48.200 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
-18:19:54.736 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
-18:19:57.379 [main] INFO  utilities.UtilityCustomFunctions - 2349461912 entered in  input
-18:19:59.064 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
-18:20:00.680 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
-18:20:05.234 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
-18:20:07.913 [main] INFO  utilities.UtilityCustomFunctions - 8648157444 entered in  input
-18:20:09.590 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
-18:20:34.694 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-18:20:35.116 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-18:21:07.513 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [PRIMARY (DESC)] is selected in List
-18:21:12.525 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126184
-18:21:16.951 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126184
-18:21:34.304 [main] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2024-05-15 02:30:00On Day: 15Schedule Type: Monthly By Date Action type: Send notification for EntityId: 126184, and Task Id:545
-18:31:40.673 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
-18:31:40.680 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
-18:31:40.684 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-18:31:42.225 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-18:31:42.559 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-18:31:42.561 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-18:31:51.750 [main] INFO  utilities.UtilityCustomFunctions - PN1:6023720974
-18:31:51.750 [main] INFO  utilities.UtilityCustomFunctions - PN2:0473066171
-18:31:51.750 [main] INFO  utilities.UtilityCustomFunctions - PN3:9948483270
-18:31:51.750 [main] INFO  utilities.UtilityCustomFunctions - PN4:2340215497
-18:32:00.493 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-18:32:02.080 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
-18:32:03.715 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-18:32:07.937 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:Sudhakar
-18:32:07.937 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
-18:32:07.937 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-18:32:07.937 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-18:32:14.865 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
-18:32:19.108 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
-18:32:21.412 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
-18:32:26.128 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
-18:32:26.398 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
-18:32:28.429 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
-18:32:34.725 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
-18:32:34.726 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
-18:32:37.730 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
-18:32:37.927 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:32:37.927 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:32:38.079 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:32:38.079 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:32:38.211 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:32:38.211 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:32:38.328 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:32:38.328 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:32:38.445 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
-18:32:38.445 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
-18:32:38.445 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
-18:32:38.561 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
-18:32:38.561 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
-18:32:38.577 [main] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
-18:32:38.577 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
-18:32:45.758 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
-18:32:52.066 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
-18:32:57.697 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
-18:32:58.706 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-18:32:58.734 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
-18:32:58.979 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-18:32:58.979 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
-18:32:58.979 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-18:32:58.979 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
-18:32:58.979 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Action Type and Action Tile matches and also Task Button Enabled
-18:32:59.996 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-18:33:02.963 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
-18:33:02.963 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Active Send notification  TriggerMonthlybyDateNotify
-18:33:20.689 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
-18:33:20.719 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
-18:33:20.758 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
-18:33:20.758 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
-18:33:22.496 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-18:33:25.687 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-18:33:31.001 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Sudhakar VE] is selected in List
-18:33:31.001 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-18:33:32.583 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
-18:33:32.600 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
-18:33:33.764 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-18:33:37.106 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+65] is selected in List
-18:33:37.106 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  6023720974
-18:33:38.783 [main] INFO  utilities.UtilityCustomFunctions - 6023720974 entered in  input
-18:33:41.350 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
-18:33:42.380 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
-18:33:43.530 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-18:33:44.669 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-18:33:58.550 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
-18:33:59.680 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-18:34:03.155 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Kanchipuram] is selected in List
-18:34:03.155 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
-18:34:04.343 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-18:34:08.001 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Tamilnadu] is selected in List
-18:34:08.001 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-18:34:09.168 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-18:34:12.485 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [India] is selected in List
-18:34:12.485 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-18:34:14.562 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-18:34:14.732 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-18:34:14.882 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-18:34:18.961 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-18:34:27.710 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:34:33.464 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-18:34:35.662 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-18:34:36.825 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-18:34:39.826 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
-18:34:50.311 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
-18:34:51.544 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-18:34:57.630 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-18:35:06.496 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:35:20.348 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [5] is selected in List
-18:35:24.832 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
-18:35:29.300 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
-18:35:33.794 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [PM] is selected in List
-18:35:36.825 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-18:35:37.068 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-18:35:39.038 [main] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
-18:36:33.650 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
-18:36:35.125 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
-18:36:36.680 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
-18:36:38.113 [main] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
-18:36:39.796 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-18:36:43.218 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
-18:36:44.729 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
-18:36:46.444 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
-18:36:48.079 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
-18:36:54.603 [main] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
-18:36:58.834 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
-18:37:07.494 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:37:13.208 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
-18:37:20.179 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
-18:37:22.796 [main] INFO  utilities.UtilityCustomFunctions - 0473066171 entered in  input
-18:37:29.381 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
-18:37:35.866 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
-18:37:38.579 [main] INFO  utilities.UtilityCustomFunctions - 9948483270 entered in  input
-18:37:40.259 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
-18:37:41.894 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
-18:37:46.391 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
-18:37:49.131 [main] INFO  utilities.UtilityCustomFunctions - 2340215497 entered in  input
-18:37:50.861 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
-18:38:15.972 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-18:38:16.377 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-18:38:48.094 [main] INFO  testCases.TC011_WF5_SN_MonthByDate - [PRIMARY (DESC)] is selected in List
-18:38:53.096 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126186
-18:38:57.500 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126186
-18:39:14.745 [main] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2024-05-15 02:30:00On Day: 15Schedule Type: Monthly By Date Action type: Send notification for EntityId: 126186, and Task Id:548
+14:08:23.019 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - wfCreateEntity_OOFS_MultiFailureCaseWorkflow enabled
+14:08:23.039 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_OOFS_MultiFailureCaseDisabled Workflow Manually Enabled
+14:08:23.039 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - true:2
+14:08:23.039 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:2
+14:08:29.577 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Work flow clicked
+14:08:35.583 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Cliked Step 1 Next Button to Condition Page
+14:08:40.121 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Cliked Step 2 Next Button to Task List Page
+14:08:41.137 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow and Navigated to Task Page
+14:08:41.180 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Number of Tasks Listed for this Workflow: wfCreateEntity_OOFS_MultiFailureCase : 2
+14:08:41.423 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
+  Create Entity - CETargetDupPrev
+14:08:41.423 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCreateEntity_MultiFailureUpdate
+14:08:41.423 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CETargetDupPrev
+14:08:41.423 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCreateEntity_MultiFailureUpdate
+14:08:41.423 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Action Type and Action Tile matches and also Task Button Enabled
+14:08:41.641 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
+  Create Entity - CETargetDupPrev
+14:08:41.641 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskcheck
+14:08:41.656 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CETargetDupPrev
+14:08:41.656 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCreateEntity_MultiFailureUpdate
+14:08:42.659 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+14:08:45.490 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow and Navigated to Task Page
+14:08:45.490 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Task Active Create Entity - CETargetDupPrev  tskCreateEntity_MultiFailureUpdate
+14:08:46.790 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
+14:09:27.490 [main] INFO  utilities.UtilityCustomFunctions - Captured the Target & Source Latest Record Ids
+14:09:27.490 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id:126200
+14:09:27.490 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:124495
+14:10:43.502 [main] INFO  utilities.UtilityCustomFunctions - Click Source Module:CESourceDupPrev
+14:10:47.253 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:CESourceDupPrev
+14:20:30.832 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Creation
+14:20:30.843 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Created
+14:20:35.294 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Node Created
+14:20:35.295 [main] INFO  utilities.UtilityCustomFunctions - ******TC018_CreateEntity_OOFS_MultiUpdOnFailCase ****
+14:20:35.295 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Test Execution on Browser: chrome
+14:20:35.295 [main] INFO  utilities.UtilityCustomFunctions - Browser:chrome
+14:20:35.299 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+14:20:36.895 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+14:20:37.251 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+14:20:44.764 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+14:20:46.780 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+14:20:48.500 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+14:20:53.904 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - CRM Login Success with:rsoft
+14:20:53.904 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+14:20:53.904 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+14:20:53.904 [main] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+14:21:01.195 [main] INFO  utilities.UtilityCustomFunctions - Navigate Module:CESourceDupPrev
+14:21:01.195 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Avatar
+14:21:05.430 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Menu CRM Setting
+14:21:07.725 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Menu Other Setting
+14:21:12.093 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Menu Item Workflow
+14:21:12.378 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow from Combox Box List
+14:21:14.392 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Item to be selected:  CESourceDupPrev Workflow
+14:21:20.344 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [CESourceDupPrev Workflow] is selected in List
+14:21:20.344 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Item selected in combox Box  CESourceDupPrev Workflow
+14:21:23.362 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Selected Module to View its Workflows
+14:21:23.362 [main] INFO  utilities.UtilityCustomFunctions - Exp Module Name:wfCreateEntity_OOFS_MultiFailureCase
+14:21:23.362 [main] INFO  utilities.UtilityCustomFunctions - Execution Condition:Only on the first save
+14:21:23.565 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Module,workflow,conditions not matched 
+14:21:23.565 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - bCurrentWFStatus: false
+14:21:23.710 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Module,workflow,condition matches
+14:21:23.710 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - bCurrentWFStatus: true
+14:21:23.710 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - wfCreateEntity_OOFS_MultiFailureCaseWorkflow enabled
+14:21:23.741 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_OOFS_MultiFailureCaseDisabled Workflow Manually Enabled
+14:21:23.741 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - true:2
+14:21:23.741 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:2
+14:21:30.134 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Work flow clicked
+14:21:36.116 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Cliked Step 1 Next Button to Condition Page
+14:21:40.502 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Cliked Step 2 Next Button to Task List Page
+14:21:41.515 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow and Navigated to Task Page
+14:21:41.572 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Number of Tasks Listed for this Workflow: wfCreateEntity_OOFS_MultiFailureCase : 2
+14:21:41.820 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
+  Create Entity - CETargetDupPrev
+14:21:41.820 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCreateEntity_MultiFailureUpdate
+14:21:41.820 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CETargetDupPrev
+14:21:41.821 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCreateEntity_MultiFailureUpdate
+14:21:41.821 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Action Type and Action Tile matches and also Task Button Enabled
+14:21:42.038 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
+  Create Entity - CETargetDupPrev
+14:21:42.038 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskcheck
+14:21:42.038 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CETargetDupPrev
+14:21:42.038 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCreateEntity_MultiFailureUpdate
+14:21:43.041 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+14:21:45.852 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Clicked Workflow and Navigated to Task Page
+14:21:45.853 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Task Active Create Entity - CETargetDupPrev  tskCreateEntity_MultiFailureUpdate
+14:21:47.091 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
+14:22:28.141 [main] INFO  utilities.UtilityCustomFunctions - Captured the Target & Source Latest Record Ids
+14:22:28.141 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id:126200
+14:22:28.141 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:124495
+14:23:43.650 [main] INFO  utilities.UtilityCustomFunctions - Click Source Module:CESourceDupPrev
+14:23:47.388 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:CESourceDupPrev
+14:23:49.396 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
+14:23:49.498 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+14:23:49.578 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+14:23:49.578 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
+14:23:51.342 [main] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+14:23:52.407 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+14:23:55.600 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+14:24:02.959 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Sudhakar VE] is selected in List
+14:24:02.960 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+14:24:04.544 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+14:24:04.561 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+14:24:05.706 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+14:24:09.048 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+65] is selected in List
+14:24:09.048 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
+14:24:10.729 [main] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
+14:24:13.412 [main] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+14:24:14.425 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+14:24:15.540 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+14:24:16.693 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+14:24:30.614 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+14:24:31.817 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+14:24:35.261 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Kanchipuram] is selected in List
+14:24:35.262 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+14:24:36.377 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+14:24:40.010 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Tamilnadu] is selected in List
+14:24:40.010 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+14:24:41.143 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+14:24:44.414 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [India] is selected in List
+14:24:44.414 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+14:24:46.489 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+14:24:46.649 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+14:24:46.785 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+14:24:55.057 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:25:01.706 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:25:04.210 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+14:25:08.241 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+14:25:10.449 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+14:25:11.585 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+14:25:14.588 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+14:25:25.042 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+14:25:26.290 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+14:25:36.590 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:25:43.073 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:25:45.759 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+14:25:53.389 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+14:25:53.592 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+14:25:53.675 [main] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:29-05-2024
+14:26:08.907 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Mrs.] is selected in List
+14:26:10.409 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+14:26:12.025 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+14:26:13.440 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+14:26:15.125 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+14:26:18.544 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Dr.] is selected in List
+14:26:20.092 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+14:26:21.860 [main] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+14:26:23.541 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+14:26:23.573 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+14:26:26.161 [main] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" entered in  textarea
+14:26:34.556 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:26:41.154 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:26:43.780 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+14:26:47.803 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
+14:26:54.943 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+14:26:57.639 [main] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
+14:27:00.787 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+14:27:04.124 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Urgent] is selected in List
+14:27:10.693 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+91] is selected in List
+14:27:13.371 [main] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
+14:27:15.057 [main] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+14:27:16.624 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+14:27:21.121 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+14:27:23.688 [main] INFO  utilities.UtilityCustomFunctions - 0472103025 entered in  input
+14:27:25.384 [main] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+14:27:43.721 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: CESourceDupPrev
+14:27:43.788 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:27:55.849 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id after add new record:126200
+14:27:55.849 [main] INFO  utilities.UtilityCustomFunctions - Curr Source Id after add new record:126202
+14:28:15.522 [main] INFO  utilities.UtilityCustomFunctions - Old Target Id:124495
+14:28:15.522 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id:124495
+14:28:43.101 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:28:54.386 [main] INFO  utilities.UtilityCustomFunctions - Actual:LeadEmail@gmail.com
+14:28:54.386 [main] INFO  utilities.UtilityCustomFunctions - Expected:LeadEmail@gmail.com
+14:28:54.386 [main] INFO  utilities.UtilityCustomFunctions - Message:Lead Module on @Add New Record - OOFS--Summary Record
+14:28:56.210 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:28:59.408 [main] INFO  utilities.UtilityCustomFunctions - Actual:LeadEmail@gmail.com
+14:28:59.409 [main] INFO  utilities.UtilityCustomFunctions - Expected:LeadEmail@gmail.com
+14:28:59.409 [main] INFO  utilities.UtilityCustomFunctions - Message:Lead Module on @Add New Record - OOFS--Detail View
+14:29:29.184 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:29:34.284 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquiryModuleName
+14:29:34.284 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+14:29:34.284 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Related Module Summary Page Name Validation @Add New Record - OOFS-
+14:29:36.098 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:29:39.223 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquiryModuleName
+14:29:39.223 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+14:29:39.223 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Module DT View Page Name Validation @Add New Record - OOFS-
+14:30:03.319 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:30:08.433 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+14:30:08.433 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+14:30:08.433 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Related Module Phone Number  Validation@Add New Record - OOFS-
+14:30:10.313 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:30:13.436 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+14:30:13.436 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+14:30:13.436 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Module DT View Page Phone Number Validation@Add New Record - OOFS-
+14:30:14.670 [main] INFO  utilities.UtilityCustomFunctions - Navigate to Source Summary Page
+14:30:36.818 [main] INFO  utilities.UtilityCustomFunctions - Summary Add Entity Started
+14:30:36.820 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
+14:30:36.979 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+14:30:37.063 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+14:30:37.063 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
+14:30:38.134 [main] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+14:30:38.785 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+14:30:41.994 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+14:30:49.354 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Sudhakar VE] is selected in List
+14:30:49.354 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+14:30:50.935 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+14:30:50.940 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+14:30:52.135 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+14:30:55.469 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+65] is selected in List
+14:30:55.469 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
+14:30:57.101 [main] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
+14:30:59.840 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddNew@rsoft.in entered in  input
+14:31:00.867 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAddNew@rsoft.in
+14:31:02.018 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+14:31:03.185 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+14:31:16.974 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+14:31:18.139 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+14:31:21.555 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Kanchipuram] is selected in List
+14:31:21.555 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+14:31:22.741 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+14:31:26.388 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Tamilnadu] is selected in List
+14:31:26.388 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+14:31:27.619 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+14:31:30.938 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [India] is selected in List
+14:31:30.938 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+14:31:33.017 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+14:31:33.158 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+14:31:33.293 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+14:31:41.534 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:31:48.266 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:31:50.823 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+14:31:54.832 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+14:31:57.116 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+14:31:58.286 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+14:32:01.300 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+14:32:11.784 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+14:32:13.008 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+14:32:23.250 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:32:29.883 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:32:32.488 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+14:32:40.083 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+14:32:40.294 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+14:32:40.388 [main] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:29-05-2024
+14:32:55.538 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Mrs.] is selected in List
+14:32:57.080 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+14:32:58.638 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+14:33:00.049 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+14:33:01.753 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+14:33:05.220 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Dr.] is selected in List
+14:33:06.698 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+14:33:08.515 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddEnquiry@gmail.com entered in  input
+14:33:10.201 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+14:33:10.219 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+14:33:12.769 [main] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" entered in  textarea
+14:33:21.148 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:33:27.747 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:33:30.372 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+14:33:34.382 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[3]
+14:33:41.304 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+14:33:44.035 [main] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
+14:33:47.198 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+14:33:50.488 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Urgent] is selected in List
+14:33:57.034 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+91] is selected in List
+14:33:59.698 [main] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
+14:34:01.516 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddNewLead@gmail.com entered in  input
+14:34:03.149 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+14:34:07.618 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+14:34:10.483 [main] INFO  utilities.UtilityCustomFunctions - 0472103025 entered in  input
+14:34:12.349 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddNewSales@gmail.com entered in  input
+14:34:35.630 [main] INFO  utilities.UtilityCustomFunctions - Summary Add Record completed
+14:34:35.702 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:34:35.730 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+14:34:46.447 [main] INFO  utilities.UtilityCustomFunctions - Old Source Id:126202
+14:34:46.449 [main] INFO  utilities.UtilityCustomFunctions - Curr Source Id:126204
+14:35:15.579 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:35:26.792 [main] INFO  utilities.UtilityCustomFunctions - Actual:LeadEmail@gmail.com
+14:35:26.792 [main] INFO  utilities.UtilityCustomFunctions - Expected:LeadEmail@gmail.com
+14:35:26.792 [main] INFO  utilities.UtilityCustomFunctions - Message:Lead Module on @Summary Add New Record - OOFS - Summary View
+14:35:28.646 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:35:31.835 [main] INFO  utilities.UtilityCustomFunctions - Actual:LeadEmail@gmail.com
+14:35:31.835 [main] INFO  utilities.UtilityCustomFunctions - Expected:LeadEmail@gmail.com
+14:35:31.835 [main] INFO  utilities.UtilityCustomFunctions - Message:Lead Module on  @Summary Add New Record - OOFS- -Detail View
+14:36:01.877 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:36:06.891 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquiryModuleName
+14:36:06.891 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+14:36:06.891 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Related Module Summary Page Name Validation @Summary Add New Record - OOFS-
+14:36:08.757 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:36:12.992 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquiryModuleName
+14:36:12.992 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+14:36:12.992 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Related Module - after Summary Add New, Summary Page Name Validation @Summary Add New Record - OOFS-
+14:36:14.258 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already ON
+14:36:17.377 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquiryModuleName
+14:36:17.377 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+14:36:17.377 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Related Module - @Summary Add New Record - OOFS-, DT View Page Name Validation
+14:36:41.745 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:36:46.711 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+14:36:46.711 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+14:36:46.711 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Related Module Phone Number  Validation @Summary Add New Record - OOFS-
+14:36:48.564 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:36:52.858 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+14:36:52.858 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+14:36:52.858 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Related Summary View Module Phone Number  Validation @Summary Add New Record - OOFS
+14:36:54.145 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already ON
+14:36:57.326 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+14:36:57.326 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+14:36:57.326 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Module DT View Page Phone Number Validation@Summary Add New Record - OOFS
+14:37:25.691 [main] INFO  utilities.UtilityCustomFunctions - Summary Add Entity Started
+14:37:25.691 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
+14:37:25.745 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+14:37:25.776 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+14:37:25.776 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
+14:37:26.629 [main] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+14:37:27.292 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+14:37:30.491 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+14:37:37.905 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Sudhakar VE] is selected in List
+14:37:37.905 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+14:37:39.514 [main] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+14:37:39.530 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+14:37:40.711 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+14:37:44.030 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+65] is selected in List
+14:37:44.030 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
+14:37:45.711 [main] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
+14:37:48.495 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddNew@rsoft.in entered in  input
+14:37:49.527 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateAddNew@rsoft.in
+14:37:50.660 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+14:37:51.850 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+14:38:09.986 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+14:38:11.177 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+14:38:14.594 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Kanchipuram] is selected in List
+14:38:14.594 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+14:38:15.733 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+14:38:19.368 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Tamilnadu] is selected in List
+14:38:19.368 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+14:38:20.479 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+14:38:23.791 [main] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [India] is selected in List
+14:38:23.791 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+14:38:25.860 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+14:38:25.896 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+14:38:26.042 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+14:38:34.342 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:38:40.941 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:38:43.619 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+14:38:47.628 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+14:38:49.820 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+14:38:50.959 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+14:38:53.977 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+14:39:04.476 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+14:39:05.660 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+14:39:15.993 [main] INFO  utilities.UtilityCustomFunctions - Current Month:May
+14:39:22.560 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+14:39:25.296 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime

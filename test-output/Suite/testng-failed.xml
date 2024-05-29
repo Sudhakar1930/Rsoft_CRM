@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC011_WF5_SN_MonthByDate">
+      <class name="testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase">
         <methods>
           <include name="onStart"/>
-          <include name="testScheduleNotify"/>
-          <include name="testName"/>
+          <include name="CreateTest"/>
           <include name="setup"/>
+          <include name="tCreateEntity_OOFS_MultiUpdateOnFailCase"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testCases.TC011_WF5_SN_MonthByDate -->
+      </class> <!-- testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

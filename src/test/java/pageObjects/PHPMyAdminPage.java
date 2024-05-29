@@ -673,8 +673,8 @@ public class PHPMyAdminPage extends BasePage{
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		int iDay = 0;
 		int iTaskId = 0; 
-		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
 		
+		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
 		for(int i=0;i<tRows.size();i++) {
 			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
 			String sActEntityId = tCols.get(5).getText();
@@ -767,6 +767,9 @@ public class PHPMyAdminPage extends BasePage{
 		 boolean bFlag = false;
 		int iDay = 0;
 		int iTaskId = 0; 
+		for(int j =0;j<sDateArray.length;j++) {
+			
+		
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
 		for(int i=0;i<tRows.size();i++) {
 			
@@ -812,25 +815,28 @@ public class PHPMyAdminPage extends BasePage{
 //		String	sActExecTime = "2024-01-01 14:30:00";
 			
 		int sActDate = d1.getDate(); 	 
-		int sExpDate = Integer.parseInt(sDateArray[iDay]); 
+		int sExpDate = Integer.parseInt(sDateArray[j]); 
 		System.out.println("sConfigDateTime:" + sConfigDateTime);
 		System.out.println("sActDate:" + sActDate);
 		System.out.println("sExpDate:" + sExpDate);
 		js.executeScript("arguments[0].scrollIntoView();", tCols.get(5));
 		if(sConfigDateTime.contains("08:00:00") && sActDate==sExpDate ) {
+			bFlag = true;
 //		if(sConfigDateTime.contains("08:00:00") && sActModName.equalsIgnoreCase(sModuleName) && sActSchdName.equalsIgnoreCase(sScheduleTypeName) && sActDate==sExpDate && sActSendType.equalsIgnoreCase(sActionType)) {
 			 objBase.freport("Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC:" + sActExecTime + " On Day: "+sActDate + ", Schedule Type: " + sActSchdName + ", Action type: " + sActSendType + ", for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId, "pass",node);
 			 UtilityCustomFunctions.logWriteConsole("Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: "+sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + ", and Task Id:" + sActTaskId);
 			 BaseClass.sAssertinFn.assertEquals("MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: " + sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId, "MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " + sActExecTime + "On Day: " + sActDate + "Schedule Type: " + sActSchdName + " Action type: " + sActSendType + " for EntityId: "+ sEntityId + "and Task Id:" + sActTaskId);
 		}
-			iDay = iDay + 1;
+			
 		}//if Entity Id	
+		
+		}//DB for loop
+		}//Array Loop	
 		if(bFlag==false) {
 			objBase.freport("Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " , "fail",node);
 			UtilityCustomFunctions.logWriteConsole("Failed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC " );
 			BaseClass.sAssertinFn.assertEquals("Failed: MonthlybyDate Worflow not scheduled to run at 08:00:00 AM on UTC " , "MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC ");
 		}
-		}//for loop
 	}
 	public void check_SN_Weekly(String sEntityId,String sWeekday,String schTypeName, String sSendType,ExtentTest node) throws ParseException, IOException, InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

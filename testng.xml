@@ -9,7 +9,7 @@
 	  <parameter name="browser" value="chrome">
     <classes>
 		
-		<class name="testCases.TC011_WF5_SN_MonthByDate"/>
+		<class name="testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase"/>
 	 </classes>	
 	  <!--
 	  <class name="testCases.ExecuteTask.Notification.TC036_NT_ET_ETRS_DTBeforeDays"/>

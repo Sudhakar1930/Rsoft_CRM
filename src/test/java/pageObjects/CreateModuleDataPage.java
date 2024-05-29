@@ -258,24 +258,25 @@ public class CreateModuleDataPage extends BasePage{
 		}
 		Thread.sleep(1000);		
 		WebElement eleMonth = driver.findElement(By.xpath(sXpath)); 
-		UtilityCustomFunctions.logWriteConsole("Current Month:" + objCRMRs.getTodayMonth());
+		
 		Thread.sleep(2000);
 //		UtilityCustomFunctions.doClick(driver, eleMonth);
 		eleMonth.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String sCurrMonth = objCRMRs.getTodayMonth();
+		UtilityCustomFunctions.logWriteConsole("Current Month:" + sCurrMonth);
 		Thread.sleep(1000);
 		UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, sCurrMonth);
 		Thread.sleep(1000);
 		WebElement eleYear= driver.findElement(By.xpath(sYXpath));
 		eleYear.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String sYear =  Integer.toString(objCRMRs.getCurrentYear());
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Year to be selected is:" + sYear);
 		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
-		
-		Thread.sleep(2000);		
+		UtilityCustomFunctions.logWriteConsole("Control Type:" + sControlType);
+		Thread.sleep(3000);		
 		if(!sControlType.equalsIgnoreCase("sDateandTime")) {
 			Thread.sleep(1000);
 			String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
@@ -289,17 +290,19 @@ public class CreateModuleDataPage extends BasePage{
 //			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
 			List<WebElement> sDateRows = driver.findElements(By.xpath("//div[@class='daterangepicker ltr single opensright show-calendar']//div[@class='drp-calendar left single']//table//tr"));
 			boolean bFound = false;
-			int iCurrDate=0;
+
 //			String sDateXpath="(//td[contains(@class,'today')])[2]";
-			String sCurrDateXPath="//div[@class='daterangepicker ltr single opensright show-calendar']/div[@class='drp-calendar left single']//table//tr//td[contains(@class,'today')]";
+//			String sCurrDateXPath="//div[@class='daterangepicker ltr single opensright show-calendar']/div[@class='drp-calendar left single']//table//tr//td[contains(@class,'today')]";
 //			Index changed back from 2 to 1 while ETRS DateTime: again changed to 2			
 //			String sDateXpath="(//td[contains(@class,'today')])[1]";
-			WebElement eleCurrDate = driver.findElement(By.xpath(sCurrDateXPath));
-			String sActCurrDate = eleCurrDate.getText();
-			System.out.println("Current Date In DT Control:" + sActCurrDate);
-			System.out.println("Month Selected in DT Control:" + eleMonth.getText());
-			iCurrDate = Integer.parseInt(sActCurrDate);
-			int jCounter=iCurrDate+3;
+//			WebElement eleCurrDate = driver.findElement(By.xpath(sCurrDateXPath));
+//			String sActCurrDate = eleCurrDate.getText();
+//			System.out.println("Current Date In DT Control:" + sActCurrDate);
+//			iCurrDate = Integer.parseInt(sActCurrDate);
+			 Date currentDate = new Date();
+		     int iCurrDate = currentDate.getDate();
+		      
+			
 			Date dMonthDate = new Date();
 			@SuppressWarnings("deprecation")
 			int iMonthIndex = dMonthDate.getMonth(); 
@@ -307,9 +310,17 @@ public class CreateModuleDataPage extends BasePage{
 			calendar1.set(Calendar.MONTH, iMonthIndex);
 			int iMonthLastDay = calendar1.getActualMaximum(calendar1.DAY_OF_MONTH); 
 			System.out.println("Last day of current month:" + iMonthLastDay);
-			System.out.println("j counter:" + jCounter);
-			if(jCounter >iMonthLastDay) {
+			
+			int jCounter = 0;
+			if(iCurrDate < iMonthLastDay) {
+				jCounter=iCurrDate+3;
+//				if(jCounter>iMonthLastDay) {
+//					jCounter = 2;
+//				}
 				System.out.println("Select next month");
+			}
+			else {
+				jCounter = iMonthLastDay;
 			}
 //			List<WebElement> sDateCols = driver.findElements(By.xpath("(//table[@class='table-condensed'])[3]//td"));
 			// ETRS Date&Time control index c hanged to 1 

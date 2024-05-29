@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import jdk.internal.org.jline.utils.Log;
+
 import testBase.BaseClass;
 import pageObjects.AllListPage;
 import pageObjects.CRMSettingsPage;
@@ -1603,8 +1603,8 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "enquirydate");
 		
 		Thread.sleep(3000);
-		objCMD.clickDayInDate(2,"sEnquiryDate",null);
-
+//		objCMD.clickDayInDate(2,"sEnquiryDate",null); Not Working for CreateEntity CESourceDupPrev
+		objCMD.clickDayInDate(3,"sEnquiryDate",null);
 		String sActEnquiryDate = objCMD.fGetModuleValue(sExpModuleName, "enquirydate");
 		System.out.println("AcutalDate: " + sActEnquiryDate);
 		xlAddObj.setCellData(sSheetName, 1, 29, sActEnquiryDate);
