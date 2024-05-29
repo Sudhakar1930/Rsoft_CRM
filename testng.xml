@@ -8,13 +8,13 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		
-		<class name="testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase"/>
+		<class name="testCases.ExecuteTask.Notification.TC038_NT_ET_ETRM_CTAfterHours"/>
+		 <class name="testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays"/>
 	 </classes>	
 	  <!--
 	  <class name="testCases.ExecuteTask.Notification.TC036_NT_ET_ETRS_DTBeforeDays"/>
 	  <class name="testCases.TC008_WF2_SN_Daily"/>
-		<class name="testCases.ExecuteTask.Notification.TC032_NT_ET_ETRS_DTBeforeMinutes"/>  
+		<class name="testCases.ExecuteTask.Notification.TC037_NT_ET_ETRM_CTAfterMinutes"/>  
 		<class name="testCases.ExecuteTask.Notification.TC026_NT_ET_ETRS_DateBeforeDays"/>
 		<class name="testCases.ExecuteTask.Notification.TC004_NT_ExecuteTask_MTAfterMinutes"/>
 		<class name="testCases.ExecuteTask.Notification.TC005_NT_ExecuteTask_MTAfterHours"/>

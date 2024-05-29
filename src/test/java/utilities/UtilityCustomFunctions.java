@@ -22,7 +22,7 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import jdk.internal.org.jline.utils.Log;
+
 import testBase.BaseClass;
 
 public class UtilityCustomFunctions extends BaseClass{

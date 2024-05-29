@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase">
+      <class name="testCases.ExecuteTask.Notification.TC037_NT_ET_ETRM_CTAfterMinutes">
         <methods>
           <include name="onStart"/>
-          <include name="CreateTest"/>
+          <include name="testName"/>
           <include name="setup"/>
-          <include name="tCreateEntity_OOFS_MultiUpdateOnFailCase"/>
+          <include name="testET_NT_ETRS_CTAfterMinutes"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase -->
+      </class> <!-- testCases.ExecuteTask.Notification.TC037_NT_ET_ETRM_CTAfterMinutes -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

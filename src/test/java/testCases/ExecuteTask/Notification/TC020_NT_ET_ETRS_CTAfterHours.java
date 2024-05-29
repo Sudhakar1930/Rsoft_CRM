@@ -269,7 +269,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				UtilityCustomFunctions.logWriteConsole("After summary Add" + sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
 				
 			
-				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"@Summary Add New","M",sCreatedTime);
+				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"@Summary Add New","H",sCreatedTime);
 				
 						
 				arrPhpRetArray = sReturnValue.split(":");
@@ -343,7 +343,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				UtilityCustomFunctions.logWriteConsole("After Duplicate Record: " + sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
 				
 				
-				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"Duplicate Record","M",sCreatedTime);
+				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"Duplicate Record","H",sCreatedTime);
 				UtilityCustomFunctions.logWriteConsole("Return Value: in Duplicate Previous Page " + sReturnValue);
 				
 				
@@ -491,7 +491,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				UtilityCustomFunctions.logWriteConsole("After Single Line Edit: " + sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
 				
 				
-				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"@Single Line Edit","M",sCreatedTime);
+				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"@Single Line Edit","H",sCreatedTime);
 				UtilityCustomFunctions.logWriteConsole("Return Value: @Single Line Edit: " + sReturnValue);
 				
 				
