@@ -238,6 +238,32 @@ public class CreateModuleDataPage extends BasePage{
 			System.out.println(e.getCause());
 		}
 	}
+	public void SelectMonthandYear(String sControlType,String sMonth,String sYear) throws InterruptedException {
+		String sXpath="";
+		String sYXpath="";
+		switch(sControlType) {
+		case "sDate":
+			sXpath = "(//select[@class='monthselect'])[1]";
+			sYXpath = "(//select[@class='yearselect'])[1]";
+		break;
+		case "sDateandTime":
+			sXpath = "(//select[@class='monthselect'])[3]";
+			sYXpath = "(//select[@class='yearselect'])[3]";
+		break;
+		case "sEnquiryDate":
+			sXpath = "(//select[@class='monthselect'])[3]";
+			sYXpath = "(//select[@class='yearselect'])[3]";
+		break;
+		}
+		Thread.sleep(1000);		
+		WebElement eleMonth = driver.findElement(By.xpath(sXpath));
+		WebElement eleYear= driver.findElement(By.xpath(sYXpath));
+		Thread.sleep(1000);
+		UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, sMonth);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
+			
+	}
 	public void clickDayInDate(int iDateIndex,String sControlType,String sTimeHour) throws Exception {
 		CRMReUsables objCRMRs = new CRMReUsables();
 		String sXpath="";

@@ -192,6 +192,7 @@ public class TC029_NT_ET_ETRS_TimeAfterHours extends BaseClass{
 		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
+		
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
 		Date d1 = null;

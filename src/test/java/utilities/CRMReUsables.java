@@ -2515,15 +2515,13 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
 		Thread.sleep(1000);
 		if(sAddType.equalsIgnoreCase("sDate")) {
-			Thread.sleep(1000);
-			List<WebElement> sDateRows = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr"));
 			boolean bFound = false;
-			int iCurrDate=0;
-			String sDateXpath="(//td[contains(@class,'today')])[1]";
-			WebElement eleCurrDate = driver.findElement(By.xpath(sDateXpath));
-			String sActCurrDate = eleCurrDate.getText();
-			iCurrDate = Integer.parseInt(sActCurrDate);
-			int jCounter=iCurrDate+3;
+			
+			
+			Date currentDate = new Date();
+		    int iCurrDate = currentDate.getDate();
+		    int jCounter=iCurrDate+3;
+		    
 			Date dMonthDate = new Date();
 			@SuppressWarnings("deprecation")
 			int iMonthIndex = dMonthDate.getMonth(); 
@@ -2532,26 +2530,24 @@ public class CRMReUsables extends BaseClass {
 			int iMonthLastDay = calendar1.getActualMaximum(calendar1.DAY_OF_MONTH); 
 			System.out.println("Last day of current month:" + iMonthLastDay);
 			System.out.println("j counter:" + jCounter);
+			int iApprValue = 0;
 			if(jCounter >iMonthLastDay) {
-				System.out.println("Select next month");
+				iApprValue = jCounter - iMonthLastDay;
+				String sNextMonth = getNextMonth();
+				objCMD.SelectMonthandYear("sDate",sNextMonth,"2024");
+				jCounter = iApprValue;
 			}
-			for(int i=2;i<sDateRows.size();i++) {
-				System.out.println("Table Row: " + i);
-				List<WebElement> sDateCols = sDateRows.get(i).findElements(By.tagName("td"));
-				for(int j=0;j<sDateCols.size();j++) {
-					String sDay = sDateCols.get(j).getText();
+			System.out.println("Jcounter value now is : " + jCounter);
+			List<WebElement> sTableDatas = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[1]//tr//td[contains(@class,'today') or contains(@class,'active') or @class='available' or @class='weekend available']"));
+			for(int i=1;i<=sTableDatas.size();i++) {
+					String sDay = sTableDatas.get(i).getText();
+					System.out.println("Control day: " + sDay);
 					if(jCounter==Integer.parseInt(sDay)) {
-						sDateCols.get(j).click();
+						sTableDatas.get(i).click();
 						bFound = true;
 						break;
 					}
-				}
-				if(bFound == true) {
-					break;
-				}
-				
-			}
-			Thread.sleep(1000);
+				}//for loop
 		}else {
 			objCMD.clickDayInDate(1,"sDate",null);
 			UtilityCustomFunctions.logWriteConsole("Today Date Selected");
@@ -2642,5 +2638,30 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);		
 		
 	}	
-
-	}
+		public void getMOnth() {
+			Calendar cal = Calendar.getInstance();
+			System.out.println(new SimpleDateFormat("MMM").format(cal.getTime()));
+			
+		}
+		
+		public String getNextMonth() {
+			Calendar cal = Calendar.getInstance();
+			String sCurrMonth = new SimpleDateFormat("MMM").format(cal.getTime());
+			String monthNames[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+			String retValue="";
+			int k = 0;
+			for(int i=0;i<monthNames.length;i++) {
+				if(sCurrMonth.equalsIgnoreCase(monthNames[i])) {
+					k = i + 1;
+					if(i==11) {
+						k=0;
+					}
+					retValue = monthNames[k];
+					break;
+				}
+			}
+			return retValue;
+			
+		}
+}
