@@ -391,8 +391,25 @@ public class CreateModuleDataPage extends BasePage{
 			}//for loop
 			
 		}//if sDateandTime
-
+		
 	}
+	public void fSelectDTHour(String sHour) throws InterruptedException {
+		Thread.sleep(1000);		
+		UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,sHour,"option");
+	}
+	public void fSelectDTMinutes(String sMinutes) throws InterruptedException {
+		Thread.sleep(1000);		
+		UtilityCustomFunctions.selectItemfromListBox(driver,eleDTMinute,sMinutes,"option");
+	}
+	public void fSelectDTSeconds(String sSeconds) throws InterruptedException {
+		Thread.sleep(1000);		
+		UtilityCustomFunctions.selectItemfromListBox(driver,eleDTSecond,sSeconds,"option");
+	}
+	public void fSelectDTAMorPM(String sTimeFormat) throws InterruptedException {
+		Thread.sleep(1000);		
+		UtilityCustomFunctions.selectItemfromListBox(driver,eleDTAMPM,sTimeFormat,"option");
+	}
+	
 	public void clickEnqCategory() throws Exception {
 //		UtilityCustomFunctions.doClick(driver, eleEnqCatText);
 		UtilityCustomFunctions.doActionClick(driver, eleEnqCatText);

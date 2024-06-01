@@ -8,7 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.ExecuteTask.Notification.TC044_NT_ET_ETRM_DateBeforeDays"/>
+		<class name="testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours"/>
 	 </classes>	
 	  <!--
 	  

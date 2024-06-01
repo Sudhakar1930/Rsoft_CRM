@@ -62,6 +62,7 @@ public class TC009_NT_ET_OOFS_TimeAfterHours extends BaseClass{
 		String sHours = xlObj.getCellData("Sheet1", 1, 33);
 		String sSHours = xlObj.getCellData("Sheet2", 1, 33);
 		String sMHours = xlObj.getCellData("Sheet3", 1, 33);
+		String sEDHours = xlObj.getCellData("Sheet4", 1, 33);
 		String sMinutes = xlObj.getCellData("Sheet1", 1, 34);
 		String sSeconds = xlObj.getCellData("Sheet1", 1, 35);
 		
@@ -334,11 +335,13 @@ public class TC009_NT_ET_OOFS_TimeAfterHours extends BaseClass{
 		 
 			
 		iExp_Hour = Integer.parseInt(sMHours) + 1 + 12;
+		if(iExp_Hour>=24) {
+			iExp_Hour = 24 - iExp_Hour;
+		}
+		
 		sExp_Hour = String.valueOf(iExp_Hour);
 		
-		if(iExp_Hour==24) {
-			sExp_Hour="00";
-		}
+		
 		sExp_Time=sExp_Hour+":00:00";
 		
 		System.out.println("IST Act Execution Time: " + sConfigDateTime);

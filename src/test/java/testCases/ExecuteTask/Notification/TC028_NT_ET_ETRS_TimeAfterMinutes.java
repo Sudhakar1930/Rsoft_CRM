@@ -26,13 +26,13 @@ public class TC028_NT_ET_ETRS_TimeAfterMinutes extends BaseClass{
 	@BeforeTest()
 	public void testName() {
 		System.out.println("Before Test Method");
-		test = extent.createTest("TC027_NT_ET_ETRS_TimeBeforeMinutes");
+		test = extent.createTest("TC028_NT_ET_ETRS_TimeAfterMinutes");
 	}
 	
 	@Test
 	public void testExecuteTask_TimeBeforeMinutes () throws Exception {
 		node = test.createNode("NT_ExecuteTask_TimeBeforeMinutes");
-		UtilityCustomFunctions.logWriteConsole("******starting TC027_NT_ET_ETRS_TimeBeforeMinutes ****");
+		UtilityCustomFunctions.logWriteConsole("******starting TC028_NT_ET_ETRS_TimeAfterMinutes ****");
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
 		UtilityCustomFunctions.logWriteConsole("Browser Execution on: "+ sBrowserName);
 		

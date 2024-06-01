@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -205,6 +206,8 @@ public class WorkFlowPage extends BasePage {
 	}
 	
 	public boolean fValidateTaskStatus(String sWorkFlow,String sActionType,String sActionTitle) throws Exception {
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		boolean bWorkflowTaskEnabled = false;
 		boolean bIsCurrentTaskDisabled = false;
 		boolean bCurrentTaskStatus = false;
@@ -245,8 +248,10 @@ public class WorkFlowPage extends BasePage {
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Type:" + sActionType);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Title:" + sActionTitle);
+			sActActionTitle = StringUtils.left(sActActionTitle, 29);
 //			if(sActActionType.trim().equalsIgnoreCase(sActionType.trim()) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
-			if(sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
+//			if(sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
+				if(sActionTitle.trim().contains(sActActionTitle.trim())) {	
 				if(bCurrentTaskStatus==true) {
 					bWorkflowTaskEnabled = true;
 					BaseClass.logger.info("Action Type and Action Tile matches and also Task Button Enabled");

@@ -2569,7 +2569,49 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(5000);
 		//For Modifying record Index 2 value passed.
 		System.out.println("Before Calling ClickDayInDate: " + sTimeHour);
-		objCMD.clickDayInDate(2,"sDateandTime",sTimeHour);
+		if(sAddType.equalsIgnoreCase("sDateandTime")) {
+			boolean bFound = false;
+			Date currentDate = new Date();
+		    int iCurrDate = currentDate.getDate();
+		    int jCounter=iCurrDate+3;
+		    
+			Date dMonthDate = new Date();
+			@SuppressWarnings("deprecation")
+			int iMonthIndex = dMonthDate.getMonth(); 
+			Calendar calendar1 = Calendar.getInstance();
+			calendar1.set(Calendar.MONTH, iMonthIndex);
+			int iMonthLastDay = calendar1.getActualMaximum(calendar1.DAY_OF_MONTH); 
+			System.out.println("Last day of current month:" + iMonthLastDay);
+			System.out.println("j counter:" + jCounter);
+			int iApprValue = 0;
+			if(jCounter >iMonthLastDay) {
+				iApprValue = jCounter - iMonthLastDay;
+				String sNextMonth = getNextMonth();
+				objCMD.SelectMonthandYear("sDateandTime",sNextMonth,"2024");
+				jCounter = iApprValue;
+			}
+			System.out.println("Jcounter value now is : " + jCounter);
+			List<WebElement> sTableDatas = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[3]//tr//td[contains(@class,'today') or contains(@class,'active') or @class='available' or @class='weekend available']"));
+			for(int i=1;i<=sTableDatas.size();i++) {
+					String sDay = sTableDatas.get(i).getText();
+					System.out.println("Control day: " + sDay);
+					if(jCounter==Integer.parseInt(sDay)) {
+						sTableDatas.get(i).click();
+						bFound = true;
+						break;
+					}
+			}//for loop
+			Thread.sleep(1000);
+			objCMD.fSelectDTHour(sTimeHour);
+			Thread.sleep(1000);
+			objCMD.fSelectDTMinutes(sTimeMinutes);
+			Thread.sleep(1000);
+			objCMD.fSelectDTSeconds(sTimeSeconds);
+			Thread.sleep(1000);
+			objCMD.fSelectDTAMorPM("PM");
+		}else {
+			objCMD.clickDayInDate(2,"sDateandTime",sTimeHour);
+		}
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();

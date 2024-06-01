@@ -363,12 +363,22 @@ public class TC045_NT_ET_ETRM_TimeAfterHours extends BaseClass{
 		Date newDate = DateUtils.addMinutes(d1, 330);
 		String sConfigDateTime = newDate.toString();
 		
-		int iExp_Hour = Integer.parseInt(sHours) + 1 + 12;
+//		int iExp_Hour = Integer.parseInt(sHours) + 1 + 12;
+//		
+//		String sExp_Hour = String.valueOf(iExp_Hour);
+//		if(iExp_Hour==24) {
+//			sExp_Hour="00";
+//		}
+//		String sExp_Time=sExp_Hour+":00:00";
+		
+		int iExp_Hour = Integer.parseInt(sEDHours) + 1 + 12;
+		if(iExp_Hour>=24) {
+			iExp_Hour = 24 - iExp_Hour;
+		}
 		
 		String sExp_Hour = String.valueOf(iExp_Hour);
-		if(iExp_Hour==24) {
-			sExp_Hour="00";
-		}
+		
+		
 		String sExp_Time=sExp_Hour+":00:00";
 		
 		System.out.println("IST Act Execution Time: " + sConfigDateTime);
@@ -438,13 +448,24 @@ public class TC045_NT_ET_ETRM_TimeAfterHours extends BaseClass{
 			newDate = DateUtils.addMinutes(d1, 330);
 			sConfigDateTime = newDate.toString();
 			 
+//			iExp_Hour = Integer.parseInt(sEDHours) + 1 + 12;
+//			sExp_Hour = String.valueOf(iExp_Hour);
+//			
+//			if(iExp_Hour==24) {
+//				sExp_Hour="00";
+//			}
+//			sExp_Time=sExp_Hour+":00:00";
+			
 			iExp_Hour = Integer.parseInt(sEDHours) + 1 + 12;
+			if(iExp_Hour>=24) {
+				iExp_Hour = 24 - iExp_Hour;
+			}
+			
 			sExp_Hour = String.valueOf(iExp_Hour);
 			
-			if(iExp_Hour==24) {
-				sExp_Hour="00";
-			}
+			
 			sExp_Time=sExp_Hour+":00:00";
+			
 			
 			System.out.println("IST Act Execution Time: " + sConfigDateTime);
 			System.out.println("IST Exp Execution Time: " + sExp_Time);

@@ -200,6 +200,7 @@ public class TC027_NT_ET_ETRS_TimeBeforeMinutes extends BaseClass{
 		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
+		
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
 		Date d1 = null;
@@ -227,13 +228,13 @@ public class TC027_NT_ET_ETRS_TimeBeforeMinutes extends BaseClass{
 		}
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
-			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New" , "pass",node);
-			UtilityCustomFunctions.logWriteConsole("Passed: ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New");
+			objBase.freport("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New" , "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New");
 		}else {
 			objBase.freport("ET Time sAfterMinutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New" , "fail",node);
-			UtilityCustomFunctions.logWriteConsole("Failed: ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time before Hours With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New");
+			UtilityCustomFunctions.logWriteConsole("Failed: ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time Before Minutes With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New");
 		}
 		
 		objLP.clickPHPMyAdminLogout();
@@ -302,13 +303,13 @@ public class TC027_NT_ET_ETRS_TimeBeforeMinutes extends BaseClass{
 		}
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
-			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New" , "pass",node);
-			UtilityCustomFunctions.logWriteConsole("Passed: ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New");
+			objBase.freport("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New" , "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New");
 		}else {
 			objBase.freport("ET Time sAfterMinutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New" , "fail",node);
-			UtilityCustomFunctions.logWriteConsole("Failed: ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time before Hours With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New");
+			UtilityCustomFunctions.logWriteConsole("Failed: ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time Before Minutes With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New");
 		}
 		
 		objLP.clickPHPMyAdminLogout();
@@ -377,13 +378,13 @@ public class TC027_NT_ET_ETRS_TimeBeforeMinutes extends BaseClass{
 		}
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
-			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record" , "pass",node);
-			UtilityCustomFunctions.logWriteConsole("Passed: ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record");
+			objBase.freport("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record" , "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record");
 		}else {
 			objBase.freport("ET Time sAfterMinutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record" , "fail",node);
-			UtilityCustomFunctions.logWriteConsole("Failed: ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time before Hours With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record");
+			UtilityCustomFunctions.logWriteConsole("Failed: ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time Before Minutes With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record");
 		}
 		
 		objLP.clickPHPMyAdminLogout();
@@ -450,13 +451,13 @@ public class TC027_NT_ET_ETRS_TimeBeforeMinutes extends BaseClass{
 		}
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
-			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save" , "pass",node);
-			UtilityCustomFunctions.logWriteConsole("Passed: ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@@Edit & Save"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save");
+			objBase.freport("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save" , "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@@Edit & Save"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save");
 		}else {
 			objBase.freport("ET Time sAfterMinutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save" , "fail",node);
-			UtilityCustomFunctions.logWriteConsole("Failed: ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time before Hours With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save");
+			UtilityCustomFunctions.logWriteConsole("Failed: ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time Before Minutes With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Edit & Save");
 		}
 		
 		objLP.clickPHPMyAdminLogout();
@@ -534,13 +535,13 @@ public class TC027_NT_ET_ETRS_TimeBeforeMinutes extends BaseClass{
 		}
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
-			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit" , "pass",node);
-			UtilityCustomFunctions.logWriteConsole("Passed: ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit");
+			objBase.freport("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit" , "pass",node);
+			UtilityCustomFunctions.logWriteConsole("Passed: ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit");
 		}else {
 			objBase.freport("ET Time sAfterMinutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit" , "fail",node);
-			UtilityCustomFunctions.logWriteConsole("Failed: ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit"); 
-			BaseClass.sAssertinFn.assertEquals("ET Time before Hours With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit","ET Time before Hours With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit");
+			UtilityCustomFunctions.logWriteConsole("Failed: ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit"); 
+			BaseClass.sAssertinFn.assertEquals("ET Time Before Minutes With Actual Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit","ET Time Before Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Single Line Edit");
 		}
 		
 		objLP.clickPHPMyAdminLogout();
