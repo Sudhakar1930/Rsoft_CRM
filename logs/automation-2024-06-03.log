@@ -1,507 +1,515 @@
-17:45:57.594 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:46:00.999 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [+91] is selected in List
-17:46:00.999 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-17:46:02.722 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-17:46:06.511 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAdd@gmail.com entered in  input
-17:46:07.542 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateAdd@gmail.com
-17:46:09.159 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddText entered in  input
-17:46:09.175 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  DuplicateAddText
-17:46:40.178 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: four,five
-17:46:42.777 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddTextArea entered in  textarea
-17:46:44.874 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-17:46:44.922 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:46:45.060 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:46:51.304 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-17:46:57.957 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:47:00.524 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-17:47:04.555 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:47:06.786 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:47:08.991 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:47:10.161 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-17:47:13.524 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:47:24.360 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [7] is selected in List
-17:47:29.855 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:47:35.306 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:47:40.788 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PM] is selected in List
-17:47:41.805 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:47:41.972 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:47:43.089 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:47:46.107 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='7']
-17:47:57.833 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :01-06-2024
-17:48:01.563 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Mr.] is selected in List
-17:48:03.109 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddName entered in  input
-17:48:04.591 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-17:48:06.023 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-17:48:07.691 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-17:48:08.876 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:48:12.155 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Chennai] is selected in List
-17:48:12.155 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
-17:48:13.333 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:48:16.973 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Tamilnadu] is selected in List
-17:48:16.974 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:48:18.198 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:48:21.457 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [India] is selected in List
-17:48:21.457 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:48:38.389 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-17:48:38.404 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-17:48:42.266 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-17:48:45.308 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-17:48:54.026 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-17:49:04.568 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-17:49:15.472 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:49:15.907 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:49:44.423 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PRIMARY (DESC)] is selected in List
-17:49:49.438 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:49:53.830 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:49:55.194 [main] INFO  utilities.UtilityCustomFunctions - Passed: Actual EntityId: 126487 Not Created in DB for Every Time Record Modifies condition for DTBeforeHours Task @Duplicate Record
-17:50:03.782 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-17:50:05.340 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-17:50:06.920 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-17:50:36.121 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-17:50:36.171 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-17:50:36.202 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 36
-17:50:36.202 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-17:50:36.865 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-17:50:38.111 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-17:50:43.476 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Rsoft IT] is selected in List
-17:50:43.623 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:50:46.944 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [+91] is selected in List
-17:50:46.944 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-17:50:48.569 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-17:50:52.323 [main] INFO  utilities.UtilityCustomFunctions - EditSave@gmail.com entered in  input
-17:50:53.355 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: EditSave@gmail.com
-17:50:54.893 [main] INFO  utilities.UtilityCustomFunctions - EditSaveAddText entered in  input
-17:50:54.908 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  EditSaveAddText
-17:51:25.809 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
-17:51:28.422 [main] INFO  utilities.UtilityCustomFunctions - EditSaveTextArea entered in  textarea
-17:51:30.486 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-17:51:30.520 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:51:30.678 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:51:36.953 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-17:51:43.634 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:51:46.344 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-17:51:50.355 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:51:52.570 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:51:54.733 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:51:55.880 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-17:51:59.299 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:52:10.140 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [8] is selected in List
-17:52:15.584 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:52:21.084 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:52:26.569 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PM] is selected in List
-17:52:27.585 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:52:27.772 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:52:28.922 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:52:31.932 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='8']
-17:52:43.586 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :01-06-2024
-17:52:47.244 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Mr.] is selected in List
-17:52:48.738 [main] INFO  utilities.UtilityCustomFunctions - EditSaveName entered in  input
-17:52:50.253 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-17:52:51.721 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-17:52:53.419 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-17:52:54.659 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:52:57.983 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Chennai] is selected in List
-17:52:57.983 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
-17:52:59.134 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:53:02.988 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Tamilnadu] is selected in List
-17:53:02.988 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:53:04.140 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:53:07.439 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [India] is selected in List
-17:53:07.439 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:53:24.496 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-17:53:24.515 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-17:53:28.425 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-17:53:31.517 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-17:53:40.253 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-17:53:54.035 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-17:54:04.683 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:54:05.117 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:54:32.386 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PRIMARY (DESC)] is selected in List
-17:54:37.404 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:54:41.875 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:54:43.770 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Hours Actual Value: 2024-06-04 19:00:00Expected Value: 2024-06-04 19:00:00 EntityId: 126487@Edit&Save
-17:54:52.268 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-17:54:53.834 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-17:54:55.377 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-17:54:59.102 [main] INFO  utilities.UtilityCustomFunctions - Before Single LIne Edit: Last Task Id:  current record id 126487
-17:55:21.398 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-17:55:21.448 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-17:55:26.464 [main] INFO  utilities.UtilityCustomFunctions - Mobile Number Edit On in Summary Page
-17:55:33.484 [main] INFO  utilities.UtilityCustomFunctions - 2233445566 entered in  input
-17:55:36.159 [main] INFO  utilities.UtilityCustomFunctions - 2233445566 Is Updated Text for Mobile Number@Single Line Edit
-17:55:56.299 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:55:56.717 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:56:23.914 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PRIMARY (DESC)] is selected in List
-17:56:28.916 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:56:33.354 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:56:34.843 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Hours Actual Value: 2024-06-04 19:00:00Expected Value: 2024-06-04 19:00:00 EntityId: 126487@Single Line Edit
-11:15:33.463 [main] INFO  utilities.UtilityCustomFunctions - ******starting TC054_NT_ET_ETRM_DTBeforeDays ****
-11:15:33.469 [main] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
-11:15:33.475 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-11:15:44.835 [main] INFO  utilities.UtilityCustomFunctions - Total rows: 1
-11:15:45.055 [main] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
-11:15:45.055 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-11:15:54.217 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-11:15:56.879 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-11:15:58.916 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-11:16:09.688 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Avatar
-11:16:14.558 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Menu CRM Setting
-11:16:17.041 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Menu Other Setting
-11:16:27.657 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Menu Item Workflow
-11:16:28.507 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Workflow from Combox Box List
-11:16:30.521 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Item to be selected:  ETNotification Workflow
-11:16:38.298 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [ETNotification Workflow] is selected in List
-11:16:38.298 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Item selected in combox Box  ETNotification Workflow
-11:16:41.323 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Selected Module to View its Workflows
-11:16:41.655 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Module,workflow,conditions not matched 
-11:16:41.655 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - bCurrentWFStatus: false
-11:16:41.892 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Module,workflow,conditions not matched 
-11:16:41.892 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - bCurrentWFStatus: false
-11:16:42.106 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Module,workflow,condition matches
-11:16:42.106 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - bCurrentWFStatus: true
-11:16:42.106 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - wf_ET_ETRM_NotificationsWorkflow enabled
-11:16:42.137 [main] INFO  utilities.UtilityCustomFunctions - wf_ET_ETRM_NotificationsDisabled Workflow Manually Enabled
-11:16:42.137 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - true:3
-11:16:51.237 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Work flow clicked
-11:16:58.916 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Cliked Step 1 Next Button to Condition Page
-11:17:05.015 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Cliked Step 2 Next Button to Task List Page
-11:17:06.018 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Workflow and Navigated to Task Page
-11:17:15.721 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Number of Tasks Listed for this Workflow: wf_ET_ETRM_Notifications : 18
-11:17:16.095 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:16.095 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterMin...
-11:17:16.095 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:16.095 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:16.395 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:16.405 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:16.405 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:16.405 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:16.788 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:16.788 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeHour...
-11:17:16.788 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:16.788 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:22.704 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Task Deactivated for Action Type:notifications
-  Send notificationand Action Title:tskNT_ExecuteTask_DTBeforeHou
-11:17:23.078 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:23.078 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTBeforeMinu...
-11:17:23.078 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:23.078 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:23.425 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:23.425 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterDays
-11:17:23.425 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:23.425 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:23.758 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:23.758 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterMinut...
-11:17:23.758 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:23.758 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:24.046 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:24.046 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DTAfterHours
-11:17:24.046 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:24.046 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:24.337 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:24.337 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeMi...
-11:17:24.337 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:24.337 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:24.812 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:24.812 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeBeforeHo...
-11:17:24.812 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:24.812 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:25.212 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:25.212 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterMinut...
-11:17:25.212 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:25.212 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:25.560 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:25.560 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_TimeAfterHo...
-11:17:25.560 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:25.560 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:25.848 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:25.848 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DateBeforeDa...
-11:17:25.848 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:25.848 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:26.148 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:26.148 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_DateAfterDay...
-11:17:26.148 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:26.148 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:26.437 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:26.437 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterDays
-11:17:26.437 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:26.437 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:26.744 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:26.744 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterHours
-11:17:26.744 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:26.744 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:27.026 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:27.026 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_MTAfterMinut...
-11:17:27.026 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:27.026 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:27.350 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:27.350 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterDays
-11:17:27.350 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:27.350 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:27.643 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-11:17:27.643 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskNT_ExecuteTask_CTAfterHours
-11:17:27.643 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-11:17:27.643 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskNT_ExecuteTask_DTBeforeDays
-11:17:28.656 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:true
-11:17:39.110 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Clicked Workflow and Navigated to Task Page
-11:17:39.115 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - Task Active Send notification  tskNT_ExecuteTask_DTBeforeDays
-11:17:54.851 [main] INFO  utilities.UtilityCustomFunctions - Click Module:ETNotification
-11:17:58.880 [main] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:ETNotification
-11:18:00.891 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-11:18:01.181 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-11:18:01.311 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
-11:18:01.311 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-11:18:03.577 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-11:18:04.818 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-11:18:10.303 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Rsoft IT] is selected in List
-11:18:10.565 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-11:18:13.969 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [+91] is selected in List
-11:18:13.969 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9087654321
-11:18:15.789 [main] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
-11:18:19.700 [main] INFO  utilities.UtilityCustomFunctions - NewAdd@gmail.com entered in  input
-11:18:20.738 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: NewAdd@gmail.com
-11:18:22.497 [main] INFO  utilities.UtilityCustomFunctions - NewAddText entered in  input
-11:18:22.519 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  NewAddText
-11:18:45.576 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
-11:18:48.317 [main] INFO  utilities.UtilityCustomFunctions - NewAddTextArea entered in  textarea
-11:18:50.417 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-11:18:50.635 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-11:18:50.910 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-11:18:57.236 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-11:19:04.117 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-11:19:07.417 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-11:19:11.431 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-11:19:13.776 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-11:19:16.130 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-11:19:17.434 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-11:19:24.999 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-11:19:36.287 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [5] is selected in List
-11:19:42.161 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:19:48.031 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:19:54.136 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PM] is selected in List
-11:19:55.143 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-11:19:55.658 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-11:19:56.920 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-11:19:59.926 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='5']
-11:20:11.855 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :03-06-2024
-11:20:16.148 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Mr.] is selected in List
-11:20:17.803 [main] INFO  utilities.UtilityCustomFunctions - NewAddName entered in  input
-11:20:19.515 [main] INFO  utilities.UtilityCustomFunctions - 1111111111 entered in  input
-11:20:21.117 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-11:20:22.980 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-11:20:24.336 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-11:20:27.784 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Ariyalur] is selected in List
-11:20:27.784 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Ariyalur
-11:20:29.138 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-11:20:32.999 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Tamilnadu] is selected in List
-11:20:32.999 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-11:20:34.265 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-11:20:37.786 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [India] is selected in List
-11:20:37.787 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-11:20:55.279 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-11:20:55.319 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-11:20:59.549 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-11:21:02.676 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-11:21:11.567 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-11:21:23.140 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-11:21:35.631 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-11:21:36.211 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-11:22:06.485 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PRIMARY (DESC)] is selected in List
-11:22:11.489 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126490
-11:22:16.188 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126490
-11:22:17.689 [main] INFO  utilities.UtilityCustomFunctions - Passed: Actual EntityId: 126490 Not Created in DB for Every Time Record Modifies condition for DTBeforeDays Task @Add New
-11:22:23.679 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-11:22:25.362 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-11:22:27.137 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-11:22:59.015 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-11:22:59.108 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-11:22:59.179 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 36
-11:22:59.179 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-11:22:59.990 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-11:23:01.371 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-11:23:06.928 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Rsoft IT] is selected in List
-11:23:07.114 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-11:23:10.547 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [+91] is selected in List
-11:23:10.547 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-11:23:12.463 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-11:23:16.828 [main] INFO  utilities.UtilityCustomFunctions - SummaryAdd@gmail.com entered in  input
-11:23:17.856 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAdd@gmail.com
-11:23:19.483 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddText entered in  input
-11:23:19.500 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  SummaryAddText
-11:23:42.667 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: three,four
-11:23:45.731 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddTextArea entered in  textarea
-11:23:47.839 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-11:23:48.044 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-11:23:48.220 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-11:23:54.574 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-11:24:01.627 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-11:24:05.649 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-11:24:09.670 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-11:24:11.980 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-11:24:14.219 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-11:24:15.559 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-11:24:23.274 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-11:24:34.777 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [6] is selected in List
-11:24:40.760 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:24:46.654 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:24:52.392 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PM] is selected in List
-11:24:53.406 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-11:24:53.903 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-11:24:55.171 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-11:24:58.187 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='6']
-11:25:10.499 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :03-06-2024
-11:25:14.953 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Mr.] is selected in List
-11:25:16.759 [main] INFO  utilities.UtilityCustomFunctions - SummaryAddName entered in  input
-11:25:18.543 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-11:25:20.192 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-11:25:22.026 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-11:25:23.218 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-11:25:26.924 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Chennai] is selected in List
-11:25:26.924 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
-11:25:28.301 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-11:25:32.469 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Tamilnadu] is selected in List
-11:25:32.469 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-11:25:33.700 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-11:25:37.175 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [India] is selected in List
-11:25:37.175 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-11:25:54.719 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-11:25:54.735 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-11:25:58.910 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-11:26:02.045 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-11:26:10.973 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-11:26:22.220 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-11:26:33.849 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-11:26:34.441 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-11:26:58.870 [main] INFO  utilities.UtilityCustomFunctions - No EndPage Link
-11:27:07.205 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126492
-11:27:11.886 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126492
-11:27:13.407 [main] INFO  utilities.UtilityCustomFunctions - Passed: Actual EntityId: 126492 Not Created in DB for Every Time Record Modifies condition for DTBeforeDays Task @Summary Add
-11:27:22.894 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-11:27:24.605 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-11:27:26.377 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-11:27:55.712 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-11:27:55.845 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-11:27:56.032 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
-11:27:56.032 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-11:27:57.256 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-11:27:58.543 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-11:28:03.982 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Rsoft IT] is selected in List
-11:28:04.160 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-11:28:07.786 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [+91] is selected in List
-11:28:07.786 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-11:28:09.821 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-11:28:14.159 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAdd@gmail.com entered in  input
-11:28:15.181 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateAdd@gmail.com
-11:28:17.000 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddText entered in  input
-11:28:17.026 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  DuplicateAddText
-11:28:48.760 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: four,five
-11:28:51.790 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddTextArea entered in  textarea
-11:28:53.897 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-11:28:53.953 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-11:28:54.218 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-11:29:00.574 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-11:29:07.476 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-11:29:12.690 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-11:29:16.717 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-11:29:19.118 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-11:29:21.497 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-11:29:22.820 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-11:29:26.461 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-11:29:37.716 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [7] is selected in List
-11:29:43.477 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:29:49.125 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:29:55.010 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PM] is selected in List
-11:29:56.021 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-11:29:56.231 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-11:29:57.556 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-11:30:00.567 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='7']
-11:30:12.599 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :03-06-2024
-11:30:16.895 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Mr.] is selected in List
-11:30:18.798 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddName entered in  input
-11:30:20.632 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-11:30:22.277 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-11:30:24.292 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-11:30:25.757 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-11:30:29.951 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Chennai] is selected in List
-11:30:29.951 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
-11:30:31.109 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-11:30:34.880 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Tamilnadu] is selected in List
-11:30:34.880 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-11:30:36.221 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-11:30:39.617 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [India] is selected in List
-11:30:39.617 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-11:30:57.048 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-11:30:57.080 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-11:31:01.197 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-11:31:04.321 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-11:31:13.213 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-11:31:24.820 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-11:31:36.368 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-11:31:36.967 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-11:32:06.939 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PRIMARY (DESC)] is selected in List
-11:32:11.955 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126494
-11:32:16.717 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126494
-11:32:18.221 [main] INFO  utilities.UtilityCustomFunctions - Passed: Actual EntityId: 126494 Not Created in DB for Every Time Record Modifies condition for DTBeforeDays Task @Duplicate Record
-11:32:27.364 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-11:32:29.115 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-11:32:31.016 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-11:33:03.115 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-11:33:03.210 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-11:33:03.242 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 36
-11:33:03.242 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-11:33:03.975 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-11:33:05.389 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-11:33:10.932 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Rsoft IT] is selected in List
-11:33:11.117 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-11:33:14.584 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [+91] is selected in List
-11:33:14.584 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-11:33:16.542 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-11:33:20.920 [main] INFO  utilities.UtilityCustomFunctions - EditSave@gmail.com entered in  input
-11:33:21.962 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: EditSave@gmail.com
-11:33:23.704 [main] INFO  utilities.UtilityCustomFunctions - EditSaveAddText entered in  input
-11:33:23.720 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  EditSaveAddText
-11:33:55.469 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
-11:33:58.484 [main] INFO  utilities.UtilityCustomFunctions - EditSaveTextArea entered in  textarea
-11:34:00.578 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-11:34:00.625 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-11:34:00.798 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-11:34:07.249 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-11:34:14.216 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-11:34:17.589 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-11:34:21.610 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-11:34:24.014 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-11:34:26.262 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-11:34:27.558 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-11:34:31.400 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-11:34:43.075 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [8] is selected in List
-11:34:48.742 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:34:54.366 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [00] is selected in List
-11:35:00.149 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PM] is selected in List
-11:35:01.152 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-11:35:01.508 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-11:35:02.723 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-11:35:05.727 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='8']
-11:35:17.740 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :03-06-2024
-11:35:22.033 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Mr.] is selected in List
-11:35:23.766 [main] INFO  utilities.UtilityCustomFunctions - EditSaveName entered in  input
-11:35:25.549 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-11:35:27.236 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-11:35:29.270 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-11:35:30.589 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:27:44.225 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:27:44.227 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:27:44.227 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  CE Source @DuplicateRecord
+18:27:45.552 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03 08:00:00 PM
+18:27:45.552 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03 08:00:00 PM
+18:27:45.552 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  CE Source @DuplicateRecord
+18:27:47.129 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:27:47.129 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:27:47.129 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  CE Source @DuplicateRecord
+18:27:48.475 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+18:27:48.475 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:27:48.475 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:27:48.475 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  CE Source @DuplicateRecord
+18:27:49.761 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:27:49.761 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:27:49.761 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  CE Source @DuplicateRecord
+18:27:51.100 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:27:51.100 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:27:51.100 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  CE Source @DuplicateRecord
+18:27:52.364 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:27:52.364 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:27:52.364 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  CE Source @DuplicateRecord
+18:28:00.046 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:28:00.046 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:28:00.046 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  CE Source @DuplicateRecord
+18:28:01.380 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:28:01.380 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:28:01.380 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  CE Source @DuplicateRecord
+18:28:02.746 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:28:02.746 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:28:02.746 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  CE Source @DuplicateRecord
+18:28:02.830 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Enquiry Text Area
+18:28:02.830 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:28:02.830 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  CE Source @DuplicateRecord
+18:28:02.913 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:28:02.913 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:28:02.913 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  CE Source @DuplicateRecord
+18:28:04.194 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413
+18:28:04.194 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9596754413
+18:28:04.194 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  CE Source @DuplicateRecord
+18:28:05.496 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:28:05.496 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:28:05.496 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  CE Source @DuplicateRecord
+18:28:13.093 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441
+18:28:13.095 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9501926441
+18:28:13.095 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  CE Source @DuplicateRecord
+18:28:14.412 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:28:14.412 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:28:14.412 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  CE Source @DuplicateRecord
+18:28:15.762 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:28:15.762 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:28:15.762 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text CE Source @DuplicateRecord
+18:28:15.864 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025
+18:28:15.864 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 0472103025
+18:28:15.864 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  CE Source @DuplicateRecord
+18:28:17.196 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:28:17.196 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:28:17.196 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCE Source @DuplicateRecord
+18:28:47.729 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id @duplicate record:126582
+18:28:48.982 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Excel file Utility instance created
+18:28:49.012 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Row Count is: 1
+18:28:49.027 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Col Count is: 54
+18:28:49.027 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Extracting DataSheet Values started...
+18:28:49.911 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+18:28:56.011 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:29:06.733 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntityTarget
+18:29:06.733 [main] INFO  utilities.UtilityCustomFunctions - Actual:CreateEntityTarget
+18:29:06.733 [main] INFO  utilities.UtilityCustomFunctions - Expected:CreateEntityTarget
+18:29:06.733 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name : CE Target @DuplicateRecord
+18:29:08.314 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:29:08.314 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:29:08.314 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To Title: CE Target @DuplicateRecord
+18:29:09.545 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562
+18:29:09.545 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 0231907562
+18:29:09.545 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Title : CE Target @DuplicateRecord
+18:29:10.794 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:29:10.794 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:29:10.794 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title: CE Target @DuplicateRecord
+18:29:15.537 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:29:15.537 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:29:15.537 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  CE Target @DuplicateRecord
+18:29:16.817 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:29:16.817 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:29:16.817 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Text:  CE Target @DuplicateRecord
+18:29:18.170 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562
+18:29:18.170 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 0231907562
+18:29:18.170 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Mobile Number:  CE Target @DuplicateRecord
+18:29:19.511 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:29:19.512 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:29:19.512 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  CE Target @DuplicateRecord
+18:29:20.846 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:29:20.846 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:29:20.846 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  CE Target @DuplicateRecord
+18:29:22.179 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:29:22.179 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:29:22.179 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  CE Target @DuplicateRecord
+18:29:23.520 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:29:23.520 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:29:23.520 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  CE Target @DuplicateRecord
+18:29:24.858 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:29:24.858 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:29:24.858 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  CE Target @DuplicateRecord
+18:29:26.180 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:29:26.180 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:29:26.180 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  CE Target @DuplicateRecord
+18:29:27.530 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:29:27.530 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:29:27.530 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  CE Target @DuplicateRecord
+18:29:28.829 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-06-03
+18:29:28.829 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:29:28.829 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:29:28.829 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  CE Target @DuplicateRecord
+18:29:30.094 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
+18:29:30.196 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
+18:29:30.196 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:29:30.196 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:29:30.196 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  CE Target @DuplicateRecord
+18:29:31.426 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-06-03 08:00:00 PM
+18:29:31.533 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-06-03 08:00:00 PM
+18:29:31.533 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03 08:00:00 PM
+18:29:31.533 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03 08:00:00 PM
+18:29:31.533 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  CE Target @DuplicateRecord
+18:29:33.062 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:29:33.062 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:29:33.062 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  CE Target @DuplicateRecord
+18:29:34.429 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
+18:29:34.429 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:29:34.443 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:29:34.443 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  CE Target @DuplicateRecord
+18:29:35.764 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:29:35.764 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:29:35.764 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  CE Target @DuplicateRecord
+18:29:37.098 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:29:37.098 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:29:37.098 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  CE Target @DuplicateRecord
+18:29:38.359 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:29:38.359 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:29:38.359 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  CE Target @DuplicateRecord
+18:29:39.694 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:29:39.694 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:29:39.694 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  CE Target @DuplicateRecord
+18:29:41.016 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:29:41.016 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:29:41.016 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  CE Target @DuplicateRecord
+18:29:42.415 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text Enquiry about Chatbot
+18:29:42.415 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
+18:29:42.415 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  CE Target @DuplicateRecord
+18:29:43.746 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area
+18:29:43.746 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area
+18:29:43.746 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  CE Target @DuplicateRecord
+18:29:44.984 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-06-03
+18:29:45.076 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-06-03
+18:29:45.076 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:29:45.076 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:29:45.076 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  CE Target @DuplicateRecord
+18:29:46.395 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413
+18:29:46.395 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9596754413
+18:29:46.395 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  CE Target @DuplicateRecord
+18:29:47.693 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:29:47.693 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:29:47.693 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  CE Target @DuplicateRecord
+18:29:49.010 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441
+18:29:49.010 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9501926441
+18:29:49.010 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  CE Target @DuplicateRecord
+18:29:50.327 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:29:50.327 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:29:50.327 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  CE Target @DuplicateRecord
+18:29:51.644 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area Lead about Chatbot
+18:29:51.644 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area Lead about Chatbot
+18:29:51.644 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  CE Target @DuplicateRecord
+18:29:52.959 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025
+18:29:52.959 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 0472103025
+18:29:52.959 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  CE Target @DuplicateRecord
+18:29:54.261 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:29:54.261 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:29:54.261 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  CE Target @DuplicateRecord
+18:29:56.256 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:30:07.025 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:30:07.025 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:30:07.025 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  CE Target @DuplicateRecord
+18:30:08.326 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:30:08.326 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:30:08.326 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  CE Target @DuplicateRecord
+18:30:09.634 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  0231907562
+18:30:09.634 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562
+18:30:09.634 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 0231907562
+18:30:09.634 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  CE Target @DuplicateRecord
+18:30:10.930 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:30:10.930 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:30:10.930 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  CE Target @DuplicateRecord
+18:30:12.245 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:30:12.245 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:30:12.245 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  CE Target @DuplicateRecord
+18:30:13.561 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:30:13.561 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:30:13.561 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  CE Target @DuplicateRecord
+18:30:14.970 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:30:14.970 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:30:14.970 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  CE Target @DuplicateRecord
+18:30:16.277 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:30:16.277 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:30:16.277 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  CE Target @DuplicateRecord
+18:30:17.612 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:30:17.612 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:30:17.612 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  CE Target @DuplicateRecord
+18:30:18.980 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:30:18.980 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:30:18.992 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  CE Target @DuplicateRecord
+18:30:20.313 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:30:20.313 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:30:20.313 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  CE Target @DuplicateRecord
+18:30:21.650 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:30:21.650 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:30:21.650 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  CE Target @DuplicateRecord
+18:30:22.992 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03 08:00:00 PM
+18:30:22.992 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03 08:00:00 PM
+18:30:22.992 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  CE Target @DuplicateRecord
+18:30:24.475 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:30:24.475 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:30:24.475 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  CE Target @DuplicateRecord
+18:30:25.776 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+18:30:25.776 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:30:25.776 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:30:25.776 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  CE Target @DuplicateRecord
+18:30:27.092 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:30:27.092 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:30:27.092 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  CE Target @DuplicateRecord
+18:30:28.410 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:30:28.410 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:30:28.410 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  CE Target @DuplicateRecord
+18:30:29.706 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:30:29.706 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:30:29.706 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  CE Target @DuplicateRecord
+18:30:37.360 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:30:37.360 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:30:37.360 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  CE Target @DuplicateRecord
+18:30:38.725 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:30:38.725 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:30:38.725 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  CE Target @DuplicateRecord
+18:30:40.060 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text Enquiry about Chatbot
+18:30:40.060 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot
+18:30:40.060 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  CE Target @DuplicateRecord
+18:30:41.409 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area
+18:30:41.409 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area
+18:30:41.409 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  CE Target @DuplicateRecord
+18:30:42.744 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:30:42.744 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:30:42.744 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  CE Target @DuplicateRecord
+18:30:44.074 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413
+18:30:44.074 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9596754413
+18:30:44.074 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  CE Target @DuplicateRecord
+18:30:45.376 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:30:45.376 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:30:45.376 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  CE Target @DuplicateRecord
+18:30:52.958 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441
+18:30:52.958 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9501926441
+18:30:52.958 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  CE Target @DuplicateRecord
+18:30:54.276 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:30:54.276 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:30:54.276 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  CE Target @DuplicateRecord
+18:30:55.626 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area Lead about Chatbot
+18:30:55.626 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text Enquiry about Chatbot Summary Add Enquiry Text Area Lead about Chatbot
+18:30:55.626 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text CE Target @DuplicateRecord
+18:30:56.941 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025
+18:30:56.941 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 0472103025
+18:30:56.941 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  CE Target @DuplicateRecord
+18:30:58.307 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:30:58.307 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:30:58.307 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCE Target @DuplicateRecord
+18:31:26.505 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:31:37.823 [main] INFO  utilities.UtilityCustomFunctions - Actual:LeadMultiSuccess@gmail.com
+18:31:37.823 [main] INFO  utilities.UtilityCustomFunctions - Expected:LeadMultiSuccess@gmail.com
+18:31:37.823 [main] INFO  utilities.UtilityCustomFunctions - Message:Lead_RelatedModule_SummPage@DuplicateRecord-Multiple Success Case
+18:31:39.695 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:31:42.873 [main] INFO  utilities.UtilityCustomFunctions - Actual:LeadMultiSuccess@gmail.com
+18:31:42.873 [main] INFO  utilities.UtilityCustomFunctions - Expected:LeadMultiSuccess@gmail.com
+18:31:42.873 [main] INFO  utilities.UtilityCustomFunctions - Message:Lead_RelatedModule_DetailViewPage@DuplicateRecord-Multiple Success Case
+18:32:13.240 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:32:18.372 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquriyCheckName
+18:32:18.372 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquriyCheckName
+18:32:18.372 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry_RelatedModule_SummPage@Duplicate Record-Multiple Success Case
+18:32:20.293 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:32:23.440 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquriyCheckName
+18:32:23.440 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquriyCheckName
+18:32:23.440 [main] INFO  utilities.UtilityCustomFunctions - Message:Enquiry_RelatedModule_DetailViewPage@Duplicate Record-Multiple Success Case
+18:32:47.825 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:32:52.872 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 7708674417
+18:32:52.872 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 7708674417
+18:32:52.872 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity_RelatedModule_SummPage@DuplicateRecord-Multiple Success Case
+18:32:54.725 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:32:57.873 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 7708674417
+18:32:57.873 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 7708674417
+18:32:57.873 [main] INFO  utilities.UtilityCustomFunctions - Message:Opportunity_RelatedModule_DetailViewPage@DuplicateRecord-Multiple Success Case
+18:33:47.741 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:34:01.533 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Excel file Utility instance created
+18:34:01.549 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Row Count is: 1
+18:34:01.566 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Col Count is: 54
+18:34:01.566 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Extracting DataSheet Values started...
+18:34:02.420 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+18:34:08.488 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:34:08.527 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+18:34:18.726 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntitySource
+18:34:18.726 [main] INFO  utilities.UtilityCustomFunctions - Actual:CreateEntitySource
+18:34:18.727 [main] INFO  utilities.UtilityCustomFunctions - Expected:CreateEntitySource
+18:34:18.727 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name : CE Source @Edit & Save
+18:34:20.323 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:34:20.323 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:34:20.323 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To Title: CE Source @Edit & Save
+18:34:21.538 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562
+18:34:21.538 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 0231907562
+18:34:21.538 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Title : CE Source @Edit & Save
+18:34:22.739 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:34:22.739 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:34:22.739 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title: CE Source @Edit & Save
+18:34:27.479 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:34:27.479 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:34:27.479 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  CE Source @Edit & Save
+18:34:28.760 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:34:28.760 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:34:28.760 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Text:  CE Source @Edit & Save
+18:34:30.097 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562
+18:34:30.097 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 0231907562
+18:34:30.097 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Mobile Number:  CE Source @Edit & Save
+18:34:31.379 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:34:31.379 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:34:31.379 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  CE Source @Edit & Save
+18:34:32.691 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:34:32.691 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:34:32.691 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  CE Source @Edit & Save
+18:34:34.041 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:34:34.041 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:34:34.041 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  CE Source @Edit & Save
+18:34:35.380 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:34:35.380 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:34:35.380 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  CE Source @Edit & Save
+18:34:36.707 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:34:36.707 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:34:36.707 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  CE Source @Edit & Save
+18:34:38.027 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:34:38.027 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:34:38.027 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  CE Source @Edit & Save
+18:34:39.324 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:34:39.324 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:34:39.324 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  CE Source @Edit & Save
+18:34:40.626 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-06-03
+18:34:40.626 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:34:40.626 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:34:40.626 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  CE Source @Edit & Save
+18:34:41.873 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
+18:34:41.988 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
+18:34:41.988 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:34:41.988 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:34:41.988 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  CE Source @Edit & Save
+18:34:43.171 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-06-03 08:00:00 PM
+18:34:43.273 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-06-03 08:00:00 PM
+18:34:43.273 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03 08:00:00 PM
+18:34:43.273 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03 08:00:00 PM
+18:34:43.273 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  CE Source @Edit & Save
+18:34:44.807 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:34:44.807 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:34:44.807 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  CE Source @Edit & Save
+18:34:46.112 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
+18:34:46.112 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:34:46.112 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:34:46.112 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  CE Source @Edit & Save
+18:34:47.440 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:34:47.440 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:34:47.440 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  CE Source @Edit & Save
+18:34:48.758 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:34:48.758 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:34:48.758 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  CE Source @Edit & Save
+18:34:50.055 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:34:50.055 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:34:50.055 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  CE Source @Edit & Save
+18:34:51.388 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:34:51.388 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:34:51.388 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  CE Source @Edit & Save
+18:34:52.704 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:34:52.704 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:34:52.704 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  CE Source @Edit & Save
+18:34:54.004 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:34:54.004 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:34:54.004 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  CE Source @Edit & Save
+18:34:54.089 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Enquiry Text Area
+18:34:54.089 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:34:54.089 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  CE Source @Edit & Save
+18:34:54.089 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-06-03
+18:34:54.172 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-06-03
+18:34:54.172 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:34:54.172 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:34:54.172 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  CE Source @Edit & Save
+18:34:55.505 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413
+18:34:55.505 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9596754413
+18:34:55.505 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  CE Source @Edit & Save
+18:34:56.854 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:34:56.854 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:34:56.854 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  CE Source @Edit & Save
+18:34:58.176 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441
+18:34:58.176 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9501926441
+18:34:58.176 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  CE Source @Edit & Save
+18:34:59.487 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:34:59.487 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:34:59.487 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  CE Source @Edit & Save
+18:35:00.788 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:35:00.788 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:35:00.788 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  CE Source @Edit & Save
+18:35:00.908 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025
+18:35:00.908 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 0472103025
+18:35:00.908 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  CE Source @Edit & Save
+18:35:02.220 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:35:02.220 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:35:02.220 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  CE Source @Edit & Save
+18:35:04.439 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:35:14.555 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+18:35:14.555 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:35:14.555 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  CE Source @Edit & Save
+18:35:15.878 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:35:15.878 [main] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:35:15.878 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  CE Source @Edit & Save
+18:35:17.265 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  0231907562
+18:35:17.265 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 0231907562
+18:35:17.265 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 0231907562
+18:35:17.265 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  CE Source @Edit & Save
+18:35:18.564 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:35:18.564 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:35:18.564 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  CE Source @Edit & Save
+18:35:19.907 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:35:19.907 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:35:19.907 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  CE Source @Edit & Save
+18:35:21.225 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:35:21.225 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:35:21.225 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  CE Source @Edit & Save
+18:35:22.506 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:35:22.506 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:35:22.506 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  CE Source @Edit & Save
+18:35:23.828 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:35:23.828 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:35:23.828 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  CE Source @Edit & Save
+18:35:25.140 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:35:25.140 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:35:25.140 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  CE Source @Edit & Save
+18:35:26.460 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:35:26.460 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:35:26.460 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  CE Source @Edit & Save
+18:35:27.757 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:35:27.757 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:35:27.757 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  CE Source @Edit & Save
+18:35:29.061 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:35:29.061 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:35:29.061 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  CE Source @Edit & Save
+18:35:30.370 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03 08:00:00 PM
+18:35:30.370 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03 08:00:00 PM
+18:35:30.370 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  CE Source @Edit & Save
+18:35:31.870 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:35:31.870 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:35:31.870 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  CE Source @Edit & Save
+18:35:33.169 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+18:35:33.169 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:35:33.169 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:35:33.169 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  CE Source @Edit & Save
+18:35:34.503 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:35:34.503 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:35:34.503 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  CE Source @Edit & Save
+18:35:35.803 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:35:35.803 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:35:35.803 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  CE Source @Edit & Save
+18:35:37.035 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:35:37.035 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:35:37.035 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  CE Source @Edit & Save
+18:35:44.653 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:35:44.653 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:35:44.653 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  CE Source @Edit & Save
+18:35:45.954 [main] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:35:45.954 [main] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:35:45.954 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  CE Source @Edit & Save
+18:35:47.270 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:35:47.270 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:35:47.270 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  CE Source @Edit & Save
+18:35:47.371 [main] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Enquiry Text Area
+18:35:47.371 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:35:47.371 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  CE Source @Edit & Save
+18:35:47.471 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-03
+18:35:47.471 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-03
+18:35:47.471 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  CE Source @Edit & Save
+18:35:48.823 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 9596754413
+18:35:48.823 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 9596754413
+18:35:48.823 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  CE Source @Edit & Save
+18:35:50.153 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:35:50.153 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:35:50.153 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  CE Source @Edit & Save
+18:35:57.775 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 9501926441
+18:35:57.775 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 9501926441
+18:35:57.775 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  CE Source @Edit & Save
+18:35:59.121 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:35:59.121 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:35:59.121 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  CE Source @Edit & Save
+18:36:00.470 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:36:00.470 [main] INFO  utilities.UtilityCustomFunctions - Expected:
+18:36:00.470 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text CE Source @Edit & Save
+18:36:00.552 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 0472103025
+18:36:00.552 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 0472103025
+18:36:00.552 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  CE Source @Edit & Save
+18:36:01.903 [main] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:36:01.903 [main] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:36:01.903 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCE Source @Edit & Save
+18:36:32.728 [main] INFO  utilities.UtilityCustomFunctions - Curr Target Id @Edit & Save:126582
+18:36:33.993 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Excel file Utility instance created
+18:36:34.022 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Row Count is: 1
+18:36:34.052 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Col Count is: 54
+18:36:34.052 [main] INFO  testCases.TC017_CreateEntity_OOFS_MultiSuccessCase - Extracting DataSheet Values started...
+18:36:34.935 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+18:36:41.020 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:36:51.980 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntityTarget

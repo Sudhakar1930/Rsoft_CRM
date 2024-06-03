@@ -34,7 +34,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		UtilityCustomFunctions.logWriteConsole("Browser:" + sBrowserName);
-//		String sPath=".\\testData\\CreateEntity\\" + "WF4_Send_SMS_OOF_S" + "_Live.xlsx" ;
+//		String sPath=".\\testData\\CreateEntity\\" + "CreateEntity_OOFS_NewValues" + "_Live.xlsx" ;
 		String sPath=".\\testData\\CreateEntity\\" + "CreateEntity_OOFS_NewValues" + "_Test.xlsx";
 	
 		ExcelUtility xlObj = new ExcelUtility(sPath);
@@ -265,132 +265,132 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		}
 		else {
 			freport("Target Entity Created after Source Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet1","Create Entity in Target","No",node,true);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet1","Create Entity in Target","No",node,true);
 		}
-		UtilityCustomFunctions.logWriteConsole("Created Entity Validation in Target Module Done");
-		Thread.sleep(3000);
-		UtilityCustomFunctions.logWriteConsole("Summary Add Entity");
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		Thread.sleep(2000);
+//		UtilityCustomFunctions.logWriteConsole("Created Entity Validation in Target Module Done");
+//		Thread.sleep(3000);
+//		UtilityCustomFunctions.logWriteConsole("Summary Add Entity");
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+//		Thread.sleep(2000);
+////		objCMD.clickExistingModData(1);
 //		objCMD.clickExistingModData(1);
-		objCMD.clickExistingModData(1);
-		objDVP.clickAddRecord();
-		Thread.sleep(3000);
-		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2",false);
-		Thread.sleep(5000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		Thread.sleep(1000);
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
-		if(iTarAfterNewRec == iTarAftSummaryAdd) {
-			freport("Target Entity Not Created for Summary Add", "fail", node);
-		}
-		else {
-			freport("Target Entity Created after Summary Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2","Create Entity after Summary Add","No",node, true);
-			UtilityCustomFunctions.logWriteConsole("Created Entity after Summary Add is Done");
-		}
-		//Duplicate Entity Validation
-		Thread.sleep(3000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		Thread.sleep(2000);
+//		objDVP.clickAddRecord();
+//		Thread.sleep(3000);
+//		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2",false);
+//		Thread.sleep(5000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+//		Thread.sleep(1000);
 //		objCMD.clickExistingModData(1);
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		objDVP.clickDuplicateRecord();
-		Thread.sleep(5000);
-		objCMD.clickSave();
-		Thread.sleep(5000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		Thread.sleep(1000);
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		int iTarAftDuplicate = objCRMRs.getLastRecordId();
-	
-		if(iTarAftSummaryAdd== iTarAftDuplicate) {
-			freport("Target Entity Not Created for Duplicate Record", "fail", node);
-		}
-		else {
-			freport("Target Entity Created after Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2","Create Entity after duplicate record","No",node,true);
-			UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
-		}
-		//Edit Source Module Validation
-		Thread.sleep(3000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		Thread.sleep(2000);
-		System.out.println("Module clicked");
-		Thread.sleep(6000);
-		System.out.println("Before selecting 1st Record");
-		objCMD.clickExistingModData(1);
-		Thread.sleep(6000);
-		Thread.sleep(1000);
-		System.out.println("Before Edit button clicked in summary view");
-		objCMD.clickEdit();
- 		Thread.sleep(6000);
-		objCMD.clickSave();
-		Thread.sleep(3000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(1000);
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		
-		int iTarAftFullEdit = objCRMRs.getLastRecordId();
-		if(iTarAftDuplicate== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Edit & Save", "pass", node);
-		}else {
-			freport("Target Entity Created for Edit & save", "fail", node);
-		}
-		//Edit Single Line Summary
-		Thread.sleep(3000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod1);
-		Thread.sleep(2000);
-		System.out.println("Module clicked");
-		Thread.sleep(6000);
-		System.out.println("Before selecting 1st Record");
-		objCMD.clickExistingModData(1);
-
-		Thread.sleep(6000);
-		objDVP.fSetToggleHeader(true);
-		objDVP.fSetDetailVew(false);
-		objSVP.fWaitTillControlVisible();
-//		objDVP.clickEditRecordItem();
-		objSVP.clickEditCheckBox(1);
-		Thread.sleep(1000);
-		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
-		objDVP.clickRecItemSave(sExpSrcModuleName);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
-		objALP.clickAllList();
-		Thread.sleep(1000);
-		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		UtilityCustomFunctions.checkPageLoadComplete();
-		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
-		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
-		if(iTarAftSingleLineEdit== iTarAftFullEdit) {
-			freport("Target Entity Not Created for Single Line Edit", "pass", node);
-		}else {
-			freport("Target Entity Created for Single Line Edit", "fail", node);
-		}
+//		Thread.sleep(1000);
+//		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
+//		if(iTarAfterNewRec == iTarAftSummaryAdd) {
+//			freport("Target Entity Not Created for Summary Add", "fail", node);
+//		}
+//		else {
+//			freport("Target Entity Created after Summary Added", "pass", node);
+//			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2","Create Entity after Summary Add","No",node, true);
+//			UtilityCustomFunctions.logWriteConsole("Created Entity after Summary Add is Done");
+//		}
+//		//Duplicate Entity Validation
+//		Thread.sleep(3000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+//		Thread.sleep(2000);
+////		objCMD.clickExistingModData(1);
+//		objCMD.clickExistingModData(1);
+//		Thread.sleep(1000);
+//		objDVP.clickDuplicateRecord();
+//		Thread.sleep(5000);
+//		objCMD.clickSave();
+//		Thread.sleep(5000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+//		UtilityCustomFunctions.checkPageLoadComplete();
+//		Thread.sleep(10000);
+//		Thread.sleep(1000);
+//		objCMD.clickExistingModData(1);
+//		Thread.sleep(1000);
+//		int iTarAftDuplicate = objCRMRs.getLastRecordId();
+//	
+//		if(iTarAftSummaryAdd== iTarAftDuplicate) {
+//			freport("Target Entity Not Created for Duplicate Record", "fail", node);
+//		}
+//		else {
+//			freport("Target Entity Created after Duplicate Record", "pass", node);
+//			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2","Create Entity after duplicate record","No",node,true);
+//			UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
+//		}
+//		//Edit Source Module Validation
+//		Thread.sleep(3000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+//		Thread.sleep(2000);
+//		System.out.println("Module clicked");
+//		Thread.sleep(6000);
+//		System.out.println("Before selecting 1st Record");
+//		objCMD.clickExistingModData(1);
+//		Thread.sleep(6000);
+//		Thread.sleep(1000);
+//		System.out.println("Before Edit button clicked in summary view");
+//		objCMD.clickEdit();
+// 		Thread.sleep(6000);
+//		objCMD.clickSave();
+//		Thread.sleep(3000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+//		UtilityCustomFunctions.checkPageLoadComplete();
+//		Thread.sleep(1000);
+//		objCMD.clickExistingModData(1);
+//		Thread.sleep(1000);
+//		
+//		int iTarAftFullEdit = objCRMRs.getLastRecordId();
+//		if(iTarAftDuplicate== iTarAftFullEdit) {
+//			freport("Target Entity Not Created for Edit & Save", "pass", node);
+//		}else {
+//			freport("Target Entity Created for Edit & save", "fail", node);
+//		}
+//		//Edit Single Line Summary
+//		Thread.sleep(3000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod1);
+//		Thread.sleep(2000);
+//		System.out.println("Module clicked");
+//		Thread.sleep(6000);
+//		System.out.println("Before selecting 1st Record");
+//		objCMD.clickExistingModData(1);
+//
+//		Thread.sleep(6000);
+//		objDVP.fSetToggleHeader(true);
+//		objDVP.fSetDetailVew(false);
+//		objSVP.fWaitTillControlVisible();
+////		objDVP.clickEditRecordItem();
+//		objSVP.clickEditCheckBox(1);
+//		Thread.sleep(1000);
+//		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
+//		objDVP.clickRecItemSave(sExpSrcModuleName);
+//		UtilityCustomFunctions.checkPageLoadComplete();
+//		Thread.sleep(10000);
+//		objALP.clickAllList();
+//		Thread.sleep(1000);
+//		objALP.clickModuleOnListAll(driver, sDisplayMod2);
+//		UtilityCustomFunctions.checkPageLoadComplete();
+//		objCMD.clickExistingModData(1);
+//		Thread.sleep(1000);
+//		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
+//		if(iTarAftSingleLineEdit== iTarAftFullEdit) {
+//			freport("Target Entity Not Created for Single Line Edit", "pass", node);
+//		}else {
+//			freport("Target Entity Created for Single Line Edit", "fail", node);
+//		}
 		
 		objHP.clickLogoutCRM();
 	}

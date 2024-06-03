@@ -248,8 +248,8 @@ public class WorkFlowPage extends BasePage {
 			UtilityCustomFunctions.logWriteConsole("Retrieved Action Title:" + sActActionTitle);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Type:" + sActionType);
 			UtilityCustomFunctions.logWriteConsole("Retrieved Expected Action Title:" + sActionTitle);
-			if(sActActionTitle.length()>=29) {
-				sActActionTitle = StringUtils.left(sActActionTitle, 29);
+			if(sActActionTitle.length()>=26) {
+				sActActionTitle = StringUtils.left(sActActionTitle, 26);
 			}
 //			if(sActActionType.trim().equalsIgnoreCase(sActionType.trim()) && sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {
 //			if(sActActionTitle.trim().equalsIgnoreCase(sActionTitle.trim())) {

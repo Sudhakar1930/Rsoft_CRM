@@ -195,7 +195,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		}
 		else {
 			freport("Source Updated on Fail Case - Add New Record ", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Failure Update Add New Record","No",node,false);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Failure Update Add New Record","No",node,false);
 		}
 		
 		//get Target LastRecordId
@@ -251,7 +251,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		}
 		else {
 			freport("Source Update on Fail Case @ Summary Add", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Fail Case Update on Summary Add","No",node,false);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Fail Case Update on Summary Add","No",node,false);
 		}
 		
 		objALP.clickAllList();
@@ -299,7 +299,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		}
 		else {
 			freport("Source Updated on Fail Case @Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Duplicate Failure Update Case ","No",node,false);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Duplicate Failure Update Case ","No",node,false);
 		}
 		
 		//Target Entity Validation
@@ -364,7 +364,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		//Source Failure case Update While Edit & Save Record Validation
 		if(iOldSrcRecId==iCurrSrcRecId) {
 			freport("Update on Failure Case in @ Edit & Save Record", "pass", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node,false);
+//			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Edit & Save Failure Update Case ","No",node,false);
 		}
 		else {
 			freport("Update on Failure Case in @ Edit & Save Record", "fail", node);
@@ -423,7 +423,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		if(iOldSrcRecId==iCurrSrcRecId) {
 			
 			freport("Source Update on fail Case @ Single Line Edit", "pass", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node,false);
+//			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_FailureUpdate_","Sheet5","Single Line Edit Failure Update Case ","No",node,false);
 			UtilityCustomFunctions.fSoftAssert(sActSummaryText, sEditIndText, "SourceEdit_SummPage@SingleLineEdit-Update on fail Case", node);
 			objDVP.fSetDetailVew(true);
 			Thread.sleep(3000);

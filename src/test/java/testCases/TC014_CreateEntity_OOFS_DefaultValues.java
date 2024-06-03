@@ -266,7 +266,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
 		if(iOldTrgRecId != iCurrTrgRecId) {
 			freport("Target Entity Created after New Source Added", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Target Entity New Add","No",node,true);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Target Entity New Add","No",node,true);
 			
 			}
 		else {
@@ -328,7 +328,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
 		if(iOldTrgRecId != iCurrTrgRecId) {
 			freport("Target Entity Created after New Record Added in Summary", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Target Entity Summary Add","No",node,true);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Target Entity Summary Add","No",node,true);
 			
 			}
 		else {
@@ -358,11 +358,11 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		//While Duplicate Record Validation
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		if(iOldSrcRecId!=iCurrSrcRecId) {
-			freport("Duplicate record the Source in Create Entity default values ", "pass", node);
+			freport("Source record created after Duplicate record for Create Entity with default values ", "pass", node);
 			
 		}
 		else {
-			freport("Duplicate record the Source in Create Entity default values ", "fail", node);
+			freport("Source record not created after Duplicate record for Create Entity with default values", "fail", node);
 			
 		}
 		//Target Entity Validation
@@ -376,7 +376,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
 		if(iOldTrgRecId != iCurrTrgRecId) {
 			freport("Target Entity Created after Record Duplicated", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Target Entity Duplicate Record","No",node,true);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_DefaultValues_","Sheet1","Target Entity Duplicate Record","No",node,true);
 			
 			}
 		else {

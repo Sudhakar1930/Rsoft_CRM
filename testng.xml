@@ -8,7 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays"/>
+		<class name="testCases.TC013_CreateEntity_OOFS_NewValues"/>
 	 </classes>	
 	  <!--
 	  

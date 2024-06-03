@@ -239,7 +239,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Source Updated on Success Case - Add New Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Update on Success Case-Add new Record","No",node,false);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Update on Success Case-Add new Record","No",node,false);
 		}
 				
 		objALP.clickAllList();
@@ -259,7 +259,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Target Updated on Success Case - Add New Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Update on Success Case -Target-Add new Record","No",node,true);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Update on Success Case -Target-Add new Record","No",node,true);
 		}
 		//Summary Add Record
 
@@ -290,7 +290,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Source Update on Success Case @ Summary Add", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Update on Success Case -Source- Summary Add New","No",node,false);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Update on Success Case -Source- Summary Add New","No",node,false);
 		}
 		
 		//Target Entity Validation
@@ -316,7 +316,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Target Updated on Success Case - Summary Add Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node,true);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node,true);
 		}
 		//**************** Duplicate Record Validation **************
 		iOldTrgRecId=iCurrTrgRecId;
@@ -347,7 +347,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Source Updated on Success Case @Duplicate Record", "pass", node);
-			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Duplicate Success Update Case ","No",node,false);
+			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet5","Duplicate Success Update Case ","No",node,false);
 		}
 		iOldSrcRecId=iCurrSrcRecId; //Assigning Current source Id to Old Sourcer Record Id
 		UtilityCustomFunctions.logWriteConsole("CurrentUrl: after source duplicate"+driver.getCurrentUrl());
@@ -375,7 +375,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		else {
 			freport("Target created on Success Case - Duplicate Record", "pass", node);
 			//comments because Date, time , date & time takes current value for duplicate activity.
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Duplicate Record -Target Validation","No",node,false);
+//			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Duplicate Record -Target Validation","No",node,false);
 		}
 		
 		
@@ -434,7 +434,6 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Target Entity Created while Edit & Save Record", "fail", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node);
 		}
 		//************** Single Line Summary Edit *****************
 		iOldTrgRecId=iCurrTrgRecId;
@@ -493,7 +492,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		}
 		else {
 			freport("Target Entity Created  @ Single Line Edit", "fail", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2","Summary Add Create Entity","No",node);
+
 		}
 		
 		objHP.clickLogoutCRM();

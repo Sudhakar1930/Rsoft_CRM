@@ -264,6 +264,25 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.selectFromComboBox(driver, eleYear, sYear);
 			
 	}
+	public void SelectDayandTime(int iDateIndex,String sHour,String sMinutes,String sSeconds,String sTimeFormat) throws InterruptedException {
+		Thread.sleep(1000);
+		String sDateXpath="(//td[contains(@class,'today')])[" + iDateIndex + "]";
+		UtilityCustomFunctions.logWriteConsole(sDateXpath);
+		
+		WebElement eleDate = driver.findElement(By.xpath(sDateXpath));
+		Thread.sleep(1000);
+		eleDate.click();
+		Thread.sleep(1000);
+		UtilityCustomFunctions.selectItemfromListBox(driver,eleDTHour,sHour,"option");
+		Thread.sleep(1000);
+		UtilityCustomFunctions.selectItemfromListBox(driver,eleDTMinute,sMinutes,"option");
+		Thread.sleep(1000);
+        UtilityCustomFunctions.selectItemfromListBox(driver,eleDTSecond,sSeconds,"option");
+        Thread.sleep(1000);
+        UtilityCustomFunctions.selectItemfromListBox(driver,eleDTAMPM,sTimeFormat,"option");
+        Thread.sleep(1000);
+	}
+	
 	public void clickDayInDate(int iDateIndex,String sControlType,String sTimeHour) throws Exception {
 		CRMReUsables objCRMRs = new CRMReUsables();
 		String sXpath="";
