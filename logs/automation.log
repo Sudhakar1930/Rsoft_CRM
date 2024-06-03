@@ -1,137 +1,35 @@
-17:45:57.594 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:46:00.999 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [+91] is selected in List
-17:46:00.999 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-17:46:02.722 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-17:46:06.511 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAdd@gmail.com entered in  input
-17:46:07.542 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateAdd@gmail.com
-17:46:09.159 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddText entered in  input
-17:46:09.175 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  DuplicateAddText
-17:46:40.178 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: four,five
-17:46:42.777 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddTextArea entered in  textarea
-17:46:44.874 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-17:46:44.922 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:46:45.060 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:46:51.304 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-17:46:57.957 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:47:00.524 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-17:47:04.555 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:47:06.786 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:47:08.991 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:47:10.161 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-17:47:13.524 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:47:24.360 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [7] is selected in List
-17:47:29.855 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:47:35.306 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:47:40.788 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PM] is selected in List
-17:47:41.805 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:47:41.972 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:47:43.089 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:47:46.107 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='7']
-17:47:57.833 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :01-06-2024
-17:48:01.563 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Mr.] is selected in List
-17:48:03.109 [main] INFO  utilities.UtilityCustomFunctions - DuplicateAddName entered in  input
-17:48:04.591 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-17:48:06.023 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-17:48:07.691 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-17:48:08.876 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:48:12.155 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Chennai] is selected in List
-17:48:12.155 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
-17:48:13.333 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:48:16.973 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Tamilnadu] is selected in List
-17:48:16.974 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:48:18.198 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:48:21.457 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [India] is selected in List
-17:48:21.457 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:48:38.389 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-17:48:38.404 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-17:48:42.266 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-17:48:45.308 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-17:48:54.026 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-17:49:04.568 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-17:49:15.472 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:49:15.907 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:49:44.423 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PRIMARY (DESC)] is selected in List
-17:49:49.438 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:49:53.830 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:49:55.194 [main] INFO  utilities.UtilityCustomFunctions - Passed: Actual EntityId: 126487 Not Created in DB for Every Time Record Modifies condition for DTBeforeHours Task @Duplicate Record
-17:50:03.782 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-17:50:05.340 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-17:50:06.920 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-17:50:36.121 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-17:50:36.171 [main] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
-17:50:36.202 [main] INFO  utilities.UtilityCustomFunctions - Col Count is: 36
-17:50:36.202 [main] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
-17:50:36.865 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-17:50:38.111 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-17:50:43.476 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Rsoft IT] is selected in List
-17:50:43.623 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-17:50:46.944 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [+91] is selected in List
-17:50:46.944 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
-17:50:48.569 [main] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
-17:50:52.323 [main] INFO  utilities.UtilityCustomFunctions - EditSave@gmail.com entered in  input
-17:50:53.355 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: EditSave@gmail.com
-17:50:54.893 [main] INFO  utilities.UtilityCustomFunctions - EditSaveAddText entered in  input
-17:50:54.908 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  EditSaveAddText
-17:51:25.809 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
-17:51:28.422 [main] INFO  utilities.UtilityCustomFunctions - EditSaveTextArea entered in  textarea
-17:51:30.486 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-17:51:30.520 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-17:51:30.678 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-17:51:36.953 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-17:51:43.634 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-17:51:46.344 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-17:51:50.355 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-17:51:52.570 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-17:51:54.733 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-17:51:55.880 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
-17:51:59.299 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-17:52:10.140 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [8] is selected in List
-17:52:15.584 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:52:21.084 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [00] is selected in List
-17:52:26.569 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PM] is selected in List
-17:52:27.585 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-17:52:27.772 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-17:52:28.922 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-17:52:31.932 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='8']
-17:52:43.586 [main] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :01-06-2024
-17:52:47.244 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Mr.] is selected in List
-17:52:48.738 [main] INFO  utilities.UtilityCustomFunctions - EditSaveName entered in  input
-17:52:50.253 [main] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
-17:52:51.721 [main] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
-17:52:53.419 [main] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
-17:52:54.659 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-17:52:57.983 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Chennai] is selected in List
-17:52:57.983 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
-17:52:59.134 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-17:53:02.988 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [Tamilnadu] is selected in List
-17:53:02.988 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-17:53:04.140 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-17:53:07.439 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [India] is selected in List
-17:53:07.439 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-17:53:24.496 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
-17:53:24.515 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
-17:53:28.425 [main] INFO  utilities.UtilityCustomFunctions - Button Search
-17:53:31.517 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
-17:53:40.253 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
-17:53:54.035 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
-17:54:04.683 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:54:05.117 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:54:32.386 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PRIMARY (DESC)] is selected in List
-17:54:37.404 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:54:41.875 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:54:43.770 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Hours Actual Value: 2024-06-04 19:00:00Expected Value: 2024-06-04 19:00:00 EntityId: 126487@Edit&Save
-17:54:52.268 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-17:54:53.834 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-17:54:55.377 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-17:54:59.102 [main] INFO  utilities.UtilityCustomFunctions - Before Single LIne Edit: Last Task Id:  current record id 126487
-17:55:21.398 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-17:55:21.448 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-17:55:26.464 [main] INFO  utilities.UtilityCustomFunctions - Mobile Number Edit On in Summary Page
-17:55:33.484 [main] INFO  utilities.UtilityCustomFunctions - 2233445566 entered in  input
-17:55:36.159 [main] INFO  utilities.UtilityCustomFunctions - 2233445566 Is Updated Text for Mobile Number@Single Line Edit
-17:55:56.299 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
-17:55:56.717 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
-17:56:23.914 [main] INFO  testCases.ExecuteTask.Notification.TC053_NT_ET_ETRM_DTBeforeHours - [PRIMARY (DESC)] is selected in List
-17:56:28.916 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:56:33.354 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126487
-17:56:34.843 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Hours Actual Value: 2024-06-04 19:00:00Expected Value: 2024-06-04 19:00:00 EntityId: 126487@Single Line Edit
+11:35:34.131 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Chennai] is selected in List
+11:35:34.131 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
+11:35:35.525 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+11:35:39.667 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [Tamilnadu] is selected in List
+11:35:39.667 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+11:35:41.025 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+11:35:44.588 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [India] is selected in List
+11:35:44.588 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+11:36:02.313 [main] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
+11:36:02.344 [main] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
+11:36:06.386 [main] INFO  utilities.UtilityCustomFunctions - Button Search
+11:36:09.521 [main] INFO  utilities.UtilityCustomFunctions - table row Count:1
+11:36:18.309 [main] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
+11:36:32.982 [main] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+11:36:44.831 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+11:36:45.430 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+11:37:14.181 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PRIMARY (DESC)] is selected in List
+11:37:19.195 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126494
+11:37:23.779 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126494
+11:37:25.979 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Days Actual Value: 2024-06-06 20:00:00Expected Value: 2024-06-06 20:00:00 EntityId: 126494@Edit & Save
+11:37:34.978 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+11:37:36.814 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+11:37:38.466 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+11:37:42.321 [main] INFO  utilities.UtilityCustomFunctions - Before Single LIne Edit: Last Task Id:  current record id 126494
+11:38:06.461 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+11:38:06.540 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+11:38:11.556 [main] INFO  utilities.UtilityCustomFunctions - Mobile Number Edit On in Summary Page
+11:38:19.360 [main] INFO  utilities.UtilityCustomFunctions - 2233445566 entered in  input
+11:38:22.134 [main] INFO  utilities.UtilityCustomFunctions - 2233445566 Is Updated Text for Mobile Number@Single Line Edit
+11:38:43.662 [main] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+11:38:44.323 [main] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+11:39:13.777 [main] INFO  testCases.ExecuteTask.Notification.TC054_NT_ET_ETRM_DTBeforeDays - [PRIMARY (DESC)] is selected in List
+11:39:18.795 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126494
+11:39:23.551 [main] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 126494
+11:39:25.350 [main] INFO  utilities.UtilityCustomFunctions - Execute Task Notification Date&Time before Days Actual Value: 2024-06-06 20:00:00Expected Value: 2024-06-06 20:00:00 EntityId: 126494@Single Line Edit
