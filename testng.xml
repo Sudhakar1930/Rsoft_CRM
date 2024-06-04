@@ -8,7 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.TC013_CreateEntity_OOFS_NewValues"/>
+		<class name="testCases.TC019_CreateEntity_ETRS_NewValues"/>
 	 </classes>	
 	  <!--
 	  

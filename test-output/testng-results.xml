@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T19:18:18 IST" name="Suite" finished-at="2024-06-03T19:19:39 IST" duration-ms="81223">
+  <suite started-at="2024-06-04T18:38:58 IST" name="Suite" finished-at="2024-06-04T18:41:35 IST" duration-ms="157353">
     <groups>
     </groups>
-    <test started-at="2024-06-03T19:18:18 IST" name="chromeTest" finished-at="2024-06-03T19:19:39 IST" duration-ms="81122">
-      <class name="testCases.TC013_CreateEntity_OOFS_NewValues">
-        <test-method is-config="true" signature="CreateTest()[pri:0, instance:testCases.TC013_CreateEntity_OOFS_NewValues@1c1bbc4e]" started-at="2024-06-03T19:18:18 IST" name="CreateTest" finished-at="2024-06-03T19:18:19 IST" duration-ms="1518" status="PASS">
+    <test started-at="2024-06-04T18:38:58 IST" name="chromeTest" finished-at="2024-06-04T18:41:35 IST" duration-ms="157268">
+      <class name="testCases.TC019_CreateEntity_ETRS_NewValues">
+        <test-method is-config="true" signature="CreateTest()[pri:0, instance:testCases.TC019_CreateEntity_ETRS_NewValues@1c1bbc4e]" started-at="2024-06-04T18:38:58 IST" name="CreateTest" finished-at="2024-06-04T18:38:59 IST" duration-ms="1189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC013_CreateEntity_OOFS_NewValues@1c1bbc4e]" started-at="2024-06-03T19:18:19 IST" name="setup" finished-at="2024-06-03T19:18:24 IST" duration-ms="4638" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC019_CreateEntity_ETRS_NewValues@1c1bbc4e]" started-at="2024-06-04T18:38:59 IST" name="setup" finished-at="2024-06-04T18:39:04 IST" duration-ms="5086" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,29 +22,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateEntity_OOFS_NewValues()[pri:0, instance:testCases.TC013_CreateEntity_OOFS_NewValues@1c1bbc4e]" started-at="2024-06-03T19:18:24 IST" name="testCreateEntity_OOFS_NewValues" finished-at="2024-06-03T19:19:39 IST" duration-ms="74888" status="FAIL">
+        <test-method signature="testCreateEntity_OOFS_NewValues()[pri:0, instance:testCases.TC019_CreateEntity_ETRS_NewValues@1c1bbc4e]" started-at="2024-06-04T18:39:04 IST" name="testCreateEntity_OOFS_NewValues" finished-at="2024-06-04T18:41:35 IST" duration-ms="150918" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[contains(@class,'mainrow Removerow')]//i[@class='fa fa-edit'])[1]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='select2-createentitysource _mobilenumber_prefix-container']"}
   (Session info: chrome=125.0.6422.113)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4b8ccbabe01043577bc5a35a42db244, findElement {using=xpath, value=(//tr[contains(@class,'mainrow Removerow')]//i[@class='fa fa-edit'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4b8ccbabe01043577bc5a35a42db244]]>
+Command: [ae0f8118393a55376d3a0dd7743444b5, findElement {using=xpath, value=//span[@id='select2-createentitysource _mobilenumber_prefix-container']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61772}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61772/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae0f8118393a55376d3a0dd7743444b5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//tr[contains(@class,'mainrow Removerow')]//i[@class='fa fa-edit'])[1]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='select2-createentitysource _mobilenumber_prefix-container']"}
   (Session info: chrome=125.0.6422.113)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4b8ccbabe01043577bc5a35a42db244, findElement {using=xpath, value=(//tr[contains(@class,'mainrow Removerow')]//i[@class='fa fa-edit'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4b8ccbabe01043577bc5a35a42db244
+Command: [ae0f8118393a55376d3a0dd7743444b5, findElement {using=xpath, value=//span[@id='select2-createentitysource _mobilenumber_prefix-container']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61772}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61772/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae0f8118393a55376d3a0dd7743444b5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -61,9 +61,9 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at pageObjects.WorkFlowPage.fNavigateToTask(WorkFlowPage.java:194)
-at utilities.CRMReUsables.fClickWorkFlowAndGotoTask(CRMReUsables.java:655)
-at testCases.TC013_CreateEntity_OOFS_NewValues.testCreateEntity_OOFS_NewValues(TC013_CreateEntity_OOFS_NewValues.java:212)
+at pageObjects.CreateModuleDataPage.ClickListPhonePrefix(CreateModuleDataPage.java:605)
+at utilities.CRMReUsables.fAddValuestoEntityModule(CRMReUsables.java:1496)
+at testCases.TC019_CreateEntity_ETRS_NewValues.testCreateEntity_OOFS_NewValues(TC019_CreateEntity_ETRS_NewValues.java:352)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,26 +98,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateEntity_OOFS_NewValues -->
-      </class> <!-- testCases.TC013_CreateEntity_OOFS_NewValues -->
+      </class> <!-- testCases.TC019_CreateEntity_ETRS_NewValues -->
     </test> <!-- chromeTest -->
-    <test started-at="2024-06-03T19:19:39 IST" name="edgeTest" finished-at="2024-06-03T19:19:39 IST" duration-ms="0">
-      <class name="testCases.TC013_CreateEntity_OOFS_NewValues">
-        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC013_CreateEntity_OOFS_NewValues@1c1bbc4e]" started-at="2024-06-03T19:18:17 IST" name="onStart" finished-at="2024-06-03T19:18:18 IST" duration-ms="745" status="PASS">
+    <test started-at="2024-06-04T18:41:35 IST" name="edgeTest" finished-at="2024-06-04T18:41:35 IST" duration-ms="0">
+      <class name="testCases.TC019_CreateEntity_ETRS_NewValues">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC019_CreateEntity_ETRS_NewValues@1c1bbc4e]" started-at="2024-06-04T18:38:57 IST" name="onStart" finished-at="2024-06-04T18:38:58 IST" duration-ms="623" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@36871e98]]>
+                <![CDATA[org.testng.TestRunner@4db568e1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onStart -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC013_CreateEntity_OOFS_NewValues@1c1bbc4e]" started-at="2024-06-03T19:19:39 IST" name="flush" finished-at="2024-06-03T19:19:40 IST" duration-ms="847" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC019_CreateEntity_ETRS_NewValues@1c1bbc4e]" started-at="2024-06-04T18:41:35 IST" name="flush" finished-at="2024-06-04T18:41:36 IST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- testCases.TC013_CreateEntity_OOFS_NewValues -->
+      </class> <!-- testCases.TC019_CreateEntity_ETRS_NewValues -->
     </test> <!-- edgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

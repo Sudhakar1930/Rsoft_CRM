@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 03 19:18:18 IST 2024</td>
+<td>Started on:</td><td>Tue Jun 04 18:38:58 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>81 seconds (81122 ms)</td>
+<tr><td>Total time:</td><td>157 seconds (157268 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC013_CreateEntity_OOFS_NewValues.testCreateEntity_OOFS_NewValues()'><b>testCreateEntity_OOFS_NewValues</b><br>Test class: testCases.TC013_CreateEntity_OOFS_NewValues</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[contains(@class,&apos;mainrow Removerow&apos;)]//i[@class=&apos;fa fa-edit&apos;])[1]&quot;}
+<td title='testCases.TC019_CreateEntity_ETRS_NewValues.testCreateEntity_OOFS_NewValues()'><b>testCreateEntity_OOFS_NewValues</b><br>Test class: testCases.TC019_CreateEntity_ETRS_NewValues</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;select2-createentitysource _mobilenumber_prefix-container&apos;]&quot;}
   (Session info: chrome=125.0.6422.113)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4b8ccbabe01043577bc5a35a42db244, findElement {using=xpath, value=(//tr[contains(@class,&apos;mainrow Removerow&apos;)]//i[@class=&apos;fa fa-edit&apos;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4b8ccbabe01043577bc5a35a42db244
+Command: [ae0f8118393a55376d3a0dd7743444b5, findElement {using=xpath, value=//span[@id=&apos;select2-createentitysource _mobilenumber_prefix-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61772}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61772/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae0f8118393a55376d3a0dd7743444b5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -97,20 +97,20 @@ Session ID: b4b8ccbabe01043577bc5a35a42db244
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at pageObjects.WorkFlowPage.fNavigateToTask(WorkFlowPage.java:194)
-	at utilities.CRMReUsables.fClickWorkFlowAndGotoTask(CRMReUsables.java:655)
-	at testCases.TC013_CreateEntity_OOFS_NewValues.testCreateEntity_OOFS_NewValues(TC013_CreateEntity_OOFS_NewValues.java:212)
+	at pageObjects.CreateModuleDataPage.ClickListPhonePrefix(CreateModuleDataPage.java:605)
+	at utilities.CRMReUsables.fAddValuestoEntityModule(CRMReUsables.java:1496)
+	at testCases.TC019_CreateEntity_ETRS_NewValues.testCreateEntity_OOFS_NewValues(TC019_CreateEntity_ETRS_NewValues.java:352)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1957188885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1957188885'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[contains(@class,&apos;mainrow Removerow&apos;)]//i[@class=&apos;fa fa-edit&apos;])[1]&quot;}
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace385131456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace385131456'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;select2-createentitysource _mobilenumber_prefix-container&apos;]&quot;}
   (Session info: chrome=125.0.6422.113)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4b8ccbabe01043577bc5a35a42db244, findElement {using=xpath, value=(//tr[contains(@class,&apos;mainrow Removerow&apos;)]//i[@class=&apos;fa fa-edit&apos;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4b8ccbabe01043577bc5a35a42db244
+Command: [ae0f8118393a55376d3a0dd7743444b5, findElement {using=xpath, value=//span[@id=&apos;select2-createentitysource _mobilenumber_prefix-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\sudha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61772}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61772/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae0f8118393a55376d3a0dd7743444b5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -127,9 +127,9 @@ Session ID: b4b8ccbabe01043577bc5a35a42db244
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at pageObjects.WorkFlowPage.fNavigateToTask(WorkFlowPage.java:194)
-	at utilities.CRMReUsables.fClickWorkFlowAndGotoTask(CRMReUsables.java:655)
-	at testCases.TC013_CreateEntity_OOFS_NewValues.testCreateEntity_OOFS_NewValues(TC013_CreateEntity_OOFS_NewValues.java:212)
+	at pageObjects.CreateModuleDataPage.ClickListPhonePrefix(CreateModuleDataPage.java:605)
+	at utilities.CRMReUsables.fAddValuestoEntityModule(CRMReUsables.java:1496)
+	at testCases.TC019_CreateEntity_ETRS_NewValues.testCreateEntity_OOFS_NewValues(TC019_CreateEntity_ETRS_NewValues.java:352)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,8 +159,8 @@ Session ID: b4b8ccbabe01043577bc5a35a42db244
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>74</td>
-<td>testCases.TC013_CreateEntity_OOFS_NewValues@1c1bbc4e</td></tr>
+<td>150</td>
+<td>testCases.TC019_CreateEntity_ETRS_NewValues@1c1bbc4e</td></tr>
 </table><p>
 </body>
 </html>

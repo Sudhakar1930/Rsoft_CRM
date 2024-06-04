@@ -438,13 +438,13 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.doActionClick(driver, eleSchedEnqCatg);
 	}
 	public String fGetModuleText(String sModuleName,String sText) throws Exception {
-		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
 		WebElement eleText = driver.findElement(By.xpath(sXpath));
 		return UtilityCustomFunctions.getText(driver, eleText);
 	}
 	
 	public String fGetModuleValue(String sModuleName,String sText) throws Exception {
-		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
 		WebElement eleText = driver.findElement(By.xpath(sXpath));
 		return UtilityCustomFunctions.getValue(driver, eleText);
 	}
@@ -542,7 +542,7 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, btnClose);
 	}
 	public void clickSelectControl(String sModuleName,String sFieldLabel) throws Exception {
-//		String sXpath = "//select[@name='"+ sModuleName.toLowerCase() + "_" + sFieldLabel +"']";
+//		String sXpath = "//select[@name='"+ sModuleName.toLowerCase().trim() + "_" + sFieldLabel +"']";
 		String sXpath = "(//span[contains(@id,'select2-selfield')])[5]";
 		System.out.println("Select Control xpath:" + sXpath);
 		WebElement elecomboxBox = driver.findElement(By.xpath(sXpath));
@@ -600,7 +600,7 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	
 	public void ClickListPhonePrefix(String sModuleName,String sText) throws Exception {
-	String sXpath = "//span[@id='select2-" + sModuleName.toLowerCase() + "_" + sText +"']";
+	String sXpath = "//span[@id='select2-" + sModuleName.toLowerCase().trim() + "_" + sText +"']";
 	System.out.println("Phone Prefix xpath: " + sXpath);
 	WebElement elePhonePrefix = driver.findElement(By.xpath(sXpath));
 	elePhonePrefix.click();
@@ -613,36 +613,39 @@ public class CreateModuleDataPage extends BasePage{
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTxtBox,sTxtValue);
 	}
 	public void setInputValue(String sModuleName,String sText,String sValue) throws Exception {
-		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
+		System.out.println("Xpath: " + sXpath);
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
+		eleTextBox.clear();
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
 	}
 	public void setInputNumber(String sModuleName,String sText,String sValue) throws Exception {
-		String sXpath = "//input[@type ='number' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		String sXpath = "//input[@type ='number' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
+		eleTextBox.clear();
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
 	}
 	public void setGenericInputValue(String sType,String sModuleName,String sText,String sValue) throws Exception {
-		String sXpath = "//input[@type ='"+ sType + "' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		String sXpath = "//input[@type ='"+ sType + "' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
 		eleTextBox.clear();
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
 	}
 	public void setTextAreaValue(String sModuleName,String sText,String sValue) {
-		String sXpath="//textarea[@name='"+sModuleName.toLowerCase()+ "_" + sText + "']";
+		String sXpath="//textarea[@name='"+sModuleName.toLowerCase().trim()+ "_" + sText + "']";
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
 	}
 	
 	public void clickDateBox(String sModuleName,String sText) throws Exception {
-		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase()+"_"+sText+"']";
+		String sXpath = "//input[@type ='text' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
 		System.out.println("Date Box Xpath: " + sXpath);
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
 		UtilityCustomFunctions.doClick(driver, eleTextBox);
 	}
 	
 	public void setEmailValue(String sModuleName,String sText) {
-		String sXpath = "//input[@type ='email' and @name='" + sModuleName.toLowerCase()+"_"+"email']";
+		String sXpath = "//input[@type ='email' and @name='" + sModuleName.toLowerCase().trim()+"_"+"email']";
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
 		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sText);
 	}

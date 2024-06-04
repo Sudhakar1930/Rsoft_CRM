@@ -1488,6 +1488,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(2000);
 		objCMD.selectListValue(sExpAssignedTo);
 		UtilityCustomFunctions.logWriteConsole("Assinged To Value Seleted is::  "+sExpAssignedTo);
+		Thread.sleep(2000);
 		objCMD.setInputValue(sExpModuleName, "text",sText);
 		UtilityCustomFunctions.logWriteConsole("Text Value added is::  "+sText);
 		Thread.sleep(1000);
@@ -1544,8 +1545,14 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "datetime");
 		UtilityCustomFunctions.logWriteConsole("Date & Time Clicked");
 		Thread.sleep(5000);
-		objCMD.SelectDayandTime(2,"8","00","00","PM");
-//		objCMD.clickDayInDate(2,"sDateandTime",null);
+		String sCurrMonth = getTodayMonth();
+		UtilityCustomFunctions.logWriteConsole("Current Month:" + sCurrMonth);
+		Thread.sleep(2000);
+		String sYear =  Integer.toString(getCurrentYear());
+		Thread.sleep(1000);
+		objCMD.SelectMonthandYear("sDateandTime",sCurrMonth,sYear);
+//		objCMD.SelectDayandTime(2,"8","00","00","PM");
+		objCMD.clickDayInDate(2,"sDateandTime",null);
 		Thread.sleep(2000);
 		UtilityCustomFunctions.logWriteConsole("Clicked Current Date in Date&Time");
 		objCMD.clickDandTApply();
@@ -3112,6 +3119,19 @@ public class CRMReUsables extends BaseClass {
 				String sNextMonth = getNextMonth();
 				objCMD.SelectMonthandYear("sDateandTime",sNextMonth,"2024");
 				jCounter = iApprValue;
+			}
+			else {
+				String sCurrMonth = getTodayMonth();
+				UtilityCustomFunctions.logWriteConsole("Current Month:" + sCurrMonth);
+//				Thread.sleep(1000);
+//				UtilityCustomFunctions.selectFromComboBox(driver, eleMonth, sCurrMonth);
+				Thread.sleep(1000);
+//				WebElement eleYear= driver.findElement(By.xpath(sYXpath));
+//				eleYear.click();
+				Thread.sleep(2000);
+				String sYear =  Integer.toString(getCurrentYear());
+				Thread.sleep(1000);
+				objCMD.SelectMonthandYear("sDateandTime",sCurrMonth,sYear);
 			}
 			System.out.println("Jcounter value now is : " + jCounter);
 			List<WebElement> sTableDatas = driver.findElements(By.xpath("(//table[contains(@class,'table-condensed')])[3]//tr//td[contains(@class,'today') or contains(@class,'active') or @class='available' or @class='weekend available']"));

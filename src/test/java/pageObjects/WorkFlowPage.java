@@ -189,7 +189,7 @@ public class WorkFlowPage extends BasePage {
 	}
 	
 	public void fNavigateToTask(int iEditPos) throws Exception {
-		String sEditXpath="(//tr[contains(@class,'mainrow Removerow')]//i[@class='fa fa-edit'])[" + iEditPos +"]";
+		String sEditXpath="(//tr[contains(@class,'mainrow Removerow')]//span[@class='material-symbols-outlined'][normalize-space()='edit_square'])[" + iEditPos +"]";
 		System.out.println("XPath Edit: " + sEditXpath);
 		WebElement btnEditWFRow  = driver.findElement(By.xpath(sEditXpath));
 		UtilityCustomFunctions.doClick(driver, btnEditWFRow);
