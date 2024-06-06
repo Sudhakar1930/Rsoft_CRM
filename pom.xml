@@ -83,20 +83,20 @@
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
-	    <version>4.13.0</version>
+	    <version>4.21.0</version>
 	</dependency>
 
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-chrome-driver</artifactId>
-	    <version>4.13.0</version>
+	    <version>4.21.0</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-edge-driver</artifactId>
-	    <version>4.13.0</version>
+	    <version>4.21.0</version>
 	</dependency>
 	
 	
@@ -146,5 +146,10 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>RS</groupId>
+			<artifactId>CRM_MB</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
   </dependencies>
 </project>

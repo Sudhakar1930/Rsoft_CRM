@@ -275,7 +275,7 @@ public class TC014_CreateEntity_OOFS_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Created Entity Validation in Target Module Done after new record added");
 		Thread.sleep(3000);
 		
-		//Summary Add
+		//************************************ Summary Add ********************************
 		iOldTrgRecId=iCurrTrgRecId;
 		iOldSrcRecId=iCurrSrcRecId;
 		

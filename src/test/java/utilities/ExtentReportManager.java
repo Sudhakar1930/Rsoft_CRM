@@ -2,10 +2,11 @@ package utilities;
 
 import java.io.IOException;
 //import java.net.URL;
+import java.text.SimpleDateFormat;
 
 //Extent report 5.x...//version
 
-import java.text.SimpleDateFormat;
+
 import java.util.Date;
 
 import org.testng.ITestContext;

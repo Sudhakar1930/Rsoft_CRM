@@ -1,269 +1,368 @@
-18:32:54.749 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-18:32:54.759 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-18:33:01.891 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Avatar
-18:33:06.834 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu CRM Setting
-18:33:09.269 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu Other Setting
-18:33:18.989 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu Item Workflow
-18:33:19.385 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow from Combox Box List
-18:33:21.396 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Item to be selected:  CreateEntitySource Workflow
-18:33:28.146 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [CreateEntitySource Workflow] is selected in List
-18:33:28.146 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Item selected in combox Box  CreateEntitySource Workflow
-18:33:31.157 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Selected Module to View its Workflows
-18:33:31.157 [main] INFO  utilities.UtilityCustomFunctions - Exp Module Name:wfCreateEntity_ETRS
-18:33:31.157 [main] INFO  utilities.UtilityCustomFunctions - Execution Condition:Every time the record is save
-18:33:31.375 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:33:31.375 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:33:31.536 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:33:31.536 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:33:31.657 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:33:31.657 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:33:31.806 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:33:31.806 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:33:31.921 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:33:31.921 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:33:32.036 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,condition matches
-18:33:32.036 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: true
-18:33:32.036 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - wfCreateEntity_ETRSWorkflow enabled
-18:33:32.058 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_ETRSDisabled Workflow Manually Enabled
-18:33:32.058 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - true:6
-18:33:32.058 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:6
-18:33:39.745 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Work flow clicked
-18:33:46.854 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Cliked Step 1 Next Button to Condition Page
-18:33:52.597 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Cliked Step 2 Next Button to Task List Page
-18:33:53.600 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow and Navigated to Task Page
-18:34:04.469 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Number of Tasks Listed for this Workflow: wfCreateEntity_ETRS : 1
-18:34:04.816 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
-  Create Entity - CreateEntityTarget
-18:34:04.817 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCE_ETRS_NewValues
-18:34:04.817 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CreateEntityTarget
-18:34:04.817 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCE_ETRS_NewValues
-18:34:04.817 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Action Type and Action Tile matches and also Task Button Enabled
-18:34:05.820 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-18:34:12.779 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow and Navigated to Task Page
-18:34:12.779 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Task Active Create Entity - CreateEntityTarget  tskCE_ETRS_NewValues
-18:34:14.068 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
-18:34:38.858 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Excel file Utility instance created
-18:34:38.947 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Row Count is: 1
-18:34:39.076 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Col Count is: 53
-18:34:39.076 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Extracting DataSheet Values started...
-18:34:40.245 [main] INFO  utilities.UtilityCustomFunctions - ETATest Enquiry Text Area
-18:34:41.312 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-18:34:44.476 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-18:34:49.719 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Sudhakar VE] is selected in List
-18:34:49.719 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-18:38:59.537 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Creation
-18:38:59.549 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Created
-18:39:04.689 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Node Created
-18:39:04.689 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - ******starting TC019_CreateEntity_ETRS_NewValues ****
-18:39:04.690 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Test Execution on Browser: chrome
-18:39:04.690 [main] INFO  utilities.UtilityCustomFunctions - Browser:chrome
-18:39:04.693 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-18:39:06.121 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Row Count is: 1
-18:39:06.547 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Col Count is: 54
-18:39:10.330 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Extracting DataSheet Values started...
-18:39:16.867 [main] INFO  utilities.UtilityCustomFunctions - PN1:8599228759
-18:39:16.879 [main] INFO  utilities.UtilityCustomFunctions - PN2:0685500189
-18:39:16.884 [main] INFO  utilities.UtilityCustomFunctions - PN3:6692474599
-18:39:16.884 [main] INFO  utilities.UtilityCustomFunctions - PN4:7953834762
-18:39:24.431 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-18:39:26.164 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
-18:39:27.960 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-18:39:32.144 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - CRM Login Success with:Sudhakar
-18:39:32.145 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
-18:39:32.145 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-18:39:32.147 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-18:39:39.133 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Avatar
-18:39:43.256 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu CRM Setting
-18:39:45.513 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu Other Setting
-18:39:53.498 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu Item Workflow
-18:39:53.881 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow from Combox Box List
-18:39:55.899 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Item to be selected:  CreateEntitySource Workflow
-18:40:02.510 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [CreateEntitySource Workflow] is selected in List
-18:40:02.510 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Item selected in combox Box  CreateEntitySource Workflow
-18:40:05.531 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Selected Module to View its Workflows
-18:40:05.531 [main] INFO  utilities.UtilityCustomFunctions - Exp Module Name:wfCreateEntity_ETRS
-18:40:05.531 [main] INFO  utilities.UtilityCustomFunctions - Execution Condition:Every time the record is save
-18:40:05.794 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:40:05.794 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:40:05.918 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:40:05.918 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:40:06.048 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:40:06.048 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:40:06.164 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:40:06.164 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:40:06.279 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:40:06.279 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:40:06.413 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,condition matches
-18:40:06.413 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: true
-18:40:06.413 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - wfCreateEntity_ETRSWorkflow enabled
-18:40:06.431 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_ETRSDisabled Workflow Manually Enabled
-18:40:06.431 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - true:6
-18:40:06.431 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:6
-18:40:13.582 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Work flow clicked
-18:40:20.659 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Cliked Step 1 Next Button to Condition Page
-18:40:26.088 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Cliked Step 2 Next Button to Task List Page
-18:40:27.098 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow and Navigated to Task Page
-18:40:36.415 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Number of Tasks Listed for this Workflow: wfCreateEntity_ETRS : 1
-18:40:36.645 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
-  Create Entity - CreateEntityTarget
-18:40:36.645 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCE_ETRS_NewValues
-18:40:36.645 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CreateEntityTarget
-18:40:36.645 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCE_ETRS_NewValues
-18:40:36.645 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Action Type and Action Tile matches and also Task Button Enabled
-18:40:37.664 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-18:40:45.412 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow and Navigated to Task Page
-18:40:45.412 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Task Active Create Entity - CreateEntityTarget  tskCE_ETRS_NewValues
-18:40:46.680 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
-18:41:10.022 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Excel file Utility instance created
-18:41:10.130 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Row Count is: 1
-18:41:10.226 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Col Count is: 53
-18:41:10.227 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Extracting DataSheet Values started...
-18:41:11.312 [main] INFO  utilities.UtilityCustomFunctions - ETATest Enquiry Text Area
-18:41:12.286 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-18:41:15.455 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-18:41:20.797 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Sudhakar VE] is selected in List
-18:41:20.797 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-18:41:24.483 [main] INFO  utilities.UtilityCustomFunctions - Summary Add Text entered in  input
-18:41:24.497 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Summary Add Text
-18:48:32.388 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Creation
-18:48:32.403 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Created
-18:48:37.260 [main] INFO  utilities.UtilityCustomFunctions - Extent Test Node Created
-18:48:37.261 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - ******starting TC019_CreateEntity_ETRS_NewValues ****
-18:48:37.261 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Test Execution on Browser: chrome
-18:48:37.261 [main] INFO  utilities.UtilityCustomFunctions - Browser:chrome
-18:48:37.264 [main] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
-18:48:38.745 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Row Count is: 1
-18:48:39.249 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Col Count is: 54
-18:48:42.997 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Extracting DataSheet Values started...
-18:48:47.390 [main] INFO  utilities.UtilityCustomFunctions - PN1:7808175405
-18:48:47.390 [main] INFO  utilities.UtilityCustomFunctions - PN2:9996067070
-18:48:47.390 [main] INFO  utilities.UtilityCustomFunctions - PN3:3397955376
-18:48:47.390 [main] INFO  utilities.UtilityCustomFunctions - PN4:6708146757
-18:48:54.901 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-18:48:56.547 [main] INFO  utilities.UtilityCustomFunctions - Sudhakar entered in  input
-18:48:58.180 [main] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-18:49:04.293 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - CRM Login Success with:Sudhakar
-18:49:04.293 [main] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
-18:49:04.293 [main] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
-18:49:04.293 [main] INFO  utilities.UtilityCustomFunctions - Message:User: Sudhakar
-18:49:11.254 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Avatar
-18:49:15.414 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu CRM Setting
-18:49:17.621 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu Other Setting
-18:49:25.904 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Menu Item Workflow
-18:49:26.317 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow from Combox Box List
-18:49:28.321 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Item to be selected:  CreateEntitySource Workflow
-18:49:34.633 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [CreateEntitySource Workflow] is selected in List
-18:49:34.633 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Item selected in combox Box  CreateEntitySource Workflow
-18:49:37.638 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Selected Module to View its Workflows
-18:49:37.638 [main] INFO  utilities.UtilityCustomFunctions - Exp Module Name:wfCreateEntity_ETRS
-18:49:37.638 [main] INFO  utilities.UtilityCustomFunctions - Execution Condition:Every time the record is save
-18:49:37.849 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:49:37.849 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:49:37.975 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:49:37.975 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:49:38.101 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:49:38.101 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:49:38.287 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:49:38.287 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:49:38.403 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,conditions not matched 
-18:49:38.403 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: false
-18:49:38.536 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Module,workflow,condition matches
-18:49:38.536 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - bCurrentWFStatus: true
-18:49:38.536 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - wfCreateEntity_ETRSWorkflow enabled
-18:49:38.552 [main] INFO  utilities.UtilityCustomFunctions - wfCreateEntity_ETRSDisabled Workflow Manually Enabled
-18:49:38.552 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - true:6
-18:49:38.552 [main] INFO  utilities.UtilityCustomFunctions - Current Workflow status:true:6
-18:49:45.610 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Work flow clicked
-18:49:52.668 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Cliked Step 1 Next Button to Condition Page
-18:49:58.409 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Cliked Step 2 Next Button to Task List Page
-18:49:59.422 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow and Navigated to Task Page
-18:50:08.719 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Number of Tasks Listed for this Workflow: wfCreateEntity_ETRS : 1
-18:50:08.952 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:library_add
-  Create Entity - CreateEntityTarget
-18:50:08.952 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskCE_ETRS_NewValues
-18:50:08.952 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Create Entity - CreateEntityTarget
-18:50:08.952 [main] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskCE_ETRS_NewValues
-18:50:08.952 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Action Type and Action Tile matches and also Task Button Enabled
-18:50:09.954 [main] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-18:50:16.322 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Clicked Workflow and Navigated to Task Page
-18:50:16.323 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Task Active Create Entity - CreateEntityTarget  tskCE_ETRS_NewValues
-18:50:17.620 [main] INFO  utilities.UtilityCustomFunctions - Capture Initial Record Id for Source & Target Started
-18:50:41.288 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Excel file Utility instance created
-18:50:41.371 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Row Count is: 1
-18:50:41.474 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Col Count is: 53
-18:50:41.474 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - Extracting DataSheet Values started...
-18:50:42.698 [main] INFO  utilities.UtilityCustomFunctions - ETATest Enquiry Text Area
-18:50:43.770 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-18:50:46.919 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-18:50:52.212 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Sudhakar VE] is selected in List
-18:50:52.212 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-18:50:56.024 [main] INFO  utilities.UtilityCustomFunctions - Summary Add Text entered in  input
-18:50:56.039 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Summary Add Text
-18:50:57.202 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-18:51:00.531 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [+65] is selected in List
-18:51:00.531 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  7808175405
-18:51:02.219 [main] INFO  utilities.UtilityCustomFunctions - 7808175405 entered in  input
-18:51:04.958 [main] INFO  utilities.UtilityCustomFunctions - DuplicateEmail@rsoft.in entered in  input
-18:51:05.983 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateEmail@rsoft.in
-18:51:07.103 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-18:51:08.236 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
-18:51:26.305 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
-18:51:27.531 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-18:51:30.982 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Kanchipuram] is selected in List
-18:51:30.982 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
-18:51:32.110 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-18:51:35.805 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Tamilnadu] is selected in List
-18:51:35.805 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-18:51:36.960 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
-18:51:40.290 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [India] is selected in List
-18:51:40.290 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-18:51:42.383 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
-18:51:42.399 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-18:51:42.539 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-18:51:50.801 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-18:51:57.454 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:52:00.060 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-18:52:04.085 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-18:52:06.255 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-18:52:07.382 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
-18:52:10.385 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
-18:52:20.916 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
-18:52:22.103 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-18:52:27.119 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-18:52:42.417 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-18:52:48.903 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:52:51.521 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
-18:53:03.434 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [5] is selected in List
-18:53:07.854 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [00] is selected in List
-18:53:12.334 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [00] is selected in List
-18:53:16.766 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [PM] is selected in List
-18:53:19.784 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-18:53:20.013 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-18:53:20.120 [main] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:2024-06-04
-18:53:26.260 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Mrs.] is selected in List
-18:53:27.803 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
-18:53:29.452 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
-18:53:31.002 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
-18:53:32.737 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-18:53:36.170 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Dr.] is selected in List
-18:53:37.719 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
-18:53:39.670 [main] INFO  utilities.UtilityCustomFunctions - DuplicateEnquiry@gmail.com entered in  input
-18:53:41.405 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
-18:53:41.415 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:Test Enquiry Text Area
-18:53:43.218 [main] INFO  utilities.UtilityCustomFunctions - Test Enquiry Text Area entered in  textarea
-18:53:51.637 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
-18:53:58.183 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-18:54:00.791 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
-18:54:04.814 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
-18:54:11.737 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [+60] is selected in List
-18:54:14.469 [main] INFO  utilities.UtilityCustomFunctions - 9996067070 entered in  input
-18:54:17.682 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
-18:54:20.981 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [Urgent] is selected in List
-18:54:27.554 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [+91] is selected in List
-18:54:30.249 [main] INFO  utilities.UtilityCustomFunctions - 3397955376 entered in  input
-18:54:32.044 [main] INFO  utilities.UtilityCustomFunctions - DuplicateLead@gmail.com entered in  input
-18:54:33.736 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
-18:54:38.231 [main] INFO  testCases.TC019_CreateEntity_ETRS_NewValues - [+60] is selected in List
-18:54:40.957 [main] INFO  utilities.UtilityCustomFunctions - 6708146757 entered in  input
-18:54:42.786 [main] INFO  utilities.UtilityCustomFunctions - DuplicateSales@gmail.com entered in  input
-18:55:00.138 [main] INFO  utilities.UtilityCustomFunctions - Record Duplicated: CreateEntitySource
+15:40:39.079 [main] INFO  utilities.UtilityCustomFunctions - Duplicate Add Text entered in  input
+15:40:39.098 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Duplicate Add Text
+15:40:40.262 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+15:40:43.580 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+65] is selected in List
+15:40:43.580 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  2369756885
+15:40:45.179 [main] INFO  utilities.UtilityCustomFunctions - 2369756885 entered in  input
+15:40:47.900 [main] INFO  utilities.UtilityCustomFunctions - DuplicateEmail@rsoft.in entered in  input
+15:40:48.921 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: DuplicateEmail@rsoft.in
+15:40:50.059 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+15:40:51.200 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+15:41:09.396 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+15:41:10.646 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+15:41:14.135 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Kanchipuram] is selected in List
+15:41:14.135 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+15:41:15.346 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+15:41:19.004 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Tamilnadu] is selected in List
+15:41:19.004 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+15:41:20.254 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+15:41:23.540 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [India] is selected in List
+15:41:23.540 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+15:41:25.590 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+15:41:25.640 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+15:41:25.763 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+15:41:34.101 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:41:40.588 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:41:43.128 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+15:41:47.141 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+15:41:49.296 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+15:41:50.439 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+15:41:53.444 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+15:42:04.027 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+15:42:05.198 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+15:42:10.204 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:42:25.783 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:42:32.462 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:42:35.161 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+15:42:47.210 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [5] is selected in List
+15:42:51.649 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [00] is selected in List
+15:42:56.126 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [00] is selected in List
+15:43:00.551 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [PM] is selected in List
+15:43:03.564 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+15:43:03.785 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+15:43:03.875 [main] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:2024-06-06
+15:43:09.884 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Mrs.] is selected in List
+15:43:11.424 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+15:43:13.027 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+15:43:14.549 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+15:43:16.170 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+15:43:19.633 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Dr.] is selected in List
+15:43:21.089 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+15:43:22.802 [main] INFO  utilities.UtilityCustomFunctions - DuplicateEnquiry@gmail.com entered in  input
+15:43:24.492 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+15:43:24.502 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:Test Enquiry Text Area
+15:43:26.104 [main] INFO  utilities.UtilityCustomFunctions - Test Enquiry Text Area entered in  textarea
+15:43:34.500 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:43:41.168 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:43:43.729 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+15:43:47.745 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+15:43:54.633 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+60] is selected in List
+15:43:57.313 [main] INFO  utilities.UtilityCustomFunctions - 5506142584 entered in  input
+15:44:00.469 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+15:44:03.784 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Urgent] is selected in List
+15:44:10.336 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+91] is selected in List
+15:44:13.080 [main] INFO  utilities.UtilityCustomFunctions - 4023011892 entered in  input
+15:44:14.672 [main] INFO  utilities.UtilityCustomFunctions - DuplicateLead@gmail.com entered in  input
+15:44:16.212 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+15:44:20.749 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+60] is selected in List
+15:44:23.445 [main] INFO  utilities.UtilityCustomFunctions - 2691883735 entered in  input
+15:44:25.003 [main] INFO  utilities.UtilityCustomFunctions - DuplicateSales@gmail.com entered in  input
+15:44:40.866 [main] INFO  utilities.UtilityCustomFunctions - Record Duplicated: CreateEntitySource
+15:45:17.590 [main] INFO  utilities.UtilityCustomFunctions - Old TargetId: 129976New TargetId: 129976
+15:45:18.806 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after Duplicate is Done
+15:45:46.491 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Excel file Utility instance created
+15:45:46.575 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Row Count is: 1
+15:45:46.611 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Col Count is: 54
+15:45:46.611 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Extracting DataSheet Values started...
+15:45:47.330 [main] INFO  utilities.UtilityCustomFunctions - ETATest Enquiry Text Area
+15:45:47.756 [main] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+15:45:50.934 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+15:45:56.261 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Sudhakar VE] is selected in List
+15:45:56.261 [main] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+15:45:59.831 [main] INFO  utilities.UtilityCustomFunctions - Edit Record entered in  input
+15:45:59.846 [main] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Edit Record
+15:46:01.014 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+15:46:04.348 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+65] is selected in List
+15:46:04.349 [main] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  2369756885
+15:46:05.965 [main] INFO  utilities.UtilityCustomFunctions - 2369756885 entered in  input
+15:46:08.603 [main] INFO  utilities.UtilityCustomFunctions - EditNewEmail@rsoft.in entered in  input
+15:46:09.630 [main] INFO  utilities.UtilityCustomFunctions - Email Added is: EditNewEmail@rsoft.in
+15:46:10.779 [main] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+15:46:11.934 [main] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+15:46:30.085 [main] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+15:46:31.244 [main] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+15:46:34.700 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Kanchipuram] is selected in List
+15:46:34.700 [main] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+15:46:35.828 [main] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+15:46:39.541 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Tamilnadu] is selected in List
+15:46:39.542 [main] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+15:46:40.734 [main] INFO  utilities.UtilityCustomFunctions - Country List clicked
+15:46:44.042 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [India] is selected in List
+15:46:44.042 [main] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+15:46:46.126 [main] INFO  utilities.UtilityCustomFunctions - check box value: ON
+15:46:46.148 [main] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+15:46:46.296 [main] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+15:46:54.463 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:47:01.055 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:47:03.688 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+15:47:07.717 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+15:47:09.942 [main] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+15:47:11.082 [main] INFO  utilities.UtilityCustomFunctions - Time Clicked
+15:47:14.083 [main] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+15:47:24.603 [main] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+15:47:25.778 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+15:47:30.795 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:47:46.126 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:47:52.785 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:47:55.462 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+15:48:07.388 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [5] is selected in List
+15:48:11.814 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [00] is selected in List
+15:48:16.321 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [00] is selected in List
+15:48:20.907 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [PM] is selected in List
+15:48:23.932 [main] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+15:48:24.171 [main] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+15:48:24.270 [main] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:2024-06-06
+15:48:30.226 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Mrs.] is selected in List
+15:48:31.728 [main] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+15:48:33.333 [main] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+15:48:34.845 [main] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+15:48:36.435 [main] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+15:48:39.923 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Dr.] is selected in List
+15:48:41.392 [main] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+15:48:43.018 [main] INFO  utilities.UtilityCustomFunctions - EditEnquiry@gmail.com entered in  input
+15:48:44.669 [main] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+15:48:44.680 [main] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:Test Enquiry Text Area
+15:48:46.306 [main] INFO  utilities.UtilityCustomFunctions - Test Enquiry Text Area entered in  textarea
+15:48:54.707 [main] INFO  utilities.UtilityCustomFunctions - Current Month:Jun
+15:49:01.342 [main] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+15:49:03.978 [main] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+15:49:07.985 [main] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+15:49:14.927 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+60] is selected in List
+15:49:17.648 [main] INFO  utilities.UtilityCustomFunctions - 5506142584 entered in  input
+15:49:20.821 [main] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+15:49:24.142 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [Urgent] is selected in List
+15:49:30.690 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+91] is selected in List
+15:49:33.355 [main] INFO  utilities.UtilityCustomFunctions - 4023011892 entered in  input
+15:49:34.976 [main] INFO  utilities.UtilityCustomFunctions - EditLeadLead@gmail.com entered in  input
+15:49:36.554 [main] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+15:49:41.135 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - [+60] is selected in List
+15:49:43.742 [main] INFO  utilities.UtilityCustomFunctions - 2691883735 entered in  input
+15:49:45.311 [main] INFO  utilities.UtilityCustomFunctions - EditSales@gmail.com entered in  input
+15:50:03.043 [main] INFO  utilities.UtilityCustomFunctions - Edit & Save: CreateEntitySource
+15:50:35.552 [main] INFO  utilities.UtilityCustomFunctions - Old TargetId: 129976New TargetId: 129985
+15:50:36.782 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Excel file Utility instance created
+15:50:36.810 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Row Count is: 1
+15:50:36.826 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Col Count is: 54
+15:50:36.826 [main] INFO  testCases.TC022_CreateEntity_ETRM_NewValues - Extracting DataSheet Values started...
+15:50:37.850 [main] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+15:50:43.956 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+15:50:44.001 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+15:50:54.196 [main] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntityTarget
+15:50:54.196 [main] INFO  utilities.UtilityCustomFunctions - Actual:CreateEntityTarget
+15:50:54.196 [main] INFO  utilities.UtilityCustomFunctions - Expected:CreateEntityTarget
+15:50:54.196 [main] INFO  utilities.UtilityCustomFunctions - Message:Module Name : Target Entity @Edit & Save
+15:50:55.727 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+15:50:55.727 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+15:50:55.727 [main] INFO  utilities.UtilityCustomFunctions - Message:Assigned To Title: Target Entity @Edit & Save
+15:50:56.945 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 2369756885
+15:50:56.945 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 2369756885
+15:50:56.945 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Title : Target Entity @Edit & Save
+15:50:58.197 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewEmail@rsoft.in
+15:50:58.197 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewEmail@rsoft.in
+15:50:58.197 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Title: Target Entity @Edit & Save
+15:51:02.833 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+15:51:02.834 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+15:51:02.834 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  Target Entity @Edit & Save
+15:51:04.152 [main] INFO  utilities.UtilityCustomFunctions - Actual:Edit Record
+15:51:04.152 [main] INFO  utilities.UtilityCustomFunctions - Expected:Edit Record
+15:51:04.152 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Text:  Target Entity @Edit & Save
+15:51:05.457 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 2369756885
+15:51:05.457 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 2369756885
+15:51:05.457 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Mobile Number:  Target Entity @Edit & Save
+15:51:06.760 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewEmail@rsoft.in
+15:51:06.760 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewEmail@rsoft.in
+15:51:06.760 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  Target Entity @Edit & Save
+15:51:08.095 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+15:51:08.096 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+15:51:08.096 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  Target Entity @Edit & Save
+15:51:09.418 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+15:51:09.418 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+15:51:09.418 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  Target Entity @Edit & Save
+15:51:10.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+15:51:10.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+15:51:10.752 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  Target Entity @Edit & Save
+15:51:12.070 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+15:51:12.070 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+15:51:12.070 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  Target Entity @Edit & Save
+15:51:13.384 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+15:51:13.385 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+15:51:13.385 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  Target Entity @Edit & Save
+15:51:14.682 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+15:51:14.682 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+15:51:14.682 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  Target Entity @Edit & Save
+15:51:16.008 [main] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-06-06
+15:51:16.008 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-06
+15:51:16.008 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-06
+15:51:16.008 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  Target Entity @Edit & Save
+15:51:17.223 [main] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
+15:51:17.317 [main] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
+15:51:17.318 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+15:51:17.318 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+15:51:17.318 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Target Entity @Edit & Save
+15:51:18.520 [main] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-06-09 05:00:00 PM
+15:51:18.614 [main] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-06-09 05:00:00 PM
+15:51:18.614 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-09 05:00:00 PM
+15:51:18.615 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-09 05:00:00 PM
+15:51:18.615 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Target Entity @Edit & Save
+15:51:20.115 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+15:51:20.115 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+15:51:20.115 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Target Entity @Edit & Save
+15:51:21.433 [main] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
+15:51:21.433 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+15:51:21.433 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+15:51:21.433 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Target Entity @Edit & Save
+15:51:22.773 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+15:51:22.773 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+15:51:22.773 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Target Entity @Edit & Save
+15:51:24.168 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+15:51:24.168 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+15:51:24.168 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Target Entity @Edit & Save
+15:51:25.471 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+15:51:25.471 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+15:51:25.471 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Target Entity @Edit & Save
+15:51:26.805 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+15:51:26.805 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+15:51:26.805 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Target Entity @Edit & Save
+15:51:28.141 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditEnquiry@gmail.com
+15:51:28.141 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditEnquiry@gmail.com
+15:51:28.141 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Target Entity @Edit & Save
+15:51:29.458 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+15:51:29.458 [main] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Chatbot
+15:51:29.458 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Target Entity @Edit & Save
+15:51:30.764 [main] INFO  utilities.UtilityCustomFunctions - Actual:Test Enquiry Text Area
+15:51:30.764 [main] INFO  utilities.UtilityCustomFunctions - Expected:Test Enquiry Text Area
+15:51:30.765 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Target Entity @Edit & Save
+15:51:31.978 [main] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-06-06
+15:51:32.074 [main] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-06-06
+15:51:32.074 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-06
+15:51:32.074 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-06
+15:51:32.074 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Target Entity @Edit & Save
+15:51:33.380 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 5506142584
+15:51:33.380 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 5506142584
+15:51:33.380 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Target Entity @Edit & Save
+15:51:34.658 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+15:51:34.658 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+15:51:34.658 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Target Entity @Edit & Save
+15:51:35.976 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 4023011892
+15:51:35.977 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 4023011892
+15:51:35.977 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Target Entity @Edit & Save
+15:51:37.290 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditLeadLead@gmail.com
+15:51:37.290 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditLeadLead@gmail.com
+15:51:37.290 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Target Entity @Edit & Save
+15:51:38.590 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+15:51:38.590 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+15:51:38.590 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Target Entity @Edit & Save
+15:51:39.893 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 2691883735
+15:51:39.893 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 2691883735
+15:51:39.893 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Target Entity @Edit & Save
+15:51:41.197 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditSales@gmail.com
+15:51:41.197 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditSales@gmail.com
+15:51:41.198 [main] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Target Entity @Edit & Save
+15:51:43.241 [main] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+15:52:00.728 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+15:52:00.729 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+15:52:00.729 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Target Entity @Edit & Save
+15:52:02.066 [main] INFO  utilities.UtilityCustomFunctions - Actual:Edit Record
+15:52:02.066 [main] INFO  utilities.UtilityCustomFunctions - Expected:Edit Record
+15:52:02.066 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Target Entity @Edit & Save
+15:52:03.396 [main] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  2369756885
+15:52:03.396 [main] INFO  utilities.UtilityCustomFunctions - Actual:+65 2369756885
+15:52:03.396 [main] INFO  utilities.UtilityCustomFunctions - Expected:+65 2369756885
+15:52:03.396 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Target Entity @Edit & Save
+15:52:04.712 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditNewEmail@rsoft.in
+15:52:04.712 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditNewEmail@rsoft.in
+15:52:04.712 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Target Entity @Edit & Save
+15:52:05.978 [main] INFO  utilities.UtilityCustomFunctions - Actual:3
+15:52:05.978 [main] INFO  utilities.UtilityCustomFunctions - Expected:3
+15:52:05.978 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Target Entity @Edit & Save
+15:52:07.334 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+15:52:07.334 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+15:52:07.334 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Target Entity @Edit & Save
+15:52:08.646 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+15:52:08.646 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+15:52:08.646 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Target Entity @Edit & Save
+15:52:09.957 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+15:52:09.957 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+15:52:09.957 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View State:  Target Entity @Edit & Save
+15:52:11.250 [main] INFO  utilities.UtilityCustomFunctions - Actual:India
+15:52:11.250 [main] INFO  utilities.UtilityCustomFunctions - Expected:India
+15:52:11.251 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Target Entity @Edit & Save
+15:52:12.550 [main] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+15:52:12.550 [main] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+15:52:12.550 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Target Entity @Edit & Save
+15:52:13.868 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-06
+15:52:13.868 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-06
+15:52:13.868 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Target Entity @Edit & Save
+15:52:15.158 [main] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+15:52:15.159 [main] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+15:52:15.159 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Target Entity @Edit & Save
+15:52:16.470 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-09 05:00:00 PM
+15:52:16.470 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-09 05:00:00 PM
+15:52:16.470 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Target Entity @Edit & Save
+15:52:17.990 [main] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+15:52:17.991 [main] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+15:52:17.991 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Target Entity @Edit & Save
+15:52:19.318 [main] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+15:52:19.318 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+15:52:19.318 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+15:52:19.319 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Target Entity @Edit & Save
+15:52:20.578 [main] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+15:52:20.578 [main] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+15:52:20.578 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Target Entity @Edit & Save
+15:52:21.901 [main] INFO  utilities.UtilityCustomFunctions - Actual:10000
+15:52:21.902 [main] INFO  utilities.UtilityCustomFunctions - Expected:10000
+15:52:21.902 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Target Entity @Edit & Save
+15:52:23.162 [main] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+15:52:23.162 [main] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+15:52:23.162 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Target Entity @Edit & Save
+15:52:30.777 [main] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+15:52:30.777 [main] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+15:52:30.777 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Target Entity @Edit & Save
+15:52:32.088 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditEnquiry@gmail.com
+15:52:32.088 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditEnquiry@gmail.com
+15:52:32.089 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Target Entity @Edit & Save
+15:52:33.418 [main] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+15:52:33.419 [main] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Chatbot
+15:52:33.419 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Target Entity @Edit & Save
+15:52:34.739 [main] INFO  utilities.UtilityCustomFunctions - Actual:Test Enquiry Text Area
+15:52:34.739 [main] INFO  utilities.UtilityCustomFunctions - Expected:Test Enquiry Text Area
+15:52:34.739 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Target Entity @Edit & Save
+15:52:36.153 [main] INFO  utilities.UtilityCustomFunctions - Actual:2024-06-06
+15:52:36.153 [main] INFO  utilities.UtilityCustomFunctions - Expected:2024-06-06
+15:52:36.153 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Target Entity @Edit & Save
+15:52:37.502 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 5506142584
+15:52:37.502 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 5506142584
+15:52:37.502 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Target Entity @Edit & Save
+15:52:38.851 [main] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+15:52:38.851 [main] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+15:52:38.851 [main] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Target Entity @Edit & Save
+15:52:46.441 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91 4023011892
+15:52:46.441 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91 4023011892
+15:52:46.441 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Target Entity @Edit & Save
+15:52:47.788 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditLeadLead@gmail.com
+15:52:47.788 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditLeadLead@gmail.com
+15:52:47.788 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Target Entity @Edit & Save
+15:52:49.160 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+15:52:49.160 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+15:52:49.160 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Target Entity @Edit & Save
+15:52:50.477 [main] INFO  utilities.UtilityCustomFunctions - Actual:+60 2691883735
+15:52:50.478 [main] INFO  utilities.UtilityCustomFunctions - Expected:+60 2691883735
+15:52:50.478 [main] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Target Entity @Edit & Save
+15:52:51.801 [main] INFO  utilities.UtilityCustomFunctions - Actual:EditSales@gmail.com
+15:52:51.801 [main] INFO  utilities.UtilityCustomFunctions - Expected:EditSales@gmail.com
+15:52:51.801 [main] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailTarget Entity @Edit & Save
+15:52:53.040 [main] INFO  utilities.UtilityCustomFunctions - Created Entity after @Edit & Save Done
+15:53:22.848 [main] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+15:53:22.882 [main] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+15:53:25.668 [main] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input

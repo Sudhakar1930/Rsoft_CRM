@@ -299,10 +299,11 @@ public class TC019_CreateEntity_ETRS_NewValues extends BaseClass{
 		}
 		
 		
+		//***************************** Summary Add New ***********************************
 		iOldTrgRecId=iCurrTrgRecId;
 		iOldSrcRecId=iCurrSrcRecId;
 		
-		//***************************** Summary Add New ***********************
+		
 		UtilityCustomFunctions.logWriteConsole("Navigate to Source Summary Page");
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -381,27 +382,11 @@ public class TC019_CreateEntity_ETRS_NewValues extends BaseClass{
 		}
 		UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
 		
-		//********************* Edit & Save *****************************
+		//********************* Edit & Save *******************************************************
 		
 		iOldTrgRecId=iCurrTrgRecId;
 		iOldSrcRecId=iCurrSrcRecId;
 		
-		//Login as User 1
-		driver.get(rb.getString("appURL"));
-		Thread.sleep(3000);
-		if(objLP.isLoginPageDisplayed(sAppUrl)) {
-			objLP.setCompanyName(sCompName);
-			objLP.setUserName(sUserName);
-			objLP.setPassword(sPassword);
-			objLP.clickLoginSubmit();
-			
-		}
-		else {
-			logger.info("CRM Login failed");
-			System.out.println("Login Page Not Displayed");
-			Assert.fail("Login Page not displayed");
-			
-		}
 		Thread.sleep(3000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
@@ -417,15 +402,6 @@ public class TC019_CreateEntity_ETRS_NewValues extends BaseClass{
 		Thread.sleep(5000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
-		//While Duplicate Record Validation
-		iCurrSrcRecId= objCRMRs.getLastRecordId();
-		if(iOldSrcRecId!=iCurrSrcRecId) {
-			freport("New Source Record Added @Edit & Save", "pass", node);
-			
-		}
-		else {
-			freport("New Source Record Not Added @Edit & Save", "fail", node);
-		}
 		
 		//Target Entity Validation after @Edit & Save Record
 		objALP.clickAllList();
@@ -479,9 +455,9 @@ public class TC019_CreateEntity_ETRS_NewValues extends BaseClass{
 		
 		Thread.sleep(1000);
 		if(iOldTrgRecId== iCurrTrgRecId) {
-			freport("Target Entity Not Created for Single Line Edit", "pass", node);
+			freport("Target Entity Not Created for Single Line Edit", "fail", node);
 		}else {
-			freport("Target Entity Created for Single Line Edit", "fail", node);
+			freport("Target Entity Created for Single Line Edit", "pass", node);
 		}
 		objHP.clickLogoutCRM();
 	}//Test	

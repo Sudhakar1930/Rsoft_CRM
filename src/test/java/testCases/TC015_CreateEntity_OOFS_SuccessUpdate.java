@@ -198,7 +198,6 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
@@ -207,7 +206,6 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
@@ -246,7 +244,6 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
@@ -261,7 +258,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 			freport("Target Updated on Success Case - Add New Record", "pass", node);
 			objCRMRs.fValidateEntityResponse("Test", "//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1","Update on Success Case -Target-Add new Record","No",node,true);
 		}
-		//Summary Add Record
+		//**************************************** Summary Add Record *******************************************
 
 		
 		iOldTrgRecId=iCurrTrgRecId;

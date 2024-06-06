@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC019_CreateEntity_ETRS_NewValues">
+      <class name="testCases.TC022_CreateEntity_ETRM_NewValues">
         <methods>
           <include name="onStart"/>
           <include name="CreateTest"/>
-          <include name="testCreateEntity_OOFS_NewValues"/>
           <include name="setup"/>
           <include name="flush"/>
+          <include name="testCreateEntity_ETRM_DefaultValues"/>
         </methods>
-      </class> <!-- testCases.TC019_CreateEntity_ETRS_NewValues -->
+      </class> <!-- testCases.TC022_CreateEntity_ETRM_NewValues -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
