@@ -23,7 +23,11 @@ import utilities.UtilityCustomFunctions;
 	@FindBy(xpath="//label[normalize-space()='Workflow']")
 	WebElement mnuItemWorkflow;
 
+	@FindBy(xpath="//label[normalize-space()='User & Access Control']")
+	WebElement mnuUserAccessCtrl;
 	
+	@FindBy(xpath="//label[normalize-space()='User']")
+	WebElement mnuItemUser;
 	
 	
 	//Click Methods
@@ -38,6 +42,13 @@ import utilities.UtilityCustomFunctions;
 	public void clickMnuCRMSetting() throws Exception {
 		UtilityCustomFunctions.doClick(driver, mnuCRMSetting);
 	}
+	public void clickMnuUserAccesCtrl() throws Exception {
+		UtilityCustomFunctions.doClick(driver, mnuUserAccessCtrl);
+	}
+	public void clickMnuItemUser() throws Exception {
+		UtilityCustomFunctions.doClick(driver, mnuItemUser);
+	}
+	
 	
 	
 }

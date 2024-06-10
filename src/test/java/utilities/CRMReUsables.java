@@ -3,6 +3,7 @@ package utilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Set;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -24,10 +26,12 @@ import pageObjects.CRMSettingsPage;
 import pageObjects.CreateModuleDataPage;
 import pageObjects.DetailViewPage;
 import pageObjects.HomePage;
+import pageObjects.IndvControlsPage;
 import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
 import pageObjects.PHPMyAdminPage;
 import pageObjects.SummaryViewPage;
+import pageObjects.UserPage;
 import pageObjects.WorkFlowPage;
 import utilities.UtilityCustomFunctions;
 import utilities.ExcelUtility;
@@ -640,6 +644,46 @@ public class CRMReUsables extends BaseClass {
 		System.out.println("Selected Module to View its Workflows");
 
 	}
+	public void fNavigatetoUserMgmt(String sUserName) throws Exception {
+		HomePage objHP = new HomePage(driver);
+		CRMSettingsPage objCRMs = new CRMSettingsPage(driver);
+		UserPage objUP = new UserPage(driver);
+		// Click Avatar
+		BaseClass.logger.info("Clicked Avatar");
+		System.out.println("Clicked Avatar");
+		objHP.clickAvatar();
+		Thread.sleep(2000);
+		objCRMs.clickMnuCRMSetting();
+		BaseClass.logger.info("Clicked Menu CRM Setting");
+		System.out.println("Clicked Menu CRM Setting");
+		objCRMs.clickMnuUserAccesCtrl();
+		Thread.sleep(2000);
+		BaseClass.logger.info("Clicked Menu User Access Control");
+		System.out.println("Clicked Menu User Access Control");
+		objCRMs.clickMnuItemUser();
+		Thread.sleep(2000);
+		objUP.fClickSearch(sUserName);
+		
+		
+	}
+	
+	public void fLoginCRM(String sUrl,String sCompName,String sUserName,String sPassword) throws InterruptedException, Exception {
+		LoginPage objLP = new LoginPage(driver);
+		if(objLP.isLoginPageDisplayed(sUrl)) {
+			objLP.setCompanyName(sCompName);
+			objLP.setUserName(sUserName);
+			objLP.setPassword(sPassword);
+			objLP.clickLoginSubmit();
+			
+		}
+		else {
+			logger.info("CRM Login failed");
+			System.out.println("Login Page Not Displayed");
+			Assert.fail("Login Page not displayed");
+			
+		}
+		Thread.sleep(3000);
+	}
 
 	public String IsCheckWorkflowStatus(String sModule, String sWorkflow, String sExecCondition) {
 		String sWFStatusReturn = "";
@@ -660,6 +704,159 @@ public class CRMReUsables extends BaseClass {
 		boolean bTaskStatus = false;
 		WorkFlowPage objWFP = new WorkFlowPage(driver);
 		return bTaskStatus = objWFP.fValidateTaskStatus(sWorkflow, sActionType, sActionTitle);
+	}
+
+	public void fWFSubmitSF(String sEnv,String sExcelName,String sSheetName,boolean IsAmend,ExtentTest node) throws Exception {
+		
+		String sPath="";
+		if(sEnv.equalsIgnoreCase("Test")){
+			sPath=".\\testData\\"+ sExcelName +"Test.xlsx";
+		}
+		else {
+			sPath=".\\testData\\" + sExcelName +"Live.xlsx";
+		}
+		
+		ExcelUtility xlAddObj = new ExcelUtility(sPath);
+		IndvControlsPage  IndvObj = new IndvControlsPage(driver);
+		logger.info("Excel file Utility instance created");
+		
+		int iRowCount = xlAddObj.getRowCount(sSheetName);
+		System.out.println("Total rows: " + iRowCount);
+		logger.info("Row Count is: " + iRowCount);
+		
+	
+		int iColCount = xlAddObj.getCellCount(sSheetName, iRowCount);
+		System.out.println("Cols: " + iColCount);
+		logger.info("Col Count is: " + iColCount);
+					
+		logger.info("Extracting DataSheet Values started...");
+	
+		String sBuildUrl = xlAddObj.getCellData(sSheetName, 1, 0);
+		String sPN_Title = xlAddObj.getCellData(sSheetName, 1, 3);
+		String sPN_Prefix = xlAddObj.getCellData(sSheetName, 1, 4);
+		String sPN_Value=xlAddObj.getCellData(sSheetName, 1, 5);
+		String sEM_Title=xlAddObj.getCellData(sSheetName, 1, 6);
+		String sEM_Value=xlAddObj.getCellData(sSheetName, 1, 7);
+		String sXQ_Title=xlAddObj.getCellData(sSheetName, 1, 8);
+		String sXQ_Value=xlAddObj.getCellData(sSheetName, 1, 9);
+		String sMS_Title=xlAddObj.getCellData(sSheetName, 1, 10);
+		String sMS_Value=xlAddObj.getCellData(sSheetName, 1, 11);
+		String sRun_Flag=xlAddObj.getCellData(sSheetName, 1, 12);
+		System.out.println(sRun_Flag);
+		
+		
+		if(sRun_Flag.equalsIgnoreCase("Yes"))
+		{
+			fLaunchUrl(driver, sBuildUrl);
+			//URL Validation 
+			logger.info("Survey Form Url Launched..");
+			String sActBuildUrl = driver.getCurrentUrl();
+			if(sActBuildUrl.trim().equalsIgnoreCase(sBuildUrl)) {
+				freport(sBuildUrl, "pass", node);
+				logger.info("Build Url Pass");
+			}
+			else {
+				logger.info("Build Url failing");
+				freport("Browser URL Not Correct" , "fail",node);
+				Assert.fail("Url Failed");
+			}
+//			PhoneNumber Control Validation
+			if(IndvObj.bIsPhoneNoDisplayed()) {
+				String sActPN_Title = IndvObj.getHeadThreeTitle();
+				UtilityCustomFunctions.logWriteConsole("PN Control Title : " + sActPN_Title );
+				String sExpPNN_Title = sPN_Title + " *";
+				UtilityCustomFunctions.fSoftAssert(sActPN_Title.trim(),sExpPNN_Title,"Phone Number Control Title",node);
+				logger.info("Validation of PhoneNumber Control Title") ;
+				Thread.sleep(1000);
+				 freport("Phone Number Conrol Present" , "pass",node);
+				 logger.info("Phone Number Conrol Present");
+				 IndvObj.setPhoneNumber(sPN_Value);
+				 freport("Phone Number Entered: " +sPN_Value , "pass",node);
+				 logger.info("Phone Number Entered");
+					
+			}
+			else {
+				 freport("Phone Number Conrol Missing" , "fail",node);
+				 logger.info("Phone Number Conrol Missing");
+				 Assert.fail("PhoneNumber Missing");
+			}
+			Thread.sleep(1000);
+			IndvObj.clickPhoneNumberNext();
+			logger.info("PhoneNumber Next Clicked") ;
+			Thread.sleep(3000);
+			
+//			Email Control
+			if(IndvObj.bEmailPresent()) {
+				freport("Email Control Present" , "pass",node);
+				logger.info("Email Control Present");
+				String sActEM_Title = IndvObj.getHeadThreeTitle();
+				UtilityCustomFunctions.logWriteConsole("Email Control Title : " + sActEM_Title);
+				String sExpEMN_Title =sEM_Title + " *";
+				UtilityCustomFunctions.fSoftAssert(sActEM_Title.trim(),sExpEMN_Title,"Email Control Title",node);
+				logger.info("Validation of Email Control Title") ;
+				IndvObj.setEmail(sEM_Value);
+				logger.info("Email Id Entered") ;
+				freport("Email Id Entered:" +sEM_Value , "pass",node);
+				
+			}else {
+				freport("Email Control Missing" , "fail",node);
+				logger.info("Email Control Missing");
+				Assert.fail("Email Control Missing");
+			}
+			IndvObj.clickGeneralNext();
+			logger.info("Email Next Clicked") ;
+			Thread.sleep(1000);
+			
+//			TextQuestion Control Validation
+			System.out.println("XQ not displayed: " + IndvObj.bIsTextQuestionDisplayed());
+			if (IndvObj.bIsTextQuestionDisplayed()) {
+				freport("Text Question Conrol Present", "pass", node);
+				logger.info("Text Question Conrol Present");
+				String sActTX_Title = IndvObj.getHeadThreeTitle();
+				UtilityCustomFunctions.logWriteConsole("Text Question Choice Control Title : " + sActTX_Title);
+				String sExpXQN_Title =sXQ_Title + " *";
+				UtilityCustomFunctions.fSoftAssert(sActTX_Title.trim(), sExpXQN_Title, "TextQuestion Control Title", node);
+				logger.info("Validation of TextQuestion Control Title");
+				IndvObj.setTextAnswer(sXQ_Value);
+				logger.info("Text Entered in TextAnswer Control");
+				freport("Text Entered in TextAnswer Control:" + sXQ_Value, "pass", node);
+				
+			} else {
+				freport("Text Question Conrol Missing", "fail", node);
+				logger.info("Text Question Conrol Missing");
+				Assert.fail("Text Question Conrol Missing");
+			}
+			IndvObj.clickGeneralNext();
+			logger.info("Text Question Next Clicked");
+			Thread.sleep(3000);
+			
+//			MultiSelect Control Validation
+			if(IndvObj.bIsMultiSelectDisplayed()) {
+				String sActMS_Title = IndvObj.getHeadThreeTitle();
+				UtilityCustomFunctions.logWriteConsole("MS Control Title : " + sActMS_Title);
+				String sExpMSN_Title =sMS_Title + " *";
+				UtilityCustomFunctions.logWriteConsole(sActMS_Title);
+				UtilityCustomFunctions.fSoftAssert(sActMS_Title.trim(),sExpMSN_Title,"MultiSelect Control Title",node);
+				logger.info("Validation of MultiSelect Control Title") ;
+				//Set MultiSelectValue
+				UtilityCustomFunctions.logWriteConsole("MultiSelect Value:" +sMS_Value); 
+				IndvObj.setDropdownMS(sMS_Value);
+				logger.info("MultiSelect Value Selected") ;
+				freport("MultiSelect Value Selected: " +sMS_Value , "pass",node);
+				
+			}
+			else {
+				 freport("MultiSelect Control Missing", "fail", node);
+				 logger.info("MultiSelect Conrol Missing");
+				 Assert.fail("MultiSelect Control Missing");
+			}
+			//MultiSelect Next Clicked
+			IndvObj.clickSubmit();
+			logger.info("MultiSelect Next Clicked");
+			Thread.sleep(3000);
+			
+			
+		}
 	}
 
 	public void fAddValuestoModulePage(String sEnv,String sExcelName,String sSheetName,boolean IsAmend) throws Exception {
@@ -907,6 +1104,8 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(5000);
 	}
 
+	
+	
 	public void fValidateAllFields(String sEnv,String sExcelName,String sSheetName,String sMessage,String isNotify,ExtentTest node) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
 		String sPath="";
@@ -3249,4 +3448,19 @@ public class CRMReUsables extends BaseClass {
 			return retValue;
 			
 		}
+		
+		public static void fLaunchUrl(WebDriver driver, String sUrl) {
+			try {
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				driver.get(sUrl);
+				Thread.sleep(3000);
+				driver.manage().window().maximize();
+			} catch (Exception e) {
+				System.out.println(sUrl+" not launched");
+			}
+		}
+		
+		
+		
+		
 }

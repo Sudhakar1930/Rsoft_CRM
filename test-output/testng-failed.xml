@@ -7,15 +7,15 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC022_CreateEntity_ETRM_NewValues">
+      <class name="testCases.WebForms.TC001_WF_AllValidUser_NoCondition">
         <methods>
           <include name="onStart"/>
-          <include name="CreateTest"/>
+          <include name="testWebFormUser"/>
+          <include name="testName"/>
           <include name="setup"/>
           <include name="flush"/>
-          <include name="testCreateEntity_ETRM_DefaultValues"/>
         </methods>
-      </class> <!-- testCases.TC022_CreateEntity_ETRM_NewValues -->
+      </class> <!-- testCases.WebForms.TC001_WF_AllValidUser_NoCondition -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

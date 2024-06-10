@@ -8,7 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.TC022_CreateEntity_ETRM_NewValues"/>
+		<class name="testCases.WebForms.TC001_WF_AllValidUser_NoCondition"/>
 	 </classes>	
 	  <!--
 	  
