@@ -13,6 +13,7 @@ import java.util.Set;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -32,12 +33,14 @@ import pageObjects.NotificationsPage;
 import pageObjects.PHPMyAdminPage;
 import pageObjects.SummaryViewPage;
 import pageObjects.UserPage;
+import pageObjects.WebFormsPage;
 import pageObjects.WorkFlowPage;
 import utilities.UtilityCustomFunctions;
 import utilities.ExcelUtility;
 
 public class CRMReUsables extends BaseClass {
-	
+		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
+		WebFormsPage objWFP = new WebFormsPage(driver); 
 		public String getModuleRecordId() throws MalformedURLException {
 			String sCurrRecordId="";
 			try {
@@ -646,27 +649,24 @@ public class CRMReUsables extends BaseClass {
 	}
 	public void fNavigatetoUserMgmt(String sUserName) throws Exception {
 		HomePage objHP = new HomePage(driver);
-		CRMSettingsPage objCRMs = new CRMSettingsPage(driver);
+		CRMSettingsPage objCRMSTs = new CRMSettingsPage(driver);
 		UserPage objUP = new UserPage(driver);
 		// Click Avatar
 		BaseClass.logger.info("Clicked Avatar");
 		System.out.println("Clicked Avatar");
 		objHP.clickAvatar();
 		Thread.sleep(2000);
-		objCRMs.clickMnuCRMSetting();
+		objCRMSTs.clickMnuCRMSetting();
 		BaseClass.logger.info("Clicked Menu CRM Setting");
 		System.out.println("Clicked Menu CRM Setting");
-		objCRMs.clickMnuUserAccesCtrl();
+		objCRMSTs.clickMnuUserAccesCtrl();
 		Thread.sleep(2000);
 		BaseClass.logger.info("Clicked Menu User Access Control");
 		System.out.println("Clicked Menu User Access Control");
-		objCRMs.clickMnuItemUser();
+		objCRMSTs.clickMnuItemUser();
 		Thread.sleep(2000);
-		objUP.fClickSearch(sUserName);
-		
 		
 	}
-	
 	public void fLoginCRM(String sUrl,String sCompName,String sUserName,String sPassword) throws InterruptedException, Exception {
 		LoginPage objLP = new LoginPage(driver);
 		if(objLP.isLoginPageDisplayed(sUrl)) {
@@ -3448,7 +3448,6 @@ public class CRMReUsables extends BaseClass {
 			return retValue;
 			
 		}
-		
 		public static void fLaunchUrl(WebDriver driver, String sUrl) {
 			try {
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -3459,8 +3458,10 @@ public class CRMReUsables extends BaseClass {
 				System.out.println(sUrl+" not launched");
 			}
 		}
-		
-		
-		
-		
-}
+		public void fConfigureWebForm(String sUsers) throws Exception {
+			objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
+			objWFP.fSetWebFormConfigValues(true,sUsers);
+			
+			
+		}
+	}

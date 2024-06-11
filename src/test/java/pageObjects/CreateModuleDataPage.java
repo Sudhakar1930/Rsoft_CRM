@@ -77,7 +77,7 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//*[@id='select2-selfield_5803-container']")
 	WebElement txtMnuList;
 	
-	@FindBy(xpath="//ul[@class='select2-selection__rendered']")
+	@FindBy(xpath="//ul[contains(@class,'select2-selection__rendered')]")
 	WebElement txtMultiComboBox;
 	
 //	@FindBy(xpath="//span[@class='select2-selection select2-selection--multiple']")
@@ -113,7 +113,7 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//button[normalize-space()='edit_square']")
 	WebElement eleEditButton;
 	
-	@FindBy(xpath = "//ul[@class='select2-selection__rendered']/li/span")
+	@FindBy(xpath = "//ul[contains(@class,'select2-selection__rendered')]/li/span")
 	List<WebElement> lstMultiCombo;
 	
 	
@@ -136,7 +136,9 @@ public class CreateModuleDataPage extends BasePage{
 	public void clickRelativeSearch() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnRelativeSearch);
 	}
-	
+	public void clickMultiComboDropDown() throws Exception {
+		UtilityCustomFunctions.doClick(driver, txtMultiComboBox);
+	}
 	public void SelectRelModValue(String sRelModText) throws Exception {
 		Thread.sleep(5000);
 		RelatedModulePage objRMP = new RelatedModulePage(driver);
