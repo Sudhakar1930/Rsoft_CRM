@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.ExecuteTask.Notification.TC032_NT_ET_ETRS_DTBeforeMinutes">
+      <class name="testCases.SelectWebFormName">
         <methods>
           <include name="onStart"/>
-          <include name="testName"/>
+          <include name="test"/>
           <include name="setup"/>
           <include name="flush"/>
-          <include name="testExecuteTask__DTAfterMinutes"/>
         </methods>
-      </class> <!-- testCases.ExecuteTask.Notification.TC032_NT_ET_ETRS_DTBeforeMinutes -->
+      </class> <!-- testCases.SelectWebFormName -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

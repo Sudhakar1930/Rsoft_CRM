@@ -70,7 +70,7 @@ public class TC001_WF_AllValidUser_NoCondition extends BaseClass{
 		String sUserName4 = xlObj.getCellData("Sheet1", 1, 22);
 		String sUser4Avail = xlObj.getCellData("Sheet1", 1, 23);
 		String sUser4Admin = xlObj.getCellData("Sheet1", 1, 24);
-		xlObj.setCellData("Sheet1", 1, 25, "0");
+//		xlObj.setCellData("Sheet1", 1, 25, "0");
 		String sModuleName = xlObj.getCellData("Sheet1", 1, 26);
 		
 		String sAppUrl = rb.getString("appURL");
@@ -88,9 +88,9 @@ public class TC001_WF_AllValidUser_NoCondition extends BaseClass{
 		driver.get(sAppUrl);
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 		Thread.sleep(3000);
+		
 		ObjCRMRs.fNavigatetoUserMgmt(sUserName1);
 		System.out.println("User Name 1: " + sUserName1);
-		
 		if(objUP.fSearchUser(sUserName1)==1) {
 			IsAvail = objUP.fGetUserAvailability();
 			IsAdmin = objUP.fGetUserAdmin();
@@ -156,10 +156,23 @@ public class TC001_WF_AllValidUser_NoCondition extends BaseClass{
 		String sUserArray[]= sUsersList.split(":");
 		String sCurrUserName="";
 		
-		for(int i=0;i<sUserArray.length;i++) {
-			ObjCRMRs.fWFSubmitSF("Test",sPath,"Sheet1",false,node);
-			xlObj.setCellData("Sheet1", 1, 25, String.valueOf(i+1));
-			sCurrUserName = sUserArray[i];
+		for(int i=1;i<=iRowCount;i++) {
+			sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
+			sPN_Value = xlObj.getCellData("Sheet1", i, 5);
+			sEM_Value = xlObj.getCellData("Sheet1", i, 7);
+			sXQ_Value = xlObj.getCellData("Sheet1", i, 9);
+			sMS_Value = xlObj.getCellData("Sheet1", i, 11);
+			
+			ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+			String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 25);
+			System.out.println("Current User Position: " + sCurrUserPos);
+			sCurrUserName = sUserArray[Integer.parseInt(sCurrUserPos)];
+			int sUpdatePos = Integer.parseInt(sCurrUserPos) + 1;
+			if(sUpdatePos>3) {
+				sUpdatePos = 0;
+			}
+			xlObj.setCellData("Sheet1", 1, 25, String.valueOf(sUpdatePos));
+			
 			System.out.println("Current User:" +sCurrUserName);
 			driver.get(sAppUrl);
 //			ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
@@ -167,10 +180,8 @@ public class TC001_WF_AllValidUser_NoCondition extends BaseClass{
 			objALP.clickAllList();
 			Thread.sleep(1000);
 			objALP.clickModuleOnListAll(driver, sModuleName);
+			ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value, node);
 			
-			
-			
-			break;
 		}
 		
 		

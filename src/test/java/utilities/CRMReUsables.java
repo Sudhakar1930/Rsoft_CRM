@@ -40,7 +40,7 @@ import utilities.ExcelUtility;
 
 public class CRMReUsables extends BaseClass {
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
-		WebFormsPage objWFP = new WebFormsPage(driver); 
+		 
 		public String getModuleRecordId() throws MalformedURLException {
 			String sCurrRecordId="";
 			try {
@@ -621,6 +621,51 @@ public class CRMReUsables extends BaseClass {
 		}
 	}
 
+	//WebForm Integration to CRM Module Validation
+	public void fModuleTableValue(String sAssignedTo, String sMobilePrefix, String sMobileNumber, String sEmail,
+			String sText, String sMultiSelect, ExtentTest node) throws Exception {
+		NotificationsPage objNFP = new NotificationsPage(driver);
+		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
+		for (int i = 2; i <= tRowCount.size(); i++) {
+			System.out.println("Current Row Number: " + i);
+			List<WebElement> tColCount = tRowCount.get(i).findElements(By.tagName("td"));
+
+
+			String sActAssignedTo = UtilityCustomFunctions.getText(driver, tColCount.get(1));
+			String sActMobilePrefix = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+			String sActMobileNumber = UtilityCustomFunctions.getText(driver, tColCount.get(3));
+			String sActEmail = UtilityCustomFunctions.getText(driver, tColCount.get(4));
+			String sActText = UtilityCustomFunctions.getText(driver, tColCount.get(5));
+			String sActMultiSelect = UtilityCustomFunctions.getText(driver, tColCount.get(6));
+
+			System.out.println("Actual Assigned: " + sActAssignedTo);
+			System.out.println("Actual MobileNoPrefix: " + sActMobilePrefix);
+			System.out.println("Actual MobileNumber: " + sActMobileNumber);
+			System.out.println("Actual Email: " + sActEmail);
+			System.out.println("Actual Text: " + sActText);
+			System.out.println("Actual sActMultiSelect: " + sActMultiSelect);
+
+			System.out.println("Expected AssignedTo: " + sAssignedTo);
+			System.out.println("Expected MobileNoPrefix: " + sMobilePrefix);
+			System.out.println("Expected MobileNumber: " + sMobileNumber);
+			System.out.println("Expected Email: " + sEmail);
+			System.out.println("Expected Text: " + sText);
+			System.out.println("Expected MultiSelect: " + sMultiSelect);
+
+			if(sActAssignedTo.contains(sAssignedTo)) {
+				UtilityCustomFunctions.fSoftAssert(sActAssignedTo, sActAssignedTo, "AssignedTo Value", node);
+			}
+			else {
+				UtilityCustomFunctions.fSoftAssert(sActAssignedTo, sAssignedTo, "AssignedTo Value", node);
+			}
+			UtilityCustomFunctions.fSoftAssert(sActMobilePrefix, sMobilePrefix, "Mobile Number Prefix", node);
+			UtilityCustomFunctions.fSoftAssert(sActMobileNumber, sMobileNumber, "Mobile Number", node);
+			UtilityCustomFunctions.fSoftAssert(sActEmail, sEmail, "Email", node);
+			UtilityCustomFunctions.fSoftAssert(sActText, sText, "Text", node);
+			UtilityCustomFunctions.fSoftAssert(sActMultiSelect, sMultiSelect, "MultiSelect", node);
+			break;
+		}
+		}
 	public void fNavigatetoWorkflow(String sModule) throws Exception {
 		HomePage objHP = new HomePage(driver);
 		CRMSettingsPage objCRMs = new CRMSettingsPage(driver);
@@ -706,7 +751,7 @@ public class CRMReUsables extends BaseClass {
 		return bTaskStatus = objWFP.fValidateTaskStatus(sWorkflow, sActionType, sActionTitle);
 	}
 
-	public void fWFSubmitSF(String sEnv,String sExcelName,String sSheetName,boolean IsAmend,ExtentTest node) throws Exception {
+	public void fWFSubmitSF(int iRowIndex,String sEnv,String sExcelName,String sSheetName,boolean IsAmend,ExtentTest node) throws Exception {
 		
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
@@ -731,17 +776,17 @@ public class CRMReUsables extends BaseClass {
 					
 		logger.info("Extracting DataSheet Values started...");
 	
-		String sBuildUrl = xlAddObj.getCellData(sSheetName, 1, 0);
-		String sPN_Title = xlAddObj.getCellData(sSheetName, 1, 3);
-		String sPN_Prefix = xlAddObj.getCellData(sSheetName, 1, 4);
-		String sPN_Value=xlAddObj.getCellData(sSheetName, 1, 5);
-		String sEM_Title=xlAddObj.getCellData(sSheetName, 1, 6);
-		String sEM_Value=xlAddObj.getCellData(sSheetName, 1, 7);
-		String sXQ_Title=xlAddObj.getCellData(sSheetName, 1, 8);
-		String sXQ_Value=xlAddObj.getCellData(sSheetName, 1, 9);
-		String sMS_Title=xlAddObj.getCellData(sSheetName, 1, 10);
-		String sMS_Value=xlAddObj.getCellData(sSheetName, 1, 11);
-		String sRun_Flag=xlAddObj.getCellData(sSheetName, 1, 12);
+		String sBuildUrl = xlAddObj.getCellData(sSheetName, iRowIndex, 0);
+		String sPN_Title = xlAddObj.getCellData(sSheetName, iRowIndex, 3);
+		String sPN_Prefix = xlAddObj.getCellData(sSheetName, iRowIndex, 4);
+		String sPN_Value=xlAddObj.getCellData(sSheetName, iRowIndex, 5);
+		String sEM_Title=xlAddObj.getCellData(sSheetName, iRowIndex, 6);
+		String sEM_Value=xlAddObj.getCellData(sSheetName, iRowIndex, 7);
+		String sXQ_Title=xlAddObj.getCellData(sSheetName, iRowIndex, 8);
+		String sXQ_Value=xlAddObj.getCellData(sSheetName, iRowIndex, 9);
+		String sMS_Title=xlAddObj.getCellData(sSheetName, iRowIndex, 10);
+		String sMS_Value=xlAddObj.getCellData(sSheetName, iRowIndex, 11);
+		String sRun_Flag=xlAddObj.getCellData(sSheetName, iRowIndex, 12);
 		System.out.println(sRun_Flag);
 		
 		
@@ -3459,6 +3504,7 @@ public class CRMReUsables extends BaseClass {
 			}
 		}
 		public void fConfigureWebForm(String sUsers) throws Exception {
+			WebFormsPage objWFP = new WebFormsPage(driver);
 			objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 			objWFP.fSetWebFormConfigValues(true,sUsers);
 			
