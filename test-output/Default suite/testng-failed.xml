@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.SelectWebFormName">
+      <class name="testCases.AddNewUser">
         <methods>
           <include name="onStart"/>
-          <include name="test"/>
+          <include name="testWebFormUser"/>
+          <include name="testName"/>
           <include name="setup"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testCases.SelectWebFormName -->
+      </class> <!-- testCases.AddNewUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

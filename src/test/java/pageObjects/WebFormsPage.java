@@ -19,14 +19,20 @@ public class WebFormsPage extends BasePage{
 	@FindBy(xpath="//ul[contains(@class,'select2-selection__rendered')]")
 	WebElement txtMultiComboBox;
 	
+	@FindBy(xpath = "//ul[@class='select2-results__options' and @role='tree']/li[@aria-selected='true']")
+    List<WebElement> lstMultiCombo;
+	
+	@FindBy(xpath="(//ul[@class='select2-selection__rendered'])[2]")
+	WebElement cmbCondition1RR;
+			
 	@FindBy(xpath="//span[@class='select2-selection__rendered' and @role='textbox']")
 	WebElement cmbWebForm;
 	
 	@FindBy(xpath="//ul[@class='select2-results__options' and @role='tree']")
 	WebElement cmbDropDown;
 	
-	@FindBy(xpath="//i[@class='fa fa-ellipsis-v']")
-	WebElement btnEllipsis;
+	//ul[@class='select2-results__options' and @role='tree']/li
+	
 	
 	@FindBy(linkText="Edit")
 	WebElement btnEdit;
@@ -44,14 +50,19 @@ public class WebFormsPage extends BasePage{
 	@FindBy(xpath="//table[@class='table table-bordered table-striped']/tbody/tr")
 	List<WebElement> lstWebForms;
 	
+	
+	public void clickWebFormSave() {
+		btnSave.click();
+	}
 	@SuppressWarnings("restriction")
-	public void fSelectWebForm(String sWebFormName, String sModuleName) throws InterruptedException {
+	public int fSelectWebForm(String sWebFormName, String sModuleName) throws InterruptedException {
 		boolean bCurrentWFStatus = false;
 		boolean bMatchWFEnabled = false;
 		fSelectWbFrmModule("ETNotification Webform");
 		Thread.sleep(2000);
 		int iRowCount =lstWebForms.size(); 
 		int iMatchRow=0;
+		int iRowPos=0;
 		for(int i=1;i<=iRowCount;i++) {
 		String sXpathWFName="//table[@class='table table-bordered table-striped']/tbody/tr[" + i + "]/td[2]";
 		String sXpathModName="//table[@class='table table-bordered table-striped']/tbody/tr[" + i + "]/td[3]";
@@ -71,6 +82,7 @@ public class WebFormsPage extends BasePage{
 		}
 		if(sActWebFormName.equalsIgnoreCase(sWebFormName) && sActModuleName.equalsIgnoreCase(sModuleName)) {
 			
+			iRowPos =i;
 			if(bCurrentWFStatus==false) {
 				iMatchRow = i;
 				bMatchWFEnabled = false;
@@ -90,33 +102,46 @@ public class WebFormsPage extends BasePage{
 			String sXpath="(//table[@class='table table-bordered table-striped']/tbody/tr//span[@class='switchery switchery-default']/small)[" + iMatchRow + "]";
 			driver.findElement(By.xpath(sXpath)).click();
 		}
+		return iRowPos;
 	}
 	public void fSelectWbFrmModule(String sModuleName) {
 		cmbWebForm.click();
 		UtilityCustomFunctions.selectOneItemfromListBox(driver,cmbDropDown,sModuleName);
 	}
-	public void fSetWebFormConfigValues(boolean IsAmend,String sUsersList) throws Exception {
+	public void fNavigateWFUserConfigPage(String sModuleName,String sWebFormName) throws InterruptedException {
+		int iWebFormRowPos=0;
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
-		String sXpath="";
+		WebFormsPage objWSP = new WebFormsPage(driver);
 		cmbWebForm.click();
 		Thread.sleep(1000);
 		UtilityCustomFunctions.selectOneItemfromListBox(driver,cmbDropDown,"ETNotification Webform");
 		Thread.sleep(1000);
+		iWebFormRowPos = objWSP.fSelectWebForm(sWebFormName,sModuleName);
+		Thread.sleep(3000);
+		Thread.sleep(3000);
+		String sElipsisXpath = "(//i[@class='fa fa-ellipsis-v'])[" + iWebFormRowPos + "]";
+		System.out.println(sElipsisXpath);
+		WebElement btnEllipsis = driver.findElement(By.xpath(sElipsisXpath)); 
 		btnEllipsis.click();
 		Thread.sleep(1000);
 		btnEdit.click();
 		Thread.sleep(2000);
 		btnNext.click();
+	}
+	public void fSetRoundRobinUsers(boolean IsAmend,String sUsersList) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sXpath="";
 		objCMD.clickMultiComboDropDown();
 		Thread.sleep(1000);
 		if(IsAmend==true) {
 			objCMD.fRemMultiComboValues();
 		}
+		System.out.println("Users In fSEtRoundRobinUser: " + sUsersList);
 		String sUserArray[]= sUsersList.split(":");
 		for(int i=0;i<sUserArray.length;i++) {
 			Thread.sleep(3000);
 			System.out.println("User:"+i+ "Is " +sUserArray[i]);
-			
+//			txtMultiComboBox.click();
 			Thread.sleep(1000);
 			sXpath = "//ul[contains(@class,'select2-results__options')]/li[contains(text(),'"+sUserArray[i]+"')]";
 			System.out.println("sXpath:" + sXpath);
@@ -129,8 +154,56 @@ public class WebFormsPage extends BasePage{
 		}
 		txtMultiComboBox.click();
 		Thread.sleep(1000);
-		btnSave.click();
-		Thread.sleep(2000);
+	}
+	public void fSetCond1RRUsers(boolean IsAmend,String sUsersList) throws Exception {
+		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		String sXpath="";
+		cmbCondition1RR.click();
+		Thread.sleep(1000);
+		if(IsAmend==true) {
+			fRemConditionRRValues();
+		}
+		String sUserArray[]= sUsersList.split(":");
+		for(int i=0;i<sUserArray.length;i++) {
+			Thread.sleep(3000);
+			System.out.println("User:"+i+ "Is " +sUserArray[i]);
+			cmbCondition1RR.click();
+			Thread.sleep(1000);
+			sXpath = "//ul[contains(@class,'select2-results__options')]/li[contains(text(),'"+sUserArray[i]+"')]";
+			System.out.println("sXpath:" + sXpath);
+			WebElement eleMultiCombo = driver.findElement(By.xpath(sXpath));
+			System.out.println("Multi Combo Print Values " + i + "Values:" + eleMultiCombo.getText());
+			UtilityCustomFunctions.doActionClick(driver, eleMultiCombo);
+			Thread.sleep(3000);
+			txtMultiComboBox.click();
+			
+		}
+		txtMultiComboBox.click();
+		Thread.sleep(1000);
 	}
 	
+	//Removing All MultiSelected Values
+	public void fRemConditionRRValues() throws InterruptedException {
+		//ul[@class='select2-results__options' and @role='tree']/li[contains(text(),)]
+		
+		System.out.println("Inside remove existing values:");
+		int iCount = lstMultiCombo.size();
+		System.out.println("Multicombo: count" + iCount);
+		if(iCount>0) {
+			for(int i = iCount-1;i>=0;i--) {
+				
+				Thread.sleep(3000);
+				System.out.println("i : " + i + " Icount:"+ iCount);
+				lstMultiCombo.get(i).click();
+				Thread.sleep(1000);
+				cmbCondition1RR.click();
+			}
+				
+		}
+		else {
+			cmbCondition1RR.click();
+		}
+		cmbCondition1RR.click();
+	}
+
 }

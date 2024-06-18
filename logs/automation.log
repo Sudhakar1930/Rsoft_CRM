@@ -1,331 +1,68 @@
-18:58:40.788 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-18:58:42.073 [main] INFO  utilities.UtilityCustomFunctions - Actual:Abhinav@rsoft.in
-18:58:42.073 [main] INFO  utilities.UtilityCustomFunctions - Expected:Abhinav@rsoft.in
-18:58:42.073 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
-18:58:43.314 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-18:58:43.314 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-18:58:43.314 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
-18:58:44.566 [main] INFO  utilities.UtilityCustomFunctions - Actual:Agree, Strongly DisAgree
-18:58:44.567 [main] INFO  utilities.UtilityCustomFunctions - Expected:Agree, Strongly DisAgree
-18:58:44.567 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-18:58:55.863 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Excel file Utility instance created
-18:58:55.875 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Row Count is: 9
-18:58:55.895 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Col Count is: 13
-18:58:55.895 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Extracting DataSheet Values started...
-18:59:00.058 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Survey Form Url Launched..
-18:59:01.568 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Build Url Pass
-18:59:01.746 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
-18:59:01.746 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
-18:59:01.746 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
-18:59:01.746 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
-18:59:03.220 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of PhoneNumber Control Title
-18:59:05.751 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Conrol Present
-18:59:06.188 [main] INFO  utilities.UtilityCustomFunctions - 4567547656 entered in  input
-18:59:07.695 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Entered
-18:59:08.878 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - PhoneNumber Next Clicked
-18:59:13.467 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Control Present
-18:59:13.499 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
-18:59:13.500 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
-18:59:13.500 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
-18:59:13.500 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
-18:59:14.966 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of Email Control Title
-18:59:15.425 [main] INFO  utilities.UtilityCustomFunctions - Zitin@rsoft.in entered in  input
-18:59:15.444 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Id Entered
-18:59:17.083 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Next Clicked
-18:59:19.934 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Conrol Present
-18:59:19.963 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
-18:59:19.963 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
-18:59:19.963 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
-18:59:19.963 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
-18:59:21.447 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of TextQuestion Control Title
-18:59:22.026 [main] INFO  utilities.UtilityCustomFunctions - Welcome to Automation...! entered in  textarea
-18:59:22.047 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Entered in TextAnswer Control
-18:59:23.656 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Next Clicked
-18:59:26.883 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
-18:59:26.884 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
-18:59:26.884 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
-18:59:26.884 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
-18:59:26.884 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
-18:59:28.409 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of MultiSelect Control Title
-18:59:28.409 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:Agree
-18:59:28.516 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
-18:59:28.517 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
-18:59:28.517 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
-18:59:30.576 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: Agree
-18:59:36.280 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Value Selected
-18:59:37.919 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Next Clicked
-18:59:53.439 [main] INFO  utilities.UtilityCustomFunctions - Actual:Akshay Kumar
-18:59:53.439 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar
-18:59:53.440 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-18:59:54.725 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
-18:59:54.725 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
-18:59:54.725 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-18:59:55.962 [main] INFO  utilities.UtilityCustomFunctions - Actual:4567547656
-18:59:55.962 [main] INFO  utilities.UtilityCustomFunctions - Expected:4567547656
-18:59:55.962 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-18:59:57.250 [main] INFO  utilities.UtilityCustomFunctions - Actual:Zitin@rsoft.in
-18:59:57.250 [main] INFO  utilities.UtilityCustomFunctions - Expected:Zitin@rsoft.in
-18:59:57.250 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
-18:59:58.494 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-18:59:58.494 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-18:59:58.494 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
-18:59:59.736 [main] INFO  utilities.UtilityCustomFunctions - Actual:Agree
-18:59:59.736 [main] INFO  utilities.UtilityCustomFunctions - Expected:Agree
-18:59:59.737 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-19:00:11.136 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Excel file Utility instance created
-19:00:11.147 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Row Count is: 9
-19:00:11.164 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Col Count is: 13
-19:00:11.164 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Extracting DataSheet Values started...
-19:00:15.033 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Survey Form Url Launched..
-19:00:16.486 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Build Url Pass
-19:00:16.670 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
-19:00:16.670 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
-19:00:16.670 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
-19:00:16.670 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
-19:00:18.101 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of PhoneNumber Control Title
-19:00:20.469 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Conrol Present
-19:00:20.900 [main] INFO  utilities.UtilityCustomFunctions - 7890870978 entered in  input
-19:00:22.304 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Entered
-19:00:23.501 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - PhoneNumber Next Clicked
-19:00:27.941 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Control Present
-19:00:27.972 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
-19:00:27.972 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
-19:00:27.972 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
-19:00:27.972 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
-19:00:29.333 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of Email Control Title
-19:00:29.812 [main] INFO  utilities.UtilityCustomFunctions - Tanishka@rsoft.in entered in  input
-19:00:29.830 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Id Entered
-19:00:31.361 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Next Clicked
-19:00:34.032 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Conrol Present
-19:00:34.062 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
-19:00:34.063 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
-19:00:34.063 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
-19:00:34.063 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
-19:00:35.486 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of TextQuestion Control Title
-19:00:36.062 [main] INFO  utilities.UtilityCustomFunctions - Welcome to Automation...! entered in  textarea
-19:00:36.079 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Entered in TextAnswer Control
-19:00:37.599 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Next Clicked
-19:00:40.797 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
-19:00:40.797 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
-19:00:40.798 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
-19:00:40.798 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
-19:00:40.798 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
-19:00:42.166 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of MultiSelect Control Title
-19:00:42.167 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:Strongly DisAgree
-19:00:42.270 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
-19:00:42.270 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
-19:00:42.270 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
-19:00:45.447 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: Strongly DisAgree
-19:00:50.016 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Value Selected
-19:00:51.565 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Next Clicked
-19:01:08.435 [main] INFO  utilities.UtilityCustomFunctions - Actual:Aamir Khan
-19:01:08.435 [main] INFO  utilities.UtilityCustomFunctions - Expected:Akshay
-19:01:08.435 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-19:01:09.666 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
-19:01:09.666 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
-19:01:09.666 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-19:01:10.905 [main] INFO  utilities.UtilityCustomFunctions - Actual:7890870978
-19:01:10.905 [main] INFO  utilities.UtilityCustomFunctions - Expected:7890870978
-19:01:10.905 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-19:01:12.133 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tanishka@rsoft.in
-19:01:12.133 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tanishka@rsoft.in
-19:01:12.133 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
-19:01:13.366 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-19:01:13.366 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-19:01:13.366 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
-19:01:14.634 [main] INFO  utilities.UtilityCustomFunctions - Actual:Strongly DisAgree
-19:01:14.635 [main] INFO  utilities.UtilityCustomFunctions - Expected:Strongly DisAgree
-19:01:14.635 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-19:01:26.021 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Excel file Utility instance created
-19:01:26.049 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Row Count is: 9
-19:01:26.066 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Col Count is: 13
-19:01:26.066 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Extracting DataSheet Values started...
-19:01:29.365 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Survey Form Url Launched..
-19:01:30.858 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Build Url Pass
-19:01:31.044 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
-19:01:31.044 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
-19:01:31.044 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
-19:01:31.044 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
-19:01:32.602 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of PhoneNumber Control Title
-19:01:35.095 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Conrol Present
-19:01:35.536 [main] INFO  utilities.UtilityCustomFunctions - 7890870979 entered in  input
-19:01:37.101 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Entered
-19:01:38.326 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - PhoneNumber Next Clicked
-19:01:42.933 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Control Present
-19:01:42.964 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
-19:01:42.964 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
-19:01:42.964 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
-19:01:42.964 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
-19:01:44.440 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of Email Control Title
-19:01:44.917 [main] INFO  utilities.UtilityCustomFunctions - Nitin@rsoft.in entered in  input
-19:01:44.935 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Id Entered
-19:01:46.562 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Next Clicked
-19:01:49.385 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Conrol Present
-19:01:49.414 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
-19:01:49.414 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
-19:01:49.414 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
-19:01:49.414 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
-19:01:50.896 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of TextQuestion Control Title
-19:01:51.472 [main] INFO  utilities.UtilityCustomFunctions - Welcome to Automation...! entered in  textarea
-19:01:51.493 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Entered in TextAnswer Control
-19:01:53.152 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Next Clicked
-19:01:56.365 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
-19:01:56.366 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
-19:01:56.366 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
-19:01:56.366 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
-19:01:56.366 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
-19:01:57.839 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of MultiSelect Control Title
-19:01:57.840 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:Agree, Strongly DisAgree
-19:01:57.941 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
-19:01:57.942 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 2
-19:01:57.942 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
-19:02:00.044 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: Agree
-19:02:07.728 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: Strongly DisAgree
-19:02:12.274 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Value Selected
-19:02:13.950 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Next Clicked
-19:02:28.890 [main] INFO  utilities.UtilityCustomFunctions - Actual:Salman Khan
-19:02:28.891 [main] INFO  utilities.UtilityCustomFunctions - Expected:Aamir
-19:02:28.891 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-19:02:30.072 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
-19:02:30.072 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
-19:02:30.072 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-19:02:31.318 [main] INFO  utilities.UtilityCustomFunctions - Actual:7890870979
-19:02:31.318 [main] INFO  utilities.UtilityCustomFunctions - Expected:7890870979
-19:02:31.318 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-19:02:32.582 [main] INFO  utilities.UtilityCustomFunctions - Actual:Nitin@rsoft.in
-19:02:32.582 [main] INFO  utilities.UtilityCustomFunctions - Expected:Nitin@rsoft.in
-19:02:32.582 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
-19:02:33.791 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-19:02:33.792 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-19:02:33.792 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
-19:02:35.031 [main] INFO  utilities.UtilityCustomFunctions - Actual:Agree, Strongly DisAgree
-19:02:35.031 [main] INFO  utilities.UtilityCustomFunctions - Expected:Agree, Strongly DisAgree
-19:02:35.031 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-19:02:46.362 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Excel file Utility instance created
-19:02:46.374 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Row Count is: 9
-19:02:46.389 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Col Count is: 13
-19:02:46.389 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Extracting DataSheet Values started...
-19:02:50.229 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Survey Form Url Launched..
-19:02:51.782 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Build Url Pass
-19:02:51.954 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
-19:02:51.954 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
-19:02:51.954 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
-19:02:51.954 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
-19:02:53.454 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of PhoneNumber Control Title
-19:02:55.962 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Conrol Present
-19:02:56.411 [main] INFO  utilities.UtilityCustomFunctions - 7890870980 entered in  input
-19:02:57.920 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Entered
-19:02:59.113 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - PhoneNumber Next Clicked
-19:03:03.856 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Control Present
-19:03:03.890 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
-19:03:03.890 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
-19:03:03.890 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
-19:03:03.890 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
-19:03:05.404 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of Email Control Title
-19:03:05.851 [main] INFO  utilities.UtilityCustomFunctions - Arun@rsoft.in entered in  input
-19:03:05.871 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Id Entered
-19:03:07.473 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Next Clicked
-19:03:10.267 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Conrol Present
-19:03:10.295 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
-19:03:10.295 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
-19:03:10.295 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
-19:03:10.295 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
-19:03:11.797 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of TextQuestion Control Title
-19:03:12.449 [main] INFO  utilities.UtilityCustomFunctions - Welcome to Automation...! entered in  textarea
-19:03:12.468 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Entered in TextAnswer Control
-19:03:14.104 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Next Clicked
-19:03:17.292 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
-19:03:17.292 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
-19:03:17.292 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
-19:03:17.292 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
-19:03:17.293 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
-19:03:18.785 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of MultiSelect Control Title
-19:03:18.786 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:Agree
-19:03:18.902 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
-19:03:18.902 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
-19:03:18.902 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
-19:03:20.997 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: Agree
-19:03:26.609 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Value Selected
-19:03:28.276 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Next Clicked
-19:03:43.747 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
-19:03:43.747 [main] INFO  utilities.UtilityCustomFunctions - Expected:Salman
-19:03:43.747 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-19:03:44.952 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
-19:03:44.952 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
-19:03:44.952 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-19:03:46.144 [main] INFO  utilities.UtilityCustomFunctions - Actual:7890870980
-19:03:46.144 [main] INFO  utilities.UtilityCustomFunctions - Expected:7890870980
-19:03:46.144 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-19:03:47.365 [main] INFO  utilities.UtilityCustomFunctions - Actual:Arun@rsoft.in
-19:03:47.372 [main] INFO  utilities.UtilityCustomFunctions - Expected:Arun@rsoft.in
-19:03:47.372 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
-19:03:48.572 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-19:03:48.572 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-19:03:48.572 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
-19:03:49.835 [main] INFO  utilities.UtilityCustomFunctions - Actual:Agree
-19:03:49.835 [main] INFO  utilities.UtilityCustomFunctions - Expected:Agree
-19:03:49.835 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-19:04:01.123 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Excel file Utility instance created
-19:04:01.144 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Row Count is: 9
-19:04:01.169 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Col Count is: 13
-19:04:01.169 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Extracting DataSheet Values started...
-19:04:04.433 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Survey Form Url Launched..
-19:04:05.979 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Build Url Pass
-19:04:06.172 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
-19:04:06.172 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
-19:04:06.172 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
-19:04:06.172 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
-19:04:07.693 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of PhoneNumber Control Title
-19:04:10.176 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Conrol Present
-19:04:10.533 [main] INFO  utilities.UtilityCustomFunctions - 7890870981 entered in  input
-19:04:12.186 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Phone Number Entered
-19:04:13.355 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - PhoneNumber Next Clicked
-19:04:17.935 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Control Present
-19:04:17.974 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
-19:04:17.974 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
-19:04:17.974 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
-19:04:17.974 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
-19:04:19.554 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of Email Control Title
-19:04:19.885 [main] INFO  utilities.UtilityCustomFunctions - Kumar@rsoft.in entered in  input
-19:04:19.906 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Id Entered
-19:04:21.823 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Email Next Clicked
-19:04:24.597 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Conrol Present
-19:04:24.625 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
-19:04:24.625 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
-19:04:24.625 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
-19:04:24.625 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
-19:04:26.161 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of TextQuestion Control Title
-19:04:26.560 [main] INFO  utilities.UtilityCustomFunctions - Welcome to Automation...! entered in  textarea
-19:04:26.571 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Entered in TextAnswer Control
-19:04:28.180 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Text Question Next Clicked
-19:04:31.393 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
-19:04:31.393 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
-19:04:31.393 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
-19:04:31.393 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
-19:04:31.393 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
-19:04:32.931 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - Validation of MultiSelect Control Title
-19:04:32.931 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:Strongly DisAgree
-19:04:33.124 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
-19:04:33.125 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
-19:04:33.125 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
-19:04:36.235 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: Strongly DisAgree
-19:04:40.723 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Value Selected
-19:04:42.367 [main] INFO  testCases.WebForms.TC001_WF_AllValidUser_NoCondition - MultiSelect Next Clicked
-19:04:58.046 [main] INFO  utilities.UtilityCustomFunctions - Actual:Akshay Kumar
-19:04:58.046 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar
-19:04:58.046 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-19:04:59.272 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
-19:04:59.272 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
-19:04:59.272 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-19:05:00.605 [main] INFO  utilities.UtilityCustomFunctions - Actual:7890870981
-19:05:00.605 [main] INFO  utilities.UtilityCustomFunctions - Expected:7890870981
-19:05:00.622 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-19:05:01.871 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kumar@rsoft.in
-19:05:01.871 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kumar@rsoft.in
-19:05:01.871 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
-19:05:03.542 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-19:05:03.542 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-19:05:03.542 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
-19:05:04.742 [main] INFO  utilities.UtilityCustomFunctions - Actual:Strongly DisAgree
-19:05:04.742 [main] INFO  utilities.UtilityCustomFunctions - Expected:Strongly DisAgree
-19:05:04.742 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+18:06:22.754 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+18:06:22.754 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+18:06:22.754 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+18:06:24.181 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Validation of PhoneNumber Control Title
+18:06:26.644 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Phone Number Conrol Present
+18:06:27.596 [main] INFO  utilities.UtilityCustomFunctions - 9840046890 entered in  input
+18:06:29.031 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Phone Number Entered
+18:06:30.333 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - PhoneNumber Next Clicked
+18:06:34.828 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Email Control Present
+18:06:34.849 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+18:06:34.864 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+18:06:34.864 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+18:06:34.864 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+18:06:36.318 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Validation of Email Control Title
+18:06:36.886 [main] INFO  utilities.UtilityCustomFunctions - Julia@rsoft.in entered in  input
+18:06:36.902 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Email Id Entered
+18:06:38.505 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Email Next Clicked
+18:06:41.326 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Text Question Conrol Present
+18:06:41.373 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+18:06:41.373 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+18:06:41.373 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+18:06:41.373 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+18:06:42.766 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Validation of TextQuestion Control Title
+18:06:43.340 [main] INFO  utilities.UtilityCustomFunctions - Welcome to Automation...! entered in  textarea
+18:06:43.371 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Text Entered in TextAnswer Control
+18:06:44.969 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Text Question Next Clicked
+18:06:48.186 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+18:06:48.186 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+18:06:48.186 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+18:06:48.186 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+18:06:48.201 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+18:06:49.661 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - Validation of MultiSelect Control Title
+18:06:49.661 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+18:06:49.763 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+18:06:49.763 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+18:06:49.763 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+18:06:51.855 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+18:06:57.419 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - MultiSelect Value Selected
+18:06:59.051 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - MultiSelect Next Clicked
+18:07:02.236 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes -  Select an option..! *Actual Title 
+18:07:02.236 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+18:07:02.236 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+18:07:02.236 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+18:07:02.236 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+18:07:07.016 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - [Tamilnadu] is selected in List
+18:07:07.016 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - MultiChoice Item Selected
+18:07:11.601 [main] INFO  testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes - MultiChoice Next Clicked
+18:07:29.905 [main] INFO  utilities.UtilityCustomFunctions - Actual:Irwin Gary
+18:07:29.905 [main] INFO  utilities.UtilityCustomFunctions - Expected:Irwin Gary
+18:07:29.906 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+18:07:31.169 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+18:07:31.169 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+18:07:31.169 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+18:07:32.399 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840046890
+18:07:32.399 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840046890
+18:07:32.399 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+18:07:33.617 [main] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+18:07:33.617 [main] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+18:07:33.617 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+18:07:34.859 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+18:07:34.859 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+18:07:34.859 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+18:07:36.048 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:07:36.048 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:07:36.048 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+18:07:37.248 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:07:37.248 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:07:37.248 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State

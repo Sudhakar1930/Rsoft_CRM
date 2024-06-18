@@ -801,10 +801,14 @@ public class IndvControlsPage extends BasePage{
 			utilities.UtilityCustomFunctions.doClick(driver, btnGeneralNext);
 		}
 		public void clickSubmit() throws Exception {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.elementToBeClickable(btnSubmit));
 			utilities.UtilityCustomFunctions.doClick(driver, btnSubmit);
 		}
 		
 		public void clickPhoneNumberNext() throws Exception {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.elementToBeClickable(btnPhoneNumberNext));
 			utilities.UtilityCustomFunctions.doClick(driver, btnPhoneNumberNext);
 		}
 		

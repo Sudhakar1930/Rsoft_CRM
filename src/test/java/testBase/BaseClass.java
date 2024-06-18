@@ -242,8 +242,8 @@ public class BaseClass extends ExtentReportManager{
 	}
 
 	public String randomeNumber() {
-		String generatedString2 = RandomStringUtils.randomNumeric(10);
-		return (generatedString2);
+		String generatedString2 = RandomStringUtils.randomNumeric(5);
+		return ("98400"+generatedString2);
 	}
 	
 	public String randomAlphaNumeric() {

@@ -200,7 +200,7 @@ public class CreateModuleDataPage extends BasePage{
 				
 		}
 		else {
-			txtMultiComboBox.click();
+//			txtMultiComboBox.click();
 		}
 	}
 	

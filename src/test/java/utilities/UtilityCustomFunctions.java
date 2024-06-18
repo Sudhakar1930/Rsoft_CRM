@@ -281,7 +281,7 @@ public class UtilityCustomFunctions extends BaseClass{
 		boolean isClicked = false;
 		try {
 			js.executeScript("arguments[0].scrollIntoView(true);", element);
-			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(50));
+			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
 			webWait.until(ExpectedConditions.elementToBeClickable(element));
 			webWait.until(ExpectedConditions.visibilityOf(element));
 			js.executeScript("arguments[0].click();", element);

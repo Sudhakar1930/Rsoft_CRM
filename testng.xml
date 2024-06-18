@@ -8,9 +8,10 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.WebForms.TC001_WF_AllValidUser_NoCondition"/>
+		<class name="testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes"/> 
 	 </classes>	
 	  <!--
+	  <class name="testCases.AddNewUser"/>
 	  
 	  <class name="testCases.ExecuteTask.Notification.TC036_NT_ET_ETRS_DTBeforeDays"/>
 	  <class name="testCases.TC008_WF2_SN_Daily"/>
@@ -20,7 +21,7 @@
 		<class name="testCases.ExecuteTask.Notification.TC005_NT_ExecuteTask_MTAfterHours"/>
 		<class name="testCases.ExecuteTask.Notification.TC006_NT_ExecuteTask_MTAfterDays"/>
 
-	  <class name="testCases.SimpleTest"/>
+	  <class name="testCases.AddNewUser"/>
 	 
 	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
 		<class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
