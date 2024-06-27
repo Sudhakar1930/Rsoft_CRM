@@ -29,8 +29,16 @@ public class SelectWebFormName extends BaseClass {
 		String sUserName = "Sudhakar";
 		String sPassword="Automation@123";
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
-		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
-		objWSP.fSelectWebForm("wnTestAutomation","ETNotification");
+//		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
+//		objWSP.fSelectWebForm("wnTestAutomation","ETNotification");
+		
+		Thread.sleep(3000);
+		ObjCRMRs.fNavigatetoUserMgmt();
+		String sFoundUser = objUP.fGetFirstAvailableAdminUser();
+		System.out.println("User Name: " + sFoundUser);
+		
+		
+		
 		
 		
 	}

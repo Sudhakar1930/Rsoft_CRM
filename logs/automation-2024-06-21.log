@@ -1,0 +1,503 @@
+12:59:16.477 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840047304
+12:59:16.477 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:59:16.477 [main] INFO  utilities.UtilityCustomFunctions - Actual:test@tester.com
+12:59:16.477 [main] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
+12:59:16.477 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:59:17.713 [main] INFO  utilities.UtilityCustomFunctions - Actual:asdfasdfasdf
+12:59:17.713 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:59:17.713 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:59:18.928 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:59:18.928 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:59:18.928 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:59:20.195 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+12:59:20.195 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+12:59:20.195 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+13:04:00.290 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+13:04:00.406 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:04:02.159 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:04:02.299 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:04:02.300 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:04:09.960 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+13:04:11.988 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+13:04:13.653 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+13:04:25.456 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:04:30.127 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:04:32.504 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+13:04:36.776 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:04:40.722 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:04:40.869 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+13:04:52.765 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [ETNotification Webform] is selected in List
+13:04:57.291 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [ETNotification Webform] is selected in List
+13:05:52.165 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+13:05:52.292 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:05:54.071 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:05:54.202 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:05:54.203 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:06:01.536 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+13:06:03.756 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+13:06:05.783 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+13:06:17.558 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:06:28.396 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:06:30.690 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+13:06:34.807 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:06:38.782 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:06:38.962 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+13:06:50.991 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [ETNotification Webform] is selected in List
+13:06:55.506 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [ETNotification Webform] is selected in List
+13:08:18.221 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:08:18.252 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:08:18.288 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:08:18.288 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:08:24.204 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Survey Form Url Launched..
+13:08:25.801 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Build Url Pass
+13:08:25.987 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
+13:08:25.987 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+13:08:25.987 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+13:08:25.987 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+13:08:27.469 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of PhoneNumber Control Title
+13:08:29.987 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Conrol Present
+13:08:31.064 [main] INFO  utilities.UtilityCustomFunctions - 9840051211 entered in  input
+13:08:32.623 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Entered
+13:08:33.878 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - PhoneNumber Next Clicked
+13:08:38.415 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Control Present
+13:08:38.454 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+13:08:38.454 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+13:08:38.454 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+13:08:38.454 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+13:08:39.868 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of Email Control Title
+13:08:40.402 [main] INFO  utilities.UtilityCustomFunctions - Testing@rsoft.in entered in  input
+13:08:40.433 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Id Entered
+13:08:42.009 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Next Clicked
+13:08:44.918 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Conrol Present
+13:08:44.952 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+13:08:44.952 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+13:08:44.952 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+13:08:44.952 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+13:08:46.349 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of TextQuestion Control Title
+13:08:46.751 [main] INFO  utilities.UtilityCustomFunctions - Testing entered in  textarea
+13:08:46.770 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Entered in TextAnswer Control
+13:08:48.375 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Next Clicked
+13:08:51.587 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+13:08:51.587 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+13:08:51.587 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+13:08:51.587 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+13:08:51.587 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+13:08:53.119 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of MultiSelect Control Title
+13:08:53.119 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+13:08:53.223 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+13:08:53.223 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+13:08:53.223 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+13:08:55.322 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+13:09:00.939 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Value Selected
+13:09:02.583 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Next Clicked
+13:09:05.867 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY -  Select an option..! *Actual Title 
+13:09:05.867 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+13:09:05.867 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+13:09:05.867 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+13:09:05.867 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+13:09:10.709 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [Tamilnadu] is selected in List
+13:09:10.709 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Item Selected
+13:09:15.486 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Next Clicked
+13:09:30.990 [main] INFO  utilities.UtilityCustomFunctions - Actual:Michelle Sean
+13:09:30.990 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kimberly
+13:09:30.990 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+13:09:32.254 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+13:09:32.254 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+13:09:32.254 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+13:09:33.470 [main] INFO  utilities.UtilityCustomFunctions - Actual:
+13:09:33.470 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840051211
+13:09:33.470 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+13:09:33.470 [main] INFO  utilities.UtilityCustomFunctions - Actual:test@tester.com
+13:09:33.470 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing@rsoft.in
+13:09:33.470 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+13:09:34.685 [main] INFO  utilities.UtilityCustomFunctions - Actual:asdfasdf
+13:09:34.685 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing
+13:09:34.686 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+13:09:35.903 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+13:09:35.903 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+13:09:35.903 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+13:09:37.120 [main] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+13:09:37.120 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+13:09:37.120 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+13:12:37.365 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+13:12:37.544 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:12:39.456 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:12:39.655 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:12:39.656 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:12:46.823 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+13:12:48.958 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+13:12:51.248 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+13:13:02.129 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:13:06.558 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:13:08.803 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+13:13:12.850 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:13:16.784 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:13:17.066 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+13:13:23.983 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:13:24.016 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:13:24.086 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:13:24.087 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:13:28.149 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Survey Form Url Launched..
+13:13:29.646 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Build Url Pass
+13:13:29.861 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
+13:13:29.861 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+13:13:29.861 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+13:13:29.861 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+13:13:31.297 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of PhoneNumber Control Title
+13:13:33.716 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Conrol Present
+13:13:34.700 [main] INFO  utilities.UtilityCustomFunctions - 9840009993 entered in  input
+13:13:36.132 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Entered
+13:13:37.416 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - PhoneNumber Next Clicked
+13:13:41.932 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Control Present
+13:13:41.964 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+13:13:41.964 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+13:13:41.964 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+13:13:41.964 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+13:13:43.382 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of Email Control Title
+13:13:43.881 [main] INFO  utilities.UtilityCustomFunctions - Testing@rsoft.in entered in  input
+13:13:43.912 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Id Entered
+13:13:45.520 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Next Clicked
+13:13:48.265 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Conrol Present
+13:13:48.296 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+13:13:48.296 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+13:13:48.296 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+13:13:48.296 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+13:13:49.697 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of TextQuestion Control Title
+13:13:50.082 [main] INFO  utilities.UtilityCustomFunctions - Testing entered in  textarea
+13:13:50.116 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Entered in TextAnswer Control
+13:13:51.716 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Next Clicked
+13:13:54.928 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+13:13:54.928 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+13:13:54.928 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+13:13:54.928 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+13:13:54.928 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+13:13:56.328 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of MultiSelect Control Title
+13:13:56.328 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+13:13:56.467 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+13:13:56.467 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+13:13:56.467 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+13:13:58.565 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+13:14:04.269 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Value Selected
+13:14:05.816 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Next Clicked
+13:14:08.998 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY -  Select an option..! *Actual Title 
+13:14:08.998 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+13:14:08.998 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+13:14:08.998 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+13:14:08.998 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+13:14:13.838 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [Tamilnadu] is selected in List
+13:14:13.838 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Item Selected
+13:14:18.506 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Next Clicked
+13:14:35.404 [main] INFO  utilities.UtilityCustomFunctions - Actual:Michelle Sean
+13:14:35.404 [main] INFO  utilities.UtilityCustomFunctions - Expected:Margaret
+13:14:35.404 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+13:14:36.665 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+13:14:36.665 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+13:14:36.665 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+13:14:37.915 [main] INFO  utilities.UtilityCustomFunctions - Actual:
+13:14:37.915 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840009993
+13:14:37.915 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+13:14:37.915 [main] INFO  utilities.UtilityCustomFunctions - Actual:test@tester.com
+13:14:37.915 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing@rsoft.in
+13:14:37.915 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+13:14:39.180 [main] INFO  utilities.UtilityCustomFunctions - Actual:asdfasdf
+13:14:39.180 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing
+13:14:39.180 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+13:14:40.398 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+13:14:40.398 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+13:14:40.398 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+13:14:41.615 [main] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+13:14:41.615 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+13:14:41.615 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+13:16:43.791 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+13:16:43.919 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:16:45.701 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:16:45.877 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:16:45.878 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:16:54.381 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+13:16:56.279 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+13:16:58.011 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+13:17:08.926 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:17:13.233 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:17:15.479 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+13:17:19.397 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:17:23.204 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:17:23.353 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+13:17:30.695 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:17:30.711 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:17:30.764 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:17:30.764 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:17:37.900 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Survey Form Url Launched..
+13:17:39.394 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Build Url Pass
+13:17:39.582 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
+13:17:39.582 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+13:17:39.582 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+13:17:39.582 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+13:17:41.055 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of PhoneNumber Control Title
+13:17:43.460 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Conrol Present
+13:17:44.395 [main] INFO  utilities.UtilityCustomFunctions - 9840060557 entered in  input
+13:17:45.890 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Entered
+13:17:47.128 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - PhoneNumber Next Clicked
+13:17:51.720 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Control Present
+13:17:51.751 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+13:17:51.751 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+13:17:51.751 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+13:17:51.751 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+13:17:53.206 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of Email Control Title
+13:17:53.706 [main] INFO  utilities.UtilityCustomFunctions - Testing@rsoft.in entered in  input
+13:17:53.722 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Id Entered
+13:17:55.314 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Next Clicked
+13:17:58.114 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Conrol Present
+13:17:58.140 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+13:17:58.140 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+13:17:58.140 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+13:17:58.140 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+13:17:59.653 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of TextQuestion Control Title
+13:18:00.060 [main] INFO  utilities.UtilityCustomFunctions - Testing entered in  textarea
+13:18:00.076 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Entered in TextAnswer Control
+13:18:01.723 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Next Clicked
+13:18:04.960 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+13:18:04.960 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+13:18:04.960 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+13:18:04.960 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+13:18:04.960 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+13:18:06.390 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of MultiSelect Control Title
+13:18:06.390 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+13:18:06.537 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+13:18:06.537 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+13:18:06.537 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+13:18:08.638 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+13:18:14.263 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Value Selected
+13:18:15.870 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Next Clicked
+13:18:19.130 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY -  Select an option..! *Actual Title 
+13:18:19.130 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+13:18:19.130 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+13:18:19.130 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+13:18:19.130 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+13:18:23.862 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [Tamilnadu] is selected in List
+13:18:23.862 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Item Selected
+13:18:28.588 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Next Clicked
+13:19:07.612 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+13:19:07.731 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:19:09.485 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:19:09.653 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:19:09.653 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:19:16.394 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+13:19:18.646 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+13:19:20.632 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+13:19:31.244 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:19:35.615 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:19:37.991 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+13:19:42.075 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+13:19:46.074 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+13:19:46.252 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+13:19:53.095 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+13:19:53.111 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+13:19:53.176 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+13:19:53.176 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+13:20:04.055 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Survey Form Url Launched..
+13:20:05.521 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Build Url Pass
+13:20:05.721 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
+13:20:05.721 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+13:20:05.721 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+13:20:05.721 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+13:20:07.124 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of PhoneNumber Control Title
+13:20:09.529 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Conrol Present
+13:20:10.506 [main] INFO  utilities.UtilityCustomFunctions - 9840066562 entered in  input
+13:20:11.957 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Entered
+13:20:13.280 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - PhoneNumber Next Clicked
+13:20:17.760 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Control Present
+13:20:17.806 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+13:20:17.806 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+13:20:17.806 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+13:20:17.806 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+13:20:19.175 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of Email Control Title
+13:20:19.654 [main] INFO  utilities.UtilityCustomFunctions - Testing@rsoft.in entered in  input
+13:20:19.686 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Id Entered
+13:20:21.266 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Next Clicked
+13:20:24.039 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Conrol Present
+13:20:24.071 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+13:20:24.071 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+13:20:24.071 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+13:20:24.071 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+13:20:25.474 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of TextQuestion Control Title
+13:20:25.862 [main] INFO  utilities.UtilityCustomFunctions - Testing entered in  textarea
+13:20:25.890 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Entered in TextAnswer Control
+13:20:27.436 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Next Clicked
+13:20:30.611 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+13:20:30.611 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+13:20:30.611 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+13:20:30.611 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+13:20:30.611 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+13:20:32.038 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of MultiSelect Control Title
+13:20:32.038 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+13:20:32.159 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+13:20:32.160 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+13:20:32.160 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+13:20:34.246 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+13:20:39.928 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Value Selected
+13:20:41.586 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Next Clicked
+13:20:44.828 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY -  Select an option..! *Actual Title 
+13:20:44.828 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+13:20:44.828 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+13:20:44.828 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+13:20:44.828 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+13:20:49.581 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [Tamilnadu] is selected in List
+13:20:49.581 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Item Selected
+13:20:54.225 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Next Clicked
+16:23:02.033 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+16:23:02.154 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+16:23:03.552 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+16:23:03.678 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+16:23:03.678 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+16:23:11.149 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:23:13.076 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:23:14.910 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:23:26.512 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+16:23:31.390 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+16:23:33.809 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+16:23:37.746 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+16:23:41.628 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+16:23:41.819 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+16:23:49.462 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+16:23:49.496 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+16:23:49.534 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+16:23:49.534 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+16:23:59.245 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Survey Form Url Launched..
+16:24:00.739 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Build Url Pass
+16:24:00.943 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
+16:24:00.943 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+16:24:00.943 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+16:24:00.943 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+16:24:02.389 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of PhoneNumber Control Title
+16:24:04.825 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Conrol Present
+16:24:05.828 [main] INFO  utilities.UtilityCustomFunctions - 9840044503 entered in  input
+16:24:07.339 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Entered
+16:24:08.633 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - PhoneNumber Next Clicked
+16:24:13.141 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Control Present
+16:24:13.188 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+16:24:13.188 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+16:24:13.188 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+16:24:13.188 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+16:24:14.600 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of Email Control Title
+16:24:15.172 [main] INFO  utilities.UtilityCustomFunctions - Testing@rsoft.in entered in  input
+16:24:15.204 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Id Entered
+16:24:16.795 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Next Clicked
+16:24:19.706 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Conrol Present
+16:24:19.738 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+16:24:19.738 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+16:24:19.738 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+16:24:19.738 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+16:24:21.158 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of TextQuestion Control Title
+16:24:21.543 [main] INFO  utilities.UtilityCustomFunctions - Testing entered in  textarea
+16:24:21.575 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Entered in TextAnswer Control
+16:24:23.166 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Next Clicked
+16:24:26.365 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+16:24:26.365 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+16:24:26.365 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+16:24:26.365 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+16:24:26.365 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+16:24:27.827 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of MultiSelect Control Title
+16:24:27.827 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+16:24:27.948 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+16:24:27.948 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+16:24:27.948 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+16:24:30.050 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+16:24:35.712 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Value Selected
+16:24:37.312 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Next Clicked
+16:24:40.565 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY -  Select an option..! *Actual Title 
+16:24:40.565 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+16:24:40.565 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+16:24:40.565 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+16:24:40.565 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+16:24:45.369 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [Tamilnadu] is selected in List
+16:24:45.369 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Item Selected
+16:24:50.127 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Next Clicked
+16:25:08.907 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kimberly Austin
+16:25:08.907 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kimberly Austin
+16:25:08.908 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:25:10.135 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:25:10.135 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:25:10.135 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:25:11.361 [main] INFO  utilities.UtilityCustomFunctions - Actual:
+16:25:11.361 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840044503
+16:25:11.361 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:25:11.361 [main] INFO  utilities.UtilityCustomFunctions - Actual:test@tester.com
+16:25:11.361 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing@rsoft.in
+16:25:11.361 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:25:12.610 [main] INFO  utilities.UtilityCustomFunctions - Actual:asdfasdf
+16:25:12.610 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing
+16:25:12.610 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:25:13.854 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+16:25:13.854 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+16:25:13.854 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:25:15.091 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+16:25:15.091 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:25:15.091 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:31:56.893 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Test Execution on Browser: chrome
+16:31:56.999 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+16:31:58.604 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+16:31:58.744 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+16:31:58.744 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+16:32:06.671 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:32:08.955 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:32:11.103 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:32:22.218 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+16:32:27.027 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+16:32:29.349 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu User Access Control
+16:32:33.590 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Avatar
+16:32:37.508 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Menu CRM Setting
+16:32:37.678 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Clicked Integration
+16:32:44.603 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Excel file Utility instance created
+16:32:44.638 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Row Count is: 9
+16:32:44.669 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Col Count is: 15
+16:32:44.669 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Extracting DataSheet Values started...
+16:32:50.174 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Survey Form Url Launched..
+16:32:51.663 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Build Url Pass
+16:32:51.883 [main] INFO  utilities.UtilityCustomFunctions - PN Control Title :  Please type your phone number *
+16:32:51.883 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type your phone number *
+16:32:51.883 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type your phone number *
+16:32:51.883 [main] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Control Title
+16:32:53.301 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of PhoneNumber Control Title
+16:32:55.700 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Conrol Present
+16:32:56.919 [main] INFO  utilities.UtilityCustomFunctions - 9840096645 entered in  input
+16:32:58.353 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Phone Number Entered
+16:32:59.655 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - PhoneNumber Next Clicked
+16:33:04.199 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Control Present
+16:33:04.230 [main] INFO  utilities.UtilityCustomFunctions - Email Control Title :  What is your email address? *
+16:33:04.230 [main] INFO  utilities.UtilityCustomFunctions - Actual:What is your email address? *
+16:33:04.230 [main] INFO  utilities.UtilityCustomFunctions - Expected:What is your email address? *
+16:33:04.230 [main] INFO  utilities.UtilityCustomFunctions - Message:Email Control Title
+16:33:05.651 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of Email Control Title
+16:33:06.234 [main] INFO  utilities.UtilityCustomFunctions - Testing@rsoft.in entered in  input
+16:33:06.270 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Id Entered
+16:33:07.859 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Email Next Clicked
+16:33:10.583 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Conrol Present
+16:33:10.614 [main] INFO  utilities.UtilityCustomFunctions - Text Question Choice Control Title :  Please type an answer ..! *
+16:33:10.614 [main] INFO  utilities.UtilityCustomFunctions - Actual:Please type an answer ..! *
+16:33:10.614 [main] INFO  utilities.UtilityCustomFunctions - Expected:Please type an answer ..! *
+16:33:10.614 [main] INFO  utilities.UtilityCustomFunctions - Message:TextQuestion Control Title
+16:33:12.018 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of TextQuestion Control Title
+16:33:12.416 [main] INFO  utilities.UtilityCustomFunctions - Testing entered in  textarea
+16:33:12.431 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Entered in TextAnswer Control
+16:33:14.025 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Text Question Next Clicked
+16:33:17.292 [main] INFO  utilities.UtilityCustomFunctions - MS Control Title :  Select your choices..! *
+16:33:17.292 [main] INFO  utilities.UtilityCustomFunctions -  Select your choices..! *
+16:33:17.292 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select your choices..! *
+16:33:17.292 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select your choices..! *
+16:33:17.292 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect Control Title
+16:33:18.701 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - Validation of MultiSelect Control Title
+16:33:18.701 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Value:one
+16:33:18.819 [main] INFO  utilities.UtilityCustomFunctions - MultiSelect Drop Down Button Clicked
+16:33:18.819 [main] INFO  utilities.UtilityCustomFunctions - Expected MultiSelect Value count: 1
+16:33:18.819 [main] INFO  utilities.UtilityCustomFunctions - Items in Multiselect Count: 5
+16:33:20.908 [main] INFO  utilities.UtilityCustomFunctions - Item Selected in MultiSelect: one
+16:33:26.636 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Value Selected
+16:33:28.202 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiSelect Next Clicked
+16:33:31.423 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY -  Select an option..! *Actual Title 
+16:33:31.423 [main] INFO  utilities.UtilityCustomFunctions - Multi Choice Control Title :  Select an option..! *
+16:33:31.423 [main] INFO  utilities.UtilityCustomFunctions - Actual:Select an option..! *
+16:33:31.423 [main] INFO  utilities.UtilityCustomFunctions - Expected:Select an option..! *
+16:33:31.423 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice Control Title
+16:33:36.194 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - [Tamilnadu] is selected in List
+16:33:36.194 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Item Selected
+16:33:40.823 [main] INFO  testCases.WebForms.TC010_WF_RRUserYN_OneConditionY - MultiChoice Next Clicked

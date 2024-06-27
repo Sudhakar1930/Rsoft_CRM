@@ -82,6 +82,8 @@ public class BaseClass extends ExtentReportManager{
 			options.addArguments("--disable-infobars");
 			options.addArguments("--disable-extensions");
 			options.addArguments("-–disable-notifications");
+			//To Run Survey form & Chat bot Scripts.
+//			options.setExperimentalOption("debuggerAddress", "localhost:9992");
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 //			options.addArguments("--headless");     
 	        //options.addArguments("--disable-gpu");

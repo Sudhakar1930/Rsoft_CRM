@@ -14,19 +14,19 @@ import testBase.BaseClass;
 import utilities.CRMReUsables;
 import utilities.ExcelUtility;
 
-public class TC004_WF_AllValidUser_ConditionAllYes extends BaseClass{
+public class TC004_WF_RRUserY_OneConditionY extends BaseClass{
 	@BeforeTest
 	public void testName() {
-		test = extent.createTest("TC004_WF_AllValidUser_ConditionAllYes");
+		test = extent.createTest("TC004_WF_RRUserY_OneConditionY");
 	}
 	@Test	
 	public void testWebFormUser() throws Exception {
 		
-		node = test.createNode("NoAvailUsersRR_NoCondition");
+		node = test.createNode("RRUserY_OneConditionY");
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_AllValidUser_ConditionAllYes_";
+		String sPath="\\WebForm\\WF_RRUserY_OneConditionY_";
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
 		UserPage objUP = new UserPage(driver);
@@ -35,7 +35,7 @@ public class TC004_WF_AllValidUser_ConditionAllYes extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\" + "WF_AllValidUser_ConditionAllYes" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\" + "WF_RRUserY_OneConditionY" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");
@@ -187,9 +187,7 @@ public class TC004_WF_AllValidUser_ConditionAllYes extends BaseClass{
 				String sUnMatchUserList="";
 				sUnMatchUserList = sUserName1+":"+sUserName2+":"+sUserName3+":"+sUserName4;
 				
-
-					
-					sMatchUsersList=sUserName5+":"+sUserName6;
+				sMatchUsersList=sUserName5+":"+sUserName6;
 
 				objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 				objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
@@ -247,6 +245,8 @@ public class TC004_WF_AllValidUser_ConditionAllYes extends BaseClass{
 						ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 					}//If RunFlag
 				}
+				Thread.sleep(2000);
+				objHP.clickLogoutCRM();
 	}//Test
 	
 }

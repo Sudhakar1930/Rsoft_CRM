@@ -14,20 +14,20 @@ import testBase.BaseClass;
 import utilities.CRMReUsables;
 import utilities.ExcelUtility;
 
-public class TC003_WF_NoAvailUsersRR_NoCondition extends BaseClass{
+public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 	@BeforeTest
 	public void testName() {
-		test = extent.createTest("TC003_WF_NoAvailableUser_NoCondition");
+		test = extent.createTest("TC003_WF_RRUsersN_NoCondition");
 	}
 	
 	@Test	
 	public void testWebFormUser() throws Exception {
 		
-		node = test.createNode("NoAvailUsersRR_NoCondition");
+		node = test.createNode("RRUsersN_NoCondition");
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_NoAvailUsersRR_NoCondition_";
+		String sPath="\\WebForm\\WF_RRUserN_NoCondition_";
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
 		UserPage objUP = new UserPage(driver);
@@ -36,7 +36,7 @@ public class TC003_WF_NoAvailUsersRR_NoCondition extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\" + "WF_NoAvailUsersRR_NoCondition" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\" + "WF_RRUserN_NoCondition" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");
@@ -96,82 +96,86 @@ public class TC003_WF_NoAvailUsersRR_NoCondition extends BaseClass{
 		Thread.sleep(3000);
 		ObjCRMRs.fNavigatetoUserMgmt();
 		
-		if(objUP.fGetFirstAvailableUser()!=null) {
-			System.out.println("First User Name:" + objUP.fGetFirstAvailableUser());
-			sDefaultAssignToUser = objUP.fGetFirstAvailableUser();
+		if(objUP.fGetFirstAvailableAdminUser()!=null) {
+			System.out.println("First Available Admin User Name:" + objUP.fGetFirstAvailableAdminUser());
+			sDefaultAssignToUser = objUP.fGetFirstAvailableAdminUser();
 		}
-		else if(objUP.fGetFirstAdminUser()!=null) {
-			System.out.println("First Admin User Name:" + objUP.fGetFirstAdminUser());
-			sDefaultAssignToUser = objUP.fGetFirstAdminUser();
+		else if(objUP.fGetFirstAvailableNonAdminUser()!=null) {
+			System.out.println("First Available Non Admin User:" + objUP.fGetFirstAvailableNonAdminUser());
+			sDefaultAssignToUser = objUP.fGetFirstAvailableNonAdminUser();
 		}
-		else if(objUP.fGetFirstActiveUser()!=null) {
-			sDefaultAssignToUser = objUP.fGetFirstActiveUser();
+		else if(objUP.fGetFirstAdminNonAvailabilityUser()!=null) {
+			System.out.println("First Admin Non Availability User:" + objUP.fGetFirstAdminNonAvailabilityUser());
+			sDefaultAssignToUser = objUP.fGetFirstAdminNonAvailabilityUser();
+		}
+		else if(objUP.fGetFirstActiveNonAdminUser()!=null) {
+			sDefaultAssignToUser = objUP.fGetFirstActiveNonAdminUser();
+			System.out.println("First Active Non Admin User Name:" + objUP.fGetFirstActiveNonAdminUser());
 		}
 		else {
 			sDefaultAssignToUser  = "rsoft";
 		}
+		String sCurrUserName="";
+		sCurrUserName = sDefaultAssignToUser;
 		// *********** Check User Details From Test Data is Neither Available  nor Admin ********
-//		System.out.println("User Name 1: " + sUserName1);
-//		if(objUP.fSearchUser(sUserName1)==1) {
-//			IsAvail = objUP.fGetUserAvailability();
-//			IsAdmin = objUP.fGetUserAdmin();
-//			if(IsAvail.equalsIgnoreCase(sUser1Avail) && IsAdmin.equalsIgnoreCase(sUser1Admin)) {
-//				bFlag = true;
-//				System.out.println(IsAvail);
-//				System.out.println(IsAdmin);
-//			}
-//			if(bFlag==false) {
-//				System.out.println("Invalid User in Round Robin:" + sUserName1);
-//				Assert.fail("InValid User:" + sUserName1);
-//			}
-//		}
-//		ObjCRMRs.fNavigatetoUserMgmt();
-//		System.out.println("User Name 2: " + sUserName2);
-//		if(objUP.fSearchUser(sUserName2)==1) {
-//			IsAvail = objUP.fGetUserAvailability();
-//			IsAdmin = objUP.fGetUserAdmin();
-//			if(IsAvail.equalsIgnoreCase(sUser2Avail) && IsAdmin.equalsIgnoreCase(sUser2Admin)) {
-//				bFlag = true;
-//				System.out.println(IsAvail);
-//				System.out.println(IsAdmin);
-//			}
-//			if(bFlag==false) {
-//				System.out.println("Invalid User in Round Robin:" + sUserName2);
-//			}
-//		}
-//		ObjCRMRs.fNavigatetoUserMgmt();
-//		if(objUP.fSearchUser(sUserName3)==1) {
-//			IsAvail = objUP.fGetUserAvailability();
-//			IsAdmin = objUP.fGetUserAdmin();
-//			if(IsAvail.equalsIgnoreCase(sUser3Avail) && IsAdmin.equalsIgnoreCase(sUser3Admin)) {
-//				bFlag = true;
-//				System.out.println(IsAvail);
-//				System.out.println(IsAdmin);
-//			}
-//			if(bFlag==false) {
-//				System.out.println("Invalid User in Round Robin:" + sUserName3);
-//			}
-//		}
-//		ObjCRMRs.fNavigatetoUserMgmt();
-//		if(objUP.fSearchUser(sUserName4)==1) {
-//			IsAvail = objUP.fGetUserAvailability();
-//			IsAdmin = objUP.fGetUserAdmin();
-//			if(IsAvail.equalsIgnoreCase(sUser4Avail) && IsAdmin.equalsIgnoreCase(sUser4Admin)) {
-//				bFlag = true;
-//				System.out.println(IsAvail);
-//				System.out.println(IsAdmin);
-//			}
-//			if(bFlag==false) {
-//				System.out.println("Invalid User in Round Robin:" + sUserName4);
-//			}
-//		}
+		System.out.println("User Name 1: " + sUserName1);
+		if(objUP.fSearchUser(sUserName1)==1) {
+			IsAvail = objUP.fGetUserAvailability();
+			IsAdmin = objUP.fGetUserAdmin();
+			if(IsAvail.equalsIgnoreCase(sUser1Avail) && IsAdmin.equalsIgnoreCase(sUser1Admin)) {
+				bFlag = true;
+				System.out.println(IsAvail);
+				System.out.println(IsAdmin);
+			}
+			if(bFlag==false) {
+				System.out.println("Invalid User in Round Robin:" + sUserName1);
+				Assert.fail("InValid User:" + sUserName1);
+			}
+		}
+		ObjCRMRs.fNavigatetoUserMgmt();
+		System.out.println("User Name 2: " + sUserName2);
+		if(objUP.fSearchUser(sUserName2)==1) {
+			IsAvail = objUP.fGetUserAvailability();
+			IsAdmin = objUP.fGetUserAdmin();
+			if(IsAvail.equalsIgnoreCase(sUser2Avail) && IsAdmin.equalsIgnoreCase(sUser2Admin)) {
+				bFlag = true;
+				System.out.println(IsAvail);
+				System.out.println(IsAdmin);
+			}
+			if(bFlag==false) {
+				System.out.println("Invalid User in Round Robin:" + sUserName2);
+			}
+		}
+		ObjCRMRs.fNavigatetoUserMgmt();
+		if(objUP.fSearchUser(sUserName3)==1) {
+			IsAvail = objUP.fGetUserAvailability();
+			IsAdmin = objUP.fGetUserAdmin();
+			if(IsAvail.equalsIgnoreCase(sUser3Avail) && IsAdmin.equalsIgnoreCase(sUser3Admin)) {
+				bFlag = true;
+				System.out.println(IsAvail);
+				System.out.println(IsAdmin);
+			}
+			if(bFlag==false) {
+				System.out.println("Invalid User in Round Robin:" + sUserName3);
+			}
+		}
+		ObjCRMRs.fNavigatetoUserMgmt();
+		if(objUP.fSearchUser(sUserName4)==1) {
+			IsAvail = objUP.fGetUserAvailability();
+			IsAdmin = objUP.fGetUserAdmin();
+			if(IsAvail.equalsIgnoreCase(sUser4Avail) && IsAdmin.equalsIgnoreCase(sUser4Admin)) {
+				bFlag = true;
+				System.out.println(IsAvail);
+				System.out.println(IsAdmin);
+			}
+			if(bFlag==false) {
+				System.out.println("Invalid User in Round Robin:" + sUserName4);
+			}
+		}
 		String sUsersList="";
-//		if(bFlag==true) {
-			
-			sUsersList=sUserName1+":"+sUserName2+":"+sUserName3+":"+sUserName4;
-//		}
 		
-//		ObjCRMRs.fConfigureWebForm(sUsersList,sModuleName,sWebFormName);
+		sUsersList=sUserName1+":"+sUserName2+":"+sUserName3+":"+sUserName4;
+		
 		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
 		objWFP.fSetRoundRobinUsers(true,sUsersList);
@@ -180,7 +184,6 @@ public class TC003_WF_NoAvailUsersRR_NoCondition extends BaseClass{
 		Thread.sleep(3000);
 		
 		String sUserArray[]= sUsersList.split(":");
-		String sCurrUserName="";
 		sRun_Flag  = "";
 		for(int i=1;i<=iRowCount;i++) {
 			
@@ -188,7 +191,7 @@ public class TC003_WF_NoAvailUsersRR_NoCondition extends BaseClass{
 			sXQ_Value = xlObj.getCellData("Sheet1", i, 9);
 			sMS_Value = xlObj.getCellData("Sheet1", i, 11);
 			sRun_Flag = xlObj.getCellData("Sheet1", i, 12);
-			sMC_Value = xlObj.getCellData("Sheet1", 1, 29);
+			sMC_Value = xlObj.getCellData("Sheet1", i, 29);
 			
 			if(sRun_Flag.trim().equalsIgnoreCase("Yes")) {
 				
@@ -210,6 +213,7 @@ public class TC003_WF_NoAvailUsersRR_NoCondition extends BaseClass{
 			}	
 			
 		}//for Loop
-		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test	
 }

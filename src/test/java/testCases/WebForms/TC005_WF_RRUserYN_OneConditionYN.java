@@ -264,5 +264,7 @@ public class TC005_WF_RRUserYN_OneConditionYN extends  BaseClass{
 		
 		}//for Loop
 		
-	}	
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
+	}//Test	
 }

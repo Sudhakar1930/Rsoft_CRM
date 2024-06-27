@@ -8,13 +8,15 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.WebForms.TC004_WF_AllValidUser_ConditionAllYes"/> 
-	 </classes>	
+		  <class name="testCases.WebForms.TC031_WF_RRYN_OneN_TwoN"/>
+		  
+	</classes>	
 	  <!--
 	  <class name="testCases.AddNewUser"/>
-	  
+	  <class name="testCases.SelectWebFormName"/>
+	  <class name="testCases.WebForms.TC013_WF_RRN_OneN_TwoN"/>
 	  <class name="testCases.ExecuteTask.Notification.TC036_NT_ET_ETRS_DTBeforeDays"/>
-	  <class name="testCases.TC008_WF2_SN_Daily"/>
+	  <class name="testCases.SelectWebFormName"/>
 		<class name="testCases.ExecuteTask.Notification.TC037_NT_ET_ETRM_CTAfterMinutes"/>  
 		<class name="testCases.ExecuteTask.Notification.TC026_NT_ET_ETRS_DateBeforeDays"/>
 		<class name="testCases.ExecuteTask.Notification.TC004_NT_ExecuteTask_MTAfterMinutes"/>

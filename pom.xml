@@ -31,9 +31,59 @@
     </pluginManagement>
   </build>
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
- 
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>rest-assured</artifactId>
+	    <version>5.4.0</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- for OAuth1 and OAuth2 Authentication -->
+	<dependency>
+	    <groupId>com.github.scribejava</groupId>
+	    <artifactId>scribejava-apis</artifactId>
+	    <version>8.3.3</version>
+	    <scope>runtime</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>json-schema-validator</artifactId>
+	    <version>5.4.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+	<dependency>
+	    <groupId>com.github.javafaker</groupId>
+	    <artifactId>javafaker</artifactId>
+	    <version>1.0.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>json-path</artifactId>
+	    <version>5.4.0</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.json/json -->
+	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20240303</version>
+	   	</dependency> 
+	<!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
+	<dependency>
+	    <groupId>xml-apis</groupId>
+	    <artifactId>xml-apis</artifactId>
+	    <version>2.0.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+	<dependency>
+	    <groupId>com.google.code.gson</groupId>
+	    <artifactId>gson</artifactId>
+	    <version>2.10.1</version>
+	</dependency>
+  <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+ 	<dependency>
 	    <groupId>com.mysql</groupId>
 	    <artifactId>mysql-connector-j</artifactId>
 	    <version>8.2.0</version>

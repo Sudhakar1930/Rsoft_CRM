@@ -638,6 +638,7 @@ public class CRMReUsables extends BaseClass {
 			String sActText = UtilityCustomFunctions.getText(driver, tColCount.get(5));
 			String sActMultiSelect = UtilityCustomFunctions.getText(driver, tColCount.get(6));
 			String sActState= UtilityCustomFunctions.getText(driver, tColCount.get(7));
+			sActAssignedTo = UtilityCustomFunctions.getText(driver, tColCount.get(1));
 
 			System.out.println("Actual Assigned: " + sActAssignedTo);
 			System.out.println("Actual MobileNoPrefix: " + sActMobilePrefix);
@@ -1113,7 +1114,7 @@ public class CRMReUsables extends BaseClass {
 			Thread.sleep(3000);
 			IndvObj.clickSubmit();
 			logger.info("MultiChoice Next Clicked");
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 			
 		}
 	}

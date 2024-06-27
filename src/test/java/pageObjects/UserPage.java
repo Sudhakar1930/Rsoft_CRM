@@ -232,35 +232,50 @@ public class UserPage extends BasePage{
 	
 		//******************* Get Methods ***************************************
 		
-		public String fGetFirstAvailableUser() throws InterruptedException {
+		public String fGetFirstAvailableAdminUser() throws InterruptedException {
 		boolean bFlag = false;
 		boolean bUserFound =  false;
 		String sUNPath = "";
 		String sXpath = "";
 		String sUserName = "";
+		String sAdminPath="";
 		 outerloop:
 		 do{
 			int iRowCount = tblUsersTr.size();
 			for(int i=1;i<=iRowCount;i++) {
+				int k=0;
 				sXpath = "(//table[@class='table table-striped']//tr//span[@class='switchery switchery-default']/small)[" + i + "]";
-				sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+//				sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+				
+				k = i + 1;
+				sAdminPath="//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[7]";
+				sUNPath = "//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[3]";
 				WebElement eleUserCol = driver.findElement(By.xpath(sUNPath));
 				WebElement eleTglAvailability = driver.findElement(By.xpath(sXpath));
+				WebElement eleAdminYes= driver.findElement(By.xpath(sAdminPath));
 				String sUserDetail = eleUserCol.getText();
+				String sAdminToggle = eleAdminYes.getText();
 //				System.out.println("UserDetails:" + sUserDetail);
 				String[] sSplitUserArr = sUserDetail.split("\\s+");
 //				System.out.println("Array 0 Index Name" + sSplitUserArr[0]);
+				System.out.println("Admin Xpath:"+sAdminPath);
+				System.out.println("UserName Xpath:"+sUNPath);
+				System.out.println("Availability Xpath:"+sXpath);
+				
+				System.out.println("UserName:"+sSplitUserArr[0] +":Admin:"+sAdminToggle+":Availability:"+eleTglAvailability.getAttribute("style"));
 				if(!sSplitUserArr[0].equalsIgnoreCase("rsoft")) {
+				if(sAdminToggle.trim().equalsIgnoreCase("Yes")){
 				String sAttrValues =eleTglAvailability.getAttribute("style");
 //				System.out.println(sSplitUserArr[0] + " Availability: " + sAttrValues);
 					if(sAttrValues.contains("11px")) {
-						sUserName = sSplitUserArr[0];
+						sUserName = sUserDetail;
 						System.out.println("Within User with Availability:" + sUserName);
 						bUserFound = true;
 						break outerloop;
-					}
-				}
-			}
+					}//if Availability
+				}//Is Admin
+			  }//Is Not RSoft
+			}//For Loop Current Page
 			if(btnRightNavigate.isEnabled()==false) {
 				bFlag =true;
 			}
@@ -274,6 +289,62 @@ public class UserPage extends BasePage{
 		 }
 		 return sUserName; 
 	}
+	//*************Get First Available Non Admin User ***************
+		public String fGetFirstAvailableNonAdminUser() throws InterruptedException {
+			boolean bFlag = false;
+			boolean bUserFound =  false;
+			String sUNPath = "";
+			String sXpath = "";
+			String sUserName = "";
+			String sAdminPath="";
+			 outerloop:
+			 do{
+				int iRowCount = tblUsersTr.size();
+				for(int i=1;i<=iRowCount;i++) {
+					int k = 0;
+					sXpath = "(//table[@class='table table-striped']//tr//span[@class='switchery switchery-default']/small)[" + i + "]";
+//					sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+					k = i + 1;
+					sAdminPath="//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[7]";
+					sUNPath = "//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[3]";
+					WebElement eleUserCol = driver.findElement(By.xpath(sUNPath));
+					WebElement eleTglAvailability = driver.findElement(By.xpath(sXpath));
+					WebElement eleAdminYes= driver.findElement(By.xpath(sAdminPath));
+					String sUserDetail = eleUserCol.getText();
+					String sAdminToggle = eleAdminYes.getText();
+//					System.out.println("UserDetails:" + sUserDetail);
+					String[] sSplitUserArr = sUserDetail.split("\\s+");
+//					System.out.println("Array 0 Index Name" + sSplitUserArr[0]);
+					if(!sSplitUserArr[0].equalsIgnoreCase("rsoft")) {
+					if(sAdminToggle.trim().equalsIgnoreCase("No")){
+					String sAttrValues =eleTglAvailability.getAttribute("style");
+//					System.out.println(sSplitUserArr[0] + " Availability: " + sAttrValues);
+						if(sAttrValues.contains("11px")) {
+//							sUserName = sSplitUserArr[0];
+							sUserName = sUserDetail;
+							System.out.println("Within User with Availability:" + sUserName);
+							bUserFound = true;
+							break outerloop;
+						}//if Availability
+					}//Is Admin
+				  }//Is Not RSoft
+				}//For Loop Current Page
+				if(btnRightNavigate.isEnabled()==false) {
+					bFlag =true;
+				}
+				if(btnRightNavigate.isEnabled()==true) {
+					btnRightNavigate.click();
+					Thread.sleep(3000);
+				}
+			}while(bFlag==false);
+			 if(bUserFound==false) {
+				 sUserName = null;
+			 }
+			 return sUserName; 
+		}
+		
+		
+		
 	public int fSearchUser(String sUserName) {
 		UserPage objUP = new UserPage(driver);
 		int i=0;
@@ -363,7 +434,110 @@ public class UserPage extends BasePage{
 		 }
 		 return sUserName; 
 	}
-	
+	// ******************** First Admin Non Availability User ****************
+	public String fGetFirstAdminNonAvailabilityUser() throws InterruptedException {
+		boolean bFlag = false;
+		boolean bUserFound =  false;
+		String sUNPath = "";
+		String sXpath = "";
+		String sUserName = "";
+		String sAdminPath="";
+		 outerloop:
+		 do{
+			int iRowCount = tblUsersTr.size();
+			for(int i=1;i<=iRowCount;i++) {
+				int k = 0;
+				sXpath = "(//table[@class='table table-striped']//tr//span[@class='switchery switchery-default']/small)[" + i + "]";
+//				sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+				k = i + 1;
+				sAdminPath="//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[7]";
+				sUNPath = "//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[3]";
+				WebElement eleUserCol = driver.findElement(By.xpath(sUNPath));
+				WebElement eleTglAvailability = driver.findElement(By.xpath(sXpath));
+				WebElement eleAdminYes= driver.findElement(By.xpath(sAdminPath));
+				String sUserDetail = eleUserCol.getText();
+				String sAdminToggle = eleAdminYes.getText();
+//				System.out.println("UserDetails:" + sUserDetail);
+				String[] sSplitUserArr = sUserDetail.split("\\s+");
+//				System.out.println("Array 0 Index Name" + sSplitUserArr[0]);
+				if(!sSplitUserArr[0].equalsIgnoreCase("rsoft")) {
+				if(sAdminToggle.trim().equalsIgnoreCase("Yes")){
+				String sAttrValues =eleTglAvailability.getAttribute("style");
+//				System.out.println(sSplitUserArr[0] + " Availability: " + sAttrValues);
+					if(sAttrValues.contains("0px")) {
+						sUserName = sUserDetail;
+						System.out.println("Within User with Availability:" + sUserName);
+						bUserFound = true;
+						break outerloop;
+					}//if Availability
+				}//Is Admin
+			  }//Is Not RSoft
+			}//For Loop Current Page
+			if(btnRightNavigate.isEnabled()==false) {
+				bFlag =true;
+			}
+			if(btnRightNavigate.isEnabled()==true) {
+				btnRightNavigate.click();
+				Thread.sleep(3000);
+			}
+		}while(bFlag==false);
+		 if(bUserFound==false) {
+			 sUserName = null;
+		 }
+		 return sUserName; 
+	}
+	//**************** First Active Non Admin User **********************
+	public String fGetFirstActiveNonAdminUser() throws InterruptedException {
+		boolean bFlag = false;
+		boolean bUserFound =  false;
+		String sUNPath = "";
+		String sXpath = "";
+		String sUserName = "";
+		String sAdminPath="";
+		 outerloop:
+		 do{
+			int iRowCount = tblUsersTr.size();
+			for(int i=1;i<=iRowCount;i++) {
+				int k = 0;
+				sXpath = "(//table[@class='table table-striped']//tr//span[@class='switchery switchery-default']/small)[" + i + "]";
+//				sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+				k = i + 1;
+				sAdminPath="//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[7]";
+				sUNPath = "//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[3]";
+				WebElement eleUserCol = driver.findElement(By.xpath(sUNPath));
+				WebElement eleTglAvailability = driver.findElement(By.xpath(sXpath));
+				WebElement eleAdminYes= driver.findElement(By.xpath(sAdminPath));
+				String sUserDetail = eleUserCol.getText();
+				String sAdminToggle = eleAdminYes.getText();
+//				System.out.println("UserDetails:" + sUserDetail);
+				String[] sSplitUserArr = sUserDetail.split("\\s+");
+//				System.out.println("Array 0 Index Name" + sSplitUserArr[0]);
+				if(!sSplitUserArr[0].equalsIgnoreCase("rsoft")) {
+				if(sAdminToggle.trim().equalsIgnoreCase("No")){
+				    String sAttrValues =eleTglAvailability.getAttribute("style");
+				    if(sAttrValues.contains("0px")) {
+	                    sUserName = sUserDetail;
+						System.out.println("Within User with Availability:" + sUserName);
+						bUserFound = true;
+						break outerloop;
+					}//if Availability
+					  
+				}//Is Admin
+			  }//Is Not RSoft
+			}//For Loop Current Page
+			if(btnRightNavigate.isEnabled()==false) {
+				bFlag =true;
+			}
+			if(btnRightNavigate.isEnabled()==true) {
+				btnRightNavigate.click();
+				Thread.sleep(3000);
+			}
+		}while(bFlag==false);
+		 if(bUserFound==false) {
+			 sUserName = null;
+		 }
+		 return sUserName; 
+	}
 	//Get First Active User Other Than RSoft
 	public String fGetFirstActiveUser() throws InterruptedException {
 		boolean bFlag = false;
@@ -375,8 +549,10 @@ public class UserPage extends BasePage{
 		 do{
 			int iRowCount = tblUsersTr.size();
 			for(int i=1;i<=iRowCount;i++) {
-				
-				sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+				int k=0;
+				k = i + 1;
+//				sUNPath = "(//table[@class='table table-striped']//tr//div[@class='col-sm-9'])[" + i + "]";
+				sUNPath = "//*[@id='userlistview']/table/tbody/tr["+ k +"]/td[3]";
 				WebElement eleUserCol = driver.findElement(By.xpath(sUNPath));
 				String sUserDetail = eleUserCol.getText();
 				String[] sSplitUserArr = sUserDetail.split("\\s+");
