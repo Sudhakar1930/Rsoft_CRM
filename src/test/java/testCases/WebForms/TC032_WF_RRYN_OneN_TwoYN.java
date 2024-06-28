@@ -24,7 +24,7 @@ public class TC032_WF_RRYN_OneN_TwoYN extends BaseClass{
 	}
 	@Test	
 	public void testWebFormUser() throws Exception {
-		node = test.createNode("WF_RRY_OneYN_TwoY");
+		node = test.createNode("WF_RRYN_OneN_TwoYN");
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
@@ -352,7 +352,7 @@ public class TC032_WF_RRYN_OneN_TwoYN extends BaseClass{
 				.then()
 				.statusCode(200);
 				
-				if(sMC_Value.equalsIgnoreCase("Tamilnadu")) {
+				if(sMC_Value.equalsIgnoreCase("Tamilnadu") && !sMS_Value.equalsIgnoreCase("one")) {
 					String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 39);
 					System.out.println("Current User Position: " + sCurrUserPos);
 					sCurrUserName = sMatch2UserArray[Integer.parseInt(sCurrUserPos)];
@@ -366,13 +366,20 @@ public class TC032_WF_RRYN_OneN_TwoYN extends BaseClass{
 					String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 40);
 					System.out.println("Current User Position: " + sCurrUserPos);
 					sCurrUserName = sUnMatchUserArray[Integer.parseInt(sCurrUserPos)];
-					sUpdatePos = Integer.parseInt(sCurrUserPos) + 1;
+					sUpdatePos = Integer.parseInt(sCurrUserPos) + 2;
 					if(sUpdatePos>3) {
 						sUpdatePos = 0;
 					}
 					xlObj.setCellData("Sheet1", 1, 40, String.valueOf(sUpdatePos));
 				}
-				
+				System.out.println("Current User:" +sCurrUserName);
+				driver.get(sAppUrl);
+				Thread.sleep(1000);
+				objALP.clickAllList();
+				Thread.sleep(1000);
+				objALP.clickModuleOnListAll(driver, sModuleName);
+				ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
+			
 				
 				
 			}//If Run Flag

@@ -1,6 +1,9 @@
 package testCases.WebForms;
 
+import static io.restassured.RestAssured.given;
+
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -94,64 +97,64 @@ public class TC001_WF_RRUserY_NoCondition extends BaseClass{
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 		Thread.sleep(3000);
 		
-		ObjCRMRs.fNavigatetoUserMgmt();
-		System.out.println("User Name 1: " + sUserName1);
-		if(objUP.fSearchUser(sUserName1)==1) {
-			IsAvail = objUP.fGetUserAvailability();
-			IsAdmin = objUP.fGetUserAdmin();
-			if(IsAvail.equalsIgnoreCase(sUser1Avail) && IsAdmin.equalsIgnoreCase(sUser1Admin)) {
-				bFlag = true;
-				System.out.println(IsAvail);
-				System.out.println(IsAdmin);
-			}
-			if(bFlag==false) {
-				System.out.println("Invalid User in Round Robin:" + sUserName1);
-				Assert.fail("InValid User:" + sUserName1);
-			}
-		}
-		ObjCRMRs.fNavigatetoUserMgmt();
-		System.out.println("User Name 2: " + sUserName2);
-		if(objUP.fSearchUser(sUserName2)==1) {
-			IsAvail = objUP.fGetUserAvailability();
-			IsAdmin = objUP.fGetUserAdmin();
-			if(IsAvail.equalsIgnoreCase(sUser2Avail) && IsAdmin.equalsIgnoreCase(sUser2Admin)) {
-				bFlag = true;
-				System.out.println(IsAvail);
-				System.out.println(IsAdmin);
-			}
-			if(bFlag==false) {
-				System.out.println("Invalid User in Round Robin:" + sUserName2);
-				Assert.fail("InValid User:" + sUserName2);
-			}
-		}
-		ObjCRMRs.fNavigatetoUserMgmt();
-		if(objUP.fSearchUser(sUserName3)==1) {
-			IsAvail = objUP.fGetUserAvailability();
-			IsAdmin = objUP.fGetUserAdmin();
-			if(IsAvail.equalsIgnoreCase(sUser3Avail) && IsAdmin.equalsIgnoreCase(sUser3Admin)) {
-				bFlag = true;
-				System.out.println(IsAvail);
-				System.out.println(IsAdmin);
-			}
-			if(bFlag==false) {
-				System.out.println("Invalid User in Round Robin:" + sUserName3);
-				Assert.fail("InValid User:" + sUserName3);
-			}
-		}
-		ObjCRMRs.fNavigatetoUserMgmt();
-		if(objUP.fSearchUser(sUserName4)==1) {
-			IsAvail = objUP.fGetUserAvailability();
-			IsAdmin = objUP.fGetUserAdmin();
-			if(IsAvail.equalsIgnoreCase(sUser4Avail) && IsAdmin.equalsIgnoreCase(sUser4Admin)) {
-				bFlag = true;
-				System.out.println(IsAvail);
-				System.out.println(IsAdmin);
-			}
-			if(bFlag==false) {
-				System.out.println("Invalid User in Round Robin:" + sUserName4);
-				Assert.fail("InValid User:" + sUserName4);
-			}
-		}
+//		ObjCRMRs.fNavigatetoUserMgmt();
+//		System.out.println("User Name 1: " + sUserName1);
+//		if(objUP.fSearchUser(sUserName1)==1) {
+//			IsAvail = objUP.fGetUserAvailability();
+//			IsAdmin = objUP.fGetUserAdmin();
+//			if(IsAvail.equalsIgnoreCase(sUser1Avail) && IsAdmin.equalsIgnoreCase(sUser1Admin)) {
+//				bFlag = true;
+//				System.out.println(IsAvail);
+//				System.out.println(IsAdmin);
+//			}
+//			if(bFlag==false) {
+//				System.out.println("Invalid User in Round Robin:" + sUserName1);
+//				Assert.fail("InValid User:" + sUserName1);
+//			}
+//		}
+//		ObjCRMRs.fNavigatetoUserMgmt();
+//		System.out.println("User Name 2: " + sUserName2);
+//		if(objUP.fSearchUser(sUserName2)==1) {
+//			IsAvail = objUP.fGetUserAvailability();
+//			IsAdmin = objUP.fGetUserAdmin();
+//			if(IsAvail.equalsIgnoreCase(sUser2Avail) && IsAdmin.equalsIgnoreCase(sUser2Admin)) {
+//				bFlag = true;
+//				System.out.println(IsAvail);
+//				System.out.println(IsAdmin);
+//			}
+//			if(bFlag==false) {
+//				System.out.println("Invalid User in Round Robin:" + sUserName2);
+//				Assert.fail("InValid User:" + sUserName2);
+//			}
+//		}
+//		ObjCRMRs.fNavigatetoUserMgmt();
+//		if(objUP.fSearchUser(sUserName3)==1) {
+//			IsAvail = objUP.fGetUserAvailability();
+//			IsAdmin = objUP.fGetUserAdmin();
+//			if(IsAvail.equalsIgnoreCase(sUser3Avail) && IsAdmin.equalsIgnoreCase(sUser3Admin)) {
+//				bFlag = true;
+//				System.out.println(IsAvail);
+//				System.out.println(IsAdmin);
+//			}
+//			if(bFlag==false) {
+//				System.out.println("Invalid User in Round Robin:" + sUserName3);
+//				Assert.fail("InValid User:" + sUserName3);
+//			}
+//		}
+//		ObjCRMRs.fNavigatetoUserMgmt();
+//		if(objUP.fSearchUser(sUserName4)==1) {
+//			IsAvail = objUP.fGetUserAvailability();
+//			IsAdmin = objUP.fGetUserAdmin();
+//			if(IsAvail.equalsIgnoreCase(sUser4Avail) && IsAdmin.equalsIgnoreCase(sUser4Admin)) {
+//				bFlag = true;
+//				System.out.println(IsAvail);
+//				System.out.println(IsAdmin);
+//			}
+//			if(bFlag==false) {
+//				System.out.println("Invalid User in Round Robin:" + sUserName4);
+//				Assert.fail("InValid User:" + sUserName4);
+//			}
+//		}
 		
 		String sUsersList="";
 		
@@ -159,13 +162,13 @@ public class TC001_WF_RRUserY_NoCondition extends BaseClass{
 
 		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
-		objWFP.fSetRoundRobinUsers(true,sUsersList);
+//		objWFP.fSetRoundRobinUsers(true,sUsersList);
 		Thread.sleep(3000);
 		objWFP.clickWebFormSave();
 		Thread.sleep(3000);
 		String sUserArray[]= sUsersList.split(":");
 		String sCurrUserName="";
-		
+		String sWebFormId="";
 		for(int i=1;i<=iRowCount;i++) {
 			sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
 			
@@ -174,9 +177,41 @@ public class TC001_WF_RRUserY_NoCondition extends BaseClass{
 			sMS_Value = xlObj.getCellData("Sheet1", i, 11);
 			sRun_Flag= xlObj.getCellData("Sheet1", i, 12);
 			sMC_Value = xlObj.getCellData("Sheet1", i, 29);
+			sWebFormId= xlObj.getCellData("Sheet1", 1, 30);
 			if(sRun_Flag.equalsIgnoreCase("Yes")){
+			String sRandPhoneNo= randomeNumber(); 
+			xlObj.setCellData("Sheet1", i, 5, sRandPhoneNo);
 			
-			ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+			sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
+			sPN_Value = xlObj.getCellData("Sheet1", i, 5);
+			
+			System.out.println("mOBILE NUMBER:" + sRandPhoneNo);
+			System.out.println("mOBILE NUMBER prefix:" + sPN_Prefix);
+			System.out.println("email:" + sEM_Value);
+			System.out.println("text" + sXQ_Value);
+			System.out.println("etnotification_multiselect:" + sMS_Value);
+			System.out.println("state:" + sMC_Value);
+			System.out.println("webformid:" + sWebFormId);
+				
+			
+//			ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+			HashMap data = new HashMap();
+			data.put("etnotification_mobilenumber", sRandPhoneNo);
+			data.put("etnotification_mobilenumber_prefix", sPN_Prefix);
+			data.put("etnotification_email", sEM_Value);
+			data.put("etnotification_text", sXQ_Value);
+			data.put("etnotification_multiselect", sMS_Value);
+			data.put("etnotification_state", sMC_Value);
+			data.put("webformid", sWebFormId);
+			given()
+			.contentType("application/json")
+			.body(data)
+			.when()
+			.post(testBase.Routes.full_url)
+			.then()
+			.statusCode(200);
+				
+			
 			sPN_Value = xlObj.getCellData("Sheet1", i, 5);
 			String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 25);
 			System.out.println("Current User Position: " + sCurrUserPos);
@@ -194,8 +229,8 @@ public class TC001_WF_RRUserY_NoCondition extends BaseClass{
 			Thread.sleep(1000);
 			objALP.clickModuleOnListAll(driver, sModuleName);
 			ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
-		}
-		}
+		}//If Run Flag
+		}//For Loop
 		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();

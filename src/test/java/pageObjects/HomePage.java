@@ -16,12 +16,10 @@ public class HomePage extends BasePage {
 //	@FindBy(xpath="//a[@class='dropdown-toggle nav-link dropdown-user-link']//img")
 	WebElement eleAvatar;
 	
-	@FindBy(xpath="//a[normalize-space()='Logout']")
+//	@FindBy(xpath="//a[normalize-space()='Logout']")
+	@FindBy(xpath="//div[@class='dropdown-menu dropdown-menu-left profile_dropdown show']//a[@class='dropdown-item'][normalize-space()='Logout']")
 	WebElement eleLogout;
 	
-	
-	
-	//IsMethods
 	public boolean isAvatarDisplayed() {
 		boolean bFlag = false;
 		bFlag = UtilityCustomFunctions.IsElementVisible(driver, eleAvatar);

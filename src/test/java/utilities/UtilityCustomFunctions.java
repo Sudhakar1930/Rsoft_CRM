@@ -489,6 +489,7 @@ public class UtilityCustomFunctions extends BaseClass{
 //			BaseClass.logger
 //					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "pass", Node);
+			iValCount = iValCount + 1;
 //			System.out.println(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			
 		} else {
@@ -496,6 +497,7 @@ public class UtilityCustomFunctions extends BaseClass{
 //					.info(sMessage + " Failed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "fail", Node);
 //			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
+			iValCount = iValCount + 1;
 		}
 		sAssertinFn.assertEquals(sActValue.trim(), sExpValue.trim());
 		}

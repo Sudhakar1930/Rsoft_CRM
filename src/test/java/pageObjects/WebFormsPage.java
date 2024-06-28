@@ -1,11 +1,14 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilities.UtilityCustomFunctions;
 
@@ -58,12 +61,15 @@ public class WebFormsPage extends BasePage{
 	public int fSelectWebForm(String sWebFormName, String sModuleName) throws InterruptedException {
 		boolean bCurrentWFStatus = false;
 		boolean bMatchWFEnabled = false;
-		fSelectWbFrmModule("ETNotification Webform");
+		boolean bCurrentPage = false;
+		String sMatchWebForm = "";
+//		fSelectWbFrmModule("ETNotification Webform");
 		Thread.sleep(2000);
 		int iRowCount =lstWebForms.size(); 
 		int iMatchRow=0;
 		int iRowPos=0;
 		for(int i=1;i<=iRowCount;i++) {
+			
 		String sXpathWFName="//table[@class='table table-bordered table-striped']/tbody/tr[" + i + "]/td[2]";
 		String sXpathModName="//table[@class='table table-bordered table-striped']/tbody/tr[" + i + "]/td[3]";
 		
@@ -82,7 +88,9 @@ public class WebFormsPage extends BasePage{
 		}
 		if(sActWebFormName.equalsIgnoreCase(sWebFormName) && sActModuleName.equalsIgnoreCase(sModuleName)) {
 			
+			bCurrentPage =true; //Whether record present in current  page.
 			iRowPos =i;
+			sMatchWebForm = sActWebFormName;
 			if(bCurrentWFStatus==false) {
 				iMatchRow = i;
 				bMatchWFEnabled = false;
@@ -98,9 +106,30 @@ public class WebFormsPage extends BasePage{
 		}
 		}//for loop
 		
-		if(bMatchWFEnabled==false) {
-			String sXpath="(//table[@class='table table-bordered table-striped']/tbody/tr//span[@class='switchery switchery-default']/small)[" + iMatchRow + "]";
-			driver.findElement(By.xpath(sXpath)).click();
+		System.out.println("Is WebForm Present in Current Page: " + bCurrentPage);
+		System.out.println("WebForm:" + sMatchWebForm + " Is Enabled: " + bMatchWFEnabled);
+		
+		sMatchWebForm = "";
+		if(bCurrentPage==false) {
+			iRowPos= -1;
+			String sBtnXpath = "//button[@class='btn btn-sm btn-bg-gradient-x-purple-blue module-buttons']";
+			String sNextPagePath = "//i[@class='fa fa-chevron-right']";
+			
+			WebElement btnNextPage = driver.findElement(By.xpath(sNextPagePath));
+			//button[@class='btn btn-sm btn-bg-gradient-x-purple-blue module-buttons']
+			if(btnNextPage.isEnabled() && btnNextPage.isDisplayed()) {
+				btnNextPage.click();
+				WebElement btnAddWebForm = driver.findElement(By.xpath(sBtnXpath));
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+//				wait.until(ExpectedConditions.elementToBeClickable(btnAddWebForm));
+				wait.until(ExpectedConditions.visibilityOf(btnAddWebForm));
+			}
+		}
+		else {
+			if(bMatchWFEnabled==false) {
+				String sXpath="(//table[@class='table table-bordered table-striped']/tbody/tr//span[@class='switchery switchery-default']/small)[" + iMatchRow + "]";
+				driver.findElement(By.xpath(sXpath)).click();
+			}
 		}
 		return iRowPos;
 	}
@@ -116,11 +145,15 @@ public class WebFormsPage extends BasePage{
 		Thread.sleep(1000);
 		UtilityCustomFunctions.selectOneItemfromListBox(driver,cmbDropDown,"ETNotification Webform");
 		Thread.sleep(1000);
+		do {
 		iWebFormRowPos = objWSP.fSelectWebForm(sWebFormName,sModuleName);
+		System.out.println("Return Value Within While: " +iWebFormRowPos);
+		}while(iWebFormRowPos==-1);
+		System.out.println("Return Value after While : " +iWebFormRowPos);
 		Thread.sleep(3000);
 		Thread.sleep(3000);
 		String sElipsisXpath = "(//i[@class='fa fa-ellipsis-v'])[" + iWebFormRowPos + "]";
-		System.out.println(sElipsisXpath);
+		System.out.println(sWebFormName + " Xpath: " + sElipsisXpath);
 		WebElement btnEllipsis = driver.findElement(By.xpath(sElipsisXpath)); 
 		btnEllipsis.click();
 		Thread.sleep(1000);

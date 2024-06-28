@@ -52,6 +52,7 @@ public class BaseClass extends ExtentReportManager{
 	public ResourceBundle rb;
 	public static SoftAssert sAssertinFn;
 	protected static File file;
+	public static int iValCount;
 	
 	public void testname(String testname, String name) {
 		test = extent.createTest(testname);

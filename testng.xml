@@ -8,7 +8,7 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		  <class name="testCases.WebForms.TC031_WF_RRYN_OneN_TwoN"/>
+		  <class name="testCases.WebForms.TC001_WF_RRUserY_NoCondition"/>
 		  
 	</classes>	
 	  <!--
