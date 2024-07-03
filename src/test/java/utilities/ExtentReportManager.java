@@ -48,7 +48,7 @@ public class ExtentReportManager implements ITestNGListener {
 
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "SF");
+		extent.setSystemInfo("Application", "CRM");
 		extent.setSystemInfo("Module", "Forms");
 		extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("Browser Name", System.getProperty("browser"));

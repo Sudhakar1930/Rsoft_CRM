@@ -1,5 +1,7 @@
 package testCases.WebForms;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 import org.testng.annotations.BeforeTest;
@@ -33,7 +35,7 @@ public class TC010_WF_RRUserYN_OneConditionY extends BaseClass{
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRUserYN_OneConditionY_";
+		String sPath="\\WebForm\\TC010_WF_RRUserYN_OneConditionY_";
 		
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
@@ -43,7 +45,7 @@ public class TC010_WF_RRUserYN_OneConditionY extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\WF_RRUserYN_OneConditionY" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\TC010_WF_RRUserYN_OneConditionY" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");
@@ -234,7 +236,7 @@ public class TC010_WF_RRUserYN_OneConditionY extends BaseClass{
 		sMatchUsersList = sUserName5+":"+sUserName6+":"+sUserName7+":"+sUserName8;
 		
 		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
-//		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
+		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
 //		objWFP.fSetCond1RRUsers(true,sMatchUsersList);
 //		Thread.sleep(2000);
 //		objWFP.clickWebFormSave();
@@ -279,7 +281,8 @@ public class TC010_WF_RRUserYN_OneConditionY extends BaseClass{
 				.then()
 				.statusCode(200);
 				
-//				ObjCRMRs.fConditionSFSubmit(i,"Test",sPath,"Sheet1",false,node);
+				sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
+				sPN_Value = xlObj.getCellData("Sheet1", i, 5);
 				
 				if(sMS_Value.trim().equalsIgnoreCase("one")) {
 					String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 38);
@@ -311,6 +314,11 @@ public class TC010_WF_RRUserYN_OneConditionY extends BaseClass{
 				objALP.clickModuleOnListAll(driver, sModuleName);
 				ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 				
+				xlObj.setCellData("Sheet1", i, 44, "Done");
+				Date currentDate = new Date(); 
+				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+				String currentDateTime = dateFormat. format(currentDate);
+				xlObj.setCellData("Sheet1", i, 45, currentDateTime);
 				
 				
 			}//If Run_Flag

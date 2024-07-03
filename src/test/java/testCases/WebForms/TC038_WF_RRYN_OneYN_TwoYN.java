@@ -359,7 +359,7 @@ public class TC038_WF_RRYN_OneYN_TwoYN extends BaseClass{
 						sUpdatePos = 0;
 					}
 					xlObj.setCellData("Sheet1", 1, 38, String.valueOf(sUpdatePos));
-				}else if(sMC_Value.equalsIgnoreCase("Tamilnadu")) {
+				}else if(sMC_Value.equalsIgnoreCase("Tamilnadu") && !sMS_Value.equalsIgnoreCase("one")) {
 					String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 39);
 					System.out.println("Current User Position: " + sCurrUserPos);
 					sCurrUserName = sMatch2UserArray[Integer.parseInt(sCurrUserPos)];
@@ -390,5 +390,7 @@ public class TC038_WF_RRYN_OneYN_TwoYN extends BaseClass{
 				
 			}//if Run Flag
 		}//for Loop	
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test
 }//Class

@@ -34,7 +34,7 @@ public class TC001_WF_RRUserY_NoCondition extends BaseClass{
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRUserY_NoCondition_";
+		String sPath="\\WebForm\\TC001_WF_RRUserY_NoCondition_";
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
 		UserPage objUP = new UserPage(driver);
@@ -43,7 +43,7 @@ public class TC001_WF_RRUserY_NoCondition extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\" + "WF_RRUserY_NoCondition" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\" + "TC001_WF_RRUserY_NoCondition" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");

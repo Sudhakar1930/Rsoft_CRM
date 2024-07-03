@@ -7,15 +7,16 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.WebForms.TC001_WF_RRUserY_NoCondition">
+      <class name="testCases.AddNewUser">
         <methods>
-          <include name="testName"/>
           <include name="onStart"/>
+          <include name="tearDown"/>
+          <include name="testWebFormUser"/>
+          <include name="testName"/>
           <include name="setup"/>
           <include name="flush"/>
-          <include name="testWebFormUser"/>
         </methods>
-      </class> <!-- testCases.WebForms.TC001_WF_RRUserY_NoCondition -->
+      </class> <!-- testCases.AddNewUser -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

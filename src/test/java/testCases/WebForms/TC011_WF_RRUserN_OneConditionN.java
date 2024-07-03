@@ -2,6 +2,8 @@ package testCases.WebForms;
 
 import static io.restassured.RestAssured.given;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 import org.testng.annotations.BeforeTest;
@@ -28,7 +30,7 @@ public class TC011_WF_RRUserN_OneConditionN extends BaseClass{
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRUserN_OneConditionN_";
+		String sPath="\\WebForm\\TC011_WF_RRUserN_OneConditionN_";
 		
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
@@ -38,7 +40,7 @@ public class TC011_WF_RRUserN_OneConditionN extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\WF_RRUserN_OneConditionN" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\TC011_WF_RRUserN_OneConditionN" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");
@@ -301,7 +303,7 @@ public class TC011_WF_RRUserN_OneConditionN extends BaseClass{
 		
 		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
-		objWFP.fSetCond1RRUsers(true,sMatch1UsersList);
+//		objWFP.fSetCond1RRUsers(true,sMatch1UsersList);
 		Thread.sleep(2000);
 		objWFP.clickWebFormSave();
 		Thread.sleep(2000);
@@ -343,26 +345,31 @@ public class TC011_WF_RRUserN_OneConditionN extends BaseClass{
 				.then()
 				.statusCode(200);
 				
-				
+
 				//****************** get UserName from Users Module********
 				Thread.sleep(3000);
 				ObjCRMRs.fNavigatetoUserMgmt();
 				if(objUP.fGetFirstAvailableAdminUser()!=null) {
-					System.out.println("First User Name:" + objUP.fGetFirstAvailableAdminUser());
+					System.out.println("First Available Admin User Name:" + objUP.fGetFirstAvailableAdminUser());
 					sDefaultAssignToUser = objUP.fGetFirstAvailableAdminUser();
 				}
-//				else if(objUP.fGetFirstAdminUser()!=null) {
-//					System.out.println("First Admin User Name:" + objUP.fGetFirstAdminUser());
-//					sDefaultAssignToUser = objUP.fGetFirstAdminUser();
-//				}
-				else if(objUP.fGetFirstActiveUser()!=null) {
-					sDefaultAssignToUser = objUP.fGetFirstActiveUser();
-					System.out.println("First Active User Name:" + objUP.fGetFirstActiveUser());
+				else if(objUP.fGetFirstAvailableNonAdminUser()!=null) {
+					System.out.println("First Available Non Admin User:" + objUP.fGetFirstAvailableNonAdminUser());
+					sDefaultAssignToUser = objUP.fGetFirstAvailableNonAdminUser();
+				}
+				else if(objUP.fGetFirstAdminNonAvailabilityUser()!=null) {
+					System.out.println("First Admin Non Availability User:" + objUP.fGetFirstAdminNonAvailabilityUser());
+					sDefaultAssignToUser = objUP.fGetFirstAdminNonAvailabilityUser();
+				}
+				else if(objUP.fGetFirstActiveNonAdminUser()!=null) {
+					sDefaultAssignToUser = objUP.fGetFirstActiveNonAdminUser();
+					System.out.println("First Active Non Admin User Name:" + objUP.fGetFirstActiveNonAdminUser());
 				}
 				else {
 					sDefaultAssignToUser  = "rsoft";
 				}
 				sCurrUserName = sDefaultAssignToUser;
+
 				
 				System.out.println("Current User:" +sCurrUserName);
 				driver.get(sAppUrl);
@@ -372,6 +379,11 @@ public class TC011_WF_RRUserN_OneConditionN extends BaseClass{
 				objALP.clickModuleOnListAll(driver, sModuleName);
 				ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 				
+				xlObj.setCellData("Sheet1", i, 56, "Done");
+				Date currentDate = new Date(); 
+				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+				String currentDateTime = dateFormat. format(currentDate);
+				xlObj.setCellData("Sheet1", i, 57, currentDateTime);
 		
 			}//If Run Flag 	
 		

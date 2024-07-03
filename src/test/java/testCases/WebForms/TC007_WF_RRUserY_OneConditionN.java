@@ -1,5 +1,11 @@
 package testCases.WebForms;
 
+import static io.restassured.RestAssured.given;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -24,7 +30,7 @@ public class TC007_WF_RRUserY_OneConditionN extends  BaseClass{
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRUserY_OneConditionN_";
+		String sPath="\\WebForm\\TC007_WF_RRUserY_OneConditionN_";
 		
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
@@ -34,7 +40,7 @@ public class TC007_WF_RRUserY_OneConditionN extends  BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\" + "WF_RRUserY_OneConditionN" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\" + "TC007_WF_RRUserY_OneConditionN" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");
@@ -240,7 +246,7 @@ public class TC007_WF_RRUserY_OneConditionN extends  BaseClass{
 				
 				objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 				objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
-				objWFP.fSetCond1RRUsers(true,sMatchUsersList);
+//				objWFP.fSetCond1RRUsers(true,sMatchUsersList);
 				
 				objWFP.clickWebFormSave();
 				Thread.sleep(2000);
@@ -249,6 +255,7 @@ public class TC007_WF_RRUserY_OneConditionN extends  BaseClass{
 				String sUnMatchUserArray[]= sUnMatchUserList.split(":");
 				String sCurrUserName="";
 				String sRun_Flag="";
+				String sWebFormId ="";
 				sRun_Flag  = "";
 				
 				for(int i=1;i<=iRowCount;i++) {
@@ -257,12 +264,47 @@ public class TC007_WF_RRUserY_OneConditionN extends  BaseClass{
 					sMS_Value = xlObj.getCellData("Sheet1", i, 11);
 					sMC_Value = xlObj.getCellData("Sheet1", i, 13);
 					sRun_Flag = xlObj.getCellData("Sheet1", i, 14);
+					sWebFormId = xlObj.getCellData("Sheet1", 1, 43);
 					int sUpdatePos =0;
 					System.out.println("Run  flag valuie: " + i + " " + sRun_Flag);
 					if(sRun_Flag.trim().equalsIgnoreCase("Yes")) {
-						ObjCRMRs.fConditionSFSubmit(i,"Test",sPath,"Sheet1",false,node);
+						String sRandPhoneNo= randomeNumber(); 
+						xlObj.setCellData("Sheet1", i, 5, sRandPhoneNo);
+						
 						sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
 						sPN_Value = xlObj.getCellData("Sheet1", i, 5);
+						
+						System.out.println("mOBILE NUMBER:" + sRandPhoneNo);
+						System.out.println("mOBILE NUMBER prefix:" + sPN_Prefix);
+						System.out.println("email:" + sEM_Value);
+						System.out.println("text" + sXQ_Value);
+						System.out.println("etnotification_multiselect:" + sMS_Value);
+						System.out.println("state:" + sMC_Value);
+						System.out.println("webformid:" + sWebFormId);
+							
+						
+//						ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+						HashMap data = new HashMap();
+						data.put("etnotification_mobilenumber", sRandPhoneNo);
+						data.put("etnotification_mobilenumber_prefix", sPN_Prefix);
+						data.put("etnotification_email", sEM_Value);
+						data.put("etnotification_text", sXQ_Value);
+						data.put("etnotification_multiselect", sMS_Value);
+						data.put("etnotification_state", sMC_Value);
+						data.put("webformid", sWebFormId);
+						given()
+						.contentType("application/json")
+						.body(data)
+						.when()
+						.post(testBase.Routes.full_url)
+						.then()
+						.statusCode(200);
+						
+						
+						sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
+						sPN_Value = xlObj.getCellData("Sheet1", i, 5);
+						
+					
 						String sCurrUserPos = xlObj.getCellData("Sheet1", 1, 39);
 						System.out.println("Current User Position: " + sCurrUserPos);
 						sCurrUserName = sUnMatchUserArray[Integer.parseInt(sCurrUserPos)];
@@ -280,7 +322,11 @@ public class TC007_WF_RRUserY_OneConditionN extends  BaseClass{
 						objALP.clickModuleOnListAll(driver, sModuleName);
 						ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 								
-						
+						xlObj.setCellData("Sheet1", i, 44, "Done");
+						Date currentDate = new Date(); 
+						SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+						String currentDateTime = dateFormat. format(currentDate);
+						xlObj.setCellData("Sheet1", i, 45, currentDateTime);
 						
 					}//If Run_Flag
 		

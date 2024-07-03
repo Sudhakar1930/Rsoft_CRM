@@ -24,11 +24,11 @@ public class TC023_WF_RRY_OneN_TwoYN extends BaseClass{
 	}
 	@Test	
 	public void testWebFormUser() throws Exception {
-		node = test.createNode("WF_RRY_OneN_TwoN");
+		node = test.createNode("WF_RRY_OneN_TwoYN");
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRY_OneN_TwoYN_";
+		String sPath="\\WebForm\\TC023_WF_RRY_OneN_TwoYN_";
 		
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
@@ -38,7 +38,7 @@ public class TC023_WF_RRY_OneN_TwoYN extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\WF_RRY_OneN_TwoYN" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\TC023_WF_RRY_OneN_TwoYN" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");

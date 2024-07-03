@@ -28,7 +28,7 @@ public class TC012_WF_RRUserYN_OneConditionN extends BaseClass{
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRUserYN_OneConditionN_";
+		String sPath="\\WebForm\\TC012_WF_RRUserYN_OneConditionN_";
 		
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
@@ -38,7 +38,7 @@ public class TC012_WF_RRUserYN_OneConditionN extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\WF_RRUserYN_OneConditionN" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\TC012_WF_RRUserYN_OneConditionN" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");

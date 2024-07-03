@@ -28,7 +28,7 @@ public class TC016_WF_RRN_OneY_TwoN extends BaseClass{
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRN_OneY_TwoN_";
+		String sPath="\\WebForm\\TC016_WF_RRN_OneY_TwoN_";
 		
 
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
@@ -39,7 +39,7 @@ public class TC016_WF_RRN_OneY_TwoN extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\WF_RRN_OneY_TwoN" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\TC016_WF_RRN_OneY_TwoN" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");

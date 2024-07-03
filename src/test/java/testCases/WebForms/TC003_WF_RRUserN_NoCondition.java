@@ -1,5 +1,11 @@
 package testCases.WebForms;
 
+import static io.restassured.RestAssured.given;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -17,17 +23,17 @@ import utilities.ExcelUtility;
 public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 	@BeforeTest
 	public void testName() {
-		test = extent.createTest("TC003_WF_RRUsersN_NoCondition");
+		test = extent.createTest("TC003_WF_RRUserN_NoCondition");
 	}
 	
 	@Test	
 	public void testWebFormUser() throws Exception {
 		
-		node = test.createNode("RRUsersN_NoCondition");
+		node = test.createNode("RRUserN_NoCondition");
 		String sBrowserName=utilities.UtilityCustomFunctions.getBrowserName(driver);
 		logger.info("Test Execution on Browser: "+ sBrowserName);
 		System.out.println("Test Execution on Browser: "+ sBrowserName);
-		String sPath="\\WebForm\\WF_RRUserN_NoCondition_";
+		String sPath="\\WebForm\\TC003_WF_RRUserN_NoCondition_";
 		CRMReUsables ObjCRMRs = new CRMReUsables(); 
 		IndvControlsPage IndvObj = new IndvControlsPage(driver); 
 		UserPage objUP = new UserPage(driver);
@@ -36,7 +42,7 @@ public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 		WebFormsPage objWFP = new WebFormsPage(driver);
 		CRMSettingsPage objCRMSTngs = new CRMSettingsPage(driver);
 		
-		String sMainPath=".\\testData\\WebForm\\" + "WF_RRUserN_NoCondition" + "_Test.xlsx" ;
+		String sMainPath=".\\testData\\WebForm\\" + "TC003_WF_RRUserN_NoCondition" + "_Test.xlsx" ;
 		
 		ExcelUtility xlObj = new ExcelUtility(sMainPath);
 		logger.info("Excel file Utility instance created");
@@ -94,30 +100,9 @@ public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 		driver.get(sAppUrl);
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 		Thread.sleep(3000);
-		ObjCRMRs.fNavigatetoUserMgmt();
 		
-		if(objUP.fGetFirstAvailableAdminUser()!=null) {
-			System.out.println("First Available Admin User Name:" + objUP.fGetFirstAvailableAdminUser());
-			sDefaultAssignToUser = objUP.fGetFirstAvailableAdminUser();
-		}
-		else if(objUP.fGetFirstAvailableNonAdminUser()!=null) {
-			System.out.println("First Available Non Admin User:" + objUP.fGetFirstAvailableNonAdminUser());
-			sDefaultAssignToUser = objUP.fGetFirstAvailableNonAdminUser();
-		}
-		else if(objUP.fGetFirstAdminNonAvailabilityUser()!=null) {
-			System.out.println("First Admin Non Availability User:" + objUP.fGetFirstAdminNonAvailabilityUser());
-			sDefaultAssignToUser = objUP.fGetFirstAdminNonAvailabilityUser();
-		}
-		else if(objUP.fGetFirstActiveNonAdminUser()!=null) {
-			sDefaultAssignToUser = objUP.fGetFirstActiveNonAdminUser();
-			System.out.println("First Active Non Admin User Name:" + objUP.fGetFirstActiveNonAdminUser());
-		}
-		else {
-			sDefaultAssignToUser  = "rsoft";
-		}
-		String sCurrUserName="";
-		sCurrUserName = sDefaultAssignToUser;
 		// *********** Check User Details From Test Data is Neither Available  nor Admin ********
+		ObjCRMRs.fNavigatetoUserMgmt();
 		System.out.println("User Name 1: " + sUserName1);
 		if(objUP.fSearchUser(sUserName1)==1) {
 			IsAvail = objUP.fGetUserAvailability();
@@ -178,13 +163,14 @@ public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 		
 		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
-		objWFP.fSetRoundRobinUsers(true,sUsersList);
+//		objWFP.fSetRoundRobinUsers(true,sUsersList);
 		Thread.sleep(3000);
 		objWFP.clickWebFormSave();
 		Thread.sleep(3000);
 		
 		String sUserArray[]= sUsersList.split(":");
 		sRun_Flag  = "";
+		String sWebFormId = "";
 		for(int i=1;i<=iRowCount;i++) {
 			
 			sEM_Value = xlObj.getCellData("Sheet1", i, 7);
@@ -192,27 +178,87 @@ public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 			sMS_Value = xlObj.getCellData("Sheet1", i, 11);
 			sRun_Flag = xlObj.getCellData("Sheet1", i, 12);
 			sMC_Value = xlObj.getCellData("Sheet1", i, 29);
-			
+			sWebFormId= xlObj.getCellData("Sheet1", 1, 30);
 			if(sRun_Flag.trim().equalsIgnoreCase("Yes")) {
 				
-				ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+//				ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+				String sRandPhoneNo= randomeNumber(); 
+				xlObj.setCellData("Sheet1", i, 5, sRandPhoneNo);
+				
 				sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
 				sPN_Value = xlObj.getCellData("Sheet1", i, 5);
 				
+				System.out.println("mOBILE NUMBER:" + sRandPhoneNo);
+				System.out.println("mOBILE NUMBER prefix:" + sPN_Prefix);
+				System.out.println("email:" + sEM_Value);
+				System.out.println("text" + sXQ_Value);
+				System.out.println("etnotification_multiselect:" + sMS_Value);
+				System.out.println("state:" + sMC_Value);
+				System.out.println("webformid:" + sWebFormId);
+					
 				
+//				ObjCRMRs.fWFSubmitSF(i,"Test",sPath,"Sheet1",false,node);
+				HashMap data = new HashMap();
+				data.put("etnotification_mobilenumber", sRandPhoneNo);
+				data.put("etnotification_mobilenumber_prefix", sPN_Prefix);
+				data.put("etnotification_email", sEM_Value);
+				data.put("etnotification_text", sXQ_Value);
+				data.put("etnotification_multiselect", sMS_Value);
+				data.put("etnotification_state", sMC_Value);
+				data.put("webformid", sWebFormId);
+				given()
+				.contentType("application/json")
+				.body(data)
+				.when()
+				.post(testBase.Routes.full_url)
+				.then()
+				.statusCode(200);
+				sPN_Prefix = xlObj.getCellData("Sheet1", i, 4);
+				sPN_Value = xlObj.getCellData("Sheet1", i, 5);
+				
+				ObjCRMRs.fNavigatetoUserMgmt();
+				if(objUP.fGetFirstAvailableAdminUser()!=null) {
+					System.out.println("First Available Admin User Name:" + objUP.fGetFirstAvailableAdminUser());
+					sDefaultAssignToUser = objUP.fGetFirstAvailableAdminUser();
+				}
+				else if(objUP.fGetFirstAvailableNonAdminUser()!=null) {
+					System.out.println("First Available Non Admin User:" + objUP.fGetFirstAvailableNonAdminUser());
+					sDefaultAssignToUser = objUP.fGetFirstAvailableNonAdminUser();
+				}
+				else if(objUP.fGetFirstAdminNonAvailabilityUser()!=null) {
+					System.out.println("First Admin Non Availability User:" + objUP.fGetFirstAdminNonAvailabilityUser());
+					sDefaultAssignToUser = objUP.fGetFirstAdminNonAvailabilityUser();
+				}
+				else if(objUP.fGetFirstActiveNonAdminUser()!=null) {
+					sDefaultAssignToUser = objUP.fGetFirstActiveNonAdminUser();
+					System.out.println("First Active Non Admin User Name:" + objUP.fGetFirstActiveNonAdminUser());
+				}
+				else {
+					sDefaultAssignToUser  = "rsoft";
+				}
+				String sCurrUserName="";
 				sCurrUserName = sDefaultAssignToUser;
+				
 				System.out.println("Current User:" +sCurrUserName);
 				driver.get(sAppUrl);
-//				ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 				Thread.sleep(1000);
 				objALP.clickAllList();
 				Thread.sleep(1000);
 				objALP.clickModuleOnListAll(driver, sModuleName);
 				ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 				
+				xlObj.setCellData("Sheet1", i, 31, "Done");
+				Date currentDate = new Date(); 
+				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+				String currentDateTime = dateFormat. format(currentDate);
+				xlObj.setCellData("Sheet1", i, 32, currentDateTime);
+				
 			}	
 			
+			Thread.sleep(8000);
 		}//for Loop
+		
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 	}//Test	
