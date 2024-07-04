@@ -384,6 +384,7 @@ public class TC024_WF_RRY_OneN_TwoY extends BaseClass {
 			}//if Run Flag	
 		
 		}//for Loop	
-	
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test
 }//Class

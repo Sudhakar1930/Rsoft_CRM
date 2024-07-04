@@ -398,5 +398,7 @@ public class TC014_WF_RRN_OneN_TwoYN extends BaseClass{
 				
 			}//If Run_Flag
 		}//For Loop	
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test
 }//Class

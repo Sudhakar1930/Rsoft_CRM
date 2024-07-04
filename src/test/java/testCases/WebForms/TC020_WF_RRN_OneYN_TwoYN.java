@@ -404,6 +404,8 @@ public class TC020_WF_RRN_OneYN_TwoYN extends BaseClass{
 				objALP.clickModuleOnListAll(driver, sModuleName);
 				ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 		}//If Run Flag
-		}//For Loop		
+		}//For Loop
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test	
 }//Class

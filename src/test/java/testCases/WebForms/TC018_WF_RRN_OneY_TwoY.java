@@ -407,6 +407,7 @@ public class TC018_WF_RRN_OneY_TwoY extends BaseClass{
 				
 		
 		}//for loop
-		
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test
 }//Class

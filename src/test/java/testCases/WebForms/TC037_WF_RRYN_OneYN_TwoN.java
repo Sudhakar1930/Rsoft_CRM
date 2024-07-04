@@ -380,7 +380,9 @@ public class TC037_WF_RRYN_OneYN_TwoN extends BaseClass{
 				ObjCRMRs.fModuleTableValue(sCurrUserName, sPN_Prefix, sPN_Value, sEM_Value, sXQ_Value, sMS_Value,sMC_Value, node);
 				
 			}//If Run Flag
-		}//for Loop	
+		}//for Loop
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test
 	
 }//Class

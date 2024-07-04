@@ -390,6 +390,8 @@ public class TC039_WF_RRYN_OneYN_TwoY extends  BaseClass{
 				
 			}//If Run Flag
 		}//For Loop
+		Thread.sleep(2000);
+		objHP.clickLogoutCRM();
 	}//Test	
 	
 	
