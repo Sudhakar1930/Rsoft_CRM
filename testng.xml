@@ -8,10 +8,62 @@
   <test thread-count="5" name="chromeTest">
 	  <parameter name="browser" value="chrome">
     <classes>
-		 <class name="testCases.WebForms.TC012_WF_RRUserYN_OneConditionN"/>
+		
+		 <class name="testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY"/>
+		 
 		  
 	</classes>	
 	  <!--
+	  
+	  <class name="testCases.WebForms.TC019_WF_RRN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC020_WF_RRN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC021_WF_RRN_OneYN_TwoY"/>
+		 <class name="testCases.WebForms.TC022_WF_RRY_OneN_TwoN"/>
+		 <class name="testCases.WebForms.TC023_WF_RRY_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC026_WF_RRY_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC027_WF_RRY_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC029_WF_RRY_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC033_WF_RRYN_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC034_WF_RRYN_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC035_WF_RRYN_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC036_WF_RRYN_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC037_WF_RRYN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC038_WF_RRYN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY"/>
+		 
+	   <class name="testCases.WebForms.TC014_WF_RRN_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC015_WF_RRN_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC016_WF_RRN_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC017_WF_RRN_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC018_WF_RRN_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC019_WF_RRN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC020_WF_RRN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC021_WF_RRN_OneYN_TwoY"/>
+		 <class name="testCases.WebForms.TC016_WF_RRN_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC017_WF_RRN_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC018_WF_RRN_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC019_WF_RRN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC020_WF_RRN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC021_WF_RRN_OneYN_TwoY"/>
+		 <class name="testCases.WebForms.TC022_WF_RRY_OneN_TwoN"/>
+		 <class name="testCases.WebForms.TC023_WF_RRY_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC024_WF_RRY_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC025_WF_RRY_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC026_WF_RRY_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC027_WF_RRY_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC028_WF_RRY_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC029_WF_RRY_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC030_WF_RRY_OneYN_TwoY"/>
+		 <class name="testCases.WebForms.TC031_WF_RRYN_OneN_TwoN"/>
+		 <class name="testCases.WebForms.TC032_WF_RRYN_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC033_WF_RRYN_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC034_WF_RRYN_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC035_WF_RRYN_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC036_WF_RRYN_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC037_WF_RRYN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC038_WF_RRYN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY"/>
+		 
 	  <class name="testCases.AddNewUser"/>
 	  <class name="testCases.SelectWebFormName"/>
 	  <class name="testCases.WebForms.TC014_WF_RRN_OneN_TwoYN"/>

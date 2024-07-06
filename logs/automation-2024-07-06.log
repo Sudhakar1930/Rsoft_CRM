@@ -1,0 +1,589 @@
+14:11:42.971 [main] INFO  utilities.UtilityCustomFunctions - Expected:Theresa@rsoft.in
+14:11:42.972 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:11:44.077 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:11:44.077 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:11:44.077 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:11:45.204 [main] INFO  utilities.UtilityCustomFunctions - Actual:five
+14:11:45.204 [main] INFO  utilities.UtilityCustomFunctions - Expected:five
+14:11:45.204 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:11:46.300 [main] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+14:11:46.300 [main] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+14:11:46.300 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:12:00.083 [main] INFO  utilities.UtilityCustomFunctions - Actual:Carol Gerald
+14:12:00.083 [main] INFO  utilities.UtilityCustomFunctions - Expected:Carol Gerald
+14:12:00.083 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:12:01.188 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:12:01.188 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:12:01.188 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:12:02.306 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840005483
+14:12:02.306 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840005483
+14:12:02.306 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:12:03.426 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kayla@rsoft.in
+14:12:03.426 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kayla@rsoft.in
+14:12:03.426 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:12:04.537 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:12:04.537 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:12:04.537 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:12:05.654 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+14:12:05.654 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+14:12:05.654 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:12:06.772 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+14:12:06.772 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+14:12:06.772 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:12:20.821 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lisa Noah
+14:12:20.821 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lisa Noah
+14:12:20.822 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:12:21.954 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:12:21.954 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:12:21.954 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:12:23.069 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840008583
+14:12:23.070 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840008583
+14:12:23.070 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:12:24.206 [main] INFO  utilities.UtilityCustomFunctions - Actual:Alexis@rsoft.in
+14:12:24.206 [main] INFO  utilities.UtilityCustomFunctions - Expected:Alexis@rsoft.in
+14:12:24.206 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:12:25.343 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:12:25.343 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:12:25.343 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:12:26.449 [main] INFO  utilities.UtilityCustomFunctions - Actual:two
+14:12:26.449 [main] INFO  utilities.UtilityCustomFunctions - Expected:two
+14:12:26.449 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:12:27.562 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+14:12:27.562 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+14:12:27.562 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:12:41.226 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sandra Jeremy
+14:12:41.227 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sandra Jeremy
+14:12:41.227 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:12:42.335 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:12:42.335 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:12:42.335 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:12:43.434 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840066189
+14:12:43.434 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840066189
+14:12:43.434 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:12:44.532 [main] INFO  utilities.UtilityCustomFunctions - Actual:Doris@rsoft.in
+14:12:44.532 [main] INFO  utilities.UtilityCustomFunctions - Expected:Doris@rsoft.in
+14:12:44.532 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:12:45.652 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:12:45.652 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:12:45.652 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:12:46.745 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+14:12:46.745 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+14:12:46.745 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:12:47.846 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+14:12:47.846 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+14:12:47.846 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:13:01.100 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lisa Noah
+14:13:01.100 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lisa Noah
+14:13:01.100 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:13:02.219 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:13:02.219 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:13:02.219 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:13:03.329 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840087239
+14:13:03.329 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840087239
+14:13:03.329 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:13:04.443 [main] INFO  utilities.UtilityCustomFunctions - Actual:Lori@rsoft.in
+14:13:04.443 [main] INFO  utilities.UtilityCustomFunctions - Expected:Lori@rsoft.in
+14:13:04.443 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:13:05.555 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:13:05.555 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:13:05.555 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:13:06.686 [main] INFO  utilities.UtilityCustomFunctions - Actual:four
+14:13:06.686 [main] INFO  utilities.UtilityCustomFunctions - Expected:four
+14:13:06.686 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:13:07.804 [main] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+14:13:07.804 [main] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+14:13:07.804 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:13:16.270 [main] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count1268
+14:13:16.270 [main] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count1268
+14:13:16.270 [main] INFO  utilities.UtilityCustomFunctions - Message:pass
+14:13:18.622 [main] INFO  testCases.WebForms.TC038_WF_RRYN_OneYN_TwoYN - Test Execution on Browser: chrome
+14:13:18.636 [main] INFO  testCases.WebForms.TC038_WF_RRYN_OneYN_TwoYN - Excel file Utility instance created
+14:13:18.641 [main] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count1269
+14:13:18.641 [main] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count1269
+14:13:18.641 [main] INFO  utilities.UtilityCustomFunctions - Message:pass
+14:13:20.777 [main] INFO  testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY - Test Execution on Browser: chrome
+14:13:20.800 [main] INFO  testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY - Excel file Utility instance created
+14:13:20.846 [main] INFO  testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY - Row Count is: 17
+14:13:20.857 [main] INFO  testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY - Col Count is: 15
+14:16:21.258 [main] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count1270
+14:16:21.258 [main] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count1270
+14:16:21.258 [main] INFO  utilities.UtilityCustomFunctions - Message:pass
+14:36:30.608 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Test Execution on Browser: chrome
+14:36:30.832 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Excel file Utility instance created
+14:36:31.381 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Row Count is: 9
+14:36:31.420 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Col Count is: 15
+14:36:36.550 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+14:36:37.854 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+14:36:39.117 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+14:36:50.065 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Avatar
+14:36:53.512 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu CRM Setting
+14:36:55.628 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu User Access Control
+14:36:59.236 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Avatar
+14:37:02.483 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu CRM Setting
+14:37:02.549 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Integration
+14:37:13.403 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - [ETNotification Webform] is selected in List
+14:37:56.656 [main] INFO  utilities.UtilityCustomFunctions - Actual:Michelle Sean
+14:37:56.656 [main] INFO  utilities.UtilityCustomFunctions - Expected:Michelle Sean
+14:37:56.656 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:37:57.802 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:37:57.802 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:37:57.802 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:37:58.924 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840065345
+14:37:58.924 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840065345
+14:37:58.924 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:38:00.043 [main] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+14:38:00.043 [main] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+14:38:00.043 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:38:01.154 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:38:01.154 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:38:01.154 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:38:02.271 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+14:38:02.271 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+14:38:02.271 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:38:03.388 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+14:38:03.388 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+14:38:03.388 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:38:10.932 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Avatar
+14:38:14.275 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu CRM Setting
+14:38:16.377 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu User Access Control
+14:38:30.551 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+14:38:30.551 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+14:38:30.551 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:38:31.676 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:38:31.676 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:38:31.676 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:38:32.792 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840053220
+14:38:32.793 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840053220
+14:38:32.793 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:38:33.908 [main] INFO  utilities.UtilityCustomFunctions - Actual:Grace@rsoft.in
+14:38:33.908 [main] INFO  utilities.UtilityCustomFunctions - Expected:Grace@rsoft.in
+14:38:33.908 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:38:35.020 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:38:35.020 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:38:35.020 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:38:36.116 [main] INFO  utilities.UtilityCustomFunctions - Actual:two
+14:38:36.116 [main] INFO  utilities.UtilityCustomFunctions - Expected:two
+14:38:36.117 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:38:37.238 [main] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+14:38:37.238 [main] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+14:38:37.239 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:38:50.725 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kimberly Austin
+14:38:50.725 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kimberly Austin
+14:38:50.725 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:38:51.850 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:38:51.850 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:38:51.850 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:38:52.961 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840077394
+14:38:52.961 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840077394
+14:38:52.961 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:38:54.076 [main] INFO  utilities.UtilityCustomFunctions - Actual:Amber@rsoft.in
+14:38:54.076 [main] INFO  utilities.UtilityCustomFunctions - Expected:Amber@rsoft.in
+14:38:54.076 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:38:55.188 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:38:55.188 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:38:55.188 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:38:56.281 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+14:38:56.282 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+14:38:56.282 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:38:57.385 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+14:38:57.385 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+14:38:57.385 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:39:04.695 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Avatar
+14:39:07.977 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu CRM Setting
+14:39:10.075 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu User Access Control
+14:39:24.741 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+14:39:24.741 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+14:39:24.741 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:39:25.855 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:39:25.855 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:39:25.855 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:39:26.969 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840029072
+14:39:26.969 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840029072
+14:39:26.969 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:39:28.090 [main] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
+14:39:28.090 [main] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
+14:39:28.090 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:39:29.209 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:39:29.209 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:39:29.209 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:39:30.323 [main] INFO  utilities.UtilityCustomFunctions - Actual:four
+14:39:30.323 [main] INFO  utilities.UtilityCustomFunctions - Expected:four
+14:39:30.323 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:39:31.435 [main] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+14:39:31.435 [main] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+14:39:31.435 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:39:38.384 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Avatar
+14:39:41.628 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu CRM Setting
+14:39:43.726 [main] INFO  testCases.WebForms.TC018_WF_RRN_OneY_TwoY - Clicked Menu User Access Control
+14:39:57.142 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+14:39:57.142 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+14:39:57.142 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:39:58.253 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:39:58.254 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:39:58.254 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:39:59.371 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840009216
+14:39:59.371 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840009216
+14:39:59.372 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:40:00.488 [main] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
+14:40:00.488 [main] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
+14:40:00.488 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:40:01.582 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:40:01.582 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:40:01.582 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:40:02.709 [main] INFO  utilities.UtilityCustomFunctions - Actual:five
+14:40:02.709 [main] INFO  utilities.UtilityCustomFunctions - Expected:five
+14:40:02.709 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:40:03.816 [main] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+14:40:03.816 [main] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+14:40:03.816 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:40:18.668 [main] INFO  utilities.UtilityCustomFunctions - Actual:Rebecca Jesse
+14:40:18.668 [main] INFO  utilities.UtilityCustomFunctions - Expected:Rebecca Jesse
+14:40:18.668 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:40:19.794 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:40:19.794 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:40:19.794 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:40:20.900 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840007879
+14:40:20.900 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840007879
+14:40:20.901 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:40:22.011 [main] INFO  utilities.UtilityCustomFunctions - Actual:Testing@rsoft.in
+14:40:22.011 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing@rsoft.in
+14:40:22.011 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:40:23.113 [main] INFO  utilities.UtilityCustomFunctions - Actual:Testing
+14:40:23.113 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing
+14:40:23.114 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:40:24.218 [main] INFO  utilities.UtilityCustomFunctions - Actual:two
+14:40:24.218 [main] INFO  utilities.UtilityCustomFunctions - Expected:two
+14:40:24.218 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:40:25.318 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+14:40:25.318 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+14:40:25.319 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:40:39.576 [main] INFO  utilities.UtilityCustomFunctions - Actual:Margaret Roger
+14:40:39.576 [main] INFO  utilities.UtilityCustomFunctions - Expected:Margaret Roger
+14:40:39.576 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:40:40.683 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:40:40.683 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:40:40.683 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:40:41.787 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840061451
+14:40:41.787 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840061451
+14:40:41.787 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:40:42.926 [main] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
+14:40:42.926 [main] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
+14:40:42.926 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:40:44.030 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:40:44.030 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:40:44.030 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:40:45.148 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+14:40:45.148 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+14:40:45.148 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:40:46.275 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+14:40:46.275 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+14:40:46.276 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:40:59.663 [main] INFO  utilities.UtilityCustomFunctions - Actual:Sharon Bryan
+14:40:59.663 [main] INFO  utilities.UtilityCustomFunctions - Expected:Sharon Bryan
+14:40:59.663 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:41:00.787 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:41:00.787 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:41:00.787 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:41:01.902 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840004707
+14:41:01.902 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840004707
+14:41:01.903 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:41:03.022 [main] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
+14:41:03.022 [main] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
+14:41:03.022 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:41:04.149 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:41:04.149 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:41:04.149 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:41:05.286 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+14:41:05.286 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+14:41:05.286 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:41:06.404 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+14:41:06.404 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+14:41:06.404 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+14:41:20.076 [main] INFO  utilities.UtilityCustomFunctions - Actual:Donna Terry
+14:41:20.076 [main] INFO  utilities.UtilityCustomFunctions - Expected:Donna Terry
+14:41:20.076 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+14:41:21.217 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+14:41:21.218 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+14:41:21.218 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+14:41:22.345 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840015495
+14:41:22.346 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840015495
+14:41:22.346 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+14:41:23.486 [main] INFO  utilities.UtilityCustomFunctions - Actual:Marilyn@rsoft.in
+14:41:23.486 [main] INFO  utilities.UtilityCustomFunctions - Expected:Marilyn@rsoft.in
+14:41:23.486 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:41:24.581 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+14:41:24.581 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+14:41:24.581 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+14:41:25.713 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+14:41:25.713 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+14:41:25.713 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+14:41:26.816 [main] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+14:41:26.817 [main] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+14:41:26.817 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+15:28:50.362 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Test Execution on Browser: chrome
+15:28:50.413 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Excel file Utility instance created
+15:28:50.914 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Row Count is: 9
+15:28:50.958 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Col Count is: 15
+15:28:58.979 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+15:29:00.280 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+15:29:01.563 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+15:29:14.993 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+15:29:18.405 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+15:29:20.523 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+15:29:24.108 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+15:29:27.360 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+15:29:27.438 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Integration
+15:29:38.294 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - [ETNotification Webform] is selected in List
+15:30:13.796 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+15:30:16.998 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+15:30:19.112 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+15:30:33.475 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+15:30:33.475 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+15:30:33.475 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+15:30:34.607 [main] INFO  utilities.UtilityCustomFunctions - Actual:
+15:30:34.607 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+15:30:34.607 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+15:30:35.730 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840097679
+15:30:35.730 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840097679
+15:30:35.731 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+15:30:36.844 [main] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+15:30:36.844 [main] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+15:30:36.844 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+15:30:37.952 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+15:30:37.952 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+15:30:37.952 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+15:30:39.054 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+15:30:39.054 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+15:30:39.054 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+15:30:40.180 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+15:30:40.180 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+15:30:40.180 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+15:47:57.401 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Test Execution on Browser: chrome
+15:47:57.451 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Excel file Utility instance created
+15:47:57.968 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Row Count is: 9
+15:47:58.006 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Col Count is: 15
+15:48:04.012 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+15:48:05.328 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+15:48:06.596 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+15:48:18.033 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+15:48:21.477 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+15:48:23.599 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+15:48:27.284 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+15:48:30.532 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+15:48:30.604 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Integration
+15:48:41.863 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - [ETNotification Webform] is selected in List
+15:49:16.181 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+15:49:19.544 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+15:49:21.666 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+15:49:35.731 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+15:49:35.732 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+15:49:35.732 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+15:49:36.882 [main] INFO  utilities.UtilityCustomFunctions - Actual:
+15:49:36.882 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+15:49:36.882 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+15:49:37.993 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840097679
+15:49:37.993 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840042141
+15:49:37.993 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+15:49:39.117 [main] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+15:49:39.117 [main] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+15:49:39.118 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+15:49:40.230 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+15:49:40.230 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+15:49:40.230 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+15:49:41.344 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+15:49:41.344 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+15:49:41.344 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+15:49:42.458 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+15:49:42.458 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+15:49:42.459 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+15:59:43.033 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Test Execution on Browser: chrome
+15:59:43.093 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Excel file Utility instance created
+15:59:43.646 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Row Count is: 9
+15:59:43.690 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Col Count is: 15
+16:00:25.142 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:00:26.399 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:00:27.617 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:00:38.536 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:00:41.928 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:00:44.027 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+16:00:47.680 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:00:51.032 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:00:51.104 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Integration
+16:01:02.012 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - [ETNotification Webform] is selected in List
+16:01:37.879 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:01:41.191 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:01:43.290 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+16:01:57.447 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+16:01:57.447 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+16:01:57.447 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:01:58.623 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:01:58.623 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:01:58.623 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:01:59.752 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840024283
+16:01:59.752 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840024283
+16:01:59.752 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:02:00.863 [main] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+16:02:00.863 [main] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+16:02:00.863 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:02:01.955 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+16:02:01.955 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+16:02:01.955 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:02:03.081 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+16:02:03.081 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+16:02:03.081 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:02:04.201 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+16:02:04.201 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+16:02:04.201 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:03:52.202 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Test Execution on Browser: chrome
+16:03:52.255 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Excel file Utility instance created
+16:03:52.770 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Row Count is: 9
+16:03:52.811 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Col Count is: 15
+16:03:58.647 [main] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:03:59.943 [main] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:04:01.194 [main] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:04:12.197 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:04:15.610 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:04:17.725 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+16:04:21.317 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:04:24.499 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:04:24.600 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Integration
+16:04:35.447 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - [ETNotification Webform] is selected in List
+16:05:10.312 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:05:13.550 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:05:15.660 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+16:05:29.716 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+16:05:29.716 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+16:05:29.716 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:05:30.855 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:05:30.855 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:05:30.855 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:05:31.995 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840030918
+16:05:31.995 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840030918
+16:05:31.995 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:05:33.146 [main] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+16:05:33.146 [main] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+16:05:33.146 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:05:34.266 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+16:05:34.266 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+16:05:34.266 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:05:35.369 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+16:05:35.370 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+16:05:35.370 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:05:36.472 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+16:05:36.472 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+16:05:36.472 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:05:52.458 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kimberly Austin
+16:05:52.459 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kimberly Austin
+16:05:52.459 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:05:53.582 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:05:53.582 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:05:53.582 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:05:54.707 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840011379
+16:05:54.707 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840011379
+16:05:54.707 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:05:55.826 [main] INFO  utilities.UtilityCustomFunctions - Actual:Grace@rsoft.in
+16:05:55.826 [main] INFO  utilities.UtilityCustomFunctions - Expected:Grace@rsoft.in
+16:05:55.827 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:05:56.945 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+16:05:56.945 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+16:05:56.946 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:05:58.067 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+16:05:58.067 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+16:05:58.067 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:05:59.182 [main] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+16:05:59.182 [main] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+16:05:59.182 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:06:12.783 [main] INFO  utilities.UtilityCustomFunctions - Actual:Donna Terry
+16:06:12.783 [main] INFO  utilities.UtilityCustomFunctions - Expected:Donna Terry
+16:06:12.783 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:06:13.895 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:06:13.895 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:06:13.895 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:06:15.017 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840035325
+16:06:15.017 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840035325
+16:06:15.017 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:06:16.132 [main] INFO  utilities.UtilityCustomFunctions - Actual:Amber@rsoft.in
+16:06:16.132 [main] INFO  utilities.UtilityCustomFunctions - Expected:Amber@rsoft.in
+16:06:16.132 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:06:17.249 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+16:06:17.249 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+16:06:17.249 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:06:18.379 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+16:06:18.379 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+16:06:18.379 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:06:19.497 [main] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+16:06:19.498 [main] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+16:06:19.498 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:06:32.959 [main] INFO  utilities.UtilityCustomFunctions - Actual:Kimberly Austin
+16:06:32.959 [main] INFO  utilities.UtilityCustomFunctions - Expected:Kimberly Austin
+16:06:32.959 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:06:34.063 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:06:34.063 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:06:34.063 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:06:35.174 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840001052
+16:06:35.174 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840001052
+16:06:35.174 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:06:36.297 [main] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
+16:06:36.297 [main] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
+16:06:36.297 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:06:37.409 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+16:06:37.409 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+16:06:37.409 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:06:38.516 [main] INFO  utilities.UtilityCustomFunctions - Actual:one
+16:06:38.516 [main] INFO  utilities.UtilityCustomFunctions - Expected:one
+16:06:38.516 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:06:39.632 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+16:06:39.632 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:06:39.632 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:06:46.854 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Avatar
+16:06:50.165 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu CRM Setting
+16:06:52.284 [main] INFO  testCases.WebForms.TC021_WF_RRN_OneYN_TwoY - Clicked Menu User Access Control
+16:07:05.965 [main] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+16:07:05.965 [main] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+16:07:05.965 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:07:07.080 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:07:07.080 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:07:07.080 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:07:08.196 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840018075
+16:07:08.197 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840018075
+16:07:08.197 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:07:09.307 [main] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
+16:07:09.308 [main] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
+16:07:09.308 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:07:10.430 [main] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+16:07:10.430 [main] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+16:07:10.430 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:07:11.541 [main] INFO  utilities.UtilityCustomFunctions - Actual:five
+16:07:11.541 [main] INFO  utilities.UtilityCustomFunctions - Expected:five
+16:07:11.541 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:07:12.660 [main] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+16:07:12.660 [main] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+16:07:12.660 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:07:26.118 [main] INFO  utilities.UtilityCustomFunctions - Actual:Trott Alexander
+16:07:26.118 [main] INFO  utilities.UtilityCustomFunctions - Expected:Trott Alexander
+16:07:26.119 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:07:27.232 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:07:27.232 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:07:27.232 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:07:28.339 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840096918
+16:07:28.339 [main] INFO  utilities.UtilityCustomFunctions - Expected:9840096918
+16:07:28.339 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+16:07:29.458 [main] INFO  utilities.UtilityCustomFunctions - Actual:Testing@rsoft.in
+16:07:29.458 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing@rsoft.in
+16:07:29.458 [main] INFO  utilities.UtilityCustomFunctions - Message:Email
+16:07:30.555 [main] INFO  utilities.UtilityCustomFunctions - Actual:Testing
+16:07:30.555 [main] INFO  utilities.UtilityCustomFunctions - Expected:Testing
+16:07:30.556 [main] INFO  utilities.UtilityCustomFunctions - Message:Text
+16:07:31.699 [main] INFO  utilities.UtilityCustomFunctions - Actual:three
+16:07:31.699 [main] INFO  utilities.UtilityCustomFunctions - Expected:three
+16:07:31.699 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+16:07:32.813 [main] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+16:07:32.813 [main] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:07:32.813 [main] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:07:47.840 [main] INFO  utilities.UtilityCustomFunctions - Actual:Donna Terry
+16:07:47.840 [main] INFO  utilities.UtilityCustomFunctions - Expected:Donna Terry
+16:07:47.840 [main] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+16:07:48.954 [main] INFO  utilities.UtilityCustomFunctions - Actual:+91
+16:07:48.955 [main] INFO  utilities.UtilityCustomFunctions - Expected:+91
+16:07:48.955 [main] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+16:07:50.075 [main] INFO  utilities.UtilityCustomFunctions - Actual:9840097524
