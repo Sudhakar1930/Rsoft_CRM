@@ -1,0 +1,529 @@
+12:17:22.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:17:23.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:17:23.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:17:23.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:17:24.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840006874
+12:17:24.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840006874
+12:17:24.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:17:25.915 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
+12:17:25.916 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
+12:17:25.917 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:17:27.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+12:17:27.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+12:17:27.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:17:28.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+12:17:28.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+12:17:28.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:17:29.243 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+12:17:29.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+12:17:29.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:17:43.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frank Ryan
+12:17:43.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frank Ryan
+12:17:43.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:17:44.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:17:44.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:17:44.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:17:45.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840023157
+12:17:45.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840023157
+12:17:45.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:17:46.766 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
+12:17:46.766 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
+12:17:46.766 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:17:47.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+12:17:47.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+12:17:47.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:17:48.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:five
+12:17:48.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:five
+12:17:48.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:17:50.107 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+12:17:50.107 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+12:17:50.107 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:18:04.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Hills Nicholas
+12:18:04.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Hills Nicholas
+12:18:04.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:18:05.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:18:05.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:18:05.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:18:06.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840057310
+12:18:06.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840057310
+12:18:06.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:18:07.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Denise@rsoft.in
+12:18:07.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
+12:18:07.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:18:08.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+12:18:08.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+12:18:08.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:18:09.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:18:09.780 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:18:09.780 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:18:10.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+12:18:10.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+12:18:10.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:18:24.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Ghosh Jacob
+12:18:24.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ghosh Jacob
+12:18:24.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:18:25.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:18:25.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:18:25.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:18:26.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840017603
+12:18:26.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840017603
+12:18:26.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:18:27.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
+12:18:27.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
+12:18:27.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:18:29.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+12:18:29.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+12:18:29.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:18:30.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
+12:18:30.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
+12:18:30.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:18:31.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+12:18:31.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+12:18:31.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:18:45.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Davis Edward
+12:18:45.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Davis Edward
+12:18:45.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:18:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:18:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:18:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:18:47.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840054952
+12:18:47.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840054952
+12:18:47.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:18:48.508 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
+12:18:48.508 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
+12:18:48.508 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:18:49.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+12:18:49.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+12:18:49.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:18:50.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
+12:18:50.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
+12:18:50.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:18:51.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+12:18:51.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+12:18:51.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:19:05.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Evans Jeffrey
+12:19:05.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Evans Jeffrey
+12:19:05.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:19:06.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:19:06.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:19:06.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:19:07.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840070710
+12:19:07.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840070710
+12:19:07.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:19:08.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Marilyn@rsoft.in
+12:19:08.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Marilyn@rsoft.in
+12:19:08.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:19:09.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
+12:19:09.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
+12:19:09.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:19:11.046 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+12:19:11.046 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+12:19:11.046 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:19:12.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+12:19:12.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+12:19:12.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:19:22.257 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Test Execution on Browser: chrome
+12:19:22.303 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Excel file Utility instance created
+12:19:22.364 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Row Count is: 9
+12:19:22.375 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Col Count is: 43
+12:19:22.375 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Extracting DataSheet Values started...
+12:19:26.092 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+12:19:27.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+12:19:28.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+12:19:39.768 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:19:43.128 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:19:45.242 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:19:54.751 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:19:57.855 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:19:59.951 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:20:07.702 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:20:10.894 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:20:12.990 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:20:21.003 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:20:24.173 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:20:26.263 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:20:34.265 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:20:37.452 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:20:39.550 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:20:47.543 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:20:50.694 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:20:52.788 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:21:00.774 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:21:03.953 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:21:06.039 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
+12:21:14.399 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
+12:21:17.637 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
+12:21:17.700 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Integration
+12:21:28.452 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - [ETNotification Webform] is selected in List
+12:22:06.777 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mary Tyler
+12:22:06.777 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mary Tyler
+12:22:06.777 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:22:07.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:22:07.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:22:07.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:22:09.027 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840016042
+12:22:09.027 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840016042
+12:22:09.028 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:22:10.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+12:22:10.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+12:22:10.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:22:11.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:22:11.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:22:11.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:22:12.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:22:12.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:22:12.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:22:13.460 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+12:22:13.460 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+12:22:13.460 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:22:28.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
+12:22:28.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
+12:22:28.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:22:29.144 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:22:29.144 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:22:29.144 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:22:30.264 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840084157
+12:22:30.264 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840084157
+12:22:30.264 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:22:31.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Grace@rsoft.in
+12:22:31.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Grace@rsoft.in
+12:22:31.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:22:32.481 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:22:32.481 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:22:32.481 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:22:33.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
+12:22:33.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
+12:22:33.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:22:34.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+12:22:34.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+12:22:34.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:22:48.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:White Raymond
+12:22:48.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:White Raymond
+12:22:48.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:22:49.373 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:22:49.373 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:22:49.373 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:22:50.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840009013
+12:22:50.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840009013
+12:22:50.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:22:51.585 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Amber@rsoft.in
+12:22:51.585 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Amber@rsoft.in
+12:22:51.585 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:22:52.701 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:22:52.701 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:22:52.701 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:22:53.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
+12:22:53.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
+12:22:53.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:22:54.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+12:22:54.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+12:22:54.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:23:08.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
+12:23:08.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
+12:23:08.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:23:09.990 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:23:09.990 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:23:09.990 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:23:11.109 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840014112
+12:23:11.109 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840014112
+12:23:11.109 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:23:12.228 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
+12:23:12.228 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
+12:23:12.228 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:23:13.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:23:13.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:23:13.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:23:14.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+12:23:14.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+12:23:14.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:23:15.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+12:23:15.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+12:23:15.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:23:30.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:White Raymond
+12:23:30.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:White Raymond
+12:23:30.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:23:31.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:23:31.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:23:31.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:23:32.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840055008
+12:23:32.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840055008
+12:23:32.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:23:33.375 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
+12:23:33.375 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
+12:23:33.375 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:23:34.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:23:34.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:23:34.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:23:35.690 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:five
+12:23:35.690 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:five
+12:23:35.690 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:23:36.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+12:23:36.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+12:23:36.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:23:50.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yakub Dennis
+12:23:50.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yakub Dennis
+12:23:50.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:23:51.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:23:51.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:23:51.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:23:52.737 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840074005
+12:23:52.737 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840074005
+12:23:52.737 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:23:53.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Denise@rsoft.in
+12:23:53.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
+12:23:53.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:23:54.955 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:23:54.955 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:23:54.955 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:23:56.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:23:56.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:23:56.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:23:57.205 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+12:23:57.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+12:23:57.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:24:10.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
+12:24:10.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
+12:24:10.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:24:11.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:24:11.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:24:11.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:24:12.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840014643
+12:24:12.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840014643
+12:24:12.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:24:14.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
+12:24:14.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
+12:24:14.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:24:15.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:24:15.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:24:15.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:24:16.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
+12:24:16.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
+12:24:16.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:24:17.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+12:24:17.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+12:24:17.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:24:31.009 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:White Raymond
+12:24:31.010 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:White Raymond
+12:24:31.010 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:24:32.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:24:32.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:24:32.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:24:33.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840065618
+12:24:33.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840065618
+12:24:33.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:24:34.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
+12:24:34.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
+12:24:34.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:24:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:24:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:24:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:24:36.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
+12:24:36.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
+12:24:36.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:24:37.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+12:24:37.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+12:24:37.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:24:51.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
+12:24:51.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
+12:24:51.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:24:53.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:24:53.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:24:53.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:24:54.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840001141
+12:24:54.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840001141
+12:24:54.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:24:55.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Marilyn@rsoft.in
+12:24:55.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Marilyn@rsoft.in
+12:24:55.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:24:56.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:24:56.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:24:56.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:24:57.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+12:24:57.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+12:24:57.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:24:58.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+12:24:58.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+12:24:58.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:25:08.402 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Test Execution on Browser: chrome
+12:25:08.415 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Excel file Utility instance created
+12:25:08.430 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Row Count is: 9
+12:25:08.438 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Col Count is: 43
+12:25:08.438 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Extracting DataSheet Values started...
+12:25:12.417 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+12:25:13.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+12:25:14.909 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+12:25:26.649 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Avatar
+12:25:29.942 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Menu CRM Setting
+12:25:32.071 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Menu User Access Control
+12:25:36.077 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Avatar
+12:25:39.272 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Menu CRM Setting
+12:25:39.341 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Integration
+12:25:50.046 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - [ETNotification Webform] is selected in List
+12:26:27.960 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Susan Zachary
+12:26:27.960 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Susan Zachary
+12:26:27.960 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:26:29.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:26:29.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:26:29.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:26:30.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840032043
+12:26:30.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840032043
+12:26:30.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:26:31.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
+12:26:31.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
+12:26:31.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:26:32.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:26:32.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:26:32.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:26:33.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:26:33.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:26:33.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:26:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+12:26:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+12:26:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:26:47.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+12:26:47.773 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+12:26:47.773 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:26:48.918 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:26:48.918 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:26:48.918 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:26:50.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840044227
+12:26:50.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840044227
+12:26:50.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:26:51.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Grace@rsoft.in
+12:26:51.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Grace@rsoft.in
+12:26:51.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:26:52.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:26:52.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:26:52.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:26:53.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
+12:26:53.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
+12:26:53.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:26:54.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+12:26:54.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+12:26:54.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:27:07.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jessica Douglas
+12:27:07.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jessica Douglas
+12:27:07.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:27:08.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:27:08.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:27:08.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:27:10.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840068313
+12:27:10.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840068313
+12:27:10.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:27:11.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Amber@rsoft.in
+12:27:11.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Amber@rsoft.in
+12:27:11.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:27:12.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:27:12.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:27:12.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:27:13.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:27:13.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:27:13.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:27:14.568 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+12:27:14.568 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+12:27:14.568 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:27:28.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+12:27:28.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+12:27:28.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:27:29.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:27:29.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:27:29.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:27:30.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840051858
+12:27:30.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840051858
+12:27:30.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:27:31.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
+12:27:31.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
+12:27:31.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:27:32.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:27:32.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:27:32.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:27:33.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+12:27:33.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+12:27:33.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:27:34.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
+12:27:34.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
+12:27:34.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:27:49.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+12:27:49.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+12:27:49.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:27:50.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:27:50.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:27:50.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:27:51.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840036394
+12:27:51.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840036394
+12:27:51.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:27:52.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
+12:27:52.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
+12:27:52.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:27:53.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:27:53.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:27:53.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:27:54.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:five
+12:27:54.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:five
+12:27:54.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:27:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
+12:27:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
+12:27:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:28:09.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Karen Peter
+12:28:09.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Karen Peter
+12:28:09.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:28:10.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:28:10.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:28:10.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:28:11.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840006280
+12:28:11.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840006280
+12:28:11.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:28:12.569 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Denise@rsoft.in
+12:28:12.569 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
+12:28:12.569 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:28:13.698 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:28:13.698 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:28:13.698 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:28:14.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+12:28:14.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+12:28:14.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:28:15.937 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+12:28:15.937 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+12:28:15.937 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:28:29.389 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+12:28:29.389 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+12:28:29.389 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:28:30.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:28:30.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:28:30.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:28:31.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840061359
+12:28:31.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840061359
+12:28:31.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:28:32.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
+12:28:32.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
+12:28:32.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:28:33.878 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:28:33.878 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:28:33.878 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:28:34.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
+12:28:34.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
+12:28:34.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:28:36.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
+12:28:36.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
+12:28:36.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+12:28:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+12:28:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
+12:28:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
+12:28:50.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+12:28:50.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
+12:28:50.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
+12:28:51.725 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840021541
+12:28:51.725 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840021541
+12:28:51.725 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
+12:28:52.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
+12:28:52.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
+12:28:52.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+12:28:53.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
+12:28:53.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
+12:28:53.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
+12:28:55.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
+12:28:55.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
+12:28:55.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
+12:28:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
+12:28:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
+12:28:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State

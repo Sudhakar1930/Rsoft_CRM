@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY" class="method navigator-link" hash-for-method="testWebFormUser">testWebFormUser</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC002_WF_RRUserYN_NoCondition" class="method navigator-link" hash-for-method="testWFUserAvailYesorNo">testWFUserAvailYesorNo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC003_WF_RRUserN_NoCondition" class="method navigator-link" hash-for-method="testWebFormUser">testWebFormUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN" class="method navigator-link" hash-for-method="testWebFormUser">testWebFormUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC001_WF_RRUserY_NoCondition" class="method navigator-link" hash-for-method="testWebFormUser">testWebFormUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC004_WF_RRUserY_OneConditionY" class="method navigator-link" hash-for-method="testWebFormUser">testWebFormUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WebForms.TC006_WF_RRUserN_OneConditionY" class="method navigator-link" hash-for-method="testWebFormUser">testWebFormUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,10 +143,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY</span>
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WebForms.TC006_WF_RRUserN_OneConditionY</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -129,21 +154,85 @@
                   <a name="testWebFormUser">
                   </a> <!-- testWebFormUser -->
                   <span class="method-name">testWebFormUser</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at utilities.CRMReUsables.fModuleTableValue(CRMReUsables.java:631)
-	at testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY.testWebFormUser(TC039_WF_RRYN_OneYN_TwoY.java:389)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WebForms.TC004_WF_RRUserY_OneConditionY</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWebFormUser">
+                  </a> <!-- testWebFormUser -->
+                  <span class="method-name">testWebFormUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWebFormUser">
+                  </a> <!-- testWebFormUser -->
+                  <span class="method-name">testWebFormUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WebForms.TC001_WF_RRUserY_NoCondition</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWebFormUser">
+                  </a> <!-- testWebFormUser -->
+                  <span class="method-name">testWebFormUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WebForms.TC003_WF_RRUserN_NoCondition</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWebFormUser">
+                  </a> <!-- testWebFormUser -->
+                  <span class="method-name">testWebFormUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WebForms.TC002_WF_RRUserYN_NoCondition</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWFUserAvailYesorNo">
+                  </a> <!-- testWFUserAvailYesorNo -->
+                  <span class="method-name">testWFUserAvailYesorNo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -153,19 +242,21 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
+&lt;suite thread-count=&quot;7&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;chromeTest&quot;&gt;
+  &lt;test thread-count=&quot;7&quot; parallel=&quot;tests&quot; name=&quot;chromeTest-Set1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY&quot;/&gt;
+      &lt;class name=&quot;testCases.WebForms.TC001_WF_RRUserY_NoCondition&quot;/&gt;
+      &lt;class name=&quot;testCases.WebForms.TC002_WF_RRUserYN_NoCondition&quot;/&gt;
+      &lt;class name=&quot;testCases.WebForms.TC003_WF_RRUserN_NoCondition&quot;/&gt;
+      &lt;class name=&quot;testCases.WebForms.TC004_WF_RRUserY_OneConditionY&quot;/&gt;
+      &lt;class name=&quot;testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN&quot;/&gt;
+      &lt;class name=&quot;testCases.WebForms.TC006_WF_RRUserN_OneConditionY&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chromeTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;edgeTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
-  &lt;/test&gt; &lt;!-- edgeTest --&gt;
+  &lt;/test&gt; &lt;!-- chromeTest-Set1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,10 +268,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chromeTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">edgeTest (0 classes)</span>
+                <span class="test-name">chromeTest-Set1 (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,16 +294,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testWebFormUser')
-data.setCell(0, 2, 'testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY')
-data.setCell(0, 3, 348407);
+data.setCell(0, 2, 'testCases.WebForms.TC003_WF_RRUserN_NoCondition')
+data.setCell(0, 3, 460033);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testWFUserAvailYesorNo')
+data.setCell(1, 2, 'testCases.WebForms.TC002_WF_RRUserYN_NoCondition')
+data.setCell(1, 3, 358633);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testWebFormUser')
+data.setCell(2, 2, 'testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN')
+data.setCell(2, 3, 344789);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testWebFormUser')
+data.setCell(3, 2, 'testCases.WebForms.TC004_WF_RRUserY_OneConditionY')
+data.setCell(3, 3, 336448);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testWebFormUser')
+data.setCell(4, 2, 'testCases.WebForms.TC006_WF_RRUserN_OneConditionY')
+data.setCell(4, 3, 256626);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testWebFormUser')
+data.setCell(5, 2, 'testCases.WebForms.TC001_WF_RRUserY_NoCondition')
+data.setCell(5, 3, 254885);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 33 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -230,9 +338,54 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.WebForms.TC006_WF_RRUserN_OneConditionY</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onStart</span>
+                <br/>
+                <span class="ignored-method-name">flush</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.WebForms.TC004_WF_RRUserY_OneConditionY</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flush</span>
+                <br/>
+                <span class="ignored-method-name">onStart</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onStart</span>
+                <br/>
+                <span class="ignored-method-name">flush</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.WebForms.TC003_WF_RRUserN_NoCondition</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flush</span>
+                <br/>
+                <span class="ignored-method-name">onStart</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.WebForms.TC002_WF_RRUserYN_NoCondition</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flush</span>
+                <br/>
+                <span class="ignored-method-name">onStart</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -241,32 +394,146 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.WebForms.TC001_WF_RRUserY_NoCondition</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">onStart(org.testng.TestRunner@16e6a643)</span>
+                <span class="method-name">onStart(org.testng.TestRunner@3d4d3fe7)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">testName</span>
-                <span class="method-start">248 ms</span>
+                <span class="method-start">261 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC003_WF_RRUserN_NoCondition</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testName</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC002_WF_RRUserYN_NoCondition</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testName</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC004_WF_RRUserY_OneConditionY</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testName</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testName</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC006_WF_RRUserN_OneConditionY</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testName</span>
+                <span class="method-start">268 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC001_WF_RRUserY_NoCondition</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">265 ms</span>
+                <span class="method-start">279 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testWebFormUser</span>
-                <span class="method-start">2419 ms</span>
+                <span class="method-start">2344 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">350833 ms</span>
+                <span class="method-start">257249 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC002_WF_RRUserYN_NoCondition</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">257520 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWFUserAvailYesorNo</span>
+                <span class="method-start">258558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">617192 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC003_WF_RRUserN_NoCondition</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">617479 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWebFormUser</span>
+                <span class="method-start">618509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1078544 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC004_WF_RRUserY_OneConditionY</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1078797 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWebFormUser</span>
+                <span class="method-start">1079973 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1416426 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1416647 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWebFormUser</span>
+                <span class="method-start">1417746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1762540 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC006_WF_RRUserN_OneConditionY</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1762781 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWebFormUser</span>
+                <span class="method-start">1763892 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2020519 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WebForms.TC001_WF_RRUserY_NoCondition</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flush</span>
-                <span class="method-start">351136 ms</span>
+                <span class="method-start">2020770 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
