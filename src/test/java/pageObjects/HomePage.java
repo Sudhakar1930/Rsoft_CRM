@@ -1,7 +1,10 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import utilities.UtilityCustomFunctions;
@@ -12,8 +15,9 @@ public class HomePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@FindBy(xpath="(//a[@class='dropdown-toggle nav-link dropdown-user-link']//img)[2]")
+//	@FindBy(xpath="(//a[@class='dropdown-toggle nav-link dropdown-user-link']//img)[1]")
 //	@FindBy(xpath="//a[@class='dropdown-toggle nav-link dropdown-user-link']//img")
+	@FindBy(xpath="(//a[@class='dropdown-toggle nav-link dropdown-user-link'])[1]/span")
 	WebElement eleAvatar;
 	
 //	@FindBy(xpath="//a[normalize-space()='Logout']")
@@ -28,7 +32,18 @@ public class HomePage extends BasePage {
 	
 	//Click Methods
 	public void clickAvatar() throws Exception {
-		UtilityCustomFunctions.doClick(driver, eleAvatar);
+//		WebElement eleAvatar1 = driver.findElement(By.xpath("//li[@class='nav-item mobile-menu d-md-none flex-start']//preceding::li/a"));
+		WebElement eleAvatar2 = driver.findElement(By.xpath("//a[@class='dropdown-toggle nav-link dropdown-user-link']"));
+		
+		
+		AllListPage objALP = new AllListPage(driver);  
+//		WebElement eleLeadMod= driver.findElement(By.xpath("//*[@id='MoreMod_Lead_module']/span"));
+//		Actions Action = new Actions(driver);
+//		Action.moveToElement(eleAvatar1).click().perform();
+		
+//		objALP.clickAllList();
+//		eleAvatar1.click();
+		UtilityCustomFunctions.doClick(driver, eleAvatar2);
 	}
 	
 	public void clickLogout() throws Exception {

@@ -327,9 +327,9 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 			UtilityCustomFunctions.logWriteConsole("Created Entity after Duplicate is Done");
 		}
 		//Edit Source Module Validation
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		objALP.clickAllList();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		System.out.println("Module clicked");

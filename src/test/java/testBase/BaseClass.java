@@ -53,6 +53,8 @@ public class BaseClass extends ExtentReportManager{
 	public static SoftAssert sAssertinFn;
 	protected static File file;
 	public static int iValCount;
+	public static int iPassCount;
+	public static int iFailCount;
 	
 	public void testname(String testname, String name) {
 		test = extent.createTest(testname);
@@ -235,8 +237,10 @@ public class BaseClass extends ExtentReportManager{
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() throws IOException, InterruptedException {
-//		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iValCount), "Total Validation Count" + String.valueOf(iValCount), "pass", node);
-		driver.quit();
+		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iValCount), "Total Validation Count:" + String.valueOf(iValCount), "pass", node);
+		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iPassCount), "Total Passed Validations:" + String.valueOf(iPassCount), "pass", node);
+		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iFailCount), "Total Failed Validations:" + String.valueOf(iFailCount), "fail", node);
+//		driver.quit();
 	}
 	
 	

@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.AddNewUser">
+      <class name="testCases.TC013_CreateEntity_OOFS_NewValues">
         <methods>
           <include name="onStart"/>
-          <include name="testWebFormUser"/>
-          <include name="testName"/>
+          <include name="tearDown"/>
+          <include name="testCreateEntity_OOFS_NewValues"/>
           <include name="setup"/>
           <include name="flush"/>
+          <include name="CreateTest"/>
         </methods>
-      </class> <!-- testCases.AddNewUser -->
+      </class> <!-- testCases.TC013_CreateEntity_OOFS_NewValues -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

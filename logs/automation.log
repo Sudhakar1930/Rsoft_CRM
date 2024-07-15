@@ -1,21 +1,117 @@
-12:29:09.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Susan Zachary
-12:29:09.881 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Susan Zachary
-12:29:09.881 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:29:10.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:29:10.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:29:10.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:29:12.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840010883
-12:29:12.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840010883
-12:29:12.127 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:29:13.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Marilyn@rsoft.in
-12:29:13.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Marilyn@rsoft.in
-12:29:13.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:29:14.363 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:29:14.363 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:29:14.363 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:29:15.476 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:29:15.476 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:29:15.476 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:29:16.589 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
-12:29:16.590 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
-12:29:16.590 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+16:01:25.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:LeadEmail@gmail.com
+16:01:25.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:LeadEmail@gmail.com
+16:01:25.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Lead Module on @Add New Record - OOFS--Detail View
+16:02:02.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:02:06.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquriyCheckName
+16:02:06.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+16:02:06.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Related Module Summary Page Name Validation @Add New Record - OOFS-
+16:02:08.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:02:11.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquriyCheckName
+16:02:11.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
+16:02:11.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Module DT View Page Name Validation @Add New Record - OOFS-
+16:02:42.597 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:02:47.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+16:02:47.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+16:02:47.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Related Module Phone Number  Validation@Add New Record - OOFS-
+16:02:49.111 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:02:52.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
+16:02:52.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
+16:02:52.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Module DT View Page Phone Number Validation@Add New Record - OOFS-
+16:02:53.294 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Navigate to Source Summary Page
+16:03:23.181 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary Add Entity Started
+16:03:23.182 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
+16:03:23.210 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
+16:03:23.235 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
+16:03:23.235 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
+16:03:23.855 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+16:03:24.412 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+16:03:27.523 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+16:03:33.619 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Sudhakar VE] is selected in List
+16:03:33.620 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+16:03:36.980 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+16:03:36.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+16:03:38.075 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+16:03:41.242 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+65] is selected in List
+16:03:41.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
+16:03:42.523 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
+16:03:44.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNew@rsoft.in entered in  input
+16:03:45.776 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAddNew@rsoft.in
+16:03:46.840 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+16:03:47.894 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+16:04:01.364 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+16:04:02.438 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+16:04:05.668 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Kanchipuram] is selected in List
+16:04:05.668 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+16:04:06.742 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+16:04:10.052 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Tamilnadu] is selected in List
+16:04:10.052 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+16:04:11.119 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+16:04:14.262 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [India] is selected in List
+16:04:14.262 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+16:04:16.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
+16:04:16.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+16:04:16.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+16:04:24.611 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+16:04:30.903 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:04:32.789 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+16:04:36.815 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+16:04:38.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+16:04:40.025 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+16:04:43.036 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+16:04:53.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+16:04:54.426 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+16:04:59.429 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+16:05:13.607 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+16:05:19.961 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:05:21.824 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+16:05:33.367 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [5] is selected in List
+16:05:37.579 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [00] is selected in List
+16:05:41.802 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [00] is selected in List
+16:05:46.111 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [PM] is selected in List
+16:05:49.129 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+16:05:49.241 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+16:05:49.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:15-07-2024
+16:06:03.811 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Mrs.] is selected in List
+16:06:05.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+16:06:06.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+16:06:07.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+16:06:08.791 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+16:06:12.061 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Dr.] is selected in List
+16:06:13.280 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+16:06:14.610 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddEnquiry@gmail.com entered in  input
+16:06:15.900 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+16:06:15.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording"
+16:06:17.330 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
+"Auto Lead Call Distribution With Call Recording" entered in  textarea
+16:06:25.499 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+16:06:31.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:06:33.590 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+16:06:37.604 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+16:06:44.079 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+16:06:46.417 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
+16:06:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+16:06:52.651 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Urgent] is selected in List
+16:06:58.944 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+91] is selected in List
+16:07:01.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
+16:07:02.556 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNewLead@gmail.com entered in  input
+16:07:03.823 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+16:07:08.128 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
+16:07:10.477 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 0472103025 entered in  input
+16:07:11.761 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNewSales@gmail.com entered in  input
+16:07:36.028 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary Add Record completed
+16:07:36.065 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:07:36.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:07:47.185 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Old Source Id:138730
+16:07:47.185 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Curr Source Id:138732
+16:08:22.484 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:08:42.580 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count7
+16:08:42.580 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:7
+16:08:42.581 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+16:08:43.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count5
+16:08:43.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Passed Validations:5
+16:08:43.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+16:08:44.922 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count4
+16:08:44.922 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Failed Validations:4
+16:08:44.922 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:fail

@@ -1,0 +1,446 @@
+17:04:34.129 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.rsoft.com/
+17:04:34.130 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.rsoft.com
+17:04:34.130 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Duplicate with New Data
+17:04:35.291 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Vijay
+17:04:35.291 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Vijay
+17:04:35.291 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Duplicate with New Data
+17:04:36.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:DuplcateEqnury@gmail.com
+17:04:36.455 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:DuplcateEqnury@gmail.com
+17:04:36.455 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Duplicate with New Data
+17:04:37.617 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquired about project
+17:04:37.617 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquired about project
+17:04:37.617 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Duplicate with New Data
+17:04:38.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:04:38.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:04:38.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Duplicate with New Data
+17:04:39.943 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:04:39.943 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:04:39.943 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Duplicate with New Data
+17:04:41.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840081840
+17:04:41.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840081840
+17:04:41.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Duplicate with New Data
+17:04:42.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Moderate
+17:04:42.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Moderate
+17:04:42.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Duplicate with New Data
+17:04:43.440 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840098097
+17:04:43.440 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840098097
+17:04:43.440 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Duplicate with New Data
+17:04:44.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMDuplicateLead@rsoft.in
+17:04:44.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMDuplicateLead@rsoft.in
+17:04:44.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Duplicate with New Data
+17:04:45.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sample duplicate lead Text
+17:04:45.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sample duplicate lead Text
+17:04:45.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Duplicate with New Data
+17:04:46.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840027259
+17:04:46.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840027259
+17:04:46.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Duplicate with New Data
+17:04:48.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sales@rsoft.in
+17:04:48.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sales@rsoft.in
+17:04:48.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Duplicate with New Data
+17:04:50.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:05:00.388 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:05:00.388 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:05:00.388 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Duplicate with New Data
+17:05:01.543 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Testing ETR_M
+17:05:01.543 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Testing ETR_M
+17:05:01.543 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Duplicate with New Data
+17:05:02.693 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840031536
+17:05:02.694 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840031536
+17:05:02.694 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Duplicate with New Data
+17:05:03.849 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:sv@bluecrimson.in
+17:05:03.849 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:sv@bluecrimson.in
+17:05:03.849 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Duplicate with New Data
+17:05:04.999 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:4
+17:05:04.999 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:4
+17:05:05.000 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Duplicate with New Data
+17:05:06.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
+17:05:06.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
+17:05:06.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Duplicate with New Data
+17:05:07.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Chennai
+17:05:07.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ozar
+17:05:07.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Duplicate with New Data
+17:05:08.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+17:05:08.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Telengana
+17:05:08.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Duplicate with New Data
+17:05:09.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+17:05:09.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+17:05:09.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Duplicate with New Data
+17:05:10.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+17:05:10.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+17:05:10.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Duplicate with New Data
+17:05:11.930 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:05:11.930 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:05:11.930 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Duplicate with New Data
+17:05:13.093 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+17:05:13.093 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+17:05:13.093 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Duplicate with New Data
+17:05:14.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-13 05:00:00 PM
+17:05:14.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-13 05:00:00 PM
+17:05:14.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Duplicate with New Data
+17:05:15.400 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:
+17:05:15.400 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:
+17:05:15.400 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Related Module :  Duplicate with New Data
+17:05:15.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+17:05:15.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+17:05:15.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Duplicate with New Data
+17:05:16.624 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+17:05:16.624 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+17:05:16.624 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Duplicate with New Data
+17:05:17.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:33333333333
+17:05:17.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:33333333333
+17:05:17.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Duplicate with New Data
+17:05:18.942 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:8000
+17:05:18.942 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:8000
+17:05:18.942 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Duplicate with New Data
+17:05:20.076 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.rsoft.com/
+17:05:20.076 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.rsoft.com
+17:05:20.076 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Duplicate with New Data
+17:05:27.362 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Vijay
+17:05:27.362 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Vijay
+17:05:27.362 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Duplicate with New Data
+17:05:28.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:DuplcateEqnury@gmail.com
+17:05:28.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:DuplcateEqnury@gmail.com
+17:05:28.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Duplicate with New Data
+17:05:29.671 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquired about project
+17:05:29.671 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquired about project
+17:05:29.671 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Duplicate with New Data
+17:05:30.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:05:30.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:05:30.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Duplicate with New Data
+17:05:31.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:05:31.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:05:31.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Duplicate with New Data
+17:05:33.124 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840081840
+17:05:33.124 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840081840
+17:05:33.124 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Duplicate with New Data
+17:05:34.283 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Moderate
+17:05:34.283 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Moderate
+17:05:34.283 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Duplicate with New Data
+17:05:41.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840098097
+17:05:41.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840098097
+17:05:41.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Duplicate with New Data
+17:05:42.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMDuplicateLead@rsoft.in
+17:05:42.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMDuplicateLead@rsoft.in
+17:05:42.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Duplicate with New Data
+17:05:43.857 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sample duplicate lead Text
+17:05:43.857 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sample duplicate lead Text
+17:05:43.857 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Duplicate with New Data
+17:05:45.022 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840027259
+17:05:45.022 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840027259
+17:05:45.022 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Duplicate with New Data
+17:05:46.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sales@rsoft.in
+17:05:46.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sales@rsoft.in
+17:05:46.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailDuplicate with New Data
+17:05:57.158 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840031536 entered in  input
+17:06:05.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:1
+17:06:05.008 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with Modification data -9840031536
+17:06:10.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840081840 entered in  input
+17:06:17.278 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:1
+17:06:17.279 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with Modification data -9840081840
+17:06:22.733 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840098097 entered in  input
+17:06:29.459 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:1
+17:06:29.460 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Not Received after Duplicate with Modification data -9840098097
+17:07:31.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840031536 entered in  input
+17:07:38.975 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:07:38.975 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with No Modify -9840031536
+17:07:44.435 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840081840 entered in  input
+17:07:51.190 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:07:51.190 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with No Modify -9840081840
+17:07:54.600 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840098097 entered in  input
+17:08:01.315 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+17:08:01.315 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with No Modify -9840098097
+17:08:28.832 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Excel file Utility instance created
+17:08:28.855 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Row Count is: 1
+17:08:28.867 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Col Count is: 52
+17:08:28.867 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Extracting DataSheet Values started...
+17:08:29.448 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+17:08:32.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+17:08:37.703 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Sudhakar VE] is selected in List
+17:08:37.703 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+17:08:38.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Edit Text entered in  input
+17:08:39.000 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Edit Text
+17:08:40.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+17:08:43.229 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+65] is selected in List
+17:08:43.229 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9840031536
+17:08:44.537 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840031536 entered in  input
+17:08:46.820 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditSudhakar@rsoft.in entered in  input
+17:08:47.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: EditSudhakar@rsoft.in
+17:08:48.901 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+17:08:49.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 5
+17:09:07.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: four
+17:09:08.634 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+17:09:11.872 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Madurai] is selected in List
+17:09:11.872 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Madurai
+17:09:12.946 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+17:09:16.299 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Tripura] is selected in List
+17:09:16.299 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tripura
+17:09:17.380 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+17:09:20.583 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: CAT
+17:09:22.625 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: OFF
+17:09:22.685 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+17:09:22.746 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+17:09:30.932 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+17:09:37.247 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+17:09:39.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+17:09:43.044 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+17:09:45.152 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+17:09:46.220 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+17:09:49.226 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+17:09:59.492 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+17:10:00.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+17:10:10.724 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+17:10:17.010 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+17:10:18.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+17:10:30.232 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [5] is selected in List
+17:10:34.434 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [00] is selected in List
+17:10:38.646 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [00] is selected in List
+17:10:42.852 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [PM] is selected in List
+17:10:45.862 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+17:10:45.958 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+17:10:47.344 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions -  entered in  input
+17:10:52.780 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Ms.] is selected in List
+17:10:54.013 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Selvi entered in  input
+17:10:55.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 6666666666 entered in  input
+17:10:56.576 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 40000 entered in  input
+17:10:57.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - https://www.selenium.dev/ entered in  input
+17:11:01.099 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Mrs.] is selected in List
+17:11:02.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Sujay entered in  input
+17:11:03.655 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditEnquiry@test.com entered in  input
+17:11:04.935 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about MobileApp entered in  input
+17:11:07.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+17:11:15.372 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+17:11:21.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+17:11:23.487 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+17:11:27.493 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+17:11:33.959 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+60] is selected in List
+17:11:36.336 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840081840 entered in  input
+17:11:42.568 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [Ordinary] is selected in List
+17:11:48.827 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+91] is selected in List
+17:11:51.112 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840098097 entered in  input
+17:11:52.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditLead@rsoft.in entered in  input
+17:11:53.738 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Edit Lead Sample Text entered in  input
+17:11:57.987 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - [+60] is selected in List
+17:12:00.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840027259 entered in  input
+17:12:01.554 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditSales@rsoft.in entered in  input
+17:12:35.461 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Excel file Utility instance created
+17:12:35.482 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Row Count is: 1
+17:12:35.491 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Col Count is: 52
+17:12:35.492 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Extracting DataSheet Values started...
+17:12:42.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:12:42.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMNotification
+17:12:42.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMNotification
+17:12:42.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name : Edit with New Data
+17:12:47.196 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sAssign1:SudhakarsAssign2:VE
+17:12:47.196 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Get Text:
+17:12:47.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:12:47.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:12:47.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+17:12:48.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSudhakar@rsoft.in
+17:12:48.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSudhakar@rsoft.in
+17:12:48.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+17:12:49.750 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:12:49.750 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:12:49.751 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  Edit with New Data
+17:12:50.912 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Edit Text
+17:12:50.912 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Edit Text
+17:12:50.912 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Text:  Edit with New Data
+17:12:52.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840031536
+17:12:52.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840031536
+17:12:52.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Mobile Number:  Edit with New Data
+17:12:53.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSudhakar@rsoft.in
+17:12:53.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSudhakar@rsoft.in
+17:12:53.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  Edit with New Data
+17:12:54.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:5
+17:12:54.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:5
+17:12:54.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  Edit with New Data
+17:12:55.594 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+17:12:55.594 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+17:12:55.594 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  Edit with New Data
+17:12:56.747 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Madurai
+17:12:56.747 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Madurai
+17:12:56.747 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  Edit with New Data
+17:12:57.911 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tripura
+17:12:57.911 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tripura
+17:12:57.911 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  Edit with New Data
+17:12:59.044 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+17:12:59.045 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CAT
+17:12:59.045 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  Edit with New Data
+17:13:00.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:No
+17:13:00.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:No
+17:13:00.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  Edit with New Data
+17:13:01.339 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:13:01.339 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:13:01.339 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  Edit with New Data
+17:13:02.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+17:13:02.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+17:13:02.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Edit with New Data
+17:13:03.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-13 05:00:00 PM
+17:13:03.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-13 05:00:00 PM
+17:13:03.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Edit with New Data
+17:13:04.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+17:13:04.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+17:13:04.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Edit with New Data
+17:13:06.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Ms. Selvi
+17:13:06.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ms. Selvi
+17:13:06.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Edit with New Data
+17:13:07.243 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:6666666666
+17:13:07.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:6666666666
+17:13:07.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Edit with New Data
+17:13:08.393 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:40000
+17:13:08.393 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:40000
+17:13:08.393 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Edit with New Data
+17:13:09.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:https://www.selenium.dev/
+17:13:09.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:https://www.selenium.dev/
+17:13:09.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Edit with New Data
+17:13:10.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Sujay
+17:13:10.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Sujay
+17:13:10.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Edit with New Data
+17:13:11.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditEnquiry@test.com
+17:13:11.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditEnquiry@test.com
+17:13:11.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Edit with New Data
+17:13:13.000 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about MobileApp
+17:13:13.000 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about MobileApp
+17:13:13.000 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Edit with New Data
+17:13:14.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:13:14.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:13:14.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Edit with New Data
+17:13:15.362 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:13:15.362 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:13:15.362 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Edit with New Data
+17:13:16.527 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840081840
+17:13:16.527 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840081840
+17:13:16.527 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Edit with New Data
+17:13:17.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Ordinary
+17:13:17.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ordinary
+17:13:17.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Edit with New Data
+17:13:18.845 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840098097
+17:13:18.845 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840098097
+17:13:18.845 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Edit with New Data
+17:13:19.996 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditLead@rsoft.in
+17:13:19.996 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditLead@rsoft.in
+17:13:19.996 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Edit with New Data
+17:13:21.143 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Edit Lead Sample Text
+17:13:21.143 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Edit Lead Sample Text
+17:13:21.143 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Edit with New Data
+17:13:22.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840027259
+17:13:22.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840027259
+17:13:22.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Edit with New Data
+17:13:23.459 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSales@rsoft.in
+17:13:23.459 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSales@rsoft.in
+17:13:23.459 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Edit with New Data
+17:13:25.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+17:13:34.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Sudhakar VE
+17:13:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+17:13:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Edit with New Data
+17:13:35.775 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Edit Text
+17:13:35.775 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Edit Text
+17:13:35.775 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Edit with New Data
+17:13:36.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840031536
+17:13:36.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840031536
+17:13:36.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Edit with New Data
+17:13:38.080 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSudhakar@rsoft.in
+17:13:38.080 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSudhakar@rsoft.in
+17:13:38.080 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Edit with New Data
+17:13:39.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:5
+17:13:39.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:5
+17:13:39.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Edit with New Data
+17:13:40.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
+17:13:40.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
+17:13:40.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Edit with New Data
+17:13:41.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Madurai
+17:13:41.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Madurai
+17:13:41.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Edit with New Data
+17:13:42.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tripura
+17:13:42.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tripura
+17:13:42.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Stat:  Edit with New Data
+17:13:43.824 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+17:13:43.824 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CAT
+17:13:43.824 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Edit with New Data
+17:13:44.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:No
+17:13:44.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:No
+17:13:44.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Edit with New Data
+17:13:46.141 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:13:46.141 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:13:46.141 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Edit with New Data
+17:13:47.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+17:13:47.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+17:13:47.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Edit with New Data
+17:13:48.441 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-13 05:00:00 PM
+17:13:48.441 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-13 05:00:00 PM
+17:13:48.441 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Edit with New Data
+17:13:49.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:
+17:13:49.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:
+17:13:49.600 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Related Module :  Edit with New Data
+17:13:49.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+17:13:49.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+17:13:49.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Edit with New Data
+17:13:50.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Ms. Selvi
+17:13:50.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ms. Selvi
+17:13:50.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Edit with New Data
+17:13:51.980 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:6666666666
+17:13:51.980 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:6666666666
+17:13:51.980 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Edit with New Data
+17:13:53.133 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:40000
+17:13:53.133 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:40000
+17:13:53.133 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Edit with New Data
+17:13:54.269 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:https://www.selenium.dev/
+17:13:54.269 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:https://www.selenium.dev/
+17:13:54.269 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Edit with New Data
+17:14:01.574 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Sujay
+17:14:01.574 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Sujay
+17:14:01.574 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Edit with New Data
+17:14:02.728 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditEnquiry@test.com
+17:14:02.728 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditEnquiry@test.com
+17:14:02.728 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Edit with New Data
+17:14:03.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about MobileApp
+17:14:03.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about MobileApp
+17:14:03.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Edit with New Data
+17:14:05.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:14:05.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features.
+17:14:05.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Edit with New Data
+17:14:06.199 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-10
+17:14:06.199 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-10
+17:14:06.199 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Edit with New Data
+17:14:07.350 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840081840
+17:14:07.350 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840081840
+17:14:07.350 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Edit with New Data
+17:14:08.518 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Ordinary
+17:14:08.518 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ordinary
+17:14:08.518 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Edit with New Data
+17:14:15.798 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840098097
+17:14:15.798 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840098097
+17:14:15.798 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Edit with New Data
+17:14:16.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditLead@rsoft.in
+17:14:16.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditLead@rsoft.in
+17:14:16.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Edit with New Data
+17:14:18.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Edit Lead Sample Text
+17:14:18.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Edit Lead Sample Text
+17:14:18.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Edit with New Data
+17:14:19.256 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840027259
+17:14:19.256 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840027259
+17:14:19.256 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Edit with New Data
+17:14:20.440 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSales@rsoft.in
+17:14:20.440 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSales@rsoft.in
+17:14:20.440 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailEdit with New Data
+17:14:33.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840031536 entered in  input
+17:14:40.060 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:3
+17:14:40.060 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with updated Record -9840031536
+17:14:43.623 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840081840 entered in  input
+17:14:50.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:3
+17:14:50.249 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with updated Record -9840081840
+17:14:53.721 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840098097 entered in  input
+17:15:00.171 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:3
+17:15:00.171 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Edit with updated Record -9840098097
+17:15:19.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:15:29.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - IndividualTextEdited entered in  input
+17:15:50.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840031536 entered in  input
+17:15:58.217 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:4
+17:15:58.217 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Single Value Edit -9840031536
+17:16:01.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840081840 entered in  input
+17:16:09.674 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:4
+17:16:09.674 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Single Value Edit -9840081840
+17:16:13.139 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840098097 entered in  input
+17:16:20.816 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:4
+17:16:20.816 [TestNG-tests-1] INFO  testCases.TC006_WF6_Send_SMS_ETR_M - Passed: SMS Received after Single Value Edit -9840098097
+17:16:29.327 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count253
+17:16:29.327 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:253

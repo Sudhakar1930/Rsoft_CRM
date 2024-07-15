@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -165,10 +166,16 @@ public class PHPMyAdminPage extends BasePage{
 	//************************ Click methods *****************************	
 	
 	public void clickTableLink(String sTableName) throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement eleLink = driver.findElement(By.linkText(sTableName));
-		Thread.sleep(2000);
-		eleLink.click();
-//		UtilityCustomFunctions.doClick(driver, eleLink);
+		js.executeScript("arguments[0].scrollIntoView(true);", eleLink);
+		Actions action=new Actions(driver);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+//		driver.findElement(By.xpath("//*[@id='filterText']")).click();
+//		action.moveByOffset(460,540).click().build().perform();
+        Thread.sleep(2000);
+//		eleLink.click();
+		UtilityCustomFunctions.doClick(driver, eleLink);
 		
 	}
 	
@@ -261,6 +268,7 @@ public class PHPMyAdminPage extends BasePage{
 	}
 	public void setTableInDB(String sTableName) throws InterruptedException {
 		Thread.sleep(3000);
+		txtTableName.clear();
 		txtTableName.sendKeys(sTableName);
 //		UtilityCustomFunctions.sendKeys(driver, txtTableName, sTableName);
 		txtTableName.sendKeys(Keys.ENTER);

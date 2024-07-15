@@ -1,529 +1,471 @@
-12:17:22.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:17:23.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:17:23.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:17:23.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:17:24.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840006874
-12:17:24.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840006874
-12:17:24.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:17:25.915 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
-12:17:25.916 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
-12:17:25.917 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:17:27.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-12:17:27.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-12:17:27.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:17:28.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
-12:17:28.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
-12:17:28.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:17:29.243 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
-12:17:29.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
-12:17:29.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:17:43.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frank Ryan
-12:17:43.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frank Ryan
-12:17:43.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:17:44.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:17:44.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:17:44.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:17:45.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840023157
-12:17:45.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840023157
-12:17:45.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:17:46.766 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
-12:17:46.766 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
-12:17:46.766 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:17:47.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-12:17:47.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-12:17:47.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:17:48.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:five
-12:17:48.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:five
-12:17:48.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:17:50.107 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
-12:17:50.107 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
-12:17:50.107 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:18:04.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Hills Nicholas
-12:18:04.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Hills Nicholas
-12:18:04.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:18:05.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:18:05.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:18:05.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:18:06.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840057310
-12:18:06.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840057310
-12:18:06.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:18:07.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Denise@rsoft.in
-12:18:07.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
-12:18:07.560 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:18:08.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-12:18:08.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-12:18:08.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:18:09.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:18:09.780 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:18:09.780 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:18:10.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-12:18:10.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-12:18:10.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:18:24.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Ghosh Jacob
-12:18:24.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Ghosh Jacob
-12:18:24.645 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:18:25.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:18:25.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:18:25.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:18:26.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840017603
-12:18:26.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840017603
-12:18:26.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:18:27.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
-12:18:27.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
-12:18:27.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:18:29.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-12:18:29.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-12:18:29.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:18:30.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
-12:18:30.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
-12:18:30.213 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:18:31.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
-12:18:31.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
-12:18:31.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:18:45.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Davis Edward
-12:18:45.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Davis Edward
-12:18:45.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:18:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:18:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:18:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:18:47.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840054952
-12:18:47.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840054952
-12:18:47.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:18:48.508 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
-12:18:48.508 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
-12:18:48.508 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:18:49.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-12:18:49.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-12:18:49.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:18:50.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
-12:18:50.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
-12:18:50.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:18:51.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
-12:18:51.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
-12:18:51.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:19:05.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Evans Jeffrey
-12:19:05.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Evans Jeffrey
-12:19:05.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:19:06.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:19:06.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:19:06.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:19:07.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840070710
-12:19:07.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840070710
-12:19:07.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:19:08.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Marilyn@rsoft.in
-12:19:08.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Marilyn@rsoft.in
-12:19:08.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:19:09.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation...!
-12:19:09.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation...!
-12:19:09.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:19:11.046 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
-12:19:11.046 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
-12:19:11.046 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:19:12.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
-12:19:12.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
-12:19:12.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:19:22.257 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Test Execution on Browser: chrome
-12:19:22.303 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Excel file Utility instance created
-12:19:22.364 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Row Count is: 9
-12:19:22.375 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Col Count is: 43
-12:19:22.375 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Extracting DataSheet Values started...
-12:19:26.092 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-12:19:27.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-12:19:28.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-12:19:39.768 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:19:43.128 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:19:45.242 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:19:54.751 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:19:57.855 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:19:59.951 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:20:07.702 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:20:10.894 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:20:12.990 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:20:21.003 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:20:24.173 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:20:26.263 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:20:34.265 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:20:37.452 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:20:39.550 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:20:47.543 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:20:50.694 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:20:52.788 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:21:00.774 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:21:03.953 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:21:06.039 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu User Access Control
-12:21:14.399 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Avatar
-12:21:17.637 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Menu CRM Setting
-12:21:17.700 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - Clicked Integration
-12:21:28.452 [TestNG-tests-1] INFO  testCases.WebForms.TC005_WF_RRUserYN_OneConditionYN - [ETNotification Webform] is selected in List
-12:22:06.777 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mary Tyler
-12:22:06.777 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mary Tyler
-12:22:06.777 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:22:07.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:22:07.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:22:07.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:22:09.027 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840016042
-12:22:09.027 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840016042
-12:22:09.028 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:22:10.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
-12:22:10.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
-12:22:10.126 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:22:11.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:22:11.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:22:11.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:22:12.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:22:12.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:22:12.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:22:13.460 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-12:22:13.460 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-12:22:13.460 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:22:28.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
-12:22:28.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
-12:22:28.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:22:29.144 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:22:29.144 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:22:29.144 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:22:30.264 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840084157
-12:22:30.264 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840084157
-12:22:30.264 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:22:31.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Grace@rsoft.in
-12:22:31.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Grace@rsoft.in
-12:22:31.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:22:32.481 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:22:32.481 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:22:32.481 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:22:33.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
-12:22:33.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
-12:22:33.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:22:34.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
-12:22:34.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
-12:22:34.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:22:48.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:White Raymond
-12:22:48.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:White Raymond
-12:22:48.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:22:49.373 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:22:49.373 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:22:49.373 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:22:50.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840009013
-12:22:50.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840009013
-12:22:50.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:22:51.585 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Amber@rsoft.in
-12:22:51.585 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Amber@rsoft.in
-12:22:51.585 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:22:52.701 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:22:52.701 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:22:52.701 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:22:53.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
-12:22:53.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
-12:22:53.828 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:22:54.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
-12:22:54.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
-12:22:54.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:23:08.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
-12:23:08.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
-12:23:08.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:23:09.990 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:23:09.990 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:23:09.990 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:23:11.109 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840014112
-12:23:11.109 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840014112
-12:23:11.109 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:23:12.228 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
-12:23:12.228 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
-12:23:12.228 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:23:13.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:23:13.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:23:13.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:23:14.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
-12:23:14.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
-12:23:14.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:23:15.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
-12:23:15.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
-12:23:15.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:23:30.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:White Raymond
-12:23:30.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:White Raymond
-12:23:30.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:23:31.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:23:31.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:23:31.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:23:32.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840055008
-12:23:32.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840055008
-12:23:32.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:23:33.375 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
-12:23:33.375 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
-12:23:33.375 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:23:34.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:23:34.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:23:34.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:23:35.690 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:five
-12:23:35.690 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:five
-12:23:35.690 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:23:36.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
-12:23:36.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
-12:23:36.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:23:50.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yakub Dennis
-12:23:50.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yakub Dennis
-12:23:50.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:23:51.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:23:51.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:23:51.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:23:52.737 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840074005
-12:23:52.737 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840074005
-12:23:52.737 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:23:53.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Denise@rsoft.in
-12:23:53.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
-12:23:53.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:23:54.955 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:23:54.955 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:23:54.955 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:23:56.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:23:56.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:23:56.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:23:57.205 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-12:23:57.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-12:23:57.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:24:10.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
-12:24:10.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
-12:24:10.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:24:11.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:24:11.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:24:11.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:24:12.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840014643
-12:24:12.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840014643
-12:24:12.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:24:14.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
-12:24:14.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
-12:24:14.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:24:15.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:24:15.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:24:15.251 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:24:16.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
-12:24:16.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
-12:24:16.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:24:17.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
-12:24:17.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
-12:24:17.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:24:31.009 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:White Raymond
-12:24:31.010 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:White Raymond
-12:24:31.010 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:24:32.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:24:32.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:24:32.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:24:33.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840065618
-12:24:33.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840065618
-12:24:33.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:24:34.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
-12:24:34.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
-12:24:34.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:24:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:24:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:24:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:24:36.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
-12:24:36.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
-12:24:36.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:24:37.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
-12:24:37.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
-12:24:37.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:24:51.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Usman Patrick
-12:24:51.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Usman Patrick
-12:24:51.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:24:53.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:24:53.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:24:53.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:24:54.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840001141
-12:24:54.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840001141
-12:24:54.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:24:55.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Marilyn@rsoft.in
-12:24:55.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Marilyn@rsoft.in
-12:24:55.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:24:56.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:24:56.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:24:56.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:24:57.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
-12:24:57.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
-12:24:57.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:24:58.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
-12:24:58.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
-12:24:58.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:25:08.402 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Test Execution on Browser: chrome
-12:25:08.415 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Excel file Utility instance created
-12:25:08.430 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Row Count is: 9
-12:25:08.438 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Col Count is: 43
-12:25:08.438 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Extracting DataSheet Values started...
-12:25:12.417 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-12:25:13.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-12:25:14.909 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-12:25:26.649 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Avatar
-12:25:29.942 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Menu CRM Setting
-12:25:32.071 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Menu User Access Control
-12:25:36.077 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Avatar
-12:25:39.272 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Menu CRM Setting
-12:25:39.341 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - Clicked Integration
-12:25:50.046 [TestNG-tests-1] INFO  testCases.WebForms.TC006_WF_RRUserN_OneConditionY - [ETNotification Webform] is selected in List
-12:26:27.960 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Susan Zachary
-12:26:27.960 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Susan Zachary
-12:26:27.960 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:26:29.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:26:29.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:26:29.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:26:30.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840032043
-12:26:30.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840032043
-12:26:30.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:26:31.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Julia@rsoft.in
-12:26:31.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Julia@rsoft.in
-12:26:31.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:26:32.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:26:32.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:26:32.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:26:33.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:26:33.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:26:33.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:26:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-12:26:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-12:26:34.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:26:47.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
-12:26:47.773 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
-12:26:47.773 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:26:48.918 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:26:48.918 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:26:48.918 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:26:50.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840044227
-12:26:50.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840044227
-12:26:50.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:26:51.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Grace@rsoft.in
-12:26:51.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Grace@rsoft.in
-12:26:51.140 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:26:52.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:26:52.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:26:52.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:26:53.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
-12:26:53.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
-12:26:53.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:26:54.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
-12:26:54.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
-12:26:54.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:27:07.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jessica Douglas
-12:27:07.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jessica Douglas
-12:27:07.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:27:08.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:27:08.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:27:08.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:27:10.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840068313
-12:27:10.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840068313
-12:27:10.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:27:11.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Amber@rsoft.in
-12:27:11.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Amber@rsoft.in
-12:27:11.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:27:12.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:27:12.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:27:12.355 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:27:13.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:27:13.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:27:13.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:27:14.568 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
-12:27:14.568 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
-12:27:14.568 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:27:28.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
-12:27:28.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
-12:27:28.192 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:27:29.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:27:29.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:27:29.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:27:30.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840051858
-12:27:30.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840051858
-12:27:30.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:27:31.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Alice@rsoft.in
-12:27:31.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Alice@rsoft.in
-12:27:31.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:27:32.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:27:32.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:27:32.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:27:33.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four
-12:27:33.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four
-12:27:33.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:27:34.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Andhra Pradesh
-12:27:34.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Andhra Pradesh
-12:27:34.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:27:49.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
-12:27:49.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
-12:27:49.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:27:50.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:27:50.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:27:50.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:27:51.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840036394
-12:27:51.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840036394
-12:27:51.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:27:52.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Jean@rsoft.in
-12:27:52.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Jean@rsoft.in
-12:27:52.485 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:27:53.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:27:53.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:27:53.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:27:54.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:five
-12:27:54.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:five
-12:27:54.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:27:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Delhi
-12:27:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Delhi
-12:27:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:28:09.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Karen Peter
-12:28:09.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Karen Peter
-12:28:09.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:28:10.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:28:10.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:28:10.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:28:11.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840006280
-12:28:11.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840006280
-12:28:11.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:28:12.569 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Denise@rsoft.in
-12:28:12.569 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Denise@rsoft.in
-12:28:12.569 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:28:13.698 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:28:13.698 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:28:13.698 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:28:14.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
-12:28:14.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
-12:28:14.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:28:15.937 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
-12:28:15.937 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
-12:28:15.937 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:28:29.389 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
-12:28:29.389 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
-12:28:29.389 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:28:30.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:28:30.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:28:30.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:28:31.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840061359
-12:28:31.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840061359
-12:28:31.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:28:32.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Frances@rsoft.in
-12:28:32.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Frances@rsoft.in
-12:28:32.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:28:33.878 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:28:33.878 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:28:33.878 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:28:34.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:two
-12:28:34.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:two
-12:28:34.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:28:36.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bihar
-12:28:36.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bihar
-12:28:36.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
-12:28:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
-12:28:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr Imperfect
-12:28:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Value
-12:28:50.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
-12:28:50.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91
-12:28:50.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Prefix
-12:28:51.725 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:9840021541
-12:28:51.725 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:9840021541
-12:28:51.725 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number
-12:28:52.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Danielle@rsoft.in
-12:28:52.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Danielle@rsoft.in
-12:28:52.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-12:28:53.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Welcome to Automation World...!
-12:28:53.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Welcome to Automation World...!
-12:28:53.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text
-12:28:55.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:three
-12:28:55.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:three
-12:28:55.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiSelect
-12:28:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Goa
-12:28:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Goa
-12:28:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiChoice State
+17:00:30.617 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+17:00:30.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+17:00:57.910 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+17:01:02.917 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:01:07.133 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:01:07.149 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+17:01:07.167 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+17:01:07.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+17:01:08.760 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 136074 Etnotification 2024-07-08 11:21:49 2024-07-08 11:28:55
+17:01:11.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - CT&MT after edit & save2024-07-08 11:21:49,0
+17:01:11.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Edit & Save 2024-07-08 11:21:49  0 RecordId:136074
+17:01:12.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+17:01:12.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+17:01:42.477 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+17:01:47.492 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:01:51.712 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:01:51.740 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB Check_No_Entity List Count:1
+17:01:51.791 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Module Name:Etnotification
+17:01:51.804 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type:0
+17:01:51.817 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type Name:
+17:01:51.830 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Execution Time: 2024-07-08 12:11:49
+17:01:51.844 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Send Type: Send notification
+17:01:51.858 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: 2024-07-08 11:21:51
+17:01:51.872 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: NULL
+17:01:52.979 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Time Failed: Edit & Save Actual Created Time: 2024-07-08 11:21:51 Expected Created Time: 2024-07-08 11:21:49 ExecutionTime:2024-07-08 12:11:49 Send Type: Send notificationModule Name: Etnotification and Task Id:2232
+17:01:54.106 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Modified Time Failed: Edit & Save Actual Modified Time: NULL Expected Modified Time: 0 ExecutionTime:2024-07-08 12:11:49 Send Type: Send notificationModule Name: Etnotification and Task Id:2232
+17:01:54.106 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Task Id:2232
+17:01:54.106 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions -  Is Entity Id: trueAnd Is TaskId: true
+17:01:55.238 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Edit & Save: Passed: Actual EntityId: 136074 ScheduleName:  Created Time: 2024-07-08 12:11:49 ExecutionTime:2024-07-08 12:11:49 Send Type: Send notificationModule Name: Etnotification and Task Id: 2232
+17:02:02.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:02:04.086 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:02:05.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:02:08.289 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Single LIne Edit: Last Task Id: 2232 current record id 136074
+17:02:28.912 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+17:02:34.476 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Mobile Number Edit On in Summary Page
+17:02:40.998 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2233445566 entered in  input
+17:02:43.593 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2233445566 Is Updated Text for Mobile Number@Single Line Edit
+17:03:02.246 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+17:03:02.418 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+17:03:29.443 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+17:03:34.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:03:38.650 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:03:38.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+17:03:38.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+17:03:39.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+17:03:40.246 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 136074 Etnotification 2024-07-08 11:21:49 2024-07-08 11:32:43
+17:03:43.226 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - CT&MT after Single line edit: 2024-07-08 11:21:49,0
+17:03:43.226 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Single Line Edit 2024-07-08 11:21:49  0 RecordId:136074
+17:03:43.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+17:03:43.945 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+17:04:13.960 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+17:04:18.967 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:04:23.199 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:04:23.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB Check_No_Entity List Count:1
+17:04:23.278 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Module Name:Etnotification
+17:04:23.290 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type:0
+17:04:23.301 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type Name:
+17:04:23.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Execution Time: 2024-07-08 12:11:49
+17:04:23.325 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Send Type: Send notification
+17:04:23.337 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: 2024-07-08 11:21:51
+17:04:23.349 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: NULL
+17:04:24.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Time Failed: Single Line Edit Actual Created Time: 2024-07-08 11:21:51 Expected Created Time: 2024-07-08 11:21:49 ExecutionTime:2024-07-08 12:11:49 Send Type: Send notificationModule Name: Etnotification and Task Id:2232
+17:04:25.597 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Modified Time Failed: Single Line Edit Actual Modified Time: NULL Expected Modified Time: 0 ExecutionTime:2024-07-08 12:11:49 Send Type: Send notificationModule Name: Etnotification and Task Id:2232
+17:04:25.597 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Task Id:2232
+17:04:25.597 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions -  Is Entity Id: trueAnd Is TaskId: true
+17:04:26.728 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Single Line Edit: Passed: Actual EntityId: 136074 ScheduleName:  Created Time: 2024-07-08 12:11:49 ExecutionTime:2024-07-08 12:11:49 Send Type: Send notificationModule Name: Etnotification and Task Id: 2232
+17:04:52.167 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+17:04:57.174 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:05:01.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 136074
+17:05:06.442 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB Check_No_Entity List Count:0
+17:05:07.562 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Single Line Edit EntityId: 136074 and Task Id:2232 Not Present in DB
+17:19:56.306 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:19:56.310 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:19:56.312 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:19:56.907 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:19:56.951 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:19:56.951 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:20:04.647 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:20:05.975 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:20:07.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:20:16.816 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:20:20.188 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+17:20:22.297 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Other Setting
+17:20:28.566 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Item Workflow
+17:20:28.773 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow from Combox Box List
+17:20:30.785 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item to be selected:  CRMEditFieldModule Workflow
+17:20:35.977 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [CRMEditFieldModule Workflow] is selected in List
+17:20:35.977 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item selected in combox Box  CRMEditFieldModule Workflow
+17:20:38.988 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Selected Module to View its Workflows
+17:20:39.105 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,condition matches
+17:20:39.105 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:20:39.181 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:20:39.181 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+17:20:39.252 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+17:20:39.252 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: true
+17:20:39.290 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF3CRMEditFieldWorkflow disabled manually
+17:20:39.340 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF3CRMEditFieldDisabled Workflow Manually Enabled
+17:20:39.340 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - true:1
+17:20:44.574 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Work flow clicked
+17:20:49.571 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Cliked Step 1 Next Button to Condition Page
+17:20:53.097 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Cliked Step 2 Next Button to Task List Page
+17:20:54.100 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow and Navigated to Task Page
+17:21:00.412 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Number of Tasks Listed for this Workflow: WF1CRMEditField : 2
+17:21:00.517 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+17:21:00.517 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskETRS_Notify
+17:21:00.517 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+17:21:00.517 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskETRS_Notify
+17:21:00.517 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Action Type and Action Tile matches and also Task Button Enabled
+17:21:00.609 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:sms
+  Send SMS
+17:21:00.609 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:AddSMS
+17:21:00.609 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+17:21:00.609 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskETRS_Notify
+17:21:01.617 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+17:21:06.669 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow and Navigated to Task Page
+17:21:06.670 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Task Active Send notification  tskETRS_Notify
+17:21:08.091 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - User1NotifyCount:431
+17:21:45.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+17:21:45.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+17:21:47.870 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:21:49.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+17:21:50.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+17:29:31.744 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:29:31.749 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:29:31.751 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:29:32.352 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:29:32.403 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:29:32.403 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:29:40.011 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:29:41.303 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:29:42.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:29:55.707 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Home Page Not Displayed
+17:32:22.263 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:32:22.267 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:32:22.268 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:32:22.784 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:32:22.831 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:32:22.831 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:32:29.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:32:31.220 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:32:32.503 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:32:40.709 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:34:19.296 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:34:19.301 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:34:19.303 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:34:19.869 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:34:19.915 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:34:19.916 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:34:28.225 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:34:29.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:34:30.756 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:34:40.230 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:36:40.910 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:36:40.914 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:36:40.916 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:36:41.448 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:36:41.497 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:36:41.497 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:36:48.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:36:50.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:36:51.435 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:37:00.941 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:45:11.905 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:45:11.908 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:45:11.910 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:45:12.462 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:45:12.510 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:45:12.510 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:45:20.024 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:45:21.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:45:22.523 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:45:31.671 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:47:25.537 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:47:25.541 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:47:25.542 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:47:26.059 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:47:26.105 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:47:26.105 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:47:32.386 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:47:33.687 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:47:34.951 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:47:44.687 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:49:29.009 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:49:29.013 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:49:29.014 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:49:29.598 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:49:29.646 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:49:29.646 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:49:38.002 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:49:39.258 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:49:40.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:49:50.384 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:51:56.105 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:51:56.108 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:51:56.110 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:51:56.646 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:51:56.691 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:51:56.692 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:52:03.888 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:52:05.206 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:52:06.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:52:15.384 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:53:13.760 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:53:13.763 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:53:13.766 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:53:14.285 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:53:14.331 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:53:14.331 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:53:21.579 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:53:22.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:53:24.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:53:32.964 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:54:54.971 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:54:54.975 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:54:54.977 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:54:55.494 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:54:55.546 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:54:55.546 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:55:02.625 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:55:03.897 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:55:05.131 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:55:14.078 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:58:58.021 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+17:58:58.025 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+17:58:58.027 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+17:58:58.568 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+17:58:58.622 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+17:58:58.623 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+17:59:05.696 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+17:59:06.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+17:59:08.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+17:59:17.147 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+17:59:46.311 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+18:02:42.085 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:02:42.089 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:02:42.091 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:02:42.614 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:02:42.657 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:02:42.657 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:02:50.051 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:02:51.318 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:02:52.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:03:02.097 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:05:39.705 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:05:39.709 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:05:39.711 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:05:40.219 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:05:40.265 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:05:40.265 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:05:47.530 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:05:48.825 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:05:50.059 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:05:58.881 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:07:14.487 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:07:14.491 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:07:14.493 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:07:15.013 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:07:15.062 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:07:15.062 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:07:23.060 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:07:24.363 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:07:25.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:07:34.892 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:09:52.843 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:09:52.847 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:09:52.848 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:09:53.366 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:09:53.410 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:09:53.410 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:10:00.540 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:10:01.820 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:10:03.056 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:10:13.004 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:13:14.274 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:13:14.278 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:13:14.280 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:13:14.802 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:13:14.847 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:13:14.847 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:13:22.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:13:23.490 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:13:24.788 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:13:38.769 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Home Page Not Displayed
+18:14:25.304 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:14:25.308 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:14:25.310 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:14:25.825 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:14:25.874 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:14:25.874 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:14:33.060 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:14:34.336 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:14:35.557 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:14:45.742 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:19:09.348 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:19:09.353 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:19:09.355 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:19:09.869 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:19:09.913 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:19:09.914 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:19:17.160 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:19:18.461 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:19:19.722 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:19:29.154 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:20:08.741 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:20:08.746 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:20:08.749 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:20:09.367 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:20:09.457 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:20:09.457 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:20:17.042 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:20:18.324 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:20:19.564 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:20:29.643 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:24:59.197 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:24:59.201 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:24:59.203 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:24:59.740 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:24:59.786 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:24:59.787 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:25:06.079 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:25:07.359 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:25:08.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:25:17.864 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:28:15.422 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:28:15.426 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:28:15.427 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:28:15.938 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:28:15.982 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:28:15.982 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:28:23.279 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:28:24.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:28:25.879 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:28:35.777 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:34:04.223 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:34:04.226 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:34:04.228 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:34:04.732 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:34:04.777 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:34:04.777 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:34:11.856 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:34:13.139 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:34:14.411 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:34:23.159 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:35:43.913 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:35:43.917 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:35:43.920 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:35:44.441 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:35:44.485 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:35:44.486 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:35:51.793 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:35:53.066 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:35:54.330 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:36:03.792 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:36:07.341 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+18:36:09.453 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Other Setting
+18:36:15.998 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Item Workflow
+18:36:16.238 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow from Combox Box List
+18:36:18.247 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item to be selected:  CRMEditFieldModule Workflow
+18:37:44.605 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - ******starting WF1_EveryTime_Rec_Save ****
+18:37:44.608 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Test Execution on Browser: chrome
+18:37:44.610 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:37:45.119 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:37:45.164 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:37:45.164 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:37:52.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:37:54.156 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:37:55.464 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:38:04.848 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Avatar
+18:38:08.271 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu CRM Setting
+18:38:10.388 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Other Setting
+18:38:17.562 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Menu Item Workflow
+18:38:17.822 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow from Combox Box List
+18:38:19.836 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item to be selected:  CRMEditFieldModule Workflow
+18:38:25.126 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [CRMEditFieldModule Workflow] is selected in List
+18:38:25.126 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Item selected in combox Box  CRMEditFieldModule Workflow
+18:38:28.142 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Selected Module to View its Workflows
+18:38:28.241 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,condition matches
+18:38:28.241 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: true
+18:38:28.241 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - WF1CRMEditFieldWorkflow enabled
+18:38:28.315 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+18:38:28.315 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+18:38:28.393 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Module,workflow,conditions not matched 
+18:38:28.393 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - bCurrentWFStatus: false
+18:38:28.403 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF3CRMEditFieldDisabled Workflow Manually Enabled
+18:38:28.404 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - true:1
+18:38:34.228 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Work flow clicked
+18:38:39.355 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Cliked Step 1 Next Button to Condition Page
+18:38:42.830 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Cliked Step 2 Next Button to Task List Page
+18:38:43.842 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow and Navigated to Task Page
+18:38:49.927 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Number of Tasks Listed for this Workflow: WF1CRMEditField : 2
+18:38:50.048 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+18:38:50.048 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:tskETRS_Notify
+18:38:50.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:38:50.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskETRS_Notify
+18:38:50.049 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Action Type and Action Tile matches and also Task Button Enabled
+18:38:50.158 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:sms
+  Send SMS
+18:38:50.158 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:AddSMS
+18:38:50.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:38:50.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:tskETRS_Notify
+18:38:51.174 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:38:56.063 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Clicked Workflow and Navigated to Task Page
+18:38:56.064 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Task Active Send notification  tskETRS_Notify
+18:38:57.340 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - User1NotifyCount:434
+18:39:34.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+18:39:34.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+18:39:37.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:39:38.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+18:39:39.541 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+18:40:04.191 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:40:05.458 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+18:40:06.715 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+18:40:31.457 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:40:32.686 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:40:33.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:40:52.194 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:40:52.236 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:40:52.263 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:40:52.263 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:40:54.784 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+18:40:56.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 44444444444 entered in  input
+18:40:58.496 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - checker@afasdf.com entered in  input
+18:40:59.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 4444444444 entered in  input
+18:41:07.078 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - [Bad] is selected in List
+18:41:27.700 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:41:27.722 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+18:41:39.547 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Excel file Utility instance created
+18:41:39.564 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Row Count is: 1
+18:41:39.582 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Col Count is: 52
+18:41:39.582 [TestNG-tests-1] INFO  testCases.TC001_WF1_Send_Notify_ETR_S - Extracting DataSheet Values started...
+18:41:39.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+18:41:39.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+18:41:39.852 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+18:41:41.175 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+18:41:41.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+18:41:41.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+18:41:42.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+18:41:42.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+18:41:42.307 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+18:41:43.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checker@afasdf.com
+18:41:43.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checker@afasdf.com
+18:41:43.425 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+18:41:44.546 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
+18:41:44.546 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
+18:41:44.546 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+18:41:51.691 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:41:51.705 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+18:41:56.190 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+18:41:56.190 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+18:41:56.191 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+18:41:57.289 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:44444444444
+18:41:57.289 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:44444444444
+18:41:57.289 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+18:41:58.391 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checker@afasdf.com
+18:41:58.391 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checker@afasdf.com
+18:41:58.391 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+18:41:59.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
+18:41:59.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
+18:41:59.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+18:42:00.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:4444444444
+18:42:00.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:4444444444
+18:42:00.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+18:42:02.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:42:21.137 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+18:42:21.137 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+18:42:21.137 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+18:42:22.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+18:42:22.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+18:42:22.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer

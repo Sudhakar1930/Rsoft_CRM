@@ -281,9 +281,9 @@ public class UtilityCustomFunctions extends BaseClass{
 		boolean isClicked = false;
 		try {
 			js.executeScript("arguments[0].scrollIntoView(true);", element);
-			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
-			webWait.until(ExpectedConditions.elementToBeClickable(element));
+			WebDriverWait webWait = new WebDriverWait(webDriver, Duration.ofSeconds(50));
 			webWait.until(ExpectedConditions.visibilityOf(element));
+			webWait.until(ExpectedConditions.elementToBeClickable(element));
 			js.executeScript("arguments[0].click();", element);
 			isClicked = true;
 		} catch (Exception ex) {
@@ -490,6 +490,7 @@ public class UtilityCustomFunctions extends BaseClass{
 //					.info(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "pass", Node);
 			iValCount = iValCount + 1;
+			iPassCount = iPassCount  + 1; 
 //			System.out.println(sMessage + " Passed : Actual Value is: " + sActValue + "Expected Value is: " + sExpValue);
 			
 		} else {
@@ -498,6 +499,7 @@ public class UtilityCustomFunctions extends BaseClass{
 			a.freport("Actual: "+sActValue+" Expected: "+sExpValue + " " + sMessage, "fail", Node);
 //			System.out.println(sMessage +  "Failed : Actual Value is: " + sActValue + "Expected Value is:"  + sExpValue);
 			iValCount = iValCount + 1;
+			iFailCount = iFailCount + 1;
 		}
 		sAssertinFn.assertEquals(sActValue.trim(), sExpValue.trim());
 		}

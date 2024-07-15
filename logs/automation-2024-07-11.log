@@ -1,0 +1,471 @@
+18:10:33.092 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
+18:10:33.095 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:10:33.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:10:33.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Create Entity in Target
+18:10:34.208 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-07-14 05:00:00 PM
+18:10:34.255 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-07-14 05:00:00 PM
+18:10:34.256 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-14 05:00:00 PM
+18:10:34.256 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-14 05:00:00 PM
+18:10:34.256 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Create Entity in Target
+18:10:35.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:10:35.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:10:35.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Create Entity in Target
+18:10:36.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
+18:10:36.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:10:36.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:10:36.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Create Entity in Target
+18:10:37.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:10:37.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:10:37.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Create Entity in Target
+18:10:38.982 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:10:38.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:10:38.983 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Create Entity in Target
+18:10:40.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:10:40.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:10:40.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Create Entity in Target
+18:10:41.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:10:41.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:10:41.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Create Entity in Target
+18:10:42.397 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:10:42.397 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:10:42.397 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Create Entity in Target
+18:10:43.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:10:43.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Chatbot
+18:10:43.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Create Entity in Target
+18:10:44.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Test Enquiry Text Area
+18:10:44.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Test Enquiry Text Area
+18:10:44.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Create Entity in Target
+18:10:45.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-07-11
+18:10:45.866 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-07-11
+18:10:45.866 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:10:45.866 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:10:45.866 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Create Entity in Target
+18:10:47.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840066303
+18:10:47.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840066303
+18:10:47.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Create Entity in Target
+18:10:48.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:10:48.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:10:48.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Create Entity in Target
+18:10:49.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840094236
+18:10:49.367 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840094236
+18:10:49.368 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Create Entity in Target
+18:10:50.531 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewLead@gmail.com
+18:10:50.532 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewLead@gmail.com
+18:10:50.532 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Create Entity in Target
+18:10:51.712 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:10:51.712 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+18:10:51.712 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Create Entity in Target
+18:10:52.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840078394
+18:10:52.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840078394
+18:10:52.877 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Create Entity in Target
+18:10:54.032 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewSales@gmail.com
+18:10:54.033 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewSales@gmail.com
+18:10:54.033 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Create Entity in Target
+18:10:55.887 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:11:07.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+18:11:07.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:11:07.193 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Create Entity in Target
+18:11:08.359 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Add New Text
+18:11:08.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Add New Text
+18:11:08.360 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Create Entity in Target
+18:11:09.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  9840035237
+18:11:09.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840035237
+18:11:09.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840035237
+18:11:09.525 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Create Entity in Target
+18:11:10.689 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNew@rsoft.in
+18:11:10.689 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNew@rsoft.in
+18:11:10.689 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Create Entity in Target
+18:11:11.847 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:11:11.847 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:11:11.847 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Create Entity in Target
+18:11:13.009 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:11:13.009 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:11:13.009 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Create Entity in Target
+18:11:14.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:11:14.177 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:11:14.177 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Create Entity in Target
+18:11:15.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:11:15.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:11:15.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View State:  Create Entity in Target
+18:11:16.514 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:11:16.514 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:11:16.514 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Create Entity in Target
+18:11:17.662 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:11:17.662 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:11:17.662 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Create Entity in Target
+18:11:18.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:11:18.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:11:18.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Create Entity in Target
+18:11:20.013 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:11:20.014 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:11:20.014 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Create Entity in Target
+18:11:21.171 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-14 05:00:00 PM
+18:11:21.171 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-14 05:00:00 PM
+18:11:21.171 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Create Entity in Target
+18:11:22.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:11:22.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:11:22.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Create Entity in Target
+18:11:23.612 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+18:11:23.612 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:11:23.612 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:11:23.612 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Create Entity in Target
+18:11:24.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:11:24.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:11:24.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Create Entity in Target
+18:11:25.916 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:11:25.916 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:11:25.916 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Create Entity in Target
+18:11:27.039 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:11:27.039 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:11:27.039 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Create Entity in Target
+18:11:34.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:11:34.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:11:34.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Create Entity in Target
+18:11:35.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:11:35.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:11:35.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Create Entity in Target
+18:11:36.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:11:36.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Chatbot
+18:11:36.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Create Entity in Target
+18:11:37.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Test Enquiry Text Area
+18:11:37.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Test Enquiry Text Area
+18:11:37.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Create Entity in Target
+18:11:38.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:11:38.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:11:38.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Create Entity in Target
+18:11:40.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840066303
+18:11:40.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840066303
+18:11:40.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Create Entity in Target
+18:11:41.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:11:41.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:11:41.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Create Entity in Target
+18:11:48.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840094236
+18:11:48.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840094236
+18:11:48.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Create Entity in Target
+18:11:49.761 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewLead@gmail.com
+18:11:49.761 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewLead@gmail.com
+18:11:49.761 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Create Entity in Target
+18:11:50.923 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:11:50.923 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+18:11:50.923 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Create Entity in Target
+18:11:52.084 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840078394
+18:11:52.084 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840078394
+18:11:52.084 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Create Entity in Target
+18:11:53.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewSales@gmail.com
+18:11:53.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewSales@gmail.com
+18:11:53.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCreate Entity in Target
+18:11:54.368 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Entity Validation in Target Module Done
+18:11:57.376 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary Add Entity
+18:12:17.944 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Excel file Utility instance created
+18:12:17.970 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Row Count is: 1
+18:12:17.984 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Col Count is: 54
+18:12:17.985 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Extracting DataSheet Values started...
+18:12:18.385 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ETATest Enquiry Text Area
+18:12:18.747 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:12:21.869 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:12:27.043 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [Sudhakar VE] is selected in List
+18:12:27.043 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:12:30.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary Add Text entered in  input
+18:12:30.337 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Summary Add Text
+18:12:31.423 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:12:34.570 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [+65] is selected in List
+18:12:34.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9840035237
+18:12:35.871 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840035237 entered in  input
+18:12:38.117 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNew@rsoft.in entered in  input
+18:12:39.132 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAddNew@rsoft.in
+18:12:40.187 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:12:41.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
+18:12:54.742 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
+18:12:55.823 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:12:59.016 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [Kanchipuram] is selected in List
+18:12:59.016 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:13:00.085 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:13:03.415 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [Tamilnadu] is selected in List
+18:13:03.415 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:13:04.492 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:13:07.628 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [India] is selected in List
+18:13:07.628 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:13:09.679 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
+18:13:09.755 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:13:09.825 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:13:18.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+18:13:24.356 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:13:26.138 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+18:13:30.149 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:13:32.232 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:13:33.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:13:36.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:13:46.509 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:13:47.670 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:13:52.684 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+18:14:06.902 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+18:14:13.229 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:14:15.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+18:14:26.613 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [5] is selected in List
+18:14:30.837 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [00] is selected in List
+18:14:35.049 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [00] is selected in List
+18:14:39.371 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [PM] is selected in List
+18:14:42.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:14:42.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:14:42.536 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:2024-07-11
+18:14:57.072 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [Mrs.] is selected in List
+18:14:58.393 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:14:59.646 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
+18:15:00.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
+18:15:02.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:15:05.356 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [Dr.] is selected in List
+18:15:06.619 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:15:07.883 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:15:09.183 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:15:09.189 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:Test Enquiry Text Area
+18:15:10.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Test Enquiry Text Area entered in  textarea
+18:15:18.691 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+18:15:25.000 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+18:15:26.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+18:15:30.841 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:15:37.353 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [+60] is selected in List
+18:15:39.662 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840066303 entered in  input
+18:15:42.749 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
+18:15:45.910 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [Urgent] is selected in List
+18:15:52.192 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [+91] is selected in List
+18:15:54.483 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840094236 entered in  input
+18:15:55.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNewLead@gmail.com entered in  input
+18:15:57.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:16:01.351 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - [+60] is selected in List
+18:16:03.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840078394 entered in  input
+18:16:04.933 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNewSales@gmail.com entered in  input
+18:16:44.852 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Excel file Utility instance created
+18:16:44.873 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Row Count is: 1
+18:16:44.885 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Col Count is: 54
+18:16:44.885 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Extracting DataSheet Values started...
+18:16:45.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+18:16:51.603 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:17:02.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntityTarget
+18:17:02.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CreateEntityTarget
+18:17:02.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CreateEntityTarget
+18:17:02.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name : Create Entity after Summary Add
+18:17:03.322 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+18:17:03.322 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:17:03.322 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Assigned To Title: Create Entity after Summary Add
+18:17:04.438 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840035237
+18:17:04.438 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840035237
+18:17:04.438 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Title : Create Entity after Summary Add
+18:17:05.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:17:05.554 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:17:05.554 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email Title: Create Entity after Summary Add
+18:17:09.907 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+18:17:09.907 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:17:09.907 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  Create Entity after Summary Add
+18:17:11.070 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:17:11.071 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:17:11.071 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Text:  Create Entity after Summary Add
+18:17:12.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840035237
+18:17:12.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840035237
+18:17:12.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Mobile Number:  Create Entity after Summary Add
+18:17:13.400 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:17:13.400 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:17:13.400 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Email :  Create Entity after Summary Add
+18:17:14.557 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:17:14.557 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:17:14.557 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary PicListValue :  Create Entity after Summary Add
+18:17:15.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:17:15.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:17:15.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary MuultiCombo Values :  Create Entity after Summary Add
+18:17:16.887 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:17:16.887 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:17:16.887 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary City:  Create Entity after Summary Add
+18:17:18.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:17:18.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:17:18.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary State:  Create Entity after Summary Add
+18:17:19.198 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:17:19.198 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:17:19.198 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Country:  Create Entity after Summary Add
+18:17:20.358 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:17:20.358 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:17:20.358 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary CheckBox:  Create Entity after Summary Add
+18:17:21.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected Date from sheet:2024-07-11
+18:17:21.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:17:21.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:17:21.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Date:  Create Entity after Summary Add
+18:17:22.640 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected Time from sheet:02:35:55 PM
+18:17:22.683 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Time from sheet:02:35:55 PM
+18:17:22.683 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:17:22.683 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:17:22.683 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Time:  Create Entity after Summary Add
+18:17:23.795 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected Date Time from sheet:2024-07-14 05:00:00 PM
+18:17:23.842 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted date & Time from sheet:2024-07-14 05:00:00 PM
+18:17:23.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-14 05:00:00 PM
+18:17:23.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-14 05:00:00 PM
+18:17:23.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Date & Time :  Create Entity after Summary Add
+18:17:25.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:17:25.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:17:25.110 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary File Upload :  Create Entity after Summary Add
+18:17:26.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ActualName:Mrs. StevenExpectedName:Mrs. Steven
+18:17:26.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:17:26.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:17:26.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Name:  Create Entity after Summary Add
+18:17:27.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:17:27.453 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:17:27.454 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Number:  Create Entity after Summary Add
+18:17:28.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:17:28.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:17:28.613 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Currency:  Create Entity after Summary Add
+18:17:29.739 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:17:29.739 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:17:29.739 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Url:  Create Entity after Summary Add
+18:17:30.890 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:17:30.890 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:17:30.890 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Name:  Create Entity after Summary Add
+18:17:32.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:17:32.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:17:32.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Email:  Create Entity after Summary Add
+18:17:33.191 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:17:33.191 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Chatbot
+18:17:33.191 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text:  Create Entity after Summary Add
+18:17:34.350 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Test Enquiry Text Area
+18:17:34.350 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Test Enquiry Text Area
+18:17:34.350 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Text Area:  Create Entity after Summary Add
+18:17:35.472 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected enq Date:2024-07-11
+18:17:35.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Enquiry Date from sheet:2024-07-11
+18:17:35.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:17:35.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:17:35.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Date:  Create Entity after Summary Add
+18:17:36.694 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840066303
+18:17:36.695 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840066303
+18:17:36.695 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Phone Number:  Create Entity after Summary Add
+18:17:37.838 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:17:37.838 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:17:37.838 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enquiry Category:  Create Entity after Summary Add
+18:17:39.005 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840094236
+18:17:39.005 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840094236
+18:17:39.005 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead PhoneNumber:  Create Entity after Summary Add
+18:17:40.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:17:40.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:17:40.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Email:  Create Entity after Summary Add
+18:17:41.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:17:41.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+18:17:41.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Lead Text:  Create Entity after Summary Add
+18:17:42.458 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840078394
+18:17:42.458 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840078394
+18:17:42.458 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales PhoneNumber:  Create Entity after Summary Add
+18:17:43.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:17:43.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:17:43.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Sales Email:  Create Entity after Summary Add
+18:17:45.467 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:17:55.655 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+18:17:55.655 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:17:55.655 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View AssignedTo:  Create Entity after Summary Add
+18:17:56.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Summary Add Text
+18:17:56.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Summary Add Text
+18:17:56.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Text:  Create Entity after Summary Add
+18:17:57.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber +65
+  9840035237
+18:17:57.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840035237
+18:17:57.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840035237
+18:17:57.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Mobile Number:  Create Entity after Summary Add
+18:17:59.112 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:17:59.112 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:17:59.112 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email :  Create Entity after Summary Add
+18:18:00.260 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:3
+18:18:00.260 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:3
+18:18:00.260 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View PicListValue :  Create Entity after Summary Add
+18:18:01.419 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one
+18:18:01.419 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one
+18:18:01.419 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View MuultiCombo Values :  Create Entity after Summary Add
+18:18:02.564 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Kanchipuram
+18:18:02.564 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Kanchipuram
+18:18:02.564 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View City:  Create Entity after Summary Add
+18:18:03.722 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+18:18:03.722 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+18:18:03.722 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View State:  Create Entity after Summary Add
+18:18:04.864 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+18:18:04.864 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+18:18:04.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Country:  Create Entity after Summary Add
+18:18:06.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+18:18:06.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+18:18:06.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View CheckBox:  Create Entity after Summary Add
+18:18:07.196 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:18:07.196 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:18:07.196 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date:  Create Entity after Summary Add
+18:18:08.346 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+18:18:08.346 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+18:18:08.346 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Time:  Create Entity after Summary Add
+18:18:09.498 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-14 05:00:00 PM
+18:18:09.498 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-14 05:00:00 PM
+18:18:09.498 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Date & Time :  Create Entity after Summary Add
+18:18:10.746 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+18:18:10.746 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+18:18:10.746 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View File Upload :  Create Entity after Summary Add
+18:18:11.897 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ActualNameDT:Mrs. StevenExpectedNameDT:Mrs. Steven
+18:18:11.897 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mrs. Steven
+18:18:11.898 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mrs. Steven
+18:18:11.898 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Name:  Create Entity after Summary Add
+18:18:13.052 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:11111111111
+18:18:13.052 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:11111111111
+18:18:13.052 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number:  Create Entity after Summary Add
+18:18:14.216 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:10000
+18:18:14.216 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:10000
+18:18:14.216 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Currency:  Create Entity after Summary Add
+18:18:15.347 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.google.com/
+18:18:15.347 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.google.com/
+18:18:15.347 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Url:  Create Entity after Summary Add
+18:18:22.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Dr. Annie
+18:18:22.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Dr. Annie
+18:18:22.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Name:  Create Entity after Summary Add
+18:18:23.803 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:AddNewEnquiry@gmail.com
+18:18:23.803 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:AddNewEnquiry@gmail.com
+18:18:23.803 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Email:  Create Entity after Summary Add
+18:18:24.967 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Enquiry about Chatbot
+18:18:24.967 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Enquiry about Chatbot
+18:18:24.967 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text:  Create Entity after Summary Add
+18:18:26.127 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Test Enquiry Text Area
+18:18:26.127 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Test Enquiry Text Area
+18:18:26.127 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Text Area:  Create Entity after Summary Add
+18:18:27.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2024-07-11
+18:18:27.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2024-07-11
+18:18:27.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Date:  Create Entity after Summary Add
+18:18:28.483 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840066303
+18:18:28.484 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840066303
+18:18:28.484 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Phone Number:  Create Entity after Summary Add
+18:18:29.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Urgent
+18:18:29.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Urgent
+18:18:29.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enquiry Category:  Create Entity after Summary Add
+18:18:36.939 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9840094236
+18:18:36.939 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9840094236
+18:18:36.939 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Lead Mobile Number:  Create Entity after Summary Add
+18:18:38.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewLead@gmail.com
+18:18:38.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewLead@gmail.com
+18:18:38.103 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Email  Create Entity after Summary Add
+18:18:39.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Lead about Chatbot
+18:18:39.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Lead about Chatbot
+18:18:39.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Lead Text Create Entity after Summary Add
+18:18:40.433 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+60 9840078394
+18:18:40.433 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+60 9840078394
+18:18:40.434 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT Sales Mobile Number:  Create Entity after Summary Add
+18:18:41.583 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNewSales@gmail.com
+18:18:41.584 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNewSales@gmail.com
+18:18:41.584 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:DT View Sales EmailCreate Entity after Summary Add
+18:18:42.706 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Entity after Summary Add is Done
+18:19:47.885 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Excel file Utility instance created
+18:19:47.904 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Row Count is: 1
+18:19:47.916 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Col Count is: 54
+18:19:47.916 [TestNG-tests-1] INFO  testCases.TC013_CreateEntity_OOFS_NewValues - Extracting DataSheet Values started...
+18:19:48.620 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before clicking last record to Validate
+18:19:54.661 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:20:05.122 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Module Name: CreateEntityTarget
+18:20:05.122 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CreateEntityTarget
+18:20:05.122 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CreateEntityTarget
+18:20:05.122 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name : Create Entity after duplicate record
+18:20:06.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+18:20:06.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:20:06.387 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Assigned To Title: Create Entity after duplicate record
+18:20:07.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+65 9840035237
+18:20:07.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+65 9840035237
+18:20:07.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number Title : Create Entity after duplicate record
+18:20:08.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:SummaryAddNew@rsoft.in
+18:20:08.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:SummaryAddNew@rsoft.in
+18:20:08.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email Title: Create Entity after duplicate record
+18:20:12.991 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr Imperfect
+18:20:12.991 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Sudhakar VE
+18:20:12.991 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary AssignedTo:  Create Entity after duplicate record

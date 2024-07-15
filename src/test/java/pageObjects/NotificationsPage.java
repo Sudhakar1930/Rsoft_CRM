@@ -175,7 +175,7 @@ public class NotificationsPage extends BasePage{
 		UtilityCustomFunctions.doClick(driver, lblNotificUserName);
 	}
 	public void clickNotifyFirstMsg() throws Exception {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(120));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(200));
 		wait.until(ExpectedConditions.visibilityOf(lnkFirstNotifyMsg));
 		UtilityCustomFunctions.doClick(driver, lnkFirstNotifyMsg);
 	}

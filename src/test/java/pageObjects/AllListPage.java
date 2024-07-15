@@ -1,11 +1,16 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import utilities.UtilityCustomFunctions;
@@ -16,11 +21,17 @@ public class AllListPage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	@FindBy(xpath="//*[@id='vertical_header_name']/i")
+//	@FindBy(xpath="//*[@id='vertical_header_name']/i")
+//	@FindBy(xpath="//i[normalize-space()='list']")
+	@FindBy(xpath="//a[contains(@class,'dropdown-toggle nav-link') and @id='vertical_header_name']")
 	WebElement eleAllList;
 	
 	@FindBy(xpath="//*[@id='vertical_header_list']/li[6]/ul")
 	WebElement eleOthers;
+	
+	@FindBy(xpath="//div[normalize-space()='Others']")
+	WebElement eleColumnOthers;
+	
 	
 	@FindBy(xpath="//div[text()='Notifications']")
 	WebElement eleNotifications;
@@ -31,8 +42,21 @@ public class AllListPage extends BasePage{
 	
 	//Click Methods
 	public void clickAllList() throws Exception {
-		
-		UtilityCustomFunctions.doClick(driver,eleAllList);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		System.out.println("Within clickAllList before wait");
+		Thread.sleep(1000);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(1000);
+		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		webWait.until(ExpectedConditions.visibilityOf(eleAllList));
+		webWait.until(ExpectedConditions.elementToBeClickable(eleAllList));
+		System.out.println("Within clickAllList before click");
+		js.executeScript("arguments[0].scrollIntoView(true);", eleAllList);
+		eleAllList.click();
+//		UtilityCustomFunctions.doClick(driver,eleAllList);
+		System.out.println("Within clickAllList after click");
+//		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		Thread.sleep(5000);
 	}
 	public void clickAllNotifications() throws Exception {
 		UtilityCustomFunctions.doClick(driver,eleNotifications);
@@ -43,6 +67,9 @@ public class AllListPage extends BasePage{
 //		String sXpath="//div[text()=" + sModuleName + "]";
 //		WebElement lstModuleName = driver.findElement(By.xpath(sXpath));
 //		UtilityCustomFunctions.doClick(driver, lstModuleName);
+		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		webWait.until(ExpectedConditions.visibilityOf(eleColumnOthers));
+		webWait.until(ExpectedConditions.elementToBeClickable(eleColumnOthers));
 		int iSize = eleAllULItems.size();
 		for(int i = 1;i<iSize;i++)
 		{	

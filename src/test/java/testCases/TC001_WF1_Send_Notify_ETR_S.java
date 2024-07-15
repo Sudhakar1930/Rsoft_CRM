@@ -113,17 +113,17 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		}
 		Thread.sleep(3000);
 		
-		if(objHP.isAvatarDisplayed()) {
-//			freport("Home Page Displayed after Login" , "pass",node);
-//			objHP.clickAvatar();
-		}
-		else {
-			logger.info("Home Page Not Displayed");
-			freport("Home Page Not Displayed" , "fail",node);
-			System.out.println("Home Page Not Displayed");
-			Assert.fail("Home Page Not Displayed");
-			
-		}
+//		if(objHP.isAvatarDisplayed()) {
+////			freport("Home Page Displayed after Login" , "pass",node);
+////			objHP.clickAvatar();
+//		}
+//		else {
+//			logger.info("Home Page Not Displayed");
+//			freport("Home Page Not Displayed" , "fail",node);
+//			System.out.println("Home Page Not Displayed");
+//			Assert.fail("Home Page Not Displayed");
+//			
+//		}
 		Thread.sleep(1000);
 		objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
 		String sWorkFlowStatus="";

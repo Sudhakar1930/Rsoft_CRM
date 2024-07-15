@@ -110,7 +110,8 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="(//i[contains(@class,'fa fa-edit')])[1]")
 	WebElement eleEllipsisEdit;
 	
-	@FindBy(xpath="//button[normalize-space()='edit_square']")
+//	@FindBy(xpath="//button[normalize-space()='edit_square']")
+	@FindBy(xpath="//button[@class='material-symbols-outlined onetest' and text()='edit_square']")
 	WebElement eleEditButton;
 	
 	@FindBy(xpath = "//ul[contains(@class,'select2-selection__rendered')]/li/span")
@@ -216,7 +217,15 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	
 	public void clickEdit() throws Exception {
-		UtilityCustomFunctions.doClick(driver, eleEditButton);
+		System.out.println("Before Edit Button clicked");
+		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		webWait.until(ExpectedConditions.visibilityOf(eleEditButton));
+		webWait.until(ExpectedConditions.elementToBeClickable(eleEditButton));
+		eleEditButton.click();
+		System.out.println("after Edit Button clicked");
+//		js.executeScript("arguments[0].click();", eleEditButton);
+		
+//		UtilityCustomFunctions.doClick(driver, eleEditButton);
 	}
 	
 	public void clickEllipsis(int iEllipsisPos) throws InterruptedException {
@@ -537,7 +546,13 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	//click Methods
 	public void clickSave() throws Exception {
-		UtilityCustomFunctions.doClick(driver, btnSave);
+		System.out.println("Before Edit Save clicked");
+		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		webWait.until(ExpectedConditions.visibilityOf(btnSave));
+		webWait.until(ExpectedConditions.elementToBeClickable(btnSave));
+		btnSave.click();
+		System.out.println("After Edit Save clicked");
+//		UtilityCustomFunctions.doClick(driver, btnSave);
 	}
 	
 	public void clickClose() throws Exception {
