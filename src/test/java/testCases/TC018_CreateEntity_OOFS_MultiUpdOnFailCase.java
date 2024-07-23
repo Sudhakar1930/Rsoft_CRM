@@ -244,7 +244,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		}
 		else {
 			freport("Source Updated on Fail Case - Add New Record ", "pass", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Add New Record","No",node,IsTarget);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Add New Record","No",node,IsTarget);
 		}
 		//get Target LastRecordId
 		objALP.clickAllList();
@@ -392,7 +392,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		IsTarget =false; 
 		if(iOldSrcRecId!=iCurrSrcRecId) {
 			freport("Create Entity-Summary Add-Source added", "pass", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Summary Add","No",node,IsTarget);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: Summary Add","No",node,IsTarget);
 		}
 		else {
 			freport("Create Entity-Summary Add-Source not added", "fail", node);
@@ -550,7 +550,7 @@ public class TC018_CreateEntity_OOFS_MultiUpdOnFailCase extends BaseClass{
 		}
 		else {
 			freport("Source Updated on Fail Case - @Duplicate Record - OOFS", "pass", node);
-//			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: @Duplicate Record - OOFS","No",node,IsTarget);
+			objCRMRs.fValidateEntityModuleSummary("Test", "//CreateEntity//CreateEntity_OOFS_MultiFailureCase_","Sheet6","Source Update on FailCase: @Duplicate Record - OOFS","No",node,IsTarget);
 		}
 		//get Target LastRecordId
 		objALP.clickAllList();

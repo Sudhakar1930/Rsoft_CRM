@@ -3627,9 +3627,13 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDateBox(sExpModuleName, "time");
 		UtilityCustomFunctions.logWriteConsole("Time Clicked");
 		
+		WebElement eleAMPM = driver.findElement(By.xpath("//button[normalize-space()='PM']"));
+		eleAMPM.click();
+
+		Thread.sleep(1000);
+		objCMD.clickDateBox(sExpModuleName, "time");
 		
 		objCMD.clickTime(sTimeHour, sTimeMinutes,sTimeSeconds);
-		
 		Thread.sleep(1000);
 		
 		//Write Date, Time & Date&Time to Datasheet.
@@ -3680,7 +3684,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		
 		//Related Module
-		objCMD.SelectRelModValue(sRelatedModText);
+//		objCMD.SelectRelModValue(sRelatedModText);
 		Thread.sleep(1000);		
 		objCMD.clickSave();
 		Thread.sleep(1000);		

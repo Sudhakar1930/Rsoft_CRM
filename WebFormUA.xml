@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="7">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"></listener>
+	</listeners>
+	  
+  <test name="chromeTest-Set1">
+	  <parameter name="browser" value="chrome">
+    <classes>
+		 <class name="testCases.WebForms.TC013_WF_RRN_OneN_TwoN"/>
+		<class name="testCases.WebForms.TC014_WF_RRN_OneN_TwoYN"/>
+		<class name="testCases.WebForms.TC015_WF_RRN_OneN_TwoY"/>
+		<class name="testCases.WebForms.TC016_WF_RRN_OneY_TwoN"/>
+		<class name="testCases.WebForms.TC017_WF_RRN_OneY_TwoYN"/>
+		<class name="testCases.WebForms.TC018_WF_RRN_OneY_TwoY"/>
+		<class name="testCases.WebForms.TC019_WF_RRN_OneYN_TwoN"/>
+		<class name="testCases.WebForms.TC020_WF_RRN_OneYN_TwoYN"/>
+		<class name="testCases.WebForms.TC021_WF_RRN_OneYN_TwoY"/>
+		<class name="testCases.WebForms.TC022_WF_RRY_OneN_TwoN"/>
+		<class name="testCases.WebForms.TC023_WF_RRY_OneN_TwoYN"/>
+		<class name="testCases.WebForms.TC024_WF_RRY_OneN_TwoY"/>
+		<class name="testCases.WebForms.TC025_WF_RRY_OneY_TwoN"/>
+		<class name="testCases.WebForms.TC026_WF_RRY_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC027_WF_RRY_OneY_TwoY"/>
+		<class name="testCases.WebForms.TC028_WF_RRY_OneYN_TwoN"/>
+		<class name="testCases.WebForms.TC029_WF_RRY_OneYN_TwoYN"/>
+		<class name="testCases.WebForms.TC030_WF_RRY_OneYN_TwoY"/>
+		<class name="testCases.WebForms.TC031_WF_RRYN_OneN_TwoN"/>
+		<class name="testCases.WebForms.TC032_WF_RRYN_OneN_TwoYN"/>
+		<class name="testCases.WebForms.TC033_WF_RRYN_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC034_WF_RRYN_OneY_TwoN"/>
+		<class name="testCases.WebForms.TC035_WF_RRYN_OneY_TwoYN"/>
+		<class name="testCases.WebForms.TC036_WF_RRYN_OneY_TwoY"/>
+		<class name="testCases.WebForms.TC037_WF_RRYN_OneYN_TwoN"/>
+		<class name="testCases.WebForms.TC038_WF_RRYN_OneYN_TwoYN"/>
+		<class name="testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY"/>
+		
+	</classes>	
+	  <!--
+	  
+	
+		 
+	  <class name="testCases.AddNewUser"/>
+	  <class name="testCases.SelectWebFormName"/>
+	  <class name="testCases.WebForms.TC014_WF_RRN_OneN_TwoYN"/>
+	  <class name="testCases.ExecuteTask.Notification.TC036_NT_ET_ETRS_DTBeforeDays"/>
+	  <class name="testCases.SelectWebFormName"/>
+		<class name="testCases.ExecuteTask.Notification.TC037_NT_ET_ETRM_CTAfterMinutes"/>  
+		<class name="testCases.ExecuteTask.Notification.TC026_NT_ET_ETRS_DateBeforeDays"/>
+		<class name="testCases.ExecuteTask.Notification.TC004_NT_ExecuteTask_MTAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC005_NT_ExecuteTask_MTAfterHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC006_NT_ExecuteTask_MTAfterDays"/>
+
+	  <class name="testCases.AddNewUser"/>
+	 
+	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
+		<class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
+		<class name="testCases.TC017_CreateEntity_OOFS_MultiSuccessCase"/>
+	   <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
+	<class name="testCases.TC014_CreateEntity_DefaultValues"/>
+	  	  <class name="testCases.TC014_CreateEntity_DefaultValues"/>
+	  <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
+	  <class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
+	  <class name="testCases.TC013_CreateEntity_OOF_S_NewValues"/>
+	  <class name="testCases.TC014_CreateEntity_DefaultValues"/>
+	  <class name="testCases.TC004_WF4_Send_SMS_OOF_S"/>
+	  <class name="testCases.TC012_WF6_SN_Yearly"/>
+      <class name="testCases.TC005_WF5_Send_SMS_ETR_S"/>
+      <class name="testCases.TC006_WF6_Send_SMS_ETR_M"/>
+      <class name="testCases.TC007_WF1_CRM_Schedule_Notify"/> 
+      <class name="testCases.TC007_WF1_Validate_Schedule_Notify"/>
+      <class name="testCases.TC011_WF5_SN_MonthByDate"/>
+      <class name="testCases.TC007_WF1_SN_Hourly"/>
+   	  <class name="testCases.TC007_WF1_Validate_SN_Hourly"/>
+   	  <class name="testCases.TC008_WF2_SN_Daily"/>
+   	  <class name="testCases.TC008_WF2_Validate_SN_Daily"/>
+   	  <class name="testCases.TC009_WF3_SN_Weekly"/>
+   	  <class name="testCases.TC010_WF4_SN_SpecificDate"/>
+   	  <class name="testCases.TC011_WF5_SN_MonthByDate"/> 
+   	  <class name="testCases.TC012_WF6_SN_Yearly"/>
+   	  -->
+   	  
+   
+	  </parameter>
+	  </test>
+	
+	<test  name="chromeTest-Set2"  enabled="false">
+	 <parameter name="browser" value="chrome">
+    <classes>
+       <class name="testCases.WebForms.TC007_WF_RRUserY_OneConditionN"/>
+		 <class name="testCases.WebForms.TC008_WF_RRUserY_OneConditionYN"/>
+		 <class name="testCases.WebForms.TC009_WF_RRUserN_OneConditionYN"/>
+		 <class name="testCases.WebForms.TC010_WF_RRUserYN_OneConditionY"/>
+		 <class name="testCases.WebForms.TC011_WF_RRUserN_OneConditionN"/>
+		 <class name="testCases.WebForms.TC012_WF_RRUserYN_OneConditionN"/>
+     </classes>
+	  </parameter>
+  </test>
+  <test  name="chromeTest-Set3"  enabled="false">
+	 <parameter name="browser" value="chrome">
+    <classes>
+       <class name="testCases.WebForms.TC013_WF_RRN_OneN_TwoN"/>
+		 <class name="testCases.WebForms.TC014_WF_RRN_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC015_WF_RRN_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC016_WF_RRN_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC017_WF_RRN_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC018_WF_RRN_OneY_TwoY"/>
+     </classes>
+     
+	  </parameter>
+  </test>
+  <test  name="chromeTest-Set4"  enabled="false">
+	 <parameter name="browser" value="chrome">
+    <classes>
+       <class name="testCases.WebForms.TC019_WF_RRN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC020_WF_RRN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC021_WF_RRN_OneYN_TwoY"/>
+		 <class name="testCases.WebForms.TC022_WF_RRY_OneN_TwoN"/>
+		 <class name="testCases.WebForms.TC023_WF_RRY_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC024_WF_RRY_OneN_TwoY"/>
+     </classes>
+	  </parameter>
+  </test>
+  <test  name="chromeTest-Set5"  enabled="false">
+	 <parameter name="browser" value="chrome">
+    <classes>
+      <class name="testCases.WebForms.TC025_WF_RRY_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC026_WF_RRY_OneY_TwoYN"/>
+		 <class name="testCases.WebForms.TC027_WF_RRY_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC028_WF_RRY_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC029_WF_RRY_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC030_WF_RRY_OneYN_TwoY"/>
+     </classes>
+	  </parameter>
+  </test> 
+   <test  name="chromeTest-Set6"  enabled="false">
+	 <parameter name="browser" value="chrome">
+    <classes>
+       <class name="testCases.WebForms.TC031_WF_RRYN_OneN_TwoN"/>
+		 <class name="testCases.WebForms.TC032_WF_RRYN_OneN_TwoYN"/>
+		 <class name="testCases.WebForms.TC033_WF_RRYN_OneN_TwoY"/>
+		 <class name="testCases.WebForms.TC034_WF_RRYN_OneY_TwoN"/>
+		 <class name="testCases.WebForms.TC035_WF_RRYN_OneY_TwoYN"/>
+     </classes>
+	  </parameter>
+  </test> 
+  <test  name="chromeTest-Set7" enabled="false">
+	 <parameter name="browser" value="chrome">
+    <classes>
+       <class name="testCases.WebForms.TC036_WF_RRYN_OneY_TwoY"/>
+		 <class name="testCases.WebForms.TC037_WF_RRYN_OneYN_TwoN"/>
+		 <class name="testCases.WebForms.TC038_WF_RRYN_OneYN_TwoYN"/>
+		 <class name="testCases.WebForms.TC039_WF_RRYN_OneYN_TwoY"/>
+     </classes>
+	  </parameter>
+  </test>
+  
+</suite> <!-- Suite -->

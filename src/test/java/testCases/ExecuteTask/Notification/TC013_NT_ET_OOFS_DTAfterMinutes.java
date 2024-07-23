@@ -193,7 +193,7 @@ public class TC013_NT_ET_OOFS_DTAfterMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet1",false,"sDateandTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet1","@Add New", node);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet1","@Add New", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -263,7 +263,7 @@ public class TC013_NT_ET_OOFS_DTAfterMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet2",false,"sDateandTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet1","@Add New", node);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet2","@Summary Add", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -332,6 +332,10 @@ public class TC013_NT_ET_OOFS_DTAfterMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet3",true,"sDateandTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
+		
+		Thread.sleep(2000);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTAfterMinutes_","Sheet3","@Duplicate Add  New", node);
+		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		Thread.sleep(2000);

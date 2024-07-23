@@ -8,11 +8,16 @@
   <test name="chromeTest-Set1">
 	  <parameter name="browser" value="chrome">
     <classes>
-		 <class name="testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes"/>
 		
 	</classes>	
 	  <!--
-	  
+	  <class name="testCases.ExecuteTask.Notification.TC020_NT_ET_ETRS_CTAfterHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC021_NT_ET_ETRS_CTAfterDays"/>
+	  <class name="testCases.ExecuteTask.Notification.TC018_NT_ET_OOFS_DTBeforeDays"/>
+	  <class name="testCases.ExecuteTask.Notification.TC008_NT_ET_OOFS_DateBeforeDays"/>
+	  <class name="testCases.ExecuteTask.Notification.TC005_NT_ET_OOFS_MTAfterHours"/>
+	  <class name="testCases.ExecuteTask.Notification.TC006_NT_ET_OOFS_MTAfterDays"/>
 	
 		 
 	  <class name="testCases.AddNewUser"/>

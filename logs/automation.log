@@ -1,117 +1,409 @@
-16:01:25.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:LeadEmail@gmail.com
-16:01:25.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:LeadEmail@gmail.com
-16:01:25.822 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Lead Module on @Add New Record - OOFS--Detail View
-16:02:02.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-16:02:06.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquriyCheckName
-16:02:06.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
-16:02:06.944 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Related Module Summary Page Name Validation @Add New Record - OOFS-
-16:02:08.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-16:02:11.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr. EnquriyCheckName
-16:02:11.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EnquiryModuleName
-16:02:11.719 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Enquiry Module DT View Page Name Validation @Add New Record - OOFS-
-16:02:42.597 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-16:02:47.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
-16:02:47.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
-16:02:47.439 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Related Module Phone Number  Validation@Add New Record - OOFS-
-16:02:49.111 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-16:02:52.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 2222222222
-16:02:52.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 2222222222
-16:02:52.180 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Opportunity Module DT View Page Phone Number Validation@Add New Record - OOFS-
-16:02:53.294 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Navigate to Source Summary Page
-16:03:23.181 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary Add Entity Started
-16:03:23.182 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Excel file Utility instance created
-16:03:23.210 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Row Count is: 1
-16:03:23.235 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Col Count is: 54
-16:03:23.235 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - Extracting DataSheet Values started...
-16:03:23.855 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ETAIndia's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording"
-16:03:24.412 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
-16:03:27.523 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
-16:03:33.619 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Sudhakar VE] is selected in List
-16:03:33.620 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
-16:03:36.980 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
-16:03:36.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
-16:03:38.075 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
-16:03:41.242 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+65] is selected in List
-16:03:41.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  0231907562
-16:03:42.523 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 0231907562 entered in  input
-16:03:44.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNew@rsoft.in entered in  input
-16:03:45.776 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: SummaryAddNew@rsoft.in
-16:03:46.840 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
-16:03:47.894 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 3
-16:04:01.364 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one
-16:04:02.438 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
-16:04:05.668 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Kanchipuram] is selected in List
-16:04:05.668 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
-16:04:06.742 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
-16:04:10.052 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Tamilnadu] is selected in List
-16:04:10.052 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
-16:04:11.119 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
-16:04:14.262 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [India] is selected in List
-16:04:14.262 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
-16:04:16.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
-16:04:16.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
-16:04:16.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
-16:04:24.611 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
-16:04:30.903 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-16:04:32.789 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
-16:04:36.815 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
-16:04:38.953 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
-16:04:40.025 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
-16:04:43.036 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
-16:04:53.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
-16:04:54.426 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
-16:04:59.429 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
-16:05:13.607 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
-16:05:19.961 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-16:05:21.824 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
-16:05:33.367 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [5] is selected in List
-16:05:37.579 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [00] is selected in List
-16:05:41.802 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [00] is selected in List
-16:05:46.111 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [PM] is selected in List
-16:05:49.129 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
-16:05:49.241 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
-16:05:49.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Formatted Date from sheet:15-07-2024
-16:06:03.811 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Mrs.] is selected in List
-16:06:05.128 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
-16:06:06.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 11111111111 entered in  input
-16:06:07.571 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10000 entered in  input
-16:06:08.791 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
-16:06:12.061 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Dr.] is selected in List
-16:06:13.280 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
-16:06:14.610 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddEnquiry@gmail.com entered in  input
-16:06:15.900 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
-16:06:15.906 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enqiry txt area:India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording"
-16:06:17.330 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - India's First Lead Management System with
-"Auto Lead Call Distribution With Call Recording" entered in  textarea
-16:06:25.499 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
-16:06:31.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
-16:06:33.590 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
-16:06:37.604 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
-16:06:44.079 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
-16:06:46.417 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9596754413 entered in  input
-16:06:49.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enq Cat:Urgent
-16:06:52.651 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [Urgent] is selected in List
-16:06:58.944 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+91] is selected in List
-16:07:01.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9501926441 entered in  input
-16:07:02.556 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNewLead@gmail.com entered in  input
-16:07:03.823 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
-16:07:08.128 [TestNG-tests-1] INFO  testCases.TC018_CreateEntity_OOFS_MultiUpdOnFailCase - [+60] is selected in List
-16:07:10.477 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 0472103025 entered in  input
-16:07:11.761 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - SummaryAddNewSales@gmail.com entered in  input
-16:07:36.028 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary Add Record completed
-16:07:36.065 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-16:07:36.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-16:07:47.185 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Old Source Id:138730
-16:07:47.185 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Curr Source Id:138732
-16:08:22.484 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-16:08:42.580 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count7
-16:08:42.580 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:7
-16:08:42.581 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
-16:08:43.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count5
-16:08:43.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Passed Validations:5
-16:08:43.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
-16:08:44.922 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count4
-16:08:44.922 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Failed Validations:4
-16:08:44.922 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:fail
+16:17:34.270 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2323232323
+16:17:34.271 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Number - Summary View Page:   Duplicate Record
+16:17:35.436 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:1,000
+16:17:35.436 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1,000
+16:17:35.436 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Currency - Summary View Page:   Duplicate Record
+16:17:36.561 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.mvnrepository.com/
+16:17:36.561 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.mvnrepository.com/
+16:17:36.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:URL - Summary View Page:  Duplicate Record
+16:17:37.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:
+16:17:37.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Chennai
+16:17:37.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:City - Summary View Page: Duplicate Record
+16:17:37.788 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+16:17:37.788 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:17:37.788 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:State - Summary View Page:Duplicate Record
+16:17:38.927 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+16:17:38.927 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+16:17:38.927 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Country - Summary View Page:  Duplicate Record
+16:17:40.087 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:RelatedModuleText
+16:17:40.088 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RelatedModuleText
+16:17:40.088 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Related Module Text - Summary View Page:  Duplicate Record
+16:17:41.913 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:17:51.832 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:17:51.833 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:17:51.833 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo - Detail View Page:   Duplicate Record
+16:17:52.997 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber Rsoft IT
+16:17:52.997 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:17:52.997 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 1234567890
+16:17:52.997 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Detail View Page:   Duplicate Record
+16:17:54.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+  1234567890
+16:17:54.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateAdd@gmail.com
+16:17:54.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email - Detail View Page: Duplicate Record
+16:17:55.325 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateAdd@gmail.com
+16:17:55.325 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateAddText
+16:17:55.325 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text - Detail View Page:  Duplicate Record
+16:17:56.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateAddText
+16:17:56.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:four,five
+16:17:56.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiCombo - Detail View Page:   Duplicate Record
+16:17:57.611 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:four,five
+16:17:57.611 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:DuplicateAddTextArea
+16:17:57.611 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:TextArea - Detail View Page:  Duplicate Record
+16:17:58.767 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:DuplicateAddTextArea
+16:17:58.767 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+16:17:58.767 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Detail View Page: Duplicate Record
+16:17:59.915 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:17:59.915 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:22-07-2024
+16:17:59.915 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Date - Detail View Page: Duplicate Record
+16:18:01.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:22-07-2024
+16:18:01.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1
+16:18:01.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:PickList - Detail View Page:   Duplicate Record
+16:18:02.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+16:18:02.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+16:18:02.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:File Upload - Detail View Page:   Duplicate Record
+16:18:03.448 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt-22072024104246.jpg
+16:18:03.448 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:25-07-2024 05:00:00 PM
+16:18:03.448 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Date & Time - Detail View Page: Duplicate Record
+16:18:04.603 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:25-07-2024 05:00:00 PM
+16:18:04.603 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+16:18:04.603 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Time - Detail View Page:    Duplicate Record
+16:18:05.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ActualNameDT: 02:35:55 PM ExpectedNameDT: Mr. DuplicateAddName
+16:18:05.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+16:18:05.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. DuplicateAddName
+16:18:05.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Name - Detail View Page:  Duplicate Record
+16:18:06.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr.
+  DuplicateAddName
+16:18:06.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2323232323
+16:18:06.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Number - Detail View Page:  Duplicate Record
+16:18:08.044 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2323232323
+16:18:08.044 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1,000
+16:18:08.044 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Currency - Detail View Page:  Duplicate Record
+16:18:09.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.mvnrepository.com/
+16:18:09.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.mvnrepository.com/
+16:18:09.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:URL - Detail View Page:  Duplicate Record
+16:18:13.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Click Here
+16:18:13.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Chennai
+16:18:13.345 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:City - Detail View Page:   Duplicate Record
+16:18:14.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Chennai
+16:18:14.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:18:14.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:State - Detail View Page:   Duplicate Record
+16:18:15.689 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+16:18:15.689 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+16:18:15.689 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Country - Detail View Page:  Duplicate Record
+16:18:16.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+16:18:16.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RelatedModuleText
+16:18:16.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Related Module Text - Detail View Page:  Duplicate Record
+16:18:29.190 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:18:29.383 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:18:56.528 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+16:19:01.530 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:19:05.735 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:19:05.748 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+16:19:05.748 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+16:19:06.261 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+16:19:07.316 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 153648 Etnotification 2024-07-22 10:46:42 NULL
+16:19:10.315 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - CT&MT after modified record 2024-07-22 10:46:42,0
+16:19:10.315 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Duplicate Record 2024-07-22 10:46:42  0 RecordId:153648
+16:19:10.857 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:19:11.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:19:41.158 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+16:19:46.165 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:19:50.404 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:19:50.420 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+16:19:50.420 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+16:19:50.930 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+16:19:50.972 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count Row: 0 153648
+16:19:50.973 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within If when Entity Id Matches0
+16:19:50.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Taask Id:2844
+16:19:50.996 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Module Name:Etnotification
+16:19:51.007 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type:0
+16:19:51.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type Name:
+16:19:51.028 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Execution Time: 2024-07-22 11:31:42
+16:19:51.040 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Send Type: Send notification
+16:19:51.052 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: 2024-07-22 10:46:45
+16:19:52.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Time Failed: Duplicate Record Actual Created Time: 2024-07-22 10:46:45 Expected Created Time: 2024-07-22 10:46:42 ExecutionTime:2024-07-22 11:31:42 Send Type: Send notificationModule Name: Etnotification and Task Id:2844
+16:19:52.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: Mon Jul 22 10:46:42 IST 2024Actual Execution Time: Mon Jul 22 11:31:42 IST 2024
+16:19:52.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within Date Diff Validation
+16:19:53.304 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Duplicate Record: Passed: Actual EntityId: 153648 ScheduleName:  Actual Created Time: 2024-07-22 10:46:45Expected Created Time: 2024-07-22 10:46:42 ExecutionTime:2024-07-22 11:31:42 Difference In Minutes:= 45Send Type: Send notificationModule Name: Etnotification and Task Id: 2844
+16:19:53.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Return Value: in Duplicate Previous Page true:2844
+16:19:53.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Status: true Current Task Id: 2844And Entity Id: 153648
+16:20:06.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:20:07.510 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:20:08.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:20:44.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:20:44.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:20:44.483 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Col Count is: 33
+16:20:44.483 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:20:44.692 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+16:20:47.844 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+16:20:53.022 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [Rsoft IT] is selected in List
+16:20:53.098 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+16:20:56.249 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [+91] is selected in List
+16:20:56.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
+16:20:57.591 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
+16:21:00.941 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditSave@gmail.com entered in  input
+16:21:01.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: EditSave@gmail.com
+16:21:03.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditSaveAddText entered in  input
+16:21:03.198 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  EditSaveAddText
+16:21:33.248 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: one,two
+16:21:35.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditSaveTextArea entered in  textarea
+16:21:37.532 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
+16:21:37.547 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+16:21:37.607 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+16:21:45.736 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+16:21:53.085 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:21:54.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+16:21:58.867 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+16:22:00.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+16:22:03.005 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+16:22:04.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+16:22:07.365 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+16:22:17.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jul
+16:22:23.847 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2024
+16:22:25.708 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+16:22:37.306 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [5] is selected in List
+16:22:41.515 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [00] is selected in List
+16:22:45.697 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [00] is selected in List
+16:22:49.904 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PM] is selected in List
+16:22:52.911 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+16:22:52.992 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+16:22:54.058 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+16:22:57.067 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+16:23:07.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:35 PM
+16:23:08.405 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :22-07-2024
+16:23:11.722 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [Mr.] is selected in List
+16:23:13.012 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - EditSaveName entered in  input
+16:23:14.231 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2323232323 entered in  input
+16:23:15.492 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 1,000 entered in  input
+16:23:16.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.mvnrepository.com/ entered in  input
+16:23:17.853 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+16:23:20.997 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [Chennai] is selected in List
+16:23:20.997 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Chennai
+16:23:22.087 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+16:23:25.421 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [Tamilnadu] is selected in List
+16:23:25.421 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+16:23:26.517 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+16:23:29.624 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [India] is selected in List
+16:23:29.624 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+16:23:46.024 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RelatedModuleText entered in  input
+16:23:46.033 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Search Button clicked in Related Module Window
+16:23:50.274 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Button Search
+16:23:53.299 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+16:24:01.945 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Related Module Value Selected
+16:24:17.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:24:27.067 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+16:24:27.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:24:27.089 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:24:27.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Col Count is: 33
+16:24:27.104 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:24:27.332 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Verify Detail Summary Module data
+16:24:33.376 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:24:33.390 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:24:33.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:ETNotification
+16:24:33.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:ETNotification
+16:24:33.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name in SummaryDetail View Page
+16:24:39.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sAssign1:RsoftsAssign2:IT
+16:24:39.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Get Text:
+16:24:40.024 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:24:40.024 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:24:40.024 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Assigned To-Summary Title
+16:24:41.169 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890
+16:24:41.169 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 1234567890
+16:24:41.169 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Phone Number - Summary Title
+16:24:42.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSave@gmail.com
+16:24:42.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSave@gmail.com
+16:24:42.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary Title
+16:24:43.472 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:24:43.472 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:24:43.472 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Assigned To - Summary View Page : 
+16:24:44.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 1234567890
+16:24:44.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 1234567890
+16:24:44.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Summary View Page : Edit & Save Record
+16:24:45.785 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSave@gmail.com
+16:24:45.785 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSave@gmail.com
+16:24:45.785 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email - Summary View Page: Edit & Save Record
+16:24:46.941 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSaveAddText
+16:24:46.941 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSaveAddText
+16:24:46.941 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text - Summary View Page:Edit & Save Record
+16:24:48.097 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one,two
+16:24:48.097 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one,two
+16:24:48.097 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiComboValues - Summary View Page:  Edit & Save Record
+16:24:49.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSaveTextArea
+16:24:49.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSaveTextArea
+16:24:49.242 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text Area - Summary View Page:  Edit & Save Record
+16:24:50.376 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:24:50.376 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+16:24:50.376 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Summary View Page:   Edit & Save Record
+16:24:51.542 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:22-07-2024
+16:24:51.542 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:22-07-2024
+16:24:51.542 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Date - Summary View Page:  Edit & Save Record
+16:24:52.679 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:1
+16:24:52.679 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1
+16:24:52.679 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:PickList - Summary View Page:  Edit & Save Record
+16:24:53.920 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+16:24:53.921 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+16:24:53.921 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:File Upload - Summary View Page: Edit & Save Record
+16:24:55.070 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:25-07-2024 05:00:00 PM
+16:24:55.070 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:25-07-2024 05:00:00 PM
+16:24:55.070 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Date & Time - Summary View Page:   Edit & Save Record
+16:24:56.220 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+16:24:56.220 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+16:24:56.220 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Time - Summary View Page:   Edit & Save Record
+16:24:57.370 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:
+16:24:57.370 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EditSaveName
+16:24:57.370 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Name - Summary View Page:   Edit & Save Record
+16:24:57.455 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2323232323
+16:24:57.455 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2323232323
+16:24:57.455 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Number - Summary View Page:   Edit & Save Record
+16:24:58.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:1,000
+16:24:58.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1,000
+16:24:58.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Currency - Summary View Page:   Edit & Save Record
+16:24:59.738 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.mvnrepository.com/
+16:24:59.738 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.mvnrepository.com/
+16:24:59.738 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:URL - Summary View Page:  Edit & Save Record
+16:25:00.904 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:
+16:25:00.904 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Chennai
+16:25:00.904 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:City - Summary View Page: Edit & Save Record
+16:25:00.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+16:25:00.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:25:00.949 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:State - Summary View Page:Edit & Save Record
+16:25:02.093 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+16:25:02.093 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+16:25:02.093 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Country - Summary View Page:  Edit & Save Record
+16:25:03.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:RelatedModuleText
+16:25:03.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RelatedModuleText
+16:25:03.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Related Module Text - Summary View Page:  Edit & Save Record
+16:25:05.088 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+16:25:14.643 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:25:14.643 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+16:25:14.643 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo - Detail View Page:   Edit & Save Record
+16:25:15.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sActDTMobileNumber Rsoft IT
+16:25:15.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+16:25:15.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 1234567890
+16:25:15.805 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Mobile Number - Detail View Page:   Edit & Save Record
+16:25:16.962 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91
+  1234567890
+16:25:16.962 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSave@gmail.com
+16:25:16.962 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email - Detail View Page: Edit & Save Record
+16:25:18.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSave@gmail.com
+16:25:18.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSaveAddText
+16:25:18.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Text - Detail View Page:  Edit & Save Record
+16:25:19.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSaveAddText
+16:25:19.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:one,two
+16:25:19.296 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:MultiCombo - Detail View Page:   Edit & Save Record
+16:25:20.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:one,two
+16:25:20.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:EditSaveTextArea
+16:25:20.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:TextArea - Detail View Page:  Edit & Save Record
+16:25:21.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:EditSaveTextArea
+16:25:21.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Yes
+16:25:21.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:CheckBox - Detail View Page: Edit & Save Record
+16:25:22.729 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Yes
+16:25:22.729 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:22-07-2024
+16:25:22.729 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Date - Detail View Page: Edit & Save Record
+16:25:23.893 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:22-07-2024
+16:25:23.893 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1
+16:25:23.893 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:PickList - Detail View Page:   Edit & Save Record
+16:25:25.143 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt
+16:25:25.143 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:annie-spratt
+16:25:25.143 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:File Upload - Detail View Page:   Edit & Save Record
+16:25:26.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:annie-spratt-22072024100554.jpg
+16:25:26.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:25-07-2024 05:00:00 PM
+16:25:26.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Date & Time - Detail View Page: Edit & Save Record
+16:25:27.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:25-07-2024 05:00:00 PM
+16:25:27.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:02:35:55 PM
+16:25:27.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Time - Detail View Page:    Edit & Save Record
+16:25:28.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ActualNameDT: 02:35:55 PM ExpectedNameDT: Mr. EditSaveName
+16:25:28.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:02:35:55 PM
+16:25:28.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Mr. EditSaveName
+16:25:28.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Name - Detail View Page:  Edit & Save Record
+16:25:29.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Mr.
+  EditSaveName
+16:25:29.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:2323232323
+16:25:29.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Number - Detail View Page:  Edit & Save Record
+16:25:30.923 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:2323232323
+16:25:30.923 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:1,000
+16:25:30.923 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Currency - Detail View Page:  Edit & Save Record
+16:25:32.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:http://www.mvnrepository.com/
+16:25:32.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:http://www.mvnrepository.com/
+16:25:32.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:URL - Detail View Page:  Edit & Save Record
+16:25:36.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Click Here
+16:25:36.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Chennai
+16:25:36.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:City - Detail View Page:   Edit & Save Record
+16:25:37.411 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Chennai
+16:25:37.411 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Tamilnadu
+16:25:37.411 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:State - Detail View Page:   Edit & Save Record
+16:25:38.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Tamilnadu
+16:25:38.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:India
+16:25:38.563 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Country - Detail View Page:  Edit & Save Record
+16:25:39.715 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:India
+16:25:39.715 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:RelatedModuleText
+16:25:39.715 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Related Module Text - Detail View Page:  Edit & Save Record
+16:25:48.795 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:25:48.988 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:26:16.213 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+16:26:21.227 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:26:25.442 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:26:25.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+16:26:25.469 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+16:26:25.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+16:26:27.058 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 153648 Etnotification 2024-07-22 10:46:42 2024-07-22 10:54:06
+16:26:30.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - CT&MT after Edit & Save record 2024-07-22 10:46:42,2024-07-22 10:54:06
+16:26:30.555 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Edit & Save Record 2024-07-22 10:46:42  2024-07-22 10:54:06 RecordId:153648
+16:26:31.118 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:26:31.313 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:27:01.462 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+16:27:06.475 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:27:10.694 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:27:10.718 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+16:27:10.718 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:2
+16:27:11.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+16:27:11.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count Row: 0 153648
+16:27:11.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within If when Entity Id Matches0
+16:27:11.257 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Taask Id:2845
+16:27:11.267 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Module Name:Etnotification
+16:27:11.278 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type:0
+16:27:11.288 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type Name:
+16:27:11.297 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Execution Time: 2024-07-22 11:31:42
+16:27:11.308 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Send Type: Send notification
+16:27:11.319 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: 2024-07-22 10:54:10
+16:27:12.431 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Time Failed: Edit & Save Actual Created Time: 2024-07-22 10:54:10 Expected Created Time: 2024-07-22 10:46:42 ExecutionTime:2024-07-22 11:31:42 Send Type: Send notificationModule Name: Etnotification and Task Id:2845
+16:27:12.431 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: Mon Jul 22 10:46:42 IST 2024Actual Execution Time: Mon Jul 22 11:31:42 IST 2024
+16:27:12.431 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within Date Diff Validation
+16:27:13.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Edit & Save: Passed: Actual EntityId: 153648 ScheduleName:  Actual Created Time: 2024-07-22 10:54:10Expected Created Time: 2024-07-22 10:46:42 ExecutionTime:2024-07-22 11:31:42 Difference In Minutes:= 45Send Type: Send notificationModule Name: Etnotification and Task Id: 2845
+16:27:13.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Return Value: in Edit & Save  true:2845
+16:27:13.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Status: true Current Task Id: 2845And Entity Id: 153648
+16:27:26.443 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:27:27.673 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:27:28.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:27:32.363 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Single LIne Edit: Last Task Id: 2845 current record id 153648
+16:28:00.491 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:28:06.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Mobile Number Edit On in Summary Page
+16:28:12.721 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2233445566 entered in  input
+16:28:15.318 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2233445566 Is Updated Text for Mobile Number@Single Line Edit
+16:28:34.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:28:34.928 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:29:02.287 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+16:29:07.298 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:29:11.497 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:29:11.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+16:29:11.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+16:29:12.026 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+16:29:13.117 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 153648 Etnotification 2024-07-22 10:46:42 2024-07-22 10:58:14
+16:29:16.097 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - CT&MT after Single Line Edit2024-07-22 10:46:42,2024-07-22 10:58:14
+16:29:16.097 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Single Line Edit 2024-07-22 10:46:42  2024-07-22 10:58:14 RecordId:153648
+16:29:16.650 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:29:16.842 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - dCr2KGiHBrC2!@ entered in  input
+16:29:46.982 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC019_NT_ET_ETRS_CTAfterMinutes - [PRIMARY (DESC)] is selected in List
+16:29:51.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:29:56.229 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 153648
+16:29:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+16:29:56.245 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:3
+16:29:56.761 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+16:29:56.785 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count Row: 0 153648
+16:29:56.785 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within If when Entity Id Matches0
+16:29:56.796 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Taask Id:2846
+16:29:56.806 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Module Name:Etnotification
+16:29:56.815 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type:0
+16:29:56.825 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type Name:
+16:29:56.835 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Execution Time: 2024-07-22 11:31:42
+16:29:56.848 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Send Type: Send notification
+16:29:56.859 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: 2024-07-22 10:58:18
+16:29:58.957 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Created Time Failed: @Single Line Edit Actual Created Time: 2024-07-22 10:58:18 Expected Created Time: 2024-07-22 10:46:42 ExecutionTime:2024-07-22 11:31:42 Send Type: Send notificationModule Name: Etnotification and Task Id:2846
+16:29:58.957 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: Mon Jul 22 10:46:42 IST 2024Actual Execution Time: Mon Jul 22 11:31:42 IST 2024
+16:29:58.957 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within Date Diff Validation
+16:30:00.065 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - @Single Line Edit: Passed: Actual EntityId: 153648 ScheduleName:  Actual Created Time: 2024-07-22 10:58:18Expected Created Time: 2024-07-22 10:46:42 ExecutionTime:2024-07-22 11:31:42 Difference In Minutes:= 45Send Type: Send notificationModule Name: Etnotification and Task Id: 2846
+16:30:00.065 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Return Value: After Single Line Edit true:2846
+16:30:00.065 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Status: true Current Task Id: 2846And Entity Id: 153648
+16:30:08.717 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:168
+16:30:08.717 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:168
+16:30:08.717 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass

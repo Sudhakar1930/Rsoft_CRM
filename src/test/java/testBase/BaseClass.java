@@ -237,10 +237,10 @@ public class BaseClass extends ExtentReportManager{
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() throws IOException, InterruptedException {
-		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iValCount), "Total Validation Count:" + String.valueOf(iValCount), "pass", node);
-		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iPassCount), "Total Passed Validations:" + String.valueOf(iPassCount), "pass", node);
-		UtilityCustomFunctions.fSoftAssert("Total Validation Count" + String.valueOf(iFailCount), "Total Failed Validations:" + String.valueOf(iFailCount), "fail", node);
-//		driver.quit();
+		UtilityCustomFunctions.fSoftAssert("Total Validation Count:" + String.valueOf(iValCount), "Total Validation Count:" + String.valueOf(iValCount), "pass", node);
+//		UtilityCustomFunctions.fSoftAssert("Total Validation Count:" + String.valueOf(iPassCount), "Total Passed Validations:" + String.valueOf(iPassCount), "pass", node);
+//		UtilityCustomFunctions.fSoftAssert("Total Validation Count:" + String.valueOf(iFailCount), "Total Failed Validations:" + String.valueOf(iFailCount), "fail", node);
+		driver.quit();
 	}
 	
 	

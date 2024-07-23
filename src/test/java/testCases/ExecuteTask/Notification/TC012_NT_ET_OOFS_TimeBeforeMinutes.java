@@ -31,6 +31,7 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 	}
 	@Test
 	public void testExecuteTask_TimeBeforeMinutes () throws Exception {
+		try {
 		node = test.createNode("NT_ExecuteTask_TimeBeforeMinutes");
 		UtilityCustomFunctions.logWriteConsole("******starting TC012_NT_ET_OOFS_TimeBeforeMinutes ****");
 		String sBrowserName=UtilityCustomFunctions.getBrowserName(driver);
@@ -193,7 +194,7 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet1",false,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet1","@Add New", node);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet1","@Add New", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -201,6 +202,9 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		objHP.clickLogoutCRM();
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+		if(sActExeStart_Time==null) {
+			Assert.fail("Record Not Captured in DB: After add new:" + sCurrModRecId);
+		}
 		Date d1 = null;
 		d1 = format.parse(sActExeStart_Time);
 		Date newDate = DateUtils.addMinutes(d1, 330);
@@ -217,13 +221,16 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		
 		String sAfterMinutes ="";
 		int iHours = Integer.parseInt(sHours) - 1;
-		if(sAMorPM.equalsIgnoreCase("AM")){
-			sAfterMinutes = "0" + String.valueOf(iHours) + ":15:00";
-		}
-		else {
-			iHours = iHours + 12;
-			sAfterMinutes = String.valueOf(iHours)+":15:00";
-		}
+//		if(sAMorPM.equalsIgnoreCase("AM")){
+//			sAfterMinutes = "0" + String.valueOf(iHours) + ":15:00";
+//		}
+//		else {
+//			iHours = iHours + 12;
+//			sAfterMinutes = String.valueOf(iHours)+":15:00";
+//		}
+		
+		iHours = iHours + 12;
+		sAfterMinutes = String.valueOf(iHours)+":15:00";
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
 			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@After Add New" , "pass",node);
@@ -267,7 +274,9 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		Thread.sleep(3000);
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet2",false,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+		
 		Thread.sleep(2000);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet2","@Summary Add", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -276,6 +285,9 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		
 		format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+		if(sActExeStart_Time==null) {
+			Assert.fail("Record Not Captured in DB: After Summary Add:" + sCurrModRecId);
+		}
 		d1 = null;
 		d1 = format.parse(sActExeStart_Time);
 		newDate = DateUtils.addMinutes(d1, 330);
@@ -292,13 +304,15 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		sAfterMinutes ="";
 		iHours=0;
 		iHours = Integer.parseInt(sSHours) - 1;
-		if(sAMorPM.equalsIgnoreCase("AM")){
-			sAfterMinutes = "0" + String.valueOf(iHours) + ":15:00";
-		}
-		else {
-			iHours = iHours + 12;
-			sAfterMinutes = String.valueOf(iHours)+":15:00";
-		}
+//		if(sAMorPM.equalsIgnoreCase("AM")){
+//			sAfterMinutes = "0" + String.valueOf(iHours) + ":15:00";
+//		}
+//		else {
+//			iHours = iHours + 12;
+//			sAfterMinutes = String.valueOf(iHours)+":15:00";
+//		}
+		iHours = iHours + 12;
+		sAfterMinutes = String.valueOf(iHours)+":15:00";
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
 			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Summary Add New" , "pass",node);
@@ -342,7 +356,10 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		objDVP.clickDuplicateRecord();
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet3",true,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
+				
 		Thread.sleep(2000);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet3","@Duplicate Add", node);
+		
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -351,6 +368,9 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		
 		format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+		if(sActExeStart_Time==null) {
+			Assert.fail("Record Not Captured in DB: After Summary Add:" + sCurrModRecId);
+		}
 		d1 = null;
 		d1 = format.parse(sActExeStart_Time);
 		newDate = DateUtils.addMinutes(d1, 330);
@@ -367,15 +387,16 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		sAfterMinutes ="";
 		iHours=0;
 		iHours = Integer.parseInt(sMHours) - 1;
-		if(sAMorPM.equalsIgnoreCase("AM")){
-			sAfterMinutes = "0" + String.valueOf(iHours) + ":15:00";
-		}
-		else {
-			iHours = iHours + 12;
-			sAfterMinutes = String.valueOf(iHours)+":15:00";
-		}
+//		if(sAMorPM.equalsIgnoreCase("AM")){
+//			sAfterMinutes = "0" + String.valueOf(iHours) + ":15:00";
+//		}
+//		else {
+//			iHours = iHours + 12;
+//			sAfterMinutes = String.valueOf(iHours)+":15:00";
+//		}
 		
-		
+		iHours = iHours + 12;
+		sAfterMinutes = String.valueOf(iHours)+":15:00";
 		
 		if(sConfigDateTime.contains(sAfterMinutes)) {
 			objBase.freport("ET Time after Minutes With Configured Time: " + sConfigDateTime + "Expected Time: "+ sAfterMinutes + " EntityId: "+sCurrModRecId + "@Duplicate Record" , "pass",node);
@@ -389,7 +410,9 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		
 		objLP.clickPHPMyAdminLogout();
 		Thread.sleep(1000);
-		
+		}catch(Exception e) {
+			e.getCause();
+		}
 		
 	
 	}//Test

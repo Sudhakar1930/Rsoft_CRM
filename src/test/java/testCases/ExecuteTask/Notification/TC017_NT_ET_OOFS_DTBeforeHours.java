@@ -191,7 +191,7 @@ public class TC017_NT_ET_OOFS_DTBeforeHours extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet1",false,"sDateandTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet1","@Add New", node);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet1","@Add New", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -200,6 +200,9 @@ public class TC017_NT_ET_OOFS_DTBeforeHours extends BaseClass{
 		
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+		if(sActExeStart_Time==null) {
+			Assert.fail("Record Not Captured in DB: After add new:" + sCurrModRecId);
+		}
 		Date d1 = null;
 		d1 = format.parse(sActExeStart_Time);
 		Date newDate = DateUtils.addMinutes(d1, 330);
@@ -263,7 +266,7 @@ public class TC017_NT_ET_OOFS_DTBeforeHours extends BaseClass{
 		
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet1","@Summary Add New", node);
+		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet2","@Summary Add New", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -272,6 +275,9 @@ public class TC017_NT_ET_OOFS_DTBeforeHours extends BaseClass{
 		
 		format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+		if(sActExeStart_Time==null) {
+			Assert.fail("Record Not Captured in DB: After Summary Add new:" + sCurrModRecId);
+		}
 		d1 = null;
 		d1 = format.parse(sActExeStart_Time);
 		newDate = DateUtils.addMinutes(d1, 330);
@@ -332,6 +338,8 @@ public class TC017_NT_ET_OOFS_DTBeforeHours extends BaseClass{
 			objDVP.clickDuplicateRecord();
 			objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet3",true,"sDateandTime");
 				
+			objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DTBeforeHours_","Sheet3","@Duplicate Add New", node);
+			
 			UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 			Thread.sleep(2000);
 			sCurrModRecId = objCRMRs.getModuleRecordId();
@@ -341,6 +349,9 @@ public class TC017_NT_ET_OOFS_DTBeforeHours extends BaseClass{
 				
 			format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			sActExeStart_Time =objPAP.fGetExecutionStartTime(sMySqlUrl,sMySqlUid,sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId);
+			if(sActExeStart_Time==null) {
+				Assert.fail("Record Not Captured in DB: After Duplicate add new:" + sCurrModRecId);
+			}
 			d1 = null;
 			d1 = format.parse(sActExeStart_Time);
 			newDate = DateUtils.addMinutes(d1, 330);
