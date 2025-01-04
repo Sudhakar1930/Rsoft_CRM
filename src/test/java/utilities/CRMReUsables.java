@@ -16,7 +16,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -629,7 +631,7 @@ public class CRMReUsables extends BaseClass {
 //		for (int i = 2; i <= tRowCount.size(); i++) {
 			System.out.println("Current Row Number: " + 2);
 			List<WebElement> tColCount = tRowCount.get(2).findElements(By.tagName("td"));
-
+			System.out.println("Total Columns:" + tColCount);
 
 			String sActAssignedTo = UtilityCustomFunctions.getText(driver, tColCount.get(1));
 			String sActMobilePrefix = UtilityCustomFunctions.getText(driver, tColCount.get(2));
@@ -1337,13 +1339,13 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(3000);
 		objCMD.selectListValue(sEnquiry_category);
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		//Lead PhoneNumber prefix
 		objCMD.ClickListPhonePrefix(sExpModuleName,"leadphonenumber_prefix-container");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		objCMD.selectListValue(sLead_PN_Prefix);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		objCMD.setGenericInputValue("tel", sExpModuleName, "leadphonenumber", sLead_PN);
 		
 		//Lead Email
@@ -1365,7 +1367,17 @@ public class CRMReUsables extends BaseClass {
 		
 		objCMD.clickSave();
 		
-		Thread.sleep(5000);
+		//a[normalize-space()='CRMScheduleNotification']
+//		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='CRMScheduleNotification']"));
+		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='"+sExpModuleName+"']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(eleModuleLink));
+		wait.until(ExpectedConditions.visibilityOf(eleModuleLink));
+		js.executeScript("arguments[0].scrollIntoView();", eleModuleLink);
+		
+		
+		
 	}
 
 	

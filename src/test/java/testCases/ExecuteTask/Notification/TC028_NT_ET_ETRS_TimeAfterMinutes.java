@@ -268,6 +268,8 @@ public class TC028_NT_ET_ETRS_TimeAfterMinutes extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
 		
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterMinutes_","Sheet2","@Summary Add New", node);
+		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
@@ -342,6 +344,8 @@ public class TC028_NT_ET_ETRS_TimeAfterMinutes extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
 		
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterMinutes_","Sheet3","@Duplicate Add New", node);
+		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
@@ -414,6 +418,7 @@ public class TC028_NT_ET_ETRS_TimeAfterMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterMinutes_","Sheet4",true,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterMinutes_","Sheet4","@Edit&Save", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();

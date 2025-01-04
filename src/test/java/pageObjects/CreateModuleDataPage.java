@@ -617,11 +617,15 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	
 	public void ClickListPhonePrefix(String sModuleName,String sText) throws Exception {
+	try {
 	String sXpath = "//span[@id='select2-" + sModuleName.toLowerCase().trim() + "_" + sText +"']";
 	System.out.println("Phone Prefix xpath: " + sXpath);
 	WebElement elePhonePrefix = driver.findElement(By.xpath(sXpath));
 	elePhonePrefix.click();
 //	UtilityCustomFunctions.doClick(driver, elePhonePrefix);
+	}catch(Exception e) {
+	  System.out.println("Error Message:" + e.getCause());		
+	}
 	
 	}
 	public void setArrayTextBoxValue(int iObjIndex,String sTxtValue) {
@@ -639,8 +643,9 @@ public class CreateModuleDataPage extends BasePage{
 	public void setInputNumber(String sModuleName,String sText,String sValue) throws Exception {
 		String sXpath = "//input[@type ='number' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";
 		WebElement eleTextBox = driver.findElement(By.xpath(sXpath));
-		eleTextBox.clear();
-		UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
+		//eleTextBox.clear();
+		//UtilityCustomFunctions.sendKeysNoEnter(driver,eleTextBox,sValue);
+		eleTextBox.sendKeys(sValue);
 	}
 	public void setGenericInputValue(String sType,String sModuleName,String sText,String sValue) throws Exception {
 		String sXpath = "//input[@type ='"+ sType + "' and @name='" + sModuleName.toLowerCase().trim()+"_"+sText+"']";

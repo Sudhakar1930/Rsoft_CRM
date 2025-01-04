@@ -6,7 +6,10 @@ import java.text.ParseException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -163,9 +166,9 @@ public class TC011_WF5_SN_MonthByDate extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		String sMySqlUid = rb.getString("MySqlUid");
 		String sMySqlPwd = rb.getString("MySqlPwd");
 		String sMySqlUrl= rb.getString("MySqlUrl");
@@ -258,7 +261,7 @@ public class TC011_WF5_SN_MonthByDate extends BaseClass {
 		String sRecordId="";
 //		//**************Add New Record
 		objCRMRs.fAddValuestoModulePage("Test","//Schedule//Schedule_Notify_MonthbyDate_","Sheet1",false);
-		Thread.sleep(5000);
+		
 		URL sCurrentUrl = new URL(driver.getCurrentUrl());
 
 		String sUrlQuery = sCurrentUrl.getQuery();
@@ -281,16 +284,24 @@ public class TC011_WF5_SN_MonthByDate extends BaseClass {
 		objLP.setMySqlPasswd(sMySqlPwd);
 		Thread.sleep(3000);
 		objLP.clickMySqlSubmit();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		objPAP.clickDBLink();
 		Thread.sleep(3000);
 		objPAP.setTableInDB("rsoft_workflowtask_queue");
 		Thread.sleep(5000);
 		objPAP.clickTableLink("rsoft_workflowtask_queue");
 		Thread.sleep(3000);
-		objPAP.aLastPage();
-		Thread.sleep(2000);
+//		objPAP.aLastPage();
+		
 		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(eleSelect));
+		wait.until(ExpectedConditions.visibilityOf(eleSelect));
+		js.executeScript("arguments[0].scrollIntoView();", eleSelect);
+		
+		Thread.sleep(8000);
 		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sRecordId);

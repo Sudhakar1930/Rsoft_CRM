@@ -54,8 +54,9 @@ public class WebFormsPage extends BasePage{
 	List<WebElement> lstWebForms;
 	
 	
-	public void clickWebFormSave() {
-		btnSave.click();
+	public void clickWebFormSave() throws Exception {
+//		btnSave.click();
+		UtilityCustomFunctions.doClick(driver, btnSave);
 	}
 	@SuppressWarnings("restriction")
 	public int fSelectWebForm(String sWebFormName, String sModuleName) throws InterruptedException {

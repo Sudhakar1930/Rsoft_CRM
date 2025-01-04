@@ -149,9 +149,9 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		String sMySqlUid = rb.getString("MySqlUid");
 		String sMySqlPwd = rb.getString("MySqlPwd");
 		String sMySqlUrl= rb.getString("MySqlUrl");
@@ -274,7 +274,7 @@ public class TC009_WF3_SN_Weekly extends BaseClass {
 		Thread.sleep(5000);
 		objPAP.clickTableLink("rsoft_workflowtask_queue");
 		Thread.sleep(3000);
-		objPAP.aLastPage();
+//		objPAP.aLastPage();
 		Thread.sleep(2000);
 		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
 		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");

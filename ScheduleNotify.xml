@@ -8,10 +8,20 @@
   <test name="chromeTest-Set1">
 	  <parameter name="browser" value="chrome">
     <classes>
-    	 <class name="testCases.TC007_WF1_SN_Hourly"/>
+    	 <class name="testCases.TC011_WF5_SN_MonthByDate"/>
+    	 
+
 	</classes>	
 	
 	  <!--
+	  <class name="testCases.TC011_WF5_SN_MonthByDate"/>
+    	 <class name="testCases.TC012_WF6_SN_Yearly"/>
+	   <class name="testCases.TC007_WF1_SN_Hourly"/>
+	   <class name="testCases.TC008_WF2_SN_Daily"/>
+    	 <class name="testCases.TC009_WF3_SN_Weekly"/>
+    	 <class name="testCases.TC010_WF4_SN_SpecificDate"/>
+    	 <class name="testCases.TC011_WF5_SN_MonthByDate"/>
+    	 <class name="testCases.TC012_WF6_SN_Yearly"/>
 	  	 <class name="testCases.TC004_WF4_Send_SMS_OOF_S"/>
 		 <class name="testCases.TC005_WF5_Send_SMS_ETR_S"/>
 		 <class name="testCases.TC006_WF6_Send_SMS_ETR_M"/>

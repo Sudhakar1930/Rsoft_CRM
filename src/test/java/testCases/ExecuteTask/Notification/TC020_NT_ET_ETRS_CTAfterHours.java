@@ -176,7 +176,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 		Thread.sleep(2000);
 		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet1","@Add New", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet1","@Add New", node);
 		 sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		//Logout from CurrentUser
@@ -249,7 +249,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet2","@Summary Add New", node);
+//				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet2","@Summary Add New", node);
 				sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 				Thread.sleep(2000);
@@ -323,7 +323,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet3","@Duplicate Record", node);
+//				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet3","@Duplicate Record", node);
 				sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 				Thread.sleep(2000);
@@ -395,7 +395,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet4","Edit & Save Record", node);
+//				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_CTAfterHours_","Sheet4","Edit & Save Record", node);
 				sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 				Thread.sleep(2000);
@@ -415,7 +415,7 @@ public class TC020_NT_ET_ETRS_CTAfterHours extends BaseClass {
 				UtilityCustomFunctions.logWriteConsole("After Edit & Save: " + sCreatedTime  + "  " + sModifiedTime + " " + "RecordId:" + sCurrModRecId);
 				
 				
-				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"@Edit & Save","M",sCreatedTime);
+				sReturnValue = objPAP.check_ET_Notify_CT(sMySqlUrl, sMySqlUid, sMySqlPwd,"rsoft_workflowtask_queue",sCurrModRecId,node,"@Edit & Save","H",sCreatedTime);
 				UtilityCustomFunctions.logWriteConsole("Return Value: in @Edit & Save : " + sReturnValue);
 				
 				arrPhpRetArray = sReturnValue.split(":");

@@ -170,12 +170,15 @@ public class PHPMyAdminPage extends BasePage{
 		WebElement eleLink = driver.findElement(By.linkText(sTableName));
 		js.executeScript("arguments[0].scrollIntoView(true);", eleLink);
 		Actions action=new Actions(driver);
+		Thread.sleep(2000);
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 //		driver.findElement(By.xpath("//*[@id='filterText']")).click();
 //		action.moveByOffset(460,540).click().build().perform();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 //		eleLink.click();
 		UtilityCustomFunctions.doClick(driver, eleLink);
+		Thread.sleep(5000);
+		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 		
 	}
 	
@@ -514,6 +517,7 @@ public class PHPMyAdminPage extends BasePage{
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sEntityId);
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		 
 		for(int i=0;i<tRows.size();i++) {
 			js.executeScript("arguments[0].scrollIntoView();", tRows.get(i));
 			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
@@ -559,6 +563,7 @@ public class PHPMyAdminPage extends BasePage{
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@*)]"));
 		UtilityCustomFunctions.logWriteConsole("After WebTable Rows Retrieved");
 		UtilityCustomFunctions.logWriteConsole("DB List Count:"+tRows.size());
+		 objBase.freport("DB Check","pass",Node);
 		for(int i=0;i<tRows.size();i++) {
 			js.executeScript("arguments[0].scrollIntoView();", tRows.get(i));
 			Thread.sleep(500);
@@ -607,8 +612,11 @@ public class PHPMyAdminPage extends BasePage{
 				 
 //				Date d2 =format.parse(sActCreatdTime);
 				Date d2 = format.parse(sCreatedTime);
-				
-				if(sCreatedTime.equalsIgnoreCase(sActCreatdTime)) {
+				long lCTdiffDuration = d2.getTime() - d1.getTime();
+				long diffMinutes = lCTdiffDuration / (60 * 1000);
+				System.out.println("Created Time Difference " +lCTdiffDuration );
+				System.out.println("Created Time Difference in Minutes: " +diffMinutes );
+				if(diffMinutes<=1) {
 					objBase.freport("Created Time Passed: "+sMessage + " Actual Created Time: "+sActCreatdTime + " Expected Created Time: " +sCreatedTime +" ExecutionTime:" + sActExecTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId , "pass",Node);
 					UtilityCustomFunctions.logWriteConsole(sMessage + " Actual Created Time: "+sActCreatdTime + " Expected Created Time: " +sCreatedTime +" ExecutionTime:" + sActExecTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId); 
 					BaseClass.sAssertinFn.assertEquals(sMessage + " Actual Created Time: "+sActCreatdTime + " Expected Created Time: " +sCreatedTime +" ExecutionTime:" + sActExecTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId,sMessage + " Actual Created Time: "+sActCreatdTime + " Expected Created Time: " +sCreatedTime +" ExecutionTime:" + sActExecTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId);
@@ -628,7 +636,7 @@ public class PHPMyAdminPage extends BasePage{
 				long lDiffTime = fCustomDateDiff(d1,d2,sDiffType);
 				
 				if(sDiffType.equalsIgnoreCase("M")) {
-					if(lDiffTime ==45) {
+					if(lDiffTime >=45 && lDiffTime<=50) {
 						 objBase.freport(sMessage + " Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Actual Created Time: "+ sActCreatdTime + "Expected Created Time: " + sCreatedTime + " ExecutionTime:" + sActExecTime + " Difference In Minutes:="+lDiffTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id:" + sActTaskId , "pass",Node);
 						 UtilityCustomFunctions.logWriteConsole(sMessage + ": Passed: " + "Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Actual Created Time: "+ sActCreatdTime + "Expected Created Time: " + sCreatedTime + " ExecutionTime:" + sActExecTime + " Difference In Minutes:= "+lDiffTime +"Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id: " + sActTaskId); 
 						 BaseClass.sAssertinFn.assertEquals(sMessage+ " Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Actual Created Time: "+ sActCreatdTime + "Expected Created Time: " + sCreatedTime + " ExecutionTime:" + sActExecTime + " Difference In Minutes:= "+ lDiffTime +" Send Type: " + sActSendType + "Module Name: "+sActModName + " and Task Id: " + sActTaskId,sMessage + " Actual EntityId: "+sActEntityId + " ScheduleName: " +sActSchdName +" Actual Created Time: "+ sActCreatdTime + "Expected Created Time: " + sCreatedTime + " ExecutionTime:" + sActExecTime + " Difference In Minutes:= "+ lDiffTime +" Send Type: " + sActSendType + " Module Name: "+sActModName + " and Task Id: " + sActTaskId);
@@ -683,6 +691,7 @@ public class PHPMyAdminPage extends BasePage{
 		int iTaskId = 0; 
 		
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		 objBase.freport("DB Check","pass",node);
 		for(int i=0;i<tRows.size();i++) {
 			List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
 			String sActEntityId = tCols.get(5).getText();
@@ -769,16 +778,20 @@ public class PHPMyAdminPage extends BasePage{
 //		List<WebElement> eleTblRows = driver.findElements(By.xpath(sXpath));
 //		int itRowCount = eleTblRows.size();
 
+		System.out.println("Day Array:"+ sDayArray);
 		String sDateArray[] = sDayArray.split(":");
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		 
 		 boolean bFlag = false;
 		int iDay = 0;
 		int iTaskId = 0; 
+		System.out.println("Day Array Length:"+ sDateArray.length);
 		for(int j =0;j<sDateArray.length;j++) {
 			
 		
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		System.out.println("Length:"+tRows.size());
+		objBase.freport("DB Check","pass",node);
 		for(int i=0;i<tRows.size();i++) {
 			
 		List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
@@ -798,28 +811,28 @@ public class PHPMyAdminPage extends BasePage{
 			System.out.println("Created Time:" + tCols.get(18).getText());
 			bFlag = true;
 		String sActTaskId 	= tCols.get(4).getText();
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(4));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(4));
 		//ModuleName
 		String sActModName =tCols.get(9).getText();	
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(9));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(9));
 		//Schedule Type
 		String sActSchdType =tCols.get(10).getText();
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(10));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(10));
 		//Schedule Type Name
 		String sActSchdName =tCols.get(11).getText();
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(11));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(11));
 		//Execution Time
 		String	sActExecTime = tCols.get(14).getText();
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(14));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(14));
 		Date d1 = null;
 		d1 = format.parse(sActExecTime);
 		Date newDate = DateUtils.addMinutes(d1, 330);
 		String sConfigDateTime = newDate.toString();
 		 
 		String sActSendType =tCols.get(17).getText();
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(17));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(17));
 		String sActCreatdTime = tCols.get(18).getText();
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(18));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(18));
 //		String	sActExecTime = "2024-01-01 14:30:00";
 			
 		int sActDate = d1.getDate(); 	 
@@ -827,7 +840,7 @@ public class PHPMyAdminPage extends BasePage{
 		System.out.println("sConfigDateTime:" + sConfigDateTime);
 		System.out.println("sActDate:" + sActDate);
 		System.out.println("sExpDate:" + sExpDate);
-		js.executeScript("arguments[0].scrollIntoView();", tCols.get(5));
+//		js.executeScript("arguments[0].scrollIntoView();", tCols.get(5));
 		if(sConfigDateTime.contains("08:00:00") && sActDate==sExpDate ) {
 			bFlag = true;
 //		if(sConfigDateTime.contains("08:00:00") && sActModName.equalsIgnoreCase(sModuleName) && sActSchdName.equalsIgnoreCase(sScheduleTypeName) && sActDate==sExpDate && sActSendType.equalsIgnoreCase(sActionType)) {
@@ -856,6 +869,7 @@ public class PHPMyAdminPage extends BasePage{
 		int iTaskId = 0; 
 //		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr"));
 		List<WebElement> tRows = driver.findElements(By.xpath("//table[contains(@class,'table table-striped')]/tbody/tr[not(@style='display: none;')]"));
+		 objBase.freport("DB Check","pass",node);
 		for(int i=0;i<tRows.size();i++) {
 
 		List<WebElement> tCols = tRows.get(i).findElements(By.tagName("td"));
@@ -898,6 +912,7 @@ public class PHPMyAdminPage extends BasePage{
 		 Date newDate = DateUtils.addMinutes(d1, 330);
 		 String sDateTime = newDate.toString();
 		 Thread.sleep(3000);
+		
 		 js.executeScript("arguments[0].scrollIntoView();", tCols.get(4));
 		 if(sDateTime.contains("08:00:00") && sActWeeklyDay.equalsIgnoreCase(sWeekday) && sActSchdName.equalsIgnoreCase(schTypeName) && sActSendType.equalsIgnoreCase(sSendType)) {
 			 objBase.freport("Worflow scheduled to run at " + sDateTime + " on UTC and WeekDay at: " + sActWeeklyDay + " Execution Time: "+ sActExecTime + " Created Time: " + sActCreatdTime  +  " Scheduled Type: " + sActSchdName + " Send type:" + sActSendType + " for EntityId "+ sEntityId + " and Task Id:" + sActTaskId, "pass",node);

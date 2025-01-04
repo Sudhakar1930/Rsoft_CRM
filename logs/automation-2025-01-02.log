@@ -1,0 +1,461 @@
+17:50:26.231 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+17:50:27.671 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+17:51:22.106 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
+17:51:23.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+17:51:24.767 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+17:51:26.071 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+17:51:29.341 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
+17:51:30.558 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+17:51:31.898 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+17:51:33.191 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+17:51:35.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+17:51:43.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+17:51:49.931 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+17:51:51.798 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+17:51:55.808 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+17:52:02.292 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+17:52:04.638 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840025601 entered in  input
+17:52:11.004 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
+17:52:20.336 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
+17:52:24.610 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840017924 entered in  input
+17:52:25.874 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+17:52:27.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+17:52:31.405 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+17:52:33.673 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840057952 entered in  input
+17:52:34.938 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+17:53:01.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+17:53:01.524 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+17:53:28.098 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - No EndPage Link
+17:53:49.222 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158805
+17:53:53.442 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158805
+18:00:05.261 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
+18:00:05.265 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
+18:00:05.267 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:00:05.857 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:00:05.932 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:00:05.932 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:00:09.804 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN1:9840053600
+18:00:09.804 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN2:9840036133
+18:00:09.804 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN3:9840020714
+18:00:09.804 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN4:9840030190
+18:00:17.364 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:00:18.636 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:00:19.868 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:00:31.004 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:rsoft
+18:00:31.004 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+18:00:31.005 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+18:00:31.005 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+18:00:37.495 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
+18:00:40.693 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
+18:00:42.799 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
+18:00:48.395 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
+18:00:48.626 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
+18:00:50.630 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
+18:00:55.575 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
+18:00:55.575 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
+18:00:58.591 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
+18:00:58.691 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:00:58.692 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:00:58.767 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:00:58.767 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:00:58.838 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:00:58.838 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:00:58.914 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:00:58.914 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:00:58.988 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
+18:00:58.988 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
+18:00:58.988 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
+18:00:59.059 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:00:59.059 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:00:59.070 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
+18:00:59.070 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
+18:01:02.891 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
+18:01:05.965 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
+18:01:08.044 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
+18:01:09.058 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
+18:01:12.928 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
+18:01:13.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+18:01:13.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
+18:01:13.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:01:13.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
+18:01:13.053 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Action Type and Action Tile matches and also Task Button Enabled
+18:01:14.060 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:01:17.572 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
+18:01:17.572 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Active Send notification  TriggerMonthlybyDateNotify
+18:01:42.920 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:01:42.953 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:01:42.975 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:01:42.976 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:01:44.071 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:01:47.214 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:01:53.309 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Sudhakar VE] is selected in List
+18:01:53.309 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:01:54.587 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+18:01:54.590 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+18:01:55.720 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:01:58.908 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+65] is selected in List
+18:01:58.908 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9840053600
+18:02:00.225 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840053600 entered in  input
+18:02:02.430 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+18:02:03.438 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+18:02:04.551 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:02:05.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+18:02:19.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
+18:02:20.318 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:02:23.559 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Kanchipuram] is selected in List
+18:02:23.559 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:02:24.656 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:02:28.015 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Tamilnadu] is selected in List
+18:02:28.016 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:02:29.108 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:02:32.272 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [India] is selected in List
+18:02:32.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:02:34.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
+18:02:34.402 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:02:34.478 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:02:42.624 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:02:48.939 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:02:50.759 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+18:02:54.771 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:02:56.902 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:02:57.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:03:00.978 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:03:11.240 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:03:12.356 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:03:22.539 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:03:28.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:03:30.629 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+18:03:42.120 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [5] is selected in List
+18:03:46.399 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
+18:03:50.629 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
+18:03:54.887 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [PM] is selected in List
+18:03:57.899 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:03:58.004 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:03:59.455 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+18:04:53.838 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
+18:04:55.123 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:04:57.123 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+18:04:58.406 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:05:01.641 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
+18:05:02.841 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:05:04.172 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:05:05.457 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:05:07.652 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+18:05:15.914 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:05:22.243 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:05:24.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+18:05:28.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:05:34.559 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+18:05:36.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840036133 entered in  input
+18:05:43.183 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
+18:05:52.497 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
+18:05:56.879 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840020714 entered in  input
+18:05:58.185 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+18:05:59.420 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:06:03.712 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+18:06:06.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840030190 entered in  input
+18:06:07.406 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+18:06:28.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+18:06:28.523 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+18:07:10.895 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [PRIMARY (DESC)] is selected in List
+18:07:15.898 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158807
+18:07:20.127 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158807
+18:07:44.175 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2025-01-01 02:30:00On Day: 1Schedule Type: Monthly By Date Action type: Send notification for EntityId: 158807, and Task Id:74
+18:07:58.997 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2025-01-15 02:30:00On Day: 15Schedule Type: Monthly By Date Action type: Send notification for EntityId: 158807, and Task Id:75
+18:08:13.798 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2025-01-30 02:30:00On Day: 30Schedule Type: Monthly By Date Action type: Send notification for EntityId: 158807, and Task Id:76
+18:08:28.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:1
+18:08:28.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:1
+18:08:28.880 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+18:14:51.054 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
+18:14:51.057 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
+18:14:51.059 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:14:51.646 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:14:51.719 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:14:51.719 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:14:55.586 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN1:9840029407
+18:14:55.586 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN2:9840017796
+18:14:55.586 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN3:9840062001
+18:14:55.586 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN4:9840058875
+18:15:03.215 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:15:04.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:15:05.775 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:15:15.853 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:rsoft
+18:15:15.853 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+18:15:15.853 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+18:15:15.853 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+18:15:22.342 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
+18:15:25.658 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
+18:15:27.789 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
+18:15:33.279 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
+18:15:33.524 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
+18:15:35.539 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
+18:15:41.459 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
+18:15:41.459 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
+18:15:44.481 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
+18:15:44.589 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:15:44.590 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:15:44.661 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:15:44.661 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:15:44.726 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:15:44.726 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:15:44.797 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:15:44.798 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:15:44.866 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
+18:15:44.867 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
+18:15:44.867 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
+18:15:44.940 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:15:44.941 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:15:44.951 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
+18:15:44.951 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
+18:15:48.489 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
+18:15:51.490 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
+18:15:54.088 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
+18:15:55.095 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
+18:15:58.915 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
+18:15:59.028 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+18:15:59.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
+18:15:59.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:15:59.029 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
+18:15:59.035 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Action Type and Action Tile matches and also Task Button Enabled
+18:16:00.040 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:16:03.508 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
+18:16:03.509 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Active Send notification  TriggerMonthlybyDateNotify
+18:16:28.900 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:16:28.934 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:16:28.956 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:16:28.956 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:16:29.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:16:33.286 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:16:39.394 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Sudhakar VE] is selected in List
+18:16:39.394 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:16:40.669 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+18:16:40.674 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+18:16:41.784 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:16:44.976 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+65] is selected in List
+18:16:44.977 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9840029407
+18:16:46.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840029407 entered in  input
+18:16:48.488 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+18:16:49.499 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+18:16:50.583 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:16:51.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+18:17:05.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
+18:17:06.365 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:17:09.598 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Kanchipuram] is selected in List
+18:17:09.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:17:10.692 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:17:14.043 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Tamilnadu] is selected in List
+18:17:14.043 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:17:15.161 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:17:18.331 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [India] is selected in List
+18:17:18.331 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:17:20.392 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
+18:17:20.473 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:17:20.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:17:28.680 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:17:34.927 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:17:36.734 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+18:17:40.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:17:42.911 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:17:43.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:17:46.985 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:17:57.290 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:17:58.399 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:18:08.511 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:18:14.774 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:18:16.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+18:18:28.154 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [5] is selected in List
+18:18:32.396 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
+18:18:36.644 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
+18:18:40.873 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [PM] is selected in List
+18:18:43.891 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:18:43.998 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:18:45.473 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+18:19:39.859 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
+18:19:41.168 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:19:42.493 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+18:19:43.791 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:19:47.057 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
+18:19:48.306 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:19:50.492 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:19:51.783 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:19:54.010 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+18:20:02.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:20:08.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:20:10.203 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+18:20:14.217 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:20:20.710 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+18:20:23.037 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840017796 entered in  input
+18:20:29.327 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
+18:20:38.649 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
+18:20:42.981 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840062001 entered in  input
+18:20:44.263 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+18:20:45.490 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:20:49.800 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+18:20:52.122 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840058875 entered in  input
+18:20:53.399 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+18:21:15.664 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+18:21:15.840 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+18:21:56.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158809
+18:22:00.340 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158809
+18:25:29.459 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
+18:25:29.463 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
+18:25:29.465 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:25:30.089 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:25:30.172 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:25:30.172 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:25:34.187 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN1:9840090429
+18:25:34.187 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN2:9840086067
+18:25:34.187 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN3:9840094430
+18:25:34.188 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN4:9840034288
+18:25:41.779 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:25:43.045 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:25:44.273 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:25:55.135 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:rsoft
+18:25:55.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+18:25:55.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+18:25:55.136 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+18:26:01.634 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
+18:26:04.921 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
+18:28:26.944 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - ******starting WF Schedule Month By Date****
+18:28:26.949 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Test Execution on Browser: chrome
+18:28:26.950 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:28:27.589 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:28:27.665 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:28:27.665 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:28:31.529 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN1:9840075587
+18:28:31.529 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN2:9840022748
+18:28:31.529 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN3:9840041817
+18:28:31.529 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PN4:9840058648
+18:28:39.247 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:28:40.533 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+18:28:41.780 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+18:28:54.039 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - CRM Login Success with:rsoft
+18:28:54.039 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Login Success
+18:28:54.040 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Login Success
+18:28:54.040 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:User: rsoft
+18:29:00.491 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Avatar
+18:29:03.673 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu CRM Setting
+18:29:05.797 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Other Setting
+18:29:11.356 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Menu Item Workflow
+18:29:11.584 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow from Combox Box List
+18:29:13.595 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Item to be selected:  CRMScheduleNotification Workflow
+18:29:18.700 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [CRMScheduleNotification Workflow] is selected in List
+18:29:18.700 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Item selected in combox Box  CRMScheduleNotification Workflow
+18:29:21.713 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Selected Module to View its Workflows
+18:29:21.813 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:29:21.813 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:29:21.889 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:29:21.889 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:29:21.961 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:29:21.961 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:29:22.027 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:29:22.027 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:29:22.098 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,condition matches
+18:29:22.098 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: true
+18:29:22.098 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - WF5_ScheduleNotify_MonthByDateWorkflow enabled
+18:29:22.167 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Module,workflow,conditions not matched 
+18:29:22.167 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - bCurrentWFStatus: false
+18:29:22.176 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF6_ScheduleNotify_YearlyDisabled Workflow Manually Enabled
+18:29:22.177 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - true:5
+18:29:25.890 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Work flow clicked
+18:29:29.218 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 1 Next Button to Condition Page
+18:29:31.334 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Cliked Step 2 Next Button to Task List Page
+18:29:32.345 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
+18:29:36.244 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Number of Tasks Listed for this Workflow: WF5_ScheduleNotify_MonthByDate : 1
+18:29:36.376 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+18:29:36.377 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerMonthlybyDateNotify
+18:29:36.377 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+18:29:36.377 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerMonthlybyDateNotify
+18:29:36.384 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Action Type and Action Tile matches and also Task Button Enabled
+18:29:37.390 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+18:29:40.782 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Clicked Workflow and Navigated to Task Page
+18:29:40.782 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Task Active Send notification  TriggerMonthlybyDateNotify
+18:30:06.145 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Excel file Utility instance created
+18:30:06.190 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Row Count is: 1
+18:30:06.214 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Col Count is: 52
+18:30:06.214 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - Extracting DataSheet Values started...
+18:30:07.334 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+18:30:10.489 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+18:30:16.616 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Sudhakar VE] is selected in List
+18:30:16.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Value Seleted is::  Sudhakar VE
+18:30:17.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Add New Text entered in  input
+18:30:17.849 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Text Value added is::  Add New Text
+18:30:18.954 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+18:30:22.158 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+65] is selected in List
+18:30:22.158 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9840075587
+18:30:23.497 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840075587 entered in  input
+18:30:25.757 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNew@rsoft.in entered in  input
+18:30:26.773 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Email Added is: AddNew@rsoft.in
+18:30:27.858 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist clicked
+18:30:28.957 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Picklist selected: 1
+18:30:42.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - MultiCombo box values: two
+18:30:43.643 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Drop Down clicked
+18:30:46.881 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Kanchipuram] is selected in List
+18:30:46.881 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - City Selected: Kanchipuram
+18:30:47.986 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Drop Down clicked
+18:30:51.340 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Tamilnadu] is selected in List
+18:30:51.340 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - State Selected: Tamilnadu
+18:30:52.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country List clicked
+18:30:55.630 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [India] is selected in List
+18:30:55.630 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Country Selected: India
+18:30:57.679 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - check box value: ON
+18:30:57.758 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Checkbox clicked
+18:30:57.840 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+18:31:05.993 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:31:12.268 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:31:14.053 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+18:31:18.061 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+18:31:20.188 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+18:31:21.254 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+18:31:24.255 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+18:31:34.548 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:36 PM
+18:31:35.706 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+18:31:45.913 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:31:52.179 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:31:53.961 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+18:32:05.454 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [5] is selected in List
+18:32:09.702 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
+18:32:13.930 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [00] is selected in List
+18:32:18.208 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [PM] is selected in List
+18:32:21.230 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+18:32:21.349 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+18:32:22.826 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+18:33:17.247 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Mrs.] is selected in List
+18:33:18.522 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Steven entered in  input
+18:33:19.842 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 10,000 entered in  input
+18:33:21.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - http://www.google.com/ entered in  input
+18:33:24.389 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Dr.] is selected in List
+18:33:25.638 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Annie entered in  input
+18:33:27.567 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewEnquiry@gmail.com entered in  input
+18:33:28.841 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Enquiry about Chatbot entered in  input
+18:33:31.069 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft World-Class CRM Software (Customer Relationship Management) solution has been helping all kinds of small and medium businesses to organise, automate and improve their business. Our 15+ years of experience in Sales and Marketing. RSoft makes your business run transparently and intelligently which projects your brand image and win your customers satisfaction. RSoft is way ahead of other CRM's with its new generation features. entered in  textarea
+18:33:39.287 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+18:33:45.545 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+18:33:47.399 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sEnquiryDate
+18:33:51.427 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[2]
+18:33:57.951 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+18:34:00.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840022748 entered in  input
+18:34:06.572 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [Ordinary] is selected in List
+18:34:15.869 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+91] is selected in List
+18:34:20.168 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840041817 entered in  input
+18:34:21.454 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewLead@gmail.com entered in  input
+18:34:22.674 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Lead about Chatbot entered in  input
+18:34:26.977 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [+60] is selected in List
+18:34:29.252 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9840058648 entered in  input
+18:34:30.537 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - AddNewSales@gmail.com entered in  input
+18:34:51.721 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+18:34:51.896 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+18:35:28.706 [TestNG-tests-1] INFO  testCases.TC011_WF5_SN_MonthByDate - [PRIMARY (DESC)] is selected in List
+18:35:33.717 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158811
+18:35:37.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 158811
+18:36:03.159 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2025-01-01 02:30:00On Day: 1Schedule Type: Monthly By Date Action type: Send notification for EntityId: 158811, and Task Id:80
+18:36:17.934 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2025-01-15 02:30:00On Day: 15Schedule Type: Monthly By Date Action type: Send notification for EntityId: 158811, and Task Id:81
+18:36:32.693 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: MonthlybyDate Worflow scheduled to run at 08:00:00 AM on UTC 2025-01-30 02:30:00On Day: 30Schedule Type: Monthly By Date Action type: Send notification for EntityId: 158811, and Task Id:82
+18:36:46.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:1
+18:36:46.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:1
+18:36:46.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+18:36:50.186 [TestNG-tests-1] INFO  testCases.TC012_WF6_SN_Yearly - ******starting WF Schedule Yearly****
+18:36:50.187 [TestNG-tests-1] INFO  testCases.TC012_WF6_SN_Yearly - Test Execution on Browser: chrome

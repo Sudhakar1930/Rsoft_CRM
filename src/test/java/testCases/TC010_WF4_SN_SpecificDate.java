@@ -163,9 +163,9 @@ public class TC010_WF4_SN_SpecificDate extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		String sMySqlUid = rb.getString("MySqlUid");
 		String sMySqlPwd = rb.getString("MySqlPwd");
 		String sMySqlUrl= rb.getString("MySqlUrl");
@@ -281,7 +281,7 @@ public class TC010_WF4_SN_SpecificDate extends BaseClass {
 		objLP.setMySqlPasswd(sMySqlPwd);
 		Thread.sleep(3000);
 		objLP.clickMySqlSubmit();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		objPAP.clickDBLink();
 		Thread.sleep(3000);
 		objPAP.setTableInDB("rsoft_workflowtask_queue");
@@ -289,8 +289,9 @@ public class TC010_WF4_SN_SpecificDate extends BaseClass {
 		objPAP.clickTableLink("rsoft_workflowtask_queue");
 		Thread.sleep(3000);
 		objPAP.aLastPage();
-		Thread.sleep(2000);
+		Thread.sleep(7000);
 		WebElement eleSelect = driver.findElement(By.xpath("(//select[@name='sql_query'][@class='autosubmit'])[1]"));
+		Thread.sleep(8000);
 		UtilityCustomFunctions.selectItemfromListBox(driver, eleSelect, "PRIMARY (DESC)", "option");
 		Thread.sleep(5000);
 		UtilityCustomFunctions.logWriteConsole("Entity Id Searched: " + sRecordId);

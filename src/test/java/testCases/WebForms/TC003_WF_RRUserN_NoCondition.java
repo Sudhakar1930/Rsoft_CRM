@@ -100,6 +100,7 @@ public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 		driver.get(sAppUrl);
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 		Thread.sleep(3000);
+		/*
 		
 		// *********** Check User Details From Test Data is Neither Available  nor Admin ********
 		ObjCRMRs.fNavigatetoUserMgmt();
@@ -157,6 +158,7 @@ public class TC003_WF_RRUserN_NoCondition extends BaseClass{
 				System.out.println("Invalid User in Round Robin:" + sUserName4);
 			}
 		}
+		*/
 		String sUsersList="";
 		
 		sUsersList=sUserName1+":"+sUserName2+":"+sUserName3+":"+sUserName4;

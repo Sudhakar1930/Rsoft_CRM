@@ -94,6 +94,7 @@ public class TC002_WF_RRUserYN_NoCondition extends BaseClass {
 		driver.get(sAppUrl);
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 		Thread.sleep(3000);
+		/*
 		ObjCRMRs.fNavigatetoUserMgmt();
 		System.out.println("User Name 1: " + sUserName1);
 		
@@ -151,11 +152,12 @@ public class TC002_WF_RRUserYN_NoCondition extends BaseClass {
 				System.out.println("Invalid User in Round Robin:" + sUserName4);
 			}
 		}
+		*/
 		String sUsersList="";
 		sUsersList=sUserName1+":"+sUserName2+":"+sUserName3+":"+sUserName4;
 		objCRMSTngs.fCRMNavigate("Integration", "Web Forms");
 		objWFP.fNavigateWFUserConfigPage(sModuleName,sWebFormName);
-		objWFP.fSetRoundRobinUsers(true,sUsersList);
+//		objWFP.fSetRoundRobinUsers(true,sUsersList);
 		Thread.sleep(3000);
 		objWFP.clickWebFormSave();
 		Thread.sleep(3000);

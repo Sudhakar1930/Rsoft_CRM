@@ -401,7 +401,7 @@ public class TC021_NT_ET_ETRS_CTAfterDays extends BaseClass {
 			Thread.sleep(2000);
 			objHP.clickLogoutCRM();
 				
-			Thread.sleep(3000);
+			Thread.sleep(10000);
 			sRetrieveCTandMT = objPAP.getEntityCTandMT(sMySqlUrl, sMySqlUid, sMySqlPwd, "CT", sCurrModRecId,"rsoft_crmentity");
 			sRetArr = sRetrieveCTandMT.split(",");
 				

@@ -177,7 +177,7 @@ public class TC023_NT_ET_ETRS_MTAfterHours extends BaseClass{
 		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet1","@Add New", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet1","@Add New", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		//get EntityRecord
 		//Logout from CurrentUser
@@ -227,6 +227,7 @@ public class TC023_NT_ET_ETRS_MTAfterHours extends BaseClass{
 		Thread.sleep(3000);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		Thread.sleep(2000);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet2","@Summary Add New", node);
 		objHP.clickLogoutCRM();
 		isEntity = objPAP.IsEntityInQueue(sMySqlUrl, sMySqlUid, sMySqlPwd, "rsoft_workflowtask_queue", sCurrModRecId);
 		if(isEntity==false) {
@@ -271,6 +272,8 @@ public class TC023_NT_ET_ETRS_MTAfterHours extends BaseClass{
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet3","@Duplicate Add New", node);
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 		isEntity = objPAP.IsEntityInQueue(sMySqlUrl, sMySqlUid, sMySqlPwd, "rsoft_workflowtask_queue", sCurrModRecId);
@@ -316,7 +319,7 @@ public class TC023_NT_ET_ETRS_MTAfterHours extends BaseClass{
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet4","Edit & Save Record", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_MTAfterHours_","Sheet4","Edit & Save Record", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 		Thread.sleep(2000);

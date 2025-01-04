@@ -106,6 +106,7 @@ public class TC004_WF_RRUserY_OneConditionY extends BaseClass{
 		driver.get(sAppUrl);
 		ObjCRMRs.fLoginCRM(sAppUrl,sCompName,sUserName,sPassword);
 		Thread.sleep(3000);
+		/*
 		ObjCRMRs.fNavigatetoUserMgmt();
 		
 		// *********** Check User Details From Test Data is Neither Available  nor Admin ********
@@ -189,6 +190,7 @@ public class TC004_WF_RRUserY_OneConditionY extends BaseClass{
 						System.out.println("Invalid User in Condition RR:" + sUserName6);
 					}
 				}
+			*/	
 				String sMatchUsersList="";
 				String sUnMatchUserList="";
 				sUnMatchUserList = sUserName1+":"+sUserName2+":"+sUserName3+":"+sUserName4;
