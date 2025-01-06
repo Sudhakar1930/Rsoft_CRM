@@ -35,6 +35,18 @@ public class UtilityCustomFunctions extends BaseClass{
 		// TODO Auto-generated constructor stub
 	}
 	
+	public static void clickOutside() {
+        Actions action = new Actions(driver);
+        action.moveByOffset(0, 0).click().build().perform();
+    }
+	public static void fWaitNavLink(String sExpModuleName) {
+		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='"+sExpModuleName+"']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(eleModuleLink));
+		wait.until(ExpectedConditions.visibilityOf(eleModuleLink));
+		js.executeScript("arguments[0].scrollIntoView();", eleModuleLink);
+	}
 	public static void checkPageLoadComplete() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		if (js.executeScript("return document.readyState").toString().equals("complete")){ 

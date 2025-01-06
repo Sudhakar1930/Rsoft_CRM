@@ -73,9 +73,9 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		Thread.sleep(1000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -152,8 +152,8 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
-//		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
 		Thread.sleep(5000);
 		objALP.clickAllList();
@@ -163,6 +163,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
@@ -185,7 +186,8 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		//Capture Record Ids
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
+				//Capture Record Ids
 		int iCurrSrcRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
@@ -205,7 +207,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
@@ -230,6 +232,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
@@ -241,7 +244,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		//Capture Record Ids
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
@@ -260,6 +263,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
@@ -281,13 +285,13 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
 		Thread.sleep(5000);
 		UtilityCustomFunctions.checkPageLoadComplete();
-		Thread.sleep(10000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(3000);
@@ -310,8 +314,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
@@ -343,7 +346,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-		Thread.sleep(6000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		System.out.println("Before Edit button clicked in summary view");
 		iCurrSrcRecId = objCRMRs.getLastRecordId(); 
 		UtilityCustomFunctions.logWriteConsole("Old Source Record Id before Edit & Save:" + iOldSrcRecId + "Current Record Id: Before Edit & Save" + iCurrSrcRecId);
@@ -351,10 +354,9 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objCMD.clickEdit();
  		Thread.sleep(6000);
 		objCMD.clickSave();
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
-		Thread.sleep(5000);
 		objSVP.fWaitTillControlVisible();
 		//Source Success Update Case Validation
 		UtilityCustomFunctions.logWriteConsole("CurrentUrl: after edit & save"+driver.getCurrentUrl());
@@ -378,6 +380,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 				
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
@@ -402,7 +405,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-		Thread.sleep(6000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -412,7 +415,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
 		Thread.sleep(3000);
 		objDVP.clickRecItemSourceSave();
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -441,7 +444,7 @@ public class TC016_CreateEntity_OOFS_FailureUpdate extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		Thread.sleep(2000);		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);

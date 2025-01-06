@@ -76,9 +76,9 @@ public class SummaryViewPage extends BasePage{
 	}
 	
 	public void clickEditCheckBox(int iIndex) {
-//		WebElement eleEditCheckBox =   
-		String sXpath = "(//div[@class='col-lg-2'])[" + iIndex + "]";
+		String sXpath = "(//div[contains(@class,'col-lg-2')])[" + iIndex + "]";
 		WebElement eleEditCheckBox = driver.findElement(By.xpath(sXpath));
+//		String sXpath ="//button[normalize-space()='edit_square']";
 		eleEditCheckBox.click();
 	}
 	public void fWaitTillControlVisible() {

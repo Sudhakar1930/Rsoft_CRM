@@ -152,9 +152,9 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		Thread.sleep(3000);
 		String sFullMobileNumber = sMobNumPrefix + " " + sMobileNumber;  
@@ -239,6 +239,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		iOldSrcRecId= objCRMRs.getLastRecordId();
 		Thread.sleep(5000);
 		
@@ -248,7 +249,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(5000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -268,7 +269,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 //		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_ETRS_DefaultValues_","Sheet1",false);
 		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_ETRS_DefaultValues_","Sheet1");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
-		Thread.sleep(5000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		
 		if(iOldSrcRecId!=iCurrSrcRecId) {
@@ -287,7 +288,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+ sDisplayMod2);
 		Thread.sleep(1000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
 		if(iOldTrgRecId == iCurrTrgRecId) {
@@ -308,13 +309,14 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
 		Thread.sleep(3000);
 		//Summary Add Mandatory values.
 		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_ETRS_DefaultValues_","Sheet1");
-		Thread.sleep(5000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -343,7 +345,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
 		Thread.sleep(5000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		Thread.sleep(1000);
 		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
@@ -369,7 +371,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
@@ -394,6 +396,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
@@ -420,7 +423,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		System.out.println("Module clicked");
 		Thread.sleep(3000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objCMD.clickEdit();
 		Thread.sleep(3000);
 		objCRMRs.fAddMandatoryValuestoEntityModule("Test","//CreateEntity//CreateEntity_ETRS_DefaultValues_","Sheet1");
@@ -428,13 +431,14 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		Thread.sleep(5000);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(10000);
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		//Target Entity Validation after @Edit & Save Record
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Old TargetId: "+iOldTrgRecId +"New TargetId: "+iCurrTrgRecId);
 		if(iOldTrgRecId != iCurrTrgRecId) {
@@ -460,7 +464,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -476,7 +480,7 @@ public class TC020_CreateEntity_ETRS_DefaultValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objCMD.clickExistingModData(1);
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		Thread.sleep(1000);

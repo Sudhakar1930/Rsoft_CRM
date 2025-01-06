@@ -589,6 +589,34 @@ public class CRMReUsables extends BaseClass {
 			String sExpTitle, String sRecordId, ExtentTest node) throws Exception {
 		NotificationsPage objNFP = new NotificationsPage(driver);
 		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
+		
+		/*
+		List<WebElement> tColCount = tRowCount.get(2).findElements(By.tagName("td"));
+		String sActAssignedTo = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+		
+		tColCount = tRowCount.get(3).findElements(By.tagName("td"));
+		String sActStatus = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+		
+		tColCount = tRowCount.get(4).findElements(By.tagName("td"));
+		String sActCreatedBy = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+		
+		tColCount = tRowCount.get(5).findElements(By.tagName("td"));
+		String sActSummary = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+		
+		tColCount = tRowCount.get(6).findElements(By.tagName("td"));
+		String sActTitle = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+		
+		tColCount = tRowCount.get(7).findElements(By.tagName("td"));
+		String sActModRecId = UtilityCustomFunctions.getText(driver, tColCount.get(2));
+		
+		UtilityCustomFunctions.fSoftAssert(sAssignedTo, sAssignedTo, "AssignedTo Record Details", node);
+		UtilityCustomFunctions.fSoftAssert(sActStatus, sStatus, "Status in Record Details", node);
+		UtilityCustomFunctions.fSoftAssert(sActCreatedBy, sCreatedBy, "Created By in Record Details", node);
+		UtilityCustomFunctions.fSoftAssert(sActSummary, sNotifyTemplateMsg, "Summary in Record Details", node);
+		UtilityCustomFunctions.fSoftAssert(sActTitle, sExpTitle, "Workflow Title in Record Details", node);
+		UtilityCustomFunctions.fSoftAssert(sActModRecId, sRecordId, "Record Id in Record Details", node);
+		*/
+		
 		for (int i = 2; i <= tRowCount.size(); i++) {
 			System.out.println("Current Row Number: " + i);
 			List<WebElement> tColCount = tRowCount.get(i).findElements(By.tagName("td"));
@@ -621,6 +649,7 @@ public class CRMReUsables extends BaseClass {
 			UtilityCustomFunctions.fSoftAssert(sActModRecId, sRecordId, "Record Id in Record Details", node);
 			break;
 		}
+		
 	}
 
 	//WebForm Integration to CRM Module Validation
@@ -2139,7 +2168,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(5000);		
 		
 		objCMD.clickSave();
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpModuleName);
 		Thread.sleep(5000);
 	}
 	public void fAddValuestoETNotification(String sEnv,String sExcelName,String sSheetName,boolean isAmend) throws Exception {

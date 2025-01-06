@@ -1,0 +1,15 @@
+<!ELEMENT suite (listeners,test+)>
+<!ATTLIST suite name NMTOKEN #REQUIRED>
+<!ATTLIST suite parallel NMTOKEN #REQUIRED>
+<!ATTLIST suite thread-count NMTOKEN #REQUIRED>
+<!ELEMENT listeners (listener)>
+<!ELEMENT listener EMPTY>
+<!ATTLIST listener class-name NMTOKEN #REQUIRED>
+<!ELEMENT test (parameter)>
+<!ATTLIST test name NMTOKEN #REQUIRED>
+<!ATTLIST test enabled NMTOKEN #IMPLIED>
+<!ELEMENT parameter (classes)>
+<!ATTLIST parameter name NMTOKEN #FIXED "browser"><!ATTLIST parameter value NMTOKEN #FIXED "chrome">
+<!ELEMENT classes (class+)>
+<!ELEMENT class EMPTY>
+<!ATTLIST class name ID #REQUIRED>

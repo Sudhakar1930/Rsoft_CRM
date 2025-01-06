@@ -83,9 +83,9 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		Thread.sleep(1000);
 		if(objLP.isLoginPageDisplayed(sAppUrl)) {
@@ -165,8 +165,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
 		Thread.sleep(2000);
 		objALP.clickAllList();
@@ -176,7 +175,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(2000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		Thread.sleep(2000);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
@@ -191,6 +190,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule1);
 		int iOldTrg1RecId = objCRMRs.getLastRecordId();
 		
 		Thread.sleep(2000);
@@ -200,7 +200,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule2);
 		int iOldTrg2RecId = objCRMRs.getLastRecordId();
 		
 		Thread.sleep(2000);
@@ -210,7 +210,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule3);
 		int iOldTrg3RecId = objCRMRs.getLastRecordId();
 		
 		//Add New Module Data
@@ -231,6 +231,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		//Capture Record Ids
 		int iCurrSrcRecId= objCRMRs.getLastRecordId();
 		driver.navigate().refresh();
@@ -258,7 +259,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
@@ -281,7 +282,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule1);
 		int iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -309,7 +310,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule2);
 		int iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -342,7 +343,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule3);
 		int iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -381,6 +382,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
@@ -393,7 +395,8 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
 		driver.navigate().refresh();
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
+		
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
@@ -418,7 +421,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		driver.navigate().refresh();
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
@@ -439,7 +442,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule1);
 		iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -467,7 +470,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule2);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -502,7 +505,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule3);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -540,7 +543,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
@@ -551,7 +554,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
 		driver.navigate().refresh();
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		driver.navigate().refresh();
 		Thread.sleep(3000);
@@ -574,7 +577,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		driver.navigate().refresh();
 		Thread.sleep(3000);
@@ -597,7 +600,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule1);
 		iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -624,7 +627,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sTarModule2);
 		Thread.sleep(5000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule2);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -656,7 +659,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sTarModule3);
 		Thread.sleep(5000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule3);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -697,7 +700,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-		Thread.sleep(6000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		System.out.println("Before Edit button clicked in summary view");
 		objCMD.clickEdit();
  		Thread.sleep(6000);
@@ -709,6 +712,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
 		objSVP.fWaitTillControlVisible();
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		driver.navigate().refresh();
 		Thread.sleep(3000);
@@ -732,7 +736,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		driver.navigate().refresh();
 		Thread.sleep(3000);
@@ -755,7 +759,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule1);
 		iCurrTrg1RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -782,7 +786,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule2);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -814,7 +818,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule3);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -855,7 +859,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-		Thread.sleep(6000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -870,7 +874,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		Thread.sleep(5000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);;
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		driver.navigate().refresh();
 		Thread.sleep(3000);
@@ -896,7 +900,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -922,7 +926,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule1);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -953,7 +957,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule2);
 		iCurrTrg2RecId = objCRMRs.getLastRecordId();
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
@@ -987,7 +991,7 @@ public class TC017_CreateEntity_OOFS_MultiSuccessCase extends BaseClass{
 		Thread.sleep(5000);
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sTarModule3);
 		iCurrTrg3RecId = objCRMRs.getLastRecordId();
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);

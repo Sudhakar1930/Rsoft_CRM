@@ -7,26 +7,16 @@
   <test thread-count="7" parallel="tests" name="chromeTest-Set1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.WebForms.TC018_WF_RRN_OneY_TwoY">
-        <methods>
-          <include name="testName"/>
-          <include name="onStart"/>
-          <include name="tearDown"/>
-          <include name="testWebFormUser"/>
-          <include name="setup"/>
-          <include name="flush"/>
-        </methods>
-      </class> <!-- testCases.WebForms.TC018_WF_RRN_OneY_TwoY -->
-      <class name="testCases.WebForms.TC027_WF_RRY_OneY_TwoY">
+      <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate">
         <methods>
           <include name="onStart"/>
-          <include name="testWebFormUser"/>
           <include name="tearDown"/>
+          <include name="CreateTest"/>
           <include name="setup"/>
+          <include name="testCreateEntity_OOFS_SuccessUpdate"/>
           <include name="flush"/>
-          <include name="testName"/>
         </methods>
-      </class> <!-- testCases.WebForms.TC027_WF_RRY_OneY_TwoY -->
+      </class> <!-- testCases.TC015_CreateEntity_OOFS_SuccessUpdate -->
     </classes>
   </test> <!-- chromeTest-Set1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

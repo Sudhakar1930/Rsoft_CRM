@@ -86,9 +86,9 @@ import utilities.UtilityCustomFunctions;
 		String sUserName =  rb.getString("userName");
 		String sPassword =  rb.getString("passWord");
 		String sAssignedTo = rb.getString("AssignedTo");
-		String sUserName1 =  rb.getString("userName4");
-		String sPassword1 =  rb.getString("passWord4");
-		String sAssignedTo1 = rb.getString("AssignedTo4");
+		String sUserName1 =  rb.getString("userName3");
+		String sPassword1 =  rb.getString("passWord3");
+		String sAssignedTo1 = rb.getString("AssignedTo3");
 		String sUserName2 =  rb.getString("userName2");
 		String sPassword2 =  rb.getString("passWord2");
 		String sAssignedTo2 = rb.getString("AssignedTo2");
@@ -518,7 +518,8 @@ import utilities.UtilityCustomFunctions;
 		}
 				
 		xlObj.setCellData("Sheet2", 1, 11, sCurrRecordId);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		Thread.sleep(3000);
@@ -535,7 +536,8 @@ import utilities.UtilityCustomFunctions;
 			freport("Failed: Notification Received after New Summary Add -"+ sAssignedTo + " Record Id: " + sCurrRecordId, "fail",node);
 			sAssertinFn.assertEquals("New Summary Record - Notification received for " +sAssignedTo , "New Summary Record - Notification not received for " +sAssignedTo);
 		}
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notification for 2nd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
@@ -552,7 +554,8 @@ import utilities.UtilityCustomFunctions;
 			freport("Failed: Notification Received after Add Summary Record -"+ sAssignedTo1 + " Record Id: " + sCurrRecordId, "fail",node);
 			sAssertinFn.assertEquals("Add Summary Record - Notification received for " +sAssignedTo1 , "Add Summary Record - Notification not received for " +sAssignedTo1);
 		}
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notification for 3rd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
@@ -735,7 +738,8 @@ import utilities.UtilityCustomFunctions;
 		}
 		
 		xlObj.setCellData("Sheet3", 1, 11, sCurrRecordId);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
@@ -952,7 +956,8 @@ import utilities.UtilityCustomFunctions;
 		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet4","Edit with New Data",sAssignedTo,node);
 		
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 								
@@ -976,7 +981,8 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
@@ -1000,7 +1006,8 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
-					
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();			
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
@@ -1138,7 +1145,8 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 			
@@ -1212,7 +1220,8 @@ import utilities.UtilityCustomFunctions;
 		//Validate Notifications Module
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId); //check with new record created
-				
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();	
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 										
@@ -1283,7 +1292,8 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Logout from CurrentUser
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
@@ -1399,7 +1409,8 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 				

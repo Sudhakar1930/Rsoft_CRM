@@ -152,9 +152,9 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		Thread.sleep(3000);
 		String sFullMobileNumber = sMobNumPrefix + " " + sMobileNumber;  
@@ -234,6 +234,8 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(1000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
+		
 		Thread.sleep(1000);
 		int iTarRecId = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Targer last record:"+iTarRecId);
@@ -247,6 +249,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objEDT.clickModule(sDisplayMod1);
 		UtilityCustomFunctions.logWriteConsole("Add New Record clicked:"+sDisplayMod1);
 		Thread.sleep(2000);
+		//Add New Values
 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 		Thread.sleep(5000);
@@ -257,7 +260,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("Target Module Opened:"+sDisplayMod2);
 		Thread.sleep(1000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iTarAfterNewRec = objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Record Id comparison started after new Record Added");
 		if(iTarRecId == iTarAfterNewRec) {
@@ -276,6 +279,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_NewValues_","Sheet2",false);
@@ -285,7 +289,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		Thread.sleep(1000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iTarAftSummaryAdd = objCRMRs.getLastRecordId();
 		if(iTarAfterNewRec == iTarAftSummaryAdd) {
 			freport("Target Entity Not Created for Summary Add", "fail", node);
@@ -303,7 +307,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(2000);
 //		objCMD.clickExistingModData(1);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
@@ -315,7 +319,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(10000);
 		Thread.sleep(1000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iTarAftDuplicate = objCRMRs.getLastRecordId();
 	
 		if(iTarAftSummaryAdd== iTarAftDuplicate) {
@@ -336,8 +340,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-		Thread.sleep(6000);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		System.out.println("Before Edit button clicked in summary view");
 		objCMD.clickEdit();
  		Thread.sleep(6000);
@@ -349,7 +352,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		UtilityCustomFunctions.checkPageLoadComplete();
 		Thread.sleep(1000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		
 		int iTarAftFullEdit = objCRMRs.getLastRecordId();
 		if(iTarAftDuplicate== iTarAftFullEdit) {
@@ -367,8 +370,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
-
-		Thread.sleep(6000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -384,7 +386,7 @@ public class TC013_CreateEntity_OOFS_NewValues extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
 		UtilityCustomFunctions.checkPageLoadComplete();
 		objCMD.clickExistingModData(1);
-		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		int iTarAftSingleLineEdit = objCRMRs.getLastRecordId();
 		if(iTarAftSingleLineEdit== iTarAftFullEdit) {
 			freport("Target Entity Not Created for Single Line Edit", "pass", node);

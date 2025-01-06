@@ -114,9 +114,9 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		Thread.sleep(3000);
 		String sFullMobileNumber = sMobNumPrefix + " " + sMobileNumber;  
@@ -193,25 +193,29 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 				
 			}
 		}//If
+		int iCurrTrgRecId=0;
+		int iCurrSrcRecId=0;
 		UtilityCustomFunctions.logWriteConsole("Capture Initial Record Id for Source & Target Started");
 		objALP.clickAllList();
 		Thread.sleep(2000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
-		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		int iOldSrcRecId= objCRMRs.getLastRecordId();
 		Thread.sleep(2000);
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
+
 		Thread.sleep(2000);
 		int iOldTrgRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Captured the Target & Source Latest Record Ids");
 		UtilityCustomFunctions.logWriteConsole("Old Source Id:" + iOldSrcRecId);
 		UtilityCustomFunctions.logWriteConsole("Old Target Id:" + iOldTrgRecId);
+		
 		
 		//Add New Module Data
 		//Navigate to Source Module
@@ -227,9 +231,9 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sDisplayMod1);
 		Thread.sleep(5000);
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		//Capture Record Ids
-		int iCurrSrcRecId= objCRMRs.getLastRecordId();
+		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Curr Source Id:" + iCurrSrcRecId);
 		//Source Update Validation
 		if(iOldSrcRecId==iCurrSrcRecId) {
@@ -243,10 +247,10 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objALP.clickAllList();
 		Thread.sleep(1000);
 		objALP.clickModuleOnListAll(driver, sDisplayMod2);
-		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		Thread.sleep(2000);
-		int iCurrTrgRecId = objCRMRs.getLastRecordId();
+		iCurrTrgRecId = objCRMRs.getLastRecordId();
 		
 		
 		UtilityCustomFunctions.logWriteConsole("Curr Target Id:" + iCurrTrgRecId);
@@ -270,11 +274,12 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objALP.clickModuleOnListAll(driver, sDisplayMod1);
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickAddRecord();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Entity Started");
 		objCRMRs.fAddValuestoEntityModule("Test","//CreateEntity//CreateEntity_OOFS_SuccessUpdate_","Sheet2",false);
-		Thread.sleep(5000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		UtilityCustomFunctions.logWriteConsole("Summary Add Record completed");
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -300,7 +305,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
-
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
@@ -326,6 +331,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		Thread.sleep(2000);
 		objCMD.clickExistingModData(1);
 		Thread.sleep(1000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objDVP.clickDuplicateRecord();
 		Thread.sleep(5000);
 		objCMD.clickSave();
@@ -336,6 +342,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(3000);
 		objSVP.fWaitTillControlVisible();
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		//Source Success Update Case Validation
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		UtilityCustomFunctions.logWriteConsole("Current source Record Id after duplicate"+iCurrSrcRecId);
@@ -357,6 +364,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
 		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(1000);
@@ -390,6 +398,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
 		Thread.sleep(6000);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		System.out.println("Before Edit button clicked in summary view");
 		iCurrSrcRecId = objCRMRs.getLastRecordId(); 
 		UtilityCustomFunctions.logWriteConsole("Old Source Record Id before Edit & Save:" + iOldSrcRecId + "Current Record Id: Before Edit & Save" + iCurrSrcRecId);
@@ -398,6 +407,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
  		Thread.sleep(6000);
 		objCMD.clickSave();
 		UtilityCustomFunctions.logWriteConsole("CurrentUrl:After Edit& save"+driver.getCurrentUrl());
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		Thread.sleep(3000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
@@ -423,6 +433,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 //		objCRMRs.fClickFirstRecord();
 		objCMD.clickExistingModData(1);
 		Thread.sleep(2000);
+		UtilityCustomFunctions.fWaitNavLink(sExpTrgModuleName);
 		iCurrTrgRecId = objCRMRs.getLastRecordId();
 				
 		//Target Record Validation
@@ -432,6 +443,8 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		else {
 			freport("Target Entity Created while Edit & Save Record", "fail", node);
 		}
+		
+		
 		//************** Single Line Summary Edit *****************
 		iOldTrgRecId=iCurrTrgRecId;
 		iOldSrcRecId=iCurrSrcRecId;
@@ -445,10 +458,12 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		Thread.sleep(6000);
 		System.out.println("Before selecting 1st Record");
 		objCMD.clickExistingModData(1);
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		Thread.sleep(6000);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		objSVP.clickEditCheckBox(1);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("text", sExpSrcModuleName, "text", sEditIndText);
@@ -459,7 +474,7 @@ public class TC015_CreateEntity_OOFS_SuccessUpdate extends BaseClass{
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpSrcModuleName);
 		//Source Success Update Case Validation
 		iCurrSrcRecId= objCRMRs.getLastRecordId();
 		String sActSummaryText = objDVP.getArraySummary(1);

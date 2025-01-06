@@ -91,9 +91,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		String sUserName =  rb.getString("userName");
 		String sPassword =  rb.getString("passWord");
 		String sAssignedTo = rb.getString("AssignedTo");
-		String sUserName1 =  rb.getString("userName4");
-		String sPassword1 =  rb.getString("passWord4");
-		String sAssignedTo1 = rb.getString("AssignedTo4");
+		String sUserName1 =  rb.getString("userName3");
+		String sPassword1 =  rb.getString("passWord3");
+		String sAssignedTo1 = rb.getString("AssignedTo3");
 		String sUserName2 =  rb.getString("userName2");
 		String sPassword2 =  rb.getString("passWord2");
 		String sAssignedTo2 = rb.getString("AssignedTo2");
@@ -304,7 +304,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 //		driver.switchTo().window(sCurrentWinHandle);
 		//***********************
 		Thread.sleep(3000);
-		
+		UtilityCustomFunctions.clickOutside();
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		String sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		Thread.sleep(3000);
@@ -328,7 +330,9 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
+
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
@@ -352,7 +356,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
@@ -414,7 +419,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			freport("Notification not Sent after new Record Added for: "+sUserName1, "fail", node);
 		}
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		iNotificationCount = objSMS.getWebTblRowcount();
 		iNotificationCount = iNotificationCount - 1;
@@ -469,7 +475,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			freport("Notification not Sent after new Record Added for: "+sUserName2, "fail", node);
 		}
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
 		iNotificationCount = objSMS.getWebTblRowcount();
@@ -570,7 +577,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notifications 1/AssignedTo
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet2", 1, 11, sCurrRecordId);
-
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
@@ -593,7 +601,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-				
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();		
 		//Notification for 2nd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
@@ -617,7 +626,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notification for 3rd AssignedTo User
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
@@ -640,7 +650,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Logout from CurrentUser
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
@@ -676,6 +687,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification not Sent after Summary Record Added for: "+sUserName1, "fail", node);
 		}
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
@@ -729,6 +742,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification not Sent after Summary Record Added for: "+sUserName2, "fail", node);
 		}
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
 		iNotificationCount = objSMS.getWebTblRowcount();
@@ -825,7 +840,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notifications 1/AssignedTo 
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet3", 1, 11, sCurrRecordId);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 				
@@ -849,7 +865,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
@@ -874,7 +891,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
@@ -934,6 +952,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification not Sent after Duplicate Record Added for: "+sUserName1, "fail", node);
 		}
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
@@ -989,6 +1009,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification not Sent after Duplicate Record Added for: " + sUserName2, "fail", node);
 		}
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
@@ -1082,7 +1104,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Notifications 1/AssignedTo 
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId);
-	
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 								
@@ -1104,7 +1127,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-						
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();				
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
@@ -1128,7 +1152,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
@@ -1190,7 +1215,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification Sent after Edit & Save Record Added for: "+sUserName1, "fail", node);
 		}
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
@@ -1247,7 +1273,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification Sent after Edit & Save Record Added for: "+sUserName2, "fail", node);
 		}
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notification Page
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
@@ -1344,7 +1371,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		//Validate Notifications Module
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId); //check with new record created
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 										
@@ -1367,7 +1395,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
@@ -1391,7 +1420,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
@@ -1452,7 +1482,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 		else {
 			freport("Notification Sent after Edit & Save Record Added for: "+sUserName1, "fail", node);
 		}
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 		
@@ -1508,7 +1539,8 @@ public class TC002_WF2_Send_Notify_OOF_S extends BaseClass{
 			freport("Notification Sent after Single Line Edit Record Added for: "+sUserName2, "fail", node);
 		}
 		
-		
+		Thread.sleep(3000);
+		UtilityCustomFunctions.clickOutside();
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 		
 		iNotificationCount = objSMS.getWebTblRowcount();

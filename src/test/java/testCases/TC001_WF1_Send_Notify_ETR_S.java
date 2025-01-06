@@ -289,10 +289,13 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		//Notification sub window
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 		
+		
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet1", 1, 11, sCurrRecordId);
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.clickOutside();
 		String sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
@@ -535,6 +538,8 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		xlObj.setCellData("Sheet2", 1, 11, sCurrRecordId);
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 				
@@ -762,11 +767,13 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 						
 		//Notification sub window
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
-						
+		
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet3", 1, 11, sCurrRecordId);
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 						
@@ -1000,6 +1007,8 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId);
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 								
@@ -1237,6 +1246,8 @@ public class TC001_WF1_Send_Notify_ETR_S extends BaseClass {
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId); //check withe n ew record created
 		driver.close();
 		driver.switchTo().window(sCurrentWinHandle);
+		Thread.sleep(1000);
+		UtilityCustomFunctions.clickOutside();
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 										
