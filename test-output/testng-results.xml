@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-06T16:40:25 IST" name="Suite" finished-at="2025-01-06T16:44:34 IST" duration-ms="249223">
+  <suite started-at="2025-01-07T14:46:31 IST" name="Suite" finished-at="2025-01-07T14:47:18 IST" duration-ms="46992">
     <groups>
     </groups>
-    <test started-at="2025-01-06T16:40:25 IST" name="chromeTest-Set1" finished-at="2025-01-06T16:44:34 IST" duration-ms="249223">
-      <class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate">
-        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC015_CreateEntity_OOFS_SuccessUpdate@40005471]" started-at="2025-01-06T16:40:24 IST" name="onStart" finished-at="2025-01-06T16:40:25 IST" duration-ms="691" status="PASS">
+    <test started-at="2025-01-07T14:46:31 IST" name="chromeTest-Set1" finished-at="2025-01-07T14:47:18 IST" duration-ms="46992">
+      <class name="testCases.TC002_WF2_Send_Notify_OOF_S">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:testCases.TC002_WF2_Send_Notify_OOF_S@7a5ceedd]" started-at="2025-01-07T14:46:31 IST" name="onStart" finished-at="2025-01-07T14:46:31 IST" duration-ms="238" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@150ab4ed]]>
+                <![CDATA[org.testng.TestRunner@29539e36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onStart -->
-        <test-method is-config="true" signature="CreateTest()[pri:0, instance:testCases.TC015_CreateEntity_OOFS_SuccessUpdate@40005471]" started-at="2025-01-06T16:40:25 IST" name="CreateTest" finished-at="2025-01-06T16:40:26 IST" duration-ms="1192" status="PASS">
+        <test-method is-config="true" signature="testName()[pri:0, instance:testCases.TC002_WF2_Send_Notify_OOF_S@7a5ceedd]" started-at="2025-01-07T14:46:31 IST" name="testName" finished-at="2025-01-07T14:46:31 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC015_CreateEntity_OOFS_SuccessUpdate@40005471]" started-at="2025-01-06T16:40:26 IST" name="setup" finished-at="2025-01-06T16:40:30 IST" duration-ms="3790" status="PASS">
+        </test-method> <!-- testName -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_WF2_Send_Notify_OOF_S@7a5ceedd]" started-at="2025-01-07T14:46:31 IST" name="setup" finished-at="2025-01-07T14:46:33 IST" duration-ms="2064" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,19 +33,74 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateEntity_OOFS_SuccessUpdate()[pri:0, instance:testCases.TC015_CreateEntity_OOFS_SuccessUpdate@40005471]" started-at="2025-01-06T16:40:30 IST" name="testCreateEntity_OOFS_SuccessUpdate" finished-at="2025-01-06T16:44:32 IST" duration-ms="242205" status="PASS">
+        <test-method signature="testNotify_OOF_S()[pri:0, instance:testCases.TC002_WF2_Send_Notify_OOF_S@7a5ceedd]" started-at="2025-01-07T14:46:33 IST" name="testNotify_OOF_S" finished-at="2025-01-07T14:47:17 IST" duration-ms="43464" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dfa84eeee6843772010ce3c0dd952d5f, get {url=https://rdot.in/public/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Rsoft\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57656/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dfa84eeee6843772010ce3c0dd952d5f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dfa84eeee6843772010ce3c0dd952d5f, get {url=https://rdot.in/public/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Rsoft\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57656/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dfa84eeee6843772010ce3c0dd952d5f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at testCases.TC002_WF2_Send_Notify_OOF_S.testNotify_OOF_S(TC002_WF2_Send_Notify_OOF_S.java:87)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateEntity_OOFS_SuccessUpdate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC015_CreateEntity_OOFS_SuccessUpdate@40005471]" started-at="2025-01-06T16:44:32 IST" name="tearDown" finished-at="2025-01-06T16:44:34 IST" duration-ms="1958" status="PASS">
+        </test-method> <!-- testNotify_OOF_S -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_WF2_Send_Notify_OOF_S@7a5ceedd]" started-at="2025-01-07T14:47:17 IST" name="tearDown" finished-at="2025-01-07T14:47:18 IST" duration-ms="1423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC015_CreateEntity_OOFS_SuccessUpdate@40005471]" started-at="2025-01-06T16:44:34 IST" name="flush" finished-at="2025-01-06T16:44:35 IST" duration-ms="707" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testCases.TC002_WF2_Send_Notify_OOF_S@7a5ceedd]" started-at="2025-01-07T14:47:18 IST" name="flush" finished-at="2025-01-07T14:47:19 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- testCases.TC015_CreateEntity_OOFS_SuccessUpdate -->
+      </class> <!-- testCases.TC002_WF2_Send_Notify_OOF_S -->
     </test> <!-- chromeTest-Set1 -->
   </suite> <!-- Suite -->
 </testng-results>

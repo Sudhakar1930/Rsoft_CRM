@@ -58,7 +58,8 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath="//input[@type='email']")
 	WebElement eletxtEmail;
 	
-	@FindBy(xpath="//span[@id='select2-selfield_5803-container' and @class='select2-selection__rendered']")
+//	@FindBy(xpath="//span[@id='select2-selfield_5803-container' and @class='select2-selection__rendered']")
+	@FindBy(xpath="//span[contains(@class,'select2-selection__rendered') and contains(@id,'select2-selfield_5803')]")
 	WebElement eleSelectMnuList;
 	
 	@FindBy(xpath="//ul[@class='select2-results__options' and @role='tree']")
@@ -83,7 +84,8 @@ public class CreateModuleDataPage extends BasePage{
 //	@FindBy(xpath="//span[@class='select2-selection select2-selection--multiple']")
 //	WebElement txtMultiComboBox;
 	
-	@FindBy(xpath="//*[@id='select2-selfield_5803-results' and @role='tree']")
+//	@FindBy(xpath="//*[@id='select2-selfield_5803-results' and @role='tree']")
+	@FindBy(xpath="//*[contains(@role,'tree') and contains(@id,'select2-selfield_5803')]")
 	WebElement eleMnuUl;
 	
 	@FindBy(xpath="//div[@class='form-actions right']//button[@type='submit'][normalize-space()='Save']")
@@ -618,7 +620,8 @@ public class CreateModuleDataPage extends BasePage{
 	
 	public void ClickListPhonePrefix(String sModuleName,String sText) throws Exception {
 	try {
-	String sXpath = "//span[@id='select2-" + sModuleName.toLowerCase().trim() + "_" + sText +"']";
+//	String sXpath = "//span[@id='select2-" + sModuleName.toLowerCase().trim() + "_" + sText +"']";
+	String sXpath="//span[contains(@id,'select2-" + sModuleName.toLowerCase().trim() + "_" + sText +"')]";
 	System.out.println("Phone Prefix xpath: " + sXpath);
 	WebElement elePhonePrefix = driver.findElement(By.xpath(sXpath));
 	elePhonePrefix.click();

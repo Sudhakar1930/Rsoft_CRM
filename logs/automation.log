@@ -1,0 +1,139 @@
+14:47:17.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:0
+14:47:17.472 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+14:51:11.549 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - ******starting TC002_WF2_Send_Notify_OOF_S ****
+14:51:11.553 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Test Execution on Browser: chrome
+14:51:11.555 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+14:51:12.089 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+14:51:12.143 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+14:51:12.144 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+14:51:12.144 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+14:51:19.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+14:51:20.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+14:51:22.221 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+14:51:39.568 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Avatar
+14:51:42.704 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Menu CRM Setting
+14:51:44.812 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Menu Other Setting
+14:51:50.179 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Menu Item Workflow
+14:51:50.416 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Workflow from Combox Box List
+14:51:52.426 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Item to be selected:  CRMEditFieldModule Workflow
+14:51:57.307 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [CRMEditFieldModule Workflow] is selected in List
+14:51:57.307 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Item selected in combox Box  CRMEditFieldModule Workflow
+14:52:00.329 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Selected Module to View its Workflows
+14:52:00.432 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Module,workflow,conditions not matched 
+14:52:00.432 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - bCurrentWFStatus: false
+14:52:00.514 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Module,workflow,condition matches
+14:52:00.514 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - bCurrentWFStatus: true
+14:52:00.514 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - WF2CRMEditFieldWorkflow enabled
+14:52:00.590 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Module,workflow,conditions not matched 
+14:52:00.590 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - bCurrentWFStatus: false
+14:52:00.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF3CRMEditFieldDisabled Workflow Manually Enabled
+14:52:00.599 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - true:2
+14:52:03.900 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Work flow clicked
+14:52:06.464 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Cliked Step 1 Next Button to Condition Page
+14:52:07.892 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Cliked Step 2 Next Button to Task List Page
+14:52:08.901 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Workflow and Navigated to Task Page
+14:52:12.197 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Number of Tasks Listed for this Workflow: WF2CRMEditField : 1
+14:52:12.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+14:52:12.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerNotifyOOFS
+14:52:12.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+14:52:12.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerNotifyOOFS
+14:52:12.311 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Action Type and Action Tile matches and also Task Button Enabled
+14:52:13.318 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+14:52:16.808 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Workflow and Navigated to Task Page
+14:52:16.808 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Task Active Send notification  TriggerNotifyOOFS
+14:52:18.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - User1NotifyCount:2
+14:53:00.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+14:53:00.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+14:53:03.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+14:53:05.069 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+14:53:06.302 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+14:53:17.003 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sUser2OldNotifyCount:3148
+14:53:28.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+14:53:29.943 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+14:53:31.149 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+14:53:44.038 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sUser3OldNotifyCount:1667
+14:53:55.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+14:53:56.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+14:53:58.123 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+14:54:25.821 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+14:54:25.885 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+14:54:25.914 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+14:54:25.914 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+14:54:27.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+14:54:28.810 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 44444444444 entered in  input
+14:54:31.156 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - checkoofs@gmail.com entered in  input
+14:54:32.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
+14:54:39.755 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [Bad] is selected in List
+14:54:56.527 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:55:07.632 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sUser1CurrNotifyCount:3
+14:55:10.257 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
+14:55:10.276 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
+14:55:10.298 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
+14:55:10.298 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
+14:55:10.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+14:55:10.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+14:55:10.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+14:55:11.971 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+14:55:11.971 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+14:55:11.972 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name
+14:55:13.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+14:55:13.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+14:55:13.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
+14:55:14.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
+14:55:14.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
+14:55:14.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
+14:55:15.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
+14:55:15.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
+14:55:15.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
+14:55:22.653 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+14:55:22.669 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+14:55:27.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+14:55:27.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+14:55:27.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
+14:55:28.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:44444444444
+14:55:28.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:44444444444
+14:55:28.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
+14:55:29.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
+14:55:29.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
+14:55:29.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
+14:55:30.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
+14:55:30.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
+14:55:30.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
+14:55:31.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:444444444
+14:55:31.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:444444444
+14:55:31.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
+14:55:33.115 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+14:55:52.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+14:55:52.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+14:55:52.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+14:55:53.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+14:55:53.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+14:55:53.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
+14:55:54.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:44444444444
+14:55:54.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:44444444444
+14:55:54.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
+14:55:55.924 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
+14:55:55.924 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
+14:55:55.924 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
+14:55:57.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
+14:55:57.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
+14:55:57.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
+14:55:58.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:444444444
+14:55:58.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:444444444
+14:55:58.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
+14:56:04.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
+14:56:04.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
+14:56:04.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
+14:56:05.875 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
+14:56:05.875 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
+14:56:05.875 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
+14:56:07.022 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
+14:56:07.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
+14:56:07.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email Title
+14:56:08.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
+14:56:08.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
+14:56:08.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
+14:57:17.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:20
+14:57:17.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:20
+14:57:17.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass

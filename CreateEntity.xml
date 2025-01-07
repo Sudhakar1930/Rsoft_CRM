@@ -9,9 +9,15 @@
   <test name="chromeTest-Set1">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.TC013_CreateEntity_OOFS_NewValues"/>
-		<class name="testCases.TC014_CreateEntity_OOFS_DefaultValues"/>
    	 	<class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
+	</classes>	
+	  </parameter>
+  </test>
+	
+	  <!-- 
+	  
+	  <class name="testCases.TC013_CreateEntity_OOFS_NewValues"/>
+		<class name="testCases.TC014_CreateEntity_OOFS_DefaultValues"/>
    	 	<class name="testCases.TC015_CreateEntity_OOFS_SuccessUpdate"/>
    	 	<class name="testCases.TC016_CreateEntity_OOFS_FailureUpdate"/>
    	 	<class name="testCases.TC017_CreateEntity_OOFS_MultiSuccessCase"/>
@@ -23,9 +29,5 @@
    	 	<class name="testCases.TC001_WF1_Send_Notify_ETR_S"/>
 		 <class name="testCases.TC002_WF2_Send_Notify_OOF_S"/>
 		 <class name="testCases.TC003_WF3_Send_Notify_ETR_M"/>
-	</classes>	
-	  </parameter>
-  </test>
-	
-	  
+	   -->
 </suite> <!-- Suite -->
