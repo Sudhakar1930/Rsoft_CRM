@@ -229,13 +229,23 @@ public class DetailViewPage extends BasePage{
 		String sXpath1 = "(//div[@class='col-lg-10'])[1]";
 		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
 		Thread.sleep(2000);
-		action.moveToElement(eleArrSummary).perform();
+		action.moveToElement(eleArrSummary).click().perform();
 		//String sXpath="//td[@class='rs_col_2']//div[@class='col-lg-2']/i[@data_fieldid='5800']";
 		String sXpath = "(//td[@class='rs_col_2']//div[@class='col-lg-2'])[1]";
 		WebElement eleRecEdit = driver.findElement(By.xpath(sXpath));
 		eleRecEdit.click();
 	}
-	
+	public void clickSendNotifyEdit() throws InterruptedException {
+		Actions action = new Actions(driver);
+		String sXpath1 = "(//div[@class='col-lg-10'])[1]";
+		WebElement eleArrSummary = driver.findElement(By.xpath(sXpath1));
+		Thread.sleep(2000);
+		action.moveToElement(eleArrSummary).click().perform();
+		String sXpath2 = "//i[@class='fa fa-edit 5800_icon']";
+		WebElement chkPhoneNUmber = driver.findElement(By.xpath(sXpath2));
+		chkPhoneNUmber.click();
+		
+	}
 	public void clickEdtSngFldMod() throws InterruptedException {
 		Actions action = new Actions(driver);
 		String sXpath1 = "(//div[@class='col-lg-10'])[2]";

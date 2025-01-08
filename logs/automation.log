@@ -1,139 +1,188 @@
-14:47:17.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:0
-14:47:17.472 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
-14:51:11.549 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - ******starting TC002_WF2_Send_Notify_OOF_S ****
-14:51:11.553 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Test Execution on Browser: chrome
-14:51:11.555 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
-14:51:12.089 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
-14:51:12.143 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
-14:51:12.144 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
-14:51:12.144 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
-14:51:19.675 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-14:51:20.952 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-14:51:22.221 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-14:51:39.568 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Avatar
-14:51:42.704 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Menu CRM Setting
-14:51:44.812 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Menu Other Setting
-14:51:50.179 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Menu Item Workflow
-14:51:50.416 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Workflow from Combox Box List
-14:51:52.426 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Item to be selected:  CRMEditFieldModule Workflow
-14:51:57.307 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [CRMEditFieldModule Workflow] is selected in List
-14:51:57.307 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Item selected in combox Box  CRMEditFieldModule Workflow
-14:52:00.329 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Selected Module to View its Workflows
-14:52:00.432 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Module,workflow,conditions not matched 
-14:52:00.432 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - bCurrentWFStatus: false
-14:52:00.514 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Module,workflow,condition matches
-14:52:00.514 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - bCurrentWFStatus: true
-14:52:00.514 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - WF2CRMEditFieldWorkflow enabled
-14:52:00.590 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Module,workflow,conditions not matched 
-14:52:00.590 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - bCurrentWFStatus: false
-14:52:00.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - WF3CRMEditFieldDisabled Workflow Manually Enabled
-14:52:00.599 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - true:2
-14:52:03.900 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Work flow clicked
-14:52:06.464 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Cliked Step 1 Next Button to Condition Page
-14:52:07.892 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Cliked Step 2 Next Button to Task List Page
-14:52:08.901 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Workflow and Navigated to Task Page
-14:52:12.197 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Number of Tasks Listed for this Workflow: WF2CRMEditField : 1
-14:52:12.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
-  Send notification
-14:52:12.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:TriggerNotifyOOFS
-14:52:12.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
-14:52:12.311 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:TriggerNotifyOOFS
-14:52:12.311 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Action Type and Action Tile matches and also Task Button Enabled
-14:52:13.318 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
-14:52:16.808 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Clicked Workflow and Navigated to Task Page
-14:52:16.808 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Task Active Send notification  TriggerNotifyOOFS
-14:52:18.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - User1NotifyCount:2
-14:53:00.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
-14:53:00.940 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
-14:53:03.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-14:53:05.069 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
-14:53:06.302 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-14:53:17.003 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sUser2OldNotifyCount:3148
-14:53:28.678 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-14:53:29.943 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
-14:53:31.149 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
-14:53:44.038 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sUser3OldNotifyCount:1667
-14:53:55.676 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
-14:53:56.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
-14:53:58.123 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
-14:54:25.821 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
-14:54:25.885 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
-14:54:25.914 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
-14:54:25.914 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
-14:54:27.500 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
-14:54:28.810 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 44444444444 entered in  input
-14:54:31.156 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - checkoofs@gmail.com entered in  input
-14:54:32.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 444444444 entered in  input
-14:54:39.755 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - [Bad] is selected in List
-14:54:56.527 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:55:07.632 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - sUser1CurrNotifyCount:3
-14:55:10.257 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Excel file Utility instance created
-14:55:10.276 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Row Count is: 1
-14:55:10.298 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Col Count is: 52
-14:55:10.298 [TestNG-tests-1] INFO  testCases.TC002_WF2_Send_Notify_OOF_S - Extracting DataSheet Values started...
-14:55:10.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
-14:55:10.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
-14:55:10.588 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name
-14:55:11.971 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
-14:55:11.971 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
-14:55:11.972 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name
-14:55:13.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
-14:55:13.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
-14:55:13.121 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Phone Number
-14:55:14.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
-14:55:14.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
-14:55:14.305 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email
-14:55:15.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
-14:55:15.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
-14:55:15.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value
-14:55:22.653 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
-14:55:22.669 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
-14:55:27.145 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
-14:55:27.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
-14:55:27.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Phone Number
-14:55:28.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:44444444444
-14:55:28.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:44444444444
-14:55:28.295 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Number Field
-14:55:29.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
-14:55:29.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
-14:55:29.452 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Email
-14:55:30.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
-14:55:30.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
-14:55:30.614 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Picklist Item
-14:55:31.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:444444444
-14:55:31.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:444444444
-14:55:31.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary Enter Your Number
-14:55:33.115 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
-14:55:52.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
-14:55:52.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
-14:55:52.474 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
-14:55:53.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
-14:55:53.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
-14:55:53.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Phone Numer
-14:55:54.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:44444444444
-14:55:54.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:44444444444
-14:55:54.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Number Field
-14:55:55.924 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
-14:55:55.924 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
-14:55:55.924 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Email
-14:55:57.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
-14:55:57.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
-14:55:57.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Menu Item
-14:55:58.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:444444444
-14:55:58.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:444444444
-14:55:58.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Enter Your Number
-14:56:04.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:CRMEditFieldModule
-14:56:04.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:CRMEditFieldModule
-14:56:04.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Module Name Title
-14:56:05.875 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:+91 9087654321
-14:56:05.875 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:+91 9087654321
-14:56:05.875 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Phone Number Title
-14:56:07.022 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:checkoofs@gmail.com
-14:56:07.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:checkoofs@gmail.com
-14:56:07.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Email Title
-14:56:08.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Bad
-14:56:08.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Bad
-14:56:08.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Piclist Value Title
-14:57:17.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:20
-14:57:17.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:20
-14:57:17.320 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+18:56:00.219 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:56:00.219 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+18:56:01.437 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:56:01.437 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:56:01.437 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+18:56:02.879 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:56:13.336 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+18:56:13.336 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+18:56:13.336 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+18:56:14.539 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:56:14.539 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:56:14.539 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+18:56:15.770 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:56:15.770 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:56:15.770 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+18:56:16.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:56:16.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:56:16.987 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+18:56:18.186 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+18:56:18.186 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+18:56:18.186 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+18:56:38.605 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+18:56:40.468 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 159550 entered in  input
+18:56:46.901 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+18:56:46.901 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Single Line Edit : user 1 and AssignedTo:Indiana JonesNotification record count: 1
+18:56:46.901 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: Notification Not Received after Single Line Edit Record Add -Indiana Jones Record Id: 159550
+18:56:48.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+18:56:48.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+18:56:48.521 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+18:56:49.685 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:56:49.685 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:56:49.685 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+18:56:50.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+18:56:50.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+18:56:50.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+18:56:52.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:56:52.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:56:52.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary in Record Details
+18:56:53.235 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:56:53.235 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:56:53.235 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+18:56:54.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+18:56:54.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+18:56:54.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+18:57:09.904 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:57:12.832 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+18:57:12.834 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+18:57:12.834 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+18:57:14.001 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:57:14.001 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:57:14.001 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+18:57:15.202 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:57:15.202 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:57:15.202 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+18:57:16.403 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:57:16.403 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:57:16.403 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+18:57:17.914 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:57:27.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+18:57:27.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+18:57:27.984 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+18:57:29.170 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:57:29.170 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:57:29.170 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+18:57:30.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:57:30.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:57:30.371 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+18:57:31.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:57:31.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:57:31.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+18:57:32.750 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+18:57:32.750 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+18:57:32.750 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+18:57:41.224 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - current ulr:https://rdot.in/public/login
+18:57:41.225 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - app ulr:https://rdot.in/public/login
+18:57:43.679 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:57:45.300 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Madhan entered in  input
+18:57:46.884 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+18:58:21.473 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Mohan')]
+18:58:23.283 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 159550 entered in  input
+18:58:29.600 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+18:58:29.600 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Single Line Edit : user 2 and AssignedTo:Madhan MohanNotification record count: 1
+18:58:29.600 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: Notification not Received after Single Line Edit Record Add -Madhan Mohan Record Id: 159550
+18:58:31.253 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+18:58:31.253 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+18:58:31.253 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+18:58:32.433 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:58:32.433 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:58:32.433 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+18:58:33.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+18:58:33.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+18:58:33.598 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+18:58:34.782 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:58:34.782 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:58:34.782 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary in Record Details
+18:58:35.982 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:58:35.982 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:58:35.982 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+18:58:37.147 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+18:58:37.147 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+18:58:37.147 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+18:58:53.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+18:58:56.234 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+18:58:56.234 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+18:58:56.234 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+18:58:57.398 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:58:57.398 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:58:57.398 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+18:58:58.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:58:58.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:58:58.615 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+18:58:59.815 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:58:59.815 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:58:59.815 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+18:59:01.275 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+18:59:11.331 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Madhan Mohan
+18:59:11.331 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Madhan Mohan
+18:59:11.331 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+18:59:12.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+18:59:12.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+18:59:12.512 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+18:59:13.667 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+18:59:13.667 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+18:59:13.667 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+18:59:14.846 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+18:59:14.846 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+18:59:14.846 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+18:59:16.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+18:59:16.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+18:59:16.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+18:59:29.741 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+18:59:31.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Jones entered in  input
+18:59:32.903 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Automation@123 entered in  input
+19:00:05.390 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - //ul[@class='select2-results__options']/li[contains(text(),'Jones')]
+19:00:07.218 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 159550 entered in  input
+19:00:13.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - table row Count:2
+19:00:13.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Single Line Edit : user 2 and AssignedTo:Indiana JonesNotification record count: 1
+19:00:13.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: Notification Not Received after Single Line Edit Record Add -Indiana Jones Record Id: 159550
+19:00:15.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+19:00:15.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+19:00:15.148 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:AssignedTo Record Details
+19:00:16.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+19:00:16.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+19:00:16.314 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Status in Record Details
+19:00:17.515 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Rsoft IT
+19:00:17.515 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Rsoft IT
+19:00:17.515 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Created By in Record Details
+19:00:18.663 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+19:00:18.663 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+19:00:18.663 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary in Record Details
+19:00:19.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+19:00:19.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+19:00:19.829 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Workflow Title in Record Details
+19:00:21.013 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+19:00:21.013 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+19:00:21.013 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Record Id in Record Details
+19:00:37.096 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+19:00:40.032 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+19:00:40.032 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+19:00:40.032 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Assigned To
+19:00:41.229 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+19:00:41.229 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+19:00:41.229 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Status
+19:00:42.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+19:00:42.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+19:00:42.446 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View User
+19:00:43.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+19:00:43.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+19:00:43.633 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Summary View Action Title
+19:00:45.072 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Set ON
+19:00:55.197 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Indiana Jones
+19:00:55.197 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Indiana Jones
+19:00:55.197 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Assigned To
+19:00:56.380 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:0
+19:00:56.380 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:0
+19:00:56.381 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Status
+19:00:57.515 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual: OOFS Notify 
+19:00:57.515 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:OOFS Notify
+19:00:57.515 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Summary
+19:00:58.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:     TriggerNotifyOOFS     
+19:00:58.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:TriggerNotifyOOFS
+19:00:58.710 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Action Title
+19:00:59.879 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:159550
+19:00:59.879 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:159550
+19:00:59.879 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:Detail View Module Record Id
+19:01:08.197 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:455
+19:01:08.197 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:455
+19:01:08.197 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass

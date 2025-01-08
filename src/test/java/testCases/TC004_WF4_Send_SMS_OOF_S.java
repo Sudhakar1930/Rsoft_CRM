@@ -155,9 +155,9 @@ public class TC004_WF4_Send_SMS_OOF_S extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		String sAppUrl = rb.getString("appURL");
 		String sCompName =  rb.getString("companyName");
-		String sUserName =  rb.getString("userName1");
-		String sPassword =  rb.getString("passWord1");
-		String sAssignedTo = rb.getString("AssignedTo1");
+		String sUserName =  rb.getString("userName");
+		String sPassword =  rb.getString("passWord");
+		String sAssignedTo = rb.getString("AssignedTo");
 		
 		String sFullMobileNumber = sMobNumPrefix + " " + sMobileNumber;  
 		String sFullEnquiry_PhoneNumber = sEnquiry_PN_Prefix + sEnquiry_PhoneNumber; 

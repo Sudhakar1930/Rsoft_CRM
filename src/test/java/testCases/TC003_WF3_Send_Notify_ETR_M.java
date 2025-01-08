@@ -258,12 +258,11 @@ import utilities.UtilityCustomFunctions;
 		
 		//**************Add New Record
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet1");
-		
+		UtilityCustomFunctions.fWaitNavLink(sExpModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		driver.navigate().refresh();
-		Thread.sleep(3000);
+
 		
 		//Capture new Record Id & New Notification Count in User 1
 		int iCurrRecordId= objCRMRs.getLastRecordId();
@@ -485,7 +484,7 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(3000);
 		
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet2");
-		Thread.sleep(3000);
+		UtilityCustomFunctions.fWaitNavLink(sExpModuleName);
 		
 		
 		objDVP.fSetToggleHeader(true);
@@ -518,8 +517,7 @@ import utilities.UtilityCustomFunctions;
 		}
 				
 		xlObj.setCellData("Sheet2", 1, 11, sCurrRecordId);
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();
+
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		Thread.sleep(3000);
@@ -708,12 +706,11 @@ import utilities.UtilityCustomFunctions;
 		objDVP.clickDuplicateRecord();
 		
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet3");
+		UtilityCustomFunctions.fWaitNavLink(sExpModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		driver.navigate().refresh();
-		Thread.sleep(3000);;
-
+		
 		//Notification for AssignedTo User 1
 		iCurrRecordId= objCRMRs.getLastRecordId();
 		sCurrRecordId = String.valueOf(iCurrRecordId);
@@ -738,8 +735,7 @@ import utilities.UtilityCustomFunctions;
 		}
 		
 		xlObj.setCellData("Sheet3", 1, 11, sCurrRecordId);
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();
+		
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 		
@@ -930,12 +926,10 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickEdit();
 		Thread.sleep(3000);
 		objCRMRs.fNotifyAddValuestoModulePage("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet4");
-		Thread.sleep(5000);
+		UtilityCustomFunctions.fWaitNavLink(sExpModuleName);
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		objSVP.fWaitTillControlVisible();
-		driver.navigate().refresh();
-		Thread.sleep(5000);
 		
 		iCurrRecordId= objCRMRs.getLastRecordId();
 		sCurrRecordId = String.valueOf(iCurrRecordId);
@@ -956,8 +950,7 @@ import utilities.UtilityCustomFunctions;
 		objCRMRs.fValModuleView("Test", "//Notification//WF3_Send_Notify_ETR_M_","Sheet4","Edit with New Data",sAssignedTo,node);
 		
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId);
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();
+		
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 								
@@ -981,8 +974,7 @@ import utilities.UtilityCustomFunctions;
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo,sNotifyTemplateMsg,sActionTitle,node);
 		
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();
+		
 		//Notifications 1/AssignedTo 1
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo1);
 						
@@ -1006,8 +998,7 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo1,sNotifyTemplateMsg,sActionTitle,node);
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();			
+					
 		//Notifications 1/AssignedTo 2
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo2);
 				
@@ -1187,7 +1178,7 @@ import utilities.UtilityCustomFunctions;
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		Thread.sleep(5000);
-		objDVP.clickEditNotificationItem();
+		objDVP.clickSendNotifyEdit();
 		Thread.sleep(3000);
 		
 		sEditIndText = "1234567890";
@@ -1220,8 +1211,7 @@ import utilities.UtilityCustomFunctions;
 		//Validate Notifications Module
 		//Notification Module from Menu
 		xlObj.setCellData("Sheet4", 1, 11, sCurrRecordId); //check with new record created
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();	
+			
 		sStatus = "0";
 		objCRMRs.fClickSearch(sCurrRecordId,sAssignedTo);
 										
@@ -1292,8 +1282,7 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();
+		
 		//Logout from CurrentUser
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
@@ -1409,8 +1398,7 @@ import utilities.UtilityCustomFunctions;
 		objCMD.clickLatestNotification();
 		Thread.sleep(3000);
 		objCRMRs.fValNotifySummaryAndDetail(sCurrRecordId,sAssignedTo2,sNotifyTemplateMsg,sActionTitle,node);
-		Thread.sleep(3000);
-		UtilityCustomFunctions.clickOutside();
+		
 		Thread.sleep(2000);
 		objHP.clickLogoutCRM();
 				

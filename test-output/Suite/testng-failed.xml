@@ -7,16 +7,16 @@
   <test thread-count="7" parallel="tests" name="chromeTest-Set1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC002_WF2_Send_Notify_OOF_S">
+      <class name="testCases.TC001_WF1_Send_Notify_ETR_S">
         <methods>
           <include name="onStart"/>
           <include name="tearDown"/>
-          <include name="testNotify_OOF_S"/>
-          <include name="testName"/>
           <include name="setup"/>
           <include name="flush"/>
+          <include name="testName"/>
+          <include name="testNotifyETR_S"/>
         </methods>
-      </class> <!-- testCases.TC002_WF2_Send_Notify_OOF_S -->
+      </class> <!-- testCases.TC001_WF1_Send_Notify_ETR_S -->
     </classes>
   </test> <!-- chromeTest-Set1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

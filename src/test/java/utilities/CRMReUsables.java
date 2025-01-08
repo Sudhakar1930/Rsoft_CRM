@@ -568,15 +568,20 @@ public class CRMReUsables extends BaseClass {
 	}
 
 	public void fClickSearch(String sRecordId,String sAssignedTo) throws Exception {
+		try {
 		AllListPage objALP = new AllListPage(driver);
 		NotificationsPage objNFP = new NotificationsPage(driver);
 		objALP.clickAllList();
+		Thread.sleep(3000);
 		objALP.clickAllNotifications();
 		Thread.sleep(3000);
 		objNFP.setAssignedTo(sAssignedTo);
 		objNFP.setRecordId(sRecordId);
 		objNFP.clickSearchButton();
-
+		Thread.sleep(3000);
+		}catch(Exception e) {
+			System.out.println(e.getCause());
+		}
 	}
 	public void fClickFirstRecord() throws InterruptedException {
 //		List<WebElement> tRowCount = driver.findElements(By.xpath("//tbody/tr"));
@@ -1240,7 +1245,7 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("Text Value added is::  "+sText);
 		Thread.sleep(1000);
 		
-		objCMD.ClickListPhonePrefix(sExpModuleName,"mobilenumber_prefix-container");
+		objCMD.ClickListPhonePrefix(sExpModuleName,"mobilenumber_prefix");
 		UtilityCustomFunctions.logWriteConsole("Phone NUmber prefix clicked :  ");
 		objCMD.selectListValue(sMobNumPrefix);
 		UtilityCustomFunctions.logWriteConsole("Phone NUmber selected is :  "+sMobileNumber);
@@ -1356,7 +1361,7 @@ public class CRMReUsables extends BaseClass {
 		
 		System.out.println("Enquiriy prefix: " + sEnquiry_PN_Prefix);
 		
-		objCMD.ClickListPhonePrefix(sExpModuleName,"enquiryphonenumber_prefix-container");
+		objCMD.ClickListPhonePrefix(sExpModuleName,"enquiryphonenumber_prefix");
 		Thread.sleep(1000);
 		objCMD.selectListValue(sEnquiry_PN_Prefix);
 		
@@ -1384,7 +1389,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.setGenericInputValue("text", sExpModuleName, "leadtext", sLead_Text);
 		
 		//Sales PN Prefix
-		objCMD.ClickListPhonePrefix(sExpModuleName,"salesphonenumber_prefix-container");
+		objCMD.ClickListPhonePrefix(sExpModuleName,"salesphonenumber_prefix");
 		Thread.sleep(1000);
 		objCMD.selectListValue(sSales_PN_Prefix);
 		Thread.sleep(1000);
