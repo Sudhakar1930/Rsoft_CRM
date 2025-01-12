@@ -29,7 +29,7 @@ public class RelatedModulePage extends BasePage {
 	public void SelectRelatedModuleRow(String sRelModText) throws Exception {
 		CRMReUsables objCRMRs = new CRMReUsables();
 		Thread.sleep(1000);
-		UtilityCustomFunctions.sendKeys(driver, eleRelMatrSearchBox, sRelModText);
+//		UtilityCustomFunctions.sendKeys(driver, eleRelMatrSearchBox, sRelModText);
 		UtilityCustomFunctions.logWriteConsole("Search Button clicked in Related Module Window");
 		Thread.sleep(1000);
 		UtilityCustomFunctions.doClick(driver, btnSearch);

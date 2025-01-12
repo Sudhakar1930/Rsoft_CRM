@@ -33,6 +33,7 @@ import pageObjects.IndvControlsPage;
 import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
 import pageObjects.PHPMyAdminPage;
+import pageObjects.RelatedModulePage;
 import pageObjects.SummaryViewPage;
 import pageObjects.UserPage;
 import pageObjects.WebFormsPage;
@@ -1157,6 +1158,7 @@ public class CRMReUsables extends BaseClass {
 
 	public void fAddValuestoModulePage(String sEnv,String sExcelName,String sSheetName,boolean IsAmend) throws Exception {
 		CreateModuleDataPage objCMD = new CreateModuleDataPage(driver);
+		RelatedModulePage objRMP =new RelatedModulePage(driver);
 		String sPath="";
 		if(sEnv.equalsIgnoreCase("Test")){
 			sPath=".\\testData\\"+ sExcelName +"Test.xlsx";
@@ -1231,25 +1233,32 @@ public class CRMReUsables extends BaseClass {
 		String sSales_PN=xlAddObj.getCellData(sSheetName, 1, 49);
 		String sSales_Email=xlAddObj.getCellData(sSheetName, 1, 50);
 		
+		
 		sRecordId="";
 		System.out.println("Module Name:  " + sExpModuleName);
 		UtilityCustomFunctions.logWriteConsole("Before Adding Module data");
 		Thread.sleep(3000);
-		objCMD.clickArrayDropDown(1);
+//		objCMD.clickArrayDropDown(1);
+		objCMD.clickCRMNotifyAssignedTo();
 //		objCMD.clickAssignedTo();
+
 		UtilityCustomFunctions.logWriteConsole("Assinged To Drop Down clicked");
 		Thread.sleep(2000);
 		objCMD.selectListValue(sAssignedTo);
 		UtilityCustomFunctions.logWriteConsole("Assinged To Value Seleted is::  "+sAssignedTo);
+		
+		Thread.sleep(2000);
 		objCMD.setInputValue(sExpModuleName, "text",sText);
 		UtilityCustomFunctions.logWriteConsole("Text Value added is::  "+sText);
 		Thread.sleep(1000);
+		
 		
 		objCMD.ClickListPhonePrefix(sExpModuleName,"mobilenumber_prefix");
 		UtilityCustomFunctions.logWriteConsole("Phone NUmber prefix clicked :  ");
 		objCMD.selectListValue(sMobNumPrefix);
 		UtilityCustomFunctions.logWriteConsole("Phone NUmber selected is :  "+sMobileNumber);
 		objCMD.setMobileNumber(sMobileNumber);
+		/*
 		Thread.sleep(1000);
 		objCMD.setEmailValue(sExpModuleName, sEmail);
 		Thread.sleep(1000);
@@ -1314,8 +1323,8 @@ public class CRMReUsables extends BaseClass {
 		System.out.println("Date & Time" + sActDateandTime);
 		xlAddObj.setCellData(sSheetName, 1, 15, sActDateandTime);
 		
-		objCMD.setInputValue(sExpModuleName, "relatedmodule_name", sRelatedModule);
-		
+//		objCMD.setInputValue(sExpModuleName, "relatedmodule_name", sRelatedModule);
+		objCMD.SelectRelModValue("");
 		objCMD.setUploadFile();
 //		sFileName
 //		xlAddObj.setCellData(sSheetName, 1, 17, sFileName);
@@ -1358,7 +1367,7 @@ public class CRMReUsables extends BaseClass {
 		System.out.println("AcutalDate: " + sActEnquiryDate);
 		xlAddObj.setCellData(sSheetName, 1, 28, sActEnquiryDate);
 		
-		
+		*/
 		System.out.println("Enquiriy prefix: " + sEnquiry_PN_Prefix);
 		
 		objCMD.ClickListPhonePrefix(sExpModuleName,"enquiryphonenumber_prefix");
@@ -1367,49 +1376,49 @@ public class CRMReUsables extends BaseClass {
 		
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("tel", sExpModuleName, "enquiryphonenumber", sEnquiry_PhoneNumber);
-		
+		/*
 //		objCMD.clickEnqCategory();
 		objCMD.clickSelectControl(sExpModuleName,"enquirycategory");
 		Thread.sleep(3000);
 		objCMD.selectListValue(sEnquiry_category);
 		
 		Thread.sleep(3000);
-		
+		*/
 		//Lead PhoneNumber prefix
-		objCMD.ClickListPhonePrefix(sExpModuleName,"leadphonenumber_prefix-container");
+		objCMD.ClickListPhonePrefix(sExpModuleName,"leadphonenumber_prefix");
 		Thread.sleep(3000);
 		objCMD.selectListValue(sLead_PN_Prefix);
 		Thread.sleep(3000);
 		objCMD.setGenericInputValue("tel", sExpModuleName, "leadphonenumber", sLead_PN);
-		
+		/*
 		//Lead Email
 		objCMD.setGenericInputValue("email", sExpModuleName, "leademail", sLead_Email);
 		
 		//Lead Text
 		objCMD.setGenericInputValue("text", sExpModuleName, "leadtext", sLead_Text);
 		
+		*/
 		//Sales PN Prefix
 		objCMD.ClickListPhonePrefix(sExpModuleName,"salesphonenumber_prefix");
 		Thread.sleep(1000);
 		objCMD.selectListValue(sSales_PN_Prefix);
 		Thread.sleep(1000);
 		objCMD.setGenericInputValue("tel", sExpModuleName, "salesphonenumber", sSales_PN);
-		
+		/*
 		//Sales Email
 		objCMD.setGenericInputValue("email", sExpModuleName, "salesemail", sSales_Email);
 		Thread.sleep(5000);		
-		
+		*/
 		objCMD.clickSave();
-		
-		//a[normalize-space()='CRMScheduleNotification']
-//		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='CRMScheduleNotification']"));
-		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='"+sExpModuleName+"']"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.elementToBeClickable(eleModuleLink));
-		wait.until(ExpectedConditions.visibilityOf(eleModuleLink));
-		js.executeScript("arguments[0].scrollIntoView();", eleModuleLink);
-		
+		UtilityCustomFunctions.fWaitNavLink(sDisplayModuleName);
+		/*
+			WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='"+sExpModuleName+"']"));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+			wait.until(ExpectedConditions.elementToBeClickable(eleModuleLink));
+			wait.until(ExpectedConditions.visibilityOf(eleModuleLink));
+			js.executeScript("arguments[0].scrollIntoView();", eleModuleLink);
+		*/
 		
 		
 	}
@@ -1506,27 +1515,27 @@ public class CRMReUsables extends BaseClass {
 		objDVP.fSetToggleHeader(true);
 		objDVP.fSetDetailVew(false);
 		
-		sCurrentWinHandle="";
-		String sNewWindowHanlde="";
+//		sCurrentWinHandle="";
+//		String sNewWindowHanlde="";
+//		
+//		if(isNotify.equalsIgnoreCase("Yes")){
+//			sCurrentWinHandle = driver.getWindowHandle();
+//			sNewWindowHanlde="";
+//			NotificationsPage objNotfy = new NotificationsPage(driver);
+//			objNotfy.clickNotificatons();
+//			objNotfy.clickNotifyFirstMsg();
+//			Thread.sleep(3000);
+//			Set<String> Handles = driver.getWindowHandles();
+//			for(String actual: Handles) {
+//				if (!actual.equalsIgnoreCase(sCurrentWinHandle)) {
+//					driver.switchTo().window(actual);
+//					break;
+//				}
+//			}
+//			
+//		}//if 
 		
-		if(isNotify.equalsIgnoreCase("Yes")){
-			sCurrentWinHandle = driver.getWindowHandle();
-			sNewWindowHanlde="";
-			NotificationsPage objNotfy = new NotificationsPage(driver);
-			objNotfy.clickNotificatons();
-			objNotfy.clickNotifyFirstMsg();
-			Thread.sleep(3000);
-			Set<String> Handles = driver.getWindowHandles();
-			for(String actual: Handles) {
-				if (!actual.equalsIgnoreCase(sCurrentWinHandle)) {
-					driver.switchTo().window(actual);
-					break;
-				}
-			}
-			
-		}//if 
-		
-		
+		//summary page extractions
 		String aActModuleName = objDVP.getNavBarModuleName();
 		System.out.println("Actual Module Name: " + aActModuleName);
 		System.out.println("Expected Module Name: " + sExpModuleName);

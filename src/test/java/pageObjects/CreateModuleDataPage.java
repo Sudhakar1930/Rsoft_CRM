@@ -135,13 +135,17 @@ public class CreateModuleDataPage extends BasePage{
 	@FindBy(xpath = "//div[@class='calendar-time']/select[@class='ampmselect']") 
 	WebElement eleDTAMPM;
 	
+	@FindBy(xpath = "//div[@id='428fieldblock']//span[contains(@id,'select2-assign_to')and contains(@role,'textbox')]") 
+	WebElement eleAssignedTo;
 	
+			
 	public void clickRelativeSearch() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnRelativeSearch);
 	}
 	public void clickMultiComboDropDown() throws Exception {
 		UtilityCustomFunctions.doClick(driver, txtMultiComboBox);
 	}
+	
 	public void SelectRelModValue(String sRelModText) throws Exception {
 		Thread.sleep(5000);
 		RelatedModulePage objRMP = new RelatedModulePage(driver);
@@ -149,10 +153,13 @@ public class CreateModuleDataPage extends BasePage{
 		Thread.sleep(3000);
 		String currentWindow = driver.getWindowHandle();
 		Set<String> sWinHandles = driver.getWindowHandles();
+		System.out.println("Total Windows Opened: " + sWinHandles.size());
 		for(String window:sWinHandles) {
+			System.out.println("Each Window Handle:" + window);
 			driver.switchTo().window(window);
 			Thread.sleep(3000);
 			if(!window.equals(currentWindow)) {
+				System.out.println("Popup Window Handle:" + window);
 				objRMP.SelectRelatedModuleRow(sRelModText);
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("Related Module Value Selected");
@@ -548,8 +555,9 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	//click Methods
 	public void clickSave() throws Exception {
+		Thread.sleep(10000);
 		System.out.println("Before Edit Save clicked");
-		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(100));
 		webWait.until(ExpectedConditions.visibilityOf(btnSave));
 		webWait.until(ExpectedConditions.elementToBeClickable(btnSave));
 		btnSave.click();
@@ -588,11 +596,16 @@ public class CreateModuleDataPage extends BasePage{
 	}
 	public void clickArrayDropDown(int iObjIndex) throws Exception {
 		String sXpath="(//span[@class='select2-selection__rendered' and @role='textbox'])[" + iObjIndex + "]";
+		UtilityCustomFunctions.logWriteConsole("DropdownXpath:"+sXpath);
 		WebElement eleDropDown = driver.findElement(By.xpath(sXpath));
+		UtilityCustomFunctions.doActionClick(driver, eleDropDown);
 //		UtilityCustomFunctions.doClick(driver, eleDropDown);
-		eleDropDown.click();
+//		eleDropDown.click();
 	}
-	
+	public void clickCRMNotifyAssignedTo() throws Exception {
+//		UtilityCustomFunctions.doClick(driver, eleAssignedTo);
+		eleAssignedTo.click();
+	}
 	public void clickArrayCheckBox(int iObjIndex,String sValue) throws InterruptedException {
 		String xPath = "(//input[@type='checkbox'])[" + iObjIndex + "]";  
 		WebElement eleCheckBox = driver.findElement(By.xpath(xPath));

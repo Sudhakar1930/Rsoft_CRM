@@ -40,6 +40,9 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//a/img[@class='icon ic_s_loggoff']")
 	WebElement btnPHPLogout;
 	
+	@FindBy(xpath="//button[@id='confirmDeleteButton']")
+	WebElement btnSessionOutYes;
+	
 	
 	
 	
@@ -64,6 +67,7 @@ public class LoginPage extends BasePage {
 		txtPassword.clear();
 		UtilityCustomFunctions.sendKeysNoEnter(driver, txtPassword, sPassword);
 	}
+	 
 	
 	//Click Methods
 	public void clickMySqlSubmit() throws Exception {
@@ -72,6 +76,7 @@ public class LoginPage extends BasePage {
 	
 	public void clickLoginSubmit() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnSubmit);
+		clickSessionOut(); 
 	}
 	public void clickEyeIcon() throws Exception {
 		UtilityCustomFunctions.doClick(driver, lnkEyeIcon);
@@ -81,7 +86,16 @@ public class LoginPage extends BasePage {
 		UtilityCustomFunctions.doClick(driver, btnPHPLogout);
 		
 	}
-	
+	public void clickSessionOut() throws Exception{
+		try{
+		if(btnSessionOutYes.isDisplayed()) {
+		  UtilityCustomFunctions.doClick(driver, btnSessionOutYes);
+		}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 	//IsMethods
 	public boolean isLoginPageDisplayed(String sCRMUrl) throws InterruptedException {
 		Thread.sleep(2000);

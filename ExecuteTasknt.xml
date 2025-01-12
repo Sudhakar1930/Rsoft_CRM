@@ -8,7 +8,7 @@
   <test name="chromeTest-Set1">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.ExecuteTask.Notification.TC031_NT_ET_ETRS_DTAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes"/>
 		
 	</classes>	
 	  <!--

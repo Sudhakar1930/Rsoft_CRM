@@ -894,7 +894,7 @@ public class IndvControlsPage extends BasePage{
 				System.out.println("Expected values:" + sMS_Value);
 				String arrValues[]=sMS_Value.split(",");
 				Thread.sleep(1000);
-				;
+				
 				Thread.sleep(1000);
 				for(int i=0;i<arrValues.length;i++) {
 					for (WebElement option : listMSControl) {

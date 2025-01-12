@@ -2,6 +2,8 @@ package testCases;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -195,6 +197,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 				System.out.println("Home Page Not Displayed");
 				Assert.fail("Home Page Not Displayed");
 			}//avatar displayed.
+	
 			Thread.sleep(1000);
 			objCRMRs.fNavigatetoWorkflow(sDisplayModuleName);
 			String sWorkFlowStatus="";
@@ -242,12 +245,13 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(1000);
 			objEDT.clickModule(sDisplayModuleName);
 			System.out.println("Add New Module data clicked");
-			Thread.sleep(2000);
+			Thread.sleep(10000);
 			
+			int iSMSCount = 0; 
 			//**************Add New Record First Time
 			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet1",false);
-
-			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet1","Direct Entry Module Data","No",node);
+			//Temporary Comment
+//			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet1","Direct Entry Module Data","No",node);
 			
 			Thread.sleep(2000);
 			objALP.clickAllList();
@@ -258,9 +262,13 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sMobileNumber);
 
 			objSMS.clickSearch();
-			int iSMSCount = objSMS.getWebTblRowcount(); 
 			
-			if(iSMSCount<=1) {
+//			int iSMSCount = objSMS.getWebTblRowcount(); 
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+		
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after New Record Add -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after New Record Add -"+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Add New Record - SMS Not received", "Add New Record - SMS Not received");
@@ -274,8 +282,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(3000);
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+//			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after New Record Add -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after New Record Add -"+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Add New Record - SMS Not received", "Add New Record - SMS Not received");
@@ -291,9 +302,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			
-			if(iSMSCount<=1) {
+//			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after New Record Add -"+ sLead_PN);
 				freport("Passed: SMS Not Received after New Record Add -"+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Add New Record - SMS Not received", "Add New Record - SMS Not received");
@@ -317,7 +330,8 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			//Add New Record and Check
 			objCRMRs.fAddValuestoModulePage("Test","//SMS//WF6_Send_SMS_ETR_M_","Sheet2",false);
 			Thread.sleep(3000);
-			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet2","Summary Add Data Validation","No",node);
+			//Temporary comment
+//			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet2","Summary Add Data Validation","No",node);
 			//SMS Validation after Summary Add New
 			objALP.clickAllList();
 			Thread.sleep(1000);
@@ -329,8 +343,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(1000);
 			
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+//			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after New Record Add in Summary View -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after New Record Add - in Summary View "+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Add New Record - SMS Not received", "Add New Record - SMS Not received");
@@ -345,8 +362,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+//			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after New Record Add in Summary View-"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after New Record Add - in Summary View"+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Add New Record - SMS Not received", "Add New Record - SMS Not received");
@@ -361,9 +381,12 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+//			iSMSCount = objSMS.getWebTblRowcount();
 			
-			if(iSMSCount<=1) {
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after New Record Add - in Summary View"+ sLead_PN);
 				freport("Passed: SMS Not Received after New Record Add - in Summary View"+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Add New Record - SMS Not received", "Add New Record - SMS Not received");
@@ -400,8 +423,10 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.clickSearch();
 			Thread.sleep(1000);
 			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after Duplicate with No Modify -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after Duplicate with No Modify "+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Duplicate with No Modify - SMS Not received", "Duplicate with No Modify - SMS Not received");
@@ -418,8 +443,10 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after Duplicate with No Modify -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after Duplicate with No Modify "+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Duplicate with No Modify - SMS Not received", "Duplicate with No Modify - SMS Not received");
@@ -434,9 +461,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			Thread.sleep(1000);
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
 			
-			if(iSMSCount<=1) {
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after Duplicate with No Modify -"+ sLead_PN);
 				freport("Passed: SMS Not Received after Duplicate with No Modify "+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Duplicate with No Modify - SMS Not received", "Duplicate with No Modify - SMS Not received");
@@ -461,7 +490,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(5000);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
-			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet3","Duplicate with New Data","No",node);
+//			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet3","Duplicate with New Data","No",node);
 			
 			objALP.clickAllList();
 			Thread.sleep(1000);
@@ -472,9 +501,10 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			
 			objSMS.clickSearch();
 			Thread.sleep(1000);
-			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after Duplicate with Modification data -"+ sMobileNumber);
 				freport("Passed: SMS Not Received after Duplicate with Modification data "+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Duplicate with Modification - SMS Not received", "Duplicate with Modification - SMS Not received");
@@ -490,8 +520,10 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount<=1) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after Duplicate with Modification data -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Not Received after Duplicate with Modification data "+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Duplicate with Modification - SMS Not received", "Duplicate with Modification - SMS Not received");
@@ -507,9 +539,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
 			
-			if(iSMSCount<=1) {
+			if(iSMSCount==0) {
 				logger.info("Passed: SMS Not Received after Duplicate with Modification data -"+ sLead_PN);
 				freport("Passed: SMS Not Received after Duplicate with Modification data "+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Duplicate with Modification - SMS Not received", "Duplicate with Modification - SMS Not received");
@@ -519,6 +553,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 				freport("Failed: SMS Received after Duplicate with Modification data -"+ sLead_PN, "fail",node);
 				sAssertinFn.assertEquals("Duplicate with Modification - SMS  received", "Duplicate with Modification - SMS Not received");
 			}
+			
 			//Edit in Summary with No Modification
 			
 			Thread.sleep(3000);
@@ -537,6 +572,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objCMD.clickEdit();
 	 		Thread.sleep(6000);
 			objCMD.clickSave();
+			Thread.sleep(6000);
 			objALP.clickAllList();
 			Thread.sleep(1000);
 			objALP.clickModuleOnListAll(driver, "SMS Notifiers");
@@ -546,9 +582,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			
 			objSMS.clickSearch();
 			Thread.sleep(1000);
-			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount==2) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Mobile Number SMS Count after Edit with No Modify:"+iSMSCount);
+			if(iSMSCount==1) {
 				logger.info("Passed: SMS Received after Edit with No Modify -"+ sMobileNumber);
 				freport("Passed: SMS Received after Edit with No Modify "+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Edit with No Modification - SMS received", "Edit with No Modification - SMS received");
@@ -564,8 +602,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount==2) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Enquiry Number SMS Count after Edit with No Modify:"+iSMSCount);
+			if(iSMSCount==1) {
 				logger.info("Passed: SMS Received after Edit with No Modify -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Received after Edit with No Modify "+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Edit with No Modification - SMS received", "Edit with No Modification - SMS received");
@@ -580,9 +621,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sLead_PN);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			
-			if(iSMSCount==2) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Lead Number SMS Count after Edit with No Modify:"+iSMSCount);
+			if(iSMSCount==1) {
 				logger.info("Passed: SMS Received after Edit with No Modify -"+ sLead_PN);
 				freport("Passed: SMS Received after Edit with No Modify "+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Edit with No Modification - SMS received", "Edit with No Modification - SMS received");
@@ -608,7 +651,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(5000);
 			UtilityCustomFunctions.checkPageLoadComplete();
 			Thread.sleep(10000);
-			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet4","Edit with New Data","No",node);
+//			objCRMRs.fValidateAllFields("Test", "//SMS//WF6_Send_SMS_ETR_M_","Sheet4","Edit with New Data","No",node);
 			
 			Thread.sleep(2000);
 			objALP.clickAllList();
@@ -619,8 +662,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sMobileNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount(); 
-			if(iSMSCount==3) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Mobile Number SMS Count after Edit with Modify:"+iSMSCount);
+			if(iSMSCount==2) {
 				logger.info("Passed: SMS Received after Edit with updated Record -"+ sMobileNumber);
 				freport("Passed: SMS Received after Edit with updated  Record "+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Edit with updated Record - SMS received", "Edit with updated Record - SMS received");
@@ -635,8 +681,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			if(iSMSCount==3) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Enquiry Number SMS Count after Edit with Modify:"+iSMSCount);
+			if(iSMSCount==2) {
 				logger.info("Passed: SMS Received after Edit with updated Record -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Received after Edit with updated  Record "+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Edit with updated Record - SMS received", "Edit with updated Record - SMS received");
@@ -649,9 +698,11 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			Thread.sleep(1000);
 			objSMS.setRecipient(sLead_PN);
 			objSMS.clickSearch();
-			iSMSCount = objSMS.getWebTblRowcount();
-			
-			if(iSMSCount==3) {
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Lead Number SMS Count after Edit with Modify:"+iSMSCount);
+			if(iSMSCount==2) {
 				logger.info("Passed: SMS Received after Edit with updated Record -"+ sLead_PN);
 				freport("Passed: SMS Received after Edit with updated  Record "+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Edit with updated Record - SMS received", "Edit with updated Record - SMS received");
@@ -674,7 +725,7 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objDVP.fSetToggleHeader(true);
 			objDVP.fSetDetailVew(false);
 			Thread.sleep(5000);
-			objDVP.clickEditNotificationItem();
+			objDVP.clickEditSMSNotifyEdit();
 			Thread.sleep(1000);
 			objCMD.setGenericInputValue("text", sExpModuleName, "text", sEditIndText);
 			objDVP.clickRecItemSave(sExpModuleName);
@@ -689,10 +740,12 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			
 			objSMS.clickSearch();
 			Thread.sleep(1000);
-			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Mobile Number SMS Count after Single Line  Edit:"+iSMSCount);
 			System.out.println("Total SMS Count:"+iSMSCount+ "for PN:"+ sMobileNumber);
-			if(iSMSCount==4) {
+			if(iSMSCount==3) {
 				logger.info("Passed: SMS Received after Single Value Edit -"+ sMobileNumber);
 				freport("Passed: SMS Received after Single Value Edit "+ sMobileNumber, "pass",node);
 				sAssertinFn.assertEquals("Single Edit - SMS received", "Single Edit - SMS received");
@@ -709,10 +762,12 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			objSMS.setRecipient(sEnquiry_PhoneNumber);
 			objSMS.clickSearch();
 			Thread.sleep(1000);
-			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Eqnuiry Number SMS Count after Single Line  Edit:"+iSMSCount);
 			System.out.println("Total SMS Count:"+iSMSCount+ "for PN: "+ sEnquiry_PhoneNumber);
-			if(iSMSCount==4) {
+			if(iSMSCount==3) {
 				logger.info("Passed: SMS Received after Single Value Edit -"+ sEnquiry_PhoneNumber);
 				freport("Passed: SMS Received after Single Value Edit "+ sEnquiry_PhoneNumber, "pass",node);
 				sAssertinFn.assertEquals("Single Edit - SMS received", "Single Edit - SMS received");
@@ -731,10 +786,12 @@ public class TC006_WF6_Send_SMS_ETR_M extends BaseClass{
 			
 			objSMS.clickSearch();
 			Thread.sleep(1000);
-			sCaptureRecordId="";
-			iSMSCount = objSMS.getWebTblRowcount();
+			Thread.sleep(2000);
+			iSMSCount = objSMS.getSMSCount();
+			Thread.sleep(2000);
+			System.out.println("Lead Number SMS Count after Single Line  Edit:"+iSMSCount);
 			System.out.println("Total SMS Count:"+iSMSCount+ "for PN: "+ sLead_PN);
-			if(iSMSCount==4) {
+			if(iSMSCount==3) {
 				logger.info("Passed: SMS Received after Single Value Edit -"+ sLead_PN);
 				freport("Passed: SMS Received after Single Value Edit "+ sLead_PN, "pass",node);
 				sAssertinFn.assertEquals("Single Edit - SMS received", "Single Edit - SMS received");

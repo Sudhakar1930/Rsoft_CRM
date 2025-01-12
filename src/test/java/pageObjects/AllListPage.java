@@ -21,9 +21,9 @@ public class AllListPage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
-//	@FindBy(xpath="//*[@id='vertical_header_name']/i")
+	@FindBy(xpath="//a[@id='vertical_header_name']/i")
+//	@FindBy(xpath="//a[contains(@class,'dropdown-toggle nav-link') and @id='vertical_header_name']")
 //	@FindBy(xpath="//i[normalize-space()='list']")
-	@FindBy(xpath="//a[contains(@class,'dropdown-toggle nav-link') and @id='vertical_header_name']")
 	WebElement eleAllList;
 	
 	@FindBy(xpath="//*[@id='vertical_header_list']/li[6]/ul")
@@ -52,10 +52,9 @@ public class AllListPage extends BasePage{
 		webWait.until(ExpectedConditions.elementToBeClickable(eleAllList));
 		System.out.println("Within clickAllList before click");
 		js.executeScript("arguments[0].scrollIntoView(true);", eleAllList);
-		eleAllList.click();
-//		UtilityCustomFunctions.doClick(driver,eleAllList);
+		UtilityCustomFunctions.doClick(driver, eleAllList);
+//		eleAllList.click();
 		System.out.println("Within clickAllList after click");
-//		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		Thread.sleep(5000);
 	}
 	public void clickAllNotifications() throws Exception {
@@ -68,16 +67,23 @@ public class AllListPage extends BasePage{
 //		WebElement lstModuleName = driver.findElement(By.xpath(sXpath));
 //		UtilityCustomFunctions.doClick(driver, lstModuleName);
 		WebDriverWait webWait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		webWait.until(ExpectedConditions.visibilityOf(eleColumnOthers));
-		webWait.until(ExpectedConditions.elementToBeClickable(eleColumnOthers));
+		
 		int iSize = eleAllULItems.size();
 		for(int i = 1;i<iSize;i++)
 		{	
-//			UtilityCustomFunctions.logWriteConsole("Actual List Item:" + i + "is: " + eleAllULItems.get(i).getText());
-//			UtilityCustomFunctions.logWriteConsole("Expected List Item:" + sModuleName);
+			UtilityCustomFunctions.logWriteConsole("Actual List Item:" + i + "is: " + eleAllULItems.get(i).getText());
+			UtilityCustomFunctions.logWriteConsole("Expected List Item:" + sModuleName);
+			webWait.until(ExpectedConditions.visibilityOf(eleAllULItems.get(i)));
+			webWait.until(ExpectedConditions.elementToBeClickable(eleAllULItems.get(i)));
 			String sActModName = eleAllULItems.get(i).getText();
 				if(sActModName.trim().equalsIgnoreCase(sModuleName)) {
 					UtilityCustomFunctions.doClick(driver, eleAllULItems.get(i));
+					String sXpath="(//*[contains(text(),'"+sModuleName+"')])[1]";
+					UtilityCustomFunctions.logWriteConsole(sXpath);
+					WebElement eleModule = driver.findElement(By.xpath(sXpath));
+					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+					wait.until(ExpectedConditions.titleContains(sModuleName));
+//					wait.until(ExpectedConditions.visibilityOf(eleModule));
 					bFlag = true;
 					break;
 				}

@@ -40,7 +40,7 @@ public class UtilityCustomFunctions extends BaseClass{
         action.moveByOffset(0, 0).click().build().perform();
     }
 	public static void fWaitNavLink(String sExpModuleName) {
-		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='"+sExpModuleName+"']"));
+		WebElement eleModuleLink = driver.findElement(By.xpath("//a[normalize-space()='"+sExpModuleName.trim()+"']"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(ExpectedConditions.elementToBeClickable(eleModuleLink));
@@ -489,6 +489,25 @@ public class UtilityCustomFunctions extends BaseClass{
 		String sDate = dateFormat.format(date);
 		return sDate;
 	}
+	public static int getLblCount(WebElement lblPagination) {
+		String[] sPgArray = null;
+		try {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(lblPagination));
+		wait.until(ExpectedConditions.visibilityOf(lblPagination));
+		js.executeScript("arguments[0].scrollIntoView();", lblPagination);
+		
+		String sLblPageCount = lblPagination.getText();
+		sPgArray = sLblPageCount.split("\\s+");
+		
+		}catch(Exception e) {
+			e.getStackTrace();
+			UtilityCustomFunctions.logWriteConsole(e.getMessage());
+		}
+		return Integer.parseInt(sPgArray[4].trim());
+	}
+	
 	public static void fSoftAssert(String sActValue, String sExpValue, String sMessage, ExtentTest Node)
 			throws IOException, InterruptedException {
 		

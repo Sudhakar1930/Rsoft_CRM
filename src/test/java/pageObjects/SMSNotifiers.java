@@ -36,7 +36,12 @@ public class SMSNotifiers extends BasePage {
 	@FindBy(xpath="//a[normalize-space()='Details']")
 	WebElement tabDetails;
 	
+	@FindBy(xpath="(//span[@class='pagination_load'])[1]")
+	WebElement lblSMSNotifyCount;
 	
+	public int getSMSCount() {
+		return UtilityCustomFunctions.getLblCount(lblSMSNotifyCount);
+	}
 	
 	public String ValidateSMSRecord(String sReceipientNo,String sType,String sStatus,ExtentTest node) throws IOException, InterruptedException {
 		int iSMSCount = getWebTblRowcount(); 
@@ -78,6 +83,7 @@ public class SMSNotifiers extends BasePage {
 	//click
 	public void clickSearch() throws Exception {
 		UtilityCustomFunctions.doClick(driver, btnSearch);
+		Thread.sleep(5000);
 	}
 	public void clickFirstSMS() {
 		List<WebElement> tRowElements= WbTblRow.findElements(By.tagName("tr"));
