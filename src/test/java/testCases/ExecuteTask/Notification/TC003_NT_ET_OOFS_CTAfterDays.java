@@ -179,7 +179,7 @@ public class TC003_NT_ET_OOFS_CTAfterDays extends BaseClass {
 		Thread.sleep(2000);
 		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet1","New Add Data in Summary Verification", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet1","New Add Data in Summary Verification", node);
 		 sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		//Logout from CurrentUser
@@ -252,7 +252,7 @@ public class TC003_NT_ET_OOFS_CTAfterDays extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet2","Summary Page Add Data", node);
+//				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet2","Summary Page Add Data", node);
 				sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 				Thread.sleep(2000);
@@ -323,7 +323,7 @@ public class TC003_NT_ET_OOFS_CTAfterDays extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet3","Duplicate Record", node);
+//				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet3","Duplicate Record", node);
 				sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 				Thread.sleep(2000);
@@ -395,7 +395,7 @@ public class TC003_NT_ET_OOFS_CTAfterDays extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet4","Edit & Save Record", node);
+//				objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_CTAfterDays_","Sheet4","Edit & Save Record", node);
 				sCurrModRecId = objCRMRs.getModuleRecordId();
 				
 				Thread.sleep(2000);

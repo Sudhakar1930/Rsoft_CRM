@@ -444,10 +444,10 @@ public class CRMReUsables extends BaseClass {
 				driver.navigate().refresh();
 				Thread.sleep(3000);
 				
-				String sActDTAssignedTo = objDVP.getArrayDetails(1).trim();
+				String sActDTAssignedTo = objDVP.getArrayDetails(2).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTAssignedTo, sExpAssignedTo, "AssignedTo - Detail View Page:   " + sMessage, node);
 				
-				String sActDTMobileNumber= objDVP.getArrayDetails(2).trim();
+				String sActDTMobileNumber= objDVP.getArrayDetails(3).trim();
 				UtilityCustomFunctions.logWriteConsole("sActDTMobileNumber "+ sActDTMobileNumber);
 
 				String sDTMobileNMArray[] = sActDTMobileNumber.split("\\s+");
@@ -457,26 +457,26 @@ public class CRMReUsables extends BaseClass {
 				System.out.println("actual mobile number: " + sActDTMobileNumber);
 				UtilityCustomFunctions.fSoftAssert(sActDTMobileNumber, sPhoneNoumber, "Mobile Number - Detail View Page:   " + sMessage, node);
 				
-				String sActDTEmail= objDVP.getArrayDetails(3).trim();
+				String sActDTEmail= objDVP.getArrayDetails(4).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTEmail, sEmail, "Email - Detail View Page: " + sMessage, node);
 				
-				String sActDTText= objDVP.getArrayDetails(4).trim();
+				String sActDTText= objDVP.getArrayDetails(5).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTText, sText, "Text - Detail View Page:  " + sMessage, node);
 				
-				String sActDTMultiCombo= objDVP.getArrayDetails(5).trim();
+				String sActDTMultiCombo= objDVP.getArrayDetails(6).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTMultiCombo, sMultiComboValues, "MultiCombo - Detail View Page:   " + sMessage, node);
 				
-				String sActDTTextArea= objDVP.getArrayDetails(6).trim();
+				String sActDTTextArea= objDVP.getArrayDetails(7).trim();
 				sActDTTextArea = UtilityCustomFunctions.fArrayConcat(sActDTTextArea);
 				UtilityCustomFunctions.fSoftAssert(sActDTTextArea, sTextArea, "TextArea - Detail View Page:  " + sMessage, node);
 				
-				String sActDTChekBox= objDVP.getArrayDetails(7).trim();
+				String sActDTChekBox= objDVP.getArrayDetails(8).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTChekBox, sCheckBox, "CheckBox - Detail View Page: " + sMessage, node);
 				
-				String sActDTDate= objDVP.getArrayDetails(8).trim();
+				String sActDTDate= objDVP.getArrayDetails(9).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTDate, sDate, "Date - Detail View Page: " + sMessage, node);
 				
-				String sActDTPicList= objDVP.getArrayDetails(9).trim();
+				String sActDTPicList= objDVP.getArrayDetails(10).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTPicList, sPickList, "PickList - Detail View Page:   " + sMessage, node);
 				
 				String sActDTUploadFile = "";
@@ -490,38 +490,38 @@ public class CRMReUsables extends BaseClass {
 					UtilityCustomFunctions.fSoftAssert(sActDTUploadFile, sFile, "File Upload - Detail View Page:   " + sMessage, node);
 				}
 				
-				String sActDTDateandTime= objDVP.getArrayDetails(12).trim();
+				String sActDTDateandTime= objDVP.getArrayDetails(13).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTDateandTime, sDateandTime, "Date & Time - Detail View Page: " + sMessage, node);
 
-				String sActDTTime= objDVP.getArrayDetails(13).trim();
+				String sActDTTime= objDVP.getArrayDetails(14).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTTime, sTime, "Time - Detail View Page:    " + sMessage, node);
 				
-				String sActDTName= objDVP.getArrayDetails(14).trim();
+				String sActDTName= objDVP.getArrayDetails(15).trim();
 				String sDTNameArray[] = sActDTName.split("\\s+");
 				sActDTName = sDTNameArray[0].trim() + " " + sDTNameArray[1].trim();
 				UtilityCustomFunctions.logWriteConsole("ActualNameDT: "+sActDTName +" ExpectedNameDT: "+sExpName);
 				UtilityCustomFunctions.fSoftAssert(sActDTName, sExpName, "Name - Detail View Page:  " + sMessage, node);
 				
-				String sActDTNumber= objDVP.getArrayDetails(15).trim();
+				String sActDTNumber= objDVP.getArrayDetails(16).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTNumber, sNumber, "Number - Detail View Page:  " + sMessage, node);
 				
-				String sActDTCurrency= objDVP.getArrayDetails(16).trim();
+				String sActDTCurrency= objDVP.getArrayDetails(17).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTCurrency, sCurrency, "Currency - Detail View Page:  " + sMessage, node);
 				
 				String sActDTUrl= objDVP.getDTSummaryUrl().trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTUrl, sURL, "URL - Detail View Page:  " + sMessage, node);
 				Thread.sleep(3000);
 				
-				String sActDTCity= objDVP.getArrayDetails(18).trim();
+				String sActDTCity= objDVP.getArrayDetails(19).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTCity, sCity, "City - Detail View Page:   " + sMessage, node);
 
-				String sActDTState= objDVP.getArrayDetails(19).trim();
+				String sActDTState= objDVP.getArrayDetails(20).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTState, sState, "State - Detail View Page:   " + sMessage, node);
 				
-				String sActDTCountry= objDVP.getArrayDetails(20).trim();
+				String sActDTCountry= objDVP.getArrayDetails(21).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTCountry, sCountry, "Country - Detail View Page:  " + sMessage, node);
 				
-				String sActDTRelatedModText= objDVP.getArrayDetails(21).trim();
+				String sActDTRelatedModText= objDVP.getArrayDetails(22).trim();
 				UtilityCustomFunctions.fSoftAssert(sActDTRelatedModText, sRelatedModText, "Related Module Text - Detail View Page:  " + sMessage, node);
 				
 		}
@@ -2248,6 +2248,7 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("Phone NUmber selected is :  "+sMobileNumber);
 		objCMD.setMobileNumber(sMobileNumber);
 		Thread.sleep(1000);
+		/*
 		//Email
 		Thread.sleep(1000);
 		objCMD.setEmailValue(sExpModuleName, sEmail);
@@ -2268,6 +2269,7 @@ public class CRMReUsables extends BaseClass {
 		Thread.sleep(1000);
 		objCMD.clickArrayCheckBox(1, sCheckBox);
 		UtilityCustomFunctions.logWriteConsole("Checkbox clicked");
+		*/
 		//Date
 		objCMD.clickDateBox(sExpModuleName, "date");
 		UtilityCustomFunctions.logWriteConsole("DateBox clicked");
@@ -2275,6 +2277,7 @@ public class CRMReUsables extends BaseClass {
 		objCMD.clickDayInDate(1,"sDate",null);
 		UtilityCustomFunctions.logWriteConsole("Today Date Selected");
 		Thread.sleep(1000);
+		/*
 		//PickList
 		objCMD.clickArrayDropDown(3);
 		Thread.sleep(1000);
@@ -2284,6 +2287,7 @@ public class CRMReUsables extends BaseClass {
 		UtilityCustomFunctions.logWriteConsole("Picklist selected: "+sPickList);
 		//File Upload
 		objCMD.setUploadFile();
+		*/
 		//Date & Time
 		Thread.sleep(1000);
 		objCMD.clickDateBox(sExpModuleName, "datetime");
@@ -2315,7 +2319,7 @@ public class CRMReUsables extends BaseClass {
         String sActTime= objCMD.fGetModuleValue(sExpModuleName, "time");
 		System.out.println("Time" + sActTime);
 		xlAddObj.setCellData(sSheetName, 1, 14, sActTime);
-		
+		/*
 		//Enter Name
 		objCMD.clickArrayDropDown(4);
 		objCMD.selectListValue(sNamePrefix);
@@ -2352,8 +2356,11 @@ public class CRMReUsables extends BaseClass {
 		
 		//Related Module
 		objCMD.SelectRelModValue(sRelatedModText);
-		Thread.sleep(1000);		
+		Thread.sleep(1000);
+		*/		
 		objCMD.clickSave();
+		System.out.println("Excel Module  Name:" + sExpModuleName);
+		UtilityCustomFunctions.fWaitNavLink(sExpModuleName);
 		Thread.sleep(1000);		
 		
 	}	

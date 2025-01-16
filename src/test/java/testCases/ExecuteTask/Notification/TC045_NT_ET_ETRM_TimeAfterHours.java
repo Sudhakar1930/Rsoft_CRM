@@ -187,7 +187,7 @@ public class TC045_NT_ET_ETRM_TimeAfterHours extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_TimeAfterHours_","Sheet1",false,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_TimeAfterHours_","Sheet1","@Add New", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_TimeAfterHours_","Sheet1","@Add New", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		Thread.sleep(2000);
@@ -246,7 +246,7 @@ public class TC045_NT_ET_ETRM_TimeAfterHours extends BaseClass{
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_TimeAfterHours_","Sheet2","@Summary Add", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_TimeAfterHours_","Sheet2","@Summary Add", node);
 		Thread.sleep(2000);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		

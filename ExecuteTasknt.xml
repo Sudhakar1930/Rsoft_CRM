@@ -8,10 +8,24 @@
   <test name="chromeTest-Set1">
 	  <parameter name="browser" value="chrome">
     <classes>
-		<class name="testCases.ExecuteTask.Notification.TC001_NT_ET_OOFS_CTAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays"/>
 		
 	</classes>	
 	  <!--
+	  <class name="testCases.ExecuteTask.Notification.TC005_NT_ET_OOFS_MTAfterHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC006_NT_ET_OOFS_MTAfterDays"/>
+		<class name="testCases.ExecuteTask.Notification.TC007_NT_ET_OOFS_DateAfterDays"/>
+		<class name="testCases.ExecuteTask.Notification.TC008_NT_ET_OOFS_DateBeforeDays"/>
+		<class name="testCases.ExecuteTask.Notification.TC009_NT_ET_OOFS_TimeAfterHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC010_NT_ET_OOFS_TimeAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC011_NT_ET_OOFS_TimeBeforeHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC012_NT_ET_OOFS_TimeBeforeMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC013_NT_ET_OOFS_DTAfterMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC014_NT_ET_OOFS_DTAfterHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC015_NT_ET_OOFS_DTAfterDays"/>
+		<class name="testCases.ExecuteTask.Notification.TC016_NT_ET_OOFS_DTBeforeMinutes"/>
+		<class name="testCases.ExecuteTask.Notification.TC017_NT_ET_OOFS_DTBeforeHours"/>
+		<class name="testCases.ExecuteTask.Notification.TC018_NT_ET_OOFS_DTBeforeDays"/>
 	  <class name="testCases.ExecuteTask.Notification.TC020_NT_ET_ETRS_CTAfterHours"/>
 		<class name="testCases.ExecuteTask.Notification.TC021_NT_ET_ETRS_CTAfterDays"/>
 	  <class name="testCases.ExecuteTask.Notification.TC018_NT_ET_OOFS_DTBeforeDays"/>

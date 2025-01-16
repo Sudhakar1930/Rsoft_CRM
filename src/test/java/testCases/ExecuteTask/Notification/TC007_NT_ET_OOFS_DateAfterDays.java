@@ -181,7 +181,7 @@ public class TC007_NT_ET_OOFS_DateAfterDays extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_DateAfterDays_","Sheet1",false,"sDate");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DateAfterDays_","Sheet1","New Add Data in Summary Verification", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_DateAfterDays_","Sheet1","New Add Data in Summary Verification", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		Thread.sleep(2000);

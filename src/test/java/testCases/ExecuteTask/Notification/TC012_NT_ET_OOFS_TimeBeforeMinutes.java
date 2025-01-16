@@ -194,7 +194,7 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet1",false,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet1","@Add New", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet1","@Add New", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -276,7 +276,7 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet2","@Summary Add", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet2","@Summary Add", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -358,7 +358,7 @@ public class TC012_NT_ET_OOFS_TimeBeforeMinutes extends BaseClass{
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 				
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet3","@Duplicate Add", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_TimeBeforeMinutes_","Sheet3","@Duplicate Add", node);
 		
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();

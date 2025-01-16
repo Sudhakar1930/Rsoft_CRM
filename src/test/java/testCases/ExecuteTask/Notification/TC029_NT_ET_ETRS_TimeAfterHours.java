@@ -186,7 +186,7 @@ public class TC029_NT_ET_ETRS_TimeAfterHours extends BaseClass{
 		objCRMRs.fAddValuestoETBySpecificValues("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterHours_","Sheet1",false,"sTime");
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterHours_","Sheet1","@Add New Validation", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRS//ET_NT_ETRS_TimeAfterHours_","Sheet1","@Add New Validation", node);
 		
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		

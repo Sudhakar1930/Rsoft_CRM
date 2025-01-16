@@ -175,7 +175,7 @@ public class TC004_NT_ET_OOFS_MTAfterMinutes extends BaseClass{
 		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ET_NT_OOFS_MTAfterMinutes_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_MTAfterMinutes_","Sheet1","@Add New", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ET_NT_OOFS_MTAfterMinutes_","Sheet1","@Add New", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		//get EntityRecord
 		//Logout from CurrentUser

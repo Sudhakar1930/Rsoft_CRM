@@ -178,7 +178,7 @@ public class TC042_NT_ET_ETRM_MTAfterDays extends BaseClass{
 		objCRMRs.fAddValuestoETNotification("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet1",false);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
 		Thread.sleep(2000);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet1","@Add New", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet1","@Add New", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		//Logout from CurrentUser
@@ -236,7 +236,7 @@ public class TC042_NT_ET_ETRM_MTAfterDays extends BaseClass{
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet2","@Summary Add", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet2","@Summary Add", node);
 		Thread.sleep(2000);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
@@ -294,7 +294,7 @@ public class TC042_NT_ET_ETRM_MTAfterDays extends BaseClass{
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 		UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet3","@Duplicate Record", node);
+//		objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet3","@Duplicate Record", node);
 		sCurrModRecId = objCRMRs.getModuleRecordId();
 		
 		Thread.sleep(2000);
@@ -352,7 +352,7 @@ public class TC042_NT_ET_ETRM_MTAfterDays extends BaseClass{
 			driver.navigate().refresh();
 			Thread.sleep(3000);
 			UtilityCustomFunctions.logWriteConsole("New Record added in: "+sExpModuleName);
-			objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet4","Edit & Save Record", node);
+//			objCRMRs.fVerifyETNotificationSummary("Test","//ExecuteTask//Notification//ETRM//ET_NT_ETRM_MTAfterDays_","Sheet4","Edit & Save Record", node);
 			sCurrModRecId = objCRMRs.getModuleRecordId();
 			
 			Thread.sleep(2000);

@@ -561,6 +561,7 @@ public class CreateModuleDataPage extends BasePage{
 		webWait.until(ExpectedConditions.visibilityOf(btnSave));
 		webWait.until(ExpectedConditions.elementToBeClickable(btnSave));
 		btnSave.click();
+		Thread.sleep(10000);
 		System.out.println("After Edit Save clicked");
 //		UtilityCustomFunctions.doClick(driver, btnSave);
 	}

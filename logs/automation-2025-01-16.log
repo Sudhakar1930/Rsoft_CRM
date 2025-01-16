@@ -1,0 +1,466 @@
+15:18:58.020 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:35is: TARGETMODULE
+15:18:58.020 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:58.178 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:36is: ENDTARGET
+15:18:58.178 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:58.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:37is: Test
+15:18:58.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:58.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:38is: Tipone
+15:18:58.502 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:58.651 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:39is: CreateEntitySource
+15:18:58.651 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:58.818 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:40is: CreateEntityTarget
+15:18:58.818 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:58.978 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:41is: Vinodh Testing
+15:18:58.978 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:59.135 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:42is: CESourceDupPrev
+15:18:59.135 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:59.285 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:43is: CETargetDupPrev
+15:18:59.285 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:59.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:44is: LeadRelatedModule
+15:18:59.451 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:59.583 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:45is: EnquiryRelatedModule
+15:18:59.583 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:59.732 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:46is: OpportunityRelatedModule
+15:18:59.732 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:18:59.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:47is: CRMExecuteTask
+15:18:59.885 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:19:00.033 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:48is: ETNotification
+15:19:00.033 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+15:19:03.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//*[contains(text(),'ETNotification')])[1]
+15:19:19.772 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+15:19:19.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+15:19:24.819 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Mobile Number Edit On in Summary Page
+15:19:31.995 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2233445566 entered in  input
+15:19:34.328 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 2233445566 Is Updated Text for Mobile Number@Single Line Edit
+15:19:58.501 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+15:19:58.902 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+15:20:49.553 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 160401
+15:20:53.926 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 160401
+15:20:53.973 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+15:20:53.973 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:1
+15:20:54.506 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+15:20:55.681 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 160401 Etnotification 2025-01-16 09:40:43 2025-01-16 09:49:37
+15:20:58.573 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After Single Line Edit: 2025-01-16 09:40:43  0 RecordId:160401
+15:20:59.336 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+15:20:59.749 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+15:22:00.973 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 160401
+15:22:00.989 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - After WebTable Rows Retrieved
+15:22:00.989 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count:2
+15:22:02.744 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within WebTable Rows Loop0
+15:22:02.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DB List Count Row: 0 160401
+15:22:02.807 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within If when Entity Id Matches0
+15:22:02.823 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Taask Id:171
+15:22:02.839 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Module Name:Etnotification
+15:22:02.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type:0
+15:22:02.870 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Schedule Type Name:
+15:22:02.886 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Execution Time: 2025-01-17 09:40:43
+15:22:02.901 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Send Type: Send notification
+15:22:02.917 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: 2025-01-16 09:49:38
+15:22:04.094 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - @Single Line Edit Actual Created Time: 2025-01-16 09:49:38 Expected Created Time: 2025-01-16 09:40:43 ExecutionTime:2025-01-17 09:40:43 Send Type: Send notificationModule Name: Etnotification and Task Id:171
+15:22:04.094 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Within Date Diff Validation
+15:22:04.094 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Creation Time: Thu Jan 16 09:40:43 IST 2025Actual Execution Time: Fri Jan 17 09:40:43 IST 2025
+15:22:04.094 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Difference Time:24
+15:22:05.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - @Single Line Edit: Passed: Actual EntityId: 160401 ScheduleName:  Actual Created Time: 2025-01-16 09:49:38Expected Created Time: 2025-01-16 09:40:43 ExecutionTime:2025-01-17 09:40:43 Difference In Hours:= 24Send Type: Send notificationModule Name: Etnotification and Task Id: 171
+15:22:05.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Return Value: @Single Line Edit: true:171
+15:22:05.282 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Status: true Current Task Id: 171And Entity Id: 160401
+15:22:11.754 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual:Total Validation Count:0
+15:22:11.754 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected:Total Validation Count:0
+15:22:11.754 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Message:pass
+16:25:05.974 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - ******starting TC039_NT_ET_ETRM_CTAfterDays ****
+16:25:05.978 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Browser Execution on: chrome
+16:25:05.981 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:25:07.914 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Total rows: 1
+16:25:08.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Cols Count: 37
+16:25:08.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:25:16.634 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:25:18.487 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:25:20.049 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:25:40.317 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Avatar
+16:25:44.236 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Menu CRM Setting
+16:25:46.503 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Menu Other Setting
+16:25:53.236 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Menu Item Workflow
+16:25:53.682 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Workflow from Combox Box List
+16:25:55.682 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Item to be selected:  ETNotification Workflow
+16:26:01.526 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [ETNotification Workflow] is selected in List
+16:26:01.527 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Item selected in combox Box  ETNotification Workflow
+16:26:04.546 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Selected Module to View its Workflows
+16:26:04.715 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Module,workflow,conditions not matched 
+16:26:04.715 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - bCurrentWFStatus: false
+16:26:04.849 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Module,workflow,conditions not matched 
+16:26:04.849 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - bCurrentWFStatus: false
+16:26:05.001 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Module,workflow,condition matches
+16:26:05.001 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - bCurrentWFStatus: true
+16:26:05.001 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - wf_ET_ETRM_NotificationsWorkflow enabled
+16:26:05.016 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - wf_ET_ETRM_NotificationsDisabled Workflow Manually Enabled
+16:26:05.016 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - true:3
+16:26:10.640 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Work flow clicked
+16:26:14.113 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Cliked Step 1 Next Button to Condition Page
+16:26:16.437 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Cliked Step 2 Next Button to Task List Page
+16:26:17.449 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Workflow and Navigated to Task Page
+16:26:21.630 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Number of Tasks Listed for this Workflow: wf_ET_ETRM_Notifications : 18
+16:26:21.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:21.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_TimeAfterMinutes
+16:26:21.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:21.851 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:22.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:22.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DTBeforeDays
+16:26:22.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:22.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:22.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:22.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DTBeforeHours
+16:26:22.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:22.310 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:22.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:22.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DTBeforeMinutes
+16:26:22.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:22.516 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:22.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:22.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DTAfterDays
+16:26:22.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:22.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:22.950 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:22.950 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DTAfterMinutes
+16:26:22.950 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:22.950 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:23.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:23.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DTAfterHours
+16:26:23.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:23.150 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:23.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:23.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_TimeBeforeMinutes
+16:26:23.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:23.352 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:23.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:23.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_TimeBeforeHours
+16:26:23.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:23.616 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:23.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:23.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_CTAfterMinutes
+16:26:23.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:23.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:24.067 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:24.067 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_TimeAfterHours
+16:26:24.067 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:24.067 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:24.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:24.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DateBeforeDays
+16:26:24.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:24.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:24.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:24.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_DateAfterDays
+16:26:24.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:24.450 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:24.650 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:24.650 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_MTAfterDays
+16:26:24.650 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:24.650 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:24.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:24.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_MTAfterHours
+16:26:24.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:24.865 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:25.066 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:25.066 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_MTAfterMinutes
+16:26:25.066 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:25.066 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:25.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:25.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_CTAfterDays
+16:26:25.250 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:25.265 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:25.265 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Action Type and Action Tile matches and also Task Button Enabled
+16:26:25.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Type:notifications
+  Send notification
+16:26:25.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Action Title:ET_CTAfterHours
+16:26:25.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Type:Send notification
+16:26:25.465 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Retrieved Expected Action Title:ET_CTAfterDays
+16:26:26.479 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Out of for loop:false
+16:26:31.033 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Clicked Workflow and Navigated to Task Page
+16:26:31.033 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - Task Active Send notification  ET_CTAfterDays
+16:26:43.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Campaigns
+16:26:43.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:44.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+16:26:44.023 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:44.266 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: C Appointments
+16:26:44.266 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:44.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: Tickets
+16:26:44.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:44.667 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: Payments
+16:26:44.667 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:44.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: PROJECT MODULE
+16:26:44.850 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:45.016 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PLOT IMODULE
+16:26:45.016 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:45.202 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: ENQUIRY MODULE
+16:26:45.202 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:45.364 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: LEAD MODULE
+16:26:45.364 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:45.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: OPPORTUNITY MODULE
+16:26:45.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:45.729 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: IVR Providers
+16:26:45.729 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:45.919 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: PDF Generator
+16:26:45.919 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:46.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: Reports
+16:26:46.125 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:46.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Chats
+16:26:46.335 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:46.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: Updates
+16:26:46.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:46.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: Recycle Bin
+16:26:46.765 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:46.965 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Quotes
+16:26:46.965 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:47.183 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: Sales Orders
+16:26:47.183 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:47.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Invoices
+16:26:47.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:47.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Inventory Two
+16:26:47.550 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:47.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: PRODUCTS
+16:26:47.716 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:47.891 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: QUOTE MODULE
+16:26:47.891 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:48.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: SALES ORDER MD
+16:26:48.068 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:48.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: Email Templates
+16:26:48.249 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:48.417 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: SMS Templates
+16:26:48.417 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:48.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: WhatsApp Templates
+16:26:48.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:48.764 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:27is: SMS Notifiers
+16:26:48.764 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:48.947 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:28is: Notifications
+16:26:48.947 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:49.179 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:29is: Documents
+16:26:49.179 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:49.347 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:30is: Calendars
+16:26:49.347 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:49.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:31is: Mail Manager
+16:26:49.549 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:49.733 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:32is: Track Locations
+16:26:49.733 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:49.900 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:33is: Attendances
+16:26:49.900 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:50.101 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:34is: ENDTARGET
+16:26:50.101 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:50.333 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:35is: Test
+16:26:50.333 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:50.533 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:36is: SOURCEMODULE
+16:26:50.533 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:50.733 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:37is: TARGETMODULE
+16:26:50.733 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:50.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:38is: Tipone
+16:26:50.929 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:51.100 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:39is: CreateEntitySource
+16:26:51.100 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:51.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:40is: CreateEntityTarget
+16:26:51.272 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:51.466 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:41is: Vinodh Testing
+16:26:51.466 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:51.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:42is: CESourceDupPrev
+16:26:51.666 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:51.833 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:43is: CETargetDupPrev
+16:26:51.834 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:52.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:44is: LeadRelatedModule
+16:26:52.017 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:52.217 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:45is: EnquiryRelatedModule
+16:26:52.217 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:52.418 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:46is: OpportunityRelatedModule
+16:26:52.418 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:52.652 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:47is: CRMExecuteTask
+16:26:52.652 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:52.816 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:48is: ETNotification
+16:26:52.816 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:26:55.119 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//*[contains(text(),'ETNotification')])[1]
+16:26:55.407 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Click Source Module:ETNotification
+16:27:00.526 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Add New Record clicked:ETNotification
+16:27:02.534 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:27:02.602 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:27:02.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Col Count is: 37
+16:27:02.665 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:27:04.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+16:27:07.482 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DropdownXpath:(//span[@class='select2-selection__rendered' and @role='textbox'])[1]
+16:27:07.842 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+16:27:13.277 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [Rsoft IT] is selected in List
+16:27:18.317 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+16:27:23.351 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  9087654321
+16:27:24.966 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 9087654321 entered in  input
+16:27:26.182 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+16:27:34.499 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+16:27:41.083 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+16:27:43.787 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+16:27:47.814 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+16:27:50.102 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+16:27:52.304 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+16:28:02.595 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+16:28:09.113 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+16:28:11.790 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+16:28:23.921 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [5] is selected in List
+16:28:28.491 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [00] is selected in List
+16:28:32.963 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [00] is selected in List
+16:28:37.429 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [PM] is selected in List
+16:28:40.463 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+16:28:40.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+16:28:41.781 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+16:28:44.801 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+16:28:55.366 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:35 PM
+16:28:56.501 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :16-01-2025
+16:29:24.597 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+16:29:35.531 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:29:35.964 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
+16:30:27.543 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 160402
+16:30:32.088 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Entity Id Searched: 160402
+16:30:33.294 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Passed: Actual EntityId: 160402 Not Created in DB for Every Time Record Modifies condition for CTAfterDays Task @Add New
+16:30:37.462 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - PRIYAN entered in  input
+16:30:38.985 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - rsoft entered in  input
+16:30:40.520 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - RSoft!@345 entered in  input
+16:31:07.334 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:1is: Campaigns
+16:31:07.334 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:07.513 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:2is: Leads
+16:31:07.513 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:07.663 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:3is: C Appointments
+16:31:07.663 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:07.834 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:4is: Tickets
+16:31:07.834 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:5is: Payments
+16:31:08.047 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.246 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:6is: PROJECT MODULE
+16:31:08.246 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.394 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:7is: PLOT IMODULE
+16:31:08.394 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.545 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:8is: ENQUIRY MODULE
+16:31:08.545 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.697 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:9is: LEAD MODULE
+16:31:08.697 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:10is: OPPORTUNITY MODULE
+16:31:08.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:08.994 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:11is: IVR Providers
+16:31:08.994 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:09.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:12is: PDF Generator
+16:31:09.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:09.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:13is: Reports
+16:31:09.312 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:09.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:14is: Chats
+16:31:09.459 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:09.594 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:15is: Updates
+16:31:09.594 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:09.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:16is: Recycle Bin
+16:31:09.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:09.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:17is: Quotes
+16:31:09.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.045 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:18is: Sales Orders
+16:31:10.045 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:19is: Invoices
+16:31:10.195 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.343 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:20is: Inventory Two
+16:31:10.343 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:21is: PRODUCTS
+16:31:10.494 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:22is: QUOTE MODULE
+16:31:10.644 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.809 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:23is: SALES ORDER MD
+16:31:10.809 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:10.979 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:24is: Email Templates
+16:31:10.979 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:11.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:25is: SMS Templates
+16:31:11.162 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:11.294 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:26is: WhatsApp Templates
+16:31:11.294 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:11.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:27is: SMS Notifiers
+16:31:11.444 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:11.610 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:28is: Notifications
+16:31:11.626 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:11.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:29is: Documents
+16:31:11.778 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:11.928 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:30is: Calendars
+16:31:11.928 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.077 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:31is: Mail Manager
+16:31:12.077 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.237 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:32is: Track Locations
+16:31:12.237 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.397 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:33is: Attendances
+16:31:12.397 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.566 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:34is: ENDTARGET
+16:31:12.566 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.715 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:35is: Test
+16:31:12.715 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:36is: SOURCEMODULE
+16:31:12.843 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:12.994 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:37is: TARGETMODULE
+16:31:12.994 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:13.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:38is: Tipone
+16:31:13.146 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:13.338 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:39is: CreateEntitySource
+16:31:13.338 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:13.530 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:40is: CreateEntityTarget
+16:31:13.530 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:13.695 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:41is: Vinodh Testing
+16:31:13.695 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:13.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:42is: CESourceDupPrev
+16:31:13.863 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:14.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:43is: CETargetDupPrev
+16:31:14.030 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:14.181 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:44is: LeadRelatedModule
+16:31:14.181 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:14.328 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:45is: EnquiryRelatedModule
+16:31:14.328 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:14.477 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:46is: OpportunityRelatedModule
+16:31:14.477 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:14.639 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:47is: CRMExecuteTask
+16:31:14.639 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:14.776 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual List Item:48is: ETNotification
+16:31:14.776 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Expected List Item:ETNotification
+16:31:17.536 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//*[contains(text(),'ETNotification')])[1]
+16:31:38.913 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Excel file Utility instance created
+16:31:38.969 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Row Count to Add Values: 1
+16:31:39.042 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Col Count is: 33
+16:31:39.042 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Extracting DataSheet Values started...
+16:31:39.776 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Before Adding Module data
+16:31:42.794 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DropdownXpath:(//span[@class='select2-selection__rendered' and @role='textbox'])[1]
+16:31:43.127 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Assinged To Drop Down clicked
+16:31:48.535 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [Rsoft IT] is selected in List
+16:31:53.599 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber prefix clicked :  
+16:31:58.661 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Phone NUmber selected is :  1234567890
+16:32:00.248 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - 1234567890 entered in  input
+16:32:01.448 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - DateBox clicked
+16:32:09.727 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+16:32:16.261 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+16:32:18.980 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDate
+16:32:23.008 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - (//td[contains(@class,'today')])[1]
+16:32:25.241 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Today Date Selected
+16:32:27.498 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Clicked
+16:32:37.861 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Current Month:Jan
+16:32:44.374 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Year to be selected is:2025
+16:32:46.966 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Control Type:sDateandTime
+16:32:59.229 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [5] is selected in List
+16:33:03.747 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [00] is selected in List
+16:33:08.273 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [00] is selected in List
+16:33:12.709 [TestNG-tests-1] INFO  testCases.ExecuteTask.Notification.TC039_NT_ET_ETRM_CTAfterDays - [PM] is selected in List
+16:33:15.743 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Clicked Current Date in Date&Time
+16:33:15.895 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Date & Time Selected
+16:33:17.050 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Clicked
+16:33:20.055 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Hours://div[@class='popover-content']//div[@class='clockpicker-tick' and text()='2']
+16:33:30.627 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Time Selected is: 02:35 PM
+16:33:31.782 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Actual Date Selected :16-01-2025
+16:33:59.225 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Header Toggle Already ON
+16:33:59.263 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - Summary View Already OFF
+16:34:07.244 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - New Record added in: ETNotification
+16:34:20.860 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - testing entered in  input
+16:34:21.285 [TestNG-tests-1] INFO  utilities.UtilityCustomFunctions - HrPyCWfMJ8Yd entered in  input
